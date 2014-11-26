@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" coreApp="true" package="com.android.providers.settings">
+    <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
+    <application android:allowClearUserData="false" android:backupAgent="SettingsBackupAgent" android:icon="@mipmap/ic_launcher_settings" android:killAfterRestore="false" android:label="@string/app_label" android:process="system">
+        <provider android:authorities="settings" android:exported="true" android:initOrder="100" android:multiprocess="false" android:name="SettingsProvider" android:writePermission="android.permission.WRITE_SETTINGS"/>
+        <receiver android:name="SettingsProviderReceiver" android:permission="com.sec.android.settings.permission.SOFT_RESET">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS_SOFT_RESET"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

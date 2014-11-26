@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/callsettings_voicecall" android:key="button_voicecall" android:fragment="com.android.phone.callsettings.CallBarring" />
+    <PreferenceScreen android:persistent="false" android:title="@string/callsettings_videocall" android:key="button_videocall" android:fragment="com.android.phone.callsettings.VideoCallBarring" />
+</PreferenceScreen>

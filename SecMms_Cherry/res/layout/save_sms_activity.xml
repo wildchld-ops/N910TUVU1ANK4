@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/save_sms_dlg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:gravity="center" android:id="@id/empty_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="bottom" android:id="@id/empty_background_image" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_list_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/empty_list_image" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="18.0dip" android:textColor="@color/conversation_no_message_color" android:id="@id/empty_list_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/empty_folder_message" />
+        </LinearLayout>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/message_sub_header" android:focusable="true" android:nextFocusUp="@id/message_select_all" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="32.0dip" style="?android:attr/listSeparatorTextViewStyle">
+        <ImageView android:id="@id/sdcard_image" android:focusable="false" android:visibility="gone" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="#ff3d7b8a" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/sdcard_path" android:focusable="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" android:marqueeRepeatLimit="2" />
+    </LinearLayout>
+    <ListView android:id="@android:id/list" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_below="@id/message_sub_header" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/buttons">
+        <TextView android:id="@id/file_name_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_name" />
+        <EditText android:id="@id/edit_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/buttons" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/save_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save" />
+        <Button android:id="@id/cancel_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="enhanced_4glte_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="false" android:title="@string/international_data" android:key="international_data_key" android:summary="@string/international_data_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/enhanced_4glte_services" android:key="international_enhanced_4glte_services_key" android:summary="@string/enhanced_4glte_services_roaming_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/user_capabilities_exchange" android:key="international_user_capabilities_exchange_key" android:summary="@string/user_capabilities_exchange_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

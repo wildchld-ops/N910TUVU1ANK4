@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/contextual_missed_call_photo" android:background="@drawable/lock_missedevent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/screen_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/noti_popup_avatar" android:layout_width="62.0dip" android:layout_height="62.0dip" android:src="@drawable/call_img_incoming_small" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/screen_right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/recipient_top_layout" android:layout_width="fill_parent" android:layout_height="30.0dip">
+            <TextView android:textSize="21.0dip" android:textColor="@android:color/white" android:id="@id/missed_call_title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/notification_missedCallTitle" android:singleLine="true" android:shadowColor="@color/lock_screen_text_shadow_color" android:shadowDy="2.0" android:layout_weight="1.0" />
+            <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/unread_count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/recipient_bootom_layout" android:layout_width="fill_parent" android:layout_height="29.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:ellipsize="marquee" android:gravity="start" android:id="@id/missed_call_sub_text" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/lock_screen_text_shadow_color" android:shadowDy="2.0" android:layout_weight="1.0" android:layout_marginEnd="15.0dip" style="@style/TextAppearanceNormal" />
+            <TextView android:textSize="15.0dip" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/missed_call_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/lock_screen_text_shadow_color" android:shadowDy="2.0" style="@style/TextAppearanceNormal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/callsettings_incomingcalls" />
+    <CheckBoxPreference android:title="@string/callsettings_accessory_automatic_answering" android:key="automatic_answer_preference" android:summary="@string/callsettings_accessory_automatic_answering_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:entries="@array/callsettings_accessory_automatic_answering_second_list" android:title="@string/callsettings_accessory_automatic_answering_timer" android:key="automatic_answer_timer_preference" android:summary="@string/callsettings_accessory_automatic_answering_timer_summary" android:defaultValue="0" android:dialogTitle="@string/callsettings_accessory_automatic_answering_timer" android:entryValues="@array/callsettings_accessory_automatic_answering_second_value" android:titleContentDescription="@string/callsettings_accessory_automatic_answering_timer_tts" />
+    <PreferenceCategory android:title="@string/callsettings_outgoingcalls" />
+    <ListPreference android:entries="@array/callsettings_BT_outgoing_condition_list_preference" android:title="@string/callsettings_BT_outgoing_condition" android:key="callsettings_bt_condition" android:summary="@string/callsettings_BT_outgoing_condition_summary_lock" android:defaultValue="0" android:dialogTitle="@string/callsettings_BT_outgoing_condition" android:entryValues="@array/callsettings_BT_outgoing_condition_list_value" />
+    <ListPreference android:entries="@array/callsettings_BT_outgoing_type_list_preference" android:title="@string/callsettings_BT_outgoing_type" android:key="callsettings_bt_type" android:summary="@string/callsettings_voicecall" android:defaultValue="1" android:dialogTitle="@string/callsettings_BT_outgoing_type" android:entryValues="@array/callsettings_BT_outgoing_type_list_value" />
+</PreferenceScreen>

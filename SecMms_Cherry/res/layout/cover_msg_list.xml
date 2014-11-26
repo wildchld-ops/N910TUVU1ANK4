@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/cover_msg_list_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="65.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:internal="http://schemas.android.com/apk/prv/res/android">
+    <ImageView android:id="@id/icon" android:background="@drawable/noti_list_ic_message" android:layout_width="100.0dip" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" android:scaleType="center" />
+    <LinearLayout android:gravity="top" android:layout_gravity="fill_vertical" android:orientation="vertical" android:paddingTop="0.0dip" android:paddingBottom="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:minHeight="65.0dip">
+        <LinearLayout android:orientation="vertical" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="65.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/line1" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                <TextView android:ellipsize="marquee" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:id="@id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/line2" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                <TextView android:ellipsize="marquee" android:id="@id/from2" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:id="@id/body2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/line3" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                <TextView android:ellipsize="marquee" android:id="@id/from3" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:id="@id/body3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/line4" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                <TextView android:ellipsize="marquee" android:id="@id/from4" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:id="@id/body4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

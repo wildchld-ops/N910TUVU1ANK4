@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="direction">
+        <enum name="vertical" value="0" />
+        <enum name="horizontal" value="1" />
+    </attr>
+    <attr name="destination">
+        <enum name="home" value="0" />
+        <enum name="menu" value="1" />
+    </attr>
+    <attr name="isFrontPosition" format="boolean" />
+    <attr name="hidden" format="boolean" />
+    <attr name="cellWidth" format="dimension" />
+    <attr name="cellHeight" format="dimension" />
+    <attr name="cellGapX" format="dimension" />
+    <attr name="cellGapY" format="dimension" />
+    <attr name="drawIdentifier" format="string" />
+    <attr name="position">
+        <flag name="barLeft" value="0x00000000" />
+        <flag name="barTop" value="0x00000001" />
+        <flag name="barRight" value="0x00000002" />
+        <flag name="barBottom" value="0x00000003" />
+        <flag name="iconLeft" value="0x00000000" />
+        <flag name="iconTop" value="0x00000010" />
+        <flag name="iconRight" value="0x00000020" />
+        <flag name="iconBottom" value="0x00000030" />
+    </attr>
+    <attr name="className" format="string" />
+    <attr name="packageName" format="string" />
+    <attr name="screen" format="string" />
+    <attr name="x" format="string" />
+    <attr name="y" format="string" />
+    <attr name="spanX" format="string" />
+    <attr name="spanY" format="string" />
+    <attr name="icon" format="reference" />
+    <attr name="title" format="reference" />
+    <attr name="uri" format="string" />
+    <attr name="themeName" format="string" />
+    <attr name="instance" format="string" />
+    <attr name="secret" format="string" />
+    <attr name="festival" format="string" />
+    <attr name="hideAddButton" format="boolean" />
+    <attr name="blurColor" format="color" />
+    <attr name="outlineColor" format="color" />
+    <attr name="clingFocusedX" format="integer" />
+    <attr name="clingFocusedY" format="integer" />
+    <attr name="cellCountX" format="integer" />
+    <attr name="cellCountY" format="integer" />
+    <attr name="pagePaddingTop" format="dimension" />
+    <attr name="pagePaddingBottom" format="dimension" />
+    <attr name="pagePaddingLeft" format="dimension" />
+    <attr name="pagePaddingRight" format="dimension" />
+    <attr name="pageSpacing" format="dimension" />
+    <attr name="pageIndicatorTop" format="dimension" />
+    <attr name="pageIndicatorGap" format="dimension" />
+    <attr name="pageIndicatorMaxVisible" format="integer" />
+    <attr name="iconDestination">
+        <enum name="allapps" value="0" />
+        <enum name="camera" value="1" />
+        <enum name="both" value="2" />
+    </attr>
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeTextColor" format="color" />
+    <attr name="strokeWidth" format="float" />
+    <attr name="defaultScreen" format="integer" />
+    <attr name="pageIndicatorTopShrunken" format="dimension" />
+</resources>

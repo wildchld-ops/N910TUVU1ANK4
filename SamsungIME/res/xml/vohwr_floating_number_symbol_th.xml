@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/handwriting_floating_symbol_normal_key_width" android:keyHeight="@dimen/handwriting_floating_symbol_normal_key_height" android:horizontalGap="@dimen/handwriting_floating_symbol_key_horizontal_gap" android:verticalGap="@dimen/handwriting_floating_symbol_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_default_key_width" android:keyHeight="@dimen/handwriting_floating_default_key_height" android:rowEdgeFlags="top" android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap" android:codes="-311" android:keyEdgeFlags="left" />
+        <Key android:codes="-108" android:keyIcon="@drawable/floating_qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/handwriting_floating_space_key_width" android:codes="32" android:keyIcon="@drawable/vohwr_floating_key_icon_space_xml" />
+        <Key android:codes="-102" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/vohwr_floating_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_symbol_normal_key_width" android:keyHeight="@dimen/handwriting_floating_top_number_key_height" android:verticalGap="@dimen/handwriting_floating_number_key_vertical_gap" android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x31" android:keyEdgeFlags="left" android:keyLabel="1" />
+        <Key android:codes="0x32" android:keyLabel="2" />
+        <Key android:codes="0x33" android:keyLabel="3" />
+        <Key android:codes="0x34" android:keyLabel="4" />
+        <Key android:codes="0x35" android:keyLabel="5" />
+        <Key android:codes="0x36" android:keyLabel="6" />
+        <Key android:codes="0x37" android:keyLabel="7" />
+        <Key android:codes="0x38" android:keyLabel="8" />
+        <Key android:codes="0x39" android:keyLabel="9" />
+        <Key android:codes="0x30" android:keyEdgeFlags="right" android:keyLabel="0" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x2b" android:keyEdgeFlags="left" android:keyLabel="+" />
+        <Key android:codes="0xd7" android:keyLabel="×" />
+        <Key android:codes="0xf7" android:keyLabel="÷" />
+        <Key android:codes="0x3d" android:keyLabel="=" />
+        <Key android:codes="0x25" android:keyLabel="%" />
+        <Key android:codes="0x5f" android:keyLabel="_" />
+        <Key android:codes="0x20ac" android:keyLabel="€" />
+        <Key android:codes="0xa3" android:keyLabel="£" />
+        <Key android:codes="0xa5" android:keyLabel="¥" />
+        <Key android:codes="0x20a9" android:keyEdgeFlags="right" android:keyLabel="₩" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x21" android:keyEdgeFlags="left" android:keyLabel="!" />
+        <Key android:codes="0x40" android:keyLabel="\@" />
+        <Key android:codes="0x23" android:keyLabel="\#" />
+        <Key android:codes="0x24" android:keyLabel="$" />
+        <Key android:codes="0x2f" android:keyLabel="/" />
+        <Key android:codes="0x5c" android:keyLabel="\\" />
+        <Key android:codes="0x26" android:keyLabel="&amp;" />
+        <Key android:codes="0x2a" android:keyLabel="*" />
+        <Key android:codes="0x28" android:keyLabel="(" />
+        <Key android:codes="0x29" android:keyEdgeFlags="right" android:keyLabel=")" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_normal">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbol_next_page_key_width" android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:codes="0x2d" android:keyLabel="-" />
+        <Key android:codes="0x27" android:keyLabel="'" />
+        <Key android:codes="0x22" android:keyLabel="&quot;" />
+        <Key android:codes="0x3a" android:keyLabel=":" />
+        <Key android:codes="0x3b" android:keyLabel=";" />
+        <Key android:codes="0x2c" android:keyLabel="," />
+        <Key android:codes="0x3f" android:keyLabel="\?" />
+        <Key android:codes="0x2e" android:keyEdgeFlags="right" android:keyLabel="." />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_default_key_width" android:keyHeight="@dimen/handwriting_floating_default_key_height" android:rowEdgeFlags="top" android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap" android:codes="-311" android:keyEdgeFlags="left" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="-102" />
+        <Key android:keyWidth="@dimen/handwriting_floating_single_language_space_key_width" android:codes="32" android:keyIcon="@drawable/vohwr_floating_key_icon_space_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/vohwr_floating_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_symbol_normal_key_width" android:keyHeight="@dimen/handwriting_floating_top_number_key_height" android:verticalGap="@dimen/handwriting_floating_number_key_vertical_gap" android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x31" android:keyEdgeFlags="left" android:keyLabel="1" />
+        <Key android:codes="0x32" android:keyLabel="2" />
+        <Key android:codes="0x33" android:keyLabel="3" />
+        <Key android:codes="0x34" android:keyLabel="4" />
+        <Key android:codes="0x35" android:keyLabel="5" />
+        <Key android:codes="0x36" android:keyLabel="6" />
+        <Key android:codes="0x37" android:keyLabel="7" />
+        <Key android:codes="0x38" android:keyLabel="8" />
+        <Key android:codes="0x39" android:keyLabel="9" />
+        <Key android:codes="0x30" android:keyEdgeFlags="right" android:keyLabel="0" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x2b" android:keyEdgeFlags="left" android:keyLabel="+" />
+        <Key android:codes="0xd7" android:keyLabel="×" />
+        <Key android:codes="0xf7" android:keyLabel="÷" />
+        <Key android:codes="0x3d" android:keyLabel="=" />
+        <Key android:codes="0x25" android:keyLabel="%" />
+        <Key android:codes="0x5f" android:keyLabel="_" />
+        <Key android:codes="0x20ac" android:keyLabel="€" />
+        <Key android:codes="0xa3" android:keyLabel="£" />
+        <Key android:codes="0xa5" android:keyLabel="¥" />
+        <Key android:codes="0x20a9" android:keyEdgeFlags="right" android:keyLabel="₩" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x21" android:keyEdgeFlags="left" android:keyLabel="!" />
+        <Key android:codes="0x40" android:keyLabel="\@" />
+        <Key android:codes="0x23" android:keyLabel="\#" />
+        <Key android:codes="0x24" android:keyLabel="$" />
+        <Key android:codes="0x2f" android:keyLabel="/" />
+        <Key android:codes="0x5c" android:keyLabel="\\" />
+        <Key android:codes="0x26" android:keyLabel="&amp;" />
+        <Key android:codes="0x2a" android:keyLabel="*" />
+        <Key android:codes="0x28" android:keyLabel="(" />
+        <Key android:codes="0x29" android:keyEdgeFlags="right" android:keyLabel=")" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_1_single_language">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbol_next_page_key_width" android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:codes="0x2d" android:keyLabel="-" />
+        <Key android:codes="0x27" android:keyLabel="'" />
+        <Key android:codes="0x22" android:keyLabel="&quot;" />
+        <Key android:codes="0x3a" android:keyLabel=":" />
+        <Key android:codes="0x3b" android:keyLabel=";" />
+        <Key android:codes="0x2c" android:keyLabel="," />
+        <Key android:codes="0x3f" android:keyLabel="\?" />
+        <Key android:codes="0x2e" android:keyEdgeFlags="right" android:keyLabel="." />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_default_key_width" android:keyHeight="@dimen/handwriting_floating_default_key_height" android:rowEdgeFlags="top" android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap" android:codes="-311" android:keyEdgeFlags="left" />
+        <Key android:codes="-108" android:keyIcon="@drawable/floating_qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/handwriting_floating_space_key_width" android:codes="32" android:keyIcon="@drawable/vohwr_floating_key_icon_space_xml" />
+        <Key android:codes="-102" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/vohwr_floating_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_symbol_normal_key_width" android:keyHeight="@dimen/handwriting_floating_top_number_key_height" android:verticalGap="@dimen/handwriting_floating_number_key_vertical_gap" android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0xe51" android:keyEdgeFlags="left" android:keyLabel="๑" />
+        <Key android:codes="0xe52" android:keyLabel="๒" />
+        <Key android:codes="0xe53" android:keyLabel="๓" />
+        <Key android:codes="0xe54" android:keyLabel="๔" />
+        <Key android:codes="0xe55" android:keyLabel="๕" />
+        <Key android:codes="0xe56" android:keyLabel="๖" />
+        <Key android:codes="0xe57" android:keyLabel="๗" />
+        <Key android:codes="0xe58" android:keyLabel="๘" />
+        <Key android:codes="0xe59" android:keyLabel="๙" />
+        <Key android:codes="0xe50" android:keyEdgeFlags="right" android:keyLabel="๐" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x60" android:keyEdgeFlags="left" android:keyLabel="`" />
+        <Key android:codes="0x7e" android:keyLabel="~" />
+        <Key android:codes="0x5e" android:keyLabel="^" />
+        <Key android:codes="0x7c" android:keyLabel="|" />
+        <Key android:codes="0x3c" android:keyLabel="&lt;" />
+        <Key android:codes="0x3e" android:keyLabel=">" />
+        <Key android:codes="0x7b" android:keyLabel="{" />
+        <Key android:codes="0x7d" android:keyLabel="}" />
+        <Key android:codes="0x5b" android:keyLabel="[" />
+        <Key android:codes="0x5d" android:keyEdgeFlags="right" android:keyLabel="]" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0xb0" android:keyEdgeFlags="left" android:keyLabel="°" />
+        <Key android:codes="0x2022" android:keyLabel="•" />
+        <Key android:codes="0x25cb" android:keyLabel="○" />
+        <Key android:codes="0x25cf" android:keyLabel="●" />
+        <Key android:codes="0x25a1" android:keyLabel="□" />
+        <Key android:codes="0x25a0" android:keyLabel="■" />
+        <Key android:codes="0x2664" android:keyLabel="♤" />
+        <Key android:codes="0x2661" android:keyLabel="♡" />
+        <Key android:codes="0x2662" android:keyLabel="♢" />
+        <Key android:codes="0x2667" android:keyEdgeFlags="right" android:keyLabel="♧" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_normal">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbol_next_page_key_width" android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:codes="0x2606" android:keyLabel="☆" />
+        <Key android:codes="0x25aa" android:keyLabel="▪" />
+        <Key android:codes="0xa4" android:keyLabel="¤" />
+        <Key android:codes="0x300a" android:keyLabel="《" />
+        <Key android:codes="0x300b" android:keyLabel="》" />
+        <Key android:codes="0xa1" android:keyLabel="¡" />
+        <Key android:codes="0xbf" android:keyLabel="¿" />
+        <Key android:codes="0x2e" android:keyEdgeFlags="right" android:keyLabel="." />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_default_key_width" android:keyHeight="@dimen/handwriting_floating_default_key_height" android:rowEdgeFlags="top" android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap" android:codes="-311" android:keyEdgeFlags="left" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:codes="-102" />
+        <Key android:keyWidth="@dimen/handwriting_floating_single_language_space_key_width" android:codes="32" android:keyIcon="@drawable/vohwr_floating_key_icon_space_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/vohwr_floating_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/handwriting_floating_symbol_normal_key_width" android:keyHeight="@dimen/handwriting_floating_top_number_key_height" android:verticalGap="@dimen/handwriting_floating_number_key_vertical_gap" android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0xe51" android:keyEdgeFlags="left" android:keyLabel="๑" />
+        <Key android:codes="0xe52" android:keyLabel="๒" />
+        <Key android:codes="0xe53" android:keyLabel="๓" />
+        <Key android:codes="0xe54" android:keyLabel="๔" />
+        <Key android:codes="0xe55" android:keyLabel="๕" />
+        <Key android:codes="0xe56" android:keyLabel="๖" />
+        <Key android:codes="0xe57" android:keyLabel="๗" />
+        <Key android:codes="0xe58" android:keyLabel="๘" />
+        <Key android:codes="0xe59" android:keyLabel="๙" />
+        <Key android:codes="0xe50" android:keyEdgeFlags="right" android:keyLabel="๐" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0x60" android:keyEdgeFlags="left" android:keyLabel="`" />
+        <Key android:codes="0x7e" android:keyLabel="~" />
+        <Key android:codes="0x5e" android:keyLabel="^" />
+        <Key android:codes="0x7c" android:keyLabel="|" />
+        <Key android:codes="0x3c" android:keyLabel="&lt;" />
+        <Key android:codes="0x3e" android:keyLabel=">" />
+        <Key android:codes="0x7b" android:keyLabel="{" />
+        <Key android:codes="0x7d" android:keyLabel="}" />
+        <Key android:codes="0x5b" android:keyLabel="[" />
+        <Key android:codes="0x5d" android:keyEdgeFlags="right" android:keyLabel="]" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="0xb0" android:keyEdgeFlags="left" android:keyLabel="°" />
+        <Key android:codes="0x2022" android:keyLabel="•" />
+        <Key android:codes="0x25cb" android:keyLabel="○" />
+        <Key android:codes="0x25cf" android:keyLabel="●" />
+        <Key android:codes="0x25a1" android:keyLabel="□" />
+        <Key android:codes="0x25a0" android:keyLabel="■" />
+        <Key android:codes="0x2664" android:keyLabel="♤" />
+        <Key android:codes="0x2661" android:keyLabel="♡" />
+        <Key android:codes="0x2662" android:keyLabel="♢" />
+        <Key android:codes="0x2667" android:keyEdgeFlags="right" android:keyLabel="♧" />
+    </Row>
+    <Row android:keyboardMode="@id/symbol_page_2_single_language">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbol_next_page_key_width" android:horizontalGap="@dimen/handwriting_floating_number_key_horizontal_gap" android:codes="-109" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:codes="0x2606" android:keyLabel="☆" />
+        <Key android:codes="0x25aa" android:keyLabel="▪" />
+        <Key android:codes="0xa4" android:keyLabel="¤" />
+        <Key android:codes="0x300a" android:keyLabel="《" />
+        <Key android:codes="0x300b" android:keyLabel="》" />
+        <Key android:codes="0xa1" android:keyLabel="¡" />
+        <Key android:codes="0xbf" android:keyLabel="¿" />
+        <Key android:codes="0x2e" android:keyEdgeFlags="right" android:keyLabel="." />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

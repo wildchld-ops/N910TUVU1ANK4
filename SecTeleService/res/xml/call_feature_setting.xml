@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <ListPreference android:entries="@array/phone_app_mode_entries" android:title="@string/phone_app_mode_title" android:key="phone_app_mode_pref" android:summary="@string/phone_app_mode_summary" android:defaultValue="0" android:entryValues="@array/phone_app_mode_values" />
+    <PreferenceScreen android:title="@string/callsettings_call_rejection_title" android:key="button_call_rejection_key" android:fragment="com.android.phone.callsettings.AutoRejectPreference" />
+    <PreferenceScreen android:title="@string/lgu_photoring_setting_title" android:key="photoring_setting_preference" android:fragment="com.android.phone.callsettings.LGTPhotoRingSettings" />
+    <PreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key" android:summary="@string/sum_fdn">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.FdnSetting" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/respond_via_sms_setting_title" android:key="button_respond_via_sms_key" android:summary="@string/respond_via_sms_setting_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.RespondViaSmsManager$Settings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/callsettings_reject_messages_title" android:key="reject_message_preference_icon" android:summary="@string/callsettings_reject_messages_summary" android:fragment="com.android.phone.callsettings.RejectCallWithMsgModes" />
+    <PreferenceScreen android:title="@string/callsettings_reject_messages_title" android:key="reject_message_preference" android:summary="@string/callsettings_reject_messages_summary" android:fragment="com.android.phone.callsettings.RejectCallWithMsg" />
+    <CheckBoxPreference android:title="@string/toggle_internationalcall_title" android:key="toggle_internationalcall" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:summaryOn="@string/internationalcall_on" android:summaryOff="@string/internationalcall_off" />
+    <PreferenceScreen android:title="@string/intcallsetting_title" android:key="intcallsetting_pref" android:summary="@string/intcallsetting_summary" android:fragment="com.android.phone.callsettings.IntCallSettingPreference" />
+    <com.android.phone.callsettings.IntCallServicePreference android:title="@string/callsettings_int_call_svc_title" android:key="intcallservice_preference" android:summary="@string/callsettings_int_call_svc_auto" android:dialogTitle="@string/callsettings_int_call_svc_title" />
+    <ListPreference android:entries="@array/voicecall_type_entries" android:title="@string/voicecall_type_title" android:key="voicecall_type" android:summary="@string/voicecall_type_summary" android:defaultValue="1" android:entryValues="@array/voicecall_type_values" />
+    <PreferenceScreen android:title="@string/kt_hd_voice_setting_title" android:key="kt_hd_voice_setting_preference" android:summary="@string/kt_hd_voice_setting_summary" android:fragment="com.android.phone.KTHDVoiceSetting" />
+    <CheckBoxPreference android:title="@string/menu_volteNoti" android:key="volte_noti_preference" android:summary="@string/summary_volteNoti" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:title="@string/callsettings_menu_volte_instant_lettering" android:key="volte_instant_lettering_preference" android:summary="@string/callsettings_summary_volte_instant_lettering" android:fragment="com.android.phone.callsettings.InstantLettering" />
+    <ListPreference android:entries="@array/kt_oneline_greeting_entries" android:title="@string/kt_oneline_greeting_title" android:key="kt_oneline_greeting" android:summary="@string/kt_oneline_greeting_summary" android:defaultValue="1" android:entryValues="@array/kt_oneline_greeting_values" />
+    <PreferenceScreen android:title="@string/callsettings_call_answer_end_title" android:key="call_answer_preference" android:fragment="com.android.phone.callsettings.AnsweringCall" />
+    <PreferenceScreen android:title="@string/callsettings_ans_memo_title" android:key="button_ans_memo_key" android:summary="@string/callsettings_ans_memo_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.answeringmemo.AnsweringMemoSettings" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/menu_activateProximitySensor" android:key="proximity_sensor_preference" android:summary="@string/summary_activateProximitySensor" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:title="@string/callsettings_popup_title" android:key="call_related_popup_preference" android:fragment="com.android.phone.callsettings.CallPopUp" />
+    <CheckBoxPreference android:title="@string/callsettings_second_screen_calls_title" android:key="second_screen_preference" android:summary="@string/callsettings_second_screen_calls_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/callsettings_popup_incoming_calls" android:key="call_popup_preference" android:summary="@string/callsettings_popup_incoming_calls_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/incall_overlay_popup_title" android:key="call_overlay_popup_preference" android:summary="@string/incall_overlay_popup_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" android:titleContentDescription="@string/incall_overlay_popup_title_tts" />
+    <CheckBoxPreference android:title="@string/callsettings_caller_info_card_title" android:key="caller_info_card_preference_key" android:summary="@string/callsettings_caller_info_card_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:titleContentDescription="@string/callsettings_caller_info_card_title_tts" />
+    <PreferenceScreen android:title="@string/callsettings_call_alert_title" android:key="call_alert_preference" android:fragment="com.android.phone.callsettings.CallAlert" />
+    <com.android.phone.callsettings.PowerKeyEndPreference android:title="@string/callsettings_PowerkeyEndsCalls_title" android:key="powerkey_end_preference" android:summary="@string/callsettings_PowerkeyEndsCalls_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:title="@string/callsettings_accessory_title" android:key="callsettings_accessory" android:fragment="com.android.phone.callsettings.AccessorySettings" />
+    <CheckBoxPreference android:title="@string/menu_call_protection" android:key="voicecall_protection_preference" android:summary="@string/summary_call_protection" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_cdma_voicecall_forwarding">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CdmaCallForwardOptions" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/labelCF" android:key="us_cdma_voicecall_forwarding" android:summary="@string/labelCF" android:fragment="com.android.phone.callsettings.UsCdmaCallForwarding" />
+    <Preference android:persistent="false" android:key="wifi_calling_holder_key" />
+    <Preference android:persistent="false" android:key="wfc_settings_holder_key" />
+    <PreferenceScreen android:title="@string/callsettings_number_region" android:key="numberregion_list_preference" android:summary="@string/callsettings_pnl_sub_text" android:fragment="com.android.phone.callsettings.PhoneNumberLocator" />
+    <PreferenceScreen android:persistent="false" android:title="@string/additional_gsm_call_settings" android:key="button_more_expand_key" android:fragment="com.android.phone.GsmUmtsAdditionalCallOptions" />
+    <PreferenceScreen android:persistent="false" android:title="@string/additional_gsm_call_settings" android:key="button_cdma_additional_more_expand_key" android:fragment="com.android.phone.CdmaAdditionalCallOptions" />
+    <PreferenceScreen android:title="@string/callsettings_allcalls_nwservice" android:key="network_service_key" android:summary="@string/callsettings_allcalls_nwservice_sub_text">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.NetworkServiceActivity" />
+    </PreferenceScreen>
+    <CheckBoxPreference android:title="@string/menu_callerID_KDDI" android:key="button_clir_key" android:summary="@string/labelCallerId_KDDI" android:defaultValue="true" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_additional_service" android:key="button_kt_additional_service" android:fragment="com.android.phone.KTAddedServiceActivity" />
+    <PreferenceCategory android:persistent="false" android:title="@string/category_soundSettings" android:key="button_soundsetting_category_key" style="@style/PreferenceCategory">
+        <PreferenceScreen android:title="@string/callsettings_ringtones_keytones_title" android:key="button_ringtone_keytone_key" android:fragment="com.android.phone.callsettings.RingtoneKeytoneSettings" />
+        <com.android.phone.InCallSoundEQListPreference android:entries="@array/voicecall_eq_list_entries" android:title="@string/personalize_call_sound" android:key="callsettings_incallsound_eqlist_pref" android:dialogTitle="@string/personalize_call_sound" android:entryValues="@array/voicecall_eq_list_values" />
+        <PreferenceScreen android:title="@string/personalised_eq_dialog_title" android:key="callsettings_incallsound_eq" android:fragment="com.android.phone.callsettings.InCallSoundEQPreference" />
+        <CheckBoxPreference android:title="@string/callsettings_natural_sound_title" android:key="button_natural_sound_key" android:summary="@string/callsettings_natural_sound_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/callsettings_noise_reduction_title" android:key="button_noise_reduction_key" android:summary="@string/callsettings_noise_reduction_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/menu_extraRinger" android:key="extra_ringtone_preference" android:summary="@string/summary_extraRinger" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/menu_extraVol" android:key="showing_extra_vol_preference" android:summary="@string/summary_extraVol" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/category_videoCallSettings" android:key="button_videocall_category_key" style="@style/PreferenceCategory">
+        <PreferenceScreen android:enabled="true" android:title="@string/menu_videocallImage" android:key="preset_image" android:summary="@string/summary_videocallImage" android:fragment="com.android.phone.callsettings.PresetImage" />
+        <CheckBoxPreference android:title="@string/menu_ownVideoInReceivedCall" android:key="showme_preference" android:summary="@string/summary_ownVideoInReceivedCall" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/menu_useCallFailOption" android:key="failoption_preference" android:summary="@string/summary_useCallFailOption" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/toggle_videocall_title" android:key="toggle_videocall" android:summary="@string/videocall_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:titleContentDescription="@string/toggle_videocall_title" />
+        <CheckBoxPreference android:title="@string/toggle_videocall_mode_title" android:key="toggle_videocall_mode" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:summaryOn="@string/videocall_mode_on" android:summaryOff="@string/videocall_mode_off" />
+        <PreferenceScreen android:enabled="true" android:title="@string/menu_captureImageViewer" android:key="capture_imageviwer_preference" android:summary="@string/summary_captureImageViewer" android:fragment="com.android.phone.callsettings.CaptureImageViewer" />
+        <CheckBoxPreference android:title="@string/videocallmessage_title" android:key="videocall_message" android:summary="@string/videocallmessage_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/toggle_videocall_speaker" android:key="toggle_videocall_speaker" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:summaryOn="@string/videocall_speaker_on" android:summaryOff="@string/videocall_speaker_off" />
+        <CheckBoxPreference android:title="@string/toggle_videocall_indicator" android:key="toggle_videocall_indicator" android:summary="@string/videocall_indicator_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/menu_emotionalEyeContact" android:key="emotionalEyeContact_preference" android:summary="@string/summary_emotionalEyeContact" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <PreferenceScreen android:title="@string/menu_useCallFailOption" android:key="failoption_list_preference" android:summary="@string/videocall_list_3_option_2" />
+        <CheckBoxPreference android:title="@string/videocall_list_6" android:key="automaticaccept_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:summaryOn="@string/automatic_accept_enabled" android:summaryOff="@string/automatic_accept_disabled" />
+        <ListPreference android:entries="@array/image_quality_entries" android:title="@string/menu_image_quality" android:key="vidoe_call_image_quality" android:summary="@string/summury_image_quality" android:defaultValue="1" android:dialogTitle="@string/dialog_image_quality" android:entryValues="@array/image_quality_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/eSurfing_dailup_title" android:key="button_esurfing_dialup_key">
+        <CheckBoxPreference android:title="@string/eSurfing_dailup_title" android:key="button_esurfing_dialup_setting_key" android:summary="@string/eSurfing_dailup_noti2" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <PreferenceScreen android:title="@string/eSurfing_dailup_help_title" android:key="button_esurfing_dialup_help_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/ip_call_settings" android:key="button_ipcall_category_key">
+        <PreferenceScreen android:title="@string/ip_call_list" android:key="call_ipcall_preference" android:summary="@string/manage_ip_call_list" android:fragment="com.android.phone.callsettings.IpCall" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/delete_prefix_settings" android:key="button_deleteprefix_category_key">
+        <com.android.phone.callsettings.CallSettingsSwitchPreference android:title="@string/delete_prefix_list" android:key="call_deleteprefix_preference" android:summary="@string/manage_delete_prefix_list" android:fragment="com.android.phone.callsettings.DeletePrefix" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/video_call" android:key="video_call_setting_category_key" style="@style/PreferenceCategory">
+        <CheckBoxPreference android:title="@string/volte_videocall_enable_title" android:key="volte_videocall_enable" android:summary="@string/volte_videocall_enable_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_category_key" style="@style/PreferenceCategory">
+        <ListPreference android:persistent="true" android:title="@string/voicemail_provider" android:key="button_voicemail_provider_key" android:summary="@string/sum_voicemail_choose_provider" android:defaultValue="" />
+        <PreferenceScreen android:persistent="false" android:title="@string/voicemail_settings" android:key="button_voicemail_setting_key" android:fragment="com.android.phone.VoicemailNumberFragment">
+            <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/voicemail_settings_number_label" android:key="button_voicemail_key" android:dialogTitle="@string/voicemail" phone:confirmMode="confirm" />
+        </PreferenceScreen>
+        <RingtonePreference android:persistent="true" android:title="@string/voicemail_notification_ringtone_title" android:key="button_voicemail_notification_ringtone_key" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/voicemail_notification_vibrate_when_title" android:key="button_voicemail_notification_vibrate_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:titleContentDescription="@string/voicemail_notification_vibrate_when_title" />
+        <RingtonePreference android:persistent="true" android:title="@string/voicemail_notification_ringtone_title" android:key="button_voicemail_notification_ringtone_key_sim2" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/voicemail_notification_vibrate_when_title" android:key="button_voicemail_notification_vibrate_key_sim2" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_category_key_duos">
+        <PreferenceScreen android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_key_duos" android:fragment="com.android.phone.callsettings.CallSettingsTabFragment" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/other_settings" android:key="button_misc_category_key" />
+    <CheckBoxPreference android:title="@string/zz_country_code_dialing_title" android:key="toggle_country_name" android:summary="@string/zz_country_name_toggle_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" android:disableDependentsState="true" />
+    <EditTextPreference android:singleLine="true" android:maxLength="10" android:phoneNumber="true" android:title="@string/zz_country_code_name" android:key="country_code" android:summary="@string/zz_country_code_summary" android:dependency="toggle_country_name" android:dialogTitle="@string/zz_country_code_name" />
+    <PreferenceScreen android:persistent="false" android:title="@string/assisted_dialing_reference_country_list" android:key="assisted_dialing_current_country_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.AssistedDialingCurrentCountyActivity" />
+    </PreferenceScreen>
+    <com.android.phone.callsettings.CallSettingsSwitchPreference android:title="@string/assisted_dialing" android:key="assisted_dialing_switch" android:summary="@string/assisted_dialing_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.AssistedDialingActivity" />
+    </com.android.phone.callsettings.CallSettingsSwitchPreference>
+    <CheckBoxPreference android:persistent="false" android:title="@string/auto_retry_mode_title" android:key="button_auto_retry_key" android:summary="@string/auto_retry_mode_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:persistent="false" android:entries="@array/tty_mode_entries" android:title="@string/tty_mode_option_title" android:key="button_tty_mode_key" android:summary="@string/tty_mode_option_summary" android:entryValues="@array/tty_mode_values" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/hac_mode_title" android:key="button_hac_key" android:summary="@string/hac_mode_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:entries="@array/dtmf_tone_entries" android:title="@string/dtmf_tones_title" android:key="button_dtmf_settings" android:summary="@string/dtmf_tones_summary" android:entryValues="@array/dtmf_tone_values" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/ddtm_mode_option_title" android:key="button_ddtm_mode_key" android:summary="@string/ddtm_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:persistent="false" android:title="@string/vvm_settings" android:key="button_vvm_setting_key" android:summary="@string/vvm_settings_summary">
+        <intent android:action="com.coremobility.app.vnotes.action.LAUNCH_SETTINGS" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/labelGSMMore" android:key="button_gsm_more_expand_key" android:summary="@string/sum_gsm_call_settings">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.GsmUmtsCallOptions" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCDMAMore" android:key="button_cdma_more_expand_key" android:summary="@string/sum_cdma_call_settings">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.CdmaCallOptions" />
+    </PreferenceScreen>
+</PreferenceScreen>

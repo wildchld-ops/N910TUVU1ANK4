@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/custom_dialog_warning_textView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/callsettings_voice_cmd_popup" android:singleLine="false" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" android:layout_marginEnd="@dimen/tw_pop_up_dialog_margin_right" style="@style/voiceCommandTextStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/custom_dialog_warning_textView_for_waterproof" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:text="@string/callsettings_voice_cmd_popup_for_waterproof" android:singleLine="false" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" android:layout_marginEnd="@dimen/tw_pop_up_dialog_margin_right" style="@style/voiceCommandTextStyle" />
+        <CheckBox android:id="@id/checkBox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tw_pop_up_dialog_margin_top" android:layout_marginBottom="@dimen/tw_pop_up_dialog_margin_bottom" android:text="@string/callsettings_do_not_show_again" android:paddingStart="8.0dip" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" android:layout_marginEnd="@dimen/tw_pop_up_dialog_margin_right" style="@style/voiceCommandTextStyle" />
+    </LinearLayout>
+</ScrollView>

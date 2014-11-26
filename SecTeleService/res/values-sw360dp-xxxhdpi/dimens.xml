@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="emergency_dialpad_button_margin">2.0dip</dimen>
+    <dimen name="emergency_dialpad_height">69.0dip</dimen>
+    <dimen name="list_divider_margin_left">12.0dip</dimen>
+    <dimen name="tw_pop_up_dialog_padding_top">22.0dip</dimen>
+    <dimen name="tw_pop_up_dialog_padding_bottom">22.0dip</dimen>
+    <dimen name="tw_pop_up_dialog_padding_left">21.0dip</dimen>
+    <dimen name="tw_pop_up_dialog_padding_right">21.0dip</dimen>
+    <dimen name="tw_pop_up_dialog_text_margin_bottom">4.0dip</dimen>
+    <dimen name="land_column_width">154.0dip</dimen>
+    <dimen name="land_horizon_space">5.0dip</dimen>
+    <dimen name="land_vertical_space">8.0dip</dimen>
+    <dimen name="land_left_margin">4.5dip</dimen>
+    <dimen name="land_top_margin">8.0dip</dimen>
+    <dimen name="land_right_margin">4.5dip</dimen>
+    <dimen name="land_bottom_margin">0.0dip</dimen>
+    <dimen name="gridview_preset_marginTop">-56.0dip</dimen>
+    <dimen name="custom_actionbar_divider_width">1.0dip</dimen>
+    <dimen name="custom_actionbar_divider_height">26.0dip</dimen>
+    <dimen name="fdnlist_height">58.0dip</dimen>
+    <dimen name="emergency_dialpad_onehand_height">244.0dip</dimen>
+    <dimen name="emergency_dialer_onehand_dialpad_height">236.0dip</dimen>
+    <dimen name="emergency_dialer_onehand_dialpad_margin_bottom">48.0dip</dimen>
+    <dimen name="autorejectlist_height">58.0dip</dimen>
+    <dimen name="autoreject_item_height">87.0dip</dimen>
+    <dimen name="autoreject_item_padding_bottom">8.0dip</dimen>
+    <dimen name="autoreject_item_padding_start">16.0dip</dimen>
+    <dimen name="autoreject_item_padding_end">12.0dip</dimen>
+    <dimen name="autoreject_item_edittext_margin_top">5.0dip</dimen>
+    <dimen name="rejectionmessage_height">51.0dip</dimen>
+    <dimen name="carmode_reject_videocall_icon_height">86.0dip</dimen>
+    <dimen name="carmode_reject_videocall_text">210.0dip</dimen>
+    <dimen name="carmode_reject_event_width">234.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_00c4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00e8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00e9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ea">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00eb">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ec">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ed">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ee">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ef">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f1">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f2">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f3">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00f9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00fa">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00fb">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00fc">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00fd">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00fe">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ff">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0100">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0101">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0102">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0103">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0104">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0105">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0106">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0107">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0108">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0109">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_010a">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_010b">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_010c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_010d">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_010e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_010f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0110">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0111">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0112">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0113">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0114">false</item>
+</resources>

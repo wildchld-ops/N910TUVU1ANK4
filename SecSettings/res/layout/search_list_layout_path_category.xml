@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/path_catgory" android:background="@drawable/search_path_category_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/grid_settings_expandable_category_min_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/grid_settings_expandable_category_text_size" android:textColor="@color/grid_settings_expandable_category_text_color" android:gravity="center_vertical" android:id="@id/path_category_text_view" android:paddingLeft="@dimen/grid_settings_expandable_category_text_left_padding" android:paddingRight="@dimen/grid_settings_expandable_category_text_left_padding" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

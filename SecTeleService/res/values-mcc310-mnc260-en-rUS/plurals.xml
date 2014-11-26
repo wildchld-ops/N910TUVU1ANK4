@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="alert_dialog_exit_ecm">
+        <item quantity="other">Device will be in Emergency callback mode for %s minutes. Applications using data connection cannot be used while in this mode. Exit now?</item>
+        <item quantity="one">Unable to use data connection for applications. Device will be in Emergency callback mode for %s minutes while in this mode. Exit now?</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <item quantity="other">Selected action not available in Emergency callback mode. Device will be in this mode for %s minutes. Exit now?</item>
+        <item quantity="one">Selected action not available in Emergency callback mode. Device will be in this mode for %s minutes. Exit now?</item>
+    </plurals>
+</resources>

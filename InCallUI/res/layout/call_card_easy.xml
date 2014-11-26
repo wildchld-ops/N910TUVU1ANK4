@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/call_card" android:layout_width="fill_parent" android:layout_height="@dimen/call_card_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/primary_call_info" layout="@layout/primary_call_info" />
+    <ViewStub android:id="@id/caller_info_card" android:layout="@layout/caller_info_card_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="123.0dip" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/swap_call" android:layout="@layout/swap_bg_call" android:layout_width="fill_parent" android:layout_height="@dimen/secondary_call_info_height_cdma" />
+    </LinearLayout>
+</FrameLayout>

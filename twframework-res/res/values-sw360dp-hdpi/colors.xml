@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tw_index_scroll_popup_text_color">#ff2fa6c9</color>
+    <color name="tw_index_scroll_popup_text_color_dimmed">#ff5e6e7a</color>
+    <color name="tw_index_scroll_index_text_color">#80d3e2e8</color>
+    <color name="tw_index_scroll_index_text_color_pressed">#ff2fa6c9</color>
+    <color name="tw_index_scroll_index_text_color_dimmed">#80d3e2e8</color>
+    <color name="tw_index_scroll_index_second_depth_text_color">#80d3e2e8</color>
+    <color name="tw_index_scroll_index_second_depth_text_color_pressed">#ff2fa6c9</color>
+    <color name="tw_index_scroll_index_second_depth_text_color_dimmed">#80d3e2e8</color>
+    <color name="tw_index_scroll_index_divider_color">#ff565f6a</color>
+    <color name="tw_index_scroll_index_divider_color_dimmed">#ff565f6a</color>
+    <color name="tw_index_scroll_popup_text_color_light">#ff007ad2</color>
+    <color name="tw_index_scroll_popup_text_color_dimmed_light">#ff5e6e7a</color>
+    <color name="tw_index_scroll_index_text_color_light">#80000000</color>
+    <color name="tw_index_scroll_index_text_color_pressed_light">#ff007ad2</color>
+    <color name="tw_index_scroll_index_text_color_dimmed_light">#80000000</color>
+    <color name="tw_index_scroll_index_second_depth_text_color_light">#80000000</color>
+    <color name="tw_index_scroll_index_second_depth_text_color_pressed_light">#ff007ad2</color>
+    <color name="tw_index_scroll_index_second_depth_text_color_dimmed_light">#80000000</color>
+    <color name="tw_index_scroll_index_divider_color_light">#ffb1b1b1</color>
+    <color name="tw_index_scroll_index_divider_color_light_dimmed">#ffb1b1b1</color>
+</resources>

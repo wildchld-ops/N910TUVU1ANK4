@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_header_create" />
+    <include layout="@layout/list_header" />
+    <FrameLayout android:id="@id/deleteprefix_empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/empty" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="116.0dip" android:layout_height="116.0dip" android:src="@drawable/noitems_text_based" android:scaleType="fitXY" />
+            <TextView android:textSize="24.0dip" android:textColor="@color/call_setting_empty_data_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/callsettings_noitem" />
+        </LinearLayout>
+    </FrameLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

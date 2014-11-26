@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="46.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:background="@drawable/tw_searchfiled_background_holo_dark" android:clickable="true" android:layout_width="217.0dip" android:layout_height="36.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="6.0dip" android:layout_weight="1.0" android:layout_marginEnd="3.0dip">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/find_search_icon" android:visibility="visible" android:layout_width="22.0dip" android:layout_height="36.0dip" android:layout_marginLeft="8.0dip" android:src="@drawable/tw_ic_search" />
+            <TextView android:textSize="@dimen/webview_find_edit_textSize" android:textColorHint="#7fffffff" android:layout_gravity="center_vertical" android:id="@id/find_hint" android:visibility="visible" android:layout_width="4.0dip" android:layout_height="wrap_content" android:layout_marginLeft="9.0dip" android:hint="@string/find_on_page" android:maxLength="@integer/config_findOnPageMaxLength" android:layout_weight="1.0" android:imeOptions="actionDone|flagNoFullscreen|flagNoExtractUi" android:layout_marginEnd="@dimen/webview_find_edit_marginEnd" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <EditText android:textSize="@dimen/webview_find_edit_textSize" android:textColor="?actionMenuTextColor" android:layout_gravity="center_vertical" android:id="@id/edit" android:background="@color/transparent" android:layout_width="4.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:scrollHorizontally="true" android:maxLength="@integer/config_findOnPageMaxLength" android:layout_weight="1.0" android:inputType="text" android:imeOptions="actionDone|flagNoFullscreen|flagNoExtractUi" android:layout_marginEnd="@dimen/webview_find_edit_marginEnd" />
+        </LinearLayout>
+    </FrameLayout>
+    <TextView android:textAppearance="?textAppearanceSmall" android:textSize="@dimen/webview_find_match_textSize" android:textColor="?actionMenuTextColor" android:layout_gravity="center_vertical" android:id="@id/matches" android:paddingLeft="6.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="0/0" android:shadowColor="#bf000000" android:shadowDy="1.0" />
+</LinearLayout>

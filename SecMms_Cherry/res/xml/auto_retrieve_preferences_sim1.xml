@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval_sim1" android:summary="@string/pref_summary_mms_auto_retrieval" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_auto_retrieval_during_roaming_sim1" android:summary="@string/pref_summary_mms_retrieval_during_roaming" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_mms_auto_retrieval_sim1" />
+</PreferenceScreen>

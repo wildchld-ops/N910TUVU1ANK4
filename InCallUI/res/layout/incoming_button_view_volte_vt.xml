@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/incomingButtonViewForVoLteVT" android:paddingBottom="64.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/inCallScreenButtonsContainer" android:layout_width="200.0dip" android:layout_height="181.0dip" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="8.0dip" android:splitMotionEvents="false">
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/incoming_buttton_view_driving_mode_text_color" android:id="@id/acceptVoiceButton" android:background="@drawable/driving_call_btn_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/accep_voice" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="8.0dip" android:splitMotionEvents="false">
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/incoming_buttton_view_driving_mode_text_color" android:id="@id/acceptVideoButton" android:background="@drawable/driving_call_btn_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/accep_video" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:splitMotionEvents="false">
+            <Button android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/incoming_buttton_view_driving_mode_text_color" android:id="@id/vtRejectButton" android:background="@drawable/driving_call_btn_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/incoming_reject" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

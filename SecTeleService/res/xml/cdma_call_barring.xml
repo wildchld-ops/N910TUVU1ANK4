@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/callsettings_call_barring"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <ListPreference android:entries="@array/cb_outgoing_entries" android:title="@string/cb_outgoing_title" android:key="button_outgoing_key" android:summary="@string/cb_outgoing_title" android:defaultValue="0" android:entryValues="@array/cb_outgoing_values" />
+    <ListPreference android:entries="@array/cb_incoming_entries" android:title="@string/cb_incoming_title" android:key="button_incoming_key" android:summary="@string/cb_incoming_title" android:defaultValue="0" android:entryValues="@array/cb_incoming_values" />
+    <com.android.phone.EditPinPreference android:persistent="false" android:title="@string/callbarring_change_password_title" android:key="button_cbpasswd_key" android:summary="@string/callbarring_change_password" android:defaultValue="" android:dialogTitle="@string/callbarring_input_password" />
+</PreferenceScreen>

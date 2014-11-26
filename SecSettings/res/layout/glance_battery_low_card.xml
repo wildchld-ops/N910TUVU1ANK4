@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="136.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/glance_card_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:text="@string/battery_low" style="@style/Glance_card_title" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/battery_low_powersaving" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_settings_powersaving" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/power_saving_mode_title" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/battery_low_wifi" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_settings_wireless" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/wifi_settings" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/battery_low_battery" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_settings_battery" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/power_usage_summary_title" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/battery_low_mobile_data" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_settings_mobiledata" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/data_usage_enable_mobile" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/battery_low_brightness" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_settings_display" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/brightness" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/battery_low_screen_timeout" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_sttings_screen_timeout" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/screen_timeout" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/battery_low_air_view" style="@style/Glance_card_item">
+                <ImageView android:src="@drawable/ic_settings_air_view" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/air_view_title" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

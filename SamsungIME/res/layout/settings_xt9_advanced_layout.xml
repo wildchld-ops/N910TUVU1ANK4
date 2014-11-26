@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/use_xt9" android:key="xt9_advanced_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_word_completion" android:key="SETTINGS_DEFAULT_WORDCOMPLETION" android:summary="@string/word_completion_summary" android:defaultValue="true" />
+    <ListPreference android:persistent="true" android:entries="@array/word_completion_point_unit" android:title="@string/word_completion_point" android:key="SETTINGS_DEFAULT_WORDCOMPLETIONPOINT" android:widgetLayout="@layout/settings_preference_layout" android:dependency="SETTINGS_DEFAULT_WORDCOMPLETION" android:defaultValue="2" android:dialogTitle="@string/word_completion_point" android:entryValues="@array/word_completion_point_values" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_spell_correction" android:key="SETTINGS_DEFAULT_SPELLCORRECTION" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_next_word_prediction" android:key="SETTINGS_DEFAULT_NEXTWORDPREDICTION" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_append" android:key="SETTINGS_DEFAULT_AUTOAPPEND" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_substitution" android:key="SETTINGS_DEFAULT_AUTOSUBSTITUTION" android:summary="@string/auto_substitution_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_regional_correction" android:key="SETTINGS_DEFAULT_REGIONALCORRECTION" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_recapture" android:key="SETTINGS_DEFAULT_RECAPTURE" android:summary="@string/recapture_summary" android:defaultValue="false" />
+    <Preference android:title="@string/xt9_auto_substitution" android:key="auto_substitution">
+        <intent android:action="com.diotek.ime.implement.setting.XT9_AUTO_SUBSTITUTIONS" />
+    </Preference>
+</PreferenceScreen>

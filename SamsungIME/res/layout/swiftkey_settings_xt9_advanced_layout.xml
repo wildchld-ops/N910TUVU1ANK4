@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/use_xt9" android:key="xt9_advanced_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_correction" android:key="SETTINGS_DEFAULT_AUTO_CORRECTION" android:summary="@string/use_auto_correction_summary" android:defaultValue="false" />
+    <Preference android:title="Personalization" android:key="personalization">
+        <intent android:action="com.diotek.ime.implement.setting.PERSONALIZATIONSETTING" />
+    </Preference>
+</PreferenceScreen>

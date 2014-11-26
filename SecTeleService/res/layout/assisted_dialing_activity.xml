@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/assisted_dialing_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/assisted_dialing_reference_country" android:key="button_current_country_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.AssistedDialingList" />
+    </PreferenceScreen>
+    <PreferenceCategory android:persistent="false" android:title="@string/assisted_dialing_set_details" android:key="assisted_dialing_setdetails_category_key" style="@style/PreferenceCategory">
+        <EditTextPreference android:singleLine="true" android:maxLength="10" android:phoneNumber="true" android:title="@string/assisted_dialing_country_code" android:key="country_code" android:dialogTitle="@string/assisted_dialing_country_code" />
+        <EditTextPreference android:singleLine="true" android:maxLength="10" android:phoneNumber="true" android:title="@string/assisted_dialing_IDD" android:key="IDD_prefix" android:dialogTitle="@string/assisted_dialing_IDD" />
+        <EditTextPreference android:singleLine="true" android:maxLength="10" android:phoneNumber="true" android:title="@string/assisted_dialing_NDD" android:key="NDD_prefix" android:dialogTitle="@string/assisted_dialing_NDD" />
+        <EditTextPreference android:singleLine="true" android:maxLength="10" android:phoneNumber="true" android:title="@string/assisted_dialing_area_code" android:key="Area_city_code" android:dialogTitle="@string/assisted_dialing_area_code" />
+        <EditTextPreference android:singleLine="true" android:maxLength="10" android:phoneNumber="true" android:title="@string/assisted_dialing_national_number_length" android:key="National_number_length" android:summary="@string/assisted_dialing_set_length" android:dialogTitle="@string/assisted_dialing_national_number_length" />
+    </PreferenceCategory>
+</PreferenceScreen>

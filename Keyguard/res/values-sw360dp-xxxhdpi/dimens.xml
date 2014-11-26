@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="kg_status_line_font_size">17.0dip</dimen>
+    <dimen name="kg_widget_pager_bottom_padding">167.0dip</dimen>
+    <dimen name="keyguard_security_width">360.0dip</dimen>
+    <dimen name="keyguard_security_height">400.0dip</dimen>
+    <dimen name="keyguard_security_view_margin">0.0dip</dimen>
+    <dimen name="keyguard_avatar_frame_stroke_width">1.0dip</dimen>
+    <dimen name="keyguard_lockscreen_first_border">144.0dip</dimen>
+    <dimen name="keyguard_lockscreen_second_border">216.0dip</dimen>
+    <dimen name="kg_emergency_button_font_size">18.0dip</dimen>
+    <dimen name="overlay_bubble_width">320.0dip</dimen>
+    <dimen name="overlay_bubble_padding">20.0dip</dimen>
+    <dimen name="overlay_indicate_width">350.0dip</dimen>
+    <dimen name="overlay_indicate_unlock_height">413.0dip</dimen>
+    <dimen name="overlay_indicate_widget_height">190.0dip</dimen>
+    <dimen name="overlay_indicate_padding">5.0dip</dimen>
+    <dimen name="overlay_text_padding">10.0dip</dimen>
+    <dimen name="overlay_text_padding_top">10.0dip</dimen>
+    <dimen name="overlay_bubble_text_size">18.0dip</dimen>
+    <dimen name="overlay_button_height">34.0dip</dimen>
+    <dimen name="overlay_button_margin_side">2.0dip</dimen>
+    <dimen name="overlay_button_text_size">17.0dip</dimen>
+    <dimen name="overlay_button_padding_bottom">1.0dip</dimen>
+    <dimen name="overlay_first_view_height">222.0dip</dimen>
+    <dimen name="overlay_statusbar_area">32.0dip</dimen>
+    <dimen name="overlay_checkbox_size">30.0dip</dimen>
+    <dimen name="overlay_checkbox_total_height">48.0dip</dimen>
+    <dimen name="overlay_checkbox_margin_left">10.0dip</dimen>
+    <dimen name="overlay_checkbox_text_margin_right">5.0dip</dimen>
+    <dimen name="keyguard_guest_avatar_size">56.0dip</dimen>
+    <dimen name="kg_widget_dual_ampm_text_size">12.0dip</dimen>
+    <dimen name="kg_widget_common_date_text_size">16.0dip</dimen>
+    <dimen name="kg_singleclock_margin_top">6.0dip</dimen>
+    <dimen name="kg_dualclock_margin_top">17.0dip</dimen>
+    <dimen name="kg_dualclock_margin_left">35.0dip</dimen>
+    <dimen name="kg_dualclock_margin_right">0.0dip</dimen>
+    <dimen name="kg_dualclock_roaming_locale_text_margin_left">20.0dip</dimen>
+    <dimen name="kg_dualclock_home_locale_text_margin_left">9.0dip</dimen>
+    <dimen name="kg_dualclock_locale_text_size">17.0dip</dimen>
+    <dimen name="kg_owner_text_size">16.0dip</dimen>
+    <dimen name="kg_secureview_edittext_margin_bottom">4.0dip</dimen>
+    <dimen name="kg_status_line_button_font_size">18.0dip</dimen>
+    <dimen name="kg_spass_unlock_animation_margin_bottom_attribution">20.0dip</dimen>
+    <dimen name="kg_spass_unlock_animation_margin_bottom_normal">10.0dip</dimen>
+    <dimen name="kg_weather_unit_margin_top">-4.0dip</dimen>
+    <dimen name="securityview_overlay_bottom_margin">25.0dip</dimen>
+    <dimen name="securityview_overlay_bottom_margin_pattern">20.0dip</dimen>
+    <dimen name="securityview_overlay_carrier_text_min_width">204.0dip</dimen>
+    <dimen name="overlay_button_margin_top">13.0dip</dimen>
+    <dimen name="kg_message_area_top_margin">2.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_00c0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c3">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00c9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_00ca">false</item>
+</resources>

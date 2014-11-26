@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/japanese_phonepad_key_width" android:keyHeight="@dimen/japanese_phonepad_key_height" android:horizontalGap="@dimen/japanese_phonepad_key_horizontal_gap" android:verticalGap="@dimen/japanese_phonepad_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/japanese_phonepad_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-260" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_reverse_xml" />
+        <Key android:codes="12354,12356,12358,12360,12362,12353,12355,12357,12359,12361,49" android:iconPreview="@drawable/jp_preview_flick_01" android:keyLabel="あ" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12363,12365,12367,12369,12371,50" android:iconPreview="@drawable/jp_preview_flick_02" android:keyLabel="か" />
+        <Key android:codes="12373,12375,12377,12379,12381,51" android:iconPreview="@drawable/jp_preview_flick_03" android:keyLabel="さ" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="12290,12289,65311,65281" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_url02" />
+        <Key android:codes="12383,12385,12388,12390,12392,12387,52" android:iconPreview="@drawable/jp_preview_flick_04" android:keyLabel="た" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12394,12395,12396,12397,12398,53" android:iconPreview="@drawable/jp_preview_flick_05" android:keyLabel="な" />
+        <Key android:codes="12399,12402,12405,12408,12411,54" android:iconPreview="@drawable/jp_preview_flick_06" android:keyLabel="は" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="12290,12289,65311,65281" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_url02" />
+        <Key android:codes="12383,12385,12388,12390,12392,12387,52" android:iconPreview="@drawable/jp_preview_flick_04" android:keyLabel="た" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12394,12395,12396,12397,12398,53" android:iconPreview="@drawable/jp_preview_flick_05" android:keyLabel="な" />
+        <Key android:codes="12399,12402,12405,12408,12411,54" android:iconPreview="@drawable/jp_preview_flick_06" android:keyLabel="は" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="64,46,59" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_email" />
+        <Key android:codes="12383,12385,12388,12390,12392,12387,52" android:iconPreview="@drawable/jp_preview_flick_04" android:keyLabel="た" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12394,12395,12396,12397,12398,53" android:iconPreview="@drawable/jp_preview_flick_05" android:keyLabel="な" />
+        <Key android:codes="12399,12402,12405,12408,12411,54" android:iconPreview="@drawable/jp_preview_flick_06" android:keyLabel="は" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="64,46,59" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_email" />
+        <Key android:codes="12383,12385,12388,12390,12392,12387,52" android:iconPreview="@drawable/jp_preview_flick_04" android:keyLabel="た" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12394,12395,12396,12397,12398,53" android:iconPreview="@drawable/jp_preview_flick_05" android:keyLabel="な" />
+        <Key android:codes="12399,12402,12405,12408,12411,54" android:iconPreview="@drawable/jp_preview_flick_06" android:keyLabel="は" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="46,47,58" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_url01" />
+        <Key android:codes="12383,12385,12388,12390,12392,12387,52" android:iconPreview="@drawable/jp_preview_flick_04" android:keyLabel="た" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12394,12395,12396,12397,12398,53" android:iconPreview="@drawable/jp_preview_flick_05" android:keyLabel="な" />
+        <Key android:codes="12399,12402,12405,12408,12411,54" android:iconPreview="@drawable/jp_preview_flick_06" android:keyLabel="は" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="46,47,58" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_url01" />
+        <Key android:codes="12383,12385,12388,12390,12392,12387,52" android:iconPreview="@drawable/jp_preview_flick_04" android:keyLabel="た" />
+        <Key android:codes="12394,12395,12396,12397,12398,53" android:iconPreview="@drawable/jp_preview_flick_05" android:keyLabel="な" />
+        <Key android:codes="12399,12402,12405,12408,12411,54" android:iconPreview="@drawable/jp_preview_flick_06" android:keyLabel="は" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-261" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_move_left_xml" />
+        <Key android:codes="12414,12415,12416,12417,12418,55" android:iconPreview="@drawable/jp_preview_flick_07" android:keyLabel="ま" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12420,12422,12424,12419,12421,12423,56" android:iconPreview="@drawable/jp_preview_flick_08" android:keyLabel="や" />
+        <Key android:codes="12425,12426,12427,12428,12429,57" android:iconPreview="@drawable/jp_preview_flick_09" android:keyLabel="ら" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-262" android:keyEdgeFlags="right" android:keyIcon="@drawable/phonepad_key_icon_move_right_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-263" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_small" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_half_key_width" android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_half_key_width" android:horizontalGap="@dimen/japanese_phonepad_half_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+        <Key android:codes="12431,12434,12435,12430,12540,48" android:iconPreview="@drawable/jp_preview_flick_00" android:keyLabel="わ" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-263" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_small" />
+        <Key android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12431,12434,12435,12430,12540,48" android:iconPreview="@drawable/jp_preview_flick_00" android:keyLabel="わ" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-263" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_small" />
+        <Key android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12431,12434,12435,12430,12540,48" android:iconPreview="@drawable/jp_preview_flick_00" android:keyLabel="わ" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-263" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_small" />
+        <Key android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_key_mid_row_width" android:codes="12431,12434,12435,12430,12540,48" android:iconPreview="@drawable/jp_preview_flick_00" android:keyLabel="わ" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-263" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_small" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_half_key_width" android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_half_key_width" android:horizontalGap="@dimen/japanese_phonepad_half_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+        <Key android:codes="12431,12434,12435,12430,12540,48" android:iconPreview="@drawable/jp_preview_flick_00" android:keyLabel="わ" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:horizontalGap="@dimen/japanese_phonepad_first_col_horizontal_gap" android:codes="-263" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonepad_key_icon_japanese_small" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_half_key_width" android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_half_key_width" android:horizontalGap="@dimen/japanese_phonepad_half_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+        <Key android:codes="12431,12434,12435,12430,12540,48" android:iconPreview="@drawable/jp_preview_flick_00" android:keyLabel="わ" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:keyWidth="@dimen/japanese_phonepad_function_key_width" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/japanese_phonepad_last_line_vertical_gap" />
+</Keyboard>

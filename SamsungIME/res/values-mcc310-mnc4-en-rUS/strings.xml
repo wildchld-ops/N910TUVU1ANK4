@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pinch_zoom_guide_moving_content">Touch and hold with two fingers, then drag to move keyboards</string>
+    <string name="tutorial_helptext_change_lang">The language button will appear when two or more languages are selected. Tap the language button to change language. Touch and hold the language button then select language on the pop-up.</string>
+    <string name="tutorial_helptext_multi_mode">Touch and hold the multi-mode icon to choose between voice, handwriting, clipboard, and keyboard settings. Keyboard settings is the default selection.</string>
+    <string name="tutorial_helptext_multi_mode_without_hwr">Touch and hold the multi-mode icon to select voice, clipboard, or keyboard settings. Keyboard settings is the default selection.</string>
+    <string name="tutorial_helptext_multi_mode_without_clipboard">Touch and hold the multi-mode icon to choose between voice, handwriting, and keyboard settings. Keyboard setting is the default selection.</string>
+    <string name="tutorial_helptext_additional_settings_for_floating">Touch and hold the voice button to select voice, Handwriting mode, the clipboard, keyboard settings, or to change keyboard</string>
+    <string name="tutorial_helptext_additional_settings_without_hwr">Touch and hold the voice button to choose between voice settings, the clipboard, and keyboard settings</string>
+    <string name="tutorial_helptext_additional_settings_for_floating_without_hwr">Touch and hold the voice button to select voice, the clipboard, keyboard settings, or to change keyboard</string>
+    <string name="tutorial_helptext_setting_key">Tap the settings button to open Settings menu for Samsung QWERTY keypad. Touch and hold the settings button to change input method.</string>
+    <string name="tutorial_helptext_customizable_key">Touch and hold the customizable key to select voice, handwriting, clipboard, keyboard settings, and punctuation marks</string>
+    <string name="tutorial_helptext_customizable_key_without_hwr">Touch and hold the customizable key to choose between voice settings, the clipboard, keyboard settings, and punctuation marks</string>
+    <string name="tutorial_helptext_customizable_key_for_floating_without_hwr">Touch and hold the customizable key to select voice, the clipboard, keyboard settings, punctuation marks, or to change keyboard</string>
+    <string name="tutorial_helptext_customizable_key_with_ocr">Touch and hold the customizable key to select voice, handwriting, text recognition, clipboard, keyboard settings, and punctuation marks</string>
+    <string name="tutorial_helptext_customizable_key_for_floating_with_ocr">Touch and hold the customizable key to select voice, handwriting, text recognition, the clipboard, keyboard settings, punctuation marks, or to change keyboard</string>
+    <string name="tutorial_helptext_customizable_key_with_ocr_without_hwr">Touch and hold the customizable key to select voice, text recognition, clipboard, keyboard settings, and punctuation marks</string>
+    <string name="hwr_gesture_guide_dont_show">Do not show again.</string>
+    <string name="settings_hold_delay_title">Touch and hold delay</string>
+</resources>

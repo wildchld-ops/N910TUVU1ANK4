@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/main_layout" android:background="@color/default_sms_info_bg_color" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/main_frame" android:background="@drawable/sms_popup_main_vzw_03_l" android:layout_width="292.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="43.0dip" android:textColor="@color/white" android:layout_gravity="center" android:id="@id/message_app_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="68.0dip" android:text="@string/app_label" android:shadowColor="@color/default_sms_popup_shadow_color_vzw" android:shadowDy="3.0" android:shadowRadius="1.0" style="@style/TextAppearanceNormal" />
+            <ImageView android:layout_gravity="center" android:id="@id/message_app_icon" android:layout_width="77.0dip" android:layout_height="77.0dip" android:src="@mipmap/ic_launcher_smsmms" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/button_layout" android:layout_width="348.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="27.0dip" android:textColor="@color/default_sms_info_main_text_color" android:gravity="center" android:id="@id/detail_info" android:layout_width="320.0dip" android:layout_height="wrap_content" android:maxHeight="130.0dip" android:minHeight="88.0dip" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/default_sms_info_request_text_color" android:gravity="center" android:id="@id/request_default" android:layout_width="320.0dip" android:layout_height="wrap_content" android:minHeight="85.0dip" android:text="@string/change_default_app_vzw" style="@style/TextAppearanceNormal" />
+            <Button android:textSize="21.0dip" android:textColor="@color/default_sms_info_button_color" android:id="@id/change_app" android:background="@drawable/defulat_sms_info_button_selector" android:layout_width="296.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" android:text="@string/yes_button" />
+            <Button android:textSize="21.0dip" android:textColor="@color/default_sms_info_button_color" android:id="@id/cancel" android:background="@drawable/defulat_sms_info_button_selector" android:layout_width="296.0dip" android:layout_height="40.0dip" android:layout_marginTop="8.0dip" android:text="@string/no_button" />
+        </LinearLayout>
+    </LinearLayout>
+</HorizontalScrollView>

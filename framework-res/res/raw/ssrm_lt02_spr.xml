@@ -1,0 +1,55 @@
+<LevelsModel>
+
+    <steps>
+        <step id="0" temp="400"/>
+        <step id="1" temp="410"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="LCDBrightness"/>
+    </writers>
+
+    <conditions>
+        <condition name="HeavyUser"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HeavyUser"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="LCDBrightness" value="217"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

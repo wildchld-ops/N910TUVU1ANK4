@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/security_settings_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/crypt_keeper_encrypt_title" android:key="encryption" android:summary="@string/crypt_keeper_encrypted_summary" />
+    <PreferenceScreen android:title="@string/sdcard_encrypt_title" android:key="sdEncpref" android:fragment="com.android.settings.encryption.CryptSDCardSettings" />
+    <Preference android:title="@string/remote_controls_mbody" android:key="remote_control" />
+    <Preference android:title="@string/change_sim_alert" android:key="SIMAlert" />
+    <Preference android:title="@string/go_to_samsungdive" android:key="go_to_samsungdive" />
+</PreferenceScreen>

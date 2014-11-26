@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:id="@id/downloadlanguagepopuptext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_hwr_install_guide_dialog_left_padding" android:layout_marginTop="@dimen/popup_hwr_install_guide_dialog_top_margin" android:layout_marginRight="@dimen/popup_hwr_install_guide_dialog_right_padding" android:layout_marginBottom="@dimen/popup_dialog_checkbox_top_margin" />
+        </LinearLayout>
+    </ScrollView>
+    <CheckBox android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/hwr_popup_guide_text_color" android:layout_gravity="center_vertical" android:id="@id/trace_popup_chk_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/popup_dialog_checkbox_left_padding" android:layout_marginRight="@dimen/popup_hwr_install_guide_dialog_right_padding" android:layout_marginBottom="@dimen/popup_hwr_install_guide_dialog_bottom_margin" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" android:paddingStart="@dimen/popup_dialog_checkbox_right_padding" />
+</LinearLayout>

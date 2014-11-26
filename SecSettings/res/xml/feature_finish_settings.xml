@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/pen_detachment_option_air_command" android:key="air_command" android:summary="@string/feature_settings_air_command_summary" />
+    <PreferenceScreen android:title="@string/pen_detachment_option_action_memo" android:key="action_memo" android:summary="@string/feature_settings_actionmemo_summary" />
+    <PreferenceScreen android:title="@string/feature_settings_scrapbook_title" android:key="scrapbook" android:summary="@string/feature_settings_scrapbook_summary_v2" />
+    <PreferenceScreen android:title="@string/feature_settings_sfinder_title" android:key="sfinder" android:summary="@string/feature_settings_sfinder_summary" />
+    <PreferenceScreen android:title="@string/air_turn_note_page_view_title_snote" android:key="snote" android:summary="@string/feature_settings_snote_summary" />
+    <PreferenceScreen android:title="@string/pen_settings_pen_input" android:key="direct_pen" android:summary="@string/pen_settings_pen_input_summary" />
+    <PreferenceScreen android:title="@string/multi_window_title" android:key="multi_window" android:summary="@string/multi_window_summary" />
+    <PreferenceScreen android:title="@string/feature_settings_mymagazine_title" android:key="mymagazine" android:summary="@string/feature_settings_mymagazine_summary" />
+</PreferenceScreen>

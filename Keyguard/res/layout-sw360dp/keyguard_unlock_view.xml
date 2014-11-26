@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.KeyguardUnlockView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/keyguard_unlock_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/lockscreen_unlock_guide_text_touch_exploration"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:androidprv="http://schemas.android.com/apk/res/com.android.keyguard">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/keyguard_securityview_area" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/keyguard_unlock_view_frame" android:background="#40ffffff" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="217.0dip" android:layout_marginBottom="43.0dip">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </FrameLayout>
+        <include android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="16.0dip" layout="@layout/keyguard_securityview_overlay_layout" />
+        <ImageView android:id="@id/keyguard_unlock_bouncer" android:background="@drawable/kg_bouncer_bg_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/keyguard_text_color_white" android:ellipsize="marquee" android:gravity="center_horizontal" android:layout_gravity="bottom" android:id="@id/keyguard_unlock_bouncer_help_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="83.0dip" android:text="@string/lockscreen_unlock_guide_text" android:shadowColor="#a6000000" android:fontFamily="sans-serif" style="@style/keyguard_text_shadow" />
+    </FrameLayout>
+</com.android.keyguard.sec.KeyguardUnlockView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/reject_msg_layout" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/rejectionmessage_height" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/checked_layout" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.sec.android.touchwiz.widget.TwCheckBox android:gravity="center" android:id="@id/checked_view" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/list_divider_margin_left" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/rejectmsg_text_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="12.0dip" android:paddingEnd="16.0dip">
+        <TextView android:gravity="center_vertical" android:id="@id/rejectmsg_item_body" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/callPrimaryTextStyle" />
+    </LinearLayout>
+</LinearLayout>

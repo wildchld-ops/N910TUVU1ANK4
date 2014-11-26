@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/video_call_buttons_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:background="@drawable/vzw_hd_voice_call_divider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/vzw_hd_voice_call_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:id="@id/camera_on_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/camera_on_btn_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_on_btn_img" />
+                <TextView android:gravity="center" android:id="@id/camera_on_btn_text" android:duplicateParentState="true" android:layout_width="@dimen/vtbtn_single_line_text_width" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/onscreenCameraOnText" style="@style/swithButtonContainerStyle" />
+            </LinearLayout>
+        </FrameLayout>
+        <ImageView android:background="@drawable/vzw_hd_voice_call_divider" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:layout_gravity="center" android:id="@id/video_share_btn" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/video_share_btn_image" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/video_share_btn_img" />
+                <TextView android:gravity="center" android:id="@id/video_share_btn_text" android:duplicateParentState="true" android:layout_width="@dimen/vtbtn_single_line_text_width" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:text="@string/onscreenVideoShareText" style="@style/swithButtonContainerStyle" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

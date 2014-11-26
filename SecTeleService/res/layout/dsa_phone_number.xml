@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.touchwiz.widget.TwScrollView android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/own_number_information_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+            <include android:id="@id/ownnumber_sim1_edit" android:layout_height="wrap_content" layout="@layout/dsa_common_edit_item" />
+            <include android:id="@id/ownnumber_sim2_edit" android:layout_height="wrap_content" layout="@layout/dsa_common_edit_item" />
+        </LinearLayout>
+    </com.sec.android.touchwiz.widget.TwScrollView>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/softkey_layout_sw" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dsa_btn_layout_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/common_softkey_left_button_sw" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/common_softkey_left_button_sw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dsa_btn_margin_side" android:text="@string/dsa_previous" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/common_softkey_right_button_sw" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/common_softkey_right_button_sw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dsa_btn_margin_side" android:text="@string/dsa_next" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/softkey_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dsa_btn_layout_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/common_softkey_left_button" android:background="@drawable/button_selector_pre" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/common_softkey_left_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/doneButton" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/common_softkey_right_button" android:background="@drawable/button_selector_next" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/common_softkey_right_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/dsa_btn_margin_side" android:text="@string/cancel" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tw_btn_icon_next_holo" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

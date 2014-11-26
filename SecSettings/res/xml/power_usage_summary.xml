@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/battery_since_unplugged" android:key="app_list"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceScreen android:title="@string/power_saving_mode_title" android:key="powersaving" android:fragment="com.android.settings.powersavingmode.PowerSavingMode2014" />
+    <PreferenceScreen android:title="@string/powersaving_ultra" android:key="ultra_powersaving" android:fragment="com.android.settings.powersavingmode.PowerSavingModeUltra" />
+    <CheckBoxPreference android:title="@string/adaptive_fast_charding_title" android:key="adaptive_fast_charging" />
+    <com.android.settings.SwitchPreferenceScreen android:title="@string/power_saving_mode_title" android:key="power_saving_mode_battery" android:fragment="com.android.settings.powersavingmode.MenuPowerSavingModeSettings" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/display_battery_percentage" android:key="display_battery_level" android:summary="@string/display_battery_percentage_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <Preference android:persistent="false" android:key="battery_status" style="?android:attr/preferenceInformationStyle" />
+</PreferenceScreen>

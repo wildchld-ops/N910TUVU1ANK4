@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="threads_results_title">
+        <item quantity="other">대화 %1$s개</item>
+        <item quantity="one">대화 1개</item>
+    </plurals>
+    <plurals name="message_results_title">
+        <item quantity="other">메시지 %1$s개</item>
+        <item quantity="one">메시지 1개</item>
+    </plurals>
+    <plurals name="Conversation_count">
+        <item quantity="other">대화 %d개</item>
+        <item quantity="one">대화 %d개</item>
+    </plurals>
+    <plurals name="recipient_more">
+        <item quantity="other">%1$s 님 외 %2$d명</item>
+        <item quantity="one">%s 님 외 1명</item>
+    </plurals>
+    <plurals name="attachment_more">
+        <item quantity="other">%1$s 외 %2$d개</item>
+        <item quantity="one">%s 외 1개 더</item>
+    </plurals>
+    <plurals name="sim_delete_completed">
+        <item quantity="other">SIM 카드에서 메시지를 삭제하였습니다.</item>
+        <item quantity="one">SIM 카드에서 메시지를 삭제하였습니다.</item>
+    </plurals>
+    <plurals name="sim_copy_to_phone_completed">
+        <item quantity="other">SIM 카드에서 메시지를 복사하였습니다.</item>
+        <item quantity="one">SIM 카드에서 메시지를 복사하였습니다.</item>
+    </plurals>
+</resources>

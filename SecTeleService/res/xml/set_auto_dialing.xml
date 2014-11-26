@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lgt_service_global_auto_roaming_auto_dialing"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:persistent="false" android:title="@string/lgt_service_global_auto_roaming_auto_roaming_use" android:key="toggle_auto_dialing" android:summary="@string/lgt_service_global_auto_roaming_auto_roaming_use_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:title="@string/lgt_service_global_auto_roaming_enable" android:key="pc_auto_dialing_enable" android:dependency="toggle_auto_dialing">
+        <Preference android:persistent="false" android:title="@string/lgt_service_global_auto_roaming_country_number" android:key="country_code" android:summary="@string/lgt_service_global_auto_roaming_country_number" android:dependency="toggle_auto_dialing" />
+    </PreferenceCategory>
+    <PreferenceScreen android:title="@string/auto_dialing_guide" android:key="auto_dialing_guide" />
+</PreferenceScreen>

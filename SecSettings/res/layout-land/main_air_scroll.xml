@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:id="@id/main_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.settings.accessibility.smartscroll.touchwiz.widget.TwHelpScrollView android:id="@id/main_frame_air_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageView1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/air_scroll_image" android:adjustViewBounds="true" />
+            <LinearLayout android:layout_gravity="center_horizontal" android:id="@id/sweep_layout" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="18.0sp" android:textColor="#ff000000" android:gravity="left" android:layout_gravity="center_horizontal" android:id="@id/sweep" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="11.0dip" android:layout_width="310.0dip" android:layout_height="wrap_content" android:text="@string/sweep" />
+            </LinearLayout>
+        </FrameLayout>
+    </com.android.settings.accessibility.smartscroll.touchwiz.widget.TwHelpScrollView>
+</merge>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="540.0px" android:layout_height="75.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="19.0dip" />
+    <CheckedTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="20.0sp" android:textStyle="normal" android:gravity="center_vertical" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:checkMark="?android:listChoiceIndicatorSingle" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+</LinearLayout>

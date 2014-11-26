@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="left" android:id="@id/navigation_bar" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/select_mode_text_title_size" android:textColor="@color/white" android:id="@id/actionbar_title" android:paddingLeft="0.0dip" android:paddingRight="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:drawableLeft="?android:homeAsUpIndicator" android:drawablePadding="10.0dip" style="?android:attr/actionButtonStyle" />
+    <Button android:textAppearance="?android:actionMenuTextAppearance" android:textColor="?android:actionMenuTextColor" android:id="@id/menu_done" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/done" android:layout_alignParentEnd="true" style="?android:attr/actionButtonStyle" />
+</RelativeLayout>

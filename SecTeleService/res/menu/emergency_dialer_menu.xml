@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/tw_action_bar_icon_delete_holo_dark" android:id="@id/remove" android:title="@string/delete" />
+    <item android:icon="@drawable/actionbar_list_icon_cancel" android:id="@id/cancel" android:title="@string/cancel" android:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_list_icon_check" android:id="@id/check" android:title="@string/ok" android:showAsAction="always" />
+</menu>

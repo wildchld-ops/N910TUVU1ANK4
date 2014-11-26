@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="#ff01abcf" android:layout_width="fill_parent" android:layout_height="93.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="39.0dip">
+        <LinearLayout android:orientation="horizontal" android:layout_width="226.0dip" android:layout_height="39.0dip" android:layout_alignParentBottom="true">
+            <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/quick_panel_ic_booster" />
+            <TextView android:textSize="18.0dip" android:textColor="#fff5f5f5" android:layout_width="174.0dip" android:layout_height="20.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:text="@string/booster_name" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="roboto-regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="124.0dip" android:layout_height="37.0dip" android:layout_alignParentRight="true">
+            <TextView android:textSize="24.0dip" android:textColor="#ffaceb00" android:gravity="right" android:id="@id/booster_booster_speed" android:layout_width="116.0dip" android:layout_height="30.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:includeFontPadding="false" android:shadowColor="#ff00333c" android:shadowDy="2.0" android:shadowRadius="2.0" android:fontFamily="roboto-regular" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="22.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="#ffc0edfd" android:gravity="right" android:id="@id/booster_wifi_speed" android:layout_width="51.0dip" android:layout_height="13.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentRight="true" android:fontFamily="roboto-regular" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/booster_wifi_speed">
+            <TextView android:textSize="12.0dip" android:textColor="#ff03f6ff" android:gravity="right" android:layout_width="36.0dip" android:layout_height="13.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="7.0dip" android:text="@string/booster_notification_wifi" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="roboto-regular" />
+            <FrameLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="13.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="8.0dip">
+                <ImageView android:layout_width="fill_parent" android:layout_height="13.0dip" android:src="@drawable/quick_panel_progress_bg" android:scaleType="fitXY" />
+                <ImageView android:id="@id/booster_wifi_speed_window" android:layout_width="fill_parent" android:layout_height="13.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="18.0dip">
+        <TextView android:textSize="11.0dip" android:textColor="#ffc0edfd" android:gravity="right" android:id="@id/booster_mobile_speed" android:layout_width="51.0dip" android:layout_height="13.0dip" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="8.0dip" android:singleLine="true" android:includeFontPadding="false" android:layout_alignParentRight="true" android:fontFamily="roboto-regular" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/booster_mobile_speed">
+            <TextView android:textSize="12.0dip" android:textColor="#fffed502" android:gravity="right" android:layout_width="36.0dip" android:layout_height="13.0dip" android:layout_marginLeft="6.0dip" android:layout_marginTop="5.0dip" android:text="@string/booster_notification_lte" android:singleLine="true" android:includeFontPadding="false" android:fontFamily="roboto-regular" />
+            <FrameLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="13.0dip" android:layout_marginLeft="8.0dip" android:layout_marginTop="6.0dip">
+                <ImageView android:layout_width="fill_parent" android:layout_height="13.0dip" android:src="@drawable/quick_panel_progress_bg" android:scaleType="fitXY" />
+                <ImageView android:id="@id/booster_mobile_speed_window" android:layout_width="fill_parent" android:layout_height="13.0dip" android:scaleType="fitXY" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

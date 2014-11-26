@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Language>
+    <Item language_code="en" locale_code="GB" language_id="0x656e4742" english_name="English" localized_name="English(UK)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="en" locale_code="US" language_id="0x656e5553" english_name="English" localized_name="English(US)" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="en" locale_code="AU" language_id="0x656e4155" english_name="English" localized_name="English(AU)" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="az" locale_code="" language_id="0x617a0000" english_name="Azerbaijani" localized_name="Azərbaycan" activated="1" default="1" hasShift="1" scriptType="Azerbaijani" />
+    <Item language_code="ca" locale_code="" language_id="0x63610000" english_name="Catalan" localized_name="Català" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="cs" locale_code="" language_id="0x63730000" english_name="Czech" localized_name="Čeština" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="da" locale_code="" language_id="0x64610000" english_name="Danish" localized_name="Dansk" activated="1" default="1" hasShift="1" scriptType="Nordic" />
+    <Item language_code="de" locale_code="" language_id="0x64650000" english_name="Germany" localized_name="Deutsch" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="et" locale_code="" language_id="0x65740000" english_name="Estonian" localized_name="Eesti" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="es" locale_code="" language_id="0x65730000" english_name="Spanish" localized_name="Español" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="es" locale_code="ES" language_id="0x65734553" english_name="Spanish" localized_name="Español(ES)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="es" locale_code="US" language_id="0x65735553" english_name="Spanish" localized_name="Español(US)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="eu" locale_code="" language_id="0x65750000" english_name="Basque" localized_name="Euskara" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="el" locale_code="" language_id="0x656c0000" english_name="Greek" localized_name="Ελληνικά" activated="1" default="0" hasShift="1" scriptType="Grek" />
+    <Item language_code="fr" locale_code="" language_id="0x66720000" english_name="French" localized_name="Français" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="fr" locale_code="CA" language_id="0x66724341" english_name="French" localized_name="Français(CA)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="fr" locale_code="FR" language_id="0x66724652" english_name="French" localized_name="Français(FR)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="gl" locale_code="" language_id="0x676c0000" english_name="Galician" localized_name="Galego" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="ka" locale_code="" language_id="0x6b610000" english_name="Georgian" localized_name="ქართული" activated="1" default="1" hasShift="1" scriptType="Geor" />
+    <Item language_code="hr" locale_code="" language_id="0x68720000" english_name="Croatian" localized_name="Hrvatski" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="it" locale_code="" language_id="0x69740000" english_name="Italian" localized_name="Italiano" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="is" locale_code="" language_id="0x69730000" english_name="Icelandic" localized_name="Íslenska" activated="1" default="1" hasShift="1" scriptType="Nordic" />
+    <Item language_code="id" locale_code="" language_id="0x69640000" english_name="Indonesian" localized_name="Bahasa Indonesia" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="kk" locale_code="" language_id="0x6b6b0000" english_name="Kazakh" localized_name="Қазақша" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="lv" locale_code="" language_id="0x6c760000" english_name="Latvian" localized_name="Latviešu" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="lt" locale_code="" language_id="0x6c740000" english_name="Lithuanian" localized_name="Lietuvių" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="ms" locale_code="" language_id="0x6d730000" english_name="Malay" localized_name="Bahasa Malaysia" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="hu" locale_code="" language_id="0x68750000" english_name="Hungarian" localized_name="Magyar" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="nb" locale_code="" language_id="0x6e620000" english_name="Norwegian" localized_name="Norsk" activated="1" default="0" hasShift="1" scriptType="Nordic" />
+    <Item language_code="nl" locale_code="" language_id="0x6e6c0000" english_name="Dutch" localized_name="Nederlands" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="pl" locale_code="" language_id="0x706c0000" english_name="Polish" localized_name="Polski" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="pt" locale_code="" language_id="0x70740000" english_name="Portuguese" localized_name="Português" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="pt" locale_code="PT" language_id="0x70745054" english_name="Portuguese" localized_name="Português(PT)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="pt" locale_code="BR" language_id="0x70744252" english_name="Portuguese" localized_name="Português(BR)" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="ru" locale_code="" language_id="0x72750000" english_name="Russian" localized_name="Русский" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="ro" locale_code="" language_id="0x726f0000" english_name="Romanian" localized_name="Română" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="fi" locale_code="" language_id="0x66690000" english_name="Finnish" localized_name="Suomi" activated="1" default="0" hasShift="1" scriptType="Nordic" />
+    <Item language_code="sr" locale_code="" language_id="0x73720000" english_name="Serbian" localized_name="Srpski" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="sk" locale_code="" language_id="0x736b0000" english_name="Slovak" localized_name="Slovenčina" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="sl" locale_code="" language_id="0x736c0000" english_name="Slovenian" localized_name="Slovenščina" activated="1" default="1" hasShift="1" scriptType="Slovenian" />
+    <Item language_code="sv" locale_code="" language_id="0x73760000" english_name="Swedish" localized_name="Svenska" activated="1" default="0" hasShift="1" scriptType="Nordic" />
+    <Item language_code="th" locale_code="" language_id="0x74680000" english_name="Thai" localized_name="ไทย" activated="1" default="0" hasShift="1" scriptType="Thai" />
+    <Item language_code="tr" locale_code="" language_id="0x74720000" english_name="Turkish" localized_name="Türkçe" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="vi" locale_code="" language_id="0x76690000" english_name="Vietnamese" localized_name="Tiếng Việt" activated="1" default="0" hasShift="1" scriptType="Vietnamese" />
+    <Item language_code="uk" locale_code="" language_id="0x756b0000" english_name="Ukrainian" localized_name="Українська" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="ko" locale_code="" language_id="0x6b6f0000" english_name="Korean" localized_name="한국어" activated="1" default="1" hasShift="1" scriptType="Korean" />
+    <Item language_code="ja" locale_code="" language_id="0x6a610000" english_name="Japanese" localized_name="日本語" activated="1" default="1" hasShift="0" scriptType="Japanese" />
+    <Item language_code="zh" locale_code="HK" language_id="0x7a68484b" english_name="Hong Kong Chinese" localized_name="倉頡輸入" activated="1" default="1" hasShift="1" scriptType="Chinese" />
+    <Item language_code="zh" locale_code="CN" language_id="0x7a68434e" english_name="Simplified Chinese" localized_name="中文" activated="1" default="1" hasShift="1" scriptType="Chinese" />
+    <Item language_code="zh" locale_code="TW" language_id="0x7a685457" english_name="Traditional Chinese" localized_name="注音符號" activated="1" default="1" hasShift="1" scriptType="Chinese" />
+    <Item language_code="iw" locale_code="" language_id="0x69770000" english_name="Hebrew" localized_name="עברית" activated="1" default="1" hasShift="0" scriptType="Hebr" />
+    <Item language_code="fa" locale_code="" language_id="0x66610000" english_name="Farsi" localized_name="فارسی" activated="1" default="0" hasShift="1" scriptType="Arab" />
+    <Item language_code="ur" locale_code="" language_id="0x75720000" english_name="Urdu" localized_name="اردو" activated="1" default="0" hasShift="1" scriptType="Arab" />
+    <Item language_code="ar" locale_code="" language_id="0x61720000" english_name="Arabic" localized_name="العربية" activated="1" default="1" hasShift="1" scriptType="Arab" />
+    <Item language_code="hy" locale_code="" language_id="0x68790000" english_name="Armenian" localized_name="Հայերեն" activated="1" default="1" hasShift="1" scriptType="Armn" />
+    <Item language_code="bg" locale_code="" language_id="0x62670000" english_name="Bulgarian" localized_name="Български" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="mk" locale_code="" language_id="0x6d6b0000" english_name="Macedonian" localized_name="Македонски" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="ga" locale_code="" language_id="0x67610000" english_name="Irish" localized_name="Gaeilge" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="hi" locale_code="" language_id="0x68690000" english_name="Hindi" localized_name="हिन्दी" activated="1" default="0" hasShift="0" scriptType="Devnagari" />
+    <Item language_code="bn" locale_code="" language_id="0x626e0000" english_name="Bengali" localized_name="বাংলা" activated="1" default="0" hasShift="0" scriptType="Bengali" />
+    <Item language_code="gu" locale_code="" language_id="0x67750000" english_name="Gujarati" localized_name="ગુજરાતી" activated="1" default="0" hasShift="0" scriptType="Gujarati" />
+    <Item language_code="kn" locale_code="" language_id="0x6b6e0000" english_name="Kannada" localized_name="ಕನ್ನಡ" activated="1" default="0" hasShift="0" scriptType="Kannada" />
+    <Item language_code="ml" locale_code="" language_id="0x6d6c0000" english_name="Malayalam" localized_name="മലയാളം" activated="1" default="0" hasShift="0" scriptType="Malayalam" />
+    <Item language_code="mr" locale_code="" language_id="0x6D720000" english_name="Marathi" localized_name="मराठी" activated="1" default="0" hasShift="0" scriptType="Devnagari" />
+    <Item language_code="pa" locale_code="" language_id="0x70610000" english_name="Punjabi" localized_name="ਪੰਜਾਬੀ" activated="1" default="0" hasShift="0" scriptType="Gurmukhi" />
+    <Item language_code="si" locale_code="" language_id="0x73690000" english_name="Sinhala" localized_name="සිංහල" activated="1" default="0" hasShift="0" scriptType="Sinhala" />
+    <Item language_code="te" locale_code="" language_id="0x74650000" english_name="Telugu" localized_name="తెలుగు" activated="1" default="0" hasShift="0" scriptType="Telugu" />
+    <Item language_code="ta" locale_code="" language_id="0x74610000" english_name="Tamil" localized_name="தமிழ்" activated="1" default="0" hasShift="0" scriptType="Tamil" />
+    <Item language_code="as" locale_code="" language_id="0x61730000" english_name="Assamese" localized_name="অসমীয়া" activated="1" default="0" hasShift="0" scriptType="Bengali" />
+    <Item language_code="ne" locale_code="" language_id="0x6e650000" english_name="Nepali" localized_name="नेपाली" activated="1" default="0" hasShift="0" scriptType="Devnagari" />
+    <Item language_code="or" locale_code="" language_id="0x6f720000" english_name="Oriya" localized_name="ଓଡ଼ିଆ" activated="1" default="0" hasShift="0" scriptType="Oriya" />
+    <Item language_code="sq" locale_code="" language_id="0x73710000" english_name="Albanian" localized_name="Shqipe" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="km" locale_code="" language_id="0x6b6d0000" english_name="Khmer" localized_name="ខ្មែរយូនីកូដ" activated="1" default="0" hasShift="1" scriptType="Khmer" />
+    <Item language_code="lo" locale_code="" language_id="0x6c6f0000" english_name="Lao" localized_name="ລາວ" activated="1" default="0" hasShift="1" scriptType="Lao" />
+    <Item language_code="z1" locale_code="MM" language_id="0x7A314d4d" english_name="Myanmar(Zawgyi)" localized_name="ျမန္မာ" activated="1" default="0" hasShift="1" scriptType="Zawgyi" />
+    <Item language_code="tl" locale_code="" language_id="0x746c0000" english_name="Filipino" localized_name="Filipino" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="su" locale_code="ID" language_id="0x73750000" english_name="Basa Sunda" localized_name="Basa Sunda" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="jv" locale_code="ID" language_id="0x6A760000" english_name="Basa Jawa" localized_name="Basa Jawa" activated="1" default="0" hasShift="1" scriptType="Latin" />
+    <Item language_code="mn" locale_code="" language_id="0x6d6e0000" english_name="Mongolian" localized_name="Монгол" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="uz" locale_code="" language_id="0x757A0000" english_name="Uzbek" localized_name="Oʻzbekcha" activated="1" default="0" hasShift="1" scriptType="Uzbek" />
+    <Item language_code="ky" locale_code="" language_id="0x6b790000" english_name="Kyrgyz" localized_name="Кыргызча" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="tg" locale_code="" language_id="0x74670000" english_name="Tajik" localized_name="Тоҷикӣ" activated="1" default="0" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="tk" locale_code="" language_id="0x746b0000" english_name="Turkmen" localized_name="Türkmençe" activated="1" default="0" hasShift="1" scriptType="Turkmen" />
+    <Item language_code="af" locale_code="" language_id="0x61660000" english_name="Afrikaans" localized_name="Afrikaans" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="xh" locale_code="" language_id="0x78680000" english_name="Xhosa" localized_name="Xhosa" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="zu" locale_code="" language_id="0x7A750000" english_name="Zulu" localized_name="Zulu" activated="1" default="1" hasShift="1" scriptType="Latin" />
+    <Item language_code="be" locale_code="" language_id="0x62650000" english_name="Belarusian" localized_name="Беларуская" activated="1" default="1" hasShift="1" scriptType="Cyrl" />
+    <Item language_code="sz" locale_code="" language_id="0x737a0000" english_name="Silesian" localized_name="Silesian" activated="1" default="1" hasShift="1" scriptType="Latin" />
+</Language>

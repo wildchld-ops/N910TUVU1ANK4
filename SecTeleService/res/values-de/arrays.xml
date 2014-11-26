@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="incomming_calls_summary_array">
+        <item>Antworten</item>
+        <item>Abweisen</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Netzwerkstandard</item>
+        <item>Nummer verbergen</item>
+        <item>Nummer anzeigen</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>Standard</item>
+        <item>Ausblenden</item>
+        <item>Anzeigen</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>Global</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>Nur EDVO</item>
+        <item>CDMA w/o EVDO</item>
+        <item>CDMA/EVDO automatisch</item>
+        <item>GSM / WCDMA auto</item>
+        <item>Nur WCDMA</item>
+        <item>Nur GSM</item>
+        <item>GSM / WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte">
+        <item>LTE/CDMA</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_automatic_cdma_lte_gsm">
+        <item>CDMA</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte_global">
+        <item>Global</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte_global_non_cdma">
+        <item>Global</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_global_lte_gsm">
+        <item>Global</item>
+        <item>LTE</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>English</item>
+        <item>Französisch</item>
+        <item>Spanisch</item>
+        <item>Japanisch</item>
+        <item>Koreanisch</item>
+        <item>Chinesisch</item>
+        <item>Hebräisch</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Nur Heimnetz</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_home_only">
+        <item>Nur Heimnetz</item>
+    </string-array>
+    <string-array name="cdma_system_select_sub_choices">
+        <item>Nur Heimnetz</item>
+        <item>Automatisch A</item>
+        <item>Automatisch B</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY aus</item>
+        <item>TTY (vollständig)</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normal</item>
+        <item>Lang</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="RAD_arr_roaming_auto_dial_help">
+        <item>Roaming Auto Dial Help</item>
+    </string-array>
+    <string-array name="RAD_roaming_auto_dial_settings">
+        <item>On</item>
+        <item>Off</item>
+        <item>Always call to Korea</item>
+    </string-array>
+    <string-array name="roaming_mode_entries">
+        <item>Nur Sprint</item>
+        <item>Automatisch</item>
+    </string-array>
+    <string-array name="roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="roaming_network_mode_list">
+        <item>Auto</item>
+        <item>Nur WCDMA</item>
+        <item>Nur GSM</item>
+    </string-array>
+    <string-array name="system_setting_entries">
+        <item>Japan</item>
+        <item>Automatic(Roaming/Japan)</item>
+        <item>GSM/UMTS(Roaming)</item>
+    </string-array>
+</resources>

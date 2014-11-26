@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/parentPanel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="#ff003d4a" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="318.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/topPanel" android:background="#ff005060" android:layout_width="fill_parent" android:layout_height="@dimen/tw_global_actions_view_cover_top_height">
+                <TextView android:textAppearance="?textAppearanceLarge" android:textSize="20.0dip" android:textColor="#ffffffff" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/title" android:fadingEdge="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/tw_global_actions_view_cover_top_left_margin" android:layout_marginTop="@dimen/tw_global_actions_view_cover_top_margin" android:layout_marginRight="10.0dip" android:singleLine="true" android:shadowColor="#7f000000" android:shadowDy="2.0" />
+                <ImageButton android:layout_gravity="center_vertical" android:id="@id/cancel" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/tw_global_actions_view_cover_top_cancel_right_margin" android:src="@drawable/global_actions_view_cover_title_cancel_button" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <ListView android:layout_gravity="center" android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

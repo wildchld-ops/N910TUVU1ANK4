@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textAppearance="@style/PopupItemDropDownStyle" android:textColor="@color/actionbar_title_text_color" android:gravity="center_vertical" android:id="@android:id/text1" android:maxWidth="@dimen/dropdown_item_maxwidth" android:minWidth="@dimen/dropdown_item_minwidth" android:minHeight="@dimen/dropdown_item_height" android:singleLine="true" android:paddingStart="12.0dip" android:paddingEnd="12.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

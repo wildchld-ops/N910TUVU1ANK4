@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom|right|center" android:id="@id/endCallButtonsLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/inCallIconActionBarContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:background="@color/incall_call_button_background" android:layout_width="@dimen/endcall_qvga_button_layout_width" android:layout_height="@dimen/endcall_qvga_button_layout_height" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/saveButtonFrame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="16.0dip" android:layout_weight="1.0" android:splitMotionEvents="false">
+            <Button android:id="@id/createContact" android:text="@string/create_contacts" style="@style/EndCallUpperButton" />
+            <ImageView android:gravity="center_vertical" android:id="@id/vertical_divider" android:background="@color/incall_button_bg" android:layout_width="1.0dip" android:layout_height="75.0dip" android:src="@drawable/voicecall_end_call_btn_divider" />
+            <Button android:id="@id/updateExisting" android:text="@string/update_existing" android:contentDescription="@string/update_existing_tts" style="@style/EndCallUpperButton" />
+            <Button android:id="@id/viewContact" android:text="@string/view_contact" style="@style/EndCallUpperButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/endcallBottomFrame" android:layout_width="fill_parent" android:layout_height="103.0dip" android:splitMotionEvents="false">
+            <Button android:id="@id/videoCallButton" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="2.0dip" android:text="@string/video_call" android:drawableTop="@drawable/incall_button_video_call_icon" android:layout_weight="1.0" style="@style/EndCallGreenButton" />
+            <Button android:id="@id/voiceCallButton" android:layout_width="1.0dip" android:layout_marginRight="2.0dip" android:text="@string/call" android:drawableTop="@drawable/incall_button_voice_call_icon" android:layout_weight="1.0" style="@style/EndCallGreenButton" />
+            <Button android:id="@id/voiceCallSim1Button" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="2.0dip" android:text="@string/call" android:drawableTop="@drawable/incall_button_voice_call_icon" android:layout_weight="1.0" style="@style/EndCallGreenButton" />
+            <Button android:id="@id/voiceCallSim2Button" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="2.0dip" android:text="@string/call" android:drawableTop="@drawable/incall_button_voice_call_icon" android:layout_weight="1.0" style="@style/EndCallGreenButton" />
+            <Button android:id="@id/ipCallButton" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="2.0dip" android:text="@string/ip_call" android:drawableTop="@drawable/incall_button_ip_call_icon" android:layout_weight="1.0" style="@style/EndCallGreenButton" />
+            <Button android:id="@id/videoCallButtonExtra" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="2.0dip" android:text="@string/video_call" android:drawableTop="@drawable/incall_button_video_call_icon" android:layout_weight="1.0" style="@style/EndCallGreenButton" />
+            <Button android:id="@id/sendMessageButton" android:layout_width="1.0dip" android:text="@string/message" android:drawableTop="@drawable/incall_button_message_icon" android:layout_weight="1.0" style="@style/EndCallYellowButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

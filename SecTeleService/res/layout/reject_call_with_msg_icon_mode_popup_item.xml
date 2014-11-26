@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/IconModeIncomingCallPopupItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image" style="@style/IconModeIncomingCallPopupItemImageViewStyle" />
+    <TextView android:id="@id/text" style="@style/IconModeIncomingCallPopupItemTextViewStyle" />
+</LinearLayout>

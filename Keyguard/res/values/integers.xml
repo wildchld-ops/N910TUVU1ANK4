@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="integer" name="config_activityDefaultDur">@android:integer/config_activityDefaultDur</item>
+    <integer name="config_coverCloseRotation">0</integer>
+    <integer name="cpuClock_IndexForWatercolor">1574400</integer>
+    <integer name="gpuFreq_IndexForWatercolor">389000000</integer>
+    <integer name="cpuClock_IndexForRipple">1574400</integer>
+    <integer name="gpuFreq_IndexForRipple">389000000</integer>
+    <integer name="battery_button_padding">0x2</integer>
+    <integer name="kg_carousel_angle">75</integer>
+    <integer name="kg_glowpad_rotation_offset">0</integer>
+    <integer name="badge_paddingX_small">10</integer>
+</resources>

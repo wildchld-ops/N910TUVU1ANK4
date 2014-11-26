@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="config_menuBgDarkenAmountNormal">29.999996%</fraction>
+    <fraction name="config_workspaceFastScrollInwardFactor">37.0%</fraction>
+    <fraction name="folderIcon_appIconScaleFactor">27.999996%</fraction>
+    <fraction name="folderIcon_appIconScaleFactor_normal">27.999996%</fraction>
+</resources>

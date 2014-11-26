@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/list_header" />
+    <GridView android:id="@id/reject_call_with_msg_icon_mode_gridview" style="@style/IconModeGridViewStyle" />
+</LinearLayout>

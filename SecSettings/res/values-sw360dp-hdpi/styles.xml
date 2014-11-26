@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ActionBarTabTextAppearance">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@drawable/color_tab_text</item>
+    </style>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:background="@touchwiz:color/tw_color002" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/vmessage_list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:cacheColorHint="@touchwiz:color/tw_color002" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:id="@id/softkeyview" android:background="#88000000" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button android:textSize="15.0sp" android:id="@id/softkeyleft" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="-2.0dip" android:text="@string/import_label" android:layout_weight="1.0" android:onClick="softkeyLeftRun" />
+        <Button android:textSize="15.0sp" android:id="@id/softkeyright" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="-2.0dip" android:text="@string/no" android:layout_weight="1.0" android:onClick="softkeyRightRun" />
+    </LinearLayout>
+</LinearLayout>

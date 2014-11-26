@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/settings_label" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/header_category_network_connections" android:key="network_connections" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_wifi" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/wifi_settings_title" android:key="wifi_settings" android:fragment="com.android.settings.wifi.WifiSettings" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_bluetooth" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/bluetooth_settings_title" android:key="bluetooth_settings" android:fragment="com.android.settings.bluetooth.BluetoothSettings" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_flightmode" android:persistent="false" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/airplane_mode" android:key="toggle_airplane" android:fragment="com.android.settings.AirplaneModeSettings" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_more" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/network_settings_title" android:key="mobile_network_settings">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MobileNetworkSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_locations" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/location_settings_title" android:key="location_settings" android:fragment="com.android.settings.location.LocationSettings" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_simmanager" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/sim_card_management_ds" android:key="dualSlot_ctc_settings">
+        <intent android:action="settings.SIM_CARD_NETWORK" />
+    </PreferenceScreen>
+    <PreferenceCategory android:title="@string/safetycare_sound_and_display" android:key="sound_and_display" />
+    <PreferenceScreen android:icon="@drawable/ic_setting_grid_sound" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/sound_settings" android:key="sound_settings" android:fragment="com.android.settings.SoundSettings" />
+    <com.android.settings.BrightnessPreference android:icon="@drawable/ic_setting_grid_brightness" android:persistent="false" android:layout="@layout/emergency_preference_header_item_listui" android:title="@string/brightness" android:key="brightness" android:widgetLayout="@layout/round_more_icon" />
+</PreferenceScreen>

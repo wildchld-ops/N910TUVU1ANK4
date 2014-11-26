@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:layout_width="fill_parent" android:layout_height="fill_parent" android:key="home_screen_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/transition_effect" android:key="pref_list_transition_effect" android:defaultValue="1" android:entryValues="@array/transition_effect_entry_value" />
+    <CheckBoxPreference android:title="@string/flipboard_magazine_softkey_my_magazine" android:key="pref_my_magazine" android:summary="@string/flipboard_magazine_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:title="@string/transition_effect" android:key="pref_transition_effect" android:defaultValue="true" />
+</PreferenceScreen>

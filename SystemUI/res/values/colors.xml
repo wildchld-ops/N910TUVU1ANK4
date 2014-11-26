@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="system_bar_background_opaque">#ff1e1e1e</color>
+    <color name="system_bar_background_semi_transparent">#ff1e1e1e</color>
+    <color name="notification_panel_solid_background">#ff000000</color>
+    <color name="status_bar_recents_app_label_color">#fff5f5f5</color>
+    <color name="notification_list_shadow_top">#80000000</color>
+    <color name="notification_panel_scrim_color">#b0000000</color>
+    <color name="jbp_batterymeter_frame_color">#ff3e3e3e</color>
+    <color name="batterymeter_frame_color">#66ffffff</color>
+    <color name="batterymeter_charge_color">#ffffffff</color>
+    <color name="batterymeter_bolt_color">#ff141414</color>
+    <color name="jbp_batterymeter_bolt_color">#ffffffff</color>
+    <color name="batterymeter_bolt_color_spr">#ff33b5e5</color>
+    <color name="status_bar_clock_color">#fff5f5f5</color>
+    <color name="quickpanel_button_divider_color">#4cffffff</color>
+    <color name="notification_category_color">#ffeeeeee</color>
+    <color name="status_bar_clear_btn_text">#fff5f5f5</color>
+    <color name="notification_header_clock_color">#fff5f5f5</color>
+    <color name="notification_header_date_color">#fff5f5f5</color>
+    <color name="quick_setting_btn_text_color">#fff5f5f5</color>
+    <color name="toggle_slider_background_color">@drawable/notification_background_color</color>
+    <color name="toggle_slider_text_color">#ffd7d7d7</color>
+    <color name="toggle_slider_divider_color">@color/toggle_slider_background_color</color>
+    <color name="recents_item_background">#ff005599</color>
+    <color name="tw_status_bar_call_ongoing_view_bg">#66abf005</color>
+    <color name="quick_panel_setting_text_focus_color">#ff17aa07</color>
+    <color name="animated_brightness_icon_color">#ffadc1d6</color>
+    <color name="tw_quick_panel_sfinder_qconnect_text_color">#fff5f5f5</color>
+    <color name="recent_help_popup_button_color">#ff000000</color>
+    <color name="carrier_label_color">#fff5f5f5</color>
+    <color name="status_bar_battery_text_color">#fff5f5f5</color>
+    <color name="wifi_connected_toast">#ff59d0f3</color>
+    <color name="flashbar_recents_app_thumbnail_background">#ff000000</color>
+</resources>

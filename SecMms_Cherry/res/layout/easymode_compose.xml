@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/selector_easymode_composer_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="27.0dip" android:textColor="@drawable/selector_easymode_compose_color" android:ellipsize="end" android:id="@id/compose_text" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_compose_new" android:maxLines="1" android:drawableLeft="@drawable/easymode_compose_icon_selector" android:drawablePadding="10.0dip" />
+</LinearLayout>

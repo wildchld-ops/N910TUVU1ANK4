@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:drawable="@android:drawable/tw_list_focused_holo_light" />
+    <item android:drawable="@drawable/recents_thumbnail_no_press" />
+</selector>

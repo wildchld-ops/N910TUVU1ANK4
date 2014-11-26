@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_side_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_blue" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="8.0dip">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.android.settings.fingerprint.FingerprintEffectView android:layout_gravity="center" android:id="@id/finger_view" android:layout_width="155.0dip" android:layout_height="214.0dip" android:layout_marginTop="154.0dip" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="84.0dip">
+                    <TextView android:textSize="22.0dip" android:textColor="#ffffffff" android:gravity="top|center" android:id="@id/first_text" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <LinearLayout android:gravity="top|center" android:id="@id/error_message" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="38.0dip" android:layout_alignParentBottom="true">
+                        <ImageView android:id="@id/error_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/img_register_error_fingerprint" />
+                        <TextView android:textSize="17.0dip" android:textColor="#ffffffff" android:id="@id/error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="center" android:id="@id/inverted_triangle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_scroll_down" android:layout_alignParentBottom="true" android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/right_side_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

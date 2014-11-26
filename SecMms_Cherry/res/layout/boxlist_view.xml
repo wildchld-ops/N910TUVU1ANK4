@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.ui.BoxListFrame android:id="@id/box_list" android:layout_width="213.29999dip" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/boxlist_view_right_screen" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center" android:id="@id/empty_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_text_templates" />
+        <TextView android:textSize="17.329987sp" android:textColor="@color/conversation_no_message_color" android:layout_gravity="center" android:id="@id/empty_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_selected_item" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/splitbar" android:visibility="gone" android:layout_width="23.0dip" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="left" android:id="@id/splitbar_screen" android:background="@drawable/tw_preference_contents_list_left" android:layout_width="13.0dip" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

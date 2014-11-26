@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spellscroll android:label="@string/status_bar_settings_settings_button" android:name="com.android.systemui" android:hint="@string/status_bar_settings_settings_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <spell android:label="@string/status_bar_settings_settings_button" android:name="PhoneSettingResult" android:hint="@string/status_bar_settings_settings_button">
+        <spelleffect>
+            <intent android:targetPackage="com.android.systemui" android:action="android.intent.action.PHONE_SETTING" android:targetClass="com.android.systemui.PhoneSettingService">
+                <extra android:name="setting_value" android:value="{{SETTING_RESULT}}" />
+            </intent>
+        </spelleffect>
+        <ingredient android:label="@string/status_bar_settings_settings_button" android:name="SETTING_RESULT" android:inputType="text">
+            <extra-attr android:name="screenType" android:value="PHONESETTING" />
+        </ingredient>
+    </spell>
+</spellscroll>

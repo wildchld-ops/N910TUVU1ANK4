@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:title="@string/ltn_callsettings_title_autocsp" android:key="autocsp_settings_list"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/ltn_callsettings_enable_autocsp" android:key="chk_autocsp_check" android:summary="@string/ltn_callsettings_enable_summary_autocsp" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <EditTextPreference android:persistent="true" android:singleLine="true" android:maxLength="2" android:title="@string/ltn_callsettings_title_code" android:key="txt_autocsp_code" android:dependency="chk_autocsp_check" android:inputType="number" />
+</PreferenceScreen>

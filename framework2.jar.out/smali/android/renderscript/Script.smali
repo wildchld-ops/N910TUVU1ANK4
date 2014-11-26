@@ -1,0 +1,817 @@
+.class public Landroid/renderscript/Script;
+.super Landroid/renderscript/BaseObj;
+.source "Script.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/renderscript/Script$LaunchOptions;,
+        Landroid/renderscript/Script$FieldBase;,
+        Landroid/renderscript/Script$Builder;,
+        Landroid/renderscript/Script$FieldID;,
+        Landroid/renderscript/Script$KernelID;
+    }
+.end annotation
+
+
+# instance fields
+.field private final mFIDs:Landroid/util/SparseArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/SparseArray",
+            "<",
+            "Landroid/renderscript/Script$FieldID;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private final mKIDs:Landroid/util/SparseArray;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Landroid/util/SparseArray",
+            "<",
+            "Landroid/renderscript/Script$KernelID;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method constructor <init>(ILandroid/renderscript/RenderScript;)V
+    .locals 1
+    .param p1    # I
+    .param p2    # Landroid/renderscript/RenderScript;
+
+    invoke-direct {p0, p1, p2}, Landroid/renderscript/BaseObj;-><init>(ILandroid/renderscript/RenderScript;)V
+
+    new-instance v0, Landroid/util/SparseArray;
+
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object v0, p0, Landroid/renderscript/Script;->mKIDs:Landroid/util/SparseArray;
+
+    new-instance v0, Landroid/util/SparseArray;
+
+    invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
+
+    iput-object v0, p0, Landroid/renderscript/Script;->mFIDs:Landroid/util/SparseArray;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public bindAllocation(Landroid/renderscript/Allocation;I)V
+    .locals 3
+    .param p1    # Landroid/renderscript/Allocation;
+    .param p2    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {v0}, Landroid/renderscript/RenderScript;->validate()V
+
+    if-eqz p1, :cond_0
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p1, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v2
+
+    invoke-virtual {v0, v1, v2, p2}, Landroid/renderscript/RenderScript;->nScriptBindAllocation(III)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    const/4 v2, 0x0
+
+    invoke-virtual {v0, v1, v2, p2}, Landroid/renderscript/RenderScript;->nScriptBindAllocation(III)V
+
+    goto :goto_0
+.end method
+
+.method protected createFieldID(ILandroid/renderscript/Element;)Landroid/renderscript/Script$FieldID;
+    .locals 5
+    .param p1    # I
+    .param p2    # Landroid/renderscript/Element;
+
+    iget-object v3, p0, Landroid/renderscript/Script;->mFIDs:Landroid/util/SparseArray;
+
+    invoke-virtual {v3, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/renderscript/Script$FieldID;
+
+    if-eqz v0, :cond_0
+
+    move-object v1, v0
+
+    :goto_0
+    return-object v1
+
+    :cond_0
+    iget-object v3, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v4, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v4}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v4
+
+    invoke-virtual {v3, v4, p1}, Landroid/renderscript/RenderScript;->nScriptFieldIDCreate(II)I
+
+    move-result v2
+
+    if-nez v2, :cond_1
+
+    new-instance v3, Landroid/renderscript/RSDriverException;
+
+    const-string v4, "Failed to create FieldID"
+
+    invoke-direct {v3, v4}, Landroid/renderscript/RSDriverException;-><init>(Ljava/lang/String;)V
+
+    throw v3
+
+    :cond_1
+    new-instance v0, Landroid/renderscript/Script$FieldID;
+
+    iget-object v3, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-direct {v0, v2, v3, p0, p1}, Landroid/renderscript/Script$FieldID;-><init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Script;I)V
+
+    iget-object v3, p0, Landroid/renderscript/Script;->mFIDs:Landroid/util/SparseArray;
+
+    invoke-virtual {v3, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    move-object v1, v0
+
+    goto :goto_0
+.end method
+
+.method protected createKernelID(IILandroid/renderscript/Element;Landroid/renderscript/Element;)Landroid/renderscript/Script$KernelID;
+    .locals 7
+    .param p1    # I
+    .param p2    # I
+    .param p3    # Landroid/renderscript/Element;
+    .param p4    # Landroid/renderscript/Element;
+
+    iget-object v2, p0, Landroid/renderscript/Script;->mKIDs:Landroid/util/SparseArray;
+
+    invoke-virtual {v2, p1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Landroid/renderscript/Script$KernelID;
+
+    if-eqz v0, :cond_0
+
+    move-object v6, v0
+
+    :goto_0
+    return-object v6
+
+    :cond_0
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v3, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v3}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v3
+
+    invoke-virtual {v2, v3, p1, p2}, Landroid/renderscript/RenderScript;->nScriptKernelIDCreate(III)I
+
+    move-result v1
+
+    if-nez v1, :cond_1
+
+    new-instance v2, Landroid/renderscript/RSDriverException;
+
+    const-string v3, "Failed to create KernelID"
+
+    invoke-direct {v2, v3}, Landroid/renderscript/RSDriverException;-><init>(Ljava/lang/String;)V
+
+    throw v2
+
+    :cond_1
+    new-instance v0, Landroid/renderscript/Script$KernelID;
+
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    move-object v3, p0
+
+    move v4, p1
+
+    move v5, p2
+
+    invoke-direct/range {v0 .. v5}, Landroid/renderscript/Script$KernelID;-><init>(ILandroid/renderscript/RenderScript;Landroid/renderscript/Script;II)V
+
+    iget-object v2, p0, Landroid/renderscript/Script;->mKIDs:Landroid/util/SparseArray;
+
+    invoke-virtual {v2, p1, v0}, Landroid/util/SparseArray;->put(ILjava/lang/Object;)V
+
+    move-object v6, v0
+
+    goto :goto_0
+.end method
+
+.method protected forEach(ILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/FieldPacker;)V
+    .locals 6
+    .param p1    # I
+    .param p2    # Landroid/renderscript/Allocation;
+    .param p3    # Landroid/renderscript/Allocation;
+    .param p4    # Landroid/renderscript/FieldPacker;
+
+    if-nez p2, :cond_0
+
+    if-nez p3, :cond_0
+
+    new-instance v0, Landroid/renderscript/RSIllegalArgumentException;
+
+    const-string v1, "At least one of ain or aout is required to be non-null."
+
+    invoke-direct {v0, v1}, Landroid/renderscript/RSIllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    const/4 v3, 0x0
+
+    if-eqz p2, :cond_1
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v3
+
+    :cond_1
+    const/4 v4, 0x0
+
+    if-eqz p3, :cond_2
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p3, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v4
+
+    :cond_2
+    const/4 v5, 0x0
+
+    if-eqz p4, :cond_3
+
+    invoke-virtual {p4}, Landroid/renderscript/FieldPacker;->getData()[B
+
+    move-result-object v5
+
+    :cond_3
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    move v2, p1
+
+    invoke-virtual/range {v0 .. v5}, Landroid/renderscript/RenderScript;->nScriptForEach(IIII[B)V
+
+    return-void
+.end method
+
+.method protected forEach(ILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/FieldPacker;Landroid/renderscript/Script$LaunchOptions;)V
+    .locals 12
+    .param p1    # I
+    .param p2    # Landroid/renderscript/Allocation;
+    .param p3    # Landroid/renderscript/Allocation;
+    .param p4    # Landroid/renderscript/FieldPacker;
+    .param p5    # Landroid/renderscript/Script$LaunchOptions;
+
+    if-nez p2, :cond_0
+
+    if-nez p3, :cond_0
+
+    new-instance v0, Landroid/renderscript/RSIllegalArgumentException;
+
+    const-string v1, "At least one of ain or aout is required to be non-null."
+
+    invoke-direct {v0, v1}, Landroid/renderscript/RSIllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    :cond_0
+    if-nez p5, :cond_1
+
+    invoke-virtual/range {p0 .. p4}, Landroid/renderscript/Script;->forEach(ILandroid/renderscript/Allocation;Landroid/renderscript/Allocation;Landroid/renderscript/FieldPacker;)V
+
+    :goto_0
+    return-void
+
+    :cond_1
+    const/4 v3, 0x0
+
+    if-eqz p2, :cond_2
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v3
+
+    :cond_2
+    const/4 v4, 0x0
+
+    if-eqz p3, :cond_3
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p3, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v4
+
+    :cond_3
+    const/4 v5, 0x0
+
+    if-eqz p4, :cond_4
+
+    invoke-virtual/range {p4 .. p4}, Landroid/renderscript/FieldPacker;->getData()[B
+
+    move-result-object v5
+
+    :cond_4
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    # getter for: Landroid/renderscript/Script$LaunchOptions;->xstart:I
+    invoke-static/range {p5 .. p5}, Landroid/renderscript/Script$LaunchOptions;->access$000(Landroid/renderscript/Script$LaunchOptions;)I
+
+    move-result v6
+
+    # getter for: Landroid/renderscript/Script$LaunchOptions;->xend:I
+    invoke-static/range {p5 .. p5}, Landroid/renderscript/Script$LaunchOptions;->access$100(Landroid/renderscript/Script$LaunchOptions;)I
+
+    move-result v7
+
+    # getter for: Landroid/renderscript/Script$LaunchOptions;->ystart:I
+    invoke-static/range {p5 .. p5}, Landroid/renderscript/Script$LaunchOptions;->access$200(Landroid/renderscript/Script$LaunchOptions;)I
+
+    move-result v8
+
+    # getter for: Landroid/renderscript/Script$LaunchOptions;->yend:I
+    invoke-static/range {p5 .. p5}, Landroid/renderscript/Script$LaunchOptions;->access$300(Landroid/renderscript/Script$LaunchOptions;)I
+
+    move-result v9
+
+    # getter for: Landroid/renderscript/Script$LaunchOptions;->zstart:I
+    invoke-static/range {p5 .. p5}, Landroid/renderscript/Script$LaunchOptions;->access$400(Landroid/renderscript/Script$LaunchOptions;)I
+
+    move-result v10
+
+    # getter for: Landroid/renderscript/Script$LaunchOptions;->zend:I
+    invoke-static/range {p5 .. p5}, Landroid/renderscript/Script$LaunchOptions;->access$500(Landroid/renderscript/Script$LaunchOptions;)I
+
+    move-result v11
+
+    move v2, p1
+
+    invoke-virtual/range {v0 .. v11}, Landroid/renderscript/RenderScript;->nScriptForEachClipped(IIII[BIIIIII)V
+
+    goto :goto_0
+.end method
+
+.method public getVarB(I)Z
+    .locals 2
+    .param p1    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptGetVarI(II)I
+
+    move-result v0
+
+    if-lez v0, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method
+
+.method public getVarD(I)D
+    .locals 2
+    .param p1    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptGetVarD(II)D
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public getVarF(I)F
+    .locals 2
+    .param p1    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptGetVarF(II)F
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getVarI(I)I
+    .locals 2
+    .param p1    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptGetVarI(II)I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getVarJ(I)J
+    .locals 2
+    .param p1    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptGetVarJ(II)J
+
+    move-result-wide v0
+
+    return-wide v0
+.end method
+
+.method public getVarV(ILandroid/renderscript/FieldPacker;)V
+    .locals 3
+    .param p1    # I
+    .param p2    # Landroid/renderscript/FieldPacker;
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {p2}, Landroid/renderscript/FieldPacker;->getData()[B
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, p1, v2}, Landroid/renderscript/RenderScript;->nScriptGetVarV(II[B)V
+
+    return-void
+.end method
+
+.method protected invoke(I)V
+    .locals 2
+    .param p1    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptInvoke(II)V
+
+    return-void
+.end method
+
+.method protected invoke(ILandroid/renderscript/FieldPacker;)V
+    .locals 3
+    .param p1    # I
+    .param p2    # Landroid/renderscript/FieldPacker;
+
+    if-eqz p2, :cond_0
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {p2}, Landroid/renderscript/FieldPacker;->getData()[B
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, p1, v2}, Landroid/renderscript/RenderScript;->nScriptInvokeV(II[B)V
+
+    :goto_0
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1}, Landroid/renderscript/RenderScript;->nScriptInvoke(II)V
+
+    goto :goto_0
+.end method
+
+.method public setTimeZone(Ljava/lang/String;)V
+    .locals 4
+    .param p1    # Ljava/lang/String;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {v1}, Landroid/renderscript/RenderScript;->validate()V
+
+    :try_start_0
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v2
+
+    const-string v3, "UTF-8"
+
+    invoke-virtual {p1, v3}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/renderscript/RenderScript;->nScriptSetTimeZone(I[B)V
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    new-instance v1, Ljava/lang/RuntimeException;
+
+    invoke-direct {v1, v0}, Ljava/lang/RuntimeException;-><init>(Ljava/lang/Throwable;)V
+
+    throw v1
+.end method
+
+.method public setVar(ID)V
+    .locals 2
+    .param p1    # I
+    .param p2    # D
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1, p2, p3}, Landroid/renderscript/RenderScript;->nScriptSetVarD(IID)V
+
+    return-void
+.end method
+
+.method public setVar(IF)V
+    .locals 2
+    .param p1    # I
+    .param p2    # F
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1, p2}, Landroid/renderscript/RenderScript;->nScriptSetVarF(IIF)V
+
+    return-void
+.end method
+
+.method public setVar(II)V
+    .locals 2
+    .param p1    # I
+    .param p2    # I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1, p2}, Landroid/renderscript/RenderScript;->nScriptSetVarI(III)V
+
+    return-void
+.end method
+
+.method public setVar(IJ)V
+    .locals 2
+    .param p1    # I
+    .param p2    # J
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {v0, v1, p1, p2, p3}, Landroid/renderscript/RenderScript;->nScriptSetVarJ(IIJ)V
+
+    return-void
+.end method
+
+.method public setVar(ILandroid/renderscript/BaseObj;)V
+    .locals 3
+    .param p1    # I
+    .param p2    # Landroid/renderscript/BaseObj;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v2
+
+    if-nez p2, :cond_0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    invoke-virtual {v1, v2, p1, v0}, Landroid/renderscript/RenderScript;->nScriptSetVarObj(III)V
+
+    return-void
+
+    :cond_0
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p2, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v0
+
+    goto :goto_0
+.end method
+
+.method public setVar(ILandroid/renderscript/FieldPacker;)V
+    .locals 3
+    .param p1    # I
+    .param p2    # Landroid/renderscript/FieldPacker;
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {p2}, Landroid/renderscript/FieldPacker;->getData()[B
+
+    move-result-object v2
+
+    invoke-virtual {v0, v1, p1, v2}, Landroid/renderscript/RenderScript;->nScriptSetVarV(II[B)V
+
+    return-void
+.end method
+
+.method public setVar(ILandroid/renderscript/FieldPacker;Landroid/renderscript/Element;[I)V
+    .locals 6
+    .param p1    # I
+    .param p2    # Landroid/renderscript/FieldPacker;
+    .param p3    # Landroid/renderscript/Element;
+    .param p4    # [I
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v1}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v1
+
+    invoke-virtual {p2}, Landroid/renderscript/FieldPacker;->getData()[B
+
+    move-result-object v3
+
+    iget-object v2, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p3, v2}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v4
+
+    move v2, p1
+
+    move-object v5, p4
+
+    invoke-virtual/range {v0 .. v5}, Landroid/renderscript/RenderScript;->nScriptSetVarVE(II[BI[I)V
+
+    return-void
+.end method
+
+.method public setVar(IZ)V
+    .locals 3
+    .param p1    # I
+    .param p2    # Z
+
+    iget-object v1, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    iget-object v0, p0, Landroid/renderscript/BaseObj;->mRS:Landroid/renderscript/RenderScript;
+
+    invoke-virtual {p0, v0}, Landroid/renderscript/BaseObj;->getID(Landroid/renderscript/RenderScript;)I
+
+    move-result v2
+
+    if-eqz p2, :cond_0
+
+    const/4 v0, 0x1
+
+    :goto_0
+    invoke-virtual {v1, v2, p1, v0}, Landroid/renderscript/RenderScript;->nScriptSetVarI(III)V
+
+    return-void
+
+    :cond_0
+    const/4 v0, 0x0
+
+    goto :goto_0
+.end method

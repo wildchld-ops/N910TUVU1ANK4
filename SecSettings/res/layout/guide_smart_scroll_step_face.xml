@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/scrollque_detected" android:layout_width="163.0dip" android:layout_height="163.0dip" android:src="@drawable/initializing_04" android:adjustViewBounds="true" android:layout_centerInParent="true" android:contentDescription="@string/none" />
+    <RelativeLayout android:id="@id/guide_bubble_summary" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/guide_head_icon_picker_margin_top" android:layout_below="@id/scrollque_detected">
+        <TextView android:id="@id/guide_icon_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/guide_summary_picker_margin" android:text="@string/guide_scroll_icon_face" android:layout_below="@id/tip_picker" android:layout_centerHorizontal="true" style="@style/HelpGuideSummaryTheme" />
+        <ImageView android:id="@id/tip_picker" android:layout_width="@dimen/guide_tip_picker_width" android:layout_height="@dimen/guide_tip_picker_height" android:src="@drawable/help_popup_picker_t_c" android:layout_centerHorizontal="true" android:contentDescription="@string/none" />
+    </RelativeLayout>
+</RelativeLayout>

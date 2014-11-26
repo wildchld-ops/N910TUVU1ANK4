@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/assisted_dialing_reference_country_list"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/assisted_dialing_reference_country_list" android:key="button_current_country_key" />
+    <PreferenceScreen android:persistent="false" android:title="@string/assisted_dialing_select_current_country" android:key="button_select_current_country_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.AssistedDialingList">
+            <extra android:name="current_country" android:value="true" />
+        </intent>
+    </PreferenceScreen>
+</PreferenceScreen>

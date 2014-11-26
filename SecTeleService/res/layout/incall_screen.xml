@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/incall_screen" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/incall_screen_normal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/inCallPanel" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.android.phone.CallCard android:id="@id/callCard" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/touchLockOverlay" android:background="#88000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:typeface="sans" android:gravity="center" android:id="@id/touchLockIconText" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="102.0dip" android:text="@string/touchLockText" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+            <ImageView android:gravity="center" android:id="@id/touchLockIcon" android:visibility="gone" android:layout_width="139.0dip" android:layout_height="139.0dip" android:src="@drawable/call_unlock_icon" android:layout_above="@id/touchLockIconText" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <ViewStub android:id="@id/otaCallCardStub" android:layout="@layout/otacall_card" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ViewStub android:id="@id/manageConferencePanelStub" android:layout="@layout/manage_conference_panel" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:id="@id/inCallProviderOverlay" android:background="@drawable/dialog_bg_calling_via" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="88.0dip" android:layout_marginTop="@dimen/provider_overlay_top_margin">
+            <ImageView android:id="@id/callingViaIcon" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceSmallInverse" android:gravity="center" android:id="@id/callingVia" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/calling_via_template" android:layout_weight="1.0" />
+            <View android:layout_width="40.0dip" android:layout_height="40.0dip" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/callbarring_check" android:background="#ff000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/callbarring_input_password" />
+                <EditText android:id="@id/callbarring_passwd" android:layout_width="fill_parent" android:layout_height="0.0dip" android:lines="1" android:password="true" android:maxLength="10" android:layout_weight="1.0" android:inputType="number" android:imeOptions="actionDone" />
+                <TableLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stretchColumns="*">
+                    <TableRow>
+                        <Button android:id="@id/callbarring_cancel" android:text="@string/callsettings_sfk_cancel" />
+                        <Button android:id="@id/callbarring_ok" android:text="@string/callsettings_sfk_ok" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <ViewStub android:id="@id/rcs_invitation_stub" android:layout="@layout/rcs_invitation_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</FrameLayout>

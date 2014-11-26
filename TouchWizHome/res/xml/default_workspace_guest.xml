@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <home />
+    <hotseat>
+        <favorite launcher:className="com.sec.android.app.sbrowser.SBrowserMainActivity" launcher:packageName="com.sec.android.app.sbrowser" launcher:x="0" />
+        <favorite launcher:className="com.sec.android.app.camera.Camera" launcher:packageName="com.sec.android.app.camera" launcher:x="1" />
+        <favorite launcher:className="com.sec.android.gallery3d.app.GalleryActivity" launcher:packageName="com.sec.android.gallery3d" launcher:x="2" />
+    </hotseat>
+</favorites>

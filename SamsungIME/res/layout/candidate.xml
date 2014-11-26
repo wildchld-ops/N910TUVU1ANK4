@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.diotek.ime.implement.view.candidate.CandidateView android:background="@drawable/candidate_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/candidate_button_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.diotek.ime.implement.view.candidate.CandidateLayout android:id="@id/candidate_layout" android:layout_width="0.0px" android:layout_height="@dimen/candidate_view_height" android:layout_weight="1.0" />
+    <LinearLayout android:id="@id/expand_btn_layout" android:layout_width="@dimen/candidate_expand_button_layout_width" android:layout_height="fill_parent">
+        <Button android:id="@id/expand_btn" android:background="@drawable/candidate_button_bg_expand_xml" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</com.diotek.ime.implement.view.candidate.CandidateView>

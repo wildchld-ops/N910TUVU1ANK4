@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="config_mobile_mtu">1358</integer>
+    <item type="integer" name="APKTOOL_DUMMY_0070">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0071">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0072">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0073">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0074">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0075">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0076">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0077">false</item>
+</resources>

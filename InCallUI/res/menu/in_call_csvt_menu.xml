@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/MENU_GROUP">
+        <item android:icon="@drawable/videocall_action_bar_hideme" android:id="@id/hide" android:title="@string/hide" />
+        <item android:icon="@drawable/videocall_action_bar_showme" android:id="@id/show" android:visibility="gone" android:title="@string/show" />
+        <item android:icon="@drawable/videocall_action_bar_close_camera" android:id="@id/close_camera" android:visibility="gone" android:title="@string/close_camera" />
+        <item android:icon="@drawable/videocall_action_bar_open_camera" android:id="@id/open_camera" android:visibility="gone" android:title="@string/open_camera" />
+        <item android:icon="@drawable/videocall_action_bar_outgoing_image" android:id="@id/out_img" android:title="@string/out_img" />
+        <item android:id="@id/capture_image" android:title="@string/capture" />
+        <item android:id="@id/start_recording_far_end" android:title="@string/rec_video" />
+        <item android:id="@id/stop_recording_far_end" android:visibility="gone" android:title="@string/stop" />
+        <item android:id="@id/switch_camera" android:title="@string/switch_cam" />
+        <item android:id="@id/memo" android:title="@string/memo" />
+        <item android:id="@id/message" android:title="@string/messages" />
+        <item android:icon="@drawable/videocall_action_bar_keypad" android:id="@id/keypad" android:title="@string/keypad" />
+        <item android:icon="@drawable/videocall_action_bar_speaker_on" android:id="@id/spkon" android:title="@string/spkon" />
+        <item android:icon="@drawable/videocall_action_bar_speaker_off" android:id="@id/spkoff" android:visibility="gone" android:title="@string/spkoff" />
+        <item android:icon="@drawable/videocall_action_bar_headset" android:id="@id/switch_hd" android:title="@string/switch_hd" />
+        <item android:icon="@drawable/videocall_action_bar_switch_phone" android:id="@id/switch_ph" android:visibility="gone" android:title="@string/switch_ph" />
+        <item android:icon="@drawable/videocall_action_bar_dual_camera_on" android:id="@id/dual_camera_on" android:visibility="gone" android:title="@string/dual_cam_enable" />
+        <item android:icon="@drawable/videocall_action_bar_dual_camera_off" android:id="@id/dual_camera_off" android:title="@string/dual_cam_disable" />
+        <item android:icon="@drawable/videocall_action_bar_screen_brightness" android:id="@id/screen_brightness" android:visibility="gone" android:title="@string/screen_brightness" />
+        <item android:icon="@drawable/videocall_action_bar_screen_brightness" android:id="@id/camera_contrast" android:visibility="gone" android:title="@string/contrast" />
+        <item android:icon="@drawable/videocall_action_bar_screen_brightness" android:id="@id/camera_brightness" android:visibility="gone" android:title="@string/bright" />
+    </group>
+</menu>

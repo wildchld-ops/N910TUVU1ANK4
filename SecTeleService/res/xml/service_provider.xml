@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/roaming_service_provider_select" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:persistent="false" android:title="@string/provider_auto_select" android:key="button_auto_select_key" android:summary="@string/provider_auto_select_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/search_provider_key" android:key="button_srch_provider_key" android:summary="@string/search_provider_key_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:title="@string/selected_provider" android:key="current_provider_key" />
+    <Preference android:title="@string/selected_provider" android:key="selected_provider_key" />
+</PreferenceScreen>

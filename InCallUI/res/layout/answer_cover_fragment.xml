@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.incallui.widget.incomingwidget.IncomingCallImageWidget android:id="@id/coverIncomingCallImageWidget" android:tag="cover_incoming" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/cover_incomingcall_widget_margin_bottom" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <include layout="@layout/reject_call_with_message_sliding_drawer_cover" />
+</RelativeLayout>

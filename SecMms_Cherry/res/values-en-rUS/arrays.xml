@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Winking</item>
+        <item>Tongue sticking out</item>
+        <item>Surprised</item>
+        <item>Kissing</item>
+        <item>Yelling</item>
+        <item>Cool</item>
+        <item>Money mouth</item>
+        <item>Foot in mouth</item>
+        <item>Embarrassed</item>
+        <item>Angel</item>
+        <item>Undecided</item>
+        <item>Crying</item>
+        <item>Lips are sealed</item>
+        <item>Laughing</item>
+        <item>Confused</item>
+        <item>Heart</item>
+        <item>Mad</item>
+        <item>Smirk</item>
+        <item>Poker face</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>Use device font sizes</item>
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>Use device font sizes</item>
+        <item>Tiny</item>
+        <item>Extra small</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>All channels</item>
+        <item>My channel</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>GSM alphabet</item>
+        <item>Unicode</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 days</item>
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>Restricted</item>
+        <item>Warning</item>
+        <item>Free</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>Always</item>
+        <item>Prompt</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>Origami</item>
+        <item>Label</item>
+        <item>Pop</item>
+        <item>Modern</item>
+        <item>Pink</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="sms_roam_guard">
+        <item>Auto send when in Domestic coverage area</item>
+        <item>Send Now</item>
+        <item>Save as draft message</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>Once</item>
+        <item>Every 2 minutes</item>
+        <item>Every 15 minutes</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>Never</item>
+        <item>Every 2 minutes</item>
+        <item>Every 10 minutes</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+        <item>SGH-T989</item>
+        <item>SGH-I727</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>Domestic</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 hour</item>
+        <item>6 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>Network default</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="expiry_date_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>High</item>
+        <item>Normal</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="mms_priority_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>Immediately</item>
+        <item>1 hour</item>
+        <item>6 hours</item>
+        <item>24 hours</item>
+        <item>1 week</item>
+    </string-array>
+    <string-array name="delivery_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>Off</item>
+        <item>Block all messages</item>
+        <item>Block registered numbers and phrases</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>Exactly the same as</item>
+        <item>Starts with</item>
+        <item>Ends with</item>
+        <item>Includes</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>Logs</item>
+        <item>Contacts</item>
+    </string-array>
+    <string-array name="block_number_setting_items_only_message">
+        <item>Message block</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>Message block</item>
+        <item>Call block</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>Message block</item>
+        <item>Voice call block</item>
+        <item>Video call block</item>
+    </string-array>
+    <string-array name="error_codes">
+        <item>Addr.Vcnt.</item>
+        <item>Addr.Trns.</item>
+        <item>Ntwk.Res.</item>
+        <item>Ntwk.Fail.</item>
+        <item>Invld.T.ID</item>
+        <item>Othr.Ntwk.</item>
+        <item>Othr.Fst.</item>
+        <item>Othr.Lst.</item>
+        <item>NoPg.Res.</item>
+        <item>Dst.Busy</item>
+        <item>NoAck.</item>
+        <item>Dst.Rs.Sht</item>
+        <item>SMS Dlv.Pp</item>
+        <item>Dest.NoLng</item>
+        <item>Dest.NoLng</item>
+        <item>OthrT.Prbl</item>
+        <item>OthrT.Fst</item>
+        <item>OthrT.Lst</item>
+        <item>SMS Dlv.Ft</item>
+        <item>SMS Dlv.Lt</item>
+        <item>Rdo.IF.R.S</item>
+        <item>Rdo.IF.Inc</item>
+        <item>Othr.Rdo.I</item>
+        <item>Othr.Rdo.F</item>
+        <item>Othr.Rdo.L</item>
+        <item>Encd.Prbl.</item>
+        <item>SMS Org.D.</item>
+        <item>SMS Trm.D.</item>
+        <item>Suppl.Svc.</item>
+        <item>SMS No.Spt</item>
+        <item>Reserved.</item>
+        <item>Mss.Expt.P</item>
+        <item>Mss.Mndtry</item>
+        <item>Unrcgnzd.P</item>
+        <item>Unexpctd.P</item>
+        <item>Usr.Dr.S.E</item>
+        <item>Othr.Gnr.P</item>
+        <item>Other.Gnr.F</item>
+        <item>Other.Gnr.L</item>
+        <item>OK or Msg Dlvd.</item>
+        <item>Wait TLAck</item>
+        <item>Outof Rsc.</item>
+        <item>Accss.Lrg.</item>
+        <item>DRC Lrg.</item>
+        <item>Ntwk.NoRdy</item>
+        <item>Phon.NoRdy</item>
+        <item>Nt.Allwd.A</item>
+        <item>Nt.Spprtd</item>
+        <item>Invld.Trnx.</item>
+        <item>Msg.No.Snt</item>
+        <item>MsgBgn.Snt</item>
+    </string-array>
+    <string-array name="priority_array">
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="templates">
+        <item>Sorry, I missed your call.</item>
+        <item>"I'm running late, but I'll be there soon."</item>
+        <item>"How's it going?"</item>
+        <item>"What's up?"</item>
+        <item>Where are you?</item>
+        <item>Please call me when you get this message.</item>
+        <item>When can we meet?</item>
+        <item>"I'll talk to you soon."</item>
+        <item>"Where's the meeting?"</item>
+        <item>"What's the number?"</item>
+    </string-array>
+    <string-array name="sprint_templates">
+        <item>"Can't talk right now. Send me a message."</item>
+        <item>Call me.</item>
+        <item>Where are you?</item>
+        <item>Can you talk?</item>
+        <item>"Don't forget to"</item>
+        <item>Can you pick up?</item>
+        <item>Thanks!</item>
+        <item>Meet me at</item>
+        <item>"Let's get lunch."</item>
+        <item>I sent this from my phone.</item>
+        <item>The meeting has been cancelled.</item>
+        <item>I have to work late.</item>
+        <item>"I'm on a conference call."</item>
+        <item>"I'll be there at"</item>
+        <item>What time does it start?</item>
+        <item>"Tag, you're it!"</item>
+        <item>I love you!</item>
+        <item>Hugs and kisses - OXOXO</item>
+        <item>Crazy 4 you!</item>
+        <item>Too funny!</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>Brazilian Portuguese</item>
+        <item>English (UK)</item>
+        <item>English (US)</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Simplified Chinese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>All</item>
+        <item>Sender</item>
+        <item>Content</item>
+    </string-array>
+    <string-array name="pref_entries_auto_download_file_transfer">
+        <item>Automatically accept all</item>
+        <item>Automatically accept files less than %s MB in size</item>
+    </string-array>
+    <string-array name="image_resize_entries">
+        <item>Original</item>
+        <item>Large</item>
+        <item>Medium</item>
+        <item>Small</item>
+    </string-array>
+    <string-array name="trafficSwitch_EntryValues_NotificationPreference">
+        <item>Never connect</item>
+        <item>Always ask</item>
+        <item>Always connect</item>
+    </string-array>
+</resources>

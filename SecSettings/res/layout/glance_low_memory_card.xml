@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="136.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/glance_card_bg" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:text="@string/low_memory" style="@style/Glance_card_title" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/low_memory_application" style="@style/Glance_card_item2">
+                <ImageView android:src="@drawable/ic_settings_applications" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/applications_settings" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/low_memory_storage" style="@style/Glance_card_item2">
+                <ImageView android:src="@drawable/ic_settings_storage" style="@style/Glance_card_item_image" />
+                <TextView android:text="@string/storage_settings" style="@style/Glance_card_item_title" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

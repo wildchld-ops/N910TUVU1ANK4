@@ -1,0 +1,118 @@
+<LevelsModel>
+
+    <steps>
+        <step id="0" temp="425"/>
+        <step id="1" temp="445"/>
+        <step id="2" temp="470"/>
+        <step id="3" temp="500"/>
+        <step id="4" temp="520"/>
+        <step id="5" temp="540"/>
+        <step id="6" temp="610"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="LCDBrightness"/>
+        <writer name="Charging"/>
+    </writers>
+
+    <conditions>
+        <condition name="ScreenOff"/>
+        <condition name="ScreenOffInCall"/>
+        <condition name="AppStart"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="LCDBrightness" value="250"/>
+                        <setting writer="Charging"      value="60"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="LCDBrightness" value="244"/>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="3"/>
+                        <setting writer="LCDBrightness" value="239"/>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="4"/>
+                        <setting writer="LCDBrightness" value="239"/>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="5"/>
+                        <setting writer="LCDBrightness" value="239"/>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+                <state step="6">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="6"/>
+                        <setting writer="LCDBrightness" value="239"/>
+                        <setting writer="Charging"      value="0"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOff"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="100" option="forced"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOffInCall"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="100" option="forced"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="AppStart"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

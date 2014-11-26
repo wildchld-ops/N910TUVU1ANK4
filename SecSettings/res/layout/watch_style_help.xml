@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/watch_style_help_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/preview_image" android:background="@drawable/premiumwatchstyle1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/easy_value_between_items" android:layout_marginBottom="@dimen/easy_value_between_items" android:scaleType="centerCrop" />
+        <View android:id="@id/divider_view" android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ListView android:id="@id/style_list" android:layout_width="fill_parent" android:layout_height="@dimen/watch_style_list_height" android:choiceMode="singleChoice" />
+    </LinearLayout>
+</ScrollView>

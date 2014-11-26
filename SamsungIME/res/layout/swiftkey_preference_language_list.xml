@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/layout" android:layout_width="fill_parent" android:layout_height="@dimen/language_list_preference_height" android:minHeight="?android:listPreferredItemHeight" android:paddingEnd="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/title_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@id/icon_group" android:layout_alignParentStart="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:ellipsize="marquee" android:id="@id/langauge_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:textColorSecondary" android:ellipsize="marquee" android:layout_gravity="start" android:id="@id/statusbar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Status_Select_to_Download" android:singleLine="true" />
+        <ProgressBar android:id="@id/progress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/language_list_progressbar_topmargin" android:layout_marginEnd="@dimen/language_list_progressbar_rightmargin" style="?android:attr/progressBarStyleHorizontal" />
+    </LinearLayout>
+    <TableLayout android:gravity="center_vertical" android:id="@id/icon_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shrinkColumns="*" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <TableRow>
+            <Button android:gravity="center" android:id="@id/cancel" android:layout_width="wrap_content" android:layout_height="@dimen/language_list_button_height" android:text="@string/cancel" android:requiresFadingEdge="none" android:paddingStart="@dimen/language_list_button_padding" android:paddingEnd="@dimen/language_list_button_padding" android:layout_alignEnd="@id/icon_group" />
+            <Button android:gravity="center" android:id="@id/update" android:focusable="false" android:layout_width="wrap_content" android:layout_height="@dimen/language_list_button_height" android:text="@string/update" android:requiresFadingEdge="none" android:paddingStart="@dimen/language_list_button_padding" android:paddingEnd="@dimen/language_list_button_padding" android:layout_marginEnd="@dimen/language_list_button_right_margin" />
+            <CheckBox android:id="@id/enable" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="@dimen/language_list_button_height" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

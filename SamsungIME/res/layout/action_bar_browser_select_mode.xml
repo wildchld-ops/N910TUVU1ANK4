@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/action_bar_browser_select_mode_title" android:gravity="left|center" android:layout_gravity="center_vertical" android:id="@id/select_all_menu" android:background="@layout/action_bar_spinner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="?android:listDividerAlertDialog" android:minWidth="@dimen/action_bar_browser_select_mode_min_width" android:minHeight="@dimen/action_bar_browser_select_mode_min_height" android:singleLine="true" android:paddingStart="@dimen/action_bar_browser_select_mode_padding_start" android:paddingEnd="@dimen/action_bar_browser_select_mode_padding_end" style="?android:attr/actionDropDownStyle" />
+</LinearLayout>

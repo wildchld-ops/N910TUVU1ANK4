@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<level-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0156" android:maxLevel="2" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0155" android:maxLevel="5" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0154" android:maxLevel="8" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0153" android:maxLevel="11" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0152" android:maxLevel="13" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0151" android:maxLevel="16" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_014f" android:maxLevel="19" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_014e" android:maxLevel="21" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_014d" android:maxLevel="24" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_014c" android:maxLevel="27" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_014b" android:maxLevel="30" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_014a" android:maxLevel="32" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0149" android:maxLevel="35" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0148" android:maxLevel="38" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0147" android:maxLevel="41" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0146" android:maxLevel="43" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0144" android:maxLevel="53" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0143" android:maxLevel="56" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0142" android:maxLevel="59" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0141" android:maxLevel="61" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0140" android:maxLevel="63" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_013f" android:maxLevel="66" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_013e" android:maxLevel="69" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_013d" android:maxLevel="71" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_013c" android:maxLevel="73" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_013b" android:maxLevel="76" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_015c" android:maxLevel="78" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_015b" android:maxLevel="80" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_015a" android:maxLevel="83" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0159" android:maxLevel="85" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0158" android:maxLevel="88" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0157" android:maxLevel="90" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0150" android:maxLevel="93" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_0145" android:maxLevel="95" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_013a" android:maxLevel="98" />
+    <item android:drawable="@drawable/APKTOOL_DUMMY_015d" android:maxLevel="100" />
+</level-list>

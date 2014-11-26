@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <clip>
+            <nine-patch android:src="@drawable/tw_progress_primary_holo_dark" android:dither="true"
+              xmlns:android="http://schemas.android.com/apk/res/android" />
+        </clip>
+    </item>
+</layer-list>

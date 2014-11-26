@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/delete_checkbox" android:focusable="false" android:clickable="false" android:layout_width="@dimen/xt9_words_list_checkbox_width" android:layout_height="@dimen/xt9_words_list_height" android:layout_marginStart="@dimen/xt9_words_list_padding" android:layout_marginEnd="@dimen/xt9_words_list_padding" />
+    <TextView android:textSize="@dimen/xt9_words_list_text_size" android:textColor="@color/xt9_words_list_color" android:gravity="center_vertical" android:id="@id/delete_shortcut" android:layout_width="fill_parent" android:layout_height="@dimen/xt9_words_list_height" android:singleLine="true" android:layout_weight="1.0" android:paddingStart="@dimen/xt9_words_list_padding" />
+    <TextView android:textSize="@dimen/xt9_words_list_text_size" android:textColor="@color/xt9_words_list_color" android:gravity="center_vertical" android:id="@id/delete_substitution" android:layout_width="fill_parent" android:layout_height="@dimen/xt9_words_list_height" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="@dimen/xt9_words_list_padding" />
+</LinearLayout>

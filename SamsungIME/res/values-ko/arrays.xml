@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="qwerty_domain_values">
+        <item>.gov</item>
+        <item>.edu</item>
+        <item>.org</item>
+        <item>.net</item>
+        <item>.go.kr</item>
+        <item>.or.kr</item>
+        <item>.co.kr</item>
+        <item>.kr</item>
+    </string-array>
+    <string-array name="phonepad_domain_values">
+        <item>.gov</item>
+        <item>.go.kr</item>
+        <item>.edu</item>
+        <item>.or.kr</item>
+        <item>.org</item>
+        <item>.co.kr</item>
+        <item>.net</item>
+        <item>.kr</item>
+    </string-array>
+</resources>

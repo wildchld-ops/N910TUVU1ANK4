@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MmsSinglePageFrame android:id="@id/mms_singlepage_frame" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:scrollbarStyle="insideOverlay" android:orientation="vertical" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ViewStub android:id="@id/sender_title_area" android:layout="@layout/view_title_header" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/page_number" android:layout_width="fill_parent" android:layout_height="23.659973dip" style="?android:attr/windowTitleStyle">
+            <LinearLayout android:gravity="center" android:id="@id/onepage_title_icons" android:paddingTop="2.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="23.659973dip" android:layout_alignParentRight="true">
+                <ImageView android:id="@id/onepage_title_icon01" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/onepage_title_icon02" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <ImageView android:id="@id/onepage_title_icon03" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView android:textSize="15.0sp" android:textColor="@color/slideshow_subject_color" android:gravity="center_vertical" android:id="@id/pagenumber" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/onepage_title_icons" />
+            <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/slideshow_subject_color" android:gravity="center_vertical" android:id="@id/title_subject" android:paddingLeft="12.0dip" android:paddingRight="50.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_toLeftOf="@id/pagenumber" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <ScrollView android:scrollbarStyle="outsideInset" android:id="@id/MainScrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/MainLinear" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+</com.android.mms.ui.MmsSinglePageFrame>

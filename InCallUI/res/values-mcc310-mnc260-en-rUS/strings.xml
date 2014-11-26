@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="phoneAppLabel">Device</string>
+    <string name="noise_reduction_off">Noise reduction disabled.</string>
+    <string name="noise_reduction_on">Noise reduction enabled.</string>
+</resources>

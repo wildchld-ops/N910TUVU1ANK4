@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_enabled="false" android:drawable="@drawable/settings_preference_icon_more_disable_focused" />
+    <item android:state_enabled="false" android:drawable="@drawable/settings_preference_icon_more_disable_white" />
+    <item android:state_focused="true" android:state_enabled="true" android:drawable="@drawable/settings_preference_icon_more_focused" />
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/settings_preference_icon_more_pressed_white" />
+    <item android:drawable="@drawable/settings_preference_icon_more_white" />
+</selector>

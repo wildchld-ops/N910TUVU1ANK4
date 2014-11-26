@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/guide_fullscreen" android:background="#bb000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:layout_gravity="right" android:id="@id/quickaccess_close_button" android:background="@drawable/quickaccess_button" android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="69.0dip" android:contentDescription="@null" />
+    <ImageView android:layout_gravity="center" android:id="@id/quickaccess_help_image" android:layout_width="279.0dip" android:layout_height="162.0dip" android:contentDescription="@null" />
+    <ScrollView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.0dip" android:layout_marginBottom="195.0dip">
+        <TextView android:textSize="19.0sp" android:textColor="#ff6cdbff" android:id="@id/quickaccess_help_msg" android:layout_width="300.0dip" android:layout_height="109.0dip" android:fontFamily="sec-roboto-light" />
+    </ScrollView>
+</LinearLayout>

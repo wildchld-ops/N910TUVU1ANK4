@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/select_languages" android:key="languages_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/use_system_language" android:key="SETTINGS_DEFAULT_USE_SYSTEM_LANGUAGE" android:defaultValue="false" android:disableDependentsState="true" />
+    <PreferenceCategory android:title="@string/additional_keyboards" android:key="additional_keyboards" />
+</PreferenceScreen>

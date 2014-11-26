@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.touchwiz.widget.TwCheckBox android:layout_gravity="left" android:id="@id/finger_checkbox" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentLeft="true" style="@style/Custom_Button_CheckBox" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@id/finger_name" android:layout_width="fill_parent" android:layout_height="?android:listPreferredItemHeight" android:minHeight="?android:listPreferredItemHeight" android:singleLine="true" android:paddingEnd="12.0dip" />
+</LinearLayout>

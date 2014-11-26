@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/personalizer_fragment" android:title="@string/use_xt9" android:key="connect"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.diotek.ime.framework.spellcheckservice.SpellCheckerPreference android:persistent="true" android:title="Spell Checker" android:key="settings_use_spell_checker" android:summary="Spell Checker" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_correction" android:key="SETTINGS_DEFAULT_AUTO_CORRECTION" android:summary="@string/use_auto_correction_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_live_language" android:key="SETTINGS_DEFAULT_USE_LIVE_LANGUAGE" android:summary="@string/use_live_language_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_standard_data" android:key="support_dlm" android:summary="@string/use_standard_data_summary" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/personalization_title" android:key="@string/pref_personalize_sources_category_key">
+        <com.diotek.ime.framework.connect.personalizer.PersonalizerPreference android:id="@id/gmail" android:title="@string/personalize_gmail_title" android:key="connect_gmail_enable" android:summary="@string/personalize_gmail_subtitle" android:dependency="support_dlm" style="?android:attr/dialogPreferenceStyle" />
+        <com.diotek.ime.framework.connect.personalizer.PersonalizerPreference android:id="@id/facebook" android:title="@string/personalize_facebook_title" android:key="connect_facebook_enable" android:summary="@string/personalize_facebook_subtitle" android:dependency="support_dlm" style="?android:attr/dialogPreferenceStyle" />
+        <com.diotek.ime.framework.connect.personalizer.PersonalizerPreference android:id="@id/twitter" android:title="@string/personalize_twitter_title" android:key="connect_twitter_enable" android:summary="@string/personalize_twitter_subtitle" android:dependency="support_dlm" style="?android:attr/dialogPreferenceStyle" />
+        <com.diotek.ime.framework.connect.personalizer.PersonalizerPreference android:id="@id/messaging" android:title="@string/personalize_messaging_title" android:key="connect_messaging_enable" android:summary="@string/personalize_messaging_subtitle" android:dependency="support_dlm" style="?android:attr/preferenceStyle" />
+        <com.diotek.ime.framework.connect.personalizer.PersonalizerPreference android:id="@id/contacts" android:title="@string/personalize_contacts_title" android:key="connect_contacts_enable" android:summary="@string/personalize_contacts_subtitle" android:dependency="support_dlm" style="?android:attr/preferenceStyle" />
+        <com.diotek.ime.framework.connect.personalizer.DeletePersonalizedDataDialog android:title="@string/pref_delete_dynamic_title" android:key="clear_personalised_data" android:summary="@string/pref_delete_dynamic_summary" android:dependency="support_dlm" android:dialogMessage="@string/pref_delete_dynamic_dialog_title" android:negativeButtonText="@string/pref_delete_dynamic_dialog_cancel" style="?android:attr/dialogPreferenceStyle" />
+    </PreferenceCategory>
+</PreferenceScreen>

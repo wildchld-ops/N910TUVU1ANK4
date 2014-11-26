@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="multiwindow_focusline_thickness">3.0dip</dimen>
+    <dimen name="multiwindow_titlebar_height">0.0dip</dimen>
+    <dimen name="multiwindow_minimize_inner_icon_radius">25.0dip</dimen>
+    <dimen name="multiwindow_app_icon">65.0dip</dimen>
+    <dimen name="multiwindow_frame_out_shadow_size">4.0dip</dimen>
+    <dimen name="multiwindow_floating_mBorderPaintInner">3.0dip</dimen>
+    <dimen name="multiwindow_pen_window_show_boundaryY">40.0dip</dimen>
+    <dimen name="hover_fulltext_text_size">16.0sp</dimen>
+    <dimen name="hover_tooltip_popup_padding_left">23.0dip</dimen>
+    <dimen name="hover_tooltip_popup_padding_right">23.0dip</dimen>
+    <dimen name="hover_tooltip_popup_padding_top">15.0dip</dimen>
+    <dimen name="hover_tooltip_popup_padding_bottom">15.0dip</dimen>
+    <dimen name="hover_fulltext_popup_padding_left">19.0dip</dimen>
+    <dimen name="hover_fulltext_popup_padding_right">19.0dip</dimen>
+    <dimen name="hover_fulltext_popup_padding_top">17.0dip</dimen>
+    <dimen name="hover_fulltext_popup_padding_bottom">17.0dip</dimen>
+    <dimen name="airview_default_bg_padding_top">7.5dip</dimen>
+    <dimen name="airview_default_bg_padding_bottom">7.5dip</dimen>
+    <dimen name="wb_button_cue_margin_left">21.0dip</dimen>
+    <dimen name="wb_button_cue_margin_top">16.0dip</dimen>
+    <dimen name="wb_button_cue_offset_from_cursor">5.0dip</dimen>
+    <dimen name="wb_button_cue_image_padding_bottom">1.0dip</dimen>
+</resources>

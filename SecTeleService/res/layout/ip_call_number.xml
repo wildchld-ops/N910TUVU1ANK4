@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="65.32999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/prefixnum_text_layout" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.9">
+        <TextView android:textSize="27.0dip" android:textColor="@drawable/style_txt_color3" android:gravity="center_vertical" android:id="@id/ipcall_number" android:background="@drawable/list_select_all" android:paddingLeft="13.329987dip" android:focusable="false" android:focusableInTouchMode="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+    </LinearLayout>
+    <View android:id="@id/divider1" android:background="@drawable/divider_vertical_2line" android:layout_width="1.3299866dip" android:layout_height="65.32999dip" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/prefixnum_radio_layout" android:clickable="true" android:layout_width="65.32999dip" android:layout_height="fill_parent">
+        <RadioButton android:id="@id/default_ip_number" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+    </LinearLayout>
+</LinearLayout>

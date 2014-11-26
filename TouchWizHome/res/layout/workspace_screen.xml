@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.CellLayoutWithResizableWidgets android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/home_pageMarginPlusPaddingTop" android:hapticFeedbackEnabled="false" android:layout_marginStart="@dimen/home_pageMarginLeft" android:layout_marginEnd="@dimen/home_pageMarginRight" launcher:cellWidth="@dimen/home_cellWidth" launcher:cellHeight="@dimen/home_cellHeight" launcher:cellGapX="@dimen/home_cellGapX" launcher:cellGapY="@dimen/home_cellGapY"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <TextView android:textSize="@dimen/empty_message_font_size" android:textColor="#ccffffff" android:gravity="center" android:id="@id/empty_message" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#ff000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="1.0" />
+    <ImageView android:layout_gravity="center" android:id="@id/secretpage_metaphor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:src="@drawable/fingerprint_pinch_view" android:layout_marginEnd="8.0dip" />
+</com.android.launcher2.CellLayoutWithResizableWidgets>

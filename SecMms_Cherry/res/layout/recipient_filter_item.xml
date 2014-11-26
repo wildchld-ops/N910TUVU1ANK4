@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.RecipientFilterItem android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="0.0dip" android:paddingRight="0.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/dropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/recipient_avatar" android:layout_width="57.0dip" android:layout_height="57.0dip" />
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/recipients_item_layout" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="4.0dip" android:layout_marginRight="6.0dip" android:layout_marginBottom="4.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="19.0sp" android:textColor="@color/recipient_name_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/number_and_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/name" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+                <TextView android:textSize="18.0sp" android:textColor="@color/recipient_number_color" android:id="@id/number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" />
+                <TextView android:textSize="18.0sp" android:textColor="@color/recipient_label_color" android:layout_gravity="right" android:id="@id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/divider" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@drawable/tw_list_divider_holo_light" android:scaleType="fitXY" />
+</com.android.mms.ui.RecipientFilterItem>

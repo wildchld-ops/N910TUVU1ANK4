@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/playing_audio" android:paddingLeft="16.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/audio_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/msg_icon_02" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/playing_audio_info_color" android:gravity="center_vertical" android:id="@id/name" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

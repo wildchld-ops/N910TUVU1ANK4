@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/mms_view" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="left" android:id="@id/slide_frame_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/image_view_layout" android:background="@drawable/msg_image_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxWidth="140.0dip" android:maxHeight="140.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/video_play_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_msg_videoplay_button" />
+        </FrameLayout>
+        <TextView android:textColor="@color/color_black" android:layout_gravity="center" android:id="@id/location_text_view" android:background="#00000000" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/slide_frame_layout" />
+    </RelativeLayout>
+</FrameLayout>

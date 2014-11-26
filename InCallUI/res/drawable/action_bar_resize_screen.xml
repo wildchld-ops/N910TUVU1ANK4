@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/tw_action_bar_icon_original_holo_dark" />
+    <item android:state_enabled="false" android:drawable="@drawable/tw_action_bar_icon_original_holo_dark_dim" />
+    <item android:state_enabled="true" android:state_selected="false" android:drawable="@drawable/tw_action_bar_icon_full_holo_dark" />
+    <item android:state_enabled="false" android:drawable="@drawable/tw_action_bar_icon_full_holo_dark_dim" />
+</selector>

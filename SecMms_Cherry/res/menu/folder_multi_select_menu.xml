@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/spam_menu">
+        <item android:icon="@drawable/ic_menu_register_as_spam_number" android:id="@id/add_spam" android:title="@string/add_to_spam_numbers" android:showAsAction="always" />
+        <item android:icon="@drawable/ic_menu_unregister_as_spam_number" android:id="@id/remove_spam" android:title="@string/remove_from_spam_numbers" android:showAsAction="always" />
+    </group>
+    <item android:icon="@drawable/ic_menu_reply" android:id="@id/reply" android:title="@string/menu_reply" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_download_mms" android:id="@id/download_mms" android:title="@string/download" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_save_messages" android:id="@id/save_message" android:title="@string/save" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/header_button_icon_delete" android:id="@id/delete" android:title="@string/delete" android:showAsAction="always" />
+    <item android:icon="@drawable/ic_menu_send" android:id="@id/send_now" android:title="@string/menu_send_now" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/header_button_icon_cancel" android:id="@id/cancel_message" android:title="@string/menu_cancel_message" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_copy_message_text" android:id="@id/copy_message_text" android:title="@string/message_copy" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_forward" android:id="@id/forward" android:title="@string/menu_forward" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_lock" android:id="@id/lock" android:title="@string/message_lock" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_unlock" android:id="@id/unlock" android:title="@string/message_unlock" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_contact" android:id="@id/view_contact" android:title="@string/menu_view_contact" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_add_to_phonebook" android:id="@id/add_contact" android:title="@string/menu_add_to_contacts" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_unlock" android:id="@id/copy_to_sdcard" android:title="@string/copy_to_sdcard_for_msg" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_edit" android:id="@id/edit_message" android:title="@string/menu_edit" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_information_display" android:id="@id/view_message_detail" android:title="@string/view_message_details" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_resend" android:id="@id/resend" android:title="@string/menu_resend" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/ic_menu_resend" android:id="@id/mark_as_read" android:title="@string/mark_as_read" android:showAsAction="always|withText" />
+    <item android:icon="@drawable/actionbar_list_icon_add_spam" android:id="@id/add_to_black_list" android:title="@string/menu_add_to_black_list" android:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_list_icon_add_spam" android:id="@id/add_to_white_list" android:title="@string/menu_add_to_white_list" android:showAsAction="always" />
+    <item android:id="@id/done" android:title="@string/done" android:showAsAction="always" />
+</menu>

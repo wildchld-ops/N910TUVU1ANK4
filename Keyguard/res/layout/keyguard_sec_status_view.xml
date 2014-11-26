@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.SecKeyguardStatusView android:orientation="vertical" android:id="@id/keyguard_sec_status_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/keyguard_sec_clock_view" />
+    <include layout="@layout/sec_my_profile" />
+</com.android.keyguard.sec.SecKeyguardStatusView>

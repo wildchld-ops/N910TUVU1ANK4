@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_FolderHovering">false</bool>
+    <bool name="config_fixedWallpaperOffset">true</bool>
+    <bool name="config_hardwareAccelerated">true</bool>
+    <bool name="config_hasHotseat">true</bool>
+    <bool name="config_hasSoftMenuKey">false</bool>
+    <bool name="config_isAppsListAllowed">false</bool>
+    <bool name="config_isLightTheme">true</bool>
+    <bool name="config_isMenuAppsIconSizeChanged">false</bool>
+    <bool name="config_isMenuScrollAlpha">true</bool>
+    <bool name="config_isMovefolderhoveringlocation">true</bool>
+    <bool name="config_isPopIconsDisplayed">true</bool>
+    <bool name="config_isTabletLayout">false</bool>
+    <bool name="config_isUsingMoreLineinFolder">false</bool>
+    <bool name="config_isWidgetSearchTextColorLight">false</bool>
+    <bool name="config_largeHeap">true</bool>
+    <item type="bool" name="config_voice_capable">@android:bool/config_voice_capable</item>
+    <bool name="config_wsqv_DeleteDropTargetTextRight">false</bool>
+    <bool name="config_wsqv_DeleteDropTarget_isTop">false</bool>
+    <bool name="opt_showHelpTextOnEmptyHomePage">false</bool>
+    <bool name="opt_showToastWhenNewMenuPageCreated">true</bool>
+</resources>

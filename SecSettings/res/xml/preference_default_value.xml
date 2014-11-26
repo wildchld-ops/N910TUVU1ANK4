@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:key="notification_time_interval" android:defaultValue="@string/preference_time_interval_default" />
+</PreferenceScreen>

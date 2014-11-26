@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table name="MUMContainerType">
+    <row>
+        <column name="Name" value="knox-b2b" />
+        <column name="AppInstallList" />
+        <column name="ProtectedPkgList" />
+        <column name="GoogleAppsPkgList" />
+    </row>
+    <row>
+        <column name="Name" value="knox-1.0" />
+        <column name="AppInstallList" />
+        <column name="ProtectedPkgList" />
+        <column name="GoogleAppsPkgList" />
+    </row>
+</table>

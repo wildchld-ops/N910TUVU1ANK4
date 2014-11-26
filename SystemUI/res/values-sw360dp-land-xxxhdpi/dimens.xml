@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="multiwindow_view_pager_top_margin">0.0dip</dimen>
+    <dimen name="multiwindow_view_pager_left_margin">5.0dip</dimen>
+    <dimen name="help_popup_drag_and_drop_width">288.0dip</dimen>
+    <dimen name="recent_begin_rotate_down_distance">120.0dip</dimen>
+    <dimen name="recent_begin_rotate_up_distance">50.0dip</dimen>
+    <dimen name="recent_top_stack_start_position">35.0dip</dimen>
+    <dimen name="recent_top_stack_distance">10.0dip</dimen>
+    <dimen name="recent_top_stack_moving_distance_factor">20.0dip</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_017a">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_017b">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_017c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_017d">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_017e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_017f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0180">false</item>
+</resources>

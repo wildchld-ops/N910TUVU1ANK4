@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MultiFrame_Helptext_SettingGuide">Hold the device steady while taking pictures. To take instant pictures in low light, disable %s in Settings.</string>
+</resources>

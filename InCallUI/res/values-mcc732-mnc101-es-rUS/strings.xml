@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="card_title_ltn_unassigned_num">NUMERO NO ESTA EN USO</string>
+    <string name="card_title_ltn_busy">NUMERO OCUPADO</string>
+    <string name="card_title_ltn_no_user_resp">NO HAY RESPUESTA</string>
+    <string name="card_title_ltn_no_answer">USUARIO NO CONTESTA</string>
+    <string name="card_title_ltn_normal_unspecified">LLAMADA TERMINADA</string>
+    <string name="card_title_ltn_no_circuit">RED OCUPADA</string>
+    <string name="card_title_ltn_no_channel">RED OCUPADA</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TwProgressBar">
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/tw_progress_horizontal</item>
+        <item name="android:minHeight">16.0dip</item>
+    </style>
+    <style name="TwSeekBar" parent="@style/TwAbsSeekBar">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">16.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/tw_progress_horizontal</item>
+        <item name="android:minHeight">16.0dip</item>
+        <item name="android:thumb">@drawable/tw_seek_thumb</item>
+        <item name="android:thumbOffset">0.0px</item>
+        <item name="twIndicatorThickness">16.0dip</item>
+        <item name="twSeekThumbFontColor">@color/tw_color140</item>
+        <item name="twSeekThumbFontSize">24.0sp</item>
+        <item name="twSeekThumbFontEnable">false</item>
+        <item name="twSeekThumbFontBoldStyle">true</item>
+    </style>
+</resources>

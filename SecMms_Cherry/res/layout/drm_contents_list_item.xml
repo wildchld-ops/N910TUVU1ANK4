@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/drm_item" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@touchwiz:style/TwTextAppearanceListOneLine" android:textSize="20.0dip" android:gravity="center_vertical" android:id="@id/drm_content_list_item" android:layout_width="fill_parent" android:layout_height="55.0dip" />
+</LinearLayout>

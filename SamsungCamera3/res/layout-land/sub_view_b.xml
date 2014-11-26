@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/subview_b_layout" android:background="#ff04222d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="left|center" android:layout_gravity="left|center" android:id="@id/sub_camera_indicators" android:layout_width="245.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/subview_indiciator_margin_left">
+        <ImageView android:id="@id/sub_camera_ind_battery" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:layout_gravity="left|center" android:id="@id/sub_camera_ind_remaincount" android:visibility="invisible" android:layout_width="@dimen/subview_indicator_remaincount_size" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_flash" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_timer" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_voice" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_storage" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_gps" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_recmode" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <ImageView android:id="@id/sub_camera_ind_lowlight" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/subview_recording" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="169.0dip" android:layout_marginRight="23.0dip" android:src="@drawable/camera_preview_bended_button_video" android:contentDescription="@string/record" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/subview_recording_stop" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="169.0dip" android:layout_marginRight="23.0dip" android:src="@drawable/camera_preview_bended_button_stop" android:contentDescription="@string/stop" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/subview_shutter" android:visibility="visible" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_preview_bended_button_snapshot" android:contentDescription="@string/shutter" />
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/subview_recording_shutter" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/camera_preview_bended_button_snapshot" android:contentDescription="@string/shutter" />
+</LinearLayout>

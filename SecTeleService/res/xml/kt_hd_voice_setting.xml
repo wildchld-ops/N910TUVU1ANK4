@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/kt_hd_voice_title" android:key="kt_hd_voice" android:summary="@string/kt_hd_voice_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/kt_hd_voice_lte_pref_title" android:key="kt_hd_voice_lte_pref" android:summary="@string/kt_hd_voice_lte_pref_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

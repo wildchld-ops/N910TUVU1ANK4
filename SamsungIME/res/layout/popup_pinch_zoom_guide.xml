@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="540.0px" android:layout_height="wrap_content" android:minWidth="540.0px" android:minHeight="500.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@android:id/title" android:padding="14.0px" android:layout_width="540.0px" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0dip" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/pinch_zoom_guide_title" style="@style/popupGetstureGuideTextView" />
+    </LinearLayout>
+    <View android:background="#fff0f0f0" android:layout_width="540.0px" android:layout_height="2.0px" />
+    <ScrollView android:layout_width="wrap_content" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="540.0px" android:layout_height="wrap_content" android:paddingStart="26.0px" android:paddingEnd="45.0px">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0px">
+                <TextView android:textSize="22.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pinch_zoom_guide_zoomin_title" style="@style/popupGetstureGuideTextView" />
+                <TextView android:textSize="20.0dip" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pinch_zoom_guide_zoomin_content" style="@style/popupGetstureGuideTextView" />
+                <ImageView android:layout_gravity="center" android:id="@id/motion_tutorial_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0px" android:layout_marginBottom="2.0px" style="@style/popupPinchZoomGuideImageView" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="26.0px">
+                <TextView android:textSize="22.0dip" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pinch_zoom_guide_moving_title" style="@style/popupGetstureGuideTextView" />
+                <TextView android:textSize="20.0dip" android:textStyle="normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pinch_zoom_guide_moving_content" style="@style/popupGetstureGuideTextView" />
+                <ImageView android:layout_gravity="center" android:id="@id/moving_tutorial_imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0px" style="@style/movingGuideImageView" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <View android:background="#fff0f0f0" android:layout_width="535.0px" android:layout_height="1.0dip" android:layout_marginStart="14.0px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="55.0dip">
+        <CheckBox android:textSize="20.0dip" android:textColor="@color/hwr_popup_guide_sub_text_color" android:layout_gravity="center_vertical" android:id="@id/pinch_zoom_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/btn_check_holo_light" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" android:layout_marginStart="26.0px" />
+    </LinearLayout>
+</LinearLayout>

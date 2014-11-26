@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/international_roaming_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceScreen android:persistent="false" android:title="@string/network_selection_and_access" android:key="network_selection_and_access" />
+    <PreferenceScreen android:persistent="false" android:title="@string/cdma_prl_update" android:key="cdma_prl_update" />
+    <PreferenceScreen android:persistent="false" android:title="@string/international_roaming_free_service_hotline" android:key="international_roaming_free_service_hotline" android:summary="@string/international_roaming_free_service_hotline_summary" />
+    <PreferenceScreen android:persistent="false" android:title="@string/restore_default_setting" android:key="restore_default_setting" />
+    <PreferenceScreen android:persistent="false" android:layout="@xml/international_roaming_illustration" android:key="international_roamimg_illustration" />
+</PreferenceScreen>

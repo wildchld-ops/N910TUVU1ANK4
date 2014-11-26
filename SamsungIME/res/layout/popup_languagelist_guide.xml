@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:id="@id/downloadlanguagelistpopuptext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="55.0dip" android:paddingStart="13.0dip">
+        <CheckBox android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_vertical" android:id="@id/trace_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_guide_dont_show" android:singleLine="true" android:soundEffectsEnabled="true" android:paddingStart="8.0dip" />
+    </LinearLayout>
+</LinearLayout>

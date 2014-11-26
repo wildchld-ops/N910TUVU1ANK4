@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/btn_divider" android:background="@drawable/quick_setting_button_divider_bg" android:layout_width="@dimen/quick_setting_button_divider_width" android:layout_height="@dimen/jbp_quick_setting_button_height" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/quick_setting_btn_text_image" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/jbp_quick_setting_button_height">
+        <ImageView android:layout_gravity="center" android:id="@id/btn_image" android:layout_width="fill_parent" android:layout_height="@dimen/jbp_quick_setting_button_image_height" android:layout_marginTop="@dimen/jbp_quick_setting_button_margin_top" />
+        <TextView android:textSize="@dimen/quick_setting_button_text_size" android:textColor="@color/quick_setting_btn_text_color" android:gravity="center" android:id="@id/btn_text" android:layout_width="fill_parent" android:layout_height="@dimen/quick_setting_button_text_height" android:layout_marginTop="@dimen/quick_setting_button_text_top" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/quick_setting_button_text_line_gap_size" />
+        <ImageView android:layout_gravity="center" android:id="@id/btn_status_image" android:paddingLeft="@dimen/quick_setting_button_status_padding_left" android:paddingTop="@dimen/quick_setting_button_status_padding_top" android:paddingRight="@dimen/quick_setting_button_status_padding_right" android:paddingBottom="@dimen/jbp_quick_setting_button_status_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/quick_setting_button_status_height" android:scaleType="fitXY" android:drawable="@drawable/tw_quick_panel_off" />
+    </LinearLayout>
+</merge>

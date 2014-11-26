@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="register_icon_entries">
+        <item>SIM1</item>
+        <item>SIM2</item>
+        <item>Call</item>
+        <item>Text message</item>
+        <item>MMS</item>
+        <item>Internet</item>
+        <item>Home</item>
+        <item>Office</item>
+        <item>Heart</item>
+    </string-array>
+    <item type="array" name="APKTOOL_DUMMY_0115">false</item>
+</resources>

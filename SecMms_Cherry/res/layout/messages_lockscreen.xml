@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/messages_lockscreen_root" android:background="@drawable/lock_missedevent_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/screen_left_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/noti_popup_avatar" android:layout_width="62.0dip" android:layout_height="62.0dip" android:src="@drawable/lock_missedevent_default" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/screen_right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="13.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/recipient_top_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="21.0dip" android:textColor="@color/conversation_item_unread_count_color" android:id="@id/recipient_info" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/lock_screen_text_shadow_color" android:shadowDy="2.0" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:gravity="top" android:orientation="horizontal" android:id="@id/recipient_bootom_layout" android:layout_width="fill_parent" android:layout_height="29.0dip">
+            <TextView android:textSize="15.0dip" android:textColor="@color/conversation_item_unread_count_color" android:ellipsize="marquee" android:id="@id/message_body" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="@color/lock_screen_text_shadow_color" android:shadowDy="2.0" android:layout_weight="1.0" android:textDirection="locale" style="@style/TextAppearanceNormal" />
+            <TextView android:textSize="15.0dip" android:textColor="@color/conversation_item_unread_count_color" android:id="@id/time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="@color/lock_screen_text_shadow_color" android:shadowDy="2.0" style="@style/TextAppearanceNormal" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

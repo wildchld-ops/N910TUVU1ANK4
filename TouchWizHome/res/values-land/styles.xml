@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HomeEditDragBar">
+        <item name="android:layout_gravity">left</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/toolbar_bg</item>
+        <item name="android:layout_width">@dimen/home_editDragBarSize</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/menu_titleMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/menu_titleMarginRight</item>
+        <item name="android:alpha">0.0</item>
+        <item name="android:translationX">-50.0dip</item>
+        <item name="android:translationY">0.0dip</item>
+        <item name="position">iconTop</item>
+    </style>
+    <style name="HomeEditDragBarItemDelete">
+        <item name="android:background">@drawable/toolbar_glow_delete_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="HomeEditDragBarItemNormal">
+        <item name="android:background">@drawable/toolbar_glow_normal_left</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">0.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="MenuEditDragBar">
+        <item name="android:layout_gravity">top</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/toolbar_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/menu_editDragBarSize</item>
+        <item name="android:layout_marginLeft">@dimen/menu_titleMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/menu_titleMarginRight</item>
+        <item name="android:alpha">0.0</item>
+        <item name="android:translationX">0.0dip</item>
+        <item name="android:translationY">-50.0dip</item>
+        <item name="position">barTop</item>
+    </style>
+</resources>

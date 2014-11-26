@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/guide_fullscreen" android:background="#bb000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/setting_help_image" android:background="@drawable/overlay_help_setting" android:layout_width="356.0dip" android:layout_height="208.0dip" android:layout_marginLeft="14.0dip" android:layout_marginTop="76.0dip" android:contentDescription="@null" />
+    <ScrollView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="122.0dip" android:layout_marginTop="290.0dip">
+        <TextView android:textSize="18.0dip" android:textColor="#ff6cdbff" android:gravity="center" android:id="@id/setting_help_msg" android:layout_width="395.0dip" android:layout_height="66.0dip" android:text="@string/editableshortcut_helptext" android:fontFamily="sec-roboto-light" />
+    </ScrollView>
+    <Button android:textSize="18.0dip" android:id="@id/setting_help_close_button" android:background="@drawable/overlay_help_button" android:layout_width="82.0dip" android:layout_height="34.0dip" android:layout_marginLeft="538.0dip" android:layout_marginTop="296.0dip" android:text="@string/crop_okay_text" android:contentDescription="@null" />
+</RelativeLayout>

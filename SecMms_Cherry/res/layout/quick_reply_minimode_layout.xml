@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="@dimen/quick_reply_popup_width" android:layout_height="@dimen/quick_reply_popup_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:id="@id/popup_reply" android:layout_width="@dimen/quick_reply_popup_width" android:layout_height="@dimen/quick_reply_popup_height">
+        <LinearLayout android:layout_gravity="bottom" android:id="@id/popup_body_bottom" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/popup_composer" android:paddingLeft="12.0dip" android:paddingTop="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip">
+                <EditText android:textSize="18.0sp" android:textColor="#ff000000" android:textColorHint="#ff7f7f7f" android:layout_gravity="center_vertical" android:id="@id/popup_edit_text" android:background="#00ffffff" android:paddingRight="16.0dip" android:layout_width="0.0dip" android:layout_height="38.0dip" android:hint="@string/enter_message_hint" android:singleLine="true" android:layout_weight="1.0" android:inputType="textCapSentences|textAutoCorrect" android:privateImeOptions="inputType=csc" android:imeOptions="actionNone|flagNoExtractUi" />
+                <Button android:layout_gravity="center_vertical" android:id="@id/popup_send_button" android:background="@drawable/selector_message_send_button" android:layout_width="36.0dip" android:layout_height="36.0dip" android:contentDescription="@string/send" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/dialog_button_panel" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="17.0dip" android:textColor="#ff34852b" android:gravity="left|center" android:id="@id/button1" android:background="@drawable/selector_quick_reply_button" android:paddingLeft="@dimen/quick_reply_button_left_padding" android:visibility="visible" android:layout_width="@dimen/quick_reply_button_width" android:layout_height="50.0dip" android:text="@string/menu_call" android:singleLine="true" android:drawableLeft="@drawable/messages_miniapp_button_icon_call" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/divider1" android:background="@drawable/messages_miniapp_button_divider" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:textSize="17.0dip" android:textColor="#ff464d52" android:gravity="left|center" android:id="@id/button2" android:background="@drawable/selector_quick_reply_button" android:paddingLeft="@dimen/quick_reply_button_left_padding" android:visibility="visible" android:layout_width="@dimen/quick_reply_button_width" android:layout_height="50.0dip" android:text="@string/menu_reply" android:singleLine="true" android:drawableLeft="@drawable/messages_miniapp_button_icon_reply" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/divider2" android:background="@drawable/messages_miniapp_button_divider" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <Button android:textSize="17.0dip" android:textColor="#ff464d52" android:gravity="left|center" android:id="@id/button3" android:background="@drawable/selector_quick_reply_button" android:paddingLeft="@dimen/quick_reply_button_left_padding" android:layout_width="@dimen/quick_reply_button_width" android:layout_height="50.0dip" android:text="@string/view" android:singleLine="true" android:drawableLeft="@drawable/messages_miniapp_button_icon_view" android:drawablePadding="10.0dip" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/popup_body_center" android:layout_width="wrap_content" android:layout_height="51.0dip" android:layout_marginTop="75.0dip">
+            <ScrollView android:orientation="vertical" android:id="@id/message_body_view" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:visibility="visible" android:layout_width="@dimen/quick_reply_popup_width" android:layout_height="45.0dip" android:overScrollMode="never">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/message_subject" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" />
+                    <ImageView android:id="@id/mms_imageview" android:background="@drawable/mms_image_thumbnail_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <ImageView android:id="@id/file_transfer_imageview" android:background="@drawable/mms_image_thumbnail_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:id="@id/message_body" android:layout_width="wrap_content" android:layout_height="0.0dip" android:includeFontPadding="false" android:layout_weight="1.0" android:lineSpacingExtra="1.0dip" />
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="top" android:id="@id/popup_body_top" android:layout_width="fill_parent" android:layout_height="75.0dip">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/noti_popup_avatar" android:layout_width="@dimen/quick_reply_avatar_size" android:layout_height="@dimen/quick_reply_avatar_size" android:layout_marginLeft="12.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/msg_list_id_1" />
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_weight="1.0">
+                    <TextView android:textSize="21.0dip" android:textColor="#ffe16f00" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip" android:text="@string/new_message_title" android:includeFontPadding="false" />
+                    <ScrollView android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="35.0dip" android:includeFontPadding="false" android:overScrollMode="never">
+                        <TextView android:textSize="22.0dip" android:textColor="#cc000000" android:id="@id/recipient_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="24.0dip" android:includeFontPadding="false" />
+                    </ScrollView>
+                </LinearLayout>
+                <Button android:id="@id/button_cancel" android:background="@drawable/header_popup_icon_cancel" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="11.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="14.0dip" android:contentDescription="@string/no" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</FrameLayout>

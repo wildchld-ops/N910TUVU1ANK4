@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_rename_file" android:paddingLeft="@dimen/msg_popup_margin" android:paddingTop="10.0dip" android:paddingRight="@dimen/msg_popup_margin" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:textColor="#ffebebeb" android:id="@id/rename_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rename_dlg_text" />
+    <EditText android:layout_gravity="center" android:id="@id/rename_edit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="50" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/rename_btns_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:id="@id/rename_ok" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ok_button" android:layout_weight="1.0" />
+        <Button android:id="@id/rename_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

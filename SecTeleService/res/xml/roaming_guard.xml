@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/domestic" android:key="domestic_cdma_category_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_voice" android:key="domestic_cdma_voice_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_data" android:key="domestic_cdma_data_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:title="@string/international" android:key="international_cdma_category_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_voice" android:key="international_cdma_voice_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_data" android:key="international_cdma_data_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_sms" android:key="international_cdma_sms_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:title="@string/gsm" android:key="international_gsm_category_key" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_voice" android:key="international_gsm_voice_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_data" android:key="international_gsm_data_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/settings_sms" android:key="international_gsm_sms_roaming_guard_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

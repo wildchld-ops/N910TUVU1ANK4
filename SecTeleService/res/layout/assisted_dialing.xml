@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/COUNTRY" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/MCC" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/IDD" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/NDD" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/NANP" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/NBPCD" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+    <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/COUNTRYCODE" android:paddingLeft="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" />
+</LinearLayout>

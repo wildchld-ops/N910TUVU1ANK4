@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.9">
+        <ScrollView android:orientation="vertical" android:id="@id/notice_scroll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="14.0dip" android:layout_weight="0.8">
+            <TextView android:textSize="19.0sp" android:gravity="left" android:id="@id/notice_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:editable="false" />
+        </ScrollView>
+        <View android:background="@drawable/tw_list_divider_holo_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/agreement" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="14.0dip">
+            <CheckBox android:gravity="center_vertical" android:id="@id/checkbox_agreement" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+            <TextView android:textSize="19.0sp" android:gravity="center_vertical" android:id="@id/textview_agreement" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="@string/photoring_use_agreement" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/button_agreement" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_btn_round_more" />
+        </LinearLayout>
+        <View android:background="@drawable/tw_list_divider_holo_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/personal_info" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="14.0dip">
+            <CheckBox android:gravity="center_vertical" android:id="@id/checkbox_personal_info" android:layout_width="wrap_content" android:layout_height="fill_parent" android:checked="false" />
+            <TextView android:textSize="19.0sp" android:gravity="center_vertical" android:id="@id/textview_personal_info" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:text="@string/photoring_personal_info_usage" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="right|center" android:id="@id/button_personal_info" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_btn_round_more" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/tw_list_divider_holo_dark" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <Button android:id="@id/button_close" android:background="@drawable/photoring_menu_button_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ok" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/endCallButtonsLayout" android:visibility="gone" android:layout_width="320.0dip" android:layout_height="fill_parent" android:layout_marginLeft="320.0dip" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/inCallIconActionBarContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <LinearLayout android:orientation="horizontal" android:id="@id/saveButtonFrame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:splitMotionEvents="false">
+            <Button android:id="@id/createContact" android:text="@string/create_contacts" style="@style/EndCallUpperButton" />
+            <View android:gravity="center_vertical" android:id="@id/vertical_divider" android:background="@color/incall_button_bg" android:layout_width="3.0dip" android:layout_height="56.0dip" android:src="@drawable/call_multiparty_divider" />
+            <Button android:id="@id/updateExisting" android:text="@string/update_existing" android:contentDescription="@string/update_existing_tts" style="@style/EndCallUpperButton" />
+            <Button android:id="@id/viewContact" android:text="@string/view_contact" style="@style/EndCallUpperButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/endcallBottomFrame" android:layout_width="fill_parent" android:layout_height="104.0dip" android:splitMotionEvents="false">
+            <Button android:id="@id/videoCallButton" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="1.5dip" android:text="@string/video_call" android:drawableTop="@drawable/incall_button_video_call_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+            <Button android:id="@id/voiceCallButton" android:layout_width="1.0dip" android:layout_marginRight="1.5dip" android:text="@string/call" android:drawableTop="@drawable/incall_button_voice_call_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+            <Button android:id="@id/voiceCallSim1Button" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="1.5dip" android:text="@string/call" android:drawableTop="@drawable/incall_button_voice_call_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+            <Button android:id="@id/voiceCallSim2Button" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="1.5dip" android:text="@string/call" android:drawableTop="@drawable/incall_button_voice_call_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+            <Button android:id="@id/ipCallButton" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="1.5dip" android:text="@string/ip_call" android:drawableTop="@drawable/incall_button_ip_call_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+            <Button android:id="@id/videoCallButtonExtra" android:visibility="gone" android:layout_width="1.0dip" android:layout_marginRight="1.5dip" android:text="@string/video_call" android:drawableTop="@drawable/incall_button_video_call_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+            <Button android:id="@id/sendMessageButton" android:layout_width="1.0dip" android:text="@string/message" android:drawableTop="@drawable/incall_button_message_icon" android:layout_weight="1.0" style="@style/EndCallButton" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

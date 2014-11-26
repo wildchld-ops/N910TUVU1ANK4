@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="21.0sp" android:id="@id/text" android:paddingLeft="12.0dip" android:paddingTop="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/tencent_logo" />
+            <TextView android:textSize="16.0sp" android:layout_gravity="center_vertical" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/smartinterceptor_tencent_log_title" />
+        </LinearLayout>
+        <Button android:textSize="21.0sp" android:id="@id/smart_block_update_btn" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/menu_spam_update" />
+    </LinearLayout>
+</FrameLayout>

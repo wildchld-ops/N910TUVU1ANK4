@@ -1,0 +1,662 @@
+<LevelsModel>
+
+    <steps>
+        <step id="-2" temp="-100"/>
+        <step id="-1" temp="-90"/>
+        <step id="0" temp="490"/>
+        <step id="1" temp="510"/>
+        <step id="2" temp="530"/>
+        <step id="3" temp="550"/>
+        <step id="4" temp="570"/>
+        <step id="5" temp="590"/>
+        <step id="6" temp="610"/>
+        <step id="7" temp="650"/>
+        <step id="8" temp="730"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="CPUFreqMax"/>
+        <writer name="CPUCoreMax"/>
+        <writer name="GPUFreqMax"/>
+        <writer name="Flash"/>
+        <writer name="Recording"/>
+        <writer name="LCDBrightness"/>
+        <writer name="Charging"         extra="/sys/class/power_supply/battery/siop_level"/>
+        <writer name="ACL"              extra="/sys/class/lcd/panel/siop_enable"/>
+    </writers>
+
+    <conditions>
+        <condition name="HeavyUser"/>
+        <condition name="GHeavyUserUp"/>
+        <condition name="GHeavyUserDown"/>
+        <condition name="CameraRecording"/>
+        <condition name="Camera"/>
+        <condition name="CameraShooting"/>
+        <condition name="ScreenOff"/>
+        <condition name="ScreenOffInCall"/>
+        <condition name="ScreenOnAppStarted"/>
+        <condition name="Hangouts"/>
+        <condition name="HangoutsVTCall"/>
+        <condition name="WatchNow"/>
+        <condition name="ChatOnV"/>
+        <condition name="VoiceRecorder"/>
+        <condition name="HotGameControl0"/>
+        <condition name="HotGameControl1"/>
+        <condition name="HotGameControl2"/>
+        <condition name="AppStart"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="-2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="-2"/>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="-1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="-1"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="CPUFreqMax"    value="1600000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="350"/>
+                        <setting writer="LCDBrightness" value="250"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="3"/>
+                        <setting writer="CPUFreqMax"    value="1300000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="266"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="50"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="4"/>
+                        <setting writer="CPUFreqMax"    value="1000000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="5"/>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="6">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="6"/>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="7">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="7"/>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="8">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="8"/>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="0"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HeavyUser"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="250"/>
+                        <setting writer="Charging"      value="50"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="50"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="6">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="7">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="GPUFreqMax"    value="350"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="8">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="GPUFreqMax"    value="350"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="0"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="GHeavyUserUp"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="0"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="250"/>
+                        <setting writer="Charging"      value="50"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="50"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1000000"/>
+                        <setting writer="GPUFreqMax"    value="420"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="800000"/>
+                        <setting writer="GPUFreqMax"    value="420"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="6">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="GPUFreqMax"    value="350"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="7">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="GPUFreqMax"    value="266"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+                <state step="8">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="GPUFreqMax"    value="266"/>
+                        <setting writer="LCDBrightness" value="200"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="0"/>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="GHeavyUserDown"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="CameraRecording"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="LCDBrightness" value="249"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="LCDBrightness" value="200"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="LCDBrightness" value="150"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="Camera"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1600000"/>
+                    </settings>
+                </state>
+                <state step="3">
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="CameraShooting"/>
+            <battery>
+                <state step="2">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1000000"/>
+                        <setting writer="GPUFreqMax"    value="450"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="70"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="ACL"           value="1"/>
+                    </settings>
+                </state>
+            <state step="8">
+                    <settings>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOff"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="100" option="forced"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOffInCall"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="70" option="forced"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOnAppStarted"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="30"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="Hangouts"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="GPUFreqMax"    value="177"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HangoutsVTCall"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="650000"/>
+                        <setting writer="CPUCoreMax"    value="2"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="WatchNow"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1400000"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ChatOnV"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="LCDBrightness" value="200"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="VoiceRecorder"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="GPUFreqMax" value="100"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HotGameControl0"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1000000"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HotGameControl1"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1000000"/>
+                        <setting writer="GPUFreqMax"    value="266"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HotGameControl2"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1300000"/>
+                        <setting writer="GPUFreqMax"    value="266"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="AppStart"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+                <state step="7">
+                    <settings>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

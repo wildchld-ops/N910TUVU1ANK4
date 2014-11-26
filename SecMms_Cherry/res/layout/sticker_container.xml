@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/sticker_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/im_stickers_tab_container" android:background="@drawable/mms_emotion_top_bg" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="40.0dip">
+            <Button android:id="@id/emoticon_toggle_button" android:background="@drawable/selector_emoticon_toggle_button" android:layout_width="54.0dip" android:layout_height="40.0dip" android:layout_marginRight="3.0dip" />
+            <HorizontalScrollView android:scrollbarThumbHorizontal="@drawable/emoticon_scroll" android:id="@id/panelScrollView" android:scrollbars="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:id="@id/panelContainer" android:layout_width="0.0dip" android:layout_height="36.0dip" android:layout_weight="1.0" />
+            </HorizontalScrollView>
+        </LinearLayout>
+        <android.support.v4.view.ViewPager android:id="@id/im_stickers_viewpager" android:background="@drawable/message_bottom_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/im_stickers_tab_container" />
+    </RelativeLayout>
+</FrameLayout>

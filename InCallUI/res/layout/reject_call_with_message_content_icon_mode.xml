@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/reject_call_with_message_icon_mode_item" android:background="@color/reject_with_message_body_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/reject_call_with_message_create" android:background="@drawable/call_incoming_msg_icon_x" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="@dimen/reject_call_with_msg_create_text_size" android:textColor="@color/create_new_message_text_color" android:layout_gravity="center" android:id="@id/reject_call_with_message_create_text" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reject_call_with_msg_create" android:singleLine="true" android:shadowDx="-1.0" android:shadowDy="-1.0" android:shadowRadius="0.3" android:layout_weight="1.0" />
+        <ImageView android:layout_gravity="center" android:id="@id/reject_call_with_message_create_icon" android:background="@drawable/ic_reject_with_message_add_icon" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="14.0dip" />
+    </LinearLayout>
+    <GridView android:id="@id/reject_call_with_message_icon_gridview" style="@style/IconModeGridViewStyle" />
+</LinearLayout>

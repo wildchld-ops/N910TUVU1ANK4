@@ -1,0 +1,3273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="transport_types">
+        <item>UDP</item>
+        <item>TCP</item>
+    </string-array>
+    <string-array name="ims_call_types">
+        <item>Voice</item>
+        <item>Video</item>
+    </string-array>
+    <string-array name="sip_call_options_entries">
+        <item>@string/sip_call_options_entry_1</item>
+        <item>@string/sip_call_options_entry_2</item>
+        <item>@string/sip_call_options_entry_3</item>
+    </string-array>
+    <string-array name="sip_call_options_wifi_only_entries">
+        <item>@string/sip_call_options_wifi_only_entry_1</item>
+        <item>@string/sip_call_options_entry_2</item>
+        <item>@string/sip_call_options_entry_3</item>
+    </string-array>
+    <string-array name="sip_call_options_values">
+        <item>@string/sip_always</item>
+        <item>@string/sip_address_only</item>
+        <item>@string/sip_ask_me_each_time</item>
+    </string-array>
+    <string-array name="phone_type_values">
+        <item>@string/pstn_phone</item>
+        <item>@string/internet_phone</item>
+    </string-array>
+    <string-array name="sip_send_keepalive_options">
+        <item>@string/sip_system_decide</item>
+        <item>@string/sip_always_send_keepalive</item>
+    </string-array>
+    <string-array name="incomming_calls_summary_array">
+        <item>Answer</item>
+        <item>Reject</item>
+    </string-array>
+    <string-array name="autoreject_list_entries">
+        <item>@string/callsettings_off</item>
+        <item>@string/callsettings_autoreject_allnumbers</item>
+        <item>@string/callsettings_autoreject_autorejectnumbers</item>
+    </string-array>
+    <string-array name="match_criteria_entries">
+        <item>@string/Dialog_ExactlyTheSameAs</item>
+        <item>@string/Dialog_StartWith</item>
+        <item>@string/Dialog_EndsWith</item>
+        <item>@string/Dialog_Includes</item>
+    </string-array>
+    <string-array name="match_criteria_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="callreminder_values">
+        <item>0</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>-2</item>
+    </string-array>
+    <string-array name="autoreject_alert">
+        <item>@string/callsettings_Logs</item>
+        <item>@string/callsettings_Contacts</item>
+    </string-array>
+    <string-array name="callsettings_BT_outgoing_condition_list_preference">
+        <item>@string/callsettings_BT_outgoing_condition_lock</item>
+        <item>@string/callsettings_BT_outgoing_condition_unlock</item>
+    </string-array>
+    <string-array name="callsettings_BT_outgoing_condition_list_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="callsettings_BT_outgoing_condition_list_summary">
+        <item>@string/callsettings_BT_outgoing_condition_summary_lock</item>
+        <item>@string/callsettings_BT_outgoing_condition_summary_unlock</item>
+    </string-array>
+    <string-array name="callsettings_BT_outgoing_type_list_preference">
+        <item>@string/callsettings_BT_outgoing_type_last</item>
+        <item>@string/callsettings_voicecall</item>
+        <item>@string/callsettings_videocall</item>
+    </string-array>
+    <string-array name="callsettings_BT_outgoing_type_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="voicecall_eq_list_entries">
+        <item>@string/category_voiceCallEqSettings</item>
+        <item>@string/callsoundEQ_boost_low</item>
+        <item>@string/callsoundEQ_boost_high</item>
+        <item>@string/callsoundEQ_off</item>
+    </string-array>
+    <string-array name="voicecall_eq_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="voicecall_eq_list_entries_no_callpose">
+        <item>@string/callsoundEQ_off</item>
+        <item>@string/callsoundEQ_boost_low</item>
+        <item>@string/callsoundEQ_boost_high</item>
+        <item>@string/callsoundEQ_personalize_left</item>
+        <item>@string/callsoundEQ_personalize_right</item>
+    </string-array>
+    <string-array name="voicecall_eq_list_values_no_callpose">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="remainedDays_until_birthday">
+        <item>@string/BirthDay_remainedDays0</item>
+        <item>@string/BirthDay_remainedDays1</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDays7</item>
+    </string-array>
+    <string-array name="network_mode_list">
+        <item>@string/wcdma_gsm_automode</item>
+        <item>@string/wcdma_only</item>
+        <item>@string/gsm_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_tdscdma">
+        <item>@string/gsm_tdscdma_automode</item>
+        <item>@string/gsm_only</item>
+        <item>@string/tdscdma_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_tdscdma">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_nowcdma">
+        <item>@string/wcdma_gsm_automode</item>
+        <item>@string/gsm_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_nowcdma">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_nogsm">
+        <item>@string/wcdma_gsm_automode</item>
+        <item>@string/wcdma_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_nogsm">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_lte_not_support_gsm">
+        <item>@string/lte_wcdma_automode</item>
+        <item>@string/wcdma_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_lte_not_support_gsm">
+        <item>9</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_not_support_gsm">
+        <item>@string/wcdma_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_not_support_gsm">
+        <item>0</item>
+    </string-array>
+    <string-array name="network_mode_list_dcm_lte">
+        <item>@string/gsm_wcdma_lte_automode</item>
+        <item>@string/wcdma_lte</item>
+        <item>@string/gsm_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_dcm_lte">
+        <item>9</item>
+        <item>12</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_dcm_lte_3g">
+        <item>@string/gsm_wcdma_lte_automode</item>
+        <item>@string/wcdma_lte</item>
+        <item>@string/wcdma_gsm</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/gsm_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_dcm_lte_3g">
+        <item>9</item>
+        <item>12</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_lte">
+        <item>@string/lte_wcdma_gsm_automode</item>
+        <item>@string/wcdma_gsm_automode</item>
+        <item>@string/wcdma_only</item>
+        <item>@string/gsm_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_nogsm_lte">
+        <item>@string/lte_wcdma_gsm_automode</item>
+        <item>@string/wcdma_gsm_automode</item>
+        <item>@string/wcdma_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_nogsm_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_nowcdma_lte">
+        <item>@string/lte_wcdma_gsm_automode</item>
+        <item>@string/wcdma_gsm_automode</item>
+        <item>@string/gsm_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_nowcdma_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_lteonly">
+        <item>@string/lte_gsm_wcdma_automode</item>
+        <item>@string/gsm_wcdma_automode</item>
+        <item>@string/gsm_only</item>
+        <item>@string/wcdma_only</item>
+        <item>@string/lte_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_lteonly">
+        <item>9</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="network_mode_list_orange">
+        <item>@string/mode_2g_3g_4g_autoconnect</item>
+        <item>@string/mode_2g_3g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_orange">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_sfr">
+        <item>@string/mode_2g_3g_4g_autoconnect</item>
+        <item>@string/mode_2g_3g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/mode_2g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_sfr">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_numeric">
+        <item>@string/mode_4g_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/mode_2g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_numeric">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_tdlte">
+        <item>@string/mode_4g_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_2g_autoconnect</item>
+    </string-array>
+    <string-array name="network_mode_list_values_tdlte">
+        <item>9</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="network_mode_list_orange_lteoff">
+        <item>@string/mode_2g_3g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_orange_lteoff">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_sfr_lteoff">
+        <item>@string/mode_2g_3g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/mode_2g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_sfr_lteoff">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_numeric_lteoff">
+        <item>@string/mode_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/mode_2g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_numeric_lteoff">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_vodafone_lte">
+        <item>@string/gsm_hspa_lte_autoconnect</item>
+        <item>@string/gsm_hspa_autoconnect</item>
+        <item>@string/gsm_only</item>
+        <item>@string/hspa_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_vodafone_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_vodafone">
+        <item>@string/gsm_hspa_autoconnect</item>
+        <item>@string/gsm_only</item>
+        <item>@string/hspa_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_vodafone">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_atl_lte">
+        <item>@string/lte_gsm_wcdma_automode</item>
+        <item>@string/gsm_wcdma_automode</item>
+        <item>@string/wcdma_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_atl_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="network_mode_list_yog_lte">
+        <item>@string/mode_4g_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_2g_autoconnect</item>
+        <item>@string/mode_2g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_yog_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_yog">
+        <item>@string/mode_3g_2g_autoconnect</item>
+        <item>@string/mode_2g_only</item>
+    </string-array>
+    <string-array name="network_mode_list_values_yog">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_o2_lte">
+        <item>@string/mode_4g_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/mode_2g_only_cs</item>
+    </string-array>
+    <string-array name="network_mode_list_values_o2_lte">
+        <item>9</item>
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="network_mode_list_o2">
+        <item>@string/mode_3g_2g_autoconnect</item>
+        <item>@string/mode_3g_only</item>
+        <item>@string/mode_2g_only_cs</item>
+    </string-array>
+    <string-array name="network_mode_list_values_o2">
+        <item>0</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="callsettings_accessory_automatic_answering_second_list">
+        <item>@string/callsettings_accessory_automatic_answering_2second</item>
+        <item>@string/callsettings_accessory_automatic_answering_5second</item>
+        <item>@string/callsettings_accessory_automatic_answering_10second</item>
+    </string-array>
+    <string-array name="callsettings_accessory_automatic_answering_second_value">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="default_setup_choices">
+        <item>@string/callsettings_network_setting_automatic</item>
+        <item>@string/callsettings_network_setting_manual</item>
+    </string-array>
+    <string-array name="default_setup_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pnl_auto_update_entries">
+        <item>@string/no_auto_update</item>
+        <item>@string/every_one_month</item>
+        <item>@string/every_thr_month</item>
+        <item>@string/every_six_month</item>
+    </string-array>
+    <string-array name="pnl_auto_update_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="fallback_entries_list_preference">
+        <item>@string/videocall_list_3_option_3</item>
+        <item>@string/videocall_list_3_option_2</item>
+        <item>@string/videocall_list_3_option_1</item>
+    </string-array>
+    <string-array name="cb_outgoing_entries">
+        <item>@string/disable</item>
+        <item>@string/enable</item>
+    </string-array>
+    <string-array name="cb_outgoing_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="cb_incoming_entries">
+        <item>@string/cb_diable</item>
+        <item>@string/cb_item_noalert</item>
+    </string-array>
+    <string-array name="cb_incoming_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="select_dialog_items">
+        <item>@string/delete</item>
+    </string-array>
+    <string-array name="pref_settings_roaming_options">
+        <item>@string/pref_roaming_settings_disable</item>
+        <item>@string/pref_roaming_settings_national_roaming_only</item>
+        <item>@string/pref_roaming_settings_all_networks</item>
+    </string-array>
+    <string-array name="pref_roaming_options_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="emergency_domestic_name_list_for_skt">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_ambul_fire_rescue</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_espionage</item>
+        <item>@string/emergency_contraband</item>
+        <item>@string/emergency_nis</item>
+        <item>@string/emergency_school</item>
+        <item>@string/emergency_cyber</item>
+        <item>@string/emergency_call_lost_center</item>
+    </string-array>
+    <string-array name="emergency_roaming_name_list_for_skt">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_ambul</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_rescue</item>
+        <item>@string/emergency_call_lost_center</item>
+    </string-array>
+    <string-array name="emergency_domestic_name_list_for_skt_no_sim">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_ambul_fire_rescue</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_espionage</item>
+        <item>@string/emergency_contraband</item>
+        <item>@string/emergency_nis</item>
+        <item>@string/emergency_school</item>
+        <item>@string/emergency_cyber</item>
+    </string-array>
+    <string-array name="emergency_roaming_name_list_for_skt_no_sim">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_ambul</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_rescue</item>
+    </string-array>
+    <string-array name="emergency_domestic_number_list_for_skt">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>119</item>
+        <item>122</item>
+        <item>113</item>
+        <item>125</item>
+        <item>111</item>
+        <item>117</item>
+        <item>118</item>
+        <item>1521044</item>
+    </string-array>
+    <string-array name="emergency_roaming_number_list_for_skt">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>119</item>
+        <item>119</item>
+        <item>122</item>
+        <item>119</item>
+        <item>+82263439000</item>
+    </string-array>
+    <string-array name="emergency_domestic_number_list_for_skt_no_sim">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>119</item>
+        <item>122</item>
+        <item>113</item>
+        <item>125</item>
+        <item>111</item>
+        <item>117</item>
+        <item>118</item>
+    </string-array>
+    <string-array name="emergency_roaming_number_list_for_skt_no_sim">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>119</item>
+        <item>119</item>
+        <item>122</item>
+        <item>119</item>
+    </string-array>
+    <string-array name="emergency_domestic_name_list_for_kt">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_espionage</item>
+        <item>@string/emergency_ambul_fire_rescue</item>
+        <item>@string/emergency_contraband</item>
+        <item>@string/emergency_school</item>
+        <item>@string/emergency_nis</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_cyber</item>
+    </string-array>
+    <string-array name="emergency_roaming_name_list_for_kt">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_espionage</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_contraband</item>
+        <item>@string/emergency_school</item>
+        <item>@string/emergency_nis</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_cyber</item>
+    </string-array>
+    <string-array name="emergency_domestic_number_list_for_kt">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>113</item>
+        <item>119</item>
+        <item>125</item>
+        <item>117</item>
+        <item>111</item>
+        <item>122</item>
+        <item>118</item>
+    </string-array>
+    <string-array name="emergency_roaming_number_list_for_kt">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>113</item>
+        <item>119</item>
+        <item>125</item>
+        <item>117</item>
+        <item>111</item>
+        <item>122</item>
+        <item>118</item>
+    </string-array>
+    <string-array name="emergency_domestic_name_list_for_lgt">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_espionage</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_contraband</item>
+        <item>@string/emergency_school</item>
+        <item>@string/emergency_cyber</item>
+        <item>@string/emergency_nis</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_customcenter</item>
+    </string-array>
+    <string-array name="emergency_domestic_name_list_for_lgt_no_sim">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_espionage</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_contraband</item>
+        <item>@string/emergency_school</item>
+        <item>@string/emergency_cyber</item>
+        <item>@string/emergency_nis</item>
+        <item>@string/emergency_marine</item>
+    </string-array>
+    <string-array name="emergency_roaming_name_list_for_lgt">
+        <item>@string/user_input</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_ambul</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_rescue</item>
+    </string-array>
+    <string-array name="emergency_roaming_name_list_for_lgt_cs_available">
+        <item>@string/user_input</item>
+        <item>@string/emergency_roaming_call_center</item>
+        <item>@string/RAD_mofat_call_center</item>
+        <item>@string/emergency_police</item>
+        <item>@string/emergency_ambul</item>
+        <item>@string/emergency_fire</item>
+        <item>@string/emergency_marine</item>
+        <item>@string/emergency_rescue</item>
+    </string-array>
+    <string-array name="emergency_domestic_number_list_for_lgt">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>113</item>
+        <item>119</item>
+        <item>125</item>
+        <item>117</item>
+        <item>118</item>
+        <item>111</item>
+        <item>122</item>
+        <item>114</item>
+    </string-array>
+    <string-array name="emergency_domestic_number_list_for_lgt_no_sim">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>113</item>
+        <item>119</item>
+        <item>125</item>
+        <item>117</item>
+        <item>118</item>
+        <item>111</item>
+        <item>122</item>
+    </string-array>
+    <string-array name="emergency_roaming_number_list_for_lgt">
+        <item>Input manually</item>
+        <item>112</item>
+        <item>119</item>
+        <item>119</item>
+        <item>122</item>
+        <item>119</item>
+    </string-array>
+    <string-array name="emergency_roaming_number_list_for_lgt_cs_available">
+        <item>Input manually</item>
+        <item>+82234167010</item>
+        <item>+82232100404</item>
+        <item>112</item>
+        <item>119</item>
+        <item>119</item>
+        <item>122</item>
+        <item>119</item>
+    </string-array>
+    <string-array name="callerimage_alert_changed_for_kor">
+        <item>@string/pre_img</item>
+        <item>@string/img</item>
+        <item>@string/capt_img</item>
+    </string-array>
+    <string-array name="callerimage_alert_default_for_kor">
+        <item>@string/img</item>
+        <item>@string/capt_img</item>
+    </string-array>
+    <string-array name="data_roaming_guard_set">
+        <item>@string/allow_data_access_deny</item>
+        <item>0</item>
+        <item>@string/allow_data_access_allow</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="global_data_roaming_access_entries">
+        <item>@string/global_data_roaming_access_deny</item>
+        <item>@string/global_data_roaming_access_trip_only</item>
+        <item>@string/global_data_roaming_access_full</item>
+    </string-array>
+    <string-array name="global_data_roaming_access_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="lgt_default_roaming_values">
+        <item>82</item>
+        <item>한국</item>
+        <item>Korea</item>
+    </string-array>
+    <string-array name="zzz_tts_incoming_call_from">
+        <item>Incoming call from %s</item>
+        <item>Appel entrant de %s</item>
+        <item>Eingehender Anruf von %s</item>
+        <item>Chiamata in arrivo da %s</item>
+        <item>Llamada entrante de %s</item>
+        <item>%s 님으로부터 전화가 왔습니다</item>
+        <item>电话来自 %s</item>
+        <item>%sからの着信</item>
+        <item>Chamada recebida de %s</item>
+        <item>Входящий вызов от абонента %s</item>
+    </string-array>
+    <string-array name="zzz_tts_notification_voicemail_title">
+        <item>New voicemail</item>
+        <item>Nouveau message vocal</item>
+        <item>Neue Mailbox-Nachricht</item>
+        <item>Nuovo messaggio vocale</item>
+        <item>Nuevo correo de voz</item>
+        <item>새 음성 메시지</item>
+        <item>新语音信箱</item>
+        <item>新着留守番電話</item>
+        <item>Novo correio de voz</item>
+        <item>Новое сообщение голосовой почты</item>
+    </string-array>
+    <string-array name="zzz_tts_string_langs">
+        <item>eng</item>
+        <item>fra</item>
+        <item>deu</item>
+        <item>ita</item>
+        <item>spa</item>
+        <item>kor</item>
+        <item>zho</item>
+        <item>jpn</item>
+        <item>por</item>
+        <item>rus</item>
+    </string-array>
+    <string-array name="voicecall_type_entries">
+        <item>@string/voicecall_type_volte</item>
+        <item>@string/voicecall_type_cs</item>
+    </string-array>
+    <string-array name="voicecall_type_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="kt_oneline_greeting_entries">
+        <item>@string/enable</item>
+        <item>@string/disable</item>
+    </string-array>
+    <string-array name="kt_oneline_greeting_values">
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="phone_app_mode_entries">
+        <item>@string/phone_app_mode_oem</item>
+        <item>@string/phone_app_mode_skt</item>
+    </string-array>
+    <string-array name="phone_app_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_nodes">
+        <item>Adc.First</item>
+        <item>Adc.Second</item>
+        <item>Adc.Third</item>
+        <item>Adc.Fourth</item>
+        <item>Adc.Fifth</item>
+        <item>Adc.Sixth</item>
+        <item>Adc.Seventh</item>
+        <item>Adc.Eighth</item>
+        <item>Adc.Ninth</item>
+        <item>Adc.Tenth</item>
+        <item>Adc.Eleventh</item>
+        <item>Adc.Twelfth</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_sprint_keys">
+        <item>*2</item>
+        <item>*4</item>
+        <item>0</item>
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>711</item>
+        <item>811</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_sprint_values">
+        <item>@string/abbreviated_dialing_codes_customer_care</item>
+        <item>@string/abbreviated_dialing_codes_wireless_account_information</item>
+        <item>@string/abbreviated_dialing_codes_operator</item>
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_carrier_service_repair</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_virgin_keys">
+        <item>*86</item>
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>*411</item>
+        <item>\#411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>*611</item>
+        <item>\#611</item>
+        <item>711</item>
+        <item>811</item>
+        <item>18883221122</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_virgin_values">
+        <item>@string/abbreviated_dialing_codes_call_care</item>
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+        <item>@string/abbreviated_dialing_codes_virgin_mobile_care</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_boost_keys">
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>*411</item>
+        <item>\#411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>*611</item>
+        <item>\#611</item>
+        <item>711</item>
+        <item>811</item>
+        <item>18882667848</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_boost_values">
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+        <item>@string/abbreviated_dialing_codes_boost_care</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_chameleon_keys">
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>711</item>
+        <item>811</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_chameleon_values">
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_carrier_service_repair</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+    </string-array>
+    <string-array name="north_american_numbering_plan">
+        <item>as</item>
+        <item>ai</item>
+        <item>ag</item>
+        <item>bs</item>
+        <item>bb</item>
+        <item>bm</item>
+        <item>vg</item>
+        <item>ca</item>
+        <item>ky</item>
+        <item>dm</item>
+        <item>do</item>
+        <item>gd</item>
+        <item>gu</item>
+        <item>jm</item>
+        <item>ms</item>
+        <item>mp</item>
+        <item>pr</item>
+        <item>kn</item>
+        <item>lc</item>
+        <item>vc</item>
+        <item>tt</item>
+        <item>tc</item>
+        <item>us</item>
+        <item>vi</item>
+    </string-array>
+    <string-array name="automatic_sending_timer_list">
+        <item>@string/once</item>
+        <item>@string/two_minutes</item>
+        <item>@string/five_minutes</item>
+    </string-array>
+    <string-array name="automatic_sending_timer_list_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="prl_update">
+        <item>Send PRL updating request</item>
+    </string-array>
+    <string-array name="image_quality_entries">
+        <item>@string/image_quality_high</item>
+        <item>@string/image_quality_standard</item>
+    </string-array>
+    <string-array name="image_quality_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>Korea</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>Macau</item>
+        <item>Hong Kong</item>
+        <item>Taiwan</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Philippines</item>
+        <item>Malaysia</item>
+        <item>Indonesia</item>
+        <item>Mongolia</item>
+        <item>Vietnam</item>
+        <item>Cambodia</item>
+        <item>Laos</item>
+        <item>India</item>
+        <item>Maldives</item>
+        <item>Afghanistan</item>
+        <item>Pakistan</item>
+        <item>Saudi Arabia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Turkey</item>
+        <item>Jordan</item>
+        <item>United Arab Emirates</item>
+        <item>Kuwait</item>
+        <item>Kazakhstan</item>
+        <item>Uzbekistan</item>
+        <item>Kyrgyzstan</item>
+        <item>Tajikistan</item>
+        <item>Turkmenistan</item>
+        <item>Bahrain</item>
+        <item>Oman</item>
+        <item>Bhutan</item>
+        <item>Democratic Republic of Timor-Leste</item>
+        <item>Georgia</item>
+        <item>Qatar</item>
+        <item>Lebanon</item>
+        <item>Bangladesh</item>
+        <item>Nepal</item>
+        <item>Sri Lanka</item>
+        <item>Brunei</item>
+        <item>Armenia</item>
+        <item>Yemen</item>
+        <item>Israel</item>
+        <item>Syria</item>
+        <item>Egypt</item>
+        <item>Libya</item>
+        <item>Morocco</item>
+        <item>Sudan</item>
+        <item>Ghana</item>
+        <item>Nigeria</item>
+        <item>Senegal</item>
+        <item>Central African Republic</item>
+        <item>Angola</item>
+        <item>Cameroon</item>
+        <item>Ethiopia</item>
+        <item>South Africa</item>
+        <item>Algeria</item>
+        <item>Benin</item>
+        <item>Botswana</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Equatorial Guinea</item>
+        <item>Togo</item>
+        <item>Cape Verde</item>
+        <item>Gambia</item>
+        <item>Congo</item>
+        <item>The Democratic Republic of the Congo</item>
+        <item>Djibouti</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Gabon</item>
+        <item>Kenya</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Rwanda</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Mali</item>
+        <item>Mauritius</item>
+        <item>Mauritania</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Niger</item>
+        <item>Sierra Leone</item>
+        <item>Seychelles</item>
+        <item>Sao Tome and Principe</item>
+        <item>Swaziland</item>
+        <item>Tanzania</item>
+        <item>Tunisia</item>
+        <item>Uganda</item>
+        <item>Chad</item>
+        <item>Zambia</item>
+        <item>United Kingdom</item>
+        <item>France</item>
+        <item>Netherlands</item>
+        <item>Ireland</item>
+        <item>Belgium</item>
+        <item>Luxembourg</item>
+        <item>Monaco</item>
+        <item>Germany</item>
+        <item>Switzerland</item>
+        <item>Poland</item>
+        <item>Austria</item>
+        <item>Czech Republic</item>
+        <item>Hungary</item>
+        <item>Norway</item>
+        <item>Sweden</item>
+        <item>Finland</item>
+        <item>Denmark</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>Portugal</item>
+        <item>Greece</item>
+        <item>Russia</item>
+        <item>Ukraine</item>
+        <item>Lithuania</item>
+        <item>Belarus</item>
+        <item>Albania</item>
+        <item>Estonia</item>
+        <item>Bulgaria</item>
+        <item>Iceland</item>
+        <item>Faroe Islands</item>
+        <item>Croatia</item>
+        <item>Latvia</item>
+        <item>Liechtenstein</item>
+        <item>Romania</item>
+        <item>Macedonia</item>
+        <item>Moldova</item>
+        <item>San Marino</item>
+        <item>Slovakia</item>
+        <item>Gibraltar</item>
+        <item>United States of America</item>
+        <item>Canada</item>
+        <item>Mexico</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Jamaica</item>
+        <item>Aruba</item>
+        <item>Bahamas</item>
+        <item>Panama</item>
+        <item>Dominica</item>
+        <item>Greenland</item>
+        <item>Honduras</item>
+        <item>Montserrat</item>
+        <item>Nicaragua</item>
+        <item>EI Salvador</item>
+        <item>Trinidad and Tobago</item>
+        <item>Guatemala</item>
+        <item>Australia</item>
+        <item>New Zealand</item>
+        <item>Fiji</item>
+        <item>Papua New Guinea</item>
+        <item>Solomon Islands</item>
+        <item>Vanuatu</item>
+        <item>Palau</item>
+        <item>New Caledonia</item>
+        <item>Brazil</item>
+        <item>Argentina</item>
+        <item>Colombia</item>
+        <item>Peru</item>
+        <item>Venezuela</item>
+        <item>Chile</item>
+        <item>Paraguay</item>
+        <item>Uruguay</item>
+        <item>Bolivia</item>
+        <item>Ecuador</item>
+        <item>French Guiana</item>
+        <item>Suriname</item>
+        <item>United States of America</item>
+        <item>United States of America</item>
+        <item>United States of America</item>
+        <item>United Kingdom</item>
+        <item>India</item>
+    </string-array>
+    <string-array name="Codes">
+        <item>+82</item>
+        <item>+86</item>
+        <item>+81</item>
+        <item>+853</item>
+        <item>+852</item>
+        <item>+886</item>
+        <item>+65</item>
+        <item>+66</item>
+        <item>+63</item>
+        <item>+60</item>
+        <item>+62</item>
+        <item>+976</item>
+        <item>+84</item>
+        <item>+855</item>
+        <item>+856</item>
+        <item>+91</item>
+        <item>+960</item>
+        <item>+93</item>
+        <item>+92</item>
+        <item>+966</item>
+        <item>+98</item>
+        <item>+964</item>
+        <item>+90</item>
+        <item>+962</item>
+        <item>+971</item>
+        <item>+965</item>
+        <item>+7</item>
+        <item>+998</item>
+        <item>+996</item>
+        <item>+992</item>
+        <item>+993</item>
+        <item>+973</item>
+        <item>+968</item>
+        <item>+975</item>
+        <item>+1</item>
+        <item>+995</item>
+        <item>+974</item>
+        <item>+961</item>
+        <item>+880</item>
+        <item>+977</item>
+        <item>+94</item>
+        <item>+673</item>
+        <item>+374</item>
+        <item>+967</item>
+        <item>+972</item>
+        <item>+963</item>
+        <item>+20</item>
+        <item>+218</item>
+        <item>+212</item>
+        <item>+249</item>
+        <item>+233</item>
+        <item>+234</item>
+        <item>+221</item>
+        <item>+236</item>
+        <item>+244</item>
+        <item>+237</item>
+        <item>+251</item>
+        <item>+27</item>
+        <item>+213</item>
+        <item>+229</item>
+        <item>+267</item>
+        <item>+226</item>
+        <item>+257</item>
+        <item>+240</item>
+        <item>+228</item>
+        <item>+238</item>
+        <item>+220</item>
+        <item>+242</item>
+        <item>+243</item>
+        <item>+253</item>
+        <item>+224</item>
+        <item>+245</item>
+        <item>+241</item>
+        <item>+254</item>
+        <item>+266</item>
+        <item>+231</item>
+        <item>+250</item>
+        <item>+261</item>
+        <item>+265</item>
+        <item>+223</item>
+        <item>+230</item>
+        <item>+222</item>
+        <item>+258</item>
+        <item>+264</item>
+        <item>+227</item>
+        <item>+232</item>
+        <item>+248</item>
+        <item>+239</item>
+        <item>+268</item>
+        <item>+255</item>
+        <item>+216</item>
+        <item>+256</item>
+        <item>+235</item>
+        <item>+260</item>
+        <item>+44</item>
+        <item>+33</item>
+        <item>+31</item>
+        <item>+353</item>
+        <item>+32</item>
+        <item>+352</item>
+        <item>+377</item>
+        <item>+49</item>
+        <item>+41</item>
+        <item>+48</item>
+        <item>+43</item>
+        <item>+420</item>
+        <item>+36</item>
+        <item>+47</item>
+        <item>+46</item>
+        <item>+358</item>
+        <item>+45</item>
+        <item>+39</item>
+        <item>+34</item>
+        <item>+351</item>
+        <item>+30</item>
+        <item>+7</item>
+        <item>+380</item>
+        <item>+370</item>
+        <item>+375</item>
+        <item>+355</item>
+        <item>+372</item>
+        <item>+359</item>
+        <item>+354</item>
+        <item>+298</item>
+        <item>+385</item>
+        <item>+371</item>
+        <item>+423</item>
+        <item>+40</item>
+        <item>+389</item>
+        <item>+373</item>
+        <item>+378</item>
+        <item>+421</item>
+        <item>+1</item>
+        <item>+1</item>
+        <item>+1</item>
+        <item>+52</item>
+        <item>+506</item>
+        <item>+53</item>
+        <item>+1876</item>
+        <item>+297</item>
+        <item>+1242</item>
+        <item>+507</item>
+        <item>+1767</item>
+        <item>+299</item>
+        <item>+504</item>
+        <item>+1664</item>
+        <item>+505</item>
+        <item>+503</item>
+        <item>+1868</item>
+        <item>+502</item>
+        <item>+61</item>
+        <item>+64</item>
+        <item>+679</item>
+        <item>+675</item>
+        <item>+677</item>
+        <item>+678</item>
+        <item>+680</item>
+        <item>+687</item>
+        <item>+55</item>
+        <item>+54</item>
+        <item>+57</item>
+        <item>+51</item>
+        <item>+58</item>
+        <item>+56</item>
+        <item>+595</item>
+        <item>+598</item>
+        <item>+591</item>
+        <item>+593</item>
+        <item>+594</item>
+        <item>+597</item>
+        <item>+1</item>
+        <item>+1</item>
+        <item>+1</item>
+        <item>+44</item>
+        <item>+91</item>
+    </string-array>
+    <string-array name="MobileCountryCodes">
+        <item>450</item>
+        <item>460</item>
+        <item>440</item>
+        <item>455</item>
+        <item>454</item>
+        <item>466</item>
+        <item>525</item>
+        <item>520</item>
+        <item>515</item>
+        <item>502</item>
+        <item>510</item>
+        <item>428</item>
+        <item>452</item>
+        <item>456</item>
+        <item>457</item>
+        <item>404</item>
+        <item>472</item>
+        <item>412</item>
+        <item>410</item>
+        <item>420</item>
+        <item>432</item>
+        <item>418</item>
+        <item>286</item>
+        <item>416</item>
+        <item>424</item>
+        <item>419</item>
+        <item>401</item>
+        <item>434</item>
+        <item>437</item>
+        <item>436</item>
+        <item>438</item>
+        <item>426</item>
+        <item>422</item>
+        <item>402</item>
+        <item>514</item>
+        <item>282</item>
+        <item>427</item>
+        <item>415</item>
+        <item>470</item>
+        <item>429</item>
+        <item>413</item>
+        <item>528</item>
+        <item>283</item>
+        <item>421</item>
+        <item>425</item>
+        <item>417</item>
+        <item>602</item>
+        <item>606</item>
+        <item>604</item>
+        <item>634</item>
+        <item>620</item>
+        <item>621</item>
+        <item>608</item>
+        <item>623</item>
+        <item>631</item>
+        <item>624</item>
+        <item>636</item>
+        <item>655</item>
+        <item>603</item>
+        <item>616</item>
+        <item>652</item>
+        <item>613</item>
+        <item>642</item>
+        <item>627</item>
+        <item>615</item>
+        <item>625</item>
+        <item>607</item>
+        <item>629</item>
+        <item>630</item>
+        <item>638</item>
+        <item>611</item>
+        <item>632</item>
+        <item>628</item>
+        <item>639</item>
+        <item>651</item>
+        <item>618</item>
+        <item>635</item>
+        <item>646</item>
+        <item>650</item>
+        <item>610</item>
+        <item>617</item>
+        <item>609</item>
+        <item>643</item>
+        <item>649</item>
+        <item>614</item>
+        <item>619</item>
+        <item>633</item>
+        <item>626</item>
+        <item>653</item>
+        <item>640</item>
+        <item>605</item>
+        <item>641</item>
+        <item>622</item>
+        <item>645</item>
+        <item>234</item>
+        <item>208</item>
+        <item>204</item>
+        <item>272</item>
+        <item>206</item>
+        <item>270</item>
+        <item>212</item>
+        <item>262</item>
+        <item>228</item>
+        <item>260</item>
+        <item>232</item>
+        <item>230</item>
+        <item>216</item>
+        <item>242</item>
+        <item>240</item>
+        <item>244</item>
+        <item>238</item>
+        <item>222</item>
+        <item>214</item>
+        <item>268</item>
+        <item>202</item>
+        <item>250</item>
+        <item>255</item>
+        <item>246</item>
+        <item>257</item>
+        <item>276</item>
+        <item>248</item>
+        <item>284</item>
+        <item>274</item>
+        <item>288</item>
+        <item>219</item>
+        <item>247</item>
+        <item>295</item>
+        <item>226</item>
+        <item>294</item>
+        <item>259</item>
+        <item>292</item>
+        <item>231</item>
+        <item>266</item>
+        <item>310</item>
+        <item>302</item>
+        <item>334</item>
+        <item>712</item>
+        <item>368</item>
+        <item>338</item>
+        <item>363</item>
+        <item>364</item>
+        <item>714</item>
+        <item>366</item>
+        <item>290</item>
+        <item>708</item>
+        <item>354</item>
+        <item>710</item>
+        <item>706</item>
+        <item>374</item>
+        <item>704</item>
+        <item>505</item>
+        <item>530</item>
+        <item>542</item>
+        <item>537</item>
+        <item>540</item>
+        <item>541</item>
+        <item>552</item>
+        <item>546</item>
+        <item>724</item>
+        <item>722</item>
+        <item>732</item>
+        <item>716</item>
+        <item>734</item>
+        <item>730</item>
+        <item>744</item>
+        <item>748</item>
+        <item>736</item>
+        <item>740</item>
+        <item>742</item>
+        <item>746</item>
+        <item>311</item>
+        <item>313</item>
+        <item>316</item>
+        <item>235</item>
+        <item>405</item>
+    </string-array>
+    <string-array name="IddValue">
+        <item>00700,001,002,008</item>
+        <item>00</item>
+        <item>001,010,001010</item>
+        <item>00</item>
+        <item>001</item>
+        <item>002,005</item>
+        <item>001</item>
+        <item>001</item>
+        <item>00</item>
+        <item>00</item>
+        <item>001,007</item>
+        <item>001</item>
+        <item>00</item>
+        <item>001</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>810</item>
+        <item>810</item>
+        <item>00</item>
+        <item>810</item>
+        <item>810</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>810</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>009</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>000</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>020</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>000</item>
+        <item>00</item>
+        <item>000</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>810</item>
+        <item>810</item>
+        <item>00</item>
+        <item>810</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>011</item>
+        <item>011</item>
+        <item>00</item>
+        <item>00</item>
+        <item>119</item>
+        <item>011</item>
+        <item>00</item>
+        <item>011</item>
+        <item>00</item>
+        <item>011</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>011</item>
+        <item>00</item>
+        <item>0011</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>0015</item>
+        <item>00</item>
+        <item>009</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>00</item>
+        <item>011</item>
+        <item>011</item>
+        <item>011</item>
+        <item>00</item>
+        <item>00</item>
+    </string-array>
+    <string-array name="AfricaCountry">
+        <item>Egypt</item>
+        <item>Libya</item>
+        <item>Morocco</item>
+        <item>Sudan</item>
+        <item>Ghana</item>
+        <item>Nigeria</item>
+        <item>Senegal</item>
+        <item>Central African Republic</item>
+        <item>Angola</item>
+        <item>Cameroon</item>
+        <item>Ethiopia</item>
+        <item>South Africa</item>
+        <item>Algeria</item>
+        <item>Benin</item>
+        <item>Botswana</item>
+        <item>Burkina Faso</item>
+        <item>Burundi</item>
+        <item>Equatorial Guinea</item>
+        <item>Togo</item>
+        <item>Cape Verde</item>
+        <item>Gambia</item>
+        <item>Congo</item>
+        <item>The Democratic Republic of the Congo</item>
+        <item>Djibouti</item>
+        <item>Guinea</item>
+        <item>Guinea-Bissau</item>
+        <item>Gabon</item>
+        <item>Kenya</item>
+        <item>Lesotho</item>
+        <item>Liberia</item>
+        <item>Rwanda</item>
+        <item>Madagascar</item>
+        <item>Malawi</item>
+        <item>Mali</item>
+        <item>Mauritius</item>
+        <item>Mauritania</item>
+        <item>Mozambique</item>
+        <item>Namibia</item>
+        <item>Niger</item>
+        <item>Sierra Leone</item>
+        <item>Seychelles</item>
+        <item>Sao Tome and Principe</item>
+        <item>Swaziland</item>
+        <item>Tanzania</item>
+        <item>Tunisia</item>
+        <item>Uganda</item>
+        <item>Chad</item>
+        <item>Zambia</item>
+    </string-array>
+    <string-array name="AfricaCodes">
+        <item>+20</item>
+        <item>+218</item>
+        <item>+212</item>
+        <item>+249</item>
+        <item>+233</item>
+        <item>+234</item>
+        <item>+221</item>
+        <item>+236</item>
+        <item>+244</item>
+        <item>+237</item>
+        <item>+251</item>
+        <item>+27</item>
+        <item>+213</item>
+        <item>+229</item>
+        <item>+267</item>
+        <item>+226</item>
+        <item>+257</item>
+        <item>+240</item>
+        <item>+228</item>
+        <item>+238</item>
+        <item>+220</item>
+        <item>+242</item>
+        <item>+243</item>
+        <item>+253</item>
+        <item>+224</item>
+        <item>+245</item>
+        <item>+241</item>
+        <item>+254</item>
+        <item>+266</item>
+        <item>+231</item>
+        <item>+250</item>
+        <item>+261</item>
+        <item>+265</item>
+        <item>+223</item>
+        <item>+230</item>
+        <item>+222</item>
+        <item>+258</item>
+        <item>+264</item>
+        <item>+227</item>
+        <item>+232</item>
+        <item>+248</item>
+        <item>+239</item>
+        <item>+268</item>
+        <item>+255</item>
+        <item>+216</item>
+        <item>+256</item>
+        <item>+235</item>
+        <item>+260</item>
+    </string-array>
+    <string-array name="AfricaMCC">
+        <item>602</item>
+        <item>606</item>
+        <item>604</item>
+        <item>634</item>
+        <item>620</item>
+        <item>621</item>
+        <item>608</item>
+        <item>623</item>
+        <item>631</item>
+        <item>624</item>
+        <item>636</item>
+        <item>655</item>
+        <item>603</item>
+        <item>616</item>
+        <item>652</item>
+        <item>613</item>
+        <item>642</item>
+        <item>627</item>
+        <item>615</item>
+        <item>625</item>
+        <item>607</item>
+        <item>629</item>
+        <item>630</item>
+        <item>638</item>
+        <item>611</item>
+        <item>632</item>
+        <item>628</item>
+        <item>639</item>
+        <item>651</item>
+        <item>618</item>
+        <item>635</item>
+        <item>646</item>
+        <item>650</item>
+        <item>610</item>
+        <item>617</item>
+        <item>609</item>
+        <item>643</item>
+        <item>649</item>
+        <item>614</item>
+        <item>619</item>
+        <item>633</item>
+        <item>626</item>
+        <item>653</item>
+        <item>640</item>
+        <item>605</item>
+        <item>641</item>
+        <item>622</item>
+        <item>645</item>
+    </string-array>
+    <string-array name="AsiaCountry">
+        <item>China</item>
+        <item>Korea</item>
+        <item>Japan</item>
+        <item>Macau</item>
+        <item>Hong Kong</item>
+        <item>Taiwan</item>
+        <item>Singapore</item>
+        <item>Thailand</item>
+        <item>Philippines</item>
+        <item>Malaysia</item>
+        <item>Indonesia</item>
+        <item>Mongolia</item>
+        <item>Vietnam</item>
+        <item>Cambodia</item>
+        <item>Laos</item>
+        <item>India</item>
+        <item>Maldives</item>
+        <item>Afghanistan</item>
+        <item>Pakistan</item>
+        <item>Saudi Arabia</item>
+        <item>Iran</item>
+        <item>Iraq</item>
+        <item>Turkey</item>
+        <item>Jordan</item>
+        <item>United Arab Emirates</item>
+        <item>Kuwait</item>
+        <item>Kazakhstan</item>
+        <item>Uzbekistan</item>
+        <item>Kyrgyzstan</item>
+        <item>Tajikistan</item>
+        <item>Turkmenistan</item>
+        <item>Bahrain</item>
+        <item>Oman</item>
+        <item>Bhutan</item>
+        <item>Democratic Republic of Timor-Leste</item>
+        <item>Georgia</item>
+        <item>Qatar</item>
+        <item>Lebanon</item>
+        <item>Bangladesh</item>
+        <item>Nepal</item>
+        <item>Sri Lanka</item>
+        <item>Brunei</item>
+        <item>Armenia</item>
+        <item>Yemen</item>
+        <item>Israel</item>
+        <item>Syria</item>
+    </string-array>
+    <string-array name="AsiaCodes">
+        <item>+86</item>
+        <item>+82</item>
+        <item>+81</item>
+        <item>+853</item>
+        <item>+852</item>
+        <item>+886</item>
+        <item>+65</item>
+        <item>+66</item>
+        <item>+63</item>
+        <item>+60</item>
+        <item>+62</item>
+        <item>+976</item>
+        <item>+84</item>
+        <item>+855</item>
+        <item>+856</item>
+        <item>+91</item>
+        <item>+960</item>
+        <item>+93</item>
+        <item>+92</item>
+        <item>+966</item>
+        <item>+98</item>
+        <item>+964</item>
+        <item>+90</item>
+        <item>+962</item>
+        <item>+971</item>
+        <item>+965</item>
+        <item>+7</item>
+        <item>+998</item>
+        <item>+996</item>
+        <item>+992</item>
+        <item>+993</item>
+        <item>+973</item>
+        <item>+968</item>
+        <item>+975</item>
+        <item>+1</item>
+        <item>+995</item>
+        <item>+974</item>
+        <item>+961</item>
+        <item>+880</item>
+        <item>+977</item>
+        <item>+94</item>
+        <item>+673</item>
+        <item>+374</item>
+        <item>+967</item>
+        <item>+972</item>
+        <item>+963</item>
+    </string-array>
+    <string-array name="AsiaMCC">
+        <item>460</item>
+        <item>450</item>
+        <item>440</item>
+        <item>455</item>
+        <item>454</item>
+        <item>466</item>
+        <item>525</item>
+        <item>520</item>
+        <item>515</item>
+        <item>502</item>
+        <item>510</item>
+        <item>428</item>
+        <item>452</item>
+        <item>456</item>
+        <item>457</item>
+        <item>404</item>
+        <item>472</item>
+        <item>412</item>
+        <item>410</item>
+        <item>420</item>
+        <item>432</item>
+        <item>418</item>
+        <item>286</item>
+        <item>416</item>
+        <item>424</item>
+        <item>419</item>
+        <item>401</item>
+        <item>434</item>
+        <item>437</item>
+        <item>436</item>
+        <item>438</item>
+        <item>426</item>
+        <item>422</item>
+        <item>402</item>
+        <item>514</item>
+        <item>282</item>
+        <item>427</item>
+        <item>415</item>
+        <item>470</item>
+        <item>429</item>
+        <item>413</item>
+        <item>528</item>
+        <item>283</item>
+        <item>421</item>
+        <item>425</item>
+        <item>417</item>
+    </string-array>
+    <string-array name="EuropeCountry">
+        <item>United Kingdom</item>
+        <item>France</item>
+        <item>Netherlands</item>
+        <item>Ireland</item>
+        <item>Belgium</item>
+        <item>Luxembourg</item>
+        <item>Monaco</item>
+        <item>Germany</item>
+        <item>Switzerland</item>
+        <item>Poland</item>
+        <item>Austria</item>
+        <item>Czech Republic</item>
+        <item>Hungary</item>
+        <item>Norway</item>
+        <item>Sweden</item>
+        <item>Finland</item>
+        <item>Denmark</item>
+        <item>Italy</item>
+        <item>Spain</item>
+        <item>Portugal</item>
+        <item>Greece</item>
+        <item>Russia</item>
+        <item>Ukraine</item>
+        <item>Lithuania</item>
+        <item>Belarus</item>
+        <item>Albania</item>
+        <item>Estonia</item>
+        <item>Bulgaria</item>
+        <item>Iceland</item>
+        <item>Faroe Islands</item>
+        <item>Croatia</item>
+        <item>Latvia</item>
+        <item>Liechtenstein</item>
+        <item>Romania</item>
+        <item>Macedonia</item>
+        <item>Moldova</item>
+        <item>San Marino</item>
+        <item>Slovakia</item>
+        <item>Gibraltar</item>
+    </string-array>
+    <string-array name="EuropeCodes">
+        <item>+44</item>
+        <item>+33</item>
+        <item>+31</item>
+        <item>+353</item>
+        <item>+32</item>
+        <item>+352</item>
+        <item>+377</item>
+        <item>+49</item>
+        <item>+41</item>
+        <item>+48</item>
+        <item>+43</item>
+        <item>+420</item>
+        <item>+36</item>
+        <item>+47</item>
+        <item>+46</item>
+        <item>+358</item>
+        <item>+45</item>
+        <item>+39</item>
+        <item>+34</item>
+        <item>+351</item>
+        <item>+30</item>
+        <item>+7</item>
+        <item>+380</item>
+        <item>+370</item>
+        <item>+375</item>
+        <item>+355</item>
+        <item>+372</item>
+        <item>+359</item>
+        <item>+354</item>
+        <item>+298</item>
+        <item>+385</item>
+        <item>+371</item>
+        <item>+423</item>
+        <item>+40</item>
+        <item>+389</item>
+        <item>+373</item>
+        <item>+378</item>
+        <item>+421</item>
+        <item>+1</item>
+    </string-array>
+    <string-array name="EuropeMCC">
+        <item>234</item>
+        <item>208</item>
+        <item>204</item>
+        <item>272</item>
+        <item>206</item>
+        <item>270</item>
+        <item>212</item>
+        <item>262</item>
+        <item>228</item>
+        <item>260</item>
+        <item>232</item>
+        <item>230</item>
+        <item>216</item>
+        <item>242</item>
+        <item>240</item>
+        <item>244</item>
+        <item>238</item>
+        <item>222</item>
+        <item>214</item>
+        <item>268</item>
+        <item>202</item>
+        <item>250</item>
+        <item>255</item>
+        <item>246</item>
+        <item>257</item>
+        <item>276</item>
+        <item>248</item>
+        <item>284</item>
+        <item>274</item>
+        <item>288</item>
+        <item>219</item>
+        <item>247</item>
+        <item>295</item>
+        <item>226</item>
+        <item>294</item>
+        <item>259</item>
+        <item>292</item>
+        <item>231</item>
+        <item>266</item>
+    </string-array>
+    <string-array name="NorthAmericaCountry">
+        <item>United States of America</item>
+        <item>Canada</item>
+        <item>Mexico</item>
+        <item>Costa Rica</item>
+        <item>Cuba</item>
+        <item>Jamaica</item>
+        <item>Aruba</item>
+        <item>Bahamas</item>
+        <item>Panama</item>
+        <item>Dominica</item>
+        <item>Greenland</item>
+        <item>Honduras</item>
+        <item>Montserrat</item>
+        <item>Nicaragua</item>
+        <item>EI Salvador</item>
+        <item>Trinidad and Tobago</item>
+        <item>Guatemala</item>
+    </string-array>
+    <string-array name="NorthAmericaCodes">
+        <item>+1</item>
+        <item>+1</item>
+        <item>+52</item>
+        <item>+506</item>
+        <item>+53</item>
+        <item>+1876</item>
+        <item>+297</item>
+        <item>+1242</item>
+        <item>+507</item>
+        <item>+1767</item>
+        <item>+299</item>
+        <item>+504</item>
+        <item>+1664</item>
+        <item>+505</item>
+        <item>+503</item>
+        <item>+1868</item>
+        <item>+502</item>
+    </string-array>
+    <string-array name="NorthAmericaMCC">
+        <item>310</item>
+        <item>302</item>
+        <item>334</item>
+        <item>712</item>
+        <item>368</item>
+        <item>338</item>
+        <item>363</item>
+        <item>364</item>
+        <item>714</item>
+        <item>366</item>
+        <item>290</item>
+        <item>708</item>
+        <item>354</item>
+        <item>710</item>
+        <item>706</item>
+        <item>374</item>
+        <item>704</item>
+    </string-array>
+    <string-array name="OceaniaCountry">
+        <item>Australia</item>
+        <item>New Zealand</item>
+        <item>Fiji</item>
+        <item>papua new guinea</item>
+        <item>Solomon Islands</item>
+        <item>Vanuatu</item>
+        <item>Palau</item>
+        <item>New Caledonia</item>
+    </string-array>
+    <string-array name="OceaniaCodes">
+        <item>+61</item>
+        <item>+64</item>
+        <item>+679</item>
+        <item>+675</item>
+        <item>+677</item>
+        <item>+678</item>
+        <item>+680</item>
+        <item>+687</item>
+    </string-array>
+    <string-array name="OceaniaMCC">
+        <item>505</item>
+        <item>530</item>
+        <item>542</item>
+        <item>537</item>
+        <item>540</item>
+        <item>541</item>
+        <item>552</item>
+        <item>546</item>
+    </string-array>
+    <string-array name="SouthAmericaCountry">
+        <item>Brazil</item>
+        <item>Argentina</item>
+        <item>Colombia</item>
+        <item>Peru</item>
+        <item>Venezuela</item>
+        <item>Chile</item>
+        <item>Paraguay</item>
+        <item>Uruguay</item>
+        <item>Bolivia</item>
+        <item>Ecuador</item>
+        <item>French Guiana</item>
+        <item>Suriname</item>
+    </string-array>
+    <string-array name="SouthAmericaCodes">
+        <item>+55</item>
+        <item>+54</item>
+        <item>+57</item>
+        <item>+51</item>
+        <item>+58</item>
+        <item>+56</item>
+        <item>+595</item>
+        <item>+598</item>
+        <item>+591</item>
+        <item>+593</item>
+        <item>+594</item>
+        <item>+597</item>
+    </string-array>
+    <string-array name="SouthAmericaMCC">
+        <item>724</item>
+        <item>722</item>
+        <item>732</item>
+        <item>716</item>
+        <item>734</item>
+        <item>730</item>
+        <item>744</item>
+        <item>748</item>
+        <item>736</item>
+        <item>740</item>
+        <item>742</item>
+        <item>746</item>
+    </string-array>
+    <string-array name="Continent">
+        <item>Asia</item>
+        <item>Europe</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Africa</item>
+        <item>Oceania</item>
+    </string-array>
+    <string-array name="connect_query">
+        <item>"insert into connect values(1,1,'괌','Guam','011',0,1,0)"</item>
+        <item>"insert into connect values(2,2,'뉴질랜드','New Zealand','00',0,1,0)"</item>
+        <item>"insert into connect values(3,3,'대만A','TaiwanA','002',0,1,0)"</item>
+        <item>"insert into connect values(4,3,'대만B','TaiwanB','005',0,0,0)"</item>
+        <item>"insert into connect values(5,4,'마카오','Macao','00',0,1,0)"</item>
+        <item>"insert into connect values(6,5,'미국','U.S.A','011',0,1,0)"</item>
+        <item>"insert into connect values(7,6,'방글라데시','Bangladesh','00',0,1,0)"</item>
+        <item>"insert into connect values(8,7,'멕시코','Mexico','00',0,1,0)"</item>
+        <item>"insert into connect values(9,8,'베트남','Viet Nam','00',0,1,0)"</item>
+        <item>"insert into connect values(10,9,'사이판','Saipan','011',0,1,0)"</item>
+        <item>"insert into connect values(11,10,'이스라엘','Israel','00',0,1,0)"</item>
+        <item>"insert into connect values(12,11,'인도','India','00',0,1,0)"</item>
+        <item>"insert into connect values(13,12,'인도네시아','Indonesia','001',0,1,0)"</item>
+        <item>"insert into connect values(14,13,'일본','Japan','010',0,1,0)"</item>
+        <item>"insert into connect values(15,14,'중국','China(P.R.C)','00',0,1,0)"</item>
+        <item>"insert into connect values(16,15,'자메이카','Jamaica','011',0,1,0)"</item>
+        <item>"insert into connect values(17,16,'캐나다','Canada','011',0,1,0)"</item>
+        <item>"insert into connect values(18,17,'태국','Thailand','001',0,1,0)"</item>
+        <item>"insert into connect values(19,18,'페루','Peru','00',0,1,0)"</item>
+        <item>"insert into connect values(20,19,'홍콩','Hong Kong','001',0,1,0)"</item>
+        <item>"insert into connect values(21,20,'아루바','Aruba Is.','00',0,1,0)"</item>
+        <item>"insert into connect values(22,21,'보네르','Bonaire Is.','00',0,1,0)"</item>
+        <item>"insert into connect values(23,22,'쿠라사오','Curaiao Is.','00',0,1,0)"</item>
+        <item>"insert into connect values(24,23,'터크스 케이커스','Turks and Caicos Is.','011',0,1,0)"</item>
+        <item>"insert into connect values(25,24,'영국령 버진제도','Virgin Is.','011',0,1,0)"</item>
+    </string-array>
+    <string-array name="country_query">
+        <item>"insert into country values(1,'Alaska','알라스카','1+907','ㅇㄹㅅㅋ',1)"</item>
+        <item>"insert into country values(2,'Albania','알바니아','335','ㅇㅂㄴㅇ' ,1)"</item>
+        <item>"insert into country values(3,'Algeria','알제리아','213','ㅇㅈㄹㅇ' ,1)"</item>
+        <item>"insert into country values(4,'American samoa','미국령 사모아','684','ㅁㄱㄹㅅㅁㅇ' ,1)"</item>
+        <item>"insert into country values(5,'Andorra','안도라','376','ㅇㄷㄹ' ,1)"</item>
+        <item>"insert into country values(6,'Angola','앙골라','244','ㅇㄱㄹ' ,1)"</item>
+        <item>"insert into country values(7,'Anguilla','앵퀼라','1+264','ㅇㅋㄹ' ,1)"</item>
+        <item>"insert into country values(8,'Antarctica','안타티카','672+1','ㅇㅌㅌㅋ' ,1)"</item>
+        <item>"insert into country values(9,'Antigua','안티과','1+809','ㅇㅌㄱ' ,1)"</item>
+        <item>"insert into country values(10,'Argentian','아르헨티나','54','ㅇㄹㅎㅌㄴ' ,0)"</item>
+        <item>"insert into country values(11,'Armenia','아르메니아','374','ㅇㄹㅁㄴㅇ' ,1)"</item>
+        <item>"insert into country values(12,'Ascension','아세손','247','ㅇㅅㅅ' ,1)"</item>
+        <item>"insert into country values(13,'Austria','오스트리아','43','ㅇㅅㅌㄹㅇ' ,0)"</item>
+        <item>"insert into country values(14,'Azerbaidjan','아제르바이젠','994','ㅇㅈㄹㅂㅇㅈ' ,0)"</item>
+        <item>"insert into country values(15,'Azores Is','아조레스섬','351','ㅇㅈㄹㅅㅅ' ,1)"</item>
+        <item>"insert into country values(16,'Austalia','호주','61','ㅎㅈ' ,0)"</item>
+        <item>"insert into country values(17,'Bahamas','바하마','1+242','ㅂㅎㅁ' ,1)"</item>
+        <item>"insert into country values(18,'Bahrain','바레인','973','ㅂㄹㅇ' ,0)"</item>
+        <item>"insert into country values(19,'Bangladesh','방글라데쉬','880','ㅂㄱㄹㄷㅅ' ,0)"</item>
+        <item>"insert into country values(20,'Barbados','바베이도즈','1+246','ㅂㅂㅇㄷㅈ' ,1)"</item>
+        <item>"insert into country values(21,'Belarus','벨라루스','375','ㅂㄹㄹㅅ' ,1)"</item>
+        <item>"insert into country values(22,'Beigium','벨지움','32','ㅂㅈㅇ' ,0)"</item>
+        <item>"insert into country values(23,'Belize','벨리제','501','ㅂㄹㅈ' ,1)"</item>
+        <item>"insert into country values(24,'Benin','베넹','229','ㅂㄴ' ,1)"</item>
+        <item>"insert into country values(25,'Bermuda','버뮤다','1+441','ㅂㅁㄷ' ,1)"</item>
+        <item>"insert into country values(26,'Bhutan','부탄','975','ㅂㅌ' ,1)"</item>
+        <item>"insert into country values(27,'Bolivia','볼리비아','591','ㅂㄹㅂㅇ' ,1)"</item>
+        <item>"insert into country values(28,'Bosnia-Herzegovina','보스니아헤르코비나','387','ㅂㅅㄴㅇㅎㄹㅋㅂㄴ' ,1)"</item>
+        <item>"insert into country values(29,'Botswana','보츠와나','267','ㅂㅊㅇㄴ' ,1)"</item>
+        <item>"insert into country values(30,'Brazil','브라질','55','ㅂㄹㅈ',0)"</item>
+        <item>"insert into country values(31,'Brunei','브루나이','673','ㅂㄹㄴㅇ' ,1)"</item>
+        <item>"insert into country values(32,'Bulgaria','불가리아','359','ㅂㄱㄹㅇ',0)"</item>
+        <item>"insert into country values(33,'Burkina Faso','브르키나파소','226','ㅂㄹㅋㄴㅍㅅ' ,1)"</item>
+        <item>"insert into country values(34,'Burundi','브룬디','257','ㅂㄹㄷ' ,1)"</item>
+        <item>"insert into country values(35,'Canbodia','캄보디아','855','ㅋㅂㄷㅇ' ,0)"</item>
+        <item>"insert into country values(36,'Cameroon','카메룬','237','ㅋㅁㄹ' ,1)"</item>
+        <item>"insert into country values(37,'Canada','캐나다','1','ㅋㄴㄷ' ,0)"</item>
+        <item>"insert into country values(38,'Canary Is.','카나리제도','34+28','ㅋㄴㄹㅈㄷ' ,1)"</item>
+        <item>"insert into country values(39,'Cape Verde','카푸버데','238','ㅋㅍㅂㄷ' ,1)"</item>
+        <item>"insert into country values(40,'Cayman Is.','케이멘제도','1+345','ㅋㅇㅁㅈㄷ' ,1)"</item>
+        <item>"insert into country values(41,'Central African Rep.','중앙아프리카','236','ㅈㅇㅇㅍㄹㅋ' ,1)"</item>
+        <item>"insert into country values(42,'Chad','차드','235','ㅊㄷ',1)"</item>
+        <item>"insert into country values(43,'Chile','칠레','56','ㅊㄹ' ,0)"</item>
+        <item>"insert into country values(44,'China(P.R.C)','중국','86','ㅈㄱ' ,0)"</item>
+        <item>"insert into country values(45,'Christmas Is.','크리스마스제도','61+91','ㅋㄹㅅㅁㅅㅈㄷ' ,1)"</item>
+        <item>"insert into country values(46,'Cocos Is','코코스섬','61+91','ㅋㅋㅅㅅ' ,1)"</item>
+        <item>"insert into country values(47,'Colombia','콜롬비아','57','ㅋㄹㅂㅇ' ,0)"</item>
+        <item>"insert into country values(48,'Comoros','코모로','269','ㅋㅁㄹ' ,1)"</item>
+        <item>"insert into country values(49,'Congo','콩코','242','ㅋㄱ' ,1)"</item>
+        <item>"insert into country values(50,'Cook Is.','쿡스제도','682','ㅋㅅㅈㄷ' ,1)"</item>
+        <item>"insert into country values(51,'Costa Rica','코스타리카','506','ㅋㅅㅌㄹㅋ' ,1)"</item>
+        <item>"insert into country values(52,'Croatia','크로아티아','385','ㅋㄹㅇㅌㅇ' ,1)"</item>
+        <item>"insert into country values(53,'Cuba','쿠바','53','ㅋㅂ' ,1)"</item>
+        <item>"insert into country values(54,'Cyprus','싸이프러스','357','ㅆㅇㅍㄹㅅ' ,1)"</item>
+        <item>"insert into country values(55,'Czech','체코','420','ㅊㅋ' ,0)"</item>
+        <item>"insert into country values(56,'Denmark','덴마크','45','ㄷㅁㅋ' ,0)"</item>
+        <item>"insert into country values(57,'Diego Garcia','디에고가르시아','246','ㄷㅇㄱㄱㄹㅅㅇ' ,1)"</item>
+        <item>"insert into country values(58,'Djibouti','지브타','253','ㅈㅂㅌ' ,1)"</item>
+        <item>"insert into country values(59,'Dominica Is.','도미니카','1+767','ㄷㅁㄴㅋ' ,1)"</item>
+        <item>"insert into country values(60,'Dominican Rep.','도미니카공화국','1+767','ㄷㅁㄴㅋㄱㅎㄱ',0)"</item>
+        <item>"insert into country values(61,'Ecuador','에콰도르','593','ㅇㅋㄷㄹ' ,0)"</item>
+        <item>"insert into country values(62,'Egypt','이집트','20','ㅇㅈㅌ' ,0)"</item>
+        <item>"insert into country values(63,'El Salvador','엘살바도로','503','ㅇㅅㅂㄷㄹ' ,1)"</item>
+        <item>"insert into country values(64,'Equatorial Guinea','적도기니아','240','ㅈㄷㄱㄴㅇ' ,1)"</item>
+        <item>"insert into country values(65,'Eritrea','에리트리아','291','ㅇㄹㅌㄹㅇ' ,1)"</item>
+        <item>"insert into country values(66,'Estonia','에스토니아','372','ㅇㅅㅌㄴㅇ' ,1)"</item>
+        <item>"insert into country values(67,'Ethiopia','이디오피아','251','ㅇㄷㅇㅍㅇ' ,1)"</item>
+        <item>"insert into country values(68,'Falkland Is.','포클랜드섬','500','ㅍㅋㄹㄷㅅ' ,1)"</item>
+        <item>"insert into country values(69,'Foroe Is.(DEN)','페로이섬','298','ㅍㄹㅇㅅ' ,1)"</item>
+        <item>"insert into country values(70,'Fiji','피지','679','ㅍㅈ' ,0)"</item>
+        <item>"insert into country values(71,'Finland','핀랜드','358','ㅍㄹㄷ' ,0)"</item>
+        <item>"insert into country values(72,'France','프랑스','33','ㅍㄹㅅ' ,0)"</item>
+        <item>"insert into country values(73,'Gabon','가봉','241','ㄱㅂ' ,1)"</item>
+        <item>"insert into country values(74,'Gambia','잠비아','220','ㅈㅂㅇ' ,1)"</item>
+        <item>"insert into country values(75,'Georgia','그루지아','995','ㄱㄹㅈㅇ' ,1)"</item>
+        <item>"insert into country values(76,'Germany','독일','49','ㄷㅇ' ,0)"</item>
+        <item>"insert into country values(77,'Ghana','가나','233','ㄱㄴ' ,1)"</item>
+        <item>"insert into country values(78,'Gibrltar','지브랄타','350','ㅈㅂㄹㅌ' ,1)"</item>
+        <item>"insert into country values(79,'Greece','그리스','30','ㄱㄹㅅ' ,0)"</item>
+        <item>"insert into country values(80,'Greenland(DEN)','그린랜드','299','ㄱㄹㄹㄷ' ,0)"</item>
+        <item>"insert into country values(81,'Grenada','그레나다','1+809','ㄱㄹㄴㄷ' ,1)"</item>
+        <item>"insert into country values(82,'Guadeloupe Is.','과델로프','590','ㄱㄷㄹㅍ' ,1)"</item>
+        <item>"insert into country values(83,'Guatemala','과테말라','502','ㄱㅌㅁㄹ' ,1)"</item>
+        <item>"insert into country values(84,'Guiana(French)','가아나','594','ㄱㅇㄴ' ,1)"</item>
+        <item>"insert into country values(85,'Guinea Bissau','가나아비쏘우','245','ㄱㄴㅇㅂㅆㅇ' ,1)"</item>
+        <item>"insert into country values(86,'Guinea(R.P)','기니아','224','ㄱㄴㅇ' ,1)"</item>
+        <item>"insert into country values(87,'Guyana','기이니아','592','ㄱㅇㄴㅇ' ,1)"</item>
+        <item>"insert into country values(88,'Haiti','아이티','509','ㅇㅇㅌ' ,0)"</item>
+        <item>"insert into country values(89,'Hawaii','하와이','1+808','ㅎㅇㅇ' ,0)"</item>
+        <item>"insert into country values(90,'Honduras','온듀라스','504','ㅇㄷㄹㅅ' ,1)"</item>
+        <item>"insert into country values(91,'Hong Kong','홍콩','852','ㅎㅋ' ,0)"</item>
+        <item>"insert into country values(92,'Hungaruy','헝가리','36','ㅎㄱㄹ' ,0)"</item>
+        <item>"insert into country values(93,'Iceland','아이슬랜드','354','ㅇㅇㅅㄹㄷ' ,1)"</item>
+        <item>"insert into country values(94,'India','인디아','91','ㅇㄷㅇ' ,0)"</item>
+        <item>"insert into country values(95,'Indonesia','인도네시아','62','ㅇㄷㄴㅅㅇ' ,0)"</item>
+        <item>"insert into country values(96,'Iran','이란','98','ㅇㄹ' ,0)"</item>
+        <item>"insert into country values(97,'Iraq','이라크','964','ㅇㄹㅋ' ,0)"</item>
+        <item>"insert into country values(98,'Ireland','아일랜드','353','ㅇㅇㄹㄷ' ,1)"</item>
+        <item>"insert into country values(99,'Israel','이스라엘','972','ㅇㅅㄹㅇ' ,0)"</item>
+        <item>"insert into country values(100,'Italy','이태리','39','ㅇㅌㄹ' ,0)"</item>
+        <item>"insert into country values(101,'Ivory Coast','아이보리코스트','225','ㅇㅇㅂㄹㅋㅅㅌ' ,1)"</item>
+        <item>"insert into country values(102,'Jamaica','자마이카','1+876','ㅈㅁㅇㅋ' ,1)"</item>
+        <item>"insert into country values(103,'Japan','일본','81','ㅇㅂ' ,0)"</item>
+        <item>"insert into country values(104,'Jordan','요르단','962','ㅇㄹㄷ' ,0)"</item>
+        <item>"insert into country values(105,'Kazakhstan','카자흐스탄','7','ㅋㅈㅎㅅㅌ' ,0)"</item>
+        <item>"insert into country values(106,'Kenya','케냐','254','ㅋㄴ' ,1)"</item>
+        <item>"insert into country values(107,'Kiribati','키리바티','686','ㅋㄹㅂㅌ' ,1)"</item>
+        <item>"insert into country values(108,'Korea','한국','82','ㅎㄱ' ,0)"</item>
+        <item>"insert into country values(109,'Kuwait','쿠웨이트','965','ㅋㅇㅇㅌ' ,0)"</item>
+        <item>"insert into country values(110,'Kyrayzstan','키르기즈스탄공화국','996','ㅋㄹㄱㅈㅅㅌㄱㅎㄱ' ,1)"</item>
+        <item>"insert into country values(111,'Laos','라오스','856','ㄹㅇㅅ' ,0)"</item>
+        <item>"insert into country values(112,'Latvia','라트비아','371','ㄹㅌㅂㅇ' ,1)"</item>
+        <item>"insert into country values(113,'Lithuania','리튜아니아','370','ㄹㅌㅇㄴㅇ' ,1)"</item>
+        <item>"insert into country values(114,'Luxembourg','룩셈부르크','362','ㄹㅅㅂㄹㅋ' ,0)"</item>
+        <item>"insert into country values(115,'Lebanon','레바논','961','ㄹㅂㄴ' ,0)"</item>
+        <item>"insert into country values(116,'Lesotho','레스토','266','ㄹㅅㅌ' ,1)"</item>
+        <item>"insert into country values(117,'Liberia','라이베리아','231','ㄹㅇㅂㄹㅇ' ,1)"</item>
+        <item>"insert into country values(118,'Libya','리비아','218','ㄹㅂㅇ' ,0)"</item>
+        <item>"insert into country values(119,'Liechtenstein','리히텐슈타인','41+75','ㄹㅎㅌㅅㅌㅇ' ,1)"</item>
+        <item>"insert into country values(120,'Mozambique','모잠비크','258','ㅁㅈㅂㅋ' ,1)"</item>
+        <item>"insert into country values(121,'Myanmar(Burma)','미얀마','95','ㅁㅇㅁ' ,0)"</item>
+        <item>"insert into country values(122,'Macao','마카오','853','ㅁㅋㅇ' ,0)"</item>
+        <item>"insert into country values(123,'Macedonia','마케도니아','389','ㅁㅋㄷㄴㅇ' ,1)"</item>
+        <item>"insert into country values(124,'Madagascar','마다가스칼','261','ㅁㄷㄱㅅㅋ' ,1)"</item>
+        <item>"insert into country values(125,'Madeira Is.','마데이라섬','351+91','ㅁㄷㅇㄹㅅ' ,1)"</item>
+        <item>"insert into country values(126,'Malawi','말라위','265','ㅁㄹㅇ' ,1)"</item>
+        <item>"insert into country values(127,'Malaysia','말레이지아','60','ㅁㄹㅇㅈㅇ' ,0)"</item>
+        <item>"insert into country values(128,'Maldives','몰디브','960','ㅁㄷㅂ' ,0)"</item>
+        <item>"insert into country values(129,'Mali','말리','223','ㅁㄹ' ,1)"</item>
+        <item>"insert into country values(130,'Malta','몰타','356','ㅁㅌ' ,1)"</item>
+        <item>"insert into country values(131,'Marshall Is.','마샬제도','692','ㅁㅅㅈㄷ' ,1)"</item>
+        <item>"insert into country values(132,'Martinique','마르티니크','596','ㅁㄹㅌㄴㅋ' ,1)"</item>
+        <item>"insert into country values(133,'Mouritania','모리타니아','222','ㅁㄹㅌㄴㅇ' ,1)"</item>
+        <item>"insert into country values(134,'Mauritius','모리셔스','230','ㅁㄹㅅㅅ' ,1)"</item>
+        <item>"insert into country values(135,'Mayotte','마요트','269+6','ㅁㅇㅌ' ,1)"</item>
+        <item>"insert into country values(136,'Mexico','멕시코','52','ㅁㅅㅋ' ,0)"</item>
+        <item>"insert into country values(137,'Moldova','몰도바','373','ㅁㄷㅂ' ,1)"</item>
+        <item>"insert into country values(138,'Monaco','모나코','377','ㅁㄴㅋ' ,0)"</item>
+        <item>"insert into country values(139,'Mongolla','몽골','976','ㅁㄱ' ,0)"</item>
+        <item>"insert into country values(140,'Montserrat','몬데세라토','1+664','ㅁㄷㅅㄹㅌ' ,1)"</item>
+        <item>"insert into country values(141,'Morocco','모로코','212','ㅁㄹㅋ' ,1)"</item>
+        <item>"insert into country values(142,'Norfolk Is.','노르폭섬','672+3','ㄴㄹㅍㅅ' ,1)"</item>
+        <item>"insert into country values(143,'Norway','노르웨이','47' ,'ㄴㄹㅇㅇ',0)"</item>
+        <item>"insert into country values(144,'Namibia','나미비아','264','ㄴㅁㅂㅇ' ,1)"</item>
+        <item>"insert into country values(145,'Nauru','나우르','674','ㄴㅇㄹ' ,1)"</item>
+        <item>"insert into country values(146,'Nepal','네팔','977','ㄴㅍ' ,0)"</item>
+        <item>"insert into country values(147,'Netherlands','네델란드','31','ㄴㄷㄹㄷ' ,0)"</item>
+        <item>"insert into country values(148,'Netherlands antilles','안틸레스','599','ㅇㅌㄹㅅ' ,1)"</item>
+        <item>"insert into country values(149,'New Caledonia','뉴칼레도니아','687','ㄴㅋㄹㄷㄴㅇ' ,1)"</item>
+        <item>"insert into country values(150,'New Zealand','뉴질랜드','64','ㄴㅈㄹㄷ' ,0)"</item>
+        <item>"insert into country values(151,'Nicaragua','니카라과','505','ㄴㅋㄹㄱ' ,1)"</item>
+        <item>"insert into country values(152,'Niger','니제르','227','ㄴㅈㄹ' ,1)"</item>
+        <item>"insert into country values(153,'Nigeria','나이제리아','234' ,'ㄴㅇㅈㄹㅇ',1)"</item>
+        <item>"insert into country values(154,'Niue Is.','나우에섬','683','ㄴㅇㅇㅅ' ,1)"</item>
+        <item>"insert into country values(155,'Oman','오만','968','ㅇㅁ' ,0)"</item>
+        <item>"insert into country values(156,'Portugal','포르투칼','351','ㅍㄹㅌㅋ' ,0)"</item>
+        <item>"insert into country values(157,'Puerto Rico','푸에르토리코','1+787','ㅍㅇㄹㅌㄹㅋ' ,1)"</item>
+        <item>"insert into country values(158,'Pakistan','파키스탄','92','ㅍㅋㅅㅌ' ,0)"</item>
+        <item>"insert into country values(159,'Palau','팔라우','680','ㅍㄹㅇ' ,1)"</item>
+        <item>"insert into country values(160,'Panama','파나마','507','ㅍㄴㅁ' ,1)"</item>
+        <item>"insert into country values(161,'Papua New Guines','파푸뉴기니아','675','ㅍㅍㄴㄱㄴㅇ' ,1)"</item>
+        <item>"insert into country values(162,'Paraguay','파라과이아','595','ㅍㄹㄱㅇㅇ' ,0)"</item>
+        <item>"insert into country values(163,'Peru','페루','51','ㅍㄹ' ,0)"</item>
+        <item>"insert into country values(164,'Philippines','필리핀','63','ㅍㄹㅍ' ,0)"</item>
+        <item>"insert into country values(165,'Poland','폴랜드','48','ㅍㄹㄷ' ,0)"</item>
+        <item>"insert into country values(166,'Qatar','카타르','974','ㅋㅌㄹ' ,0)"</item>
+        <item>"insert into country values(167,'Reunion Is.','레위니옹','262','ㄹㅇㄴㅇ' ,1)"</item>
+        <item>"insert into country values(168,'Romania','루마니아','40','ㄹㅁㄴㅇ' ,0)"</item>
+        <item>"insert into country values(169,'Russia','러시아','7','ㄹㅅㅇ' ,0)"</item>
+        <item>"insert into country values(170,'Rwanda','르완다','250','ㄹㅇㄷ' ,1)"</item>
+        <item>"insert into country values(171,'Saipan','사이판','670','ㅅㅇㅍ' ,0)"</item>
+        <item>"insert into country values(172,'San Marino','산마리노','378','ㅅㅁㄹㄴ' ,1)"</item>
+        <item>"insert into country values(173,'Saudi Arabia','사우디아라비아','966','ㅅㅇㄷㅇㄹㅂㅇ' ,0)"</item>
+        <item>"insert into country values(174,'Senegal','세네칼','221','ㅅㄴㅋ' ,1)"</item>
+        <item>"insert into country values(175,'Seychelles','세이셀','248','ㅅㅇㅅ' ,1)"</item>
+        <item>"insert into country values(176,'Sierra Leone','씨에라네온','232','ㅆㅇㄹㄴㅇ' ,1)"</item>
+        <item>"insert into country values(177,'Singapore','싱가폴','65','ㅅㄱㅍ' ,0)"</item>
+        <item>"insert into country values(178,'Slovak','슬로바키아','421','ㅅㄹㅂㅋㅇ' ,0)"</item>
+        <item>"insert into country values(179,'Slovenia','슬로베니아','386','ㅅㄹㅂㄴㅇ' ,1)"</item>
+        <item>"insert into country values(180,'Solomon Is.','솔로몬제도','677','ㅅㄹㅁㅈㄷ' ,1)"</item>
+        <item>"insert into country values(181,'Somalia','소말리아','252','ㅅㅁㄹㅇ' ,1)"</item>
+        <item>"insert into country values(182,'South Africa','남아공화국','27','ㄴㅇㄱㅎㄱ' ,0)"</item>
+        <item>"insert into country values(183,'Spain','스페인','34','ㅅㅍㅇ' ,0)"</item>
+        <item>"insert into country values(184,'Sri Lanca','스리랑카','94','ㅅㄹㄹㅋ' ,0)"</item>
+        <item>"insert into country values(185,'St. christopher','세인트크리스토퍼','1+809','ㅅㅇㅌㅋㄹㅅㅌㅍ' ,1)"</item>
+        <item>"insert into country values(186,'St. Helena','세인트헬레나','290','ㅅㅇㅌㅎㄹㄴ' ,1)"</item>
+        <item>"insert into country values(187,'St. Kitts','세인드키츠','1+809','ㅅㅇㄷㅋㅊ' ,1)"</item>
+        <item>"insert into country values(188,'St. Lucia','세인트루시아','1+758','ㅅㅇㅌㄹㅅㅇ' ,1)"</item>
+        <item>"insert into country values(189,'St. Vincent','세인트빈센트','1+809','ㅅㅇㅌㅂㅅㅌ' ,1)"</item>
+        <item>"insert into country values(190,'Sudan','수단','249','ㅅㄷ' ,1)"</item>
+        <item>"insert into country values(191,'Suriname','수리남','597','ㅅㄹㄴ' ,1)"</item>
+        <item>"insert into country values(192,'Swaziland','스와질랜드','268','ㅅㅇㅈㄹㄷ' ,1)"</item>
+        <item>"insert into country values(193,'Sweden','스웨덴','46','ㅅㅇㄷ' ,0)"</item>
+        <item>"insert into country values(194,'Switzerland','스위스','41','ㅅㅇㅅ' ,0)"</item>
+        <item>"insert into country values(195,'Syria','시리아','963','ㅅㄹㅇ' ,1)"</item>
+        <item>"insert into country values(196,'Tadzhikistan','타지키스탄공화국','992','ㅌㅈㅋㅅㅌㄱㅎㄱ' ,1)"</item>
+        <item>"insert into country values(197,'Tahiti','타이티','689','ㅌㅇㅌ' ,0)"</item>
+        <item>"insert into country values(198,'Taiwan','타이완','886','ㅌㅇㅇ' ,0)"</item>
+        <item>"insert into country values(199,'Tanzania','탄자니아','255','ㅌㅈㄴㅇ' ,1)"</item>
+        <item>"insert into country values(200,'Thailand','태국','66','ㅌㄱ' ,0)"</item>
+        <item>"insert into country values(201,'Togo','토고','228','ㅌㄱ' ,1)"</item>
+        <item>"insert into country values(202,'Tonga','통가','676','ㅌㄱ' ,1)"</item>
+        <item>"insert into country values(203,'Trinidad &amp; Tobogo','트리니다드토바고','1+868','ㅌㄹㄴㄷㄷㅌㅂㄱ' ,1)"</item>
+        <item>"insert into country values(204,'Tunisia','튀니지','216','ㅌㄴㅈ' ,1)"</item>
+        <item>"insert into country values(205,'Turkey','터키','90','ㅌㅋ' ,0)"</item>
+        <item>"insert into country values(206,'Turkmenistan','투르크메니스탄','993','ㅌㄹㅋㅁㄴㅅㅌ' ,1)"</item>
+        <item>"insert into country values(207,'Turks &amp; Caicos Is.','턱스케이코스제도','1+649','ㅌㅅㅋㅇㅋㅅㅈㄷ' ,1)"</item>
+        <item>"insert into country values(208,'Tuvalu','투발루','688','ㅌㅂㄹ' ,1)"</item>
+        <item>"insert into country values(209,'Uganda','우간다','256','ㅇㄱㄷ' ,1)"</item>
+        <item>"insert into country values(210,'Ukraine','우크라이나','380','ㅇㅋㄹㅇㄴ' ,0)"</item>
+        <item>"insert into country values(211,'United Arab Emirates','아랍에미레이터','971','ㅇㄹㅇㅁㄹㅇㅌ' ,0)"</item>
+        <item>"insert into country values(212,'United Kingdom','영국','44','ㅇㄱ' ,0)"</item>
+        <item>"insert into country values(213,'Uruguay','우르과이','598','ㅇㄹㄱㅇ' ,0)"</item>
+        <item>"insert into country values(214,'U.S.A','미국본토','1','ㅁㄱㅂㅌ' ,0)"</item>
+        <item>"insert into country values(215,'Uzbekistan','우즈베키스탄','998','ㅇㅈㅂㅋㅅㅌ' ,0)"</item>
+        <item>"insert into country values(216,'Vanuatu','바누아투','678','ㅂㄴㅇㅌ' ,1)"</item>
+        <item>"insert into country values(217,'Vatican City','바티칸시티','39+6','ㅂㅌㅋㅅㅌ' ,0)"</item>
+        <item>"insert into country values(218,'Venezuela','베네쥬엘라','58','ㅂㄴㅈㅇㄹ' ,0)"</item>
+        <item>"insert into country values(219,'Viet Nam','베트남','84','ㅂㅌㄴ' ,0)"</item>
+        <item>"insert into country values(220,'Westem Samoa','서사모아','685','ㅅㅅㅁㅇ' ,1)"</item>
+        <item>"insert into country values(221,'Yemen Arab Rep.','북예멘','967','ㅂㅇㅁ' ,0)"</item>
+        <item>"insert into country values(222,'Yemen(PDR)','예멘','969','ㅇㅁ' ,0)"</item>
+        <item>"insert into country values(223,'Yogoslavia','유고슬라비아','381','ㅇㄱㅅㄹㅂㅇ' ,0)"</item>
+        <item>"insert into country values(224,'Zaire','자이레','243','ㅈㅇㄹ' ,1)"</item>
+        <item>"insert into country values(225,'Zambia','잠비아','260','ㅈㅂㅇ' ,0)"</item>
+        <item>"insert into country values(226,'Zimbabwe','짐바브웨','263','ㅈㅂㅂㅇ' ,0)"</item>
+    </string-array>
+    <string-array name="sid_query">
+        <item>insert into sid values(1,13824,15)</item>
+        <item>insert into sid values(2,13840,15)</item>
+        <item>insert into sid values(3,13828,15)</item>
+        <item>insert into sid values(4,13945,15)</item>
+        <item>insert into sid values(5,13844,15)</item>
+        <item>insert into sid values(6,14121,15)</item>
+        <item>insert into sid values(7,13859,15)</item>
+        <item>insert into sid values(8,13966,15)</item>
+        <item>insert into sid values(9,13967,15)</item>
+        <item>insert into sid values(10,14137,15)</item>
+        <item>insert into sid values(11,14174,15)</item>
+        <item>insert into sid values(12,13940,15)</item>
+        <item>insert into sid values(13,13884,15)</item>
+        <item>insert into sid values(14,14154,15)</item>
+        <item>insert into sid values(15,13898,15)</item>
+        <item>insert into sid values(16,13899,15)</item>
+        <item>insert into sid values(17,14175,15)</item>
+        <item>insert into sid values(18,13831,15)</item>
+        <item>insert into sid values(19,14253,15)</item>
+        <item>insert into sid values(20,14176,15)</item>
+        <item>insert into sid values(21,13977,15)</item>
+        <item>insert into sid values(22,14148,15)</item>
+        <item>insert into sid values(23,14018,15)</item>
+        <item>insert into sid values(24,13942,15)</item>
+        <item>insert into sid values(25,14217,15)</item>
+        <item>insert into sid values(26,14032,15)</item>
+        <item>insert into sid values(27,14033,15)</item>
+        <item>insert into sid values(28,14155,15)</item>
+        <item>insert into sid values(29,13938,15)</item>
+        <item>insert into sid values(30,14125,15)</item>
+        <item>insert into sid values(31,14123,15)</item>
+        <item>insert into sid values(32,13847,15)</item>
+        <item>insert into sid values(33,13850,15)</item>
+        <item>insert into sid values(34,13832,15)</item>
+        <item>insert into sid values(35,13858,15)</item>
+        <item>insert into sid values(36,14181,15)</item>
+        <item>insert into sid values(37,14126,15)</item>
+        <item>insert into sid values(38,14179,15)</item>
+        <item>insert into sid values(39,14177,15)</item>
+        <item>insert into sid values(40,13834,15)</item>
+        <item>insert into sid values(41,14136,15)</item>
+        <item>insert into sid values(42,14042,15)</item>
+        <item>insert into sid values(43,14047,15)</item>
+        <item>insert into sid values(44,13935,15)</item>
+        <item>insert into sid values(45,14156,15)</item>
+        <item>insert into sid values(46,13860,15)</item>
+        <item>insert into sid values(47,14244,15)</item>
+        <item>insert into sid values(48,14021,15)</item>
+        <item>insert into sid values(49,13973,15)</item>
+        <item>insert into sid values(50,14234,15)</item>
+        <item>insert into sid values(51,13972,15)</item>
+        <item>insert into sid values(52,14060,15)</item>
+        <item>insert into sid values(53,14263,15)</item>
+        <item>insert into sid values(54,13996,15)</item>
+        <item>insert into sid values(55,14266,15)</item>
+        <item>insert into sid values(56,14118,15)</item>
+        <item>insert into sid values(57,13912,15)</item>
+        <item>insert into sid values(58,13913,15)</item>
+        <item>insert into sid values(59,14229,15)</item>
+        <item>insert into sid values(60,14152,15)</item>
+        <item>insert into sid values(61,13862,15)</item>
+        <item>insert into sid values(62,14249,15)</item>
+        <item>insert into sid values(63,13952,15)</item>
+        <item>insert into sid values(64,14040,15)</item>
+        <item>insert into sid values(65,14001,15)</item>
+        <item>insert into sid values(66,13965,15)</item>
+        <item>insert into sid values(67,14211,15)</item>
+        <item>insert into sid values(68,14034,15)</item>
+        <item>insert into sid values(69,14206,15)</item>
+        <item>insert into sid values(70,14165,15)</item>
+        <item>insert into sid values(71,13829,15)</item>
+        <item>insert into sid values(72,13830,15)</item>
+        <item>insert into sid values(73,14003,15)</item>
+        <item>insert into sid values(74,14059,15)</item>
+        <item>insert into sid values(75,14210,15)</item>
+        <item>insert into sid values(76,14166,15)</item>
+        <item>insert into sid values(77,14274,15)</item>
+        <item>insert into sid values(78,14260,15)</item>
+        <item>insert into sid values(79,14160,15)</item>
+        <item>insert into sid values(80,13863,15)</item>
+        <item>insert into sid values(81,13981,15)</item>
+        <item>insert into sid values(82,14092,15)</item>
+        <item>insert into sid values(83,13989,15)</item>
+        <item>insert into sid values(84,13911,15)</item>
+        <item>insert into sid values(85,13917,15)</item>
+        <item>insert into sid values(86,13951,15)</item>
+        <item>insert into sid values(87,14064,15)</item>
+        <item>insert into sid values(88,13950,15)</item>
+        <item>insert into sid values(89,14245,15)</item>
+        <item>insert into sid values(90,13891,15)</item>
+        <item>insert into sid values(91,14231,15)</item>
+        <item>insert into sid values(92,13861,15)</item>
+        <item>insert into sid values(93,13866,15)</item>
+        <item>insert into sid values(94,14158,15)</item>
+        <item>insert into sid values(95,14194,15)</item>
+        <item>insert into sid values(96,14062,15)</item>
+        <item>insert into sid values(97,14197,15)</item>
+        <item>insert into sid values(98,14079,15)</item>
+        <item>insert into sid values(99,14227,15)</item>
+        <item>insert into sid values(100,14241,15)</item>
+        <item>insert into sid values(101,14081,15)</item>
+        <item>insert into sid values(102,14109,15)</item>
+        <item>insert into sid values(103,14036,15)</item>
+        <item>insert into sid values(104,13998,15)</item>
+        <item>insert into sid values(105,13936,15)</item>
+        <item>insert into sid values(106,13937,15)</item>
+        <item>insert into sid values(107,14167,15)</item>
+        <item>insert into sid values(108,14023,15)</item>
+        <item>insert into sid values(109,14236,15)</item>
+        <item>insert into sid values(110,14151,15)</item>
+        <item>insert into sid values(111,13984,15)</item>
+        <item>insert into sid values(112,13988,15)</item>
+        <item>insert into sid values(113,14002,15)</item>
+        <item>insert into sid values(114,14209,15)</item>
+        <item>insert into sid values(115,14045,15)</item>
+        <item>insert into sid values(116,13833,15)</item>
+        <item>insert into sid values(117,13954,15)</item>
+        <item>insert into sid values(118,14258,15)</item>
+        <item>insert into sid values(119,14182,15)</item>
+        <item>insert into sid values(120,14218,15)</item>
+        <item>insert into sid values(121,14007,15)</item>
+        <item>insert into sid values(122,14159,15)</item>
+        <item>insert into sid values(123,14006,15)</item>
+        <item>insert into sid values(124,14120,15)</item>
+        <item>insert into sid values(125,13871,15)</item>
+        <item>insert into sid values(126,14122,15)</item>
+        <item>insert into sid values(127,13980,15)</item>
+        <item>insert into sid values(128,14196,15)</item>
+        <item>insert into sid values(129,13835,15)</item>
+        <item>insert into sid values(130,14015,15)</item>
+        <item>insert into sid values(131,14070,15)</item>
+        <item>insert into sid values(132,13836,15)</item>
+        <item>insert into sid values(133,14096,15)</item>
+        <item>insert into sid values(134,14198,15)</item>
+        <item>insert into sid values(135,13889,15)</item>
+        <item>insert into sid values(136,13888,15)</item>
+        <item>insert into sid values(137,14129,15)</item>
+        <item>insert into sid values(138,13955,15)</item>
+        <item>insert into sid values(139,13864,15)</item>
+        <item>insert into sid values(140,14216,15)</item>
+        <item>insert into sid values(141,14192,15)</item>
+        <item>insert into sid values(142,13982,15)</item>
+        <item>insert into sid values(143,14012,15)</item>
+        <item>insert into sid values(144,14246,15)</item>
+        <item>insert into sid values(145,14043,15)</item>
+        <item>insert into sid values(146,14046,15)</item>
+        <item>insert into sid values(147,14044,15)</item>
+        <item>insert into sid values(148,14041,15)</item>
+        <item>insert into sid values(149,14037,15)</item>
+        <item>insert into sid values(150,13949,15)</item>
+        <item>insert into sid values(151,14000,15)</item>
+        <item>insert into sid values(152,14276,15)</item>
+        <item>insert into sid values(153,13904,15)</item>
+        <item>insert into sid values(154,14185,15)</item>
+        <item>insert into sid values(155,13953,15)</item>
+        <item>insert into sid values(156,13867,15)</item>
+        <item>insert into sid values(157,13971,15)</item>
+        <item>insert into sid values(158,14116,15)</item>
+        <item>insert into sid values(159,14061,15)</item>
+        <item>insert into sid values(160,13956,15)</item>
+        <item>insert into sid values(161,14128,15)</item>
+        <item>insert into sid values(162,14248,15)</item>
+        <item>insert into sid values(163,14226,15)</item>
+        <item>insert into sid values(164,14065,15)</item>
+        <item>insert into sid values(165,14142,15)</item>
+        <item>insert into sid values(166,14213,15)</item>
+        <item>insert into sid values(167,14024,15)</item>
+        <item>insert into sid values(168,14010,15)</item>
+        <item>insert into sid values(169,13837,15)</item>
+        <item>insert into sid values(170,13901,15)</item>
+        <item>insert into sid values(171,13838,15)</item>
+        <item>insert into sid values(172,13910,15)</item>
+        <item>insert into sid values(173,13979,15)</item>
+        <item>insert into sid values(174,14191,15)</item>
+        <item>insert into sid values(175,13907,15)</item>
+        <item>insert into sid values(176,14225,15)</item>
+        <item>insert into sid values(177,14144,15)</item>
+        <item>insert into sid values(178,14016,15)</item>
+        <item>insert into sid values(179,13906,15)</item>
+        <item>insert into sid values(180,14124,15)</item>
+        <item>insert into sid values(181,14138,15)</item>
+        <item>insert into sid values(182,13870,15)</item>
+        <item>insert into sid values(183,13916,15)</item>
+        <item>insert into sid values(184,14017,15)</item>
+        <item>insert into sid values(185,14066,15)</item>
+        <item>insert into sid values(186,14199,15)</item>
+        <item>insert into sid values(187,14139,15)</item>
+        <item>insert into sid values(188,14022,15)</item>
+        <item>insert into sid values(189,14067,15)</item>
+        <item>insert into sid values(190,13839,15)</item>
+        <item>insert into sid values(191,13997,15)</item>
+        <item>insert into sid values(192,14235,15)</item>
+        <item>insert into sid values(193,13978,15)</item>
+        <item>insert into sid values(194,13983,15)</item>
+        <item>insert into sid values(195,14140,15)</item>
+        <item>insert into sid values(196,14256,15)</item>
+        <item>insert into sid values(197,14130,15)</item>
+        <item>insert into sid values(198,13958,15)</item>
+        <item>insert into sid values(199,14011,15)</item>
+        <item>insert into sid values(200,14143,15)</item>
+        <item>insert into sid values(201,13934,15)</item>
+        <item>insert into sid values(202,14013,15)</item>
+        <item>insert into sid values(203,14193,15)</item>
+        <item>insert into sid values(204,13842,15)</item>
+        <item>insert into sid values(205,13843,15)</item>
+        <item>insert into sid values(206,13841,15)</item>
+        <item>insert into sid values(207,14214,15)</item>
+        <item>insert into sid values(208,14038,15)</item>
+        <item>insert into sid values(209,13994,15)</item>
+        <item>insert into sid values(210,13892,15)</item>
+        <item>insert into sid values(211,13985,15)</item>
+        <item>insert into sid values(212,13851,15)</item>
+        <item>insert into sid values(213,13968,15)</item>
+        <item>insert into sid values(214,13970,15)</item>
+        <item>insert into sid values(215,13986,15)</item>
+        <item>insert into sid values(216,13894,15)</item>
+        <item>insert into sid values(217,14186,15)</item>
+        <item>insert into sid values(218,14048,15)</item>
+        <item>insert into sid values(219,13948,15)</item>
+        <item>insert into sid values(220,14091,15)</item>
+        <item>insert into sid values(221,13995,15)</item>
+        <item>insert into sid values(222,14063,15)</item>
+        <item>insert into sid values(223,13868,15)</item>
+        <item>insert into sid values(224,13939,15)</item>
+        <item>insert into sid values(225,13969,15)</item>
+        <item>insert into sid values(226,14108,15)</item>
+        <item>insert into sid values(227,14162,15)</item>
+        <item>insert into sid values(228,14251,15)</item>
+        <item>insert into sid values(229,14035,15)</item>
+        <item>insert into sid values(230,13944,15)</item>
+        <item>insert into sid values(231,13947,15)</item>
+        <item>insert into sid values(232,13933,15)</item>
+        <item>insert into sid values(233,14127,15)</item>
+        <item>insert into sid values(234,14153,15)</item>
+        <item>insert into sid values(235,14068,15)</item>
+        <item>insert into sid values(236,14230,15)</item>
+        <item>insert into sid values(237,13893,15)</item>
+        <item>insert into sid values(238,14207,15)</item>
+        <item>insert into sid values(239,13896,15)</item>
+        <item>insert into sid values(240,13885,15)</item>
+        <item>insert into sid values(241,13930,15)</item>
+        <item>insert into sid values(242,13895,15)</item>
+        <item>insert into sid values(243,13919,15)</item>
+        <item>insert into sid values(244,13999,15)</item>
+        <item>insert into sid values(245,14252,15)</item>
+        <item>insert into sid values(246,14078,15)</item>
+        <item>insert into sid values(247,14014,15)</item>
+        <item>insert into sid values(248,14200,15)</item>
+        <item>insert into sid values(249,14163,15)</item>
+        <item>insert into sid values(250,14025,15)</item>
+        <item>insert into sid values(251,14184,15)</item>
+        <item>insert into sid values(252,13900,15)</item>
+        <item>insert into sid values(253,13931,15)</item>
+        <item>insert into sid values(254,14183,15)</item>
+        <item>insert into sid values(255,13846,15)</item>
+        <item>insert into sid values(256,14093,15)</item>
+        <item>insert into sid values(257,14180,15)</item>
+        <item>insert into sid values(258,13946,15)</item>
+        <item>insert into sid values(259,13918,15)</item>
+        <item>insert into sid values(260,13890,15)</item>
+        <item>insert into sid values(261,13987,15)</item>
+        <item>insert into sid values(262,14195,15)</item>
+        <item>insert into sid values(263,14039,15)</item>
+        <item>insert into sid values(264,14055,15)</item>
+        <item>insert into sid values(265,13865,15)</item>
+        <item>insert into sid values(266,14201,15)</item>
+        <item>insert into sid values(267,14212,15)</item>
+        <item>insert into sid values(268,14219,15)</item>
+        <item>insert into sid values(269,14215,15)</item>
+        <item>insert into sid values(270,13932,15)</item>
+        <item>insert into sid values(271,14228,15)</item>
+        <item>insert into sid values(272,14099,15)</item>
+        <item>insert into sid values(273,13845,15)</item>
+        <item>insert into sid values(274,14254,15)</item>
+        <item>insert into sid values(275,13957,15)</item>
+        <item>insert into sid values(276,14004,15)</item>
+        <item>insert into sid values(277,14069,15)</item>
+        <item>insert into sid values(278,14141,15)</item>
+        <item>insert into sid values(279,13848,15)</item>
+        <item>insert into sid values(280,13849,15)</item>
+        <item>insert into sid values(281,13869,15)</item>
+        <item>insert into sid values(282,14009,15)</item>
+        <item>insert into sid values(283,14178,15)</item>
+        <item>insert into sid values(284,14057,15)</item>
+        <item>insert into sid values(285,14020,15)</item>
+        <item>insert into sid values(286,14131,15)</item>
+        <item>insert into sid values(287,14019,15)</item>
+        <item>insert into sid values(288,14208,15)</item>
+        <item>insert into sid values(289,13943,15)</item>
+        <item>insert into sid values(290,13908,15)</item>
+        <item>insert into sid values(291,13909,15)</item>
+        <item>insert into sid values(292,14242,15)</item>
+        <item>insert into sid values(293,13902,15)</item>
+        <item>insert into sid values(294,13903,15)</item>
+        <item>insert into sid values(295,13914,15)</item>
+        <item>insert into sid values(296,13915,15)</item>
+        <item>insert into sid values(297,13920,15)</item>
+        <item>insert into sid values(298,14008,15)</item>
+        <item>insert into sid values(299,14053,15)</item>
+        <item>insert into sid values(300,14054,15)</item>
+        <item>insert into sid values(301,14056,15)</item>
+        <item>insert into sid values(302,14073,15)</item>
+        <item>insert into sid values(303,14074,15)</item>
+        <item>insert into sid values(304,14075,15)</item>
+        <item>insert into sid values(305,14076,15)</item>
+        <item>insert into sid values(306,14077,15)</item>
+        <item>insert into sid values(307,14090,15)</item>
+        <item>insert into sid values(308,14094,15)</item>
+        <item>insert into sid values(309,14095,15)</item>
+        <item>insert into sid values(310,14097,15)</item>
+        <item>insert into sid values(311,14098,15)</item>
+        <item>insert into sid values(312,14100,15)</item>
+        <item>insert into sid values(313,14117,15)</item>
+        <item>insert into sid values(314,14157,15)</item>
+        <item>insert into sid values(315,14161,15)</item>
+        <item>insert into sid values(316,14164,15)</item>
+        <item>insert into sid values(317,14232,15)</item>
+        <item>insert into sid values(318,14233,15)</item>
+        <item>insert into sid values(319,14255,15)</item>
+        <item>insert into sid values(320,14257,15)</item>
+        <item>insert into sid values(321,14259,15)</item>
+        <item>insert into sid values(322,14261,15)</item>
+        <item>insert into sid values(323,14262,15)</item>
+        <item>insert into sid values(324,14264,15)</item>
+        <item>insert into sid values(325,14265,15)</item>
+        <item>insert into sid values(326,14267,15)</item>
+        <item>insert into sid values(327,14268,15)</item>
+        <item>insert into sid values(328,14080,15)</item>
+        <item>insert into sid values(329,14082,15)</item>
+        <item>insert into sid values(330,14083,15)</item>
+        <item>insert into sid values(331,14084,15)</item>
+        <item>insert into sid values(332,14085,15)</item>
+        <item>insert into sid values(333,14086,15)</item>
+        <item>insert into sid values(334,14110,15)</item>
+        <item>insert into sid values(335,14111,15)</item>
+        <item>insert into sid values(336,14112,15)</item>
+        <item>insert into sid values(337,14114,15)</item>
+        <item>insert into sid values(338,14115,15)</item>
+        <item>insert into sid values(339,14119,15)</item>
+    </string-array>
+    <string-array name="sid_query2">
+        <item>insert into sid values(340,12336,14)</item>
+        <item>insert into sid values(341,12337,14)</item>
+        <item>insert into sid values(342,12338,14)</item>
+        <item>insert into sid values(343,12339,14)</item>
+        <item>insert into sid values(344,12340,14)</item>
+        <item>insert into sid values(345,12341,14)</item>
+        <item>insert into sid values(346,12342,14)</item>
+        <item>insert into sid values(347,12343,14)</item>
+        <item>insert into sid values(348,12304,14)</item>
+        <item>insert into sid values(610,12305,14)</item>
+        <item>insert into sid values(349,8197,18)</item>
+        <item>insert into sid values(350,8200,18)</item>
+        <item>insert into sid values(351,8201,18)</item>
+        <item>insert into sid values(352,8202,18)</item>
+        <item>insert into sid values(353,8204,18)</item>
+        <item>insert into sid values(354,8205,18)</item>
+        <item>insert into sid values(355,2,6)</item>
+        <item>insert into sid values(356,4,6)</item>
+        <item>insert into sid values(357,6,6)</item>
+        <item>insert into sid values(358,8,6)</item>
+        <item>insert into sid values(359,12,6)</item>
+        <item>insert into sid values(360,17,6)</item>
+        <item>insert into sid values(361,18,6)</item>
+        <item>insert into sid values(362,20,6)</item>
+        <item>insert into sid values(363,21,6)</item>
+        <item>insert into sid values(364,22,6)</item>
+        <item>insert into sid values(365,26,6)</item>
+        <item>insert into sid values(366,28,6)</item>
+        <item>insert into sid values(367,30,6)</item>
+        <item>insert into sid values(368,32,6)</item>
+        <item>insert into sid values(369,40,6)</item>
+        <item>insert into sid values(370,41,6)</item>
+        <item>insert into sid values(371,48,6)</item>
+        <item>insert into sid values(372,56,6)</item>
+        <item>insert into sid values(373,58,6)</item>
+        <item>insert into sid values(374,59,6)</item>
+        <item>insert into sid values(375,60,6)</item>
+        <item>insert into sid values(376,64,6)</item>
+        <item>insert into sid values(377,65,6)</item>
+        <item>insert into sid values(378,69,6)</item>
+        <item>insert into sid values(379,78,6)</item>
+        <item>insert into sid values(380,80,6)</item>
+        <item>insert into sid values(381,86,6)</item>
+        <item>insert into sid values(382,92,6)</item>
+        <item>insert into sid values(383,93,6)</item>
+        <item>insert into sid values(384,94,6)</item>
+        <item>insert into sid values(385,95,6)</item>
+        <item>insert into sid values(386,96,6)</item>
+        <item>insert into sid values(387,110,6)</item>
+        <item>insert into sid values(388,112,6)</item>
+        <item>insert into sid values(389,113,6)</item>
+        <item>insert into sid values(390,119,6)</item>
+        <item>insert into sid values(391,127,6)</item>
+        <item>insert into sid values(392,137,6)</item>
+        <item>insert into sid values(393,139,6)</item>
+        <item>insert into sid values(394,140,6)</item>
+        <item>insert into sid values(395,143,6)</item>
+        <item>insert into sid values(396,150,6)</item>
+        <item>insert into sid values(397,154,6)</item>
+        <item>insert into sid values(398,162,6)</item>
+        <item>insert into sid values(399,165,6)</item>
+        <item>insert into sid values(400,170,6)</item>
+        <item>insert into sid values(401,179,6)</item>
+        <item>insert into sid values(402,186,6)</item>
+        <item>insert into sid values(403,189,6)</item>
+        <item>insert into sid values(404,190,6)</item>
+        <item>insert into sid values(405,214,6)</item>
+        <item>insert into sid values(406,222,6)</item>
+        <item>insert into sid values(407,226,6)</item>
+        <item>insert into sid values(408,228,6)</item>
+        <item>insert into sid values(409,250,6)</item>
+        <item>insert into sid values(410,262,6)</item>
+        <item>insert into sid values(411,266,6)</item>
+        <item>insert into sid values(412,272,6)</item>
+        <item>insert into sid values(413,284,6)</item>
+        <item>insert into sid values(414,286,6)</item>
+        <item>insert into sid values(415,299,6)</item>
+        <item>insert into sid values(416,300,6)</item>
+        <item>insert into sid values(417,316,6)</item>
+        <item>insert into sid values(418,323,6)</item>
+        <item>insert into sid values(419,328,6)</item>
+        <item>insert into sid values(420,329,6)</item>
+        <item>insert into sid values(421,330,6)</item>
+        <item>insert into sid values(422,349,6)</item>
+        <item>insert into sid values(423,377,6)</item>
+        <item>insert into sid values(424,404,6)</item>
+        <item>insert into sid values(425,486,6)</item>
+        <item>insert into sid values(426,490,6)</item>
+        <item>insert into sid values(427,502,6)</item>
+        <item>insert into sid values(428,506,6)</item>
+        <item>insert into sid values(429,528,6)</item>
+        <item>insert into sid values(430,530,6)</item>
+        <item>insert into sid values(431,532,6)</item>
+        <item>insert into sid values(432,1015,6)</item>
+        <item>insert into sid values(433,1026,6)</item>
+        <item>insert into sid values(434,1028,6)</item>
+        <item>insert into sid values(435,1030,6)</item>
+        <item>insert into sid values(436,1034,6)</item>
+        <item>insert into sid values(437,1060,6)</item>
+        <item>insert into sid values(438,1080,6)</item>
+        <item>insert into sid values(439,1083,6)</item>
+        <item>insert into sid values(440,1086,6)</item>
+        <item>insert into sid values(441,1088,6)</item>
+        <item>insert into sid values(442,1094,6)</item>
+        <item>insert into sid values(443,1129,6)</item>
+        <item>insert into sid values(444,1164,6)</item>
+        <item>insert into sid values(445,1174,6)</item>
+        <item>insert into sid values(446,1189,6)</item>
+        <item>insert into sid values(447,1220,6)</item>
+        <item>insert into sid values(448,1408,6)</item>
+        <item>insert into sid values(449,1506,6)</item>
+        <item>insert into sid values(450,1508,6)</item>
+        <item>insert into sid values(451,1510,6)</item>
+        <item>insert into sid values(452,1516,6)</item>
+        <item>insert into sid values(453,1548,6)</item>
+        <item>insert into sid values(454,1740,6)</item>
+        <item>insert into sid values(455,1749,6)</item>
+        <item>insert into sid values(456,1776,6)</item>
+        <item>insert into sid values(457,1824,6)</item>
+        <item>insert into sid values(458,1826,6)</item>
+        <item>insert into sid values(459,1827,6)</item>
+        <item>insert into sid values(460,1830,6)</item>
+        <item>insert into sid values(461,1912,6)</item>
+        <item>insert into sid values(462,2058,6)</item>
+        <item>insert into sid values(463,2115,6)</item>
+        <item>insert into sid values(464,2119,6)</item>
+        <item>insert into sid values(465,2301,6)</item>
+        <item>insert into sid values(466,3066,6)</item>
+        <item>insert into sid values(467,42,6)</item>
+        <item>insert into sid values(468,53,6)</item>
+        <item>insert into sid values(469,54,6)</item>
+        <item>insert into sid values(470,57,6)</item>
+        <item>insert into sid values(471,74,6)</item>
+        <item>insert into sid values(472,79,6)</item>
+        <item>insert into sid values(473,85,6)</item>
+        <item>insert into sid values(474,97,6)</item>
+        <item>insert into sid values(475,100,6)</item>
+        <item>insert into sid values(476,114,6)</item>
+        <item>insert into sid values(477,116,6)</item>
+        <item>insert into sid values(478,120,6)</item>
+        <item>insert into sid values(479,126,6)</item>
+        <item>insert into sid values(480,130,6)</item>
+        <item>insert into sid values(481,142,6)</item>
+        <item>insert into sid values(482,144,6)</item>
+        <item>insert into sid values(483,1271,6)</item>
+        <item>insert into sid values(484,152,6)</item>
+        <item>insert into sid values(485,156,6)</item>
+        <item>insert into sid values(486,169,6)</item>
+        <item>insert into sid values(487,182,6)</item>
+        <item>insert into sid values(488,204,6)</item>
+        <item>insert into sid values(489,205,6)</item>
+        <item>insert into sid values(490,208,6)</item>
+        <item>insert into sid values(491,212,6)</item>
+        <item>insert into sid values(492,220,6)</item>
+        <item>insert into sid values(493,240,6)</item>
+        <item>insert into sid values(494,244,6)</item>
+        <item>insert into sid values(495,281,6)</item>
+        <item>insert into sid values(496,318,6)</item>
+        <item>insert into sid values(497,342,6)</item>
+        <item>insert into sid values(498,4152,6)</item>
+        <item>insert into sid values(499,350,6)</item>
+        <item>insert into sid values(500,376,6)</item>
+        <item>insert into sid values(501,396,6)</item>
+        <item>insert into sid values(502,418,6)</item>
+        <item>insert into sid values(503,1812,6)</item>
+        <item>insert into sid values(504,424,6)</item>
+        <item>insert into sid values(505,440,6)</item>
+        <item>insert into sid values(506,444,6)</item>
+        <item>insert into sid values(507,451,6)</item>
+        <item>insert into sid values(508,478,6)</item>
+        <item>insert into sid values(509,511,6)</item>
+        <item>insert into sid values(510,520,6)</item>
+        <item>insert into sid values(511,529,6)</item>
+        <item>insert into sid values(512,544,6)</item>
+        <item>insert into sid values(513,4182,6)</item>
+        <item>insert into sid values(514,546,6)</item>
+        <item>insert into sid values(515,550,6)</item>
+        <item>insert into sid values(516,555,6)</item>
+        <item>insert into sid values(517,578,6)</item>
+        <item>insert into sid values(518,1029,6)</item>
+        <item>insert into sid values(519,1038,6)</item>
+        <item>insert into sid values(520,1058,6)</item>
+        <item>insert into sid values(521,1069,6)</item>
+        <item>insert into sid values(522,1124,6)</item>
+        <item>insert into sid values(523,1165,6)</item>
+        <item>insert into sid values(524,1173,6)</item>
+        <item>insert into sid values(525,1192,6)</item>
+        <item>insert into sid values(526,1258,6)</item>
+        <item>insert into sid values(527,1375,6)</item>
+        <item>insert into sid values(528,1385,6)</item>
+        <item>insert into sid values(529,1393,6)</item>
+        <item>insert into sid values(530,1400,6)</item>
+        <item>insert into sid values(531,1441,6)</item>
+        <item>insert into sid values(532,1473,6)</item>
+        <item>insert into sid values(533,1499,6)</item>
+        <item>insert into sid values(534,1528,6)</item>
+        <item>insert into sid values(535,1530,6)</item>
+        <item>insert into sid values(536,1532,6)</item>
+        <item>insert into sid values(537,1534,6)</item>
+        <item>insert into sid values(538,1536,6)</item>
+        <item>insert into sid values(539,1538,6)</item>
+        <item>insert into sid values(540,1540,6)</item>
+        <item>insert into sid values(541,1542,6)</item>
+        <item>insert into sid values(542,1544,6)</item>
+        <item>insert into sid values(543,1546,6)</item>
+        <item>insert into sid values(544,1652,6)</item>
+        <item>insert into sid values(545,1739,6)</item>
+        <item>insert into sid values(546,1818,6)</item>
+        <item>insert into sid values(547,1825,6)</item>
+        <item>insert into sid values(548,3076,6)</item>
+        <item>insert into sid values(549,3226,6)</item>
+        <item>insert into sid values(550,30635,6)</item>
+        <item>insert into sid values(551,487,6)</item>
+        <item>insert into sid values(552,1236,6)</item>
+        <item>insert into sid values(553,1267,6)</item>
+        <item>insert into sid values(554,1370,6)</item>
+        <item>insert into sid values(555,1372,6)</item>
+        <item>insert into sid values(556,1608,6)</item>
+        <item>insert into sid values(557,1673,6)</item>
+        <item>insert into sid values(558,1954,6)</item>
+        <item>insert into sid values(559,4138,6)</item>
+        <item>insert into sid values(560,4160,6)</item>
+        <item>insert into sid values(561,4808,6)</item>
+        <item>insert into sid values(562,1412,6)</item>
+        <item>insert into sid values(563,4119,6)</item>
+        <item>insert into sid values(564,4192,6)</item>
+        <item>insert into sid values(565,10648,20)</item>
+        <item>insert into sid values(566,13331,9)</item>
+        <item>insert into sid values(567,13505,3)</item>
+        <item>insert into sid values(568,16420,17)</item>
+        <item>insert into sid values(569,16462,17)</item>
+        <item>insert into sid values(570,16422,17)</item>
+        <item>insert into sid values(571,16384,17)</item>
+        <item>insert into sid values(572,17500,17)</item>
+        <item>insert into sid values(573,14672,17)</item>
+        <item>insert into sid values(574,16390,17)</item>
+        <item>insert into sid values(575,16392,17)</item>
+        <item>insert into sid values(576,16408,17)</item>
+        <item>insert into sid values(577,16414,17)</item>
+        <item>insert into sid values(578,16430,17)</item>
+        <item>insert into sid values(579,30662,17)</item>
+        <item>insert into sid values(611,16436,17)</item>
+        <item>insert into sid values(580,11296,5)</item>
+        <item>insert into sid values(581,8583,2)</item>
+        <item>insert into sid values(582,1855,10)</item>
+        <item>insert into sid values(583,10530,13)</item>
+        <item>insert into sid values(584,1851,1)</item>
+        <item>insert into sid values(585,14655,12)</item>
+        <item>insert into sid values(586,14657,12)</item>
+        <item>insert into sid values(587,14658,12)</item>
+        <item>insert into sid values(588,14659,12)</item>
+        <item>insert into sid values(589,13480,7)</item>
+        <item>insert into sid values(590,12461,7)</item>
+        <item>insert into sid values(591,12463,7)</item>
+        <item>insert into sid values(592,12464,7)</item>
+        <item>insert into sid values(593,8465,11)</item>
+        <item>insert into sid values(594,24649,8)</item>
+        <item>insert into sid values(595,24587,8)</item>
+        <item>insert into sid values(596,24651,8)</item>
+        <item>insert into sid values(597,24647,8)</item>
+        <item>insert into sid values(598,24589,8)</item>
+        <item>insert into sid values(599,24591,8)</item>
+        <item>insert into sid values(600,24679,8)</item>
+        <item>insert into sid values(601,24799,8)</item>
+        <item>insert into sid values(602,24677,8)</item>
+        <item>insert into sid values(603,24801,8)</item>
+        <item>insert into sid values(604,24685,8)</item>
+        <item>insert into sid values(605,26883,8)</item>
+        <item>insert into sid values(606,24593,8)</item>
+        <item>insert into sid values(607,24577,8)</item>
+        <item>insert into sid values(608,24681,8)</item>
+        <item>insert into sid values(609,1525,8)</item>
+        <item>insert into sid values(612,9650,21)</item>
+        <item>insert into sid values(613,6190,25)</item>
+    </string-array>
+    <string-array name="photoring_template">
+        <item>"insert into phrase_table (phrase, data_type) values ('좋은 하루 되세요', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('급한 용무입니다', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('전화 받아 주세요', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('회의참석해주세요', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('친구야! 전화받아!', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('항상 건강하세요~', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('항상 힘내세요~', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('축하드립니다~ ^^', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('생일축하드립니다', 0)"</item>
+        <item>"insert into phrase_table (phrase, data_type) values ('즐거운하루되세요', 0)"</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>Network default</item>
+        <item>Hide number</item>
+        <item>Show number</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>DEFAULT</item>
+        <item>HIDE</item>
+        <item>SHOW</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>Global</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>EvDo only</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo auto</item>
+        <item>GSM / WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values">
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>Global</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>EvDo only</item>
+        <item>CDMA w/o EvDo</item>
+        <item>CDMA / EvDo auto</item>
+        <item>GSM / WCDMA auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+        <item>GSM / WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte">
+        <item>LTE / CDMA</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_lte">
+        <item>8</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_automatic_cdma_lte_gsm">
+        <item>CDMA</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_automatic_cdma_lte_gsm">
+        <item>4</item>
+        <item>8</item>
+        <item>3</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte_global">
+        <item>GLOBAL</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_lte_global">
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte_global_non_cdma">
+        <item>GLOBAL</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_lte_global_non_cdma">
+        <item>10</item>
+        <item>8</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_global_lte_gsm">
+        <item>GLOBAL</item>
+        <item>LTE</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_lte_global_lte_gsm">
+        <item>10</item>
+        <item>11</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_global_lte_cdma_gsm_umts">
+        <item>GLOBAL</item>
+        <item>LTE / CDMA</item>
+        <item>LTE / GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_values_global_lte_cdma_gsm_umts">
+        <item>10</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>English</item>
+        <item>French</item>
+        <item>Spanish</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Chinese</item>
+        <item>Hebrew</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>Home only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_mpcs">
+        <item>MetroPCS only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_home_only">
+        <item>Home only</item>
+    </string-array>
+    <string-array name="cdma_system_select_values">
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="cdma_system_select_sub_choices">
+        <item>Home only</item>
+        <item>Automatic A</item>
+        <item>Automatic B</item>
+    </string-array>
+    <string-array name="cdma_system_select_sub_values">
+        <item>0</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY Off</item>
+        <item>TTY Full</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="tty_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>Normal</item>
+        <item>Long</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="absent_num">
+        <item>ABSENT NUMBER</item>
+        <item>ABSENTNUMBER</item>
+    </string-array>
+    <string-array name="voicemail_notification_vibrate_when_values">
+        <item>always</item>
+        <item>silent</item>
+        <item>never</item>
+    </string-array>
+    <string-array name="RAD_arr_roaming_auto_dial_help">
+        <item>Roaming Auto Dial Help</item>
+    </string-array>
+    <string-array name="RAD_roaming_auto_dial_settings">
+        <item>On</item>
+        <item>Off</item>
+        <item>Always call to Korea</item>
+    </string-array>
+    <string-array name="ddtm_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="roaming_mode_entries">
+        <item>Sprint Only</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="roaming_network_mode_list">
+        <item>Auto</item>
+        <item>WCDMA only</item>
+        <item>GSM only</item>
+    </string-array>
+    <string-array name="system_setting_entries">
+        <item>Japan</item>
+        <item>Automatic(Roaming/Japan)</item>
+        <item>GSM/UMTS(Roaming)</item>
+    </string-array>
+    <string-array name="system_setting_values">
+        <item>8</item>
+        <item>10</item>
+        <item>3</item>
+    </string-array>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <ListPreference android:entries="@array/pref_entries_service_loading_action" android:title="@string/pref_title_service_loading_action" android:key="pref_key_service_loading_action" android:dialogTitle="@string/pref_dialog_title_service_loading_action" android:entryValues="@array/pref_entry_values_service_loading_action" />
+</PreferenceScreen>

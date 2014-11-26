@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/leftside" android:background="@color/settings_fullscreen_blank_background_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_side" />
+    <LinearLayout android:orientation="vertical" android:id="@id/middle" android:background="@drawable/tw_fullscreen_background" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_middle" android:paddingStart="@dimen/preference_setting_layout_padding_side" android:paddingEnd="@dimen/preference_setting_layout_padding_side">
+        <TextView android:textSize="19.0sp" android:id="@id/perform_longpress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/settings_hold_delay_custom_text" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/tap_hold_delay_view_margin_side" android:layout_weight="1.0">
+            <com.diotek.ime.implement.setting.TapAndHoldView android:id="@id/tapandholdview" android:background="@drawable/tap_hold_box_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@android:attr/borderlessButtonStyle">
+            <Button android:enabled="true" android:id="@id/longpress_cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_hold_delay_custom_cancel" android:layout_weight="1.0" style="@android:attr/buttonBarButtonStyle" />
+            <Button android:enabled="false" android:id="@id/longpress_save" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings_hold_delay_custom_save" android:layout_weight="1.0" style="@android:attr/buttonBarButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rightside" android:background="@color/settings_fullscreen_blank_background_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_side" />
+</LinearLayout>

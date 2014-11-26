@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.KeyguardCarrierLockView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/keyguard_carrierlock_unlock_view" android:layout_width="fill_parent" android:layout_height="fill_parent" androidprv:layout_maxHeight="@dimen/keyguard_security_height" androidprv:layout_maxWidth="@dimen/keyguard_security_width"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:androidprv="http://schemas.android.com/apk/res/com.android.keyguard">
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_message_area" />
+    <LinearLayout android:orientation="vertical" android:id="@id/keyguard_bouncer_frame" android:background="@drawable/kg_bouncer_bg_white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <Button android:textSize="17.0dip" android:textColor="#ff000000" android:layout_gravity="center_horizontal" android:id="@id/carrierlock_call_button" android:background="@drawable/keyguard_fmm_call_selector" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/keyguard_carrierlock_calltext" android:singleLine="true" android:drawableLeft="@drawable/carrierlock_call_icon" android:drawablePadding="10.0dip" />
+    </LinearLayout>
+    <include android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/keyguard_selector_fade_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/keyguard_eca_bottom_margin" layout="@layout/keyguard_eca" />
+</com.android.keyguard.sec.KeyguardCarrierLockView>

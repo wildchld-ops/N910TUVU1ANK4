@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorites
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <PageCount>1</PageCount>
+    <ScreenIndex>0</ScreenIndex>
+    <home>
+        <favorite launcher:className="com.sec.android.app.camera.Camera" launcher:packageName="com.sec.android.app.camera" launcher:screen="0" launcher:x="0" launcher:y="3" />
+        <favorite launcher:className="com.android.calendar.AllInOneActivity" launcher:packageName="com.android.calendar" launcher:screen="0" launcher:x="1" launcher:y="3" />
+        <favorite launcher:className="com.sec.android.app.myfiles.MainActivity" launcher:packageName="com.sec.android.app.myfiles" launcher:screen="0" launcher:x="2" launcher:y="3" />
+        <favorite launcher:className="com.samsung.android.app.memo.Main" launcher:packageName="com.samsung.android.app.memo" launcher:screen="0" launcher:x="3" launcher:y="3" />
+        <favorite launcher:className="com.samsung.android.snote.control.ui.filemanager.MainHomeActivity" launcher:packageName="com.samsung.android.snote" launcher:screen="0" launcher:x="3" launcher:y="3" />
+    </home>
+    <hotseat>
+        <favorite launcher:className="com.sec.knox.switcher.MainActivity" launcher:packageName="com.sec.knox.switcher" launcher:x="0" />
+        <favorite launcher:className="com.android.contacts.activities.PeopleActivity" launcher:packageName="com.android.contacts" launcher:x="1" />
+        <favorite launcher:className="com.android.email.activity.Welcome" launcher:packageName="com.android.email" launcher:x="2" />
+        <favorite launcher:className="com.sec.android.app.sbrowser.SBrowserMainActivity" launcher:packageName="com.sec.android.app.sbrowser" launcher:x="3" />
+    </hotseat>
+</favorites>

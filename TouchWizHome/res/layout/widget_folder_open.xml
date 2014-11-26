@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.WidgetFolder android:orientation="vertical" android:background="@drawable/home_folder_bg_blue" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/menuWidgets_widgetFolderOpen_title_textSize" android:textColor="#ff3cbee4" android:id="@id/widget_folder_open_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menuWidgets_widgetFolderOpen_title_margin_top" android:layout_marginBottom="@dimen/menuWidgets_widgetFolderOpen_title_margin_bottom" android:layout_marginStart="@dimen/menuWidgets_widgetFolderOpen_title_margin_left" android:layout_marginEnd="@dimen/menuWidgets_widgetFolderOpen_title_margin_right" />
+    <ScrollView android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <GridLayout android:layout_gravity="center" android:id="@id/widget_folder_open_grid" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</com.android.launcher2.WidgetFolder>

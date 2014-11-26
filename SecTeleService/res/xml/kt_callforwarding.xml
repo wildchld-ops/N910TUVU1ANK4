@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:title="@string/kt_setting_on" android:key="setting_on_preference" android:inputType="phone" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_setting_off" android:key="setting_off_preference" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_setting_status" android:key="setting_status__preference" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_setting_information" android:key="setting_info_preference" />
+</PreferenceScreen>

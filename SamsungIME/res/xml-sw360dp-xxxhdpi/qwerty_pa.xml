@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/qwerty_default_indian_key_width" android:keyHeight="@dimen/qwerty_default_indian_key_height" android:horizontalGap="@dimen/qwerty_default_indian_key_horizontal_gap" android:verticalGap="@dimen/qwerty_default_indian_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/qwerty_indian_top_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top">
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_horizontal_gap" android:codes="-500" android:keyEdgeFlags="left" android:keyLabel="◌–|" />
+        <Key android:codes="2566" android:keyLabel="ਆ" />
+        <Key android:codes="2567" android:keyLabel="ਇ" />
+        <Key android:codes="2568" android:keyLabel="ਈ" />
+        <Key android:codes="2569" android:keyLabel="ਉ" />
+        <Key android:codes="2675" android:keyLabel="ੳ" />
+        <Key android:codes="2565" android:keyLabel="ਅ" />
+        <Key android:codes="2674" android:keyLabel="ੲ" />
+        <Key android:codes="2616" android:keyLabel="ਸ" />
+        <Key android:keyWidth="@dimen/qwerty_indian_last_col_key_width" android:codes="2617" android:keyEdgeFlags="right" android:keyLabel="ਹ " />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_horizontal_gap" android:codes="2570" android:keyEdgeFlags="left" android:keyLabel="ਊ" />
+        <Key android:codes="2575" android:keyLabel="ਏ" />
+        <Key android:codes="2576" android:keyLabel="ਐ" />
+        <Key android:codes="2579" android:keyLabel="ਓ" />
+        <Key android:codes="2580" android:keyLabel="ਔ" />
+        <Key android:codes="2581" android:keyLabel="ਕ" />
+        <Key android:codes="2582" android:keyLabel="ਖ" />
+        <Key android:codes="2583" android:keyLabel="ਗ" />
+        <Key android:codes="2584" android:keyLabel="ਘ" />
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:codes="2585" android:keyEdgeFlags="right" android:keyLabel="ਙ" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_horizontal_gap" android:codes="2586" android:keyEdgeFlags="left" android:keyLabel="ਚ" />
+        <Key android:codes="2587" android:keyLabel="ਛ" />
+        <Key android:codes="2588" android:keyLabel="ਜ" />
+        <Key android:codes="2589" android:keyLabel="ਝ" />
+        <Key android:codes="2590" android:keyLabel="ਞ" />
+        <Key android:codes="2591" android:keyLabel="ਟ" />
+        <Key android:codes="2592" android:keyLabel="ਠ" />
+        <Key android:codes="2593" android:keyLabel="ਡ" />
+        <Key android:codes="2594" android:keyLabel="ਢ" />
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:codes="2595" android:keyEdgeFlags="right" android:keyLabel="ਣ" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_horizontal_gap" android:codes="2596" android:keyEdgeFlags="left" android:keyLabel="ਤ" />
+        <Key android:codes="2597" android:keyLabel="ਥ" />
+        <Key android:codes="2598" android:keyLabel="ਦ" />
+        <Key android:codes="2599" android:keyLabel="ਧ" />
+        <Key android:codes="2600" android:keyLabel="ਨ" />
+        <Key android:codes="2602" android:keyLabel="ਪ" />
+        <Key android:codes="2603" android:keyLabel="ਫ" />
+        <Key android:codes="2604" android:keyLabel="ਬ" />
+        <Key android:codes="2605" android:keyLabel="ਭ" />
+        <Key android:keyWidth="@dimen/qwerty_indian_first_col_key_width" android:codes="2606" android:keyEdgeFlags="right" android:keyLabel="ਮ" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/qwerty_indian_first_column_fifth_line_horizontal_gap" android:codes="2607" android:keyEdgeFlags="left" android:keyLabel="ਯ" />
+        <Key android:codes="2608" android:keyLabel="ਰ" />
+        <Key android:codes="2610" android:keyLabel="ਲ" />
+        <Key android:codes="2613" android:keyLabel="ਵ" />
+        <Key android:codes="2652" android:keyLabel="ੜ" />
+        <Key android:codes="2614" android:keyLabel="ਸ਼" />
+        <Key android:codes="2672" android:keyLabel="ੰ" />
+        <Key android:codes="2562" android:keyLabel="ਂ" />
+        <Key android:keyWidth="@dimen/qwerty_indian_backspace_key_width" android:horizontalGap="@dimen/qwerty_indian_horizontal_gap_left_of_backspace" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_indian_last_line_default_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:horizontalGap="@dimen/qwerty_indian_last_line_horizontal_gap" android:verticalGap="@dimen/qwerty_indian_last_line_vertical_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/qwerty_indian_input_mode_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_last_line_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/qwerty_indian_space_key_width" android:horizontalGap="@dimen/qwerty_indian_horizontal_gap_left_of_space" android:codes="32" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/qwerty_indian_horizontal_gap_left_of_fullstop" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_indian_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_indian_last_line_default_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:horizontalGap="@dimen/qwerty_indian_last_line_horizontal_gap" android:verticalGap="@dimen/qwerty_indian_last_line_vertical_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/qwerty_indian_input_mode_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_last_line_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/qwerty_indian_space_key_width_single_language" android:horizontalGap="@dimen/qwerty_indian_horizontal_gap_left_of_space" android:codes="32" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/qwerty_indian_horizontal_gap_left_of_fullstop" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_indian_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_indian_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:verticalGap="@dimen/qwerty_indian_last_line_vertical_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/qwerty_indian_input_mode_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_last_line_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/qwerty_indian_space_key_width_single_language_email" android:codes="32" />
+        <Key android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_www_dot_key_width" android:codes="-113" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:keyWidth="@dimen/qwerty_indian_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_indian_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:verticalGap="@dimen/qwerty_indian_last_line_vertical_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/qwerty_indian_input_mode_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_last_line_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/qwerty_indian_space_key_width_single_language_email" android:codes="32" />
+        <Key android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_dot_com_key_width" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:keyWidth="@dimen/qwerty_indian_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_indian_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:verticalGap="@dimen/qwerty_indian_last_line_vertical_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/qwerty_indian_input_mode_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_last_line_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/qwerty_indian_space_key_width_email" android:codes="32" />
+        <Key android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_www_dot_key_width_multi_language" android:codes="-113" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:keyWidth="@dimen/qwerty_indian_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_indian_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:verticalGap="@dimen/qwerty_indian_last_line_vertical_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/qwerty_indian_input_mode_key_width" android:horizontalGap="@dimen/qwerty_indian_first_col_last_line_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/qwerty_indian_space_key_width_email" android:codes="32" />
+        <Key android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_dot_com_key_width_multi_language" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:keyWidth="@dimen/qwerty_indian_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:keyHeight="@dimen/qwerty_indian_last_line_default_key_height" android:horizontalGap="@dimen/qwerty_default_key_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_comma">
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_multi_language" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="₹123" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="।" />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_multi_language" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="100.0%p" android:keyHeight="0.0px" android:verticalGap="@dimen/qwerty_indian_bottom_vertical_gap" />
+</Keyboard>

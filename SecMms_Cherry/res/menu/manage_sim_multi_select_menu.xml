@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_menu_copy_all_messages_to_phonememory" android:id="@id/copy_to_phone" android:title="@string/copy_to_device" android:showAsAction="always" />
+    <item android:icon="@drawable/header_button_icon_delete" android:id="@id/delete" android:title="@string/delete" android:showAsAction="always" />
+    <group android:id="@id/contact_menu">
+        <item android:id="@id/add_to_contact" android:title="@string/menu_add_to_contacts" android:showAsAction="always" />
+        <item android:id="@id/view_contact" android:title="@string/menu_view_contact" android:showAsAction="always" />
+    </group>
+    <item android:id="@id/done" android:title="@string/done" android:showAsAction="always" />
+</menu>

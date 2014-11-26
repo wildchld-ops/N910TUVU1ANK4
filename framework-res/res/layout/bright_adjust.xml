@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="start|center" android:orientation="horizontal" android:background="@drawable/tw_dialog_full_holo_light" android:layout_width="490.0dip" android:layout_height="68.0dip" android:paddingStart="21.0dip" android:paddingEnd="21.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/bright_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_bright" />
+    <SeekBar android:id="@id/level" android:paddingTop="19.0dip" android:paddingBottom="19.0dip" android:layout_width="270.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" style="@android:style/Widget.DeviceDefault.Light.SeekBar" />
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/mainmenu_toolbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/tw_tab_unselected_bar_holo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:id="@id/menu_selected_back_down" android:background="?android:actionBarItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/menu_title_bar_text_size" android:textColor="@color/menu_title_selected_text" android:gravity="start|center" android:id="@id/menu_selected_backtext" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/menu_title_bar_text_max_width" android:text="@string/menu_uninstall" android:singleLine="true" android:drawablePadding="@dimen/menu_title_bar_drawable_padding" android:drawableStart="?android:homeAsUpIndicator" android:paddingEnd="@dimen/menu_title_bar_left_padding" style="@style/android:TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

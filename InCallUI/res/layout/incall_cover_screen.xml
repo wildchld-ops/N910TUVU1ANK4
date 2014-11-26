@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.incallui.cover.CoverCall android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/cover_bg_screen" android:background="@color/cover_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/primary_call_info_cover" />
+        <include layout="@layout/answer_cover_fragment" />
+        <include layout="@layout/in_call_button_cover_fragment" />
+        <include layout="@layout/end_call_button_cover_fragment" />
+    </FrameLayout>
+</com.android.incallui.cover.CoverCall>

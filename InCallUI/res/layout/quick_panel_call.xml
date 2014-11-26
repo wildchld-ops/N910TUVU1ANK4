@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/quickpanel_call" android:background="@color/quickpanel_call_bg" android:layout_width="fill_parent" android:layout_height="80.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/quickpanel_photo" android:layout_width="@dimen/quickpanel_photo_size" android:layout_height="@dimen/quickpanel_photo_size" android:scaleType="centerCrop" android:contentDescription="@string/returnToInCallScreen" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/quickpanel_call_upper_layout_height">
+                <FrameLayout android:layout_gravity="center" android:id="@id/quickpanel_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/quickpanel_type_margin_top" android:layout_marginStart="@dimen/quickpanel_type_margin_left" android:layout_marginEnd="@dimen/quickpanel_type_margin_right">
+                    <ImageView android:id="@id/quickpanel_call_type" android:background="@drawable/quick_panel_icon_call" android:layout_width="@dimen/quickpanel_call_type_size" android:layout_height="@dimen/quickpanel_call_type_size" />
+                    <ImageView android:id="@id/quickpanel_hold_call_type" android:background="@drawable/quick_panel_icon_call_on_hold" android:layout_width="@dimen/quickpanel_call_type_size" android:layout_height="@dimen/quickpanel_call_type_size" />
+                    <ImageView android:id="@id/quickpanel_hd_call_type" android:background="@drawable/quick_panel_icon_call_hold" android:layout_width="@dimen/quickpanel_call_type_size" android:layout_height="@dimen/quickpanel_call_type_size" />
+                    <ImageView android:id="@id/quickpanel_videocall_type" android:background="@drawable/quick_panel_icon_videocall_hold" android:layout_width="@dimen/quickpanel_call_type_size" android:layout_height="@dimen/quickpanel_call_type_size" />
+                    <ImageView android:id="@id/quickpanel_videocall_type_vzw" android:background="@drawable/quick_panel_icon_vzw_volte" android:layout_width="@dimen/quickpanel_call_type_size" android:layout_height="@dimen/quickpanel_call_type_size" />
+                </FrameLayout>
+                <TextView android:textSize="@dimen/quickpanel_call_description_text_size" android:textColor="@color/incall_button_text_quickpanel" android:gravity="center_vertical" android:id="@id/quickpanel_call_description" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/quickpanel_call_description_max_width" android:singleLine="true" android:layout_toEndOf="@id/quickpanel_type" />
+                <Chronometer android:textSize="@dimen/quickpanel_text_size" android:textColor="@color/incall_button_text_quickpanel" android:gravity="end|center" android:id="@id/quickpanel_time" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:layout_marginEnd="10.0dip" android:layout_alignParentEnd="true" />
+                <LinearLayout android:id="@id/quickpanel_recInfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="10.0dip" android:layout_toStartOf="@id/quickpanel_time">
+                    <ImageView android:layout_gravity="end|center" android:id="@id/quick_rec_icon" android:background="@drawable/quick_panel_icon_rec" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <Chronometer android:textSize="@dimen/quickpanel_text_size" android:textColor="@color/incall_call_banner_recording" android:gravity="start|center" android:id="@id/quickpanel_record_time" android:background="@null" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="2.0dip" />
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@id/quickpanel_call_unhold" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" style="@style/quick_panel_button_layout">
+                    <ImageView android:background="@drawable/quick_panel_btn_icon_resume" style="@style/quick_panel_button_image" />
+                    <TextView android:text="@string/return_to_call" style="@style/quick_panel_button_text" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/quickpanel_call_speaker_mute_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                    <FrameLayout android:id="@id/quickpanel_call_speaker" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:id="@id/quickpanel_call_speaker_off" style="@style/quick_panel_button_layout">
+                            <ImageView android:background="@drawable/quick_panel_btn_icon_speaker" style="@style/quick_panel_button_image" />
+                            <TextView android:id="@id/quickpanel_call_speaker_off_text" android:text="@string/accept_speaker" style="@style/quick_panel_button_text" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/quickpanel_call_speaker_on" style="@style/quick_panel_button_layout">
+                            <ImageView android:background="@drawable/quick_panel_btn_icon_speaker_on" style="@style/quick_panel_button_image" />
+                            <TextView android:textColor="@color/quickpanel_button_on_text_color" android:id="@id/quickpanel_call_speaker_on_text" android:text="@string/accept_speaker" style="@style/quick_panel_button_text" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/quickpanel_call_speaker_disable" style="@style/quick_panel_button_layout">
+                            <ImageView android:background="@drawable/quick_panel_btn_icon_speaker_dim" style="@style/quick_panel_button_image" />
+                            <TextView android:textColor="#80ffffff" android:id="@id/quickpanel_call_speaker_disable_text" android:text="@string/accept_speaker" style="@style/quick_panel_button_text" />
+                        </LinearLayout>
+                    </FrameLayout>
+                    <FrameLayout android:id="@id/quickpanel_call_mute" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <LinearLayout android:id="@id/quickpanel_call_mute_off" style="@style/quick_panel_button_layout">
+                            <ImageView android:background="@drawable/quick_panel_btn_icon_mute" style="@style/quick_panel_button_image" />
+                            <TextView android:text="@string/onscreenMuteText" style="@style/quick_panel_button_text" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/quickpanel_call_mute_on" style="@style/quick_panel_button_layout">
+                            <ImageView android:background="@drawable/quick_panel_btn_icon_mute_on" style="@style/quick_panel_button_image" />
+                            <TextView android:textColor="@color/quickpanel_button_on_text_color" android:text="@string/onscreenMuteText" style="@style/quick_panel_button_text" />
+                        </LinearLayout>
+                        <LinearLayout android:id="@id/quickpanel_call_mute_disable" android:visibility="gone" style="@style/quick_panel_button_layout">
+                            <ImageView android:background="@drawable/quick_panel_btn_icon_mute_dim" style="@style/quick_panel_button_image" />
+                            <TextView android:textColor="#80ffffff" android:text="@string/onscreenMuteText" style="@style/quick_panel_button_text" />
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="start|center" android:background="@color/quickpanel_divider_bg" android:layout_width="1.0dip" android:layout_height="32.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+                <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:id="@id/quickpanel_call_end" style="@style/quick_panel_end_button_layout">
+                        <ImageView android:background="@drawable/quick_panel_btn_icon_endcall" style="@style/quick_panel_button_image" />
+                        <TextView android:text="@string/quickPanelEndCallText" style="@style/quick_panel_end_button_text" />
+                    </LinearLayout>
+                    <LinearLayout android:id="@id/quickpanel_call_reject" style="@style/quick_panel_end_button_layout">
+                        <ImageView android:background="@drawable/quick_panel_btn_icon_reject" style="@style/quick_panel_button_image" />
+                        <TextView android:text="@string/incoming_reject" style="@style/quick_panel_end_button_text" />
+                    </LinearLayout>
+                    <ImageView android:layout_gravity="start|center" android:background="@color/quickpanel_divider_bg" android:layout_width="1.0dip" android:layout_height="32.0dip" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

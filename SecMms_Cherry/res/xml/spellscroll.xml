@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spellscroll android:label="@string/new_message" android:icon="@mipmap/ic_launcher_smsmms" android:name="com.android.mms"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <spell android:label="@string/gpad_launch_messaging" android:icon="@drawable/message_btn_send" android:name="Launch_messaging" android:hint="@string/gpad_launch_messaging_desc">
+        <spelleffect>
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.ConversationComposer" />
+            <extra-attr android:name="flags" android:value="FLAG_ACTIVITY_CLEAR_TOP" />
+            <extra-attr android:name="flags" android:value="FLAG_ACTIVITY_NEW_TASK" />
+        </spelleffect>
+    </spell>
+    <spell android:label="@string/gpad_launch_messaging_with_recipient" android:icon="@drawable/message_btn_send" android:name="Launch_messaging_with_recipient" android:hint="@string/gpad_launch_messaging_with_recipient_desc">
+        <spelleffect>
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.SENDTO" android:targetClass="com.android.mms.ui.ConversationComposer">
+                <extra android:name="recipients" android:value="{{RECIPIENT}}" />
+                <extra android:name="gesturepad" android:value="{{GESTUREPAD}}" />
+            </intent>
+            <extra-attr android:name="flags" android:value="FLAG_ACTIVITY_CLEAR_TOP" />
+            <extra-attr android:name="flags" android:value="FLAG_ACTIVITY_NEW_TASK" />
+        </spelleffect>
+        <ingredient android:label="@string/new_message" android:name="RECIPIENT" android:inputType="text">
+            <extra-attr android:name="screenType" android:value="MMS_RECIPIENT" />
+        </ingredient>
+        <ingredient android:label="@string/gpad_launch_messaging_with_recipient" android:name="GESTIREPAD" android:inputType="text" />
+    </spell>
+    <spell android:label="@string/gpad_launch_messaging_with_text" android:icon="@drawable/message_btn_send" android:name="Launch_messaging_with_text" android:hint="@string/gpad_launch_messaging_with_text_desc">
+        <spelleffect>
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.SENDTO" android:targetClass="com.android.mms.ui.ConversationComposer">
+                <extra android:name="sms_body" android:value="{{SMS_BODY}}" />
+            </intent>
+            <extra-attr android:name="flags" android:value="FLAG_ACTIVITY_CLEAR_TOP" />
+            <extra-attr android:name="flags" android:value="FLAG_ACTIVITY_NEW_TASK" />
+        </spelleffect>
+        <ingredient android:label="@string/new_message" android:name="SMS_BODY" android:inputType="text" />
+    </spell>
+    <spell android:label="@string/gpad_launch_messaging_with_text_to" android:icon="@drawable/message_btn_send" android:name="Launch_messaging_with_recipient_text" android:hint="@string/gpad_launch_messaging_with_text_to_desc">
+        <spelleffect>
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.SENDTO" android:data="sms:{{RECIPIENT_NUMBER}}" android:targetClass="com.android.mms.ui.ConversationComposer">
+                <extra android:name="sms_body" android:value="{{SMS_BODY}}" />
+            </intent>
+        </spelleffect>
+        <ingredient android:label="@string/new_message" android:name="RECIPIENT_NUMBER" android:inputType="text">
+            <extra-attr android:name="screenType" android:value="CONTACT" />
+        </ingredient>
+        <ingredient android:label="@string/new_message" android:name="SMS_BODY" android:inputType="text" />
+    </spell>
+</spellscroll>

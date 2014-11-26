@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="22.0sp" android:textColor="#ffdeecf5" android:gravity="center" android:id="@id/wifi_captiveportal_text" android:background="@drawable/tw_action_bar_tab_bg_holo_dark" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginBottom="1.0dip" android:text="@string/wifi_setupwizard_captiveportal_connecting" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/connectionLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="19.0sp" android:textColor="#ffdeecf5" android:gravity="center" android:id="@id/connectingText" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="1.0dip" android:text="@string/wifi_setupwizard_captiveportal_loading" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0">
+        <WebView android:id="@id/wifi_captiveportal_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <LinearLayout android:gravity="left" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="19.0dip" android:id="@id/wifi_captiveportal_cancel" android:background="@drawable/button_selector_prev" android:layout_width="170.0dip" android:layout_height="43.0dip" android:text="@string/wifi_setupwizard_captiveportal_cancel" android:layout_alignParentLeft="true" />
+    </LinearLayout>
+</LinearLayout>

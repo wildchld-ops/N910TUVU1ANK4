@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_root" android:background="@drawable/setupwizard_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/trans_indicator_margin" android:layout_marginRight="20.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/setupwizard_title_text_size" android:id="@id/text_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="8.0dip" android:text="@string/fingerprint_setupwizard_title" android:layout_centerHorizontal="true" style="@style/title_area" />
+        <Button android:id="@id/next_finger" android:layout_width="@dimen/finger_register_button_width" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/finger_register_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <ScrollView android:id="@id/text_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/next_finger" android:layout_below="@id/text_title">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/setupwizard_desc_text_size" android:textColor="@color/setupwizard_desc_color" android:id="@id/text_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/fingerprint_register_desc" />
+                <TextView android:textSize="@dimen/setupwizard_desc_text_size" android:textColor="@color/setupwizard_desc_color" android:id="@id/text_menu_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/fingerprint_register_menu_path" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:background="@drawable/setupwizard_navibar_bg" android:layout_width="fill_parent" android:layout_height="@dimen/bottom_buttons_height">
+        <View android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:background="@drawable/setupwizard_navibar_divider" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="@dimen/bottom_buttons_area_divider_padding" android:layout_marginBottom="@dimen/bottom_buttons_area_divider_padding" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/next_btn" android:background="@drawable/action_bar_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/bottom_button_text_size" android:textColor="@color/bottom_button_text_selector" android:gravity="center" android:id="@id/next_btn_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wifi_setup_skip" />
+            <ImageView android:gravity="center" android:id="@id/next_btn_arrow" android:paddingLeft="@dimen/next_arrow_paddingLeft" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/setupwizard_next_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

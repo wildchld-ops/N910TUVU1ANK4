@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textSize="19.0sp" android:textColor="@android:color/white" android:id="@id/message" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="18.0dip" android:layout_marginTop="23.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="17.0dip" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+</ScrollView>

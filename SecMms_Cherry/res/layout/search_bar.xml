@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/title_search_area" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Spinner android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@id/search_type_switcher" android:layout_width="@dimen/spinner_layout_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/spinner_layout_left_margin" android:minWidth="50.0dip" android:dropDownWidth="@dimen/drop_down_list_width" style="?android:attr/actionDropDownStyle" />
+    <SearchView android:id="@id/search_view" android:focusable="true" android:addStatesFromChildren="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="2000.0dip" android:layout_centerVertical="true" />
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/MENU_GROUP" android:visible="false">
+        <item android:icon="@drawable/videocall_action_bar_switch_camera" android:id="@id/switch_camera" android:visibility="gone" android:title="@string/switch_cam" />
+        <item android:id="@id/switch_to_voice_call" android:visibility="gone" android:title="@string/switch_to_voice_call" />
+        <item android:id="@id/mergs_calls" android:visibility="gone" android:title="@string/onscreenMergeCallsText" />
+        <item android:icon="@drawable/tw_action_bar_icon_add_call" android:id="@id/add_call" android:visibility="gone" android:title="@string/onscreenAddCallText" />
+        <item android:icon="@drawable/incall_button_hold_icon" android:id="@id/hold_call" android:visibility="gone" android:title="@string/onscreenHoldText" />
+        <item android:icon="@drawable/incall_button_unhold_icon" android:id="@id/unhold_call" android:visibility="gone" android:title="@string/onscreenUnholdText" />
+        <item android:icon="@drawable/incall_button_swap_icon_in_container" android:id="@id/swap_call" android:visibility="gone" android:title="@string/onscreenSwapCallsText" />
+        <item android:icon="@drawable/videocall_action_bar_close_camera" android:id="@id/close_camera" android:visibility="gone" android:title="@string/close_camera" />
+        <item android:icon="@drawable/videocall_action_bar_open_camera" android:id="@id/open_camera" android:visibility="gone" android:title="@string/open_camera" />
+        <item android:icon="@drawable/videocall_action_bar_outgoing_image" android:id="@id/image_effect" android:visibility="gone" android:title="@string/image_effect" />
+        <item android:icon="@drawable/videocall_action_bar_hideme" android:id="@id/hide" android:visibility="gone" android:title="@string/hide" />
+        <item android:icon="@drawable/videocall_action_bar_showme" android:id="@id/show" android:visibility="gone" android:title="@string/show" />
+        <item android:icon="@drawable/videocall_action_bar_outgoing_image" android:id="@id/out_img" android:visibility="gone" android:title="@string/out_img" />
+        <item android:icon="@drawable/videocall_action_bar_capture" android:id="@id/capture" android:visibility="gone" android:title="@string/capture" />
+        <item android:id="@id/memo" android:visibility="gone" android:title="@string/memo" />
+        <item android:id="@id/message" android:visibility="gone" android:title="@string/messages" />
+        <item android:icon="@drawable/videocall_action_bar_keypad" android:id="@id/keypad" android:visibility="gone" android:title="@string/keypad" />
+        <item android:icon="@drawable/videocall_action_bar_speaker_on" android:id="@id/spkon" android:visibility="gone" android:title="@string/spkon" />
+        <item android:icon="@drawable/videocall_action_bar_speaker_off" android:id="@id/spkoff" android:visibility="gone" android:title="@string/spkoff" />
+        <item android:icon="@drawable/videocall_action_bar_headset" android:id="@id/switch_hd" android:visibility="gone" android:title="@string/switch_hd" />
+        <item android:icon="@drawable/videocall_action_bar_switch_phone" android:id="@id/switch_ph" android:visibility="gone" android:title="@string/switch_ph" />
+        <item android:icon="@drawable/action_bar_resize_screen" android:id="@id/show_resize_screen" android:visibility="gone" android:title="@string/show_resize_screen" />
+        <item android:icon="@drawable/action_bar_resize_screen" android:id="@id/show_full_screen" android:visibility="gone" android:title="@string/show_full_screen" />
+        <item android:id="@id/noise_reduction_on" android:visibility="gone" android:title="@string/noise_reduction_on" />
+        <item android:id="@id/noise_reduction_off" android:visibility="gone" android:title="@string/noise_reduction_off" />
+        <item android:id="@id/eye_contact_on" android:visibility="gone" android:title="@string/eye_contact_on" />
+        <item android:id="@id/eye_contact_off" android:visibility="gone" android:title="@string/eye_contact_off" />
+        <item android:icon="@drawable/videocall_action_bar_ani_emotion" android:id="@id/emotional_animation" android:visibility="gone" android:title="@string/emotional_animation" />
+        <item android:icon="@drawable/videocall_action_bar_theme_view" android:id="@id/theme_view" android:visibility="gone" android:title="@string/theme_view" />
+        <item android:icon="@drawable/videocall_action_bar_cartoon_on" android:id="@id/cartoon_view_on" android:visibility="gone" android:title="@string/cartoon_view_on" />
+        <item android:icon="@drawable/videocall_action_bar_cartoon_off" android:id="@id/cartoon_view_off" android:visibility="gone" android:title="@string/cartoon_view_off" />
+        <item android:icon="@drawable/videocall_action_bar_screen_brightness" android:id="@id/screen_brightness" android:visibility="gone" android:title="@string/screen_brightness" />
+        <item android:icon="@drawable/videocall_action_bar_outgoing_image" android:id="@id/acrodea_avatar" android:visibility="gone" android:title="@string/acrodea_avatar" />
+        <item android:icon="@drawable/videocall_action_bar_dual_camera_on" android:id="@id/dual_camera_on" android:visibility="gone" android:title="@string/dual_cam_enable" />
+        <item android:icon="@drawable/videocall_action_bar_dual_camera_off" android:id="@id/dual_camera_off" android:visibility="gone" android:title="@string/dual_cam_disable" />
+        <item android:icon="@drawable/tw_action_bar_icon_onehand_on" android:id="@id/onehand_on" android:visibility="gone" android:title="@string/onehand_mode_on" />
+        <item android:icon="@drawable/tw_action_bar_icon_onehand_off" android:id="@id/onehand_off" android:visibility="gone" android:title="@string/onehand_mode_off" />
+        <item android:icon="@drawable/videocall_action_bar_group_add" android:id="@id/add_user_video" android:visibility="gone" android:title="@string/adduser" />
+        <item android:icon="@drawable/tw_action_bar_icon_share_video_track_via" android:id="@id/media_share" android:visibility="gone" android:title="@string/mediashare" />
+    </group>
+    <group android:id="@id/MENUREC_GROUP" android:visible="false">
+        <item android:id="@id/start_recording_near_end" android:visibility="gone" android:title="@string/record" />
+        <item android:id="@id/stop_recording_near_end" android:visibility="gone" android:title="@string/stop" />
+        <item android:id="@id/start_recording_far_end" android:visibility="gone" android:title="@string/record" />
+        <item android:id="@id/stop_recording_far_end" android:visibility="gone" android:title="@string/stop" />
+    </group>
+</menu>

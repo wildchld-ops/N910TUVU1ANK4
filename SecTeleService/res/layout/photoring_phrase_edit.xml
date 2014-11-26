@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/tw_searchfiled_background_holo_dark" android:paddingLeft="@dimen/photoring_layout_padding_left" android:paddingRight="@dimen/photoring_layout_padding_right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="@dimen/photoring_txt_size" android:textColor="@color/photoring_input_txt" android:gravity="top" android:id="@id/phrase_add" android:layout_width="fill_parent" android:layout_height="@dimen/photoring_msg_area_height" android:layout_marginTop="@dimen/photoring_msg_area_margin_bottom" android:layout_marginBottom="@dimen/photoring_msg_area_margin_bottom" android:hint="@string/photoring_message_hint" android:imeOptions="actionDone" />
+        <TextView android:textSize="17.0dip" android:textColor="#fff5f5f5" android:layout_gravity="bottom|right|center" android:id="@id/byte_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/photoring_msg_area_margin_bottom" android:shadowColor="#ff000000" android:alpha="0.75" />
+    </FrameLayout>
+    <RelativeLayout android:background="@drawable/tw_background_dark" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/image" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="@dimen/photoring_txt_size" android:textColor="@color/photoring_content_txt" android:gravity="center" android:id="@id/nofile" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/photoring_file_select" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

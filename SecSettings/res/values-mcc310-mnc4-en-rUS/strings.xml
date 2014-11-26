@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="smart_network_guide_msg">"Smart network helps to conserve battery life.
+
+It turns off mobile data and Wi-Fi when the screen is turned off, so that the phone consumes less battery.
+
+However, you may receive cumulative push data when you turn on the screen."</string>
+    <string name="bluetooth_sap_connect_message">%s is requesting permission to access your SIM card. Allowing this request will turn off calling and messaging functions, and turn off Mobile data on your phone. Allow?</string>
+    <string name="roaming_warning_multiuser">"When you turn on data roaming, it uses your data plan.
+
+This setting affects all users on this phone."</string>
+    <string name="crypt_keeper_low_charge_text_sec_dec">Charge the battery to at least %d%% before decrypting your phone.</string>
+    <string name="wifi_ap_help_touch_msg_summary">Select Mobile Hotspot to view its settings.</string>
+    <string name="wifi_ap_turning_off">Turning off Mobile Hotspot…</string>
+    <string name="wifi_ap_hide_ssid">Hide my phone</string>
+    <string name="wifi_ap_timeout_message">Automatically turn off Mobile Hotspot if there are no connected devices.</string>
+    <string name="wifi_ap_disconnect_client">Turning off Mobile Hotspot will prevent connected devices from using your mobile network connection.</string>
+    <string name="wifi_ap_disconnect_warn">Disconnect phone</string>
+    <string name="wifi_ap_instruction_open_activate_color">1. Turn on Wi-Fi on the phone that will share your mobile network connection.&lt;br/>2. Select &lt;font color=\"%1$s\">%2$s&lt;/font> from the list of available Wi-Fi networks.&lt;br/>3. Connect to &lt;font color=\"%1$s\">%2$s&lt;/font>.&lt;br/></string>
+    <string name="wifi_ap_instruction_activate_color">1. Turn on Wi-Fi on the phone that will share your mobile network connection.&lt;br/>2. Select &lt;font color=\"%1$s\">%2$s&lt;/font> from the list of available Wi-Fi networks.&lt;br/>3. Connect to &lt;font color=\"%1$s\">%2$s&lt;/font> by entering &lt;font color=\"%1$s\">%3$s&lt;/font> as the password.&lt;br/></string>
+    <string name="wifi_ap_instruction_battery_warning">Mobile Hotspot consumes more battery power. Connect the phone to a charger for extended use.</string>
+    <string name="dialog_battery_data_warning">Mobile Hotspot will be turned on. This will increase battery consumption and data usage.</string>
+    <string name="wifi_watchdog_connectivity_check_enable_dialog">Mobile data may be used to maintain a stable Internet connection. This uses your data plan.</string>
+    <string name="usb_charging_title">Charging phone only</string>
+    <string name="tether_settings_summary_all">"Share your phone's mobile data connection via USB, Wi-Fi, or Bluetooth."</string>
+    <string name="tether_settings_summary_usb_bt">"Share your phone's mobile data connection via USB or Bluetooth."</string>
+    <string name="tether_settings_summary_usb">"Share your phone's mobile data connection via USB"</string>
+    <string name="easy_mode_app_feature_gridlist">Use your phone more easily with a simpler home screen layout and straightforward application interactions. The large font size will be applied throughout the phone.</string>
+    <string name="single_tap_mode_title">Turn on Single tap mode</string>
+    <string name="accessibility_long_press_timeout_preference_title">Touch and hold delay</string>
+    <string name="data_usage_menu_metered">Mobile Hotspots</string>
+    <string name="data_usage_restrict_background">Restricting background data will stop some apps and services from working unless phone is connected to a Wi-Fi network.</string>
+    <string name="data_usage_restrict_background_multiuser">"If you restrict background mobile data, some apps and services will not work unless you are connected to a Wi-Fi network.
+
+This setting affects all users on this tablet."</string>
+    <string name="data_usage_metered_title">Mobile Hotspots</string>
+    <string name="data_usage_metered_wifi_disabled">Turn on Wi-Fi to select mobile Hotspots.</string>
+    <string name="user_add_user_message_long">"You can share this phone with other people by creating additional users. Users have their own space, which they can customize with their own apps, wallpaper and so on. Users can also adjust phone settings like Wi-Fi that affect everyone.
+
+After you create a new user, that person needs to go through a setup process.
+
+Any user can accept updated app permissions on behalf of all other users."</string>
+    <string name="user_add_user_message_long_popup0">You can share this phone with other people by creating additional users. Each user has their own space, which they can customize with their own apps, wallpaper and so on. Users can also adjust phone settings like Wi-Fi that affect everyone. Certain applications (Phone, Messaging, etc.) are only available to the phone owner.</string>
+    <string name="flight_mode_enable_popup_title">Turn on Airplane mode</string>
+    <string name="desk_home_display_warning_title">Turn on desk home screen</string>
+    <string name="power_key_hold_summary">To view accessibility settings under phone options, press and hold the Power key.</string>
+    <string name="shake_tutorial_content">Shake your phone to scan for Bluetooth, Kies Air, and other devices. Also, shake to update email, news, weather, or stock data via mobile networks. This uses your data plan.</string>
+    <string name="turn_over_tutorial_content">Turn over the phone to mute incoming calls, message alerts, and alarms, or to pause media.</string>
+    <string name="motion2014_air_wake_up_guide_content">"Use Air wake up to turn on the screen without having to press hardkeys.
+
+Put your phone on a stable surface with the screen facing upwards. Once the screen has turned off, move your hand above the sensor as shown in the image above. The screen will turn back on."</string>
+    <string name="air_button_options_disable_summary">Air command and the options below cannot be turned on at the same time. The options below will be turned off.</string>
+    <string name="allshare_reject_device_summary">Add devices to this list to block them from sharing files with your phone.</string>
+    <string name="led_indicator_settings_summary">Light up the LED while the screen is off whenever the phone status changes, notifications are received, or voice recording is in progress.</string>
+    <string name="smart_bonding_description">Download large files (over %d MB) faster by using Wi-Fi and 4G LTE networks at the same time. The Download booster icon will be shown on the status bar while Download booster is running. We recommend turning off the Via Wi-Fi only download option while using Download booster to improve your experience. Note that some third-party applications may be able to use Download booster even if the Via Wi-Fi only download option is on for them.</string>
+    <string name="smart_bonding_description_epdg">Download large files (over %d MB) faster by using Wi-Fi and 4G LTE networks at the same time. The Download booster icon will be shown on the status bar while Download booster is running. We recommend turning off the Via Wi-Fi only download option while using Download booster to improve your experience. Note that some third-party applications may be able to use Download booster even if the Via Wi-Fi only download option is on for them.</string>
+    <string name="smart_bonding_description_4g">Download large files (over %d MB) faster by using Wi-Fi and 4G LTE networks at the same time. The Download booster icon will be shown on the status bar while Download booster is running. We recommend turning off the Via Wi-Fi only download option while using Download booster to improve your experience. Note that some third-party applications may be able to use Download booster even if the Via Wi-Fi only download option is on for them.</string>
+    <string name="notification_panel_wifihotspot">"Mobile
+Hotspot"</string>
+    <string name="deviceOption">Phone options</string>
+    <string name="fingerprint_error_message_sensor_error">An error has occurred with the fingerprint sensor. If this message appears repeatedly, restart your phone.</string>
+    <string name="personal_page_secretbox_message">Hide content you want to keep private. Turn this mode off after use to protect your hidden content. Private mode will also be automatically turned off when the phone turns off.</string>
+    <string name="personal_page_welcome_message">Hide personal content to keep it secure on your phone.</string>
+    <string name="preload_app_update_warning">Some preloaded applications will be updated. Updating via your mobile network uses your data plan. If possible, update via a Wi-Fi network. You will be able to use your phone while updating.</string>
+    <string name="longpress_title">Touch and hold delay</string>
+    <string name="use_wifi_only_summary">Only update the security policy automatically when your phone is connected to a Wi-Fi network.</string>
+    <string name="guest_profile_disable_mobile_warning">Blocking Mobile data for this guest will turn off Mobile data on your phone. To use network services, connect to a Wi-Fi network.</string>
+    <string name="clock_sync_enabled">Sync phone clock with GPS satellite clock</string>
+    <string name="smart_bonding_help_step3">To use Download booster, your phone must be connected to both a Wi-Fi network and an LTE network before the download starts.</string>
+    <string name="additional_charges_msg">Your phone is not connected to a Wi-Fi network. Connecting to a mobile network uses your data plan.</string>
+    <string name="msa_msg_automatic_update">"Security update protects your phone and information by preventing flawed or malicious applications from bypassing Android security.
+
+To make sure you have the most up-to-date protection, allow automatic updates by accepting the Terms and Conditions on the next screen."</string>
+</resources>

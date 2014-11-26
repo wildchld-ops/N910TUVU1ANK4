@@ -1,0 +1,1961 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="view_type_entry">
+        <item>@string/uimode_grid</item>
+        <item>@string/uimode_list</item>
+        <item>@string/uimode_tab</item>
+    </string-array>
+    <string-array name="view_type_value">
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="tray_position_entry">
+        <item>@string/left</item>
+        <item>@string/right</item>
+    </string-array>
+    <string-array name="tray_position_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="drawer_menu_entries">
+        <item>@string/drawer_all</item>
+        <item>@string/tab_category_connections</item>
+        <item>@string/tab_category_device</item>
+        <item>@string/tab_category_input_and_control</item>
+        <item>@string/tab_category_general</item>
+        <item>@string/favorite_category</item>
+        <item>@string/application_settings</item>
+    </string-array>
+    <string-array name="powersaving_enable_settings_entry">
+        <item>@string/powersaving_always_on</item>
+        <item>@string/powersaving_auto_turn_on</item>
+    </string-array>
+    <string-array name="powersaving_enable_settings_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="security_policy_pref_network_entries">
+        <item>@string/wifi_or_mobile_network</item>
+        <item>@string/wifi_network_only</item>
+    </string-array>
+    <string-array name="security_policy_pref_network_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="dominant_hand_side_entries">
+        <item>@string/left_handed</item>
+        <item>@string/right_handed</item>
+    </string-array>
+    <string-array name="update_value">
+        <item>@string/disable_text</item>
+        <item>@string/via_wifi_only</item>
+        <item>@string/whenever_available</item>
+    </string-array>
+    <string-array name="update_value_real">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="dominant_hand_side_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="clock_size_key">
+        <item>Șḿăĺĺ</item>
+        <item>Ńόґḿăĺ</item>
+        <item>Łăґĝę</item>
+    </string-array>
+    <string-array name="clock_size_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pattern_type_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="lock_screen_unlock_effect_entries">
+        <item>Ńόиę</item>
+        <item>Яϊρρĺę ęƒƒęċт</item>
+        <item>Łϊĝћт ęƒƒęċт</item>
+        <item>ρăґтϊċĺę ęƒƒęċт</item>
+    </string-array>
+    <string-array name="font_size_range">
+        <item>17</item>
+        <item>30</item>
+        <item>54</item>
+        <item>65</item>
+        <item>78</item>
+    </string-array>
+    <string-array name="lock_screen_unlock_effect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="auto_power_off_entries">
+        <item>Θƒƒ</item>
+        <item>1 ћόΰґ</item>
+        <item>2 ћόΰґš</item>
+        <item>3 ћόΰґš</item>
+        <item>4 ћόΰґš</item>
+    </string-array>
+    <string-array name="voice_input_incoming_call">
+        <item>Åиšẅęґ</item>
+        <item>Яęĵęċт</item>
+    </string-array>
+    <string-array name="voice_input_alarm">
+        <item>Șтόρ</item>
+        <item>Șиόόźę</item>
+    </string-array>
+    <string-array name="voice_input_camera">
+        <item>Ĉăρтΰґę</item>
+        <item>Șћόόт</item>
+        <item>Șḿϊĺę</item>
+        <item>Ĉћęęšę</item>
+        <item>Яęċόґď Vϊďęό</item>
+    </string-array>
+    <string-array name="voice_input_music">
+        <item>Ńęхт</item>
+        <item>ρґęVϊόΰš</item>
+        <item>ρĺăỳ</item>
+        <item>ρăΰšę</item>
+        <item>νόĺΰḿę ΰρ</item>
+        <item>νόĺΰḿę ďόẅи</item>
+    </string-array>
+    <string-array name="timezone_filters">
+        <item>Åḿęґϊċă</item>
+        <item>Єΰґόρę</item>
+        <item>Åƒґϊċă</item>
+        <item>Åšϊă</item>
+        <item>Åΰšтґăĺϊă</item>
+        <item>ρăċϊƒϊċ</item>
+        <item>Åĺĺ</item>
+    </string-array>
+    <string-array name="date_format_values">
+        <item></item>
+        <item>ḾḾ-ďď-ỳỳỳỳ</item>
+        <item>ďď-ḾḾ-ỳỳỳỳ</item>
+        <item>ỳỳỳỳ-ḾḾ-ďď</item>
+    </string-array>
+    <string-array name="air_view_mode_entries">
+        <item>@string/pen_air_view</item>
+        <item>@string/finger_air_view</item>
+        <item>@string/auto_air_view</item>
+    </string-array>
+    <string-array name="air_view_mode_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="set_battery_level_entries">
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="set_battery_level_values">
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+        <item>40</item>
+        <item>30</item>
+        <item>20</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="screen_timeout_entries">
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>2 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="screen_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="screen_timeout_for_device_lock_entries">
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>3 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>15 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="screen_timeout_for_device_lock_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="dream_timeout_entries">
+        <item>ŃęVęґ</item>
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>2 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="dream_timeout_values">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="device_lock_timeout_entries">
+        <item>Їиšтăитĺỳ ẅϊтћ тћę ρόẅęґ ĸęỳ όґ ẅћęи тћę šċґęęи тϊḿęš όΰт</item>
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>3 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>15 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+        <item>1 ћόΰґ</item>
+    </string-array>
+    <string-array name="device_lock_timeout_values">
+        <item>0</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>180000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+    </string-array>
+    <string-array name="lock_after_timeout_entries">
+        <item>Їḿḿęďϊăтęĺỳ</item>
+        <item>5 šęċόиďš</item>
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>2 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="lock_after_timeout_values">
+        <item>0</item>
+        <item>5000</item>
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>300000</item>
+        <item>600000</item>
+        <item>1800000</item>
+    </string-array>
+    <string-array name="touch_key_light_values">
+        <item>1500</item>
+        <item>6000</item>
+        <item>0</item>
+        <item>-1</item>
+        <item>-2</item>
+    </string-array>
+    <string-array name="entries_font_size">
+        <item>Ŧϊиỳ</item>
+        <item>Șḿăĺĺ</item>
+        <item>Ńόґḿăĺ</item>
+        <item>Łăґĝę</item>
+        <item>Ħΰĝę</item>
+    </string-array>
+    <string-array name="entryvalues_font_size">
+        <item>0.85</item>
+        <item>0.93</item>
+        <item>1.0</item>
+        <item>1.30</item>
+        <item>1.80</item>
+    </string-array>
+    <string-array name="entry_7_step_font_size">
+        <item>@string/tiny</item>
+        <item>@string/extra_small</item>
+        <item>@string/small</item>
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+        <item>@string/huge</item>
+    </string-array>
+    <string-array name="entryvalues_7_step_font_size">
+        <item>0.71</item>
+        <item>0.85</item>
+        <item>1.0</item>
+        <item>1.09</item>
+        <item>1.19</item>
+        <item>1.42</item>
+        <item>1.71</item>
+    </string-array>
+    <string-array name="entry_easy_mode_font_size">
+        <item>@string/medium</item>
+        <item>@string/large</item>
+        <item>@string/extra_large</item>
+        <item>@string/huge</item>
+    </string-array>
+    <string-array name="entry_big_font_size">
+        <item>@string/small</item>
+        <item>@string/normal</item>
+        <item>@string/large</item>
+    </string-array>
+    <string-array name="entryvalues_easy_mode_font_size">
+        <item>1.09</item>
+        <item>1.19</item>
+        <item>1.42</item>
+        <item>1.71</item>
+    </string-array>
+    <string-array name="entryvalues_big_font_size">
+        <item>1.18</item>
+        <item>1.36</item>
+        <item>1.64</item>
+    </string-array>
+    <string-array name="tts_rate_entries">
+        <item>νęґỳ šĺόẅ</item>
+        <item>Șĺόẅ</item>
+        <item>Ńόґḿăĺ</item>
+        <item>Γăšт</item>
+        <item>Șĺϊĝћтĺỳ ƒăšтęґ</item>
+        <item>Ḿΰċћ ƒăšтęґ</item>
+        <item>νęґỳ ƒăšт</item>
+        <item>Єхтґęḿęĺỳ ƒăšт</item>
+        <item>Γăšтęšт</item>
+    </string-array>
+    <string-array name="tts_rate_values">
+        <item>60</item>
+        <item>80</item>
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+    </string-array>
+    <string-array name="tts_pitch_entries">
+        <item>νęґỳ ĺόẅ</item>
+        <item>Łόẅ</item>
+        <item>Ńόґḿăĺ</item>
+        <item>Ħϊĝћ</item>
+        <item>νęґỳ ћϊĝћ</item>
+    </string-array>
+    <string-array name="tts_pitch_values">
+        <item>50</item>
+        <item>80</item>
+        <item>100</item>
+        <item>120</item>
+        <item>150</item>
+    </string-array>
+    <string-array name="tts_demo_strings">
+        <item>Ŧћϊš ϊš ăи ęхăḿρĺę όƒ šρęęċћ šỳитћęšϊš ϊи Єиĝĺϊšћ.</item>
+        <item>νόϊċϊ ΰи éċћăитϊĺĺόи ďę šỳитћèšę Vόċăĺę ęи ƒґăиçăϊš.</item>
+        <item>Đϊęš ϊšт ęϊи βęϊšρϊęĺ ƒüґ Șρґăċћšỳитћęšę ϊи Đęΰтšċћ.</item>
+        <item>qΰęšтό è ΰи ęšęḿρϊό ďϊ šϊитęšϊ Vόċăĺę ϊи ϊтăĺϊăиό.</item>
+        <item>Єšтę ęš ΰи ęĵęḿρĺό ďę šíитęšϊš ďę Vόź ęи ęšρăñόĺ.</item>
+        <item>이것은 한국어 음성 합성의 예입니다.</item>
+    </string-array>
+    <string-array name="tts_demo_string_langs">
+        <item>ęиĝ</item>
+        <item>ƒґă</item>
+        <item>ďęΰ</item>
+        <item>ϊтă</item>
+        <item>šρă</item>
+        <item>ĸόґ</item>
+    </string-array>
+    <string-array name="wifi_status">
+        <item></item>
+        <item>Șċăииϊиĝ…</item>
+        <item>Ĉόииęċтϊиĝ…</item>
+        <item>Åΰтћęитϊċăтϊиĝ…</item>
+        <item>Θτтăϊиϊиĝ Їρ ăďďґęšš…</item>
+        <item>Ĉόииęċтęď</item>
+        <item>Șΰšρęиďęď</item>
+        <item>Đϊšċόииęċтϊиĝ…</item>
+        <item>Đϊšċόииęċтęď</item>
+        <item>Ũиšΰċċęššƒΰĺ</item>
+        <item>βĺόċĸęď</item>
+        <item>Ĉћęċĸϊиĝ тћę Qΰăĺϊтỳ όƒ ỳόΰґ Їитęґиęт ċόииęċтϊόи…</item>
+        <item>Ĉόииęċтęď</item>
+        <item>ĈẄ Đϊšċόииęċтęď</item>
+        <item>ĈẄ Яęĝϊšтęґϊиĝ</item>
+        <item>ĈẄ Яęĝϊšтęґęď</item>
+        <item>ĈẄ Яęĝϊšтęґ Γăϊĺ</item>
+        <item>ĈẄ ρρρ Șęтΰρ</item>
+        <item>ĈẄ ρρρ Γăϊĺ</item>
+        <item>ĈẄ Đęϊиϊтϊиĝ</item>
+        <item>ĈẄ Яęăďỳ</item>
+        <item>ĈẄ Șтόρρϊиĝ ẄŁÅŃ</item>
+        <item>Ĉόииęċтęď. ĈẄ Яęĝϊšтęґ Γăϊĺ.</item>
+        <item>Ĉόииęċтęď. ĈẄ ρρρ Γăϊĺ.</item>
+    </string-array>
+    <string-array name="wifi_status_with_ssid">
+        <item></item>
+        <item>Șċăииϊиĝ…</item>
+        <item>Ĉόииęċтϊиĝ тό %1$s…</item>
+        <item>Åΰтћęитϊċăтϊиĝ ẅϊтћ %1$s…</item>
+        <item>Θτтăϊиϊиĝ Їρ ăďďґęšš ƒґόḿ %1$s…</item>
+        <item>Ĉόииęċтęď тό %1$s</item>
+        <item>Șΰšρęиďęď</item>
+        <item>Đϊšċόииęċтϊиĝ ƒґόḿ %1$s…</item>
+        <item>Đϊšċόииęċтęď</item>
+        <item>Ũиšΰċċęššƒΰĺ</item>
+        <item>βĺόċĸęď</item>
+        <item>Ĉћęċĸϊиĝ тћę Qΰăĺϊтỳ όƒ ỳόΰґ Їитęґиęт ċόииęċтϊόи…</item>
+    </string-array>
+    <string-array name="wifi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+    <string-array name="wifi_security_ft">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_wpa_wpa2_ft</item>
+        <item>@string/wifi_security_eap</item>
+    </string-array>
+    <string-array name="wifi_wapi_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+        <item>@string/wifi_security_eap</item>
+        <item>@string/wifi_security_wapi_psk</item>
+        <item>@string/wifi_security_wapi_cert</item>
+    </string-array>
+    <string-array name="wifi_wapi_psk_type">
+        <item>@string/wifi_security_wapi_psk_ascii</item>
+        <item>@string/wifi_security_wapi_psk_hexadecimal</item>
+    </string-array>
+    <string-array name="wifi_security_no_eap">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wep</item>
+        <item>@string/wifi_security_psk_generic</item>
+    </string-array>
+    <string-array name="wifi_ap_security">
+        <item>@string/wifi_security_none</item>
+        <item>@string/wifi_security_wpa</item>
+        <item>@string/wifi_security_wpa2</item>
+    </string-array>
+    <string-array name="wifi_ap_security_testmode">
+        <item>Θρęи</item>
+        <item>ẄρÅ2 ρȘĶ</item>
+    </string-array>
+    <string-array name="wifi_eap_method">
+        <item>ρЄÅρ</item>
+        <item>ŦŁȘ</item>
+        <item>ŦŦŁȘ</item>
+        <item>ρẄĐ</item>
+    </string-array>
+    <string-array name="wifi_p2p_wps_setup">
+        <item>ρΰšћ τΰттόи</item>
+        <item>ρЇŃ ƒґόḿ ρęęґ ďęVϊċę</item>
+        <item>ρЇŃ ƒґόḿ тћϊš ďęVϊċę</item>
+    </string-array>
+    <string-array name="wifi_p2p_status">
+        <item>Ĉόииęċтęď</item>
+        <item>ЇиVϊтęď</item>
+        <item>Ĉόииęċтϊόи ƒăϊĺęď</item>
+        <item>Ŧăρ ћęґę тό ċόииęċт.</item>
+        <item>Θΰт-όƒ-ґăиĝę</item>
+        <item>Ĉόииęċтęď ẅϊтћ ăиόтћęґ ďęVϊċę</item>
+    </string-array>
+    <string-array name="wifi_ap_timeout">
+        <item>ŃęVęґ тϊḿę-όΰт</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>20 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+        <item>60 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="wifi_ap_connection_mode">
+        <item>Åĺĺόẅ ăĺĺ ďęVϊċęš</item>
+        <item>Åĺĺόẅęď ďęVϊċęš όиĺỳ</item>
+    </string-array>
+    <string-array name="wifi_ap_channel">
+        <item>Åΰтό</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
+    <string-array name="wifi_ap_tx_power_mode_entries">
+        <item>Șтăиďăґď</item>
+        <item>Ħϊĝћ</item>
+    </string-array>
+    <string-array name="wifi_ap_tx_power_mode_entry_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wifi_ap_maxclient">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="wifi_share_profile_access_timeout">
+        <item>6 ћόΰґš</item>
+        <item>12 ћόΰґš</item>
+        <item>24 ћόΰґš</item>
+        <item>Ńό тϊḿę ĺϊḿϊт</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries">
+        <item>2 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>1 ћόΰґ</item>
+        <item>ŃęVęґ тϊḿęόΰт</item>
+    </string-array>
+    <string-array name="bluetooth_visibility_timeout_entries_for_vzw">
+        <item>2 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>1 ћόΰґ</item>
+    </string-array>
+    <string-array name="wifi_signal">
+        <item>Ẅęăĸ</item>
+        <item>Γăϊґ</item>
+        <item>Ğόόď</item>
+        <item>Șтґόиĝ</item>
+        <item>νęґỳ Șтґόиĝ</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries">
+        <item>Åĺẅăỳš</item>
+        <item>Θиĺỳ ẅћęи ρĺΰĝĝęď ϊи</item>
+        <item>ŃęVęґ (ϊиċґęăšęš ďăтă ΰšăĝę)</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_entries_wifi_only">
+        <item>Åĺẅăỳš</item>
+        <item>Θиĺỳ ẅћęи ρĺΰĝĝęď ϊи</item>
+        <item>ŃęVęґ</item>
+    </string-array>
+    <string-array name="wifi_sleep_policy_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="wifi_ap_list_priority_entries">
+        <item>Åĺρћăτęтϊċăĺ όґďęґ</item>
+        <item>Șϊĝиăĺ šтґęиĝтћ</item>
+    </string-array>
+    <string-array name="wifi_ap_list_priority_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_entries">
+        <item>Åΰтό</item>
+        <item>5 ĞĦź όиĺỳ</item>
+        <item>2.4 ĞĦź όиĺỳ</item>
+    </string-array>
+    <string-array name="wifi_frequency_band_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wifi_preferred_band_entries">
+        <item>Åΰтόḿăтϊċ</item>
+        <item>Ũšę 5 ĞĦź τăиďẅϊďтћ</item>
+        <item>Ũšę 2.4 ĞĦź τăиďẅϊďтћ</item>
+    </string-array>
+    <string-array name="wifi_preferred_band_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_entries">
+        <item>νęґỳ Șтґόиĝ</item>
+        <item>Șтґόиĝ</item>
+        <item>Γăϊґ</item>
+        <item>Åĺĺ</item>
+    </string-array>
+    <string-array name="wifi_signal_strength_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="usage_stats_display_order_types">
+        <item>Ũšăĝę тϊḿę</item>
+        <item>Łăΰиċћ ċόΰит</item>
+        <item>Åρρ иăḿę</item>
+    </string-array>
+    <string-array name="wifi_eap_entries">
+        <item>ρЄÅρ</item>
+        <item>ŦŁȘ</item>
+        <item>ŦŦŁȘ</item>
+        <item>ρẄĐ</item>
+    </string-array>
+    <string-array name="wifi_phase1_entries">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="wifi_peap_phase2_entries">
+        <item>Ńόиę</item>
+        <item>ḾȘĈĦÅρν2</item>
+        <item>ĞŦĈ</item>
+    </string-array>
+    <string-array name="wifi_phase2_entries">
+        <item>Ńόиę</item>
+        <item>ρÅρ</item>
+        <item>ḾȘĈĦÅρ</item>
+        <item>ḾȘĈĦÅρν2</item>
+        <item>ĞŦĈ</item>
+    </string-array>
+    <string-array name="wifi_network_setup">
+        <item>Θƒƒ</item>
+        <item>ρΰšћ τΰттόи</item>
+        <item>ρЇŃ ƒґόḿ ăċċęšš ρόϊит</item>
+        <item>ρЇŃ ƒґόḿ тћϊš ďęVϊċę</item>
+    </string-array>
+    <string-array name="wifi_ip_settings">
+        <item>ĐĦĈρ</item>
+        <item>Șтăтϊċ</item>
+    </string-array>
+    <string-array name="wifi_proxy_settings">
+        <item>Ńόиę</item>
+        <item>Ḿăиΰăĺ</item>
+    </string-array>
+    <string-array name="wifi_connection_settings">
+        <item>Ńόґḿăĺ</item>
+        <item>Đόẅитόẅи</item>
+        <item>Ħόḿę</item>
+    </string-array>
+    <string-array name="wifi_connection_settings_summary">
+        <item>Ŧћϊš ϊš тћę ḿόšт ĝęиęґăĺ Ẅϊ-Γϊ ċόииęċтϊόи šęттϊиĝ</item>
+        <item>Їƒ ỳόΰ ăґę ϊи ăи ăґęă ẅϊтћ ḿăиỳ Ẅϊ-Γϊ иęтẅόґĸš, Ẅϊ-Γϊ ẅϊĺĺ ґęċόииęċт ƒґęQΰęитĺỳ ƒόґ τęттęґ šϊĝиăĺ šтґęиĝтћ</item>
+        <item>Їƒ ỳόΰ ăґę ϊи ăи ăґęă ẅϊтћ ƒęẅ Ẅϊ-Γϊ иęтẅόґĸš, Ẅϊ-Γϊ ċόииęċтϊόи ϊš ḿăϊитăϊиęď ăš ĺόиĝ ăš ρόššϊτĺę</item>
+    </string-array>
+    <string-array name="sound_mode_entries">
+        <item>@string/sound_settings</item>
+        <item>@string/safety_zone_notification_vibrate</item>
+        <item>@string/mute</item>
+    </string-array>
+    <string-array name="sound_mode_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="no_vibration_sound_mode_entries">
+        <item>@string/sound_settings</item>
+        <item>@string/mute</item>
+    </string-array>
+    <string-array name="no_vibration_sound_mode_values">
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="emergency_tone_entries">
+        <item>Θƒƒ</item>
+        <item>Åĺęґт</item>
+        <item>νϊτґăтę</item>
+    </string-array>
+    <string-array name="emergency_tone_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="special_locale_codes">
+        <item>źћ_ĈŃ</item>
+        <item>źћ_ŦẄ</item>
+        <item>ΰź_ŨŽ</item>
+    </string-array>
+    <string-array name="special_locale_names">
+        <item>中文 (简体)</item>
+        <item>中文 (繁體)</item>
+        <item>Θ‘źτęĸ (Ũźτęĸϊšтăи)</item>
+    </string-array>
+    <string-array name="apn_auth_entries">
+        <item>Ńόиę</item>
+        <item>ρÅρ</item>
+        <item>ĈĦÅρ</item>
+        <item>ρÅρ όґ ĈĦÅρ</item>
+    </string-array>
+    <string-array name="apn_auth_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="apn_protocol_entries">
+        <item>ЇρV4</item>
+        <item>ЇρV6</item>
+        <item>ЇρV4/ЇρV6</item>
+    </string-array>
+    <string-array name="apn_protocol_values">
+        <item>Їρ</item>
+        <item>Їρν6</item>
+        <item>Їρν4ν6</item>
+    </string-array>
+    <string-array name="bearer_entries">
+        <item>ŁŦЄ</item>
+        <item>ęĦЯρĐ</item>
+        <item>Ũиšρęċϊƒϊęď</item>
+    </string-array>
+    <string-array name="bearer_values">
+        <item>14</item>
+        <item>13</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="mvno_type_entries">
+        <item>Ńόиę</item>
+        <item>ȘρŃ</item>
+        <item>ЇḾȘЇ</item>
+        <item>ĞЇĐ</item>
+    </string-array>
+    <string-array name="mvno_type_values">
+        <item></item>
+        <item>šρи</item>
+        <item>ϊḿšϊ</item>
+        <item>ĝϊď</item>
+    </string-array>
+    <string-array name="app_install_location_entries">
+        <item>Їитęґиăĺ ďęVϊċę šтόґăĝę</item>
+        <item>ЯęḿόVăτĺę ȘĐ ċăґď</item>
+        <item>Łęт тћę šỳšтęḿ ďęċϊďę</item>
+    </string-array>
+    <string-array name="app_install_location_values">
+        <item>ďęVϊċę</item>
+        <item>šďċăґď</item>
+        <item>ăΰтό</item>
+    </string-array>
+    <string-array name="app_ops_categories">
+        <item>Łόċăтϊόи</item>
+        <item>ρęґšόиăĺ</item>
+        <item>Ḿęššăĝϊиĝ</item>
+        <item>Ḿęďϊă</item>
+        <item>ĐęVϊċę</item>
+    </string-array>
+    <string-array name="app_ops_summaries">
+        <item>ċόăґšę ĺόċăтϊόи</item>
+        <item>ƒϊиę ĺόċăтϊόи</item>
+        <item>ĞρȘ</item>
+        <item>Vϊτґăтę</item>
+        <item>ґęăď ċόитăċтš</item>
+        <item>ḿόďϊƒỳ ċόитăċтš</item>
+        <item>ґęăď ċăĺĺ ĺόĝ</item>
+        <item>ḿόďϊƒỳ ċăĺĺ ĺόĝ</item>
+        <item>ґęăď ċăĺęиďăґ</item>
+        <item>ḿόďϊƒỳ ċăĺęиďăґ</item>
+        <item>ẅϊ-ƒϊ šċăи</item>
+        <item>иόтϊƒϊċăтϊόи</item>
+        <item>ċęĺĺ šċăи</item>
+        <item>ċăĺĺ ρћόиę</item>
+        <item>ґęăď ȘḾȘ</item>
+        <item>ẅґϊтę ȘḾȘ</item>
+        <item>ґęċęϊVę ȘḾȘ</item>
+        <item>ґęċęϊVę ęḿęґĝęиċỳ ȘḾȘ</item>
+        <item>ґęċęϊVę ḾḾȘ</item>
+        <item>ґęċęϊVę ẄÅρ ρΰšћ</item>
+        <item>šęиď ȘḾȘ</item>
+        <item>ґęăď ЇĈĈ ȘḾȘ</item>
+        <item>ẅґϊтę ЇĈĈ ȘḾȘ</item>
+        <item>ḿόďϊƒỳ šęттϊиĝš</item>
+        <item>ďґăẅ όи тόρ</item>
+        <item>ăċċęšš иόтϊƒϊċăтϊόиš</item>
+        <item>ċăḿęґă</item>
+        <item>ґęċόґď ăΰďϊό</item>
+        <item>ρĺăỳ ăΰďϊό</item>
+        <item>ґęăď ċĺϊρτόăґď</item>
+        <item>ḿόďϊƒỳ ċĺϊρτόăґď</item>
+        <item>ḿęďϊă τΰттόиš</item>
+        <item>ăΰďϊό ƒόċΰš</item>
+        <item>ḿăšтęґ Vόĺΰḿę</item>
+        <item>Vόϊċę Vόĺΰḿę</item>
+        <item>ґϊиĝ Vόĺΰḿę</item>
+        <item>ḿęďϊă Vόĺΰḿę</item>
+        <item>ăĺăґḿ Vόĺΰḿę</item>
+        <item>иόтϊƒϊċăтϊόи Vόĺΰḿę</item>
+        <item>τĺΰęтόόтћ Vόĺΰḿę</item>
+        <item>ĸęęρ ăẅăĸę</item>
+        <item>ḿόиϊтόґ ĺόċăтϊόи</item>
+        <item>ḿόиϊтόґ ћϊĝћ ρόẅęґ ĺόċăтϊόи</item>
+    </string-array>
+    <string-array name="app_ops_labels">
+        <item>Łόċăтϊόи</item>
+        <item>Łόċăтϊόи</item>
+        <item>Łόċăтϊόи</item>
+        <item>νϊτґăтę</item>
+        <item>Яęăď ċόитăċтš</item>
+        <item>Ḿόďϊƒỳ ċόитăċтš</item>
+        <item>Яęăď ċăĺĺ ĺόĝ</item>
+        <item>Ḿόďϊƒỳ ċăĺĺ ĺόĝ</item>
+        <item>Яęăď ċăĺęиďăґ</item>
+        <item>Ḿόďϊƒỳ ċăĺęиďăґ</item>
+        <item>Łόċăтϊόи</item>
+        <item>ρόšт иόтϊƒϊċăтϊόи</item>
+        <item>Łόċăтϊόи</item>
+        <item>Ĉăĺĺ ρћόиę</item>
+        <item>Яęăď ȘḾȘ/ḾḾȘ</item>
+        <item>Ẅґϊтę ȘḾȘ/ḾḾȘ</item>
+        <item>ЯęċęϊVę ȘḾȘ/ḾḾȘ</item>
+        <item>ЯęċęϊVę ȘḾȘ/ḾḾȘ</item>
+        <item>ЯęċęϊVę ȘḾȘ/ḾḾȘ</item>
+        <item>ЯęċęϊVę ȘḾȘ/ḾḾȘ</item>
+        <item>Șęиď ȘḾȘ/ḾḾȘ</item>
+        <item>Яęăď ȘḾȘ/ḾḾȘ</item>
+        <item>Ẅґϊтę ȘḾȘ/ḾḾȘ</item>
+        <item>Ḿόďϊƒỳ šęттϊиĝš</item>
+        <item>Đґăẅ όи тόρ</item>
+        <item>Åċċęšš иόтϊƒϊċăтϊόиš</item>
+        <item>Ĉăḿęґă</item>
+        <item>Яęċόґď ăΰďϊό</item>
+        <item>ρĺăỳ ăΰďϊό</item>
+        <item>Яęăď ċĺϊρτόăґď</item>
+        <item>Ḿόďϊƒỳ ċĺϊρτόăґď</item>
+        <item>Ḿęďϊă τΰттόиš</item>
+        <item>Åΰďϊό ƒόċΰš</item>
+        <item>Ḿăšтęґ Vόĺΰḿę</item>
+        <item>νόϊċę Vόĺΰḿę</item>
+        <item>Яϊиĝ Vόĺΰḿę</item>
+        <item>Ḿęďϊă Vόĺΰḿę</item>
+        <item>Åĺăґḿ Vόĺΰḿę</item>
+        <item>Ńόтϊƒϊċăтϊόи Vόĺΰḿę</item>
+        <item>βĺΰęтόόтћ Vόĺΰḿę</item>
+        <item>Ķęęρ ăẅăĸę</item>
+        <item>Łόċăтϊόи</item>
+        <item>Łόċăтϊόи</item>
+    </string-array>
+    <string-array name="long_press_timeout_titles_selector">
+        <item>Șћόґт (0.5 šęċόиďš)</item>
+        <item>Ḿęďϊΰḿ (1.0 šęċόиď)</item>
+        <item>Łόиĝ (1.5 šęċόиďš)</item>
+        <item>Ĉΰšтόḿ</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_items">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>700</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_titles">
+        <item>Șћόґт</item>
+        <item>Ḿęďϊΰḿ</item>
+        <item>Łόиĝ</item>
+    </string-array>
+    <string-array name="long_press_timeout_selector_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+    </string-array>
+    <string-array name="captioning_typeface_selector_titles">
+        <item>Đęƒăΰĺт</item>
+        <item>Șăиš šęґϊƒ</item>
+        <item>Șăиš šęґϊƒ ċόиďęиšęď</item>
+        <item>Șęґϊƒ</item>
+        <item>Ḿόиόšρăċę</item>
+    </string-array>
+    <string-array name="captioning_typeface_selector_values">
+        <item></item>
+        <item>šăиš-šęґϊƒ</item>
+        <item>šăиš-šęґϊƒ-ċόиďęиšęď</item>
+        <item>šęґϊƒ</item>
+        <item>ḿόиόšρăċę</item>
+    </string-array>
+    <string-array name="captioning_font_size_selector_titles">
+        <item>νęґỳ šḿăĺĺ</item>
+        <item>Șḿăĺĺ</item>
+        <item>Ńόґḿăĺ</item>
+        <item>Łăґĝę</item>
+        <item>νęґỳ ĺăґĝę</item>
+    </string-array>
+    <string-array name="captioning_font_size_selector_values">
+        <item>0.25</item>
+        <item>0.5</item>
+        <item>1.0</item>
+        <item>1.5</item>
+        <item>2.0</item>
+    </string-array>
+    <string-array name="captioning_edge_type_selector_titles">
+        <item>Ńόиę</item>
+        <item>Θΰтĺϊиę</item>
+        <item>Đґόρ šћăďόẅ</item>
+    </string-array>
+    <string-array name="captioning_color_selector_titles">
+        <item>@string/color_white</item>
+        <item>@string/color_black</item>
+        <item>@string/color_red</item>
+        <item>@string/color_yellow</item>
+        <item>@string/color_green</item>
+        <item>@string/color_cyan</item>
+        <item>@string/color_blue</item>
+        <item>@string/color_magenta</item>
+    </string-array>
+    <string-array name="captioning_opacity_selector_titles">
+        <item>25%</item>
+        <item>50%</item>
+        <item>75%</item>
+        <item>100%</item>
+    </string-array>
+    <string-array name="captioning_preset_selector_titles">
+        <item>Ẅћϊтę όи τĺăċĸ</item>
+        <item>βĺăċĸ όи ẅћϊтę</item>
+        <item>¥ęĺĺόẅ όи τĺăċĸ</item>
+        <item>¥ęĺĺόẅ όи τĺΰę</item>
+        <item>Ĉΰšтόḿ</item>
+    </string-array>
+    <string-array name="select_runtime_titles">
+        <item>ĐăĺVϊĸ</item>
+        <item>ÅЯŦ</item>
+        <item>ÅЯŦ (ďęτΰĝ)</item>
+    </string-array>
+    <string-array name="select_runtime_values">
+        <item>ĺϊτďVḿ.šό</item>
+        <item>ĺϊτăґт.šό</item>
+        <item>ĺϊτăґтď.šό</item>
+    </string-array>
+    <string-array name="select_runtime_summaries">
+        <item>Ũšę ĐăĺVϊĸ</item>
+        <item>Ũšę ÅЯŦ</item>
+        <item>Ũšę ÅЯŦ ďęτΰĝ τΰϊĺď</item>
+    </string-array>
+    <string-array name="hdcp_checking_titles">
+        <item>ŃęVęґ ċћęċĸ</item>
+        <item>Ĉћęċĸ ƒόґ ĐЯḾ ċόитęит όиĺỳ</item>
+        <item>Åĺẅăỳš ċћęċĸ</item>
+    </string-array>
+    <string-array name="hdcp_checking_values">
+        <item>иęVęґ</item>
+        <item>ďґḿ-όиĺỳ</item>
+        <item>ăĺẅăỳš</item>
+    </string-array>
+    <string-array name="hdcp_checking_summaries">
+        <item>ŃęVęґ ΰšę ĦĐĈρ ċћęċĸϊиĝ</item>
+        <item>Ũšę ĦĐĈρ ċћęċĸϊиĝ ƒόґ ĐЯḾ ċόитęит όиĺỳ</item>
+        <item>Åĺẅăỳš ΰšę ĦĐĈρ ċћęċĸϊиĝ</item>
+    </string-array>
+    <string-array name="window_animation_scale_entries">
+        <item>Åиϊḿăтϊόи όƒƒ</item>
+        <item>Åиϊḿăтϊόи šċăĺę 0.5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 1х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 1.5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 2х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 10х</item>
+    </string-array>
+    <string-array name="window_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="transition_animation_scale_entries">
+        <item>Åиϊḿăтϊόи όƒƒ</item>
+        <item>Åиϊḿăтϊόи šċăĺę 0.5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 1х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 1.5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 2х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 10х</item>
+    </string-array>
+    <string-array name="transition_animation_scale_values">
+        <item>0</item>
+        <item>.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="animator_duration_scale_entries">
+        <item>Åиϊḿăтϊόи όƒƒ</item>
+        <item>Åиϊḿăтϊόи šċăĺę 0.5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 1х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 1.5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 2х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 5х</item>
+        <item>Åиϊḿăтϊόи šċăĺę 10х</item>
+    </string-array>
+    <string-array name="animator_duration_scale_values">
+        <item>0</item>
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="overlay_display_devices_entries">
+        <item>Ńόиę</item>
+        <item>720х480 ḿďρϊ</item>
+        <item>720х480 ḿďρϊ (šęċΰґę)</item>
+        <item>1280х720 тVďρϊ</item>
+        <item>1280х720 тVďρϊ (šęċΰґę)</item>
+        <item>1920х1080 хћďρϊ</item>
+        <item>1920х1080 хћďρϊ (šęċΰґę)</item>
+        <item>1280х720 тVďρϊ ăиď 1920х1080 хћďρϊ</item>
+    </string-array>
+    <string-array name="overlay_display_devices_values">
+        <item></item>
+        <item>720х480/160</item>
+        <item>720х480/160,šęċΰґę</item>
+        <item>1280х720/213</item>
+        <item>1280х720/213,šęċΰґę</item>
+        <item>1920х1080/320</item>
+        <item>1920х1080/320,šęċΰґę</item>
+        <item>1280х720/213;1920х1080/320</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_entries">
+        <item>Ńόиę</item>
+        <item>Łόĝċăт</item>
+        <item>Șỳšтґăċę (Ğґăρћϊċš)</item>
+        <item>Ĉăĺĺ šтăċĸ όи ĝĺĞęтЄґґόґ</item>
+    </string-array>
+    <string-array name="enable_opengl_traces_values">
+        <item>0</item>
+        <item>1</item>
+        <item>šỳšтґăċę</item>
+        <item>ęґґόґ</item>
+    </string-array>
+    <string-array name="show_non_rect_clip_entries">
+        <item>Θƒƒ</item>
+        <item>Ħϊĝћĺϊĝћт тћę šΰґƒăċę όƒ иόи-ґęċтăиĝΰĺăґ ċĺϊρš ϊи τĺΰę</item>
+        <item>Ħϊĝћĺϊĝћт тęšтęď ďґăẅϊиĝ ċόḿḿăиďš ϊи ĝґęęи</item>
+    </string-array>
+    <string-array name="show_non_rect_clip_values">
+        <item>ћϊďę</item>
+        <item>ґęĝϊόи</item>
+        <item>ћϊĝћĺϊĝћт</item>
+    </string-array>
+    <string-array name="track_frame_time_entries">
+        <item>Ħϊďę</item>
+        <item>Șћόẅ όи šċґęęи ăš τăґš</item>
+        <item>Șћόẅ όи šċґęęи ăš ĺϊиęš</item>
+        <item>Șћόẅ ϊи ăďτ šћęĺĺ ďΰḿρšỳš ĝƒхϊиƒό</item>
+    </string-array>
+    <string-array name="track_frame_time_values">
+        <item>ƒăĺšę</item>
+        <item>Vϊšΰăĺ_τăґš</item>
+        <item>Vϊšΰăĺ_ĺϊиęš</item>
+        <item>тґΰę</item>
+    </string-array>
+    <string-array name="debug_hw_overdraw_entries">
+        <item>Θƒƒ</item>
+        <item>Șћόẅ όVęґďґăẅ ăґęăš</item>
+        <item>Șћόẅ ăґęăš ƒόґ тћόšę ẅϊтћ ďęΰтęґăиόḿăĺỳ</item>
+        <item>Șћόẅ όVęґďґăẅ ċόΰитęґ</item>
+    </string-array>
+    <string-array name="debug_hw_overdraw_values">
+        <item>ƒăĺšę</item>
+        <item>šћόẅ</item>
+        <item>šћόẅ_ďęΰтęґăиόḿăĺỳ</item>
+        <item>ċόΰит</item>
+    </string-array>
+    <string-array name="app_process_limit_entries">
+        <item>Șтăиďăґď ĺϊḿϊт</item>
+        <item>Ńό τăċĸĝґόΰиď ρґόċęššęš</item>
+        <item>Åт ḿόšт 1 ρґόċęšš</item>
+        <item>Åт ḿόšт 2 ρґόċęššęš</item>
+        <item>Åт ḿόšт 3 ρґόċęššęš</item>
+        <item>Åт ḿόšт 4 ρґόċęššęš</item>
+    </string-array>
+    <string-array name="app_process_limit_values">
+        <item>-1</item>
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="vpn_types">
+        <item>ρρŦρ</item>
+        <item>Ł2Ŧρ/ЇρȘęċ ρȘĶ</item>
+        <item>Ł2Ŧρ/ЇρȘęċ ЯȘÅ</item>
+        <item>ЇρȘęċ ×ăΰтћ ρȘĶ</item>
+        <item>ЇρȘęċ ×ăΰтћ ЯȘÅ</item>
+        <item>ЇρȘęċ Ħỳτґϊď ЯȘÅ</item>
+    </string-array>
+    <string-array name="vpn_types_with_strongswan">
+        <item>ρρŦρ</item>
+        <item>Ł2Ŧρ/ЇρȘęċ ρȘĶ</item>
+        <item>Ł2Ŧρ/ЇρȘęċ ЯȘÅ</item>
+        <item>ЇρȘęċ ×ăΰтћ ρȘĶ</item>
+        <item>ЇρȘęċ ×ăΰтћ ЯȘÅ</item>
+        <item>ЇρȘęċ Ħỳτґϊď ЯȘÅ</item>
+        <item>ЇρȘęċ ЇĶЄV2 ρȘĶ</item>
+        <item>ЇρȘęċ ЇĶЄV2 ЯȘÅ</item>
+    </string-array>
+    <string-array name="vpn_types_cc_mode">
+        <item>ЇρȘęċ ЇĶЄV2 ρȘĶ</item>
+        <item>ЇρȘęċ ЇĶЄV2 ЯȘÅ</item>
+    </string-array>
+    <string-array name="vpn_types_long">
+        <item>ρρŦρ νρŃ</item>
+        <item>Ł2Ŧρ/ЇρȘęċ νρŃ ẅϊтћ ρґę-šћăґęď ĸęỳš</item>
+        <item>Ł2Ŧρ/ЇρȘęċ νρŃ ẅϊтћ ċęґтϊƒϊċăтęš</item>
+        <item>ЇρȘęċ νρŃ ẅϊтћ ρґę-šћăґęď ĸęỳš ăиď ×ăΰтћ ăΰтћęитϊċăтϊόи</item>
+        <item>ЇρȘęċ νρŃ ẅϊтћ ċęґтϊƒϊċăтęš ăиď ×ăΰтћ ăΰтћęитϊċăтϊόи</item>
+        <item>ЇρȘęċ νρŃ ẅϊтћ ċęґтϊƒϊċăтęš ăиď ћỳτґϊď ăΰтћęитϊċăтϊόи</item>
+        <item>Їρšęċ νρŃ ẅϊтћ ЇĶЄV2 ăиď ρґę-šћăґęď ĸęỳ-τăšęď ăΰтћęитϊċăтϊόи</item>
+        <item>Їρšęċ νρŃ ẅϊтћ ЇĶЄV2 ăиď ċęґтϊƒϊċăтę-τăšęď ăΰтћęитϊċăтϊόи</item>
+    </string-array>
+    <string-array name="vpn_states">
+        <item>Đϊšċόииęċтęď</item>
+        <item>Їиϊтϊăĺϊźϊиĝ…</item>
+        <item>Ĉόииęċтϊиĝ…</item>
+        <item>Ĉόииęċтęď</item>
+        <item>Ŧϊḿęόΰт</item>
+        <item>Ũиšΰċċęššƒΰĺ</item>
+    </string-array>
+    <string-array name="user_content_ratings_entries">
+        <item>Åšċęиďęď τęϊиĝ</item>
+        <item>Ħΰḿăи</item>
+        <item>Ńęăиďęґтћăĺ</item>
+        <item>Ĉћϊḿρ</item>
+        <item>Ḿόиĸęỳ</item>
+    </string-array>
+    <string-array name="user_content_ratings_values">
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="security_settings_premium_sms_values">
+        <item>Åšĸ</item>
+        <item>ŃęVęґ ăĺĺόẅ</item>
+        <item>Åĺẅăỳš ăĺĺόẅ</item>
+    </string-array>
+    <string-array name="ram_states">
+        <item>иόґḿăĺ</item>
+        <item>ḿόďęґăтę</item>
+        <item>ĺόẅ</item>
+        <item>ċґϊтϊċăĺ</item>
+    </string-array>
+    <string-array name="contents_type_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="sliding_speed_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="auto_refresh_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="sort_by_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pen_hand_side_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="pen_detachment_option_entries">
+        <item>@string/pen_application_none</item>
+        <item>@string/pen_detachment_option_action_memo</item>
+        <item>@string/pen_detachment_option_air_command</item>
+    </string-array>
+    <string-array name="pen_detachment_option_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="allshare_download_to">
+        <item>ĐęVϊċę</item>
+        <item>ȘĐ ċăґď</item>
+    </string-array>
+    <string-array name="allshare_download_to_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="allshare_download_from">
+        <item>Åĺẅăỳš ăċċęρт</item>
+        <item>Åĺẅăỳš ăšĸ</item>
+        <item>Åĺẅăỳš ґęĵęċт</item>
+    </string-array>
+    <string-array name="allshare_download_from_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="allshare_contents_share">
+        <item>νϊďęόš</item>
+        <item>ρћόтόš</item>
+        <item>Ḿΰšϊċ</item>
+    </string-array>
+    <string-array name="apn_ently_key">
+        <item>Їитęґиęт + ḾḾȘ</item>
+        <item>Їитęґиęт</item>
+        <item>ḾḾȘ</item>
+    </string-array>
+    <string-array name="apn_type_key">
+        <item>ďęƒăΰĺт,šΰρĺ,ḿḿš</item>
+        <item>ďęƒăΰĺт,šΰρĺ</item>
+        <item>ḿḿš</item>
+    </string-array>
+    <string-array name="apn_ently_key_includeDUN">
+        <item>Їитęґиęт + ḾḾȘ + ĐŨŃ</item>
+        <item>Їитęґиęт + ḾḾȘ</item>
+        <item>Їитęґиęт + ĐŨŃ</item>
+        <item>Їитęґиęт</item>
+        <item>ḾḾȘ</item>
+        <item>ĐŨŃ</item>
+    </string-array>
+    <string-array name="apn_type_key_includeDUN">
+        <item>ďęƒăΰĺт,šΰρĺ,ḿḿš,ďΰи</item>
+        <item>ďęƒăΰĺт,šΰρĺ,ḿḿš</item>
+        <item>ďęƒăΰĺт,šΰρĺ,ďΰи</item>
+        <item>ďęƒăΰĺт,šΰρĺ</item>
+        <item>ḿḿš</item>
+        <item>ďΰи</item>
+    </string-array>
+    <string-array name="apn_ently_key_includeIMS">
+        <item>Їитęґиęт + ḾḾȘ</item>
+        <item>Їитęґиęт</item>
+        <item>ḾḾȘ</item>
+        <item>ЇḾȘ</item>
+    </string-array>
+    <string-array name="apn_type_key_includeIMS">
+        <item>ďęƒăΰĺт,šΰρĺ,ḿḿš</item>
+        <item>ďęƒăΰĺт,šΰρĺ</item>
+        <item>ḿḿš</item>
+        <item>ϊḿš</item>
+    </string-array>
+    <string-array name="apn_ently_key_includeDUN_IMS">
+        <item>Їитęґиęт + ḾḾȘ + ĐŨŃ</item>
+        <item>Їитęґиęт + ḾḾȘ</item>
+        <item>Їитęґиęт + ĐŨŃ</item>
+        <item>Їитęґиęт</item>
+        <item>ḾḾȘ</item>
+        <item>ĐŨŃ</item>
+        <item>ЇḾȘ</item>
+    </string-array>
+    <string-array name="apn_type_key_includeDUN_IMS">
+        <item>ďęƒăΰĺт,šΰρĺ,ḿḿš,ďΰи</item>
+        <item>ďęƒăΰĺт,šΰρĺ,ḿḿš</item>
+        <item>ďęƒăΰĺт,šΰρĺ,ďΰи</item>
+        <item>ďęƒăΰĺт,šΰρĺ</item>
+        <item>ḿḿš</item>
+        <item>ďΰи</item>
+        <item>ϊḿš</item>
+    </string-array>
+    <string-array name="disable_block_apps">
+        <item>ċόḿ.ăиďґόϊď.ċόитăċтš</item>
+        <item>ċόḿ.ăиďґόϊď.ρґόVϊďęґš.ċόитăċтš</item>
+        <item>ċόḿ.ăиďґόϊď.ρґόVϊďęґš.ċόитăċтš</item>
+        <item>ċόḿ.ăиďґόϊď.ρґόVϊďęґš.ăρρĺϊċăтϊόиš</item>
+        <item>ċόḿ.ăиďґόϊď.ρґόVϊďęґš.ΰšęґďϊċтϊόиăґỳ</item>
+        <item>ċόḿ.šęċ.ăиďґόϊď.ẅϊďĝęтăρρ.ăиăĺόĝċĺόċĸḿόďęґи</item>
+        <item>ċόḿ.šęċ.ăиďґόϊď.ρґόVϊďęґ.ĺόĝšρґόVϊďęґ</item>
+        <item>ċόḿ.ăиďґόϊď.ĵċόитăċтš</item>
+        <item>ċόḿ.иттďόċόḿό.ăиďґόϊď.ăċċόΰитăΰтћęитϊċăтόґ</item>
+        <item>ċόḿ.ăиďґόϊď.šḿšρΰšћ</item>
+        <item>ċόḿ.иттďόċόḿό.ăиďґόϊď.šтόґę</item>
+        <item>ċόḿ.иттďόċόḿό.ăиďґόϊď.ăρρĺϊċăтϊόиḿăиăĝęґ</item>
+        <item>ċόḿ.šęċ.ăиďґόϊď.ϊиρΰтḿęтћόď.ϊẅииϊḿę.ĵăρăи</item>
+        <item>ċόḿ.ăиďґόϊď.ρґόVϊďęґš.ďόẅиĺόăďš</item>
+    </string-array>
+    <string-array name="disable_uninstall_apps">
+        <item>ċόḿ.šĸт.ρґόď.ρћόиę</item>
+        <item>ċόḿ.šĸт.ρґόď.ďϊăĺęґ</item>
+    </string-array>
+    <string-array name="cpa_authentication_entries">
+        <item>ĈĦÅρ</item>
+        <item>ρÅρ</item>
+    </string-array>
+    <string-array name="cpa_authentication_values">
+        <item>ċћăρ</item>
+        <item>ρăρ</item>
+    </string-array>
+    <string-array name="cpa_auth_entries">
+        <item>ρÅρ</item>
+        <item>ĈĦÅρ</item>
+    </string-array>
+    <string-array name="cpa_auth_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="disable_block_apps_shop_display">
+        <item>ċόḿ.ăĝόďă.ḿότϊĺę.ċόиšΰḿęґ</item>
+        <item>ċόḿ.ăρρƒăċтόґỳ.ăиďґόϊď.τẅ.ḿ1272</item>
+        <item>ċόḿ.ĝĺΰ.τόḿτšћęĺĺš_šăḿšΰиĝ</item>
+        <item>ċόḿ.тęċăċę.ċăḿęґăăċę</item>
+        <item>ċόḿ.ϊźšόƒт.ċăиϊḿăĺšăτċ</item>
+        <item>ċόḿ.ăρρƒăċтόґỳ.ăиďґόϊď.τẅ.ḿ26</item>
+        <item>ċόḿ.ĝăḿęρęă.ċόḿ</item>
+        <item>ċόḿ.тћґęęďтόρό.ċόḿϊċτόόĸ.ăиďґόϊď</item>
+        <item>ċόḿ.ĝĺΰ.ċόитґăċтĸϊĺĺęґ2_šăḿšΰиĝ</item>
+        <item>ċόḿ.ŃăḿċόβăиďăϊĞăḿęš.ĐόόďĺęΓϊт2.Șăḿšΰиĝ</item>
+        <item>ċόḿ.ĝĺΰ.ďґăĝόиšĺăỳęґ_šăḿšΰиĝ</item>
+        <item>ċόḿ.ћċόḿ.ăиďґόϊď</item>
+        <item>ċόḿ.όċęăићόΰšę_ḿęďϊă.τόόĸĺċĵΰšтḿęăиďḿỳḿόḿĺϊтę_ăρρ</item>
+        <item>ċόḿ.ăĺḿόиď.ĸϊттỳ.šρęи</item>
+        <item>ċόḿ.ḿόĺęšĸϊиę.ăиďґόϊď</item>
+        <item>ċόḿ.ϊтęċћ.ρďƒґęăďęґρґό</item>
+        <item>ăϊґ.ċόḿ.ăďότę.ρšтόΰċћ.όęḿ1</item>
+        <item>ċόḿ.иăḿċότăиďăϊĝăḿęš.ґϊšęόƒĝĺόґỳ</item>
+        <item>ċόḿ.иăḿċότăиďăϊĝăḿęš.ґόċĸęтƒόх</item>
+        <item>ċόḿ.šęšăḿę.ăρρš.ęĺḿόċăĺĺš.ăиďґόϊď</item>
+        <item>ċόḿ.ęă.тęтґϊšƒґęę_иă</item>
+        <item>ċόḿ.ƒΰźźỳρęăċћ.ẅόґĺďƒăċтτόόĸ_тăτ</item>
+        <item>ċόḿ.ϊĸόиęт.Vћτ</item>
+        <item>ċόḿ.ϊтęċћ.Vϊґтΰăĺόƒƒϊċęρґό</item>
+        <item>ĸґ.ċό.ґϊĝћтτґăϊи.ЯęтăϊĺḾόďę.Ğăĺăхỳ_ŦÅβ3_8_ĐĈŦ</item>
+        <item>ċόḿ.иΰăиċę.иḿċ.šϊћόḿę.ḿęтґόρċš</item>
+    </string-array>
+    <string-array name="personal_page_apps">
+        <item>ċόḿ.šęċ.ăиďґόϊď.ĝăĺĺęґỳ3ď</item>
+        <item>ċόḿ.šăḿšΰиĝ.ęVęґĝĺăďęš.Vϊďęό</item>
+        <item>ċόḿ.šęċ.ăиďґόϊď.ăρρ.ḿΰšϊċ</item>
+        <item>ċόḿ.šęċ.ăиďґόϊď.ăρρ.Vόϊċęиόтę</item>
+        <item>ċόḿ.šęċ.ăиďґόϊď.ăρρ.ḿỳƒϊĺęš</item>
+        <item>ċόḿ.šăḿšΰиĝ.ăиďґόϊď.šиόтę</item>
+    </string-array>
+    <string-array name="call_block_mode">
+        <item>@string/block_settings_off</item>
+        <item>@string/block_all_calls</item>
+        <item>@string/block_number</item>
+    </string-array>
+    <string-array name="voice_call_block_mode">
+        <item>@string/block_settings_off</item>
+        <item>@string/block_all_voice_calls</item>
+        <item>@string/block_number</item>
+    </string-array>
+    <string-array name="video_call_block_mode">
+        <item>@string/block_settings_off</item>
+        <item>@string/block_all_video_calls</item>
+        <item>@string/block_number</item>
+    </string-array>
+    <string-array name="message_block_mode">
+        <item>@string/block_settings_off</item>
+        <item>@string/block_all_messages</item>
+        <item>@string/block_number_and_phrases</item>
+    </string-array>
+    <string-array name="quick_launch_entries">
+        <item>@string/unlock_set_unlock_off_title</item>
+        <item>@string/quick_screen_capture</item>
+        <item>@string/quick_applications</item>
+        <item>@string/search_settings</item>
+        <item>@string/quick_camera</item>
+    </string-array>
+    <string-array name="smart_bonding_size_entries">
+        <item>30Ḿβ</item>
+        <item>50Ḿβ</item>
+        <item>100Ḿβ</item>
+        <item>200Ḿβ</item>
+        <item>500Ḿβ</item>
+    </string-array>
+    <string-array name="smart_bonding_size_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="myplace_select_method_entries">
+        <item>@string/myplace_map</item>
+        <item>@string/notification_panel_wifi</item>
+        <item>@string/notification_panel_bluetooth</item>
+        <item>@string/unlock_set_unlock_off_title</item>
+    </string-array>
+    <string-array name="myplace_select_method_no_map_entries">
+        <item>@string/notification_panel_wifi</item>
+        <item>@string/notification_panel_bluetooth</item>
+        <item>@string/unlock_set_unlock_off_title</item>
+    </string-array>
+    <string-array name="myplace_select_method_only_map_entries">
+        <item>@string/myplace_map</item>
+        <item>@string/unlock_set_unlock_off_title</item>
+    </string-array>
+    <string-array name="quick_launch_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="pen_settings_entries">
+        <item>5.5 ρϊ</item>
+        <item>8 ρϊ</item>
+    </string-array>
+    <string-array name="wifi_connect_entries">
+        <item>Åΰтόḿăтϊċ</item>
+        <item>Ḿăиΰăĺĺỳ</item>
+        <item>Åĺẅăỳš ăšĸ</item>
+    </string-array>
+    <string-array name="pen_settings_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="wifi_connect_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="audio_output_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="ultrasonic_range_entries">
+        <item>@string/ultrasonic_long</item>
+        <item>@string/ultrasonic_middle</item>
+        <item>@string/ultrasonic_short</item>
+    </string-array>
+    <string-array name="ultrasonic_range_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="auto_power_off_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="key_backlight_entries">
+        <item>Åĺẅăỳš όƒƒ</item>
+        <item>3 šęċόиďš</item>
+        <item>5 šęċόиďš</item>
+        <item>10 šęċόиďš</item>
+        <item>15 šęċόиďš</item>
+    </string-array>
+    <string-array name="key_backlight_values">
+        <item>0</item>
+        <item>3000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>15000</item>
+    </string-array>
+    <string-array name="allow_list_entries">
+        <item>Ńόиę</item>
+        <item>Åĺĺ ċόитăċтš</item>
+        <item>ΓăVόΰґϊтęš</item>
+        <item>Ĉΰšтόḿ</item>
+    </string-array>
+    <string-array name="allow_list_value">
+        <item>Ńόиę</item>
+        <item>Åĺĺ ċόитăċт</item>
+        <item>Åĺĺ ƒăVόΰґϊтę</item>
+        <item>Ĉΰšтόḿ</item>
+    </string-array>
+    <string-array name="allow_list_entries_k">
+        <item>Ńόиę</item>
+        <item>Åĺĺ ċόитăċтš</item>
+        <item>ΓăVόΰґϊтęš</item>
+        <item>Ğґόΰρ</item>
+        <item>Ĉΰšтόḿ</item>
+    </string-array>
+    <string-array name="allow_list_value_k">
+        <item>Ńόиę</item>
+        <item>Åĺĺ ċόитăċт</item>
+        <item>Åĺĺ ƒăVόΰґϊтę</item>
+        <item>Ğґόΰρ</item>
+        <item>Ĉΰšтόḿ</item>
+    </string-array>
+    <string-array name="signature_settings_verification_level_entries">
+        <item>Ħϊĝћ</item>
+        <item>Ḿęďϊΰḿ</item>
+        <item>Łόẅ</item>
+    </string-array>
+    <string-array name="signature_settings_verification_level_values">
+        <item>2</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="data_service_entries">
+        <item>ȘЇḾ 1</item>
+        <item>ȘЇḾ 2</item>
+        <item>Ḿότϊĺę ďăтă Θƒƒ</item>
+    </string-array>
+    <string-array name="data_service_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="prefered_call_entries">
+        <item>Ĉΰґґęит иęтẅόґĸ</item>
+        <item>Åšĸ ăĺẅăỳš</item>
+        <item>ȘЇḾ 1</item>
+        <item>ȘЇḾ 2</item>
+    </string-array>
+    <string-array name="prefered_call_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="register_icon_entries_v1">
+        <item>ȘЇḾ 1</item>
+        <item>ȘЇḾ 2</item>
+        <item>Ħόḿę</item>
+        <item>Θƒƒϊċę</item>
+        <item>Ħęăґт</item>
+    </string-array>
+    <string-array name="register_icon_values_v1">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="register_icon_entries">
+        <item>ȘЇḾ 1</item>
+        <item>ȘЇḾ 2</item>
+        <item>Ĉăĺĺ</item>
+        <item>ȘḾȘ</item>
+        <item>ḾḾȘ</item>
+        <item>Їитęґиęт</item>
+        <item>Ħόḿę</item>
+        <item>Θƒƒϊċę</item>
+        <item>Ħęăґт</item>
+    </string-array>
+    <string-array name="register_icon_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+    <string-array name="customizedkey_popup">
+        <item>Яęρĺăċę šћόґтċΰт</item>
+        <item>Яęšęт тћę ċΰšтόḿϊšęď ĸęỳ</item>
+    </string-array>
+    <string-array name="silent_mode_entries">
+        <item>Șόΰиď</item>
+        <item>νϊτґăтę</item>
+        <item>Ḿΰтę</item>
+    </string-array>
+    <string-array name="silent_mode_values">
+        <item>όƒƒ</item>
+        <item>Vϊτґăтę</item>
+        <item>ḿΰтę</item>
+    </string-array>
+    <string-array name="torchlight_timeout_entries">
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>2 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="torchlight_timeout_values">
+        <item>15000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>120000</item>
+        <item>600000</item>
+    </string-array>
+    <string-array name="special_locale_languages">
+        <item>中文</item>
+        <item>中文 (繁體)</item>
+        <item>Θ‘źτęĸ</item>
+    </string-array>
+    <string-array name="dmr_access_mode_entries">
+        <item>@string/dmr_access_control_always_accept</item>
+        <item>@string/dmr_access_control_always_ask</item>
+        <item>@string/dmr_access_control_always_reject</item>
+    </string-array>
+    <string-array name="dmr_access_mode_values">
+        <item>ÅĺẅăỳšÅĺĺόẅ</item>
+        <item>ÅĺẅăỳšÅšĸ</item>
+        <item>ÅĺẅăỳšĐęиỳ</item>
+    </string-array>
+    <string-array name="cover_note_weather_unit_entries">
+        <item>℃</item>
+        <item>℉</item>
+    </string-array>
+    <string-array name="cover_note_weather_unit_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="selinux_seculevel_entries">
+        <item>Ħϊĝћ</item>
+        <item>Ńόґḿăĺ</item>
+    </string-array>
+    <string-array name="selinux_seculevel_values">
+        <item>ƒăĺšę</item>
+        <item>тґΰę</item>
+    </string-array>
+    <string-array name="window_animation_3d_entries">
+        <item>Ńόиę</item>
+        <item>Žόόḿ</item>
+        <item>Їиẅăґď Ĉΰτę</item>
+        <item>Θΰтẅăґď Ĉΰτę</item>
+        <item>Яόтăтϊόи</item>
+        <item>Đόόґ Γĺϊρ 1</item>
+        <item>Đόόґ Γĺϊρ 2</item>
+        <item>Ĉΰτę Ũρ</item>
+        <item>Ĉΰτę Đόẅи</item>
+        <item>Яăиďόḿ</item>
+    </string-array>
+    <string-array name="window_animation_3d_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+        <item>9</item>
+        <item>-1</item>
+    </string-array>
+    <string-array name="time_interval_entries">
+        <item>3 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+        <item>10 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+        <item>1 ћόΰґ</item>
+    </string-array>
+    <string-array name="time_interval_values">
+        <item>180</item>
+        <item>300</item>
+        <item>600</item>
+        <item>1800</item>
+        <item>3600</item>
+    </string-array>
+    <string-array name="time_interval_entries_selectable">
+        <item>15 šęċόиďš</item>
+        <item>30 šęċόиďš</item>
+        <item>1 ḿϊиΰтę</item>
+        <item>3 ḿϊиΰтęš</item>
+        <item>5 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="time_interval_values_selectable">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>300</item>
+    </string-array>
+    <string-array name="shortcut_entries">
+        <item>Åċċęššϊτϊĺϊтỳ</item>
+        <item>Ŧăĺĸβăċĸ</item>
+    </string-array>
+    <string-array name="shortcut_entries_no_talkback">
+        <item>Åċċęššϊτϊĺϊтỳ</item>
+    </string-array>
+    <string-array name="earthquake_magnitude_entries">
+        <item>Åĺĺ</item>
+        <item>Ḿ4.0+</item>
+        <item>Ḿ5.0+</item>
+    </string-array>
+    <string-array name="earthquake_magnitude_values">
+        <item>0</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="earthquake_coverage_entries">
+        <item>500ĸḿ ăẅăỳ</item>
+        <item>1000ĸḿ ăẅăỳ</item>
+        <item>2000ĸḿ ăẅăỳ</item>
+        <item>3000ĸḿ ăẅăỳ</item>
+    </string-array>
+    <string-array name="earthquake_coverage_values">
+        <item>500</item>
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+    </string-array>
+    <string-array name="safetycare_emergency_message_interval_entries">
+        <item>Θиċę</item>
+        <item>ЄVęґỳ 10 ḿϊиΰтęš</item>
+        <item>ЄVęґỳ 20 ḿϊиΰтęš</item>
+    </string-array>
+    <string-array name="safetycare_emergency_message_interval_values">
+        <item>0</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="set_shortcuts_entries">
+        <item>@string/unlock_set_unlock_mode_off</item>
+        <item>@string/lock_screen_set_shortcuts_option_camera</item>
+        <item>@string/lock_screen_set_shortcuts_option_favorite</item>
+    </string-array>
+    <string-array name="set_shortcuts_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="data_usage_display_unit">
+        <item>Ḿβ/Ğβ (ăΰтό ċћăиĝę)</item>
+        <item>Ḿβ όиĺỳ</item>
+        <item>Ğβ όиĺỳ</item>
+    </string-array>
+    <string-array name="glance_card_order_entries">
+        <item>@string/most_used_info_first</item>
+        <item>@string/resent_info_first</item>
+        <item>@string/contextual_info_first</item>
+        <item>@string/suggestion_info_first</item>
+        <item>@string/random</item>
+    </string-array>
+    <string-array name="glance_card_order_values">
+        <item>ḿόšт</item>
+        <item>ґęšęит</item>
+        <item>ċόитęхтΰăĺ</item>
+        <item>šΰĝĝęšтϊόи</item>
+        <item>ґăиďόḿ</item>
+    </string-array>
+    <string-array name="magazine_category_entries">
+        <item>@string/magazine_category_weather</item>
+        <item>@string/magazine_category_today</item>
+        <item>@string/magazine_category_news</item>
+        <item>@string/magazine_category_social</item>
+        <item>@string/magazine_category_hereandnow</item>
+        <item>@string/magazine_category_email</item>
+    </string-array>
+    <string-array name="magazine_category_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="update_duration_entries">
+        <item>Яęăĺ-тϊḿę</item>
+        <item>15 ḿϊиΰтęš</item>
+        <item>30 ḿϊиΰтęš</item>
+        <item>1 ћόΰґ</item>
+        <item>2 ћόΰґš</item>
+    </string-array>
+    <string-array name="update_duration_values">
+        <item>0</item>
+        <item>900000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>7200000</item>
+    </string-array>
+    <string-array name="fmpointer_speed_entries">
+        <item>@string/fmpointer_speed_1x</item>
+        <item>@string/fmpointer_speed_2x</item>
+        <item>@string/fmpointer_speed_3x</item>
+    </string-array>
+    <string-array name="fmpointer_speed_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="fmpointer_size_entries">
+        <item>@string/fmpointer_size_small</item>
+        <item>@string/fmpointer_size_big</item>
+    </string-array>
+    <string-array name="fmpointer_size_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="fmpad_size_entries">
+        <item>@string/fmpad_size_small</item>
+        <item>@string/fmpad_size_med</item>
+        <item>@string/fmpad_size_big</item>
+    </string-array>
+    <string-array name="fmpad_size_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="festival_charging_entries">
+        <item>@string/festival_effect_textonly</item>
+        <item>@string/festival_seasonal</item>
+        <item>@string/festival_effect_spring</item>
+        <item>@string/festival_effect_summer</item>
+        <item>@string/festival_effect_fall</item>
+        <item>@string/festival_effect_winter</item>
+    </string-array>
+    <string-array name="festival_charging_values">
+        <item>0</item>
+        <item>5</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="paywithpaypal_support_countries">
+        <item>ÅЯ</item>
+        <item>ÅŨ</item>
+        <item>ÅŦ</item>
+        <item>βЄ</item>
+        <item>βЯ</item>
+        <item>ĐĶ</item>
+        <item>ΓЇ</item>
+        <item>ΓЯ</item>
+        <item>ĐЄ</item>
+        <item>Ğβ</item>
+        <item>ĦĶ</item>
+        <item>ЇЄ</item>
+        <item>ЇŦ</item>
+        <item>ŁŨ</item>
+        <item>Ḿ×</item>
+        <item>ŃŁ</item>
+        <item>ŃΘ</item>
+        <item>ρŁ</item>
+        <item>ρŦ</item>
+        <item>ȘĞ</item>
+        <item>ЄȘ</item>
+        <item>ȘЄ</item>
+        <item>ĈĦ</item>
+        <item>ŦЯ</item>
+        <item>ŨȘ</item>
+        <item>ĵρ</item>
+        <item>ĈÅ</item>
+    </string-array>
+    <string-array name="quick_settings_list">
+        <item>Ẅϊƒϊ</item>
+        <item>Łόċăтϊόи</item>
+        <item>ȘϊĺęитḾόďę</item>
+        <item>ÅΰтόЯόтăтę</item>
+        <item>βĺΰęтόόтћ</item>
+        <item>ḾότϊĺęĐăтă</item>
+        <item>ĐόґḿăитḾόďę</item>
+        <item>ŨĺтґăρόẅęґȘăVϊиĝ</item>
+        <item>ÅĺĺȘћăґęĈăšт</item>
+        <item>ḾΰĺтϊẄϊиďόẅ</item>
+        <item>ẄϊΓϊĦόтšρόт</item>
+        <item>Șβęăḿ</item>
+        <item>Ńƒċ</item>
+        <item>Åϊґνϊęẅ</item>
+        <item>ÅϊґĞęšтΰґę</item>
+        <item>ĐґϊVϊиĝḾόďę</item>
+        <item>ȘḿăґтȘтăỳ</item>
+        <item>Șḿăґтρăΰšę</item>
+        <item>ȘḿăґтȘċґόĺĺ</item>
+        <item>ρόẅęґȘăVϊиĝ</item>
+        <item>Șỳиċ</item>
+        <item>ÅϊґρĺăиęḾόďę</item>
+    </string-array>
+    <string-array name="quick_settings_list_vzw">
+        <item>Ẅϊƒϊ</item>
+        <item>Łόċăтϊόи</item>
+        <item>ȘϊĺęитḾόďę</item>
+        <item>ÅΰтόЯόтăтę</item>
+        <item>βĺΰęтόόтћ</item>
+        <item>Єτόόĸ</item>
+        <item>ȘḿăґтȘтăỳ</item>
+        <item>ÅϊґρĺăиęḾόďę</item>
+        <item>ŨĺтґăρόẅęґȘăVϊиĝ</item>
+        <item>ĐґϊVϊиĝḾόďę</item>
+        <item>ÅĺĺȘћăґęĈăšт</item>
+        <item>ḾΰĺтϊẄϊиďόẅ</item>
+        <item>ḾότϊĺęĐăтă</item>
+        <item>ẄϊΓϊĦόтšρόт</item>
+        <item>Șβęăḿ</item>
+        <item>Ńƒċ</item>
+        <item>Åϊґνϊęẅ</item>
+        <item>ÅϊґĞęšтΰґę</item>
+        <item>Șỳиċ</item>
+        <item>Șḿăґтρăΰšę</item>
+        <item>ȘḿăґтȘċґόĺĺ</item>
+        <item>ρόẅęґȘăVϊиĝ</item>
+        <item>ĐόґḿăитḾόďę</item>
+        <item>ȘḿăґтŃęтẅόґĸ</item>
+    </string-array>
+    <string-array name="input_method_selector_titles">
+        <item>@string/input_method_selector_show_automatically_title</item>
+        <item>@string/input_method_selector_always_show_title</item>
+        <item>@string/input_method_selector_always_hide_title</item>
+    </string-array>
+    <string-array name="input_method_selector_values">
+        <item>@string/input_method_selector_show_automatically_value</item>
+        <item>@string/input_method_selector_always_show_value</item>
+        <item>@string/input_method_selector_always_hide_value</item>
+    </string-array>
+    <string-array name="pattern_type_entries">
+        <item>Ĉĺăššϊċ</item>
+        <item>Ħăĺƒтόиę</item>
+        <item>Ḿόґρћϊиĝ</item>
+        <item>Ḿΰĺтϊċόĺόΰґ</item>
+    </string-array>
+    <string-array name="touch_key_light_entries">
+        <item>1.5 šęċόиďš</item>
+        <item>6 šęċόиďš</item>
+        <item>Åĺẅăỳš όƒƒ</item>
+        <item>Åĺẅăỳš όи</item>
+    </string-array>
+    <string-array name="clock_position_entries">
+        <item>Ŧόρ</item>
+        <item>Ḿϊďďĺę</item>
+        <item>βόттόḿ</item>
+    </string-array>
+    <string-array name="contents_type_entries">
+        <item>Ńęẅš</item>
+        <item>Șтόċĸ</item>
+        <item>Γăċęτόόĸ</item>
+    </string-array>
+    <string-array name="contents_type_entries_weibo">
+        <item>Ńęẅš</item>
+        <item>Șтόċĸ</item>
+        <item>Ẅęϊτό</item>
+    </string-array>
+    <string-array name="sliding_speed_entries">
+        <item>Șĺόẅ</item>
+        <item>Ńόґḿăĺ</item>
+        <item>Γăšт</item>
+    </string-array>
+    <string-array name="facebook_auto_refresh_entries">
+        <item>Ńόиę</item>
+        <item>ЄVęґỳ 30 ḿϊиΰтęš</item>
+        <item>ЄVęґỳ 1 ћόΰґš</item>
+        <item>ЄVęґỳ 2 ћόΰґš</item>
+        <item>ЄVęґỳ 4 ћόΰґš</item>
+    </string-array>
+    <string-array name="bluetooth_class_of_device_entries">
+        <item>Ħęăďšęт</item>
+        <item>ρĈ</item>
+        <item>ρћόиę</item>
+        <item>ĦЇĐ(ĸęỳτόăґď, ḿόΰšę, ęтċ.)</item>
+        <item>Åĺĺ ďęVϊċęš</item>
+    </string-array>
+    <string-array name="bluetooth_class_of_device_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="audio_output_entries">
+        <item>Șтęґęό</item>
+        <item>Șΰґґόΰиď</item>
+    </string-array>
+</resources>

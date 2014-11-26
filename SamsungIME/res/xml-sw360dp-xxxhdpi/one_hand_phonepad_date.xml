@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/one_hand_phonepad_default_key_width" android:keyHeight="@dimen/one_hand_phonepad_default_key_height" android:horizontalGap="@dimen/one_hand_phonepad_default_key_horizontal_gap" android:verticalGap="@dimen/one_hand_phonepad_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/one_hand_phonepad_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="49" android:keyEdgeFlags="left" android:keyLabel="1" />
+        <Key android:codes="50" android:keyLabel="2" />
+        <Key android:codes="51" android:keyLabel="3" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="52" android:keyEdgeFlags="left" android:keyLabel="4" />
+        <Key android:codes="53" android:keyLabel="5" />
+        <Key android:codes="54" android:keyLabel="6" />
+        <Key android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="55" android:keyEdgeFlags="left" android:keyLabel="7" />
+        <Key android:codes="56" android:keyLabel="8" />
+        <Key android:codes="57" android:keyLabel="9" />
+        <Key android:codes="46,45,47" android:keyEdgeFlags="right" android:keyLabel=".-/" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="48" android:keyLabel="0" />
+        <Key android:codes="-256" android:keyLabel="StrEmpty" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/one_hand_phonepad_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

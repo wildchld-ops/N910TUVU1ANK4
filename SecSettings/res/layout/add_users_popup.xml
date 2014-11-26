@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/user_explain" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alert_dialog_padding_left_right" android:layout_marginTop="17.0dip" android:layout_marginRight="@dimen/alert_dialog_padding_left_right" android:layout_marginBottom="@dimen/alert_dialog_padding_bottom" android:text="@string/user_add_user_message_long_popup0" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/user_explain1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alert_dialog_padding_left_right" android:layout_marginTop="17.0dip" android:layout_marginRight="@dimen/alert_dialog_padding_left_right" android:layout_marginBottom="@dimen/alert_dialog_padding_bottom" android:text="@string/user_add_user_message_short" />
+        <com.sec.android.touchwiz.widget.TwCheckBox android:textAppearance="?android:textAppearanceMedium" android:id="@id/enable_mobiledata" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/alert_dialog_padding_left_right" android:layout_marginRight="@dimen/alert_dialog_padding_left_right" android:layout_marginBottom="@dimen/alert_dialog_padding_bottom" android:text="@string/data_enable_summary" />
+    </LinearLayout>
+</ScrollView>

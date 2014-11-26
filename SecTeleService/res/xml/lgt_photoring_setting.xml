@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SwitchPreference android:title="@string/lgu_photoring_reject_all" android:key="lgu_photoring_block_all_pref" />
+    <PreferenceScreen android:title="@string/lgu_photoring_reject_each" android:key="photoring_block_list" android:widgetLayout="@layout/round_more_icon" android:fragment="com.android.phone.callsettings.LGTPhotoRingRejectList" />
+</PreferenceScreen>

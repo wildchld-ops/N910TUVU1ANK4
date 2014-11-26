@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0px">
+                <TextView android:textSize="38.0px" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:id="@id/keyboard_tips3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_popup_keyboard_learns_body" android:paddingStart="34.0px" android:paddingEnd="34.0px" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="100.0px" android:paddingStart="26.0px">
+        <CheckBox android:textSize="38.0px" android:layout_gravity="center_vertical" android:id="@id/tips_swiftkey_learns_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

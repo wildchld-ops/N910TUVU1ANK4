@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:visibility="gone" android:layout_width="4.0dip" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/option1" android:background="@drawable/tw_device_popup_light_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/globalactions_silent_mode_mute">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/global_actions_silentmode_bg" android:focusable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="6.0dip">
+            <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/tw_device_options_mute_selector" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dip" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/global_action_sound_mode_mute" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/tw_silent_mode_indicator" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="5.0dip" android:scaleType="center" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/tw_device_options_divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/option2" android:background="@drawable/tw_device_popup_light_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/globalactions_silent_mode_vibrate">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/global_actions_silentmode_bg" android:focusable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="6.0dip">
+            <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/tw_device_options_vibrate_selector" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dip" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/global_action_sound_mode_vibrate" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/tw_silent_mode_indicator" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="5.0dip" android:scaleType="center" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/dynamic_spacer" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="4.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="4.0dip" android:layout_marginBottom="5.0dip">
+        <ImageView android:layout_gravity="center" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/tw_device_options_divider" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/option3" android:background="@drawable/tw_device_popup_light_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:contentDescription="@string/globalactions_silent_mode_sound">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/global_actions_silentmode_bg" android:focusable="true" android:layout_width="56.0dip" android:layout_height="56.0dip" android:layout_marginTop="6.0dip">
+            <ImageView android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/tw_device_options_sound_selector" android:scaleType="center" />
+        </LinearLayout>
+        <TextView android:textSize="13.0dip" android:textColor="#ff000000" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip" android:text="@string/global_action_sound_mode_sound" />
+        <ImageView android:layout_gravity="center" android:background="@drawable/tw_silent_mode_indicator" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginTop="1.0dip" android:layout_marginBottom="5.0dip" android:scaleType="center" />
+    </LinearLayout>
+    <View android:visibility="gone" android:layout_width="4.0dip" android:layout_height="fill_parent" />
+</LinearLayout>

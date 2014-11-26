@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="incoming_call_easy_image_widget_description_textSize">18.0dip</dimen>
+</resources>

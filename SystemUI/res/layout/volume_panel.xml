@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.policy.VolumePanel android:gravity="center" android:orientation="horizontal" android:id="@id/volume_panel" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/volume_slider_icon" android:layout_width="@dimen/volume_slider_icon_size" android:layout_height="@dimen/volume_slider_icon_size" android:layout_marginLeft="@dimen/volume_slider_icon_margin_left" android:layout_marginRight="@dimen/volume_slider_icon_margin_right" android:src="@drawable/APKTOOL_DUMMY_0311" android:layout_weight="0.0" />
+    <SeekBar android:id="@id/volume_slider_seekbar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/volume_slider_settings_icon" android:background="@drawable/ic_volume_panel_settings_button_bg" android:layout_width="@dimen/volume_slider_settings_icon_size" android:layout_height="@dimen/volume_slider_settings_icon_size" android:layout_marginLeft="@dimen/volume_slider_settings_icon_margin_left" android:layout_marginRight="@dimen/volume_slider_settings_icon_margin_right" android:src="@drawable/APKTOOL_DUMMY_0310" android:layout_weight="0.0" android:contentDescription="@string/vol_panel_audio_settings" />
+</com.android.systemui.statusbar.policy.VolumePanel>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="right|center" android:orientation="horizontal" android:id="@id/custom_action_menu" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="20.0dip" android:textColor="@color/white" android:gravity="left|center" android:layout_gravity="center_horizontal" android:id="@id/select_all_menu" android:layout_width="wrap_content" android:layout_height="@dimen/select_button_height" android:maxWidth="250.0dip" android:divider="?android:listDividerAlertDialog" android:minWidth="125.0dip" android:singleLine="true" android:paddingStart="12.0dip" android:paddingEnd="31.0dip" android:layout_marginStart="12.0dip" style="?android:attr/actionDropDownStyle" />
+    <Button android:textAppearance="?android:actionMenuTextAppearance" android:textColor="?android:actionMenuTextColor" android:id="@id/menu_done" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="250.0dip" android:text="@string/done" android:layout_alignParentEnd="true" style="?android:attr/actionButtonStyle" />
+</RelativeLayout>

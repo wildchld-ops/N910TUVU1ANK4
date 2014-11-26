@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="10" android:drawable="@drawable/circle_001" />
+    <item android:duration="10" android:drawable="@drawable/circle_002" />
+    <item android:duration="10" android:drawable="@drawable/circle_003" />
+    <item android:duration="10" android:drawable="@drawable/circle_004" />
+    <item android:duration="10" android:drawable="@drawable/circle_005" />
+    <item android:duration="10" android:drawable="@drawable/circle_006" />
+    <item android:duration="10" android:drawable="@drawable/circle_007" />
+    <item android:duration="10" android:drawable="@drawable/circle_008" />
+    <item android:duration="10" android:drawable="@drawable/circle_009" />
+    <item android:duration="10" android:drawable="@drawable/circle_010" />
+    <item android:duration="10" android:drawable="@drawable/circle_011" />
+    <item android:duration="10" android:drawable="@drawable/circle_012" />
+    <item android:duration="10" android:drawable="@drawable/circle_013" />
+    <item android:duration="10" android:drawable="@drawable/circle_014" />
+    <item android:duration="10" android:drawable="@drawable/circle_015" />
+    <item android:duration="10" android:drawable="@drawable/circle_016" />
+    <item android:duration="10" android:drawable="@drawable/circle_017" />
+    <item android:duration="60" android:drawable="@drawable/circle_018" />
+    <item android:duration="10" android:drawable="@drawable/circle_024" />
+    <item android:duration="10" android:drawable="@drawable/circle_025" />
+    <item android:duration="10" android:drawable="@drawable/circle_026" />
+    <item android:duration="10" android:drawable="@drawable/circle_027" />
+    <item android:duration="10" android:drawable="@drawable/circle_028" />
+    <item android:duration="10" android:drawable="@drawable/circle_029" />
+    <item android:duration="10" android:drawable="@drawable/circle_030" />
+</animation-list>

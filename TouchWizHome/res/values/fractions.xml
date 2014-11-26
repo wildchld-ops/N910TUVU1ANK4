@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="config_WidgetShadowAlphaWeight">39.999996%</fraction>
+    <fraction name="config_bgDarkenAmountEdit">20.000004%</fraction>
+    <fraction name="config_bgDarkenAmountHomeOptionPage">20.000004%</fraction>
+    <fraction name="config_containerAlphaAmount">29.999996%</fraction>
+    <fraction name="config_folderOpenMenuDarkenAmount">20.000004%</fraction>
+    <fraction name="config_menuBgDarkenAmountNormal">0.0%</fraction>
+    <fraction name="config_windowBgDarkenAmountEdit">0.0%</fraction>
+    <fraction name="config_windowBgDarkenAmountHomeOptionPage">0.0%</fraction>
+    <fraction name="config_windowMenuBgDarkenAmountNormal">0.0%</fraction>
+    <fraction name="config_workspaceFastScrollInwardFactor">45.000004%</fraction>
+    <fraction name="config_workspaceNormalScrollInwardFactor">20.000004%</fraction>
+    <fraction name="config_wsBaseDarkenAmountEdit">10.000002%</fraction>
+    <fraction name="hotseat_all_apps_btn_shrink_factor">0.0%</fraction>
+</resources>

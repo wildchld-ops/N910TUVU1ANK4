@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@android:id/icon" android:paddingTop="20.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/incoming_call_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:id="@id/incoming_call_vibration_seekbar_text" android:paddingTop="6.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/incoming_call" style="@style/VibrationFeedBackStyle" />
+            <SeekBar android:id="@id/incoming_call_vibration_seekbar" android:paddingTop="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" style="@style/VibrationFeedBackStyle" />
+        </LinearLayout>
+        <View android:id="@id/incoming_call_divider" android:background="?android:listDividerAlertDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:paddingTop="6.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/notification_volume_title" style="@style/VibrationFeedBackStyle" />
+            <SeekBar android:id="@id/notification_vibration_seekbar" android:paddingTop="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" style="@style/VibrationFeedBackStyle" />
+        </LinearLayout>
+        <View android:id="@id/haptic_feedback_vibration_divider" android:background="?android:listDividerAlertDialog" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/haptic_feedback_vibration_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0sp" android:id="@id/haptic_feedback_vibration_seekbar_text" android:paddingTop="6.0dip" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/haptic_feedback_enable_title" style="@style/VibrationFeedBackStyle" />
+            <SeekBar android:id="@id/haptic_feedback_vibration_seekbar" android:paddingTop="2.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" style="@style/VibrationFeedBackStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

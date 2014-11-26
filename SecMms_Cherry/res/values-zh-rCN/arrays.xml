@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_names">
+        <item>幸福的</item>
+        <item>悲伤的</item>
+        <item>眨眼</item>
+        <item>吐舌头</item>
+        <item>惊讶</item>
+        <item>亲吻</item>
+        <item>叫喊</item>
+        <item>酷</item>
+        <item>财迷</item>
+        <item>说错了话</item>
+        <item>尴尬</item>
+        <item>天使</item>
+        <item>犹豫</item>
+        <item>哭泣</item>
+        <item>保密</item>
+        <item>大笑</item>
+        <item>困惑</item>
+        <item>心形</item>
+        <item>抓狂</item>
+        <item>傻笑</item>
+        <item>面无表情</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>使用设备字体大小</item>
+        <item>极小</item>
+        <item>小</item>
+        <item>正常</item>
+        <item>大</item>
+        <item>超大</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>使用设备字体大小</item>
+        <item>极小</item>
+        <item>特小</item>
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+        <item>特大</item>
+        <item>超大</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>全部频道</item>
+        <item>个人频道</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>GSM 字母系统</item>
+        <item>单一码</item>
+        <item>自动</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 天</item>
+        <item>1天</item>
+        <item>2 天</item>
+        <item>3天</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>限制</item>
+        <item>警告</item>
+        <item>自由</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>总是</item>
+        <item>提示</item>
+        <item>从不</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>折纸式</item>
+        <item>标签</item>
+        <item>流行</item>
+        <item>现代</item>
+        <item>粉红色</item>
+        <item>默认</item>
+    </string-array>
+    <string-array name="sms_roam_guard">
+        <item>当在国内覆盖范围内时自动发送</item>
+        <item>立即发送</item>
+        <item>保存为草稿消息</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>一次</item>
+        <item>每 2 分钟</item>
+        <item>每 15 分钟</item>
+        <item>关</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>从不</item>
+        <item>每 2 分钟</item>
+        <item>每 10 分钟</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+        <item>SGH-T989</item>
+        <item>SGH-I727</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>国内</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 小时</item>
+        <item>6 小时</item>
+        <item>24小时</item>
+        <item>2 天</item>
+        <item>网络默认设定</item>
+        <item>最大</item>
+    </string-array>
+    <string-array name="expiry_date_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>高</item>
+        <item>正常</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="mms_priority_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>立即</item>
+        <item>1 小时</item>
+        <item>6 小时</item>
+        <item>24小时</item>
+        <item>1周</item>
+    </string-array>
+    <string-array name="delivery_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 秒</item>
+        <item>5 秒</item>
+        <item>10 秒</item>
+        <item>20 秒</item>
+        <item>30 秒</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>关</item>
+        <item>阻止所有信息</item>
+        <item>阻止已注册号码和短语</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>完全一样</item>
+        <item>开始为</item>
+        <item>结尾为</item>
+        <item>包括</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>记录</item>
+        <item>联系人</item>
+    </string-array>
+    <string-array name="block_number_setting_items_only_message">
+        <item>信息阻止</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>信息阻止</item>
+        <item>呼叫阻止</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>信息阻止</item>
+        <item>语音通话阻止</item>
+        <item>视频通话阻止</item>
+    </string-array>
+    <string-array name="error_codes">
+        <item>Addr.Vcnt.</item>
+        <item>Addr.Trns.</item>
+        <item>Ntwk.Res.</item>
+        <item>Ntwk.Fail.</item>
+        <item>Invld.T.ID</item>
+        <item>Othr.Ntwk.</item>
+        <item>Othr.Fst.</item>
+        <item>Othr.Lst.</item>
+        <item>NoPg.Res.</item>
+        <item>Dst.Busy</item>
+        <item>NoAck.</item>
+        <item>Dst.Rs.Sht</item>
+        <item>SMS Dlv.Pp</item>
+        <item>Dest.NoLng</item>
+        <item>Dest.NoLng</item>
+        <item>OthrT.Prbl</item>
+        <item>OthrT.Fst</item>
+        <item>OthrT.Lst</item>
+        <item>SMS Dlv.Ft</item>
+        <item>SMS Dlv.Lt</item>
+        <item>Rdo.IF.R.S</item>
+        <item>Rdo.IF.Inc</item>
+        <item>Othr.Rdo.I</item>
+        <item>Othr.Rdo.F</item>
+        <item>Othr.Rdo.L</item>
+        <item>Encd.Prbl.</item>
+        <item>SMS Org.D.</item>
+        <item>SMS Trm.D.</item>
+        <item>Suppl.Svc.</item>
+        <item>SMS No.Spt</item>
+        <item>已保留</item>
+        <item>Mss.Expt.P</item>
+        <item>Mss.Mndtry</item>
+        <item>Unrcgnzd.P</item>
+        <item>Unexpctd.P</item>
+        <item>Usr.Dr.S.E</item>
+        <item>Othr.Gnr.P</item>
+        <item>Other.Gnr.F</item>
+        <item>Other.Gnr.L</item>
+        <item>OK or Msg Dlvd.</item>
+        <item>Wait TLAck</item>
+        <item>Outof Rsc.</item>
+        <item>Accss.Lrg.</item>
+        <item>DRC Lrg.</item>
+        <item>Ntwk.NoRdy</item>
+        <item>Phon.NoRdy</item>
+        <item>Nt.Allwd.A</item>
+        <item>Nt.Spprtd</item>
+        <item>Invld.Trnx.</item>
+        <item>Msg.No.Snt</item>
+        <item>MsgBgn.Snt</item>
+    </string-array>
+    <string-array name="priority_array">
+        <item>正常</item>
+        <item>高</item>
+    </string-array>
+    <string-array name="templates">
+        <item>抱歉，我没接到你的电话。</item>
+        <item>我要迟到了，不过我马上就到。</item>
+        <item>怎么样了？</item>
+        <item>什么事？</item>
+        <item>你在哪？</item>
+        <item>请收到该消息后给我电话。</item>
+        <item>我们何时可会面？</item>
+        <item>我一会和你说。</item>
+        <item>会议在哪举行？</item>
+        <item>号码是多少？</item>
+    </string-array>
+    <string-array name="sprint_templates">
+        <item>现在不方便讲话。请发送短信。</item>
+        <item>给我打电话</item>
+        <item>你在哪？</item>
+        <item>能讲话吗？</item>
+        <item>别忘记</item>
+        <item>能否接电话？</item>
+        <item>谢谢!</item>
+        <item>约在…见面</item>
+        <item>我们一起吃午饭吧。</item>
+        <item>从我手机发送的。</item>
+        <item>会议已取消。</item>
+        <item>我得工作到很晚。</item>
+        <item>我在开电话会议。</item>
+        <item>我…点…分会到</item>
+        <item>什么时间开始？</item>
+        <item>终于逮着你了！</item>
+        <item>我爱你！</item>
+        <item>抱抱亲亲 - 爱你</item>
+        <item>想你想疯了！</item>
+        <item>太好笑了！</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>巴西葡萄牙语</item>
+        <item>英语(英式)</item>
+        <item>英语(美式)</item>
+        <item>法语</item>
+        <item>德语</item>
+        <item>意大利语</item>
+        <item>日语</item>
+        <item>韩语</item>
+        <item>简体中文</item>
+        <item>俄语</item>
+        <item>西班牙语</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>极小</item>
+        <item>小</item>
+        <item>正常</item>
+        <item>大</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>全部</item>
+        <item>发件人</item>
+        <item>内容</item>
+    </string-array>
+    <string-array name="pref_entries_auto_download_file_transfer">
+        <item>自动接受全部</item>
+        <item>自动接受大小小于 %s MB 的文件</item>
+    </string-array>
+    <string-array name="image_resize_entries">
+        <item>原图</item>
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
+    <string-array name="trafficSwitch_EntryValues_NotificationPreference">
+        <item>永不连接</item>
+        <item>总是询问</item>
+        <item>始终连接</item>
+    </string-array>
+</resources>

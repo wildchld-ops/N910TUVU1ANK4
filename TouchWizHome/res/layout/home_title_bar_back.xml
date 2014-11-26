@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/back" android:background="?android:actionBarItemBackground" android:focusable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="13.0dip" android:layout_height="fill_parent" android:src="?android:homeAsUpIndicator" android:scaleType="center" android:layout_marginStart="8.0dip" />
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="42.0dip" android:layout_height="32.0dip" android:src="@drawable/home_icon" android:contentDescription="@string/talkback_all_apps_button" android:layout_marginStart="2.0dip" />
+</LinearLayout>

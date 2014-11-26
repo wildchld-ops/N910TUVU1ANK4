@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="menu_title_bar_unselectedTextColor">#ccffffff</color>
+    <color name="menu_title_text_color">#fff5f5f5</color>
+    <item type="color" name="APKTOOL_DUMMY_0049">false</item>
+    <item type="color" name="APKTOOL_DUMMY_004a">false</item>
+    <item type="color" name="APKTOOL_DUMMY_004b">false</item>
+    <item type="color" name="APKTOOL_DUMMY_004c">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0052">false</item>
+</resources>

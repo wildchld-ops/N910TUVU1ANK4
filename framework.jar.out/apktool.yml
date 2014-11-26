@@ -1,0 +1,5 @@
+version: 2.0.0-RC2
+apkFileName: framework.jar
+unknownFiles:
+  R.java.d: '8'
+  preloaded-classes: '8'

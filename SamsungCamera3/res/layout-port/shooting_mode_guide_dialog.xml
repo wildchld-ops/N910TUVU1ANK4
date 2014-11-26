@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21.0dip" android:layout_marginBottom="16.0dip">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip">
+            <ImageView android:id="@id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+            <TextView android:textSize="17.0dip" android:textStyle="normal" android:textColor="@android:color/black" android:gravity="center" android:id="@id/text" android:layout_width="138.0dip" android:layout_height="25.0dip" android:layout_marginTop="106.0dip" android:fontFamily="sec-roboto" />
+        </FrameLayout>
+        <ScrollView android:layout_width="wrap_content" android:layout_height="139.0dip" android:layout_marginLeft="12.0dip" android:fillViewport="true">
+            <TextView android:textSize="19.0sp" android:textColor="@android:color/white" android:gravity="center_vertical" android:id="@id/message" android:paddingRight="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip">
+        <CheckBox android:textSize="19.0sp" android:textColor="@android:color/white" android:id="@id/checkbox" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/do_not_ask_again" android:fontFamily="sec-roboto-light" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.callsettings.AutoRejectDeleteLayout android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingTop="@dimen/autorejectlist_padding" android:paddingBottom="@dimen/autorejectlist_padding" android:layout_width="fill_parent" android:layout_height="@dimen/autorejectlist_height" android:checkable="@id/delete_checkbox"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.9" android:paddingStart="@dimen/list_header_left_padding">
+        <TextView android:id="@android:attr/theme" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/primaryTextStyle" />
+        <TextView android:id="@id/autoreject_delete_item_contact_name" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/secondaryTextStyle" />
+        <TextView android:id="@android:attr/label" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/secondaryTextStyle" />
+    </LinearLayout>
+    <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/delete_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:paddingEnd="@dimen/auto_reject_delete_item_right_padding" />
+</com.android.phone.callsettings.AutoRejectDeleteLayout>

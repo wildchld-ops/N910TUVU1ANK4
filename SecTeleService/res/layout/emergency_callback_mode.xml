@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.phone.IncomingCallWidget android:id="@id/emergencyCallbackWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/emergency_callback_mode_title_text_size" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emergency_callback_mode_title_margin_top" android:text="@string/emergency_callback_mode_title" />
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/emergency_callback_mode_icon_margin_top" android:src="@drawable/emergency_callback_icon" />
+        <Button android:textSize="20.0dip" android:layout_gravity="center" android:id="@id/emergency_call_btn" android:background="@drawable/emergency_call_btn_default" android:layout_width="190.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/emergency_call_btn_margin_top" android:text="@string/emergency_callback_mode_call_911" android:singleLine="true" />
+        <TextView android:textSize="@dimen/emergency_callback_mode_description_text_size" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="@dimen/emergency_callback_mode_description_margin_top" android:layout_marginRight="20.0dip" android:text="@string/emergency_callback_mode_description" />
+    </LinearLayout>
+</RelativeLayout>

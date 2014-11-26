@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/grid_ic_settings_low_memory" android:id="@id/low_memory" android:title="@string/glance_low_memory" android:summary="@string/glance_low_memory_summary" />
+    <header android:icon="@drawable/ic_setting_grid_applicationmanager" android:id="@id/glance_application_manager" android:title="@string/applications_settings" android:fragment="com.android.settings.applications.ManageApplications" />
+    <header android:icon="@drawable/ic_setting_grid_storage" android:id="@id/glance_storage" android:title="@string/storage_settings" android:fragment="com.android.settings.deviceinfo.Memory" />
+</preference-headers>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/cmas_receive_alests" android:key="pref_key_cmas_settings_alert">
+        <CheckBoxPreference android:enabled="false" android:title="@string/cmas_presidential_alerts" android:key="\#cmas#type##presidential#enabled" android:summary="@string/cmas_receive_presidental_alerts" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/cmas_extreme_alerts" android:key="\#cmas#type##extreme#enabled" android:summary="@string/cmas_receive_extreme_alerts" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/cmas_severe_alerts" android:key="\#cmas#type##severe#enabled" android:summary="@string/cmas_receive_severs_alerts" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/cmas_amber_alerts" android:key="\#cmas#type##amber#enabled" android:summary="@string/cmas_receive_child_abduction_emergency_alerts" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/cmas_test_messages" android:key="\#cmas#type##test#enabled" android:summary="@string/cmas_receive_test_alerts" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/cmas_exercise_message" android:key="pref_cmas_exercise" android:summary="@string/receive_cmas_exercise_message" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/cmas_operator_defined_message" android:key="pref_cmas_operator_defined" android:summary="@string/receive_cmas_operator_defined_message" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:key="pref_key_cmas_settings_ui">
+        <Preference android:title="@string/emergency_tone" android:key="pref_key_emergency_alert" android:summary="@string/emergency_summary" />
+        <Preference android:title="@string/emergency_vibrate" android:key="pref_key_emergency_vibrate" android:summary="@string/emergency_vibrate_summary" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_vibrateWhen" android:key="pref_key_emergency_vibrateWhen" android:summary="@string/pref_summary_notification_vibrateWhen" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_alertWhen" android:key="pref_key_emergency_alertWhen" android:summary="@string/pref_summary_notification_alertWhen" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <ListPreference android:entries="@array/cmas_font_size_Array" android:title="@string/cmas_font_size" android:key="\#cmas#pref##font#size" android:summary="@string/cmas_font_explanation" android:defaultValue="14" android:entryValues="@array/cmas_font_size_Array_values" />
+    </PreferenceCategory>
+</PreferenceScreen>

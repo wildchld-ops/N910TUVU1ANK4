@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.settings.deviceinfo.FileItemInfoLayout android:gravity="center_vertical" android:background="@drawable/tw_common_list_item_background" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight" android:paddingEnd="?android:scrollbarSize"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/checkbox_container" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/misc_checkbox" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_marginEnd="12.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/checkbox_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?android:twTextColorPrimary" android:ellipsize="marquee" android:id="@id/misc_filename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="?android:twTextColorSecondary" android:id="@id/misc_filesize" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.settings.deviceinfo.FileItemInfoLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.HomeView android:id="@id/home_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <FrameLayout android:id="@id/home_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <com.android.launcher2.Workspace android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false" launcher:cellCountX="@integer/home_cellCountX" launcher:cellCountY="@integer/home_cellCountY" launcher:pageSpacing="@dimen/home_pageSpacing" launcher:pageIndicatorTop="@dimen/home_pageIndicatorTop" launcher:pageIndicatorGap="@dimen/home_pageIndicatorGap" launcher:pageIndicatorMaxVisible="@integer/home_pageIndicatorMaxVisible" launcher:defaultScreen="2" launcher:pageIndicatorTopShrunken="@dimen/home_pageIndicatorTopShrunken" />
+        <include layout="@layout/quickview_workspace" />
+        <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/home_top_bar" android:layout_width="fill_parent" android:layout_height="@dimen/home_softkey_edit_btn_height" android:splitMotionEvents="false">
+            <ImageView android:layout_gravity="end|bottom|center" android:id="@id/homescreen_edit_icon" android:background="@drawable/focusable_view_bg" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/home_softkey_edit_btn_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/home_softkey_edit_btn_MarginBottom" android:src="@drawable/home_edit_btn" android:scaleType="center" android:contentDescription="@string/options_menu_edit" android:layout_marginEnd="@dimen/home_softkey_edit_btn_MarginLeftRight" />
+        </FrameLayout>
+        <include android:layout_gravity="top" android:id="@id/home_edit_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginStart="@dimen/menu_titleMarginLeft" android:layout_marginEnd="@dimen/menu_titleMarginRight" layout="@layout/home_edit_title_bar" />
+        <include android:visibility="gone" layout="@layout/home_edit_drag_bar" />
+        <include android:id="@id/hotseat" layout="@layout/hotseat" />
+    </FrameLayout>
+    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/home_softkey" android:layout_width="fill_parent" android:layout_height="@dimen/home_softkey_apps_btn_height" android:splitMotionEvents="false">
+        <ImageView android:layout_gravity="start|bottom|center" android:id="@id/home_softkey_phone_button" android:background="@drawable/focusable_view_bg" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/home_softkey_apps_btn_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/home_softkey_apps_btn_MarginBottom" android:src="@drawable/home_phone_btn" android:scaleType="center" android:contentDescription="@string/phone_button_label" android:layout_marginStart="@dimen/home_softkey_apps_btn_MarginLeft" />
+        <ImageView android:layout_gravity="end|bottom|center" android:id="@id/home_softkey_apps_button" android:background="@drawable/focusable_view_bg" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/home_softkey_apps_btn_width" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/home_softkey_apps_btn_MarginBottom" android:src="@drawable/home_apps_btn" android:scaleType="center" android:contentDescription="@string/all_apps_button_label" android:layout_marginEnd="@dimen/home_softkey_apps_btn_MarginRight" />
+    </FrameLayout>
+    <com.android.launcher2.BlendedDarkenView android:id="@id/home_darken_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <ViewStub android:id="@id/market_sample" android:layout="@layout/market_sample" android:inflatedId="@id/market_sample" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.android.launcher2.HomeView>

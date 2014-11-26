@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/memoRecInfo" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/memoRecordIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/record_icon_middle_margin" android:src="@drawable/call_duringcall_record_icon" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/callstate_container_text_size" android:textColor="@color/incall_call_banner_recording" android:layout_gravity="center_vertical" android:id="@id/memoRecordText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/record_icon_right_margin" android:text="@string/menu_record_voice" android:layout_toRightOf="@id/memoRecordIcon" style="@style/InCallButtonTextShadowEffect" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/callstate_container_text_size" android:textColor="@color/incall_call_banner_recording" android:layout_gravity="center_vertical" android:id="@id/memoRecordTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/record_container_right_margin" android:layout_toRightOf="@id/memoRecordText" style="@style/InCallButtonTextShadowEffect" />
+</RelativeLayout>

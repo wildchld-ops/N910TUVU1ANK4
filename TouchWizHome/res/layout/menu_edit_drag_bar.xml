@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.MenuEditBar android:id="@id/menu_edit_bar" style="@style/MenuEditDragBar"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/new_page_container" style="@style/MenuEditDragBarItemNormal">
+        <TextView android:id="@id/new_page" android:text="@string/home_edit_bar_create_page_title" android:drawableTop="@drawable/toolbar_ic_create_page" style="@style/MenuEditDragBarIcon" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/new_folder_container" style="@style/MenuEditDragBarItemNormal">
+        <TextView android:id="@id/new_folder" android:text="@string/home_edit_bar_create_folder_title" android:drawableTop="@drawable/toolbar_ic_create_folder" style="@style/MenuEditDragBarIcon" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/app_info_container" style="@style/MenuEditDragBarItemNormal">
+        <TextView android:id="@id/app_info" android:text="@string/home_edit_bar_app_info_title" android:drawableTop="@drawable/toolbar_ic_info" style="@style/MenuEditDragBarIcon" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/delete_container" style="@style/MenuEditDragBarItemDelete">
+        <TextView android:id="@id/delete" android:text="@string/options_menu_uninstall" android:drawableTop="@drawable/toolbar_ic_uninstall" style="@style/MenuEditDragBarIcon" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/disable_container" style="@style/MenuEditDragBarItemDelete">
+        <TextView android:id="@id/disable" android:text="@string/options_menu_disableApp" android:drawableTop="@drawable/toolbar_ic_disable" style="@style/MenuEditDragBarIcon" />
+    </FrameLayout>
+</com.android.launcher2.MenuEditBar>

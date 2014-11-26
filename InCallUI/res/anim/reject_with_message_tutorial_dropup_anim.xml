@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false" id="reject_with_msg_tutorial_dropup_anim_list"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="300" android:drawable="@drawable/help_start_now_03" />
+    <item android:duration="300" android:drawable="@drawable/help_start_now_02" />
+    <item android:duration="300" android:drawable="@drawable/help_start_now_01" />
+    <item android:duration="300" android:drawable="@drawable/help_start_now_02" />
+    <item android:duration="300" android:drawable="@drawable/help_start_now_03" />
+</animation-list>

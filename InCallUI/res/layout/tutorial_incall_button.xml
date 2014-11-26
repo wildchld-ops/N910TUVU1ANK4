@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/bottomButtons" android:paddingLeft="@dimen/tutorial_incall_buttons_padding_left" android:paddingTop="@dimen/tutorial_incall_buttons_padding_top" android:paddingRight="@dimen/tutorial_incall_buttons_padding_right" android:paddingBottom="@dimen/tutorial_incall_buttons_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/tutorial_incall_buttons_height" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/tutorial_incall_upper_buttons_height" android:layout_marginBottom="@dimen/tutorial_incall_upper_buttons_margin_bottom" android:splitMotionEvents="false">
+            <FrameLayout android:layout_gravity="top|center" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/tutorial_incall_upper_buttons_margin_right" android:layout_weight="1.0">
+                <Button android:id="@id/addButton" android:visibility="gone" android:clickable="false" android:text="@string/onscreenAddCallText" android:drawableTop="@drawable/incall_button_add_icon" style="@style/InCallTouchUpperButton" />
+                <Button android:id="@id/recordButton" android:visibility="gone" android:clickable="false" android:text="@string/menu_record_voice" android:drawableTop="@drawable/call_duringcall_record_play" style="@style/InCallTouchUpperButton" />
+            </FrameLayout>
+            <Button android:id="@id/dialpadButton" android:clickable="false" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginRight="@dimen/tutorial_incall_upper_buttons_margin_right" android:text="@string/onscreenShowDialpadText" android:drawableTop="@drawable/incall_button_dialpad_icon" android:layout_weight="1.0" style="@style/InCallTouchUpperButton" />
+            <FrameLayout android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:id="@id/endButton" android:text="@string/end_call" android:drawableTop="@drawable/call_icon_endcall" style="@style/InCallTouchEndButton" />
+                <ImageView android:layout_gravity="center" android:id="@id/help_tab_endcall" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tutorial_help_tab_endcall_margin_bottom" android:src="@drawable/help_tap_1_default" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/tutorial_incall_toggle_buttons_height" android:layout_marginTop="@dimen/tutorial_incall_upper_buttons_margin_top" android:splitMotionEvents="false">
+            <ToggleButton android:id="@id/speakerButton" android:clickable="false" android:layout_marginRight="@dimen/tutorial_incall_toggle_buttons_margin_right" android:textOn="@string/onscreenSpeakerText" android:textOff="@string/onscreenSpeakerText" android:drawableTop="@drawable/incall_button_speaker_icon" style="@style/InCallTouchToggleButtonNoFrame" />
+            <ToggleButton android:id="@id/muteButton" android:clickable="false" android:layout_marginRight="@dimen/tutorial_incall_toggle_buttons_margin_right" android:textOff="@string/onscreenMuteText" android:drawableTop="@drawable/incall_button_mute_icon" style="@style/InCallTouchToggleButtonNoFrame" />
+            <ToggleButton android:id="@id/bluetoothButton" android:clickable="false" android:textOn="@string/audio_mode_bluetooth" android:textOff="@string/audio_mode_bluetooth" android:drawableTop="@drawable/incall_button_bluetooth_icon" style="@style/InCallTouchToggleButtonNoFrame" />
+            <ToggleButton android:id="@id/easyRecordButton" android:visibility="gone" android:clickable="false" android:textOn="@string/menu_record_voice" android:textOff="@string/menu_record_voice" android:drawableTop="@drawable/incall_record_play_button" style="@style/InCallTouchToggleButtonNoFrame" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

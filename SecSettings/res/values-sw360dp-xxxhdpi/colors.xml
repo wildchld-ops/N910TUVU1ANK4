@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_title_text_color">#ffffffff</color>
+    <color name="step_indicator_text_color">#ffffffff</color>
+    <color name="subtitle_text_color">#ffffffff</color>
+    <color name="description_text_color">#fff5f5f5</color>
+    <color name="softkey_text_color_default">#fff5f5f5</color>
+    <color name="softkey_text_color_on_press">#fff5f5f5</color>
+    <color name="sview_torchlight_btn_text_enabled">#ffffffff</color>
+    <color name="sview_torchlight_btn_text_disabled">#33ffffff</color>
+    <color name="sview_torchlight_btn_bg_enabled">#ff3c8823</color>
+    <color name="sview_torchlight_btn_bg_disabled">#ff444444</color>
+    <color name="sview_cover_setting_title_text_color">#fff5f5f5</color>
+</resources>

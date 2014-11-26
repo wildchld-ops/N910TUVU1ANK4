@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/roaming_service_provider_select" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/search_provider" android:key="button_srch_netwrks_key" />
+    <PreferenceCategory android:title="@string/searched_provider_list" android:key="searched_providers_key" />
+    <Preference android:title="@string/roaming_operator_title_lgt" android:key="ef_lgu" android:summary="@string/roaming_operator_summary_lgt" />
+    <Preference android:title="@string/unknown" android:key="ef_sponimsi1" />
+    <Preference android:title="@string/unknown" android:key="ef_sponimsi2" />
+    <Preference android:title="@string/unknown" android:key="ef_sponimsi3" />
+</PreferenceScreen>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/subview_easymode_layout" android:background="#ff04222d" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/subview_base_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/subview_switch" android:visibility="invisible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:contentDescription="@string/switch_camera_title" />
+        <ImageView android:id="@id/subview_shortcut1" android:visibility="invisible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" />
+        <ImageView android:id="@id/subview_shortcut2" android:visibility="invisible" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/subview_recordingmenu" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="240.0dip">
+            <ImageView android:id="@id/subview_recording_stop" android:clickable="true" android:layout_width="40.0dip" android:layout_height="40.0dip" android:contentDescription="@string/stop" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/subview_cameramenu" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="120.0dip">
+            <ImageView android:id="@id/subview_shutter" android:background="@drawable/camera_preview_bended_button_snapshot_bg_v" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/camera_preview_bended_button_snapshot" android:contentDescription="@string/shutter" />
+            <ImageView android:id="@id/subview_recording" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/camera_preview_bended_button_video" android:contentDescription="@string/record" />
+            <ImageView android:id="@id/subview_mode" android:background="@drawable/camera_preview_bended_modebtn_bg" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:src="@drawable/camera_preview_bended_modetext_english" android:contentDescription="@string/MODE" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/subview_help_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/subview_help_capture" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="330.0dip" android:src="@drawable/help_tap" />
+        <ImageView android:id="@id/subview_help_record" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="50.0dip" android:src="@drawable/help_tap" />
+        <ImageView android:id="@id/subview_help_mode" android:visibility="invisible" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="20.0dip" android:src="@drawable/help_tap" />
+    </LinearLayout>
+</FrameLayout>

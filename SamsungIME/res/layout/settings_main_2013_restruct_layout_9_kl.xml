@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/settings_main" android:title="@string/setting_title" android:key="input_method_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/select_languages" android:key="SETTINGS_INPUT_LANGUAGES">
+        <Preference android:title="@string/select_language" android:key="select_language_list" android:order="1000">
+            <intent android:action="com.diotek.ime.implement.setting.AC_LANGUAGES_SETTINGS" />
+        </Preference>
+    </PreferenceCategory>
+    <ListPreference android:persistent="true" android:entries="@array/number_and_symbols_keypad_types" android:title="@string/number_and_symbols_keypad_type" android:key="SETTINGS_DEFAULT_NUMBER_AND_SYMBOLS_KEYPAD_TYPE" android:widgetLayout="@layout/settings_preference_layout" android:defaultValue="0" android:dialogTitle="@string/number_and_symbols_keypad_type" android:entryValues="@array/number_and_symbols_keypad_type_values" />
+    <PreferenceCategory android:title="@string/settings_smart_typing" android:key="SETTINGS_SMART_TYPING">
+        <SwitchPreference android:persistent="true" android:title="@string/use_xt9" android:key="SETTINGS_DEFAULT_PREDICTION_ON" android:defaultValue="true" />
+        <SwitchPreference android:persistent="true" android:title="@string/use_auto_correction" android:key="SETTINGS_DEFAULT_AUTO_CORRECTION" android:summary="@string/use_auto_correction_summary" android:dependency="SETTINGS_DEFAULT_PREDICTION_ON" android:defaultValue="false" android:disableDependentsState="true" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/space_language_change" android:key="SETTINGS_DEFAULT_SPACE_LANGUAGE_CHANGE" android:summary="@string/space_language_change_summary" android:defaultValue="false" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_caps" android:key="SETTINGS_DEFAULT_AUTO_CAPS" android:summary="@string/auto_caps_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_spacing" android:key="SETTINGS_DEFAULT_AUTO_SPACING" android:summary="@string/auto_spacing_summary" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/use_auto_period" android:key="SETTINGS_DEFAULT_AUTO_PERIOD" android:summary="@string/auto_period_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/use_keypad_sweeping" android:key="settings_keyboard_swipe">
+        <com.diotek.ime.implement.setting.KeyboardSwipeSettingsPreference android:persistent="true" android:title="@string/settings_keyboard_swipe_radio_none" android:selectable="true" android:key="settings_keyboard_swipe_none" android:widgetLayout="@layout/settings_preference_keyboard_swipe_selected_layout" />
+        <com.diotek.ime.implement.setting.KeyboardSwipeSettingsPreference android:persistent="true" android:title="@string/use_trace" android:selectable="true" android:key="settings_keyboard_swipe_continuous_input" android:summary="@string/trace_summary" android:widgetLayout="@layout/settings_preference_keyboard_swipe_selected_layout" android:dependency="SETTINGS_DEFAULT_PREDICTION_ON" android:disableDependentsState="true" />
+        <com.diotek.ime.implement.setting.KeyboardSwipeSettingsPreference android:persistent="true" android:title="@string/cursor_Control" android:selectable="true" android:key="settings_keyboard_swipe_cursor_control" android:summary="@string/cursor_Control_summary" android:widgetLayout="@layout/settings_preference_keyboard_swipe_selected_layout" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_key_tap_feedback" android:key="settings_key_tap_feedback">
+        <CheckBoxPreference android:persistent="true" android:title="@string/settings_key_tap_feedback_sound" android:key="SETTINGS_DEFAULT_SUPPORT_KEY_SOUND" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/settings_key_tap_feedback_vibration" android:key="SETTINGS_DEFAULT_SUPPORT_KEY_VIBRATE" android:defaultValue="true" />
+        <CheckBoxPreference android:persistent="true" android:title="@string/use_char_preview" android:key="SETTINGS_DEFAULT_USE_PREVIEW" android:summary="@string/use_char_preview_summary" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/settings_more_settings" android:key="settings_more_settings">
+        <CheckBoxPreference android:persistent="true" android:title="@string/s_pen_detection" android:key="SETTINGS_DEFAULT_PEN_DETECTION" android:summary="@string/s_pen_detection_summary" android:defaultValue="false" />
+        <Preference android:title="@string/help_integration" android:key="HELP_INTEGRATION" />
+        <Preference android:title="@string/tutorial" android:key="tutorial">
+            <intent android:action="com.diotek.ime.implement.setting.TUTORIAL" />
+        </Preference>
+        <com.diotek.ime.implement.setting.ResetSettingsDialogPreference android:title="@string/reset_settings" android:key="reset_settings" android:dialogTitle="@string/reset_dialog_title" android:dialogMessage="@string/reset_dialog_msg_swiftkey" android:positiveButtonText="@string/ok" android:negativeButtonText="@string/cancel" />
+    </PreferenceCategory>
+</PreferenceScreen>

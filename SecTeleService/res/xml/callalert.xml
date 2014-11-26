@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/callsettings_callalert_callstatusvibrations" />
+    <CheckBoxPreference android:title="@string/callsettings_callalert_answer_vibration" android:key="answer_vibration_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/callsettings_callalert_end_vibration" android:key="end_vibration_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:titleContentDescription="@string/callsettings_callalert_end_vibration_tts" />
+    <PreferenceCategory android:title="@string/callsettings_callalert_callstatustones" />
+    <CheckBoxPreference android:title="@string/callsettings_callalert_call_conn_tone" android:key="connect_tone_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/callsettings_callalert_minute_minder" android:key="minute_minder_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/callsettings_callalert_call_end_tone" android:key="end_tone_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:title="@string/callsettings_alertsoncall_title" />
+    <CheckBoxPreference android:title="@string/callsettings_alertsoncall_title2" android:key="alertoncall_preference" android:summary="@string/callsettings_alertsoncall_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:titleContentDescription="@string/callsettings_alertsoncall_title2_tts" />
+</PreferenceScreen>

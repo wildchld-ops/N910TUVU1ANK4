@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.spam.SpamlistDeleteLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:checkable="@id/delete_checkbox"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/delete_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_marginStart="14.0dip" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="12.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_weight="0.9">
+        <TextView android:textSize="21.0sp" android:textColor="@color/list_item_primary_text_color" android:id="@id/autoreject_delete_item_body" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+</com.android.mms.spam.SpamlistDeleteLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.phone.EmergencyContactItem android:background="@drawable/emergency_contact_bg" android:focusable="true" android:layout_width="@dimen/emergency_contact_item_width" android:layout_height="@dimen/emergency_contact_item_height" android:layout_marginRight="@dimen/emergency_contact_item_marginRight" android:contentDescription="@string/description_search_button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/contactButton" android:background="@drawable/emergency_contact_item_button" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/emergency_contact_image_size" />
+    <TextView android:textSize="@dimen/emergency_contact_item_textSize" android:textColor="@color/dialpad_emergency_contact_text_color" android:layout_gravity="center_vertical" android:id="@id/name" android:paddingLeft="@dimen/emergency_contact_text_padding" android:paddingTop="@dimen/emergency_contact_image_size" android:paddingRight="@dimen/emergency_contact_text_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+    <com.sec.android.touchwiz.widget.TwCheckBox android:layout_gravity="top|left|center" android:id="@id/removeCheckBox" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</com.android.phone.EmergencyContactItem>

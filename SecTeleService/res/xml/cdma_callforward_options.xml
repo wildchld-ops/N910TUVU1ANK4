@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceScreen android:persistent="false" android:title="@string/cdma_cf_busy_title" android:key="cdma_cf_busy_key">
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/enable" android:key="button_cfb_key" android:summaryOn="@string/sum_cfb_enabled" android:summaryOff="@string/sum_cfb_disabled" android:dialogTitle="@string/labelCFB" phone:confirmMode="confirm" />
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/disable" android:key="button_cfb_dis_key" android:summaryOn="@string/sum_cfb_enabled" android:summaryOff="@string/sum_cfb_disabled" android:dialogTitle="@string/labelCFB" phone:confirmMode="confirm" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/cdma_cf_noreply_title" android:key="cdma_cf_noreply_key">
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/enable" android:key="button_cfnry_key" android:summaryOn="@string/sum_cfnry_enabled" android:summaryOff="@string/sum_cfnry_disabled" android:dialogTitle="@string/labelCFNRy" phone:confirmMode="confirm" />
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/disable" android:key="button_cfnry_dis_key" android:summaryOn="@string/sum_cfnry_enabled" android:summaryOff="@string/sum_cfnry_disabled" android:dialogTitle="@string/labelCFNRy" phone:confirmMode="confirm" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/cdma_cf_notreachable_title" android:key="cdma_cf_notrechable_key">
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/enable" android:key="button_cfnrc_key" android:summaryOn="@string/sum_cfnrc_enabled" android:summaryOff="@string/sum_cfnrc_disabled" android:dialogTitle="@string/labelCFNRc" phone:confirmMode="confirm" />
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/disable" android:key="button_cfnrc_dis_key" android:summaryOn="@string/sum_cfnrc_enabled" android:summaryOff="@string/sum_cfnrc_disabled" android:dialogTitle="@string/labelCFNRc" phone:confirmMode="confirm" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/cdma_cf_unconditional_title" android:key="cdma_cf_unconditional_key">
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/enable" android:key="button_cfu_key" android:summaryOn="@string/sum_cfu_enabled" android:summaryOff="@string/sum_cfu_disabled" android:dialogTitle="@string/labelCFU" phone:confirmMode="confirm" />
+        <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/disable" android:key="button_cfu_dis_key" android:summaryOn="@string/sum_cfu_enabled" android:summaryOff="@string/sum_cfu_disabled" android:dialogTitle="@string/labelCFU" phone:confirmMode="confirm" />
+    </PreferenceScreen>
+    <com.android.phone.EditPhoneNumberPreference android:persistent="false" android:singleLine="true" android:autoText="false" android:title="@string/callsettings_call_barring_list6" android:key="cdma_cf_cancelall_key" android:summaryOn=" " android:summaryOff=" " android:dialogTitle="@string/labelCANCEL" phone:confirmMode="confirm" />
+</PreferenceScreen>

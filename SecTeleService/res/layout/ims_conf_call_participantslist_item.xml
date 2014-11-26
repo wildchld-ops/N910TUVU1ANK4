@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutListItem" android:layout_width="fill_parent" android:layout_height="65.0dip">
+        <com.sec.android.touchwiz.widget.TwCheckBox android:gravity="center" android:id="@id/checked_view" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="7.0dip" android:layout_weight="0.0" />
+        <ImageView android:id="@id/contact_image" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:src="@drawable/call_img_incoming_small" android:layout_weight="0.0" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <LinearLayout android:gravity="left|center" android:orientation="vertical" android:id="@id/layout_participant" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="12.0dip" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="21.0dip" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/text_number" android:layout_width="fill_parent" android:layout_height="28.0dip" android:layout_marginTop="12.0dip" android:singleLine="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_name" android:layout_width="fill_parent" android:layout_height="27.0dip" android:layout_marginBottom="10.0dip">
+                <TextView android:textSize="15.0dip" android:id="@id/text_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layout_status" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0">
+                    <TextView android:textSize="15.0sp" android:textColor="#ff2fa6c9" android:gravity="center_vertical" android:id="@id/text_status" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+                    <TextView android:textSize="15.0sp" android:textColor="#ff2fa6c9" android:gravity="center_vertical" android:id="@id/elapsedTime" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <Button android:textSize="18.0sp" android:gravity="center" android:id="@id/btn_dial" android:focusable="false" android:focusableInTouchMode="false" android:visibility="gone" android:layout_width="65.0dip" android:layout_height="40.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="11.0dip" android:layout_weight="0.0" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </LinearLayout>
+</LinearLayout>

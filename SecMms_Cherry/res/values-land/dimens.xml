@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="actionbar_title_max_width">500.0dip</dimen>
+    <dimen name="select_button_height">40.0dip</dimen>
+    <dimen name="custom_actionbar_divider_height">26.0dip</dimen>
+    <dimen name="select_mode_text_title_size">18.0dip</dimen>
+</resources>

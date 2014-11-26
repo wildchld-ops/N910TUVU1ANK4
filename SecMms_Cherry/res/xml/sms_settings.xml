@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/pref_title_sms_delivery_reports" android:key="pref_key_sms_delivery_reports" android:summary="@string/pref_summary_sms_delivery_reports" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <Preference android:title="@string/pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" android:summary="@string/pref_summary_manage_sim_messages" />
+    <Preference android:title="@string/pref_title_manage_SD_messages" android:key="pref_key_manage_SD_messages" android:summary="@string/pref_summary_manage_SD_messages" />
+    <ListPreference android:entries="@array/pref_entries_sms_input_mode" android:title="@string/pref_title_sms_input_mode" android:key="pref_key_sms_input_mode" android:summary="@string/pref_summary_sms_input_mode" android:dialogTitle="@string/pref_dialog_title_sms_input_mode" android:entryValues="@array/pref_entry_values_sms_input_mode" />
+    <EditTextPreference android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="21" android:phoneNumber="true" android:title="@string/pref_summary_manage_smsc_messages" android:key="pref_key_manage_smsc_address" android:summary="@string/pref_title_manage_smsc_messages" android:dialogTitle="@string/set_message_centre" />
+    <ListPreference android:entries="@array/pref_entries_sms_expiry_date" android:title="@string/pref_title_sms_expiry_date" android:key="pref_key_sms_expiry" android:summary="@string/pref_summary_sms_expiry_date" android:dialogTitle="@string/pref_dialog_title_sms_expiry_date" android:entryValues="@array/pref_entry_values_sms_expiry_date" />
+    <CheckBoxPreference android:title="@string/sms_reassembly" android:key="pref_key_sms_reassembly" android:summary="@string/sms_reassembly_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

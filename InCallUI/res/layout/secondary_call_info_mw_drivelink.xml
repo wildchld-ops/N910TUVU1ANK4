@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/secondary_call_info_container" android:background="@drawable/call_multiparty_bg_01" android:layout_width="267.0dip" android:layout_height="fill_parent">
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/secondaryCallPhoto" android:layout_width="54.0dip" android:layout_height="54.0dip" android:scaleType="centerCrop" android:contentDescription="@string/onHold" android:layout_marginStart="5.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/secondary_call_banner" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="6.0dip">
+            <TextView android:textSize="27.0dip" android:textColor="@color/incall_call_banner_2nd_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/secondaryCallName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+            <TextView android:textSize="20.0dip" android:textColor="@color/incall_call_banner_2nd_status_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/secondaryCallStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/onHold" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/secondary_call_btn_container" android:background="@drawable/call_multiparty_bg_01" android:layout_width="80.0dip" android:layout_height="fill_parent" android:layout_toEndOf="@id/secondary_call_info_container">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/swapButton" android:background="@drawable/incall_multiparty_bg_01" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:gravity="center" android:duplicateParentState="true" android:layout_width="27.0dip" android:layout_height="27.0dip" android:src="@drawable/incall_button_swap_icon_in_container" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/incall_call_banner_2nd_swap_text_color" android:gravity="center" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="23.0dip" android:text="@string/onscreenSwapCallsText" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

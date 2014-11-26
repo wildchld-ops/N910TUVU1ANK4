@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="bottom|center" android:id="@id/photoring" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/image_viewer" android:background="@drawable/call_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="bottom|center" android:id="@id/video_background" android:background="@drawable/call_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <VideoView android:gravity="center" android:id="@id/video_viewer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="right" android:id="@id/photoring_block" android:layout_width="@dimen/photoring_block_icon_width" android:layout_height="@dimen/photoring_block_icon_height" android:layout_marginTop="@dimen/photoring_block_icon_margin_top" android:layout_marginRight="@dimen/photoring_block_icon_margin_right" android:src="@drawable/call_lgu_shut_off" />
+    <ImageView android:layout_gravity="right" android:id="@id/photoring_sound" android:visibility="gone" android:layout_width="@dimen/photoring_block_icon_width" android:layout_height="@dimen/photoring_block_icon_height" android:layout_marginTop="@dimen/photoring_mute_icon_margin_top" android:layout_marginRight="@dimen/photoring_block_icon_margin_right" android:src="@drawable/call_lgu_shut_off" />
+</FrameLayout>

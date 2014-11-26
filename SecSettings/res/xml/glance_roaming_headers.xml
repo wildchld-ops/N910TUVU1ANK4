@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:icon="@drawable/grid_ic_settings_roaming" android:id="@id/roaming" android:title="@string/glance_roaming" android:summary="@string/glance_roaming_summary" />
+    <header android:icon="@drawable/ic_setting_grid_wifi" android:id="@id/glance_wifi" android:title="@string/wifi_settings_title" android:fragment="com.android.settings.wifi.WifiSettings" />
+    <header android:icon="@drawable/ic_setting_grid_datausage" android:id="@id/glance_data_usage" android:title="@string/data_usage_summary_title" android:fragment="com.android.settings.DataUsageSummary" />
+    <header android:icon="@drawable/ic_setting_grid_more" android:id="@id/glance_mobile_networks" android:title="@string/network_settings_title">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.MobileNetworkSettings" />
+    </header>
+</preference-headers>

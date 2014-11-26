@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:focusable="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:focusable="false" android:clickable="false" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <RelativeLayout android:id="@id/wifi_ap_connected_device_pref" android:background="@drawable/tw_wifi_ap_list_item_background" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textAppearance="?android:textAppearanceLarge" android:textSize="19.0sp" android:textColor="#ff141414" android:ellipsize="marquee" android:id="@android:id/title" android:focusable="false" android:fadingEdge="horizontal" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip" android:singleLine="true" android:layout_marginStart="15.0dip" android:layout_marginEnd="6.0dip" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textColor="#ff364f67" android:id="@android:id/summary" android:paddingBottom="3.0dip" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" android:layout_below="@android:id/title" android:layout_alignStart="@android:id/title" />
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:id="@id/wifi_ap_add_or_delete_button" android:background="@drawable/tw_wifi_ap_list_item_background" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" style="?android:attr/actionBarStyle">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/devider" android:background="@drawable/tw_divider_vertical_holo_light" android:focusable="false" android:clickable="false" android:layout_width="1.0dip" android:layout_height="32.0dip" />
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/button_img" android:focusable="false" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="7.0dip" android:paddingEnd="7.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

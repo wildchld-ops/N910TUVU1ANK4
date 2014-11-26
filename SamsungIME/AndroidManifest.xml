@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" coreApp="true" package="com.sec.android.inputmethod">
+    <application android:hardwareAccelerated="true" android:icon="@drawable/app_icon" android:label="@string/app_name" android:largeHeap="true" android:logo="@drawable/app_setting_icon" android:name="com.sec.android.inputmethod.SamsungKeypadApplication" android:supportsRtl="true" android:theme="@style/customTheme">
+        <service android:name="SamsungKeypad" android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod"/>
+            </intent-filter>
+            <meta-data android:name="android.view.im" android:resource="@xml/method"/>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="com.nuance.connect.service.ConnectClient">
+            <intent-filter>
+                <action android:name="com.nuance.connect.service.ConnectClient"/>
+            </intent-filter>
+        </service>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:label="@string/setting_title" android:name="SamsungKeypadSettings"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9AdvancedSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.XT9_ADVANCED_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:label="@string/use_xt9" android:launchMode="singleTop" android:name="com.touchtype.personalizer.PersonalizerSettingsActivity" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <action android:name="com.diotek.ime.implement.setting.PERSONALIZATIONSETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:icon="@drawable/app_setting_icon" android:name="com.touchtype.personalizer.PersonalizerActivity" android:theme="@style/PersonalizerTheme" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.LanguagesSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.LANGUAGES_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.diotek.ime.implement.setting.ACLanguagesSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.AC_LANGUAGES_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:name="com.diotek.ime.implement.setting.ACDeleteLanguages"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.ConnectSetting">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.CONNECT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.SwiftkeyDeleteLanguages"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.SwiftkeyLanguagesSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.SWIFTKEY_LANGUAGES_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.KeyboardSwipeSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.TapAndHoldDelayCustom">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.HwrSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.HWR_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.HwrTutorial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.HWR_TUTORIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.GestureGuide">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.GESTURE_GUIDE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9MyWords">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.XT9_MY_WORDS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9MyWordsAdd"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9MyWordsDel"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9AutoSubstitutions">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.XT9_AUTO_SUBSTITUTIONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9AutoSubstitutionsAdd"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Xt9AutoSubstitutionsDel"/>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.Tutorial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.TUTORIAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:name="com.diotek.ime.implement.setting.HelpIntegration">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.HELPINTEGRATION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.AdvancedSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.ADVANCED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.KoreanKeypadSettings">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.KOR_INPUTMETHOD_SETTING"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:label="@string/use_auto_correction" android:name="com.diotek.ime.implement.setting.AutoReplacementSettings">
+            <intent-filter>
+                <action android:name="com.diotek.ime.implement.setting.AUTOREPLACEMENTSETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.input.umlaut.HwUmlautPopup" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="orientation" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.LanguageItemSettingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="com.diotek.ime.implement.setting.LanguageItemSettingActivity"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <receiver android:exported="false" android:name=".QuickCommandInfoReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.inputmethod.RequestLanguageInfo"/>
+                <action android:name="com.sec.android.inputmethod.RequestSwiftKeyMode"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name=".CscUpdateReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.inputmethod.UpdatePreferences"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name=".SuggestionPickReceiver">
+            <intent-filter>
+                <action android:name="android.text.style.SUGGESTION_PICKED"/>
+            </intent-filter>
+        </receiver>
+        <service android:name="com.touchtype.personalizer.PersonalizerService"/>
+        <receiver android:exported="false" android:name="com.touchtype.personalizer.PersonalizationToggleReceiver">
+            <intent-filter>
+                <action android:name="com.touchtype.personalizer.ACTION_ENABLE_PERSONALIZATION"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.TwitterActivity" android:theme="@style/PersonalizerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="tweeter" android:scheme="callback"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.WebviewActivity"/>
+        <service android:name="com.diotek.ime.implement.setting.TwitterService"/>
+        <service android:name="com.diotek.ime.implement.setting.FacebookService"/>
+        <service android:name="com.diotek.ime.implement.setting.FacebookServiceNonSso"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.GMailRequestTokenActivity" android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="callback" android:scheme="x-oauthflow"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.FacebookSso" android:persistent="true" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenSize" android:icon="@drawable/app_setting_icon" android:name="com.diotek.ime.implement.setting.FacebookActivity" android:persistent="true"/>
+        <activity android:label="@string/app_name" android:name="com.facebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/applicationId"/>
+        <receiver android:exported="false" android:label="@string/app_name" android:name="com.diotek.ime.implement.setting.AppInstallBroadcastReciever">
+            <intent-filter android:priority="999">
+                <action android:name="android.intent.action.PACKAGE_ADDED"/>
+                <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.sec.android.inputmethod.databases.SipProvider" android:name="com.sec.android.inputmethod.databases.SipProvider"/>
+        <service android:name="com.diotek.ime.implement.setting.GMailService"/>
+        <service android:name="com.google.android.voiceime.ServiceHelper"/>
+        <activity android:configChanges="navigation|keyboard|keyboardHidden|orientation" android:excludeFromRecents="true" android:finishOnTaskLaunch="true" android:icon="@drawable/app_setting_icon" android:name="com.google.android.voiceime.ActivityHelper" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <receiver android:exported="false" android:name=".EasyModeReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="com.android.launcher.action.EASY_MODE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="android.nfc.disable_beam_default" android:value="true"/>
+        <receiver android:name="com.sec.android.inputmethod.SettingsSoftResetReceiver" android:permission="com.sec.android.settings.permission.SOFT_RESET">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS_SOFT_RESET"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.inputmethod.SetupWizardCompleteReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.secsetupwizard.SETUPWIZARD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.sec.android.inputmethod.MirrorLinkBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.sec.android.app.tmserver.mirrorlink"/>
+            </intent-filter>
+        </receiver>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="false" android:icon="@drawable/app_setting_icon" android:label="@string/shortcut_phrase" android:name="com.diotek.ime.implement.setting.PhraseSettings" android:windowSoftInputMode="stateHidden|adjustPan">
+            <intent-filter>
+                <action android:name="com.diotek.ime.implement.setting.PHRASE_SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+    </application>
+    <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+    <uses-permission android:name="android.permission.ACCOUNT_MANAGER"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+    <uses-permission android:name="com.sec.android.app.sns3.permission.SNS_FB_ACCESS_TOKEN"/>
+    <uses-permission android:name="com.samsung.helphub.permission.HELP"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+    <uses-permission android:name="com.sec.android.app.twdvfs.DVFS_BOOSTER_PERMISSION"/>
+    <uses-permission android:name="com.sec.android.settings.permission.SOFT_RESET"/>
+    <uses-permission android:name="com.mirrorlink.android.service.ACCESS_PERMISSION"/>
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+</manifest>

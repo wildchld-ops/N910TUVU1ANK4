@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:id="@id/reject_call_with_msg_sub_layout" style="@style/IconModeLinearLayoutStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/reject_call_with_msg_image" style="@style/IconModeImageStyle" />
+    <TextView android:id="@id/reject_call_with_msg_title" style="@style/IconModeTextTitleStyle" />
+</LinearLayout>

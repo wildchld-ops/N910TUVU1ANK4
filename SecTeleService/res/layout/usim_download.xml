@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/topDisplayGroup" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:id="@id/DownloadTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:layout_centerHorizontal="true" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ImageAni" android:background="@anim/usim_download" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/ImageRetry" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+        <TextView android:textSize="20.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/DownloadInfo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+    </LinearLayout>
+    <Button android:id="@id/emergencyCallButton" android:visibility="invisible" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/emergencyDialerIconLabel" android:drawablePadding="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/ButtonOK" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@android:string/ok" android:drawablePadding="8.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <Button android:id="@id/registerButton" android:visibility="invisible" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/ota_usim_ktf_register" android:drawablePadding="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/YesButton" android:visibility="invisible" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/yes" android:drawablePadding="8.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <Button android:id="@id/NoButton" android:visibility="invisible" android:layout_width="120.0dip" android:layout_height="wrap_content" android:text="@string/no" android:drawablePadding="8.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+    <View android:id="@id/spacerBottom" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="6.0dip" android:layout_above="@id/ButtonOK" />
+</RelativeLayout>

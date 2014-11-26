@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/conversationList_item_root_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/avatar" android:layout_width="@dimen/conversation_item_contact_badge_width" android:layout_height="@dimen/conversation_item_contact_badge_height" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="21.0dip" android:textColor="@color/primary_text_color" android:ellipsize="marquee" android:id="@id/from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+        <TextView android:textSize="@dimen/conversation_item_subject" android:textColor="@color/secondary_text_color" android:ellipsize="end" android:id="@id/address" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:background="@drawable/tw_divider_vertical" android:layout_width="1.0dip" android:layout_height="34.0dip" />
+    <LinearLayout android:gravity="center" android:id="@id/add" android:layout_width="53.0dip" android:layout_height="64.0dip">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_tw_list_icon_create" />
+    </LinearLayout>
+</LinearLayout>

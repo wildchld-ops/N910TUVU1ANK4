@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="phone_in_ecm_notification_time">
+        <item quantity="other">Connessione dati assente per %s minuti.</item>
+        <item quantity="one">Connessione dati assente per %s minuto.</item>
+    </plurals>
+    <plurals name="alert_dialog_exit_ecm">
+        <item quantity="other">Il telefono resterà in Richiamata di emergenza per %s minuti. Impossibile usare le applicazioni che utilizzano la connessione dati in questa modalità. Uscire subito?</item>
+        <item quantity="one">Impossibile usare connessione dati per le applicazioni. Il telefono resterà in Richiamata di emergenza per %s minuti durante questa modalità. Uscire subito?</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <item quantity="other">"L'azione selezionata non è disponibile in modalità Richiamata di emergenza. Il telefono resterà in questa modalità per %s minuti. Uscire subito?"</item>
+        <item quantity="one">"L'azione selezionata non è disponibile in modalità Richiamata di emergenza. Il telefono resterà in questa modalità per %s minuto. Uscire subito?"</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm_no_time">
+        <item quantity="other">"L'azione selezionata non è disponibile in modalità di richiamata di emergenza. Vuoi uscire ora?"</item>
+        <item quantity="one">"L'azione selezionata non è disponibile in modalità di richiamata di emergenza. Vuoi uscire ora?"</item>
+    </plurals>
+</resources>

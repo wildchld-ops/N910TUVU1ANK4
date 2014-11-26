@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/kt_additional_service"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_inbox" android:key="inbox_preference" android:fragment="com.android.phone.KTInboxActivity" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_cf_con" android:key="callforwarding_conditional_preference" android:fragment="com.android.phone.KTCallForwardingConditional" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_cf_all" android:key="callforwarding_all_preference" android:fragment="com.android.phone.KTCallForwardingAll" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_call_waiting" android:key="callwaiting_preference" android:fragment="com.android.phone.KTCallWaiting" />
+</PreferenceScreen>

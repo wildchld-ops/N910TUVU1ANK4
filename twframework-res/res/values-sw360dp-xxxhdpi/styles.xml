@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TwSeekBar" parent="@style/TwAbsSeekBar">
+        <item name="twMirrorForRtl">true</item>
+    </style>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tutorial_call_icon_container"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/inCallIconContainer" android:background="@color/tutorial_call_icon_container_color" android:visibility="invisible" android:layout_alignParentBottom="true" style="@style/InCallIconContainer">
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:id="@id/noiseReductionButton" android:background="@drawable/incall_button_noise_reduction_icon" android:layout_width="@dimen/in_call_container_icon_width" android:layout_height="@dimen/in_call_container_icon_height" android:textOn="" android:textOff="" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/tutorial_toggle_button_color" android:layout_width="1.0dip" android:layout_height="@dimen/tutorial_toggle_button_view_size" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ToggleButton android:id="@id/holdButton" android:background="@drawable/incall_button_hold_icon" android:clickable="false" android:layout_width="@dimen/in_call_container_icon_width" android:layout_height="@dimen/in_call_container_icon_height" android:textOn="" android:textOff="" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <View android:background="@color/tutorial_toggle_button_color" android:layout_width="1.0dip" android:layout_height="@dimen/tutorial_toggle_button_view_size" />
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ToggleButton android:id="@id/extraVolumeButton" android:background="@drawable/call_duringcall_extra_volume_on" android:clickable="false" android:layout_width="@dimen/in_call_container_icon_width" android:layout_height="@dimen/in_call_container_icon_height" android:textOn="" android:textOff="" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

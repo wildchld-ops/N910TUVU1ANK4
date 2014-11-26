@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tw_progressbar_horizontal_height_size">6.0dip</dimen>
+    <dimen name="tw_progressbar_smalltitle_wh_size">16.0dip</dimen>
+    <dimen name="tw_btn_text_size">19.0dip</dimen>
+</resources>

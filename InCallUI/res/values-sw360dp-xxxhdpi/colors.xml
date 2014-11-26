@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="incall_call_button_background">#fff0f0f0</color>
+    <color name="dialpad_background">#fff0f0f0</color>
+    <color name="dtmf_dialer_display_background">#fff0f0f0</color>
+    <color name="dtmf_dialer_display_text">#ff1a4851</color>
+    <color name="reject_with_message_handle_text_color">#ff000000</color>
+    <color name="incall_call_basic_background">#fff0f0f0</color>
+    <color name="end_call_bottom_frame_background">#fff0f0f0</color>
+    <color name="quickpanel_divider_bg">#33ffffff</color>
+</resources>

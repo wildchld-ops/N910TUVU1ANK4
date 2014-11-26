@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="title_area">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:shadowColor">#bf000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="wifi_wps_dlg">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">?android:twTextColorPrimary</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">17.0dip</item>
+        <item name="android:layout_marginEnd">17.0dip</item>
+    </style>
+    <style name="wifi_item_label">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_info_label">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">#ff364f67</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="wifi_item_info_content">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="SecurityPreferenceButton">
+        <item name="android:textAppearance">?android:actionMenuTextAppearance</item>
+        <item name="android:textColor">?android:actionMenuTextColor</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:background">@drawable/action_bar_look_button</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="Custom_Button_Bg">
+        <item name="android:background">@drawable/sub_action_bar_bg_holo_light</item>
+    </style>
+    <style name="Custom_Button_Bg_Disable">
+        <item name="android:background">#ff194a54</item>
+    </style>
+    <style name="Custom_Button_Text">
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:paddingLeft">?android:listPreferredItemPaddingLeft</item>
+        <item name="android:shadowColor">#7f000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="DormantNoContactsTextAppearance">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="disable_text">
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">0.3</item>
+        <item name="android:alpha">0.6</item>
+    </style>
+</resources>

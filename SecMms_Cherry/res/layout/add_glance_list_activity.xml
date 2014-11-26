@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/add_from_layout_height">
+        <LinearLayout android:gravity="center" android:id="@id/add_from_threads_list" android:background="@drawable/sub_action_bar_background" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="19.0dip" android:textColor="@color/subtitle_button_text_color" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/inbox_for_tts" android:singleLine="true" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/tw_sub_action_bar_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:src="@drawable/tw_sub_action_bar_line" />
+        <LinearLayout android:gravity="center" android:id="@id/add_from_contacts" android:background="@drawable/sub_action_bar_background" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:focusable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="19.0dip" android:textColor="@color/subtitle_button_text_color" android:gravity="center_vertical" android:id="@id/add_from_contacts" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_contacts" android:singleLine="true" android:drawablePadding="10.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recommended" style="?android:attr/listSeparatorTextViewStyle" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@android:color/transparent" android:layout_weight="1.0" />
+    <RelativeLayout android:id="@id/empty_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/empty_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_text_recommendations" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_recommendations" android:layout_below="@id/empty_image_view" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="bottom" android:id="@id/empty_view_background" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" android:layout_alignParentBottom="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

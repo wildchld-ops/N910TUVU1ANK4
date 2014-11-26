@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="111.0dip" android:layout_height="89.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="111.0dip" android:layout_height="10.0dip" android:layout_marginTop="79.0dip" android:src="@drawable/airbutton_image_list_item_shadow_left" />
+    <ImageView android:id="@id/airbutton_image_list_item_imageview" android:layout_width="105.0dip" android:layout_height="75.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip" android:scaleType="centerCrop" />
+    <ImageView android:layout_width="111.0dip" android:layout_height="81.0dip" android:src="@drawable/airbutton_image_list_item_frame" />
+</FrameLayout>

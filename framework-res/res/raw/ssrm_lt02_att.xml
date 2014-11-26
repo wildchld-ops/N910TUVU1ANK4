@@ -1,0 +1,95 @@
+<LevelsModel>
+
+    <steps>
+        <step id="0" temp="350"/>
+        <step id="1" temp="370"/>
+        <step id="2" temp="440"/>
+        <step id="3" temp="460"/>
+        <step id="4" temp="480"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="CPUFreqMax"/>
+        <writer name="LCDBrightness"/>
+    </writers>
+
+    <conditions>
+        <condition name="HeavyUser"/>
+        <condition name="AppStart"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="CPUFreqMax"    value="1458000"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="3"/>
+                        <setting writer="CPUFreqMax"    value="1242000"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="4"/>
+                        <setting writer="CPUFreqMax"    value="1026000"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HeavyUser"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="LCDBrightness" value="-1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="LCDBrightness" value="217"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="AppStart"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.systemui.statusbar.phone.PhoneStatusBarView android:orientation="vertical" android:id="@id/status_bar" android:background="@drawable/system_bar_background" android:focusable="true" android:fitsSystemWindows="true" android:descendantFocusability="afterDescendants"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:systemui="http://schemas.android.com/apk/res/com.android.systemui">
+    <FrameLayout android:id="@id/call_background" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/notification_lights_out" android:paddingBottom="2.0dip" android:visibility="gone" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="fill_parent" android:src="@drawable/ic_sysbar_lights_out_dot_small" android:scaleType="center" android:paddingStart="6.0dip" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/status_bar_contents" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="6.0dip" android:paddingEnd="6.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/notification_icon_area" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="15.0dip" android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/carrierLabel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" />
+            <ImageView android:id="@id/operatorLogoIcon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tw_stat_notify_operator_logo" />
+            <ImageView android:id="@id/operatorLogoIcon_org" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tw_stat_notify_operator_logo_org" />
+            <com.android.systemui.statusbar.StatusBarIconView android:id="@id/moreIcon" android:visibility="gone" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="fill_parent" android:src="@drawable/stat_notify_more" />
+            <com.android.systemui.statusbar.phone.IconMerger android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/notificationIcons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/system_icon_area" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/statusIcons" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/signal_battery_cluster" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="2.0dip">
+                <include android:id="@id/signal_cluster" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/rssi_battery_gap" layout="@layout/signal_cluster_view" />
+                <TextView android:textSize="@dimen/status_bar_battery_text_size" android:textColor="@color/status_bar_battery_text_color" android:layout_gravity="center" android:id="@id/battery_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status_bar_network_name_separator" android:importantForAccessibility="no" android:fontFamily="sans-serif" android:layout_marginStart="@dimen/status_bar_battery_text_marginStart" />
+                <com.android.systemui.BatteryMeterView android:id="@id/battery" android:layout_width="@dimen/battery_icon_width" android:layout_height="@dimen/battery_icon_height" android:layout_marginBottom="@dimen/battery_icon_bottom_margin" android:layout_marginStart="3.0dip" />
+            </LinearLayout>
+            <com.android.systemui.statusbar.policy.Clock android:textAppearance="@style/TextAppearance.StatusBar.Clock" android:ellipsize="none" android:gravity="start|center" android:id="@id/clock" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true" android:includeFontPadding="false" android:paddingStart="6.0dip" systemui:ampmSmall="false" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ticker" android:animationCache="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="6.0dip">
+        <ImageSwitcher android:id="@id/tickerIcon" android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:layout_marginEnd="4.0dip">
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="centerInside" />
+            <com.android.systemui.statusbar.AnimatedImageView android:layout_width="@dimen/status_bar_icon_size" android:layout_height="@dimen/status_bar_icon_size" android:scaleType="centerInside" />
+        </ImageSwitcher>
+        <com.android.systemui.statusbar.phone.TickerView android:layout_gravity="center_vertical" android:id="@id/tickerText" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingEnd="10.0dip">
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:textDirection="locale" />
+            <TextView android:textAppearance="@style/TextAppearance.StatusBar.PhoneTicker" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:includeFontPadding="false" android:textDirection="locale" />
+        </com.android.systemui.statusbar.phone.TickerView>
+    </LinearLayout>
+</com.android.systemui.statusbar.phone.PhoneStatusBarView>

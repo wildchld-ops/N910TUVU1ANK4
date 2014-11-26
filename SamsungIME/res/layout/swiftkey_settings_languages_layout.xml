@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/select_languages" android:key="select_swiftkey_language_list"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/use_system_language" android:key="SETTINGS_DEFAULT_USE_SYSTEM_LANGUAGE" android:order="0" android:defaultValue="true" android:disableDependentsState="true" />
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/downloaded_languages" android:key="downloaded_languages" android:order="1" />
+    <PreferenceCategory android:layout="@layout/preference_category" android:title="@string/available_languages" android:key="available_languages" android:order="1000" />
+</PreferenceScreen>

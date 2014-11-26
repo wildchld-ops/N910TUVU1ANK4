@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.Folder android:orientation="vertical" android:background="@drawable/home_folder_bg" android:paddingBottom="@dimen/folder_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/folder_layout_margin_top"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.launcher2.FolderEditText android:layout_gravity="start|top|center" android:id="@id/folder_name" android:capitalize="sentences" style="@style/FolderEditText" />
+        <FrameLayout android:layout_gravity="end|top|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/folder_option_button_margin_top">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/add_normal_folder_item" android:background="@drawable/tab_widget_indicator_selector" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/folder_option_button_size" android:layout_height="@dimen/folder_option_button_size" android:src="@drawable/menu_add_apps" android:scaleType="center" android:contentDescription="@string/folder_add_app" android:layout_marginEnd="@dimen/folder_option_button_margin_left" />
+                <ImageView android:id="@id/add_button_option_button_divider" android:background="@drawable/tw_divider_ab_holo_dark" android:layout_width="1.0dip" android:layout_height="@dimen/folder_option_button_size" />
+                <ImageView android:id="@id/folder_option_btn" android:background="@drawable/tab_widget_indicator_selector" android:focusable="true" android:layout_width="@dimen/folder_option_button_size" android:layout_height="@dimen/folder_option_button_size" android:src="@drawable/folder_option_btn" android:contentDescription="@string/options_menu" android:layout_marginStart="@dimen/folder_option_button_margin_left" android:layout_marginEnd="@dimen/folder_option_button_margin_right" />
+            </LinearLayout>
+        </FrameLayout>
+        <include android:id="@id/folder_option_view" android:visibility="gone" layout="@layout/folder_color_view" />
+    </FrameLayout>
+    <ScrollView android:id="@id/scroll_view" android:layout_width="wrap_content" android:layout_height="0.0dip">
+        <com.android.launcher2.CellLayoutNoGap android:scrollbarSize="@dimen/folder_scrollbar_size" android:scrollbarThumbVertical="@drawable/home_folder_scroll" android:id="@id/folder_content" android:paddingTop="0.0dip" android:paddingBottom="@dimen/folder_content_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hapticFeedbackEnabled="false" android:paddingStart="@dimen/folder_content_padding_left" android:paddingEnd="@dimen/folder_content_padding_right" launcher:cellWidth="@dimen/folder_cell_width" launcher:cellHeight="@dimen/folder_cell_height" launcher:cellGapX="@dimen/folder_width_gap" launcher:cellGapY="@dimen/folder_height_gap" />
+    </ScrollView>
+</com.android.launcher2.Folder>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="pref_key_root"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <Preference android:persistent="false" android:title="@string/pref_title_sms_disabled" android:key="pref_key_sms_disabled" android:summary="@string/pref_summary_sms_disabled">
+        <intent android:targetPackage="com.android.settings" android:action="android.provider.Telephony.ACTION_CHANGE_DEFAULT">
+            <extra android:name="package" android:value="com.android.mms" />
+        </intent>
+    </Preference>
+    <Preference android:persistent="false" android:title="@string/pref_title_sms_enabled" android:key="pref_key_sms_enabled" android:summary="@string/pref_summary_sms_enabled">
+        <intent android:targetPackage="com.android.settings" android:action="android.settings.WIRELESS_SETTINGS" />
+    </Preference>
+    <Preference android:persistent="false" android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_sms_restore" android:key="pref_key_sms_restore" android:summary="@string/pref_summary_sms_restore" />
+    <Preference android:title="@string/display_settings_title" android:key="pref_display_settings">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.DisplaySettings" />
+    </Preference>
+    <PreferenceScreen android:title="@string/set_title_quick_response" android:key="pref_key_text_templates">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.template.TextTemplateListActivity">
+            <extra android:name="callFromSettings" android:value="true" />
+        </intent>
+    </PreferenceScreen>
+    <Preference android:title="@string/pref_sms_setting" android:key="pref_sms_settings">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.TextMessagesSettings" />
+    </Preference>
+    <Preference android:title="@string/pref_mms_setting" android:key="pref_mms_settings">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.MultimediamessagesSettings" />
+    </Preference>
+    <Preference android:title="@string/menu_rcs_setting_title" android:key="pref_key_rcs_setting">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.rcs.settings.RcsMessagesSettings" />
+    </Preference>
+    <Preference android:title="@string/pref_title_auto_delete" android:key="pref_key_auto_delete" />
+    <CheckBoxPreference android:title="@string/priority_sender" android:key="pref_key_priority_sender" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/sender_info_title" android:key="pref_key_insert_sender_info_when_fwd_msg" android:summary="@string/sender_info_setting" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/pref_title_push_message_enabled" android:key="pref_key_enable_push_message" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    <Preference android:title="@string/pref_title_push_message_enabled" android:key="pref_key_enable_push_message_not_att" />
+    <Preference android:title="@string/set_title_cell_broadcast" android:key="pref_key_cb_settings_activation" android:defaultValue="false">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.ui.CbConfigPreferenceActivity" />
+    </Preference>
+    <CheckBoxPreference android:title="@string/set_title_cell_broadcast" android:key="pref_key_cb_settings_activation_checkbox" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <Preference android:title="@string/pref_title_notification_enabled" android:key="pref_key_enable_notifications" />
+    <Preference android:title="@string/pref_title_settings_cmas" android:key="pref_cmas_settings">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.CMASSettings" />
+    </Preference>
+    <Preference android:title="@string/pref_signature_settings" android:key="pref_key_enable_signature">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.SignatureSettings" />
+    </Preference>
+    <Preference android:title="@string/set_title_spam_filter" android:key="pref_key_spam_option_enable" />
+    <Preference android:title="@string/pref_delay_settings_title" android:key="pref_key_enable_delaysending" />
+    <CheckBoxPreference android:title="@string/pref_title_open_links_from_unknown_senders" android:key="pref_key_urllink_option_enable" android:summary="@string/pref_title_open_links_from_unknown_senders_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    <Preference android:title="@string/pref_callback_title" android:key="pref_key_settings_callback_number">
+        <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.CallbackNumberSettings" />
+    </Preference>
+</PreferenceScreen>

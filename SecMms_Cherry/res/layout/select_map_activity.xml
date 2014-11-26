@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/map_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/location_field" android:background="@drawable/tw_searchfiled_background" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="2.0dip">
+        <SearchView android:id="@id/search_view" android:paddingRight="-8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:capitalize="sentences" android:layout_weight="1.0" android:inputType="textAutoComplete" android:imeOptions="actionSearch|flagNoFullscreen" android:queryHint="@string/search_map" />
+        <ImageButton android:id="@id/current_location" android:background="@drawable/selector_composer_button_background" android:paddingLeft="13.0dip" android:paddingTop="9.0dip" android:paddingRight="13.0dip" android:paddingBottom="9.0dip" android:layout_width="56.0dip" android:layout_height="48.0dip" android:src="@drawable/selector_current_location_btn" android:contentDescription="@string/my_location_option" />
+    </LinearLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.google.android.maps.MapView android:enabled="true" android:id="@id/mapview_select" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:apiKey="0e2-_R-TfJvIB8nm1t1KMmwf6TNLj_ZrpJ2H5TQ" />
+    </FrameLayout>
+</LinearLayout>

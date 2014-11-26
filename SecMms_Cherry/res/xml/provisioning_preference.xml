@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/prov_transaction_log_category_title" android:key="prov_transaction_log_category_key">
+        <CheckBoxPreference android:title="@string/prov_transaction_log_title" android:key="prov_transaction_log_key" android:summary="@string/prov_transaction_log_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prov_optional_field_attendance_category_title" android:key="prov_transaction_log_category_key">
+        <CheckBoxPreference android:title="@string/prov_optional_field_attendance_title" android:key="prov_optional_field_attendance_key" android:summary="@string/prov_optional_field_attendance_summary" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prov_transaction_timeout_category_title" android:key="prov_transaction_timeout_category_key">
+        <EditTextPreference android:title="@string/prov_transaction_timeout_title" android:key="prov_transaction_timeout_key" android:defaultValue="240" android:inputType="number" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prov_uap_current_category_title">
+        <CheckBoxPreference android:title="@string/prov_uap_current" android:key="prov_uap_current_key" android:defaultValue="true" />
+        <EditTextPreference android:title="@string/prov_uastring_title" android:selectable="false" android:key="prov_uastring_current_key" android:defaultValue="SAMSUNG-ANDROID-MMS" />
+        <EditTextPreference android:title="@string/prov_uapurl_title" android:selectable="false" android:key="prov_uapurl_current_key" android:defaultValue="http://wap.samsungmobile.com/uaprof/samsung_android_mms.xml" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prov_uap_category_title" android:key="prov_uap_category_key">
+        <EditTextPreference android:title="@string/prov_uastring_title" android:key="prov_uastring_key" />
+        <EditTextPreference android:title="@string/prov_uapurl_title" android:key="prov_uapurl_key" />
+        <ListPreference android:entries="@array/select_ua_item" android:title="@string/prov_uap_select_title" android:key="prov_uap_select_key" android:summary="@string/prov_uap_select_summary" android:dialogTitle="@string/prov_uap_dialog_title" android:entryValues="@array/select_ua_item" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/prov_mmsc_category_title" android:key="prov_mmsc_category_key">
+        <EditTextPreference android:title="@string/prov_mmsc_title" android:key="prov_mmsc_key" />
+        <EditTextPreference android:title="@string/prov_mmsc_proxy_title" android:key="prov_mmsc_proxy_key" />
+        <EditTextPreference android:title="@string/prov_mmsc_port_title" android:key="prov_mmsc_port_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:visible="false" android:title="@string/prov_vzw_test_mode_category_title" android:key="prov_vzw_test_mode_category_key">
+        <ListPreference android:entries="@array/select_vzw_test_mode_item" android:title="@string/prov_vzw_test_mode_select_title" android:key="prov_vzw_test_mode_select_key" android:summary="@string/prov_vzw_test_mode_select_summary" android:defaultValue="commercial" android:dialogTitle="@string/prov_vzw_test_mode_dialog_title" android:entryValues="@array/select_vzw_test_mode_item" />
+        <PreferenceScreen android:title="@string/prov_vzw_test_mode_edit_title" android:summary="@string/prov_vzw_test_mode_edit_summary">
+            <PreferenceCategory android:title="@string/prov_vzw_test_mode_commercial_category_title">
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_mmsc_title" android:key="prov_vzw_test_mode_commercial_mmsc" android:defaultValue="http://mms.vtext.com/servelets/mms" />
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_uid_title" android:key="prov_vzw_test_mode_commercial_uid" android:defaultValue="MDN@vzw3g.com" />
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_password_title" android:key="prov_vzw_test_mode_commercial_password" android:defaultValue="vzw" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/prov_vzw_test_mode_lab_category_title">
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_mmsc_title" android:key="prov_vzw_test_mode_lab_mmsc" android:defaultValue="http://vzpix.com/servlets/mms" />
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_uid_title" android:key="prov_vzw_test_mode_lab_uid" android:defaultValue="hrltest@vzwtest.com" />
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_password_title" android:key="prov_vzw_test_mode_lab_password" android:defaultValue="vzwtest" />
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/prov_vzw_test_mode_domestic_category_title">
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_mmsc_title" android:key="prov_vzw_test_mode_domestic_mmsc" android:defaultValue="http://222.231.61.41/mms" />
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_uid_title" android:key="prov_vzw_test_mode_domestic_uid" android:defaultValue="sktelecom" />
+                <EditTextPreference android:title="@string/prov_vzw_test_mode_password_title" android:key="prov_vzw_test_mode_domestic_password" android:defaultValue="" />
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

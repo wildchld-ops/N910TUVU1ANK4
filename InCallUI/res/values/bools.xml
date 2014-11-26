@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_multiwindow_phone_enabled">true</bool>
+    <bool name="config_large_heap_enabled">true</bool>
+</resources>

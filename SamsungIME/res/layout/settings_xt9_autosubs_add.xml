@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/xt9_words_list_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xt9_autosubstitution_title_padding" android:layout_marginBottom="@dimen/xt9_autosubstitution_title_padding" android:text="@string/xt9_words_list_shortcut" android:layout_marginStart="@dimen/xt9_words_list_left_margin" />
+        <EditText android:id="@id/substitutionadd_edittext_adding_shortcut" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:maxLength="@integer/xt9_words_list_word_max_length" android:inputType="text" android:privateImeOptions="inputType=option" android:imeOptions="flagNoExtractUi" android:layout_marginStart="@dimen/xt9_words_list_left_margin" android:layout_marginEnd="@dimen/xt9_words_list_right_margin" />
+        <TextView android:textSize="@dimen/xt9_words_list_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/xt9_autosubstitution_title_padding" android:layout_marginBottom="@dimen/xt9_autosubstitution_title_padding" android:text="@string/xt9_words_list_substitution" android:layout_marginStart="@dimen/xt9_words_list_left_margin" />
+        <EditText android:id="@id/substitutionadd_edittext_addiing_substitution" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:maxLength="@integer/xt9_words_list_word_max_length" android:inputType="text" android:privateImeOptions="inputType=option" android:imeOptions="flagNoExtractUi" android:layout_marginStart="@dimen/xt9_words_list_left_margin" android:layout_marginEnd="@dimen/xt9_words_list_right_margin" />
+    </LinearLayout>
+</ScrollView>

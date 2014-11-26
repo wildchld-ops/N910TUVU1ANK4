@@ -1,0 +1,23 @@
+version: 2.0.0-RC2
+apkFileName: SamsungCamera3.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '19'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '1'
+  versionName: '3.0'
+compressionType: false
+unknownFiles:
+  com/samsung/dmc/ux/db/PersonalSettingInfo.aidl: '8'
+  com/samsung/dmc/ux/db/ProcessInfo.aidl: '8'
+  com/samsung/dmc/ux/db/UserInfo.aidl: '8'
+  com/samsung/shareshot/IShareShotCallbackRegister.aidl: '8'
+  com/samsung/shareshot/IShareShotService.aidl: '8'
+  com/samsung/shareshot/IShareShotServiceCallback.aidl: '8'
+  com/samsung/shareshot/User.aidl: '8'

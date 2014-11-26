@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/quick_setting_btn_text_image" android:focusable="false" android:layout_width="fill_parent" android:layout_height="@dimen/quick_setting_button_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:focusable="false" android:layout_width="@dimen/quick_setting_button_image_height" android:layout_height="@dimen/quick_setting_button_image_height">
+        <ImageView android:id="@id/btn_status_image" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+        <ImageView android:id="@id/btn_image" android:background="@drawable/tw_quick_panel_quick_setting_button_round_bg" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="center" android:contentDescription="@null" />
+    </FrameLayout>
+    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.QuickSettingButtonText" android:ellipsize="end" android:gravity="center" android:id="@id/btn_text" android:layout_width="fill_parent" android:layout_height="@dimen/quick_setting_button_text_height" android:layout_marginTop="@dimen/quick_setting_button_text_top" android:maxLines="2" android:includeFontPadding="false" android:lineSpacingExtra="@dimen/quick_setting_button_text_line_gap_size" />
+</LinearLayout>

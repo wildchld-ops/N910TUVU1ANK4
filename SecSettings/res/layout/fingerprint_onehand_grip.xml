@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0dip" android:textColor="@color/settings_text_color" android:id="@id/fingerprint_onehand_grip_message" android:paddingLeft="14.0dip" android:paddingTop="18.0dip" android:paddingRight="?android:scrollbarSize" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_onehand_grip_message_tablet" />
+            <ImageView android:id="@id/fingerprint_onehand_grip_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fingerprint_onehand_grip_marginLeft" android:layout_marginTop="50.0dip" android:layout_marginRight="@dimen/fingerprint_onehand_grip_marginRight" android:src="@drawable/img_home_swipe_onehand" android:layout_below="@id/fingerprint_onehand_grip_message" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0dip" android:textColor="@color/settings_text_color" android:id="@id/fingerprint_onehand_grip_message_more" android:paddingLeft="14.0dip" android:paddingTop="18.0dip" android:paddingRight="?android:scrollbarSize" android:paddingBottom="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_onehand_grip_message_more" android:layout_below="@id/fingerprint_onehand_grip_image" />
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="@style/SecurityPreferenceButtonContainer">
+        <Button android:id="@id/fingerprint_onehand_grip_skip" android:text="@string/fingerprint_onehand_grip_done" style="@style/SecurityPreferenceButton" />
+        <Button android:id="@id/fingerprint_onehand_grip_continue" android:text="@string/finger_register_button" style="@style/SecurityPreferenceButton" />
+    </LinearLayout>
+</LinearLayout>

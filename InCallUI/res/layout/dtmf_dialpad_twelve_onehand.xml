@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:id="@id/dialpad" android:background="@color/dialpad_background" android:paddingBottom="@dimen/dialpad_onehand_bottom_padding" android:layout_width="@dimen/button_onehand_frame_dialpad_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/dialpad_bottom_padding" android:layout_alignParentBottom="true" android:splitMotionEvents="false" android:layoutDirection="ltr" android:paddingStart="@dimen/dialpad_onehand_side_padding" android:paddingEnd="@dimen/dialpad_onehand_side_padding" android:layout_marginStart="@dimen/dialpad_onehand_arrow_margin_left" android:layout_marginEnd="@dimen/dialpad_onehand_margin_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="@dimen/incall_button_margin" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/one" android:src="@drawable/incall_dial_num_1_onehand" android:contentDescription="@string/description_image_button_one" android:layout_marginStart="0.0dip" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/two" android:src="@drawable/incall_dial_num_2_onehand" android:contentDescription="@string/description_image_button_two" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/three" android:src="@drawable/incall_dial_num_3_onehand" android:contentDescription="@string/description_image_button_three" android:layout_marginEnd="0.0dip" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="@dimen/incall_button_margin" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/four" android:src="@drawable/incall_dial_num_4_onehand" android:contentDescription="@string/description_image_button_four" android:layout_marginStart="0.0dip" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/five" android:src="@drawable/incall_dial_num_5_onehand" android:contentDescription="@string/description_image_button_five" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/six" android:src="@drawable/incall_dial_num_6_onehand" android:contentDescription="@string/description_image_button_six" android:layout_marginEnd="0.0dip" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="@dimen/incall_button_margin" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/seven" android:src="@drawable/incall_dial_num_7_onehand" android:contentDescription="@string/description_image_button_seven" android:layout_marginStart="0.0dip" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/eight" android:src="@drawable/incall_dial_num_8_onehand" android:contentDescription="@string/description_image_button_eight" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/nine" android:src="@drawable/incall_dial_num_9_onehand" android:contentDescription="@string/description_image_button_nine" android:layout_marginEnd="0.0dip" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="@dimen/incall_button_margin" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/star" android:src="@drawable/incall_dial_num_star_onehand" android:contentDescription="@string/description_image_button_star" android:layout_marginStart="0.0dip" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/zero" android:src="@drawable/incall_dial_num_0_onehand" android:contentDescription="@string/description_image_button_zero" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/pound" android:src="@drawable/incall_dial_num_pound_onehand" android:contentDescription="@string/description_image_button_pound" android:layout_marginEnd="0.0dip" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+</TableLayout>

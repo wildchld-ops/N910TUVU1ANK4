@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/targetCircle" android:layout_width="wrap_content" android:layout_height="222.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/movingCircle" android:layout_width="wrap_content" android:layout_height="222.0dip" />
+    <ImageView android:layout_gravity="center" android:id="@id/tabCircle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center" android:id="@id/handleImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="left|center" android:id="@id/rightArrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cover_incoming_call_widget_arrow_margin_right" android:layout_marginTop="@dimen/cover_incoming_call_widget_arrow_margin_top" />
+    <ImageView android:layout_gravity="right|center" android:id="@id/leftArrow" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cover_incoming_call_widget_arrow_margin_left" android:layout_marginBottom="@dimen/cover_incoming_call_widget_arrow_margin_bottom" />
+</merge>

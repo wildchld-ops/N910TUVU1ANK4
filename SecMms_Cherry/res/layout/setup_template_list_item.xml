@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/template_list_item" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="58.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/text_template_checkbox_layout" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/msg_list_checkbox_left_margin">
+        <com.sec.android.touchwiz.widget.TwCheckBox android:gravity="center" android:id="@id/list_item_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="19.0sp" android:textColor="@color/list_item_primary_text_color" android:gravity="center_vertical" android:id="@id/List_Item" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginStart="@dimen/msg_list_checkbox_left_margin" android:layout_marginEnd="12.0dip" />
+</LinearLayout>

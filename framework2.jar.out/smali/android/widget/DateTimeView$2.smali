@@ -1,0 +1,59 @@
+.class Landroid/widget/DateTimeView$2;
+.super Landroid/database/ContentObserver;
+.source "DateTimeView.java"
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingClass;
+    value = Landroid/widget/DateTimeView;
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Landroid/widget/DateTimeView;
+
+
+# direct methods
+.method constructor <init>(Landroid/widget/DateTimeView;Landroid/os/Handler;)V
+    .locals 0
+    .param p2    # Landroid/os/Handler;
+
+    iput-object p1, p0, Landroid/widget/DateTimeView$2;->this$0:Landroid/widget/DateTimeView;
+
+    invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onChange(Z)V
+    .locals 2
+    .param p1    # Z
+
+    iget-object v0, p0, Landroid/widget/DateTimeView$2;->this$0:Landroid/widget/DateTimeView;
+
+    const/4 v1, 0x0
+
+    iput-object v1, v0, Landroid/widget/DateTimeView;->mLastFormat:Ljava/text/DateFormat;
+
+    :try_start_0
+    iget-object v0, p0, Landroid/widget/DateTimeView$2;->this$0:Landroid/widget/DateTimeView;
+
+    invoke-virtual {v0}, Landroid/widget/DateTimeView;->update()V
+    :try_end_0
+    .catch Landroid/view/ViewRootImpl$CalledFromWrongThreadException; {:try_start_0 .. :try_end_0} :catch_0
+
+    :goto_0
+    return-void
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_0
+.end method

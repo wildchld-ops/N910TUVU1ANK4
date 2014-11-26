@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/gesture_callaccept_setting_title" android:key="parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:persistent="false" android:title="@string/gesture_learn_about_category" android:key="sensor_icon_pref_category_key" style="@style/PreferenceCategory">
+        <PreferenceScreen android:title="@string/gesture_learn_about" android:key="learn_about_pref_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:persistent="false" android:title="@string/gesture_callaccept_auto_start_speaker_category" android:key="auto_start_speaker_category_key" style="@style/PreferenceCategory">
+        <CheckBoxPreference android:title="@string/gesture_callaccept_auto_start_speaker_title" android:key="auto_start_speaker_pref_key" android:summary="@string/gesture_callaccept_auto_start_speaker_summary" />
+    </PreferenceCategory>
+</PreferenceScreen>

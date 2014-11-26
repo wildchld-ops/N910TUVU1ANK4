@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="14.0dip" android:textColor="#ff859bb1" android:gravity="right|center" android:layout_gravity="right" android:id="@id/image_more_button" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="20.0dip" android:drawableRight="@drawable/sms_msg_bt"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

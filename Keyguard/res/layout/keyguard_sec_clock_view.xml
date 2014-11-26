@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.SecKeyguardClock android:orientation="vertical" android:id="@id/keyguard_sec_clock_view" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/sec_single_clock" />
+        <include layout="@layout/sec_dual_clock" />
+    </RelativeLayout>
+    <include android:layout_gravity="bottom" layout="@layout/sec_adaptive_event_container_small" />
+</com.android.keyguard.sec.SecKeyguardClock>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:layout_width="@dimen/carmode_reject_event_width" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="#ff262b32" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:background="@color/carmode_reject_videocall_background_button" android:layout_width="fill_parent" android:layout_height="@dimen/carmode_reject_videocall_icon_height">
+            <ImageView android:layout_gravity="center" android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:src="@drawable/noti_event_icon_large_call_missed_carmode" />
+        </LinearLayout>
+        <TextView android:textSize="24.0dip" android:gravity="center" android:id="@id/videocall_reject_during_drivelink_text" android:background="@color/carmode_reject_videocall_background_event" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/carmode_reject_videocall_text" />
+        <Button android:textSize="24.0dip" android:textColor="#ffededed" android:id="@id/dismissButton" android:background="@color/carmode_reject_videocall_background_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/alert_dialog_dismiss" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/noti_popup_bg_shadow" />
+</LinearLayout>

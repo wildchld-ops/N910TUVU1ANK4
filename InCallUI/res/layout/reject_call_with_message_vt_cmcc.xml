@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/reject_call_with_message_content_all" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.android.incallui.RejectCallWithMessageContent android:orientation="vertical" android:id="@id/reject_call_with_message_content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+        <com.android.incallui.RejectCallWithMessageContentIconMode android:orientation="vertical" android:id="@id/reject_call_with_message_content_icon_mode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" />
+    </LinearLayout>
+</LinearLayout>

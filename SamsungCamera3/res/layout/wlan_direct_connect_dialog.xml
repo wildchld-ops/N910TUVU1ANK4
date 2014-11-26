@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="30.0dip" android:layout_marginBottom="17.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:textColor="#fff5f5f5" android:id="@id/message" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffe6e6e6" android:id="@id/EasyConnect" android:background="@drawable/tw_holo_light_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wifi_dialog_easy_connect" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffe6e6e6" android:id="@id/WifiDirectSettings" android:background="@drawable/tw_holo_light_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/wifi_dialog_manual_chn" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="49.0dip" android:layout_marginLeft="0.0dip" android:layout_marginTop="0.0dip" android:layout_marginRight="0.0dip" android:layout_marginBottom="0.0dip">
+            <Button android:textAppearance="?android:textAppearanceMedium" android:textColor="#ffe6e6e6" android:id="@id/WifiDirectCancel" android:background="@drawable/tw_holo_light_button" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

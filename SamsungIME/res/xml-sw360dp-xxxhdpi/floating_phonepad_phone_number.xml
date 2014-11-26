@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_phonepad_default_key_width" android:keyHeight="@dimen/floating_phonepad_default_key_height" android:horizontalGap="@dimen/floating_phonepad_default_key_horizontal_gap" android:verticalGap="@dimen/floating_phonepad_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_phonepad_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="49" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonenumber_key_icon_01_xml" />
+        <Key android:codes="50" android:keyIcon="@drawable/phonenumber_key_icon_02_xml" />
+        <Key android:codes="51" android:keyIcon="@drawable/phonenumber_key_icon_03_xml" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="52" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonenumber_key_icon_04_xml" />
+        <Key android:codes="53" android:keyIcon="@drawable/phonenumber_key_icon_05_xml" />
+        <Key android:codes="54" android:keyIcon="@drawable/phonenumber_key_icon_06_xml" />
+        <Key android:codes="10" android:keyEdgeFlags="right" android:keyIcon="@drawable/phonepad_key_icon_enter_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="55" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonenumber_key_icon_07_xml" />
+        <Key android:codes="56" android:keyIcon="@drawable/phonenumber_key_icon_08_xml" />
+        <Key android:codes="57" android:keyIcon="@drawable/phonenumber_key_icon_09_xml" />
+        <Key android:codes="-102" android:keyEdgeFlags="right" android:keyLabel="@string/key_label_range_symbol" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="42" android:keyEdgeFlags="left" android:keyIcon="@drawable/phonenumber_key_icon_star_xml" />
+        <Key android:codes="48" android:keyIcon="@drawable/phonenumber_key_icon_00_plus_xml" />
+        <Key android:codes="35" android:keyIcon="@drawable/phonenumber_key_icon_sharp_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_phonepad_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="incoming_call_widget_3way_targets">
+        <item>@drawable/ic_lockscreen_answer</item>
+        <item>@drawable/ic_lockscreen_text</item>
+        <item>@drawable/ic_lockscreen_decline</item>
+        <item>@null</item>
+    </array>
+    <string-array name="incoming_call_widget_3way_target_descriptions">
+        <item>@string/description_target_answer</item>
+        <item>@string/description_target_send_sms</item>
+        <item>@string/description_target_decline</item>
+        <item>@null</item>
+    </string-array>
+    <array name="incoming_call_widget_3way_direction_descriptions">
+        <item>@android:string/description_direction_right</item>
+        <item>@android:string/description_direction_up</item>
+        <item>@android:string/description_direction_left</item>
+        <item>@null</item>
+    </array>
+    <array name="incoming_call_widget_2way_targets">
+        <item>@drawable/ic_lockscreen_answer</item>
+        <item>@null</item>
+        <item>@drawable/ic_lockscreen_decline</item>
+        <item>@null</item>
+    </array>
+    <string-array name="incoming_call_widget_2way_target_descriptions">
+        <item>@string/description_target_answer</item>
+        <item>@null</item>
+        <item>@string/description_target_decline</item>
+        <item>@null</item>
+    </string-array>
+    <array name="incoming_call_widget_2way_direction_descriptions">
+        <item>@android:string/description_direction_right</item>
+        <item>@null</item>
+        <item>@android:string/description_direction_left</item>
+        <item>@null</item>
+    </array>
+    <string-array name="remainedDays_until_birthday">
+        <item>@string/BirthDay_remainedDays0</item>
+        <item>@string/BirthDay_remainedDays1</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDaysEtc</item>
+        <item>@string/BirthDay_remainedDays7</item>
+    </string-array>
+    <string-array name="remainedDays_until_anniversary">
+        <item>@string/Anniversary_remainedDays0</item>
+        <item>@string/Anniversary_remainedDays1</item>
+        <item>@string/Anniversary_remainedDaysEtc</item>
+        <item>@string/Anniversary_remainedDaysEtc</item>
+        <item>@string/Anniversary_remainedDaysEtc</item>
+        <item>@string/Anniversary_remainedDaysEtc</item>
+        <item>@string/Anniversary_remainedDaysEtc</item>
+        <item>@string/Anniversary_remainedDays7</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_nodes">
+        <item>Adc.First</item>
+        <item>Adc.Second</item>
+        <item>Adc.Third</item>
+        <item>Adc.Fourth</item>
+        <item>Adc.Fifth</item>
+        <item>Adc.Sixth</item>
+        <item>Adc.Seventh</item>
+        <item>Adc.Eighth</item>
+        <item>Adc.Ninth</item>
+        <item>Adc.Tenth</item>
+        <item>Adc.Eleventh</item>
+        <item>Adc.Twelfth</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_sprint_keys">
+        <item>*2</item>
+        <item>*4</item>
+        <item>0</item>
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>711</item>
+        <item>811</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_sprint_values">
+        <item>@string/abbreviated_dialing_codes_customer_care</item>
+        <item>@string/abbreviated_dialing_codes_wireless_account_information</item>
+        <item>@string/abbreviated_dialing_codes_operator</item>
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_carrier_service_repair</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_virgin_keys">
+        <item>*86</item>
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>*411</item>
+        <item>\#411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>*611</item>
+        <item>\#611</item>
+        <item>711</item>
+        <item>811</item>
+        <item>18883221122</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_virgin_values">
+        <item>@string/abbreviated_dialing_codes_call_care</item>
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+        <item>@string/abbreviated_dialing_codes_virgin_mobile_care</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_boost_keys">
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>*411</item>
+        <item>\#411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>*611</item>
+        <item>\#611</item>
+        <item>711</item>
+        <item>811</item>
+        <item>18882667848</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_boost_values">
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_care_services</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+        <item>@string/abbreviated_dialing_codes_boost_care</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_chameleon_keys">
+        <item>211</item>
+        <item>311</item>
+        <item>411</item>
+        <item>511</item>
+        <item>611</item>
+        <item>711</item>
+        <item>811</item>
+    </string-array>
+    <string-array name="abbreviated_dialing_codes_table_chameleon_values">
+        <item>@string/abbreviated_dialing_codes_community_information</item>
+        <item>@string/abbreviated_dialing_codes_non_emergency_services</item>
+        <item>@string/abbreviated_dialing_codes_directory_assistance</item>
+        <item>@string/abbreviated_dialing_codes_traffic_information</item>
+        <item>@string/abbreviated_dialing_codes_carrier_service_repair</item>
+        <item>@string/abbreviated_dialing_codes_trs_relay_for_tty</item>
+        <item>@string/abbreviated_dialing_codes_call_before_you_dig</item>
+    </string-array>
+    <string-array name="absent_num">
+        <item>ABSENT NUMBER</item>
+        <item>ABSENTNUMBER</item>
+    </string-array>
+</resources>

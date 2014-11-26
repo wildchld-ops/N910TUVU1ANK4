@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="phone_in_ecm_notification_time">
+        <item quantity="other">Aucune connexion de données pendant %s minutes.</item>
+        <item quantity="one">Aucune connexion de données pendant %s minute.</item>
+    </plurals>
+    <plurals name="alert_dialog_exit_ecm">
+        <item quantity="other">"Le mode Rappel d'urgence demeurera actif sur le téléphone pendant %s minutes. Les applications utilisant la connexion de données ne pourront pas être utilisées dans ce mode. Quitter maintenant ?"</item>
+        <item quantity="one">"Impossible d'utiliser la connexion de données pour les applications. Le mode Rappel d'urgence demeurera actif sur le téléphone pendant %s minutes. Quitter maintenant ?"</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm">
+        <item quantity="other">"L'action sélectionnée n'est pas disponible en mode Rappel d'urgence. Ce mode demeurera actif sur le téléphone pendant %s minutes. Quitter maintenant ?"</item>
+        <item quantity="one">"L'action sélectionnée n'est pas disponible en mode Rappel d'urgence. Ce mode demeurera actif sur le téléphone pendant %s minute. Quitter maintenant ?"</item>
+    </plurals>
+    <plurals name="alert_dialog_not_avaialble_in_ecm_no_time">
+        <item quantity="other">"L'action sélectionnée n'est pas disponible en mode de rappel d'urgence. Voulez-vous quitter maintenant?"</item>
+        <item quantity="one">"L'action sélectionnée n'est pas disponible en mode de rappel d'urgence. Voulez-vous quitter maintenant?"</item>
+    </plurals>
+</resources>

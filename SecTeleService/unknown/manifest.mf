@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Created-By: Flipboard Inc. 2013-07-27 - Samsung Electronics. 2013-07-30
+Copyright: 2013 Flipboard Inc, Samsung Electronics , All Rights Reserved
+Library-Version: 0.14 - S0.1
+Info: Confidential. For internal use only
+Sealed: true

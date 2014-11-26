@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/top" android:background="@color/emergency_dialer_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <EditText android:textSize="@dimen/emergency_dialer_onehand_digits_text" android:textColor="@color/dialpad_edittext_text_color" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/dialpad_vertical_margin" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" />
+        <ViewStub android:id="@id/emergencyItemContainer" android:background="@android:color/transparent" android:layout="@layout/emergency_contact_item_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="start|bottom|center" android:id="@id/emergency_btn_arrow_left" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="144.0dip" android:layout_marginStart="@dimen/emergency_dialer_onehand_arrow_margin">
+            <ImageView android:gravity="center" android:background="@null" android:layout_width="@dimen/emergency_dialer_onehand_arrow_width" android:layout_height="@dimen/emergency_dialer_onehand_arrow_width" android:src="@drawable/call_btn_arrow_left" android:contentDescription="@string/onehand_left_hover" android:hoverPopupType="tooltip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/emergency_dialpad_container" android:background="@color/dialer_bg" android:padding="1.0dip" android:layout_width="wrap_content" android:layout_height="@dimen/emergency_dialer_onehand_dialpad_height" android:layout_marginBottom="@dimen/emergency_dialer_onehand_dialpad_margin_bottom" android:layout_marginStart="@dimen/emergency_dialer_onehand_dialpad_margin_left" android:layout_marginEnd="@dimen/emergency_dialer_onehand_dialpad_margin_right">
+            <include layout="@layout/emergency_dialpad_onehand" />
+            <include layout="@layout/dialpad_additional_buttons_sec_onehand" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end|bottom|center" android:id="@id/emergency_btn_arrow_right" android:visibility="gone" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="144.0dip" android:layout_marginEnd="@dimen/emergency_dialer_onehand_arrow_margin">
+            <ImageView android:gravity="center" android:background="@null" android:layout_width="@dimen/emergency_dialer_onehand_arrow_width" android:layout_height="@dimen/emergency_dialer_onehand_arrow_width" android:src="@drawable/call_btn_arrow_right" android:contentDescription="@string/onehand_right_hover" android:hoverPopupType="tooltip" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="kg_use_all_caps">false</bool>
+    <bool name="APKTOOL_DUMMY_000a">false</bool>
+    <bool name="APKTOOL_DUMMY_000b">false</bool>
+</resources>

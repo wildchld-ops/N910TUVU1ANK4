@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:background="@drawable/call_tips_popup_bg" android:layout_width="360.0dip" android:layout_height="wrap_content" android:layout_marginTop="85.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <TextView android:textSize="22.0dip" android:textColor="#ff3cbee4" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:text="@string/incoming_tips_popup_title" />
+            <ImageButton android:layout_gravity="center_vertical" android:id="@id/call_tips_popup_cancel" android:background="@android:color/transparent" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="7.0dip" android:src="@drawable/call_tips_cancel_icon" android:layout_alignParentRight="true" />
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="1.0dip" android:layout_height="23.0dip" android:layout_marginTop="3.5dip" android:layout_marginRight="44.0dip" android:src="@drawable/call_tips_title_divider" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="111.0dip" android:layout_marginBottom="16.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_tips_01" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" android:layout_marginRight="1.0dip" android:text="@string/incoming_tips_popup_content_answer" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="131.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_tips_02" />
+            <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_marginRight="1.0dip" android:text="@string/incoming_tips_popup_content_reject" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

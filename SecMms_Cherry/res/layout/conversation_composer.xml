@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/conversation_composer_left_screen" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/conversationlist_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/conversation_composer_right_screen" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/composer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <TextView android:textSize="19.0sp" android:textColor="@color/conversation_no_message_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_screen" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_selected_item" android:singleLine="true" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/empty_view_background_composer" android:background="@drawable/no_item_l" android:visibility="gone" android:layout_width="@dimen/message_empty_view_bg_horizontal_width" android:layout_height="@dimen/message_empty_view_bg_horizontal_height" />
+        <TextView android:textSize="@dimen/conversation_empty_view_popup_textsize" android:textColor="@color/conversation_no_text_template_color" android:layout_gravity="right" android:id="@id/empty_view_popup_composer" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="6.0dip" android:text="@string/empty_template_string" android:contentDescription="@string/empty_template_string_guide" />
+    </FrameLayout>
+    <ViewStub android:id="@id/splitbar" android:layout="@layout/splitbar" android:layout_width="@dimen/splitbar_width" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/message_icon_contacts_easymode_dim" />
+    <item android:state_pressed="true" android:drawable="@drawable/message_icon_contacts_easymode_press" />
+    <item android:drawable="@drawable/message_icon_contacts_easymode" />
+</selector>

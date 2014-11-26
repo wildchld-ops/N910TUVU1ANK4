@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/settings_fragment_desc_text_size" android:id="@id/fingerprint_features_message_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fingerprint_manager_list_leftright_margin" android:layout_marginTop="@dimen/fingerprint_register_marginTop" android:layout_marginRight="@dimen/fingerprint_manager_list_leftright_margin" android:text="@string/paypal_payment_description" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fingerprint_layout_marginLeft" android:layout_marginTop="50.0dip" android:layout_marginRight="@dimen/fingerprint_layout_marginRight" android:layout_marginBottom="20.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/settings_fragment_desc_text_size" android:textColor="#fff5f5f5" android:layout_gravity="center" android:id="@id/fido_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fido_program" android:fontFamily="Roboto" />
+                <Button android:textSize="22.0dip" android:layout_gravity="center" android:id="@id/install_button" android:layout_width="@dimen/paypal_payment_button_width" android:layout_height="@dimen/paypal_payment_button_height" android:layout_marginTop="5.0dip" android:text="@string/paypal_install_button" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip">
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/settings_fragment_desc_text_size" android:textColor="#fff5f5f5" android:layout_gravity="center" android:id="@id/paypal_account" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/paypal_account" android:fontFamily="Roboto" />
+                <Button android:textSize="22.0dip" android:layout_gravity="center" android:id="@id/link_button" android:layout_width="@dimen/paypal_payment_button_width" android:layout_height="@dimen/paypal_payment_button_height" android:layout_marginTop="5.0dip" android:text="@string/paypal_link_button" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

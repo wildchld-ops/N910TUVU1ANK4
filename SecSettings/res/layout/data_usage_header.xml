@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/network_switches_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:layout_marginRight="-5.0dip">
+        <LinearLayout android:orientation="vertical" android:id="@id/network_switches" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:listDivider" android:showDividers="middle" />
+    </FrameLayout>
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="-5.0dip" android:layout_marginRight="-5.0dip" />
+    <include layout="@layout/data_usage_cycles" />
+    <include layout="@layout/data_usage_chart" />
+    <TextView android:textSize="@dimen/settings_fragment_desc_text_size" android:id="@id/usage_summary" android:paddingTop="13.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/settings_side_margin" android:paddingEnd="@dimen/settings_side_margin" />
+    <TextView android:textSize="@dimen/settings_fragment_desc_text_size" android:id="@id/usage_disclaimer" android:paddingLeft="@dimen/settings_side_margin" android:paddingRight="@dimen/settings_side_margin" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data_usage_disclaimer" />
+    <Button android:textSize="18.0sp" android:id="@id/upgrade_btn" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/btn_tmo" />
+    <TextView android:textSize="@dimen/settings_fragment_desc_text_size" android:id="@android:id/empty" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data_usage_empty" android:paddingStart="@dimen/settings_side_margin" android:paddingEnd="@dimen/settings_side_margin" />
+    <include layout="@layout/data_usage_detail" />
+</LinearLayout>

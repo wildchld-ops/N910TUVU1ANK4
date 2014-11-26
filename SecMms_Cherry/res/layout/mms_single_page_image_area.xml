@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/mms_single_page_image_layout" android:paddingTop="8.0dip" android:paddingBottom="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="76.0dip" android:layout_centerVertical="true">
+        <ImageView android:id="@id/media_image" android:background="@drawable/media_select" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/detail_view_image_error" android:adjustViewBounds="true" />
+        <ImageView android:layout_gravity="center" android:id="@id/videp_play_icon" android:focusable="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_play_button" />
+    </FrameLayout>
+    <LinearLayout android:background="@drawable/message_attach_bg_01" android:layout_width="61.0dip" android:layout_height="37.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <ImageButton android:id="@id/image_save_button_1" android:background="@drawable/selector_attachment_save_button" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/message_viewer_attachment_save_icon" android:contentDescription="@string/save" />
+    </LinearLayout>
+</RelativeLayout>

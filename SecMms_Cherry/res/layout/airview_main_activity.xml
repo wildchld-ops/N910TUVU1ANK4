@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/messageList" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <Button android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="left" android:id="@id/infoCompleteBubble" android:background="@drawable/help_popup_picker_bg_w_01" android:paddingLeft="23.0dip" android:paddingTop="11.0dip" android:paddingRight="23.0dip" android:paddingBottom="11.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="48.0dip" android:text="@string/airview_infoCompleteBubble" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:lineSpacingExtra="5.0dip" />
+</RelativeLayout>

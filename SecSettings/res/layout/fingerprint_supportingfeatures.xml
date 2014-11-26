@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/fingerprintlock_textsize" android:id="@id/fingerprint_features_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/fingerprint_manager_list_leftright_margin" android:layout_marginTop="@dimen/fingerprint_register_marginTop" android:layout_marginRight="@dimen/fingerprint_manager_list_leftright_margin" android:text="@string/fingerprint_samsung_account_message_touch" />
+    </LinearLayout>
+</ScrollView>

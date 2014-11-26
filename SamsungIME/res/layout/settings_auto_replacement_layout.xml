@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:id="@id/settings_auto_replacement" android:title="@string/use_auto_correction" android:key="settings_auto_replacement"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

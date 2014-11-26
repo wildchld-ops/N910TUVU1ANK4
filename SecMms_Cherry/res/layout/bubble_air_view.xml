@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="vertical" android:background="@drawable/f_airview_popup_picker_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/hoverimg" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageView android:layout_gravity="center" android:id="@id/hover_video_play_button" android:background="@drawable/msg_video_play_button_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_content_gap" android:layout_marginBottom="@dimen/bubble_content_gap" />
+        </FrameLayout>
+        <ImageButton android:layout_gravity="end|top|center" android:id="@id/savebtn" android:background="@drawable/save_button_selector" android:focusable="true" android:visibility="gone" android:layout_width="31.0dip" android:layout_height="31.0dip" android:layout_marginTop="6.0dip" android:contentDescription="@string/save" android:layout_marginEnd="6.0dip" />
+    </FrameLayout>
+</FrameLayout>

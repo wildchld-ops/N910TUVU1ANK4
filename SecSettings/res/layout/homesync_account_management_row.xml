@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/membermgmt_list_padding_left" android:paddingTop="@dimen/membermgmt_list_padding_bottom" android:paddingRight="@dimen/membermgmt_list_padding_right" android:paddingBottom="@dimen/membermgmt_list_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.4">
+        <TextView android:textSize="@dimen/homesync_member_mgmt_list_row_1_column_1" android:textColor="@color/homesync_member_mgmt_list_row_1_column_1" android:ellipsize="end" android:gravity="left" android:id="@id/name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="Roboto" />
+        <TextView android:textSize="@dimen/homesync_member_mgmt_list_row_2_column_1" android:textColor="@color/homesync_member_mgmt_list_row_2_column_1" android:ellipsize="end" android:gravity="left|center" android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="Roboto" />
+    </LinearLayout>
+    <ImageView android:id="@id/view_separator" android:background="@drawable/setting_member_devider" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/membermgmt_list_column_2_left" android:layout_marginRight="5.0dip" android:layout_weight="0.6">
+        <TextView android:textSize="@dimen/homesync_member_mgmt_list_row_1_column_2" android:textColor="@color/homesync_member_mgmt_list_row_1_column_2" android:ellipsize="end" android:gravity="left" android:id="@id/is_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:fontFamily="Roboto" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/image_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_member_vpn" />
+            <TextView android:textSize="@dimen/homesync_member_mgmt_list_column_3" android:textColor="@color/homesync_member_mgmt_list_column_3" android:ellipsize="end" android:gravity="left" android:layout_gravity="center_vertical" android:id="@id/size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="Roboto" />
+            <Button android:textColor="@android:color/black" android:ellipsize="end" android:id="@id/delete_admin" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

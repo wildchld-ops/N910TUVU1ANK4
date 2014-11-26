@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/cyrill_default_key_width" android:keyHeight="@dimen/qwerty_default_key_height" android:horizontalGap="@dimen/cyrill_default_key_horizontal_gap" android:verticalGap="@dimen/qwerty_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/qwerty_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:keyHeight="@dimen/qwerty_number_key_height" android:horizontalGap="@dimen/qwerty_default_key_horizontal_gap" android:rowEdgeFlags="top">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="49" android:keyLabel="1" />
+        <Key android:codes="50" android:keyLabel="2" />
+        <Key android:codes="51" android:keyLabel="3" />
+        <Key android:codes="52" android:keyLabel="4" />
+        <Key android:codes="53" android:keyLabel="5" />
+        <Key android:codes="54" android:keyLabel="6" />
+        <Key android:codes="55" android:keyLabel="7" />
+        <Key android:codes="56" android:keyLabel="8" />
+        <Key android:codes="57" android:keyLabel="9" />
+        <Key android:codes="48" android:keyLabel="0" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/cyrill_first_col_horizontal_gap" android:codes="1081" android:keyLabel="й" />
+        <Key android:codes="1094" android:keyLabel="ц" />
+        <Key android:codes="1091" android:keyLabel="у" />
+        <Key android:codes="1082" android:keyLabel="к" />
+        <Key android:codes="1077" android:keyLabel="е" />
+        <Key android:codes="1085" android:keyLabel="н" />
+        <Key android:codes="1075" android:keyLabel="г" />
+        <Key android:codes="1096" android:keyLabel="ш" />
+        <Key android:codes="1097" android:keyLabel="щ" />
+        <Key android:codes="1079" android:keyLabel="з" />
+        <Key android:codes="1093" android:keyLabel="х" />
+        <Key android:codes="1098" android:keyLabel="ъ" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/cyrill_first_col_horizontal_gap" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/cyrill_first_col_horizontal_gap_second_line" android:codes="1092" android:keyLabel="ф" />
+        <Key android:codes="1099" android:keyLabel="ы" />
+        <Key android:codes="1074" android:keyLabel="в" />
+        <Key android:codes="1072" android:keyLabel="а" />
+        <Key android:codes="1087" android:keyLabel="п" />
+        <Key android:codes="1088" android:keyLabel="р" />
+        <Key android:codes="1086" android:keyLabel="о" />
+        <Key android:codes="1083" android:keyLabel="л" />
+        <Key android:codes="1076" android:keyLabel="д" />
+        <Key android:codes="1078" android:keyLabel="ж" />
+        <Key android:codes="1101" android:keyLabel="э" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/cyrill_first_col_horizontal_gap_second_line" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/cyrill_l_shift_key_width" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-400" android:keyLabel="StrEmpty" />
+        <Key android:horizontalGap="@dimen/cyrill_horizontal_gap_right_of_shift" android:codes="1103" android:keyLabel="я" />
+        <Key android:codes="1095" android:keyLabel="ч" />
+        <Key android:codes="1089" android:keyLabel="с" />
+        <Key android:codes="1084" android:keyLabel="м" />
+        <Key android:codes="1080" android:keyLabel="и" />
+        <Key android:codes="1090" android:keyLabel="т" />
+        <Key android:codes="1100" android:keyLabel="ь" />
+        <Key android:codes="1073" android:keyLabel="б" />
+        <Key android:codes="1102" android:keyLabel="ю" />
+        <Key android:codes="1105" android:keyLabel="ё" />
+        <Key android:keyWidth="@dimen/cyrill_r_shift_key_width" android:horizontalGap="@dimen/cyrill_horizontal_gap_left_of_backspace" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_multi_language" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_multi_language" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width_no_voice" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_url" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width_uri" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space_uri" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space_uri" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_www_dot_key_width" android:codes="-113" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_url" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_email" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width_email" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space_email" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space_email" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_dot_com_key_width" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_email" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_url_multi_language" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="47" android:keyLabel="/" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width_uri_multi_language" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space_uri" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space_uri" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_www_dot_key_width_multi_language" android:codes="-113" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_url_multi_language" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_email_multi_language" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="64" android:keyLabel="\@" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width_email_multi_language" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space_email" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space_email" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_dot_com_key_width_multi_language" android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_email_multi_language" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_comma">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_multi_language" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space" android:codes="-122" android:popupKeyboard="@xml/popup_template_keyboard" android:keyLabel="." />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width_multi_language" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyWidth="@dimen/qwerty_default_key_width" android:horizontalGap="@dimen/qwerty_last_line_default_horizontal_gap" android:rowEdgeFlags="bottom" android:keyboardMode="@id/mode_mirrorlink">
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_first_invisible_key" android:codes="-259" android:keyEdgeFlags="left" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-102" android:keyLabel="\?123" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_shift" android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:keyWidth="@dimen/qwerty_space_key_width_no_voice" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_space" android:codes="32" />
+        <Key android:horizontalGap="@dimen/qwerty_horizontal_gap_right_of_space" android:codes="-229" android:keyIcon="@drawable/keypad_hide_icon" />
+        <Key android:keyWidth="@dimen/qwerty_enter_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_backspace" android:codes="10" android:keyLabel="StrEmpty" />
+        <Key android:keyWidth="@dimen/qwerty_invisible_key_width" android:horizontalGap="@dimen/qwerty_horizontal_gap_left_of_last_invisible_key" android:codes="-259" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/qwerty_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

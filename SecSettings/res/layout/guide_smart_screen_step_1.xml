@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/guide_bubble_summary" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/com.android.settings">
+    <com.android.settings.accessibility.smartscroll.touchwiz.widget.TwHelpTextView android:id="@id/visual_que_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/Indicator_popup" touchwiz:insideImg_paddingLeft="@dimen/visual_icon_padding_left" touchwiz:insideImg_paddingRight="@dimen/visual_icon_padding_left" touchwiz:insideImg_paddingTop="@dimen/visual_icon_padding_top" touchwiz:insideImg_paddingBottom="@dimen/visual_icon_padding_bottom" touchwiz:insideImg_height="@dimen/visual_icon_height" touchwiz:insideImg_width="@dimen/visual_icon_width" touchwiz:image="@drawable/visual_que_icon" style="@style/HelpIconGuideTheme" />
+</RelativeLayout>

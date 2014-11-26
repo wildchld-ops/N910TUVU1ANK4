@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_horizontal" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="42.0dip" android:layout_marginRight="42.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff000000" android:id="@id/guide" android:paddingLeft="18.0dip" android:paddingTop="14.0dip" android:paddingRight="18.0dip" android:paddingBottom="18.0dip" android:layout_width="360.0dip" android:layout_height="wrap_content" android:text="@string/airbutton_help_popup" android:maxLines="7" />
+    </FrameLayout>
+</LinearLayout>

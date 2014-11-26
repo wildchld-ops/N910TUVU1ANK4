@@ -1,0 +1,128 @@
+<LevelsModel>
+
+    <steps>
+        <step id="0" temp="370"/>
+        <step id="1" temp="390"/>
+        <step id="2" temp="480"/>
+        <step id="3" temp="530"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="CPUFreqMax"/>
+        <writer name="CPUCoreMax"/>
+        <writer name="GPUFreqMax"/>
+        <writer name="LCDBrightness"/>
+        <writer name="Charging"/>
+        <writer name="Flash"/>
+        <writer name="Recording"/>
+    </writers>
+
+    <conditions>
+        <condition name="HotGameControl5"/>
+        <condition name="BrowserMode"/>
+        <condition name="AppStart"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="3"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HotGameControl5"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="1134000"/>
+                        <setting writer="Charging"      value="70"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="BrowserMode"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="Charging"      value="70"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="AppStart"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

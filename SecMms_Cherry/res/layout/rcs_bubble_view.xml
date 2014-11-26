@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.rcs.RcsBubbleView android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/rcs_text_view_top" layout="@layout/message_list_item_text" />
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="left" android:id="@id/rcs_slide_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/rcs_image_view" android:background="@drawable/mms_image_thumbnail_selector" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_content_gap" android:layout_marginBottom="@dimen/bubble_content_gap" android:adjustViewBounds="true" android:maxWidth="@dimen/mms_slide_view_image_maxwidth" android:maxHeight="140.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/rcs_video_play_button" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_content_gap" android:layout_marginBottom="@dimen/bubble_content_gap" android:src="@drawable/selector_msg_videoplay_button" />
+        </FrameLayout>
+    </LinearLayout>
+    <include android:id="@id/rcs_text_view_bottom" layout="@layout/message_list_item_text" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/rcs_location_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/slide_frame">
+        <ImageView android:layout_gravity="top|left|center" android:id="@id/rcs_location_image_view" android:background="@drawable/mms_image_thumbnail_selector" android:visibility="gone" android:longClickable="true" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="7.0dip" android:adjustViewBounds="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rcs_location_view_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/slide_frame">
+            <TextView android:textStyle="bold" android:textColor="@color/msg_location_color" android:layout_gravity="left" android:id="@id/rcs_location_title_view" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/bubble_location_text_max_width" />
+            <TextView android:textColor="@color/msg_location_color" android:layout_gravity="left" android:id="@id/rcs_location_address_view" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/bubble_content_gap" android:maxWidth="@dimen/bubble_location_text_max_width" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rcs_audio_info" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_audio_content_margin_top" android:layout_marginBottom="@dimen/bubble_audio_content_margin_bottom">
+        <ImageView android:id="@id/rcs_audio_play" android:background="@drawable/selector_msg_play_button" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/message_list_audio_info_color" android:ellipsize="middle" android:id="@id/rcs_audio_text" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/bubble_audio_attach_max_width" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/rcs_file_size_info_color" android:ellipsize="middle" android:id="@id/rcs_audio_size_text" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/bubble_audio_attach_max_width" android:text="@string/file_size_info_rcs_bubble" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/rcs_file_info" android:visibility="gone" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/bubble_audio_content_margin_top" android:layout_marginBottom="@dimen/bubble_audio_content_margin_bottom">
+        <ImageView android:id="@id/rcs_application_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/rcs_file_info_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/message_list_audio_info_color" android:ellipsize="middle" android:id="@id/rcs_file_name_view" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/bubble_audio_attach_max_width" android:singleLine="true" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/rcs_file_size_info_color" android:id="@id/rcs_file_size_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_size_info_rcs_bubble" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="16.0dip" android:textColor="@color/rcs_file_size_info_color" android:id="@id/rcs_file_size_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/file_size_info_rcs_bubble" />
+    <TextView android:textSize="16.0dip" android:textColor="#ff000000" android:id="@id/rcs_ft_status_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="200.0dip" />
+</com.android.mms.rcs.RcsBubbleView>

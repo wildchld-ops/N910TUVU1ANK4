@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.widget.FontSizePreference android:entries="@array/pref_entries_widget_font_size" android:title="@string/font_size" android:key="pref_key_widget_font_size" android:defaultValue="Normal" android:dialogTitle="@string/font_size" android:entryValues="@array/pref_entry_values_widget_font_size" />
+</PreferenceScreen>

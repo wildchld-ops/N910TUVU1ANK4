@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/signature_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:id="@id/button_on_callbacknumber" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <EditText android:textSize="18.0sp" android:gravity="center_vertical" android:id="@id/callback_settings_editor" android:paddingTop="@dimen/msg_edittext_top_padding" android:paddingBottom="@dimen/msg_edittext_bottom_padding" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="7.0dip" android:minHeight="36.0dip" android:hint="@string/enter_number" android:singleLine="false" android:inputType="phone" />
+    </RelativeLayout>
+</LinearLayout>

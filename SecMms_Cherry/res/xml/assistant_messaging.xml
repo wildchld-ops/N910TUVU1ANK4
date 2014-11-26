@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assistant-list>
+    <button name="@string/search_map" action="com.android.mms.ui.conversationlistfragment.searchmessages" resource="@drawable/assistant_menu_icon_messages_search" />
+    <button name="@string/menu_compose_new" action="com.android.mms.ui.conversationlistfragment.composemessage" resource="@drawable/assistant_menu_icon_messages_new_message" />
+    <button name="@string/phone_book_button_description" action="com.android.mms.ui.composemessagefragment.attachcontacts" resource="@drawable/assistant_menu_icon_messages_add_from_contacts" />
+    <button name="@string/send_call" action="com.android.mms.ui.composemessagefragment.calltocontact" resource="@drawable/assistant_menu_icon_messages_call" />
+    <button name="@string/delete" action="com.android.mms.ui.composemessagefragment.delete" resource="@drawable/assistant_menu_icon_messages_delete" />
+    <button name="@string/send" action="com.android.mms.ui.composemessagefragment.send" resource="@drawable/assistant_menu_icon_messages_send" />
+</assistant-list>

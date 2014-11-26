@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="5.0dip" android:paddingTop="7.0dip" android:paddingRight="?android:scrollbarSize" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.touchwiz.widget.TwCheckBox android:layout_gravity="center_vertical" android:id="@id/chButton" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/msg_list_checkbox_left_margin" android:layout_marginRight="@dimen/msg_list_checkbox_right_margin" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/savedMsgList_item_root" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/file_type_icon" android:paddingRight="5.0dip" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toRightOf="@id/file_type_icon" android:layout_centerVertical="true">
+            <TextView android:textAppearance="@android:attr/textAppearanceLarge" android:textSize="19.0sp" android:textColor="@color/ngm_text_color" android:ellipsize="middle" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/file_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/file_name" android:layout_centerVertical="true">
+                <TextView android:textSize="17.0dip" android:textColor="@color/secondary_text_color" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+                <TextView android:textSize="17.0dip" android:textColor="@color/selector_conversation_item_date_color" android:gravity="right" android:id="@id/file_date" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

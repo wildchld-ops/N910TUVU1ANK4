@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/zzzz_webselect_topbar_key_bg_press_ess" />
+    <item android:state_focused="true" android:drawable="@drawable/zzzz_webselect_topbar_key_bg_focus_ess" />
+    <item android:drawable="@drawable/zzzz_webselect_topbar_key_bg_default_ess" />
+</selector>

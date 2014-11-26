@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="compose_recipients_editor_top_margin">6.0dip</dimen>
+    <dimen name="compose_recipients_editor_bottom_margin">6.0dip</dimen>
+    <dimen name="slideshow_main_paddingtop">14.0dip</dimen>
+    <dimen name="slideshow_main_paddingleft">16.0dip</dimen>
+    <dimen name="slideshow_main_paddingright">16.0dip</dimen>
+    <dimen name="slideshow_view_paddingbottom">0.0dip</dimen>
+    <dimen name="rich_container_min_height_default">48.0dip</dimen>
+    <dimen name="rich_container_min_height_easymode">67.0dip</dimen>
+    <dimen name="composer_field_top_padding">6.0dip</dimen>
+    <dimen name="composer_field_bottom_padding">6.0dip</dimen>
+    <dimen name="composer_field_height">36.0dip</dimen>
+    <dimen name="message_empty_view_bg_width">360.0dip</dimen>
+    <dimen name="message_empty_view_bg_height">288.0dip</dimen>
+    <dimen name="message_empty_view_bg_horizontal_width">640.0dip</dimen>
+    <dimen name="message_empty_view_bg_horizontal_height">173.0dip</dimen>
+    <dimen name="slideshow_view1_paddingbottom">14.0dip</dimen>
+    <dimen name="outershadoweffectoffset">3.0px</dimen>
+</resources>

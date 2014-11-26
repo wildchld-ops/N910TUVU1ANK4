@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/background" android:drawable="@drawable/tw_progress_bg_ear_shock_holo_light" />
+    <item android:id="@id/progress">
+        <scale android:drawable="@drawable/tw_progress_ear_shock_holo_light" android:scaleWidth="100%" />
+    </item>
+</layer-list>

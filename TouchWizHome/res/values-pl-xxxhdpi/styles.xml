@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="HomeEditDragBarIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/home_edit_bar_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="HomeIcon" parent="@style/BaseHomeIcon">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">13.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">3.0dip</item>
+        <item name="android:lines">2</item>
+        <item name="android:drawablePadding">5.0dip</item>
+        <item name="android:fontFamily">Roboto_Regular</item>
+    </style>
+    <style name="HomeIcon.Folder" parent="@style/HomeIcon">
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:drawablePadding">1.0dip</item>
+    </style>
+    <style name="HomeIconMovie" parent="@style/BaseHomeIcon">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/contacts_text_bg</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:lines">2</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="HotseatIcon" parent="@style/BaseHotseatIcon">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">15.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:lines">1</item>
+        <item name="android:drawablePadding">8.0dip</item>
+        <item name="android:fontFamily">Roboto_Regular</item>
+    </style>
+    <style name="HotseatIcon.Folder" parent="@style/HotseatIcon">
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:drawablePadding">4.0dip</item>
+    </style>
+    <style name="MenuEditDragBarIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:textColor">@color/edit_cancel_menu_text</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">0.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:paddingBottom">0.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lines">1</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MenuIcon" parent="@style/BaseMenuIcon">
+        <item name="android:textSize">12.0dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:paddingLeft">1.0dip</item>
+        <item name="android:paddingTop">14.0dip</item>
+        <item name="android:paddingRight">1.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:lines">2</item>
+        <item name="android:drawablePadding">4.0dip</item>
+        <item name="android:fontFamily">Roboto_Regular</item>
+    </style>
+    <style name="MenuIcon.Folder" parent="@style/MenuIcon">
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:drawablePadding">0.0dip</item>
+    </style>
+    <style name="MenuIcon.FolderItem" parent="@style/MenuIcon">
+        <item name="android:paddingTop">9.0dip</item>
+        <item name="android:drawablePadding">-1.0dip</item>
+    </style>
+    <item type="style" name="APKTOOL_DUMMY_001e">false</item>
+    <item type="style" name="APKTOOL_DUMMY_001f">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0020">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0021">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0022">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0023">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0024">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0025">false</item>
+    <item type="style" name="APKTOOL_DUMMY_0026">false</item>
+</resources>

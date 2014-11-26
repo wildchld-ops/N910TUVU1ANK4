@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.KeyguardSignatureView android:id="@id/keyguard_signature_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/keyguard_signature_header_layout_margin" android:paddingRight="@dimen/keyguard_signature_header_layout_margin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="left|center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="@dimen/keyguard_signature_help_text_min_height_area" android:layout_weight="1.0">
+                <com.android.keyguard.KeyguardMessageArea android:textSize="@dimen/keyguard_signature_help_text_size" android:textColor="@color/keyguard_text_color_white" android:id="@id/keyguard_message_area_signature" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#40ffffff" style="@style/keyguard_text_shadow" />
+            </LinearLayout>
+            <ImageView android:layout_gravity="center" android:paddingLeft="@dimen/keyguard_signature_header_divider_margin" android:paddingRight="@dimen/keyguard_signature_header_divider_margin" android:layout_width="wrap_content" android:layout_height="@dimen/keyguard_signature_header_divider_height" android:src="@drawable/keyguard_signature_header_divider" />
+            <ImageButton android:layout_gravity="center" android:id="@id/signature_additional_pin_button" android:background="#00000000" android:paddingRight="@dimen/keyguard_signature_message_area_margin" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/keyguard_signature_backup_pin_btn" android:contentDescription="@string/kg_lockscreen_backup_pin_button_text" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/signature_signview_container" android:background="@drawable/keyguard_signature_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/keyguard_signature_signview_bottom_margin" />
+    </LinearLayout>
+    <include android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="vertical" android:id="@id/keyguard_selector_fade_container" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/keyguard_eca" />
+</com.android.keyguard.sec.KeyguardSignatureView>

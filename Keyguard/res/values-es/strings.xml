@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="keyguard_password_enter_puk_prompt">Código PUK</string>
+    <string name="keyguard_password_wrong_pin_code">Código PIN incorrecto</string>
+    <string name="keyguard_label_text">Para desbloquear el teléfono, pulsa la tecla de menú y, a continuación, pulsa 0.</string>
+    <string name="faceunlock_multiple_failures">Se ha superado el número máximo de intentos de desbloqueo facial.</string>
+    <string name="keyguard_charged">Cargada</string>
+    <string name="keyguard_plugged_in">Cargando (%d%%)</string>
+    <string name="keyguard_low_battery">Conecta el cargador.</string>
+    <string name="keyguard_instructions_when_pattern_disabled">Ve al menú para desbloquear la pantalla.</string>
+    <string name="keyguard_network_locked_message">Bloqueada para la red</string>
+    <string name="keyguard_missing_sim_message_short">Falta la tarjeta SIM</string>
+    <string name="keyguard_missing_sim_message">No se ha insertado ninguna tarjeta SIM en el teléfono.</string>
+    <string name="keyguard_missing_sim_instructions">Inserta una tarjeta SIM.</string>
+    <string name="keyguard_missing_sim_instructions_long">Falta la tarjeta SIM o no se puede leer. Introduce una tarjeta SIM.</string>
+    <string name="keyguard_permanent_disabled_sim_message_short">Tarjeta SIM inutilizable</string>
+    <string name="keyguard_permanent_disabled_sim_instructions">"Tu tarjeta SIM se ha inhabilitado permanentemente.
+ Para obtener otra, ponte en contacto con tu proveedor de servicios de telefonía."</string>
+    <string name="keyguard_sim_locked_message">La tarjeta SIM está bloqueada.</string>
+    <string name="keyguard_sim_puk_locked_message">La tarjeta SIM está bloqueada con el código PUK.</string>
+    <string name="keyguard_sim_unlock_progress_dialog_message">Desbloqueando tarjeta SIM…</string>
+    <string name="keyguard_accessibility_add_widget">Añadir widget</string>
+    <string name="keyguard_accessibility_widget_empty_slot">Vacío</string>
+    <string name="keyguard_accessibility_unlock_area_expanded">Área de desbloqueo ampliada</string>
+    <string name="keyguard_accessibility_unlock_area_collapsed">Área de desbloqueo contraída</string>
+    <string name="keyguard_accessibility_widget">Widget de %1$s</string>
+    <string name="keyguard_accessibility_user_selector">Selector de usuarios</string>
+    <string name="keyguard_accessibility_status">Estado</string>
+    <string name="keyguard_accessibility_camera">Cámara</string>
+    <string name="keyguard_accessibility_widget_reorder_start">Se ha empezado a cambiar el orden de los widgets.</string>
+    <string name="keyguard_accessibility_widget_reorder_end">Se ha terminado de cambiar el orden de los widgets.</string>
+    <string name="keyguard_accessibility_widget_deleted">Widget %1$s eliminado</string>
+    <string name="keyguard_accessibility_expand_lock_area">Ampliar área de desbloqueo</string>
+    <string name="keyguard_accessibility_slide_unlock">Desbloqueo deslizando el dedo</string>
+    <string name="keyguard_accessibility_pattern_unlock">Desbloqueo por patrón</string>
+    <string name="keyguard_accessibility_face_unlock">Desbloqueo facial</string>
+    <string name="keyguard_accessibility_pin_unlock">Desbloqueo por PIN</string>
+    <string name="keyguard_accessibility_password_unlock">Desbloqueo por contraseña</string>
+    <string name="keyguard_accessibility_pattern_area">Área de patrón</string>
+    <string name="keyguard_accessibility_slide_area">Área para deslizar</string>
+    <string name="keyguard_accessibility_transport_prev_description">Botón de canción anterior</string>
+    <string name="keyguard_accessibility_transport_next_description">Botón de siguiente canción</string>
+    <string name="keyguard_accessibility_transport_play_description">Botón de reproducción</string>
+    <string name="keyguard_accessibility_show_bouncer">Desbloquear para continuar</string>
+    <string name="keyguard_accessibility_hide_bouncer">Inicio cancelado</string>
+    <string name="keyguard_accessibility_delete_widget_start">Suelta %1$s para eliminarlo.</string>
+    <string name="keyguard_accessibility_delete_widget_end">%1$s no se eliminará.</string>
+    <string name="keyboardview_keycode_delete">Eliminar</string>
+    <string name="keyboardview_keycode_enter">Intro</string>
+    <string name="description_target_unlock">Desbloquear</string>
+    <string name="description_target_camera">Cámara</string>
+    <string name="description_target_silent">Silencio</string>
+    <string name="description_target_soundon">Sonido activado</string>
+    <string name="description_target_search">Buscar</string>
+    <string name="description_direction_up">Desliza el dedo hacia arriba para %s.</string>
+    <string name="description_direction_down">Desliza el dedo hacia abajo para %s.</string>
+    <string name="description_direction_left">Desliza el dedo hacia la izquierda para %s.</string>
+    <string name="description_direction_right">Desliza el dedo hacia la derecha para %s.</string>
+    <string name="user_switched">Usuario actual: %1$s</string>
+    <string name="kg_emergency_call_label">Llamada de emergencia</string>
+    <string name="kg_forgot_pattern_button_text">¿Has olvidado el patrón?</string>
+    <string name="kg_wrong_pattern">El patrón es incorrecto</string>
+    <string name="kg_wrong_password">Contraseña incorrecta</string>
+    <string name="kg_wrong_pin">PIN incorrecto</string>
+    <string name="kg_too_many_failed_attempts_countdown">Inténtalo de nuevo en %d segundos.</string>
+    <string name="kg_pattern_instructions">Dibuja tu patrón de desbloqueo.</string>
+    <string name="kg_sim_pin_instructions">Introduce el PIN de la tarjeta SIM.</string>
+    <string name="kg_pin_instructions">Introduce el PIN.</string>
+    <string name="kg_password_instructions">Escribe tu contraseña.</string>
+    <string name="kg_puk_enter_puk_hint">La tarjeta SIM está inhabilitada. Para continuar, introduce el código PUK. Si quieres obtener más información, ponte en contacto con el operador</string>
+    <string name="kg_puk_enter_pin_hint">Introduce el código PIN deseado</string>
+    <string name="kg_enter_confirm_pin_hint">Confirma el código PIN</string>
+    <string name="kg_sim_unlock_progress_dialog_message">Desbloqueando tarjeta SIM…</string>
+    <string name="kg_password_wrong_pin_code">Código PIN incorrecto</string>
+    <string name="kg_invalid_sim_pin_hint">Introduce un código PIN con una longitud comprendida entre cuatro y ocho dígitos.</string>
+    <string name="kg_invalid_sim_puk_hint">El código PUK debe tener ocho números como mínimo.</string>
+    <string name="kg_invalid_puk">Vuelve a introducir el código PUK correcto. Si introduces un código incorrecto varias veces, se inhabilitará la tarjeta SIM.</string>
+    <string name="kg_invalid_confirm_pin_hint">Los códigos PIN no coinciden.</string>
+    <string name="kg_login_too_many_attempts">Demasiados intentos incorrectos de crear el patrón</string>
+    <string name="kg_login_instructions">Para desbloquear el teléfono, inicia sesión con tu cuenta de Google.</string>
+    <string name="kg_login_username_hint">Nombre de usuario (correo electrónico)</string>
+    <string name="kg_login_password_hint">Contraseña</string>
+    <string name="kg_login_submit_button">Iniciar sesión</string>
+    <string name="kg_login_invalid_input">El nombre de usuario o la contraseña no son válidos.</string>
+    <string name="kg_login_checking_password">Comprobando cuenta…</string>
+    <string name="kg_too_many_failed_pin_attempts_dialog_message" formatted="false">"Has introducido un código PIN incorrecto %d veces. 
+
+Inténtalo de nuevo en %d segundos."</string>
+    <string name="kg_too_many_failed_password_attempts_dialog_message" formatted="false">"Has introducido una contraseña incorrecta %d veces. 
+
+Inténtalo de nuevo en %d segundos."</string>
+    <string name="kg_too_many_failed_pattern_attempts_dialog_message" formatted="false">"Has fallado %d veces al dibujar tu patrón de desbloqueo. 
+
+Inténtalo de nuevo en %d segundos."</string>
+    <string name="kg_failed_attempts_almost_at_wipe" formatted="false">Has intentado desbloquear el teléfono %d veces, pero no lo has conseguido. Si fallas otras %d veces, se restablecerán los datos de fábrica y se perderán todos los datos del usuario.</string>
+    <string name="kg_failed_attempts_almost_at_login" formatted="false">"Has fallado %d veces al dibujar el patrón de desbloqueo. Si fallas otras %d veces, deberás usar una cuenta de correo electrónico para desbloquear el teléfono.
+
+ Inténtalo de nuevo en %d segundos."</string>
+    <string name="kg_text_message_separator">" — "</string>
+    <string name="kg_reordering_delete_drop_target_text">Eliminar</string>
+    <string name="keyguard_transport_pause_description">Botón de pausa</string>
+    <string name="keyguard_transport_play_description">Botón de reproducción</string>
+    <string name="keyguard_transport_stop_description">Botón para detener la reproducción</string>
+    <string name="keyguard_carrier_default">Sin servicio</string>
+    <string name="app_name">KeyguardTestActivity</string>
+    <string name="secure_app_name">UnifiedCamera</string>
+    <string name="none_menu_item">Sin seguridad</string>
+    <string name="pin_menu_item">PIN</string>
+    <string name="password_menu_item">Contraseña</string>
+    <string name="pattern_menu_item">Patrón</string>
+    <string name="sim_pin_menu_item">PIN de tarjeta SIM</string>
+    <string name="sim_puk_menu_item">PUK de tarjeta SIM</string>
+    <string name="add_widget_item">Seleccionar widget...</string>
+    <string name="on_screen_turned_off">onScreenTurnedOff</string>
+    <string name="on_screen_turned_on">onScreenTurnedOn</string>
+    <string name="do_keyguard">doKeyguard</string>
+    <string name="verify_unlock">verifyUnlock</string>
+    <string name="keyguard_password_enter_pin_code">Introduce el código PIN.</string>
+    <string name="keyguard_password_enter_puk_code">Introduce el código PUK y un nuevo código PIN.</string>
+    <string name="keyguard_password_enter_pin_prompt">Nuevo código PIN</string>
+    <string name="keyguard_password_entry_touch_hint"><font size="17">Toca para introducir contraseña</font></string>
+    <string name="keyguard_password_enter_password_code">Introduce la contraseña para desbloquear.</string>
+    <string name="keyguard_password_enter_pin_password_code">Introduce el código PIN para desbloquear.</string>
+</resources>

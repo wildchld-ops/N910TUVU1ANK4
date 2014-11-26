@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceScreen android:title="@string/pref_title_settings_cmas" android:key="pref_key_cmas" android:summary="@string/pref_summary_alert_cmas" />
+    <CheckBoxPreference android:title="@string/cmas_receive" android:key="pref_cmas_receive_class1" />
+    <Preference android:title="@string/pref_title_notification_preview_cmas" android:key="pref_key_emergency_alert" android:summary="@string/cmas_notification_preive_summary" />
+    <CheckBoxPreference android:title="@string/pref_title_notification_vibrateWhen" android:key="pref_key_cmas_vibrateWhen_checkbox" android:summary="@string/pref_summary_cmas_vibrateWhen" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/pref_title_notification_alertWhen" android:key="pref_key_cmas_audioWhen_checkbox" android:summary="@string/pref_summary_notification_alertWhenSound" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:entries="@array/msg_reminder_alert_Array" android:title="@string/cmas_reminder" android:key="pref_key_emergency_alert_reminder" android:entryValues="@array/msg_reminder_alert_Array_values" />
+    <Preference android:title="@string/explainforCMASTitle" android:key="pref_key_explain_emergency_alert" android:dependency="pref_cmas_receive_class1" />
+</PreferenceScreen>

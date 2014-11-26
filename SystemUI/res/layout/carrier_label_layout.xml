@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/carrier_label_layout" android:background="@drawable/tw_close_handle_bg" android:layout_width="fill_parent" android:layout_height="@dimen/carrier_label_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@drawable/close_handler_divider" android:layout_width="fill_parent" android:layout_height="0.39999998dip" />
+    <TextView android:textAppearance="@style/TextAppearance.StatusBar.Expanded.Network" android:textColor="@color/carrier_label_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/carrier_label" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:fontFamily="sec-roboto-light" />
+</LinearLayout>

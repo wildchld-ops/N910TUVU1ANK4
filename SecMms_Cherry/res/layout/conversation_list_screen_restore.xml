@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/delete_thread_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <include android:layout_width="fill_parent" android:layout_height="@dimen/select_all_layout_height" layout="@layout/select_all" />
+        <ListView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawSelectorOnTop="false"
+          xmlns:app="http://schemas.android.com/apk/res/com.android.mms" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/empty_screen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/empty_background_image" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" />
+        <LinearLayout android:orientation="vertical" android:id="@id/empty_screen_portrait" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@id/emptyIconPort" android:layout_width="126.0dip" android:layout_height="126.0dip" android:layout_marginTop="140.0dip" android:src="@drawable/no_text_messages" android:layout_alignParentTop="true" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/empty_list_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/Conversation_count_zero" android:singleLine="true" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/empty_screen_landscape" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center" android:id="@id/emptyIconLand" android:layout_width="126.0dip" android:layout_height="126.0dip" android:layout_marginTop="51.0dip" android:src="@drawable/no_text_messages" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:ellipsize="marquee" android:layout_gravity="center" android:id="@id/empty_list_textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/Conversation_count_zero" android:singleLine="true" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

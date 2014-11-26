@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_month_key_width" android:keyHeight="@dimen/floating_month_key_height" android:horizontalGap="@dimen/floating_month_key_horizontal_gap" android:verticalGap="@dimen/floating_month_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_month_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top">
+        <Key android:codes="-141" android:keyEdgeFlags="left" />
+        <Key android:codes="-142" />
+        <Key android:codes="-143" android:keyEdgeFlags="right" />
+    </Row>
+    <Row>
+        <Key android:codes="-144" android:keyEdgeFlags="left" />
+        <Key android:codes="-145" />
+        <Key android:codes="-146" android:keyEdgeFlags="right" />
+    </Row>
+    <Row>
+        <Key android:codes="-147" android:keyEdgeFlags="left" />
+        <Key android:codes="-148" />
+        <Key android:codes="-149" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-150" android:keyEdgeFlags="left" />
+        <Key android:codes="-151" />
+        <Key android:codes="-152" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_month_last_line_vertical_gap" />
+</Keyboard>

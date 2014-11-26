@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingTop="42.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/call_card_mw_height" android:layout_alignParentTop="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/inCallScreenButtonsContainer" android:layout_width="fill_parent" android:layout_height="47.0dip" android:splitMotionEvents="false">
+        <ToggleButton android:textSize="16.0dip" android:textColor="@color/incall_call_banner_text_color" android:gravity="center" android:id="@id/speakerButton" android:background="@drawable/call_multitasking_btn_bg" android:layout_width="118.0dip" android:layout_height="fill_parent" android:textOn="@string/onscreenSpeakerText" android:textOff="@string/onscreenSpeakerText" android:singleLine="true" android:drawableLeft="@drawable/call_multitasking_ic_speaker" android:drawablePadding="-3.0dip" android:soundEffectsEnabled="false" />
+        <ToggleButton android:textSize="16.0dip" android:textColor="@color/incall_call_banner_text_color" android:id="@id/muteButton" android:background="@drawable/call_multitasking_btn_bg" android:layout_width="118.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:textOn="@string/onscreenMuteText" android:textOff="@string/onscreenMuteText" android:singleLine="true" android:drawableLeft="@drawable/call_multitasking_ic_mute" android:drawablePadding="-5.0dip" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/endButton" android:background="@drawable/call_multitasking_end_btn_bg" android:layout_width="118.0dip" android:layout_height="fill_parent" android:layout_marginLeft="3.0dip" android:splitMotionEvents="false">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_multitasking_ic_end" />
+            <TextView android:textSize="16.0dip" android:textColor="@color/incall_call_banner_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/onscreenEndCallText" android:singleLine="true" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

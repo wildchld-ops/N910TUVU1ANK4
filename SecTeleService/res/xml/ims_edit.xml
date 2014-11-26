@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:title="@string/ims_edit_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditTextPreference android:persistent="false" android:singleLine="true" android:title="@string/ims_domain_address_title" android:key="@string/domain_address" android:summary="@string/default_preference_summary" android:dialogTitle="@string/ims_domain_address_title" />
+    <ListPreference android:persistent="false" android:entries="@array/ims_call_types" android:title="@string/call_type_title" android:key="@string/call_type" android:summary="@string/default_ims_call_type" android:dialogTitle="@string/call_type_title" android:entryValues="@array/ims_call_types" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/use_ims_default_title" android:key="@string/use_ims_default" android:summary="@string/use_ims_default_summary" />
+</PreferenceScreen>

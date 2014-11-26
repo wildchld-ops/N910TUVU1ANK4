@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <Preference android:singleLine="true" android:maxLength="20" android:title="@string/pref_title_callback_text" android:key="pref_key_callback_text" android:summary="@string/pref_title_callback_text" />
+</PreferenceScreen>

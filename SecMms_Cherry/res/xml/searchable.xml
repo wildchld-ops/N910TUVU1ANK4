@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<searchable android:label="@string/search_label" android:hint="@string/search_map" android:searchSuggestAuthority="com.android.mms.SuggestionsProvider" android:searchSuggestSelection="pattern" android:searchSuggestIntentAction="android.intent.action.SEARCH" android:imeOptions="actionSearch|flagNoExtractUi" android:includeInGlobalSearch="false" android:searchSettingsDescription="@string/search_setting_description"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <extra-attr android:name="includeInInsightSearch" android:value="true" />
+    <extra-attr android:name="searchLayoutStyle" android:value="suggest_template_message" />
+    <extra-attr android:name="advancedSearchType" android:value="timeSpan" />
+    <extra-attr android:name="categoryFilters" android:value="communication" />
+</searchable>

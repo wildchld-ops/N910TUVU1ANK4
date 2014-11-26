@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="350.0dip" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="20.0dip" android:gravity="center_vertical" android:id="@id/txt_dialog" android:paddingLeft="20.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:text="@string/rcs_share_requesting" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_yes" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.0dip" android:text="@string/accept" android:layout_weight="0.3" />
+        <Button android:id="@id/btn_no" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/reject" android:layout_weight="0.3" />
+    </LinearLayout>
+</LinearLayout>

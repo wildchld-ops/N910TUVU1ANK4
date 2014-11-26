@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/callsettings_autoreject_mode_title" android:key="autoreject_mode_preference_key" android:summary="@string/callsettings_autoreject_autorejectnumbers" android:defaultValue="true" />
+    <PreferenceScreen android:title="@string/callsettings_autoreject_list_title" android:key="black_list_preference" android:summary="@string/callsettings_autoreject_list_summary" android:fragment="com.android.phone.callsettings.AutoRejectList" />
+</PreferenceScreen>

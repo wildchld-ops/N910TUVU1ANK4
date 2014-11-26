@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.PagedViewWidget android:orientation="vertical" android:background="@drawable/focusable_view_bg" android:focusable="true" launcher:blurColor="#ff6b8cf0" launcher:outlineColor="#ff8cd2ff"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <TextView android:textSize="@dimen/menuWidgets_title_textSize" android:textColor="#ffebebeb" android:ellipsize="end" android:id="@id/widget_name" android:fadingEdge="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:shadowColor="#ff000000" android:shadowDy="1.0" android:shadowRadius="4.0" android:paddingStart="2.0dip" />
+    <TextView android:textSize="@dimen/menuWidgets_widgetSize_textSize" android:textColor="#ffebebeb" android:id="@id/widget_dims" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:shadowColor="#ff000000" android:shadowDy="1.0" android:shadowRadius="4.0" android:paddingStart="2.0dip" />
+    <FrameLayout android:layout_gravity="start|top|center" android:layout_width="@dimen/menuWidgets_previewWidth" android:layout_height="@dimen/menuWidgets_previewHeight" android:layout_marginTop="3.0dip">
+        <ImageView android:id="@id/widget_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitStart" />
+    </FrameLayout>
+</com.android.launcher2.PagedViewWidget>

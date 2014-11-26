@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/popup_keyboard_width" android:keyHeight="@dimen/popup_keyboard_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod" />

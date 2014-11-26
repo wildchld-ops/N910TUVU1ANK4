@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="241.0dip" android:layout_height="67.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="241.0dip" android:layout_height="18.0dip" android:layout_marginTop="57.0dip" android:src="@drawable/airbutton_text_list_item_shadow_left" />
+    <FrameLayout android:background="@drawable/airbutton_menu_item_normal" android:layout_width="241.0dip" android:layout_height="60.0dip">
+        <ImageView android:id="@id/airbutton_recipient_list_item_imageview" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="10.0dip" />
+        <TextView android:textSize="19.0dip" android:textColor="#ff000000" android:ellipsize="end" android:gravity="left|center" android:id="@id/airbutton_recipient_list_item_textview" android:layout_width="171.0dip" android:layout_height="45.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="10.0dip" android:maxLines="2" />
+        <TextView android:textSize="18.0dip" android:textColor="#ff000000" android:gravity="bottom|left|center" android:id="@id/airbutton_recipient_list_item_textview_main" android:visibility="gone" android:layout_width="171.0dip" android:layout_height="25.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
+        <TextView android:textSize="15.0dip" android:textColor="#ff555555" android:gravity="top|left|center" android:id="@id/airbutton_recipient_list_item_textview_sub" android:visibility="gone" android:layout_width="171.0dip" android:layout_height="21.0dip" android:layout_marginLeft="60.0dip" android:layout_marginTop="29.0dip" android:layout_marginRight="10.0dip" android:singleLine="true" />
+    </FrameLayout>
+</FrameLayout>

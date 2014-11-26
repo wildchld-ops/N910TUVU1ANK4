@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.SecKeyguardFlightModeView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="25.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="5.0dip">
+        <include layout="@layout/sec_contextual_clock_flight_mode" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="27.0dip">
+        <ImageView android:id="@id/keyguard_flight_mode_icon" android:layout_width="26.0dip" android:layout_height="32.0dip" android:layout_marginRight="5.0dip" android:src="@drawable/lock_ic_flight_mode" />
+        <TextView android:textSize="24.0dip" android:textStyle="normal" android:textColor="@color/keyguard_text_color_white" android:ellipsize="marquee" android:id="@id/keyguard_flight_mode_on_text" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/keyguard_flight_mode_title" android:singleLine="true" android:shadowColor="#cc000000" android:shadowDy="2.0" android:shadowRadius="2.0" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip" android:layout_marginBottom="@dimen/keyguard_flight_button_bottom_margin">
+        <Button android:textSize="20.0dip" android:textStyle="normal" android:textColor="@drawable/sec_flight_mode_off_button_text_selector" android:ellipsize="marquee" android:layout_gravity="bottom|center" android:id="@id/keyguard_flight_button" android:background="@drawable/sec_flight_mode_off_button_selector" android:layout_width="151.0dip" android:layout_height="49.0dip" android:text="@string/keyguard_flight_mode_turn_off_button" android:singleLine="true" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</com.android.keyguard.sec.SecKeyguardFlightModeView>

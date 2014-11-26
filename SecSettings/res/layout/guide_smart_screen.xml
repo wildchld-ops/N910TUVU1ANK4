@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/rot_stay_image" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/air_scroll_image" android:scaleType="center" android:contentDescription="@string/none" />
+    <com.android.settings.accessibility.smartscroll.touchwiz.widget.TwHelpScrollView android:id="@id/vScreenView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView android:id="@id/scrolltry" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/air_scroll_image" android:adjustViewBounds="true" android:contentDescription="@string/none" />
+    </com.android.settings.accessibility.smartscroll.touchwiz.widget.TwHelpScrollView>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+version: 2.0.0-RC2
+apkFileName: SecMms_Cherry.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1
+  - 2
+sdkInfo:
+  minSdkVersion: '11'
+  targetSdkVersion: '17'
+packageInfo:
+  forced-package-id: '127'
+versionInfo:
+  versionCode: '19'
+  versionName: 4.4.4-N910TUVU1ANK4
+compressionType: false
+unknownFiles:
+  com/samsung/rcs/urigenerator/IUriGeneratorService.aidl: '8'
+  com/sec/ims/client/csh/IVshRemoteClient.aidl: '8'

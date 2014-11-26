@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/attachment_information" android:layout_width="fill_parent" android:layout_height="37.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/slideview_attachment_list" android:focusable="true" android:layout_width="fill_parent" android:layout_height="37.0dip">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_attachment_save_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:id="@id/attach_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="5.0dip" />
+            <TextView android:textSize="18.0sp" android:textColor="@color/attachment_text_color" android:gravity="center_vertical" android:id="@id/attach_file_name" android:layout_width="fill_parent" android:layout_height="fill_parent" android:singleLine="true" android:textDirection="locale" android:paddingStart="6.0dip" android:paddingEnd="9.0dip" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="right|center" android:id="@id/attach_seperator" android:background="@drawable/message_viewer_attachment_divider_vertical" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <ImageButton android:id="@id/attachment_save_button" android:background="@drawable/selector_attachment_save_button" android:layout_width="71.0dip" android:layout_height="fill_parent" android:src="@drawable/message_viewer_attachment_save_icon" android:contentDescription="@string/save" />
+    </LinearLayout>
+    <LinearLayout android:id="@id/attachment_list_divider" android:background="@drawable/tw_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

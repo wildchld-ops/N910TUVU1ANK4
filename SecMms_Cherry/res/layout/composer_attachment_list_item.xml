@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="41.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0dip" android:textColor="@color/attach_list_text_color" android:id="@id/attach_name" android:focusable="false" android:clickable="false" android:duplicateParentState="false" android:layout_width="0.0dip" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="4.0dip" android:layout_weight="1.0" android:textDirection="locale" android:layout_marginStart="13.0dip" />
+    <ImageView android:id="@id/attach_remove" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/selector_btn_minus" android:contentDescription="@string/remove_attachment" android:layout_marginEnd="10.0dip" />
+</LinearLayout>

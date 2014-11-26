@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone">
+    <Preference android:persistent="false" android:layout="@xml/manual_avoid_network_illustration" android:key="manual_avoid_network_illustration" />
+    <PreferenceScreen android:persistent="false" android:title="@string/manual_system_avoidance" android:key="manual_system_avoidance" android:summary="@string/manual_system_avoidance_summary" />
+    <PreferenceScreen android:persistent="false" android:title="@string/view_filter_network_list" android:key="view_filter_network_list" android:summary="@string/view_filter_network_list_summary" />
+    <PreferenceScreen android:persistent="false" android:title="@string/clear_avoid_network" android:key="clear_avoid_network" android:summary="@string/clear_avoid_network_summary" />
+</PreferenceScreen>

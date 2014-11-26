@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<header android:id="@id/pref_personalize" android:title="Personalize" android:summary="Set personalization options" android:fragment="com.touchtype.TouchTypeKeyboardSettings$PersonalizationPreferenceFragment"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <extra android:name="resource" android:value="prefs_personalizers" />
+</header>

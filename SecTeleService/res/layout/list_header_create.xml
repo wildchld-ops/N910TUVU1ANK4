@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/list_header_create_panel" android:background="@drawable/linearlayout_select_all_item_bg" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/list_header_height" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/callsettings_sfk_create" android:layout_weight="0.9" android:paddingStart="12.0dip" style="@style/setting_subheader_textcolor" />
+    <ImageView android:id="@id/setting_create" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/setting_create_button" android:paddingEnd="11.0dip" />
+</LinearLayout>

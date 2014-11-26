@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Button.NumPadKey" parent="@android:style/Widget.Button">
+        <item name="android:textSize">32.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:paddingLeft">16.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#99000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+    <style name="TextAppearance.NumPadKey" parent="@android:style/TextAppearance">
+        <item name="android:textSize">32.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:shadowColor">#99000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+        <item name="android:fontFamily">roboto-light</item>
+    </style>
+    <style name="TextAppearance.NumPadKey.Klondike" parent="@style/TextAppearance.NumPadKey">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.passwordEntry" parent="@android:style/TextAppearance">
+        <item name="android:textSize">30.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:shadowColor">#99000000</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">3.0</item>
+    </style>
+</resources>

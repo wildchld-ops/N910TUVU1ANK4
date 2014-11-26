@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/guide_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/help_hub_guide_text_size" android:textStyle="normal" android:textColor="@android:color/black" android:id="@id/guide_bubble_summary" android:background="@drawable/help_popup_picker_bg_w_01" android:paddingTop="@dimen/help_hub_guide_text_padding_top" android:paddingBottom="@dimen/help_hub_guide_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/help_hub_widget_add3_bubble_summary_margin_bottom" android:maxWidth="@dimen/help_hub_guide_text_width" android:text="@string/Long_press_on_any_widget" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:paddingStart="@dimen/help_hub_guide_text_padding_left" android:paddingEnd="@dimen/help_hub_guide_text_padding_right" />
+</RelativeLayout>

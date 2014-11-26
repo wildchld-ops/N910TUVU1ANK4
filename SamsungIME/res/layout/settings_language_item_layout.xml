@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="language_item_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/keyboard_types" android:key="keyboard_types" />
+    <PreferenceCategory android:title="@string/floating_keyboard_types" android:key="floating_keyboard_types" />
+</PreferenceScreen>

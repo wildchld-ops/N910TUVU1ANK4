@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/pref_entries_cb_selection" android:title="@string/receiving_channel" android:key="pref_key_cb_channel_selection" android:defaultValue="All channels" android:dialogTitle="@string/receiving_channel" android:entryValues="@array/pref_entry_values_cb_selection" />
+    <PreferenceCategory android:title="@string/my_channels" android:key="pref_key_cb_my_channels">
+        <Preference android:title="@string/add_channel" android:key="add_my_channel" />
+    </PreferenceCategory>
+</PreferenceScreen>

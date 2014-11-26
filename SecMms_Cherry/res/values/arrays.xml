@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>":'("</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </string-array>
+    <string-array name="default_smiley_names">
+        <item>Happy</item>
+        <item>Sad</item>
+        <item>Winking</item>
+        <item>Tongue sticking out</item>
+        <item>Surprised</item>
+        <item>Kissing</item>
+        <item>Yelling</item>
+        <item>Cool</item>
+        <item>Money mouth</item>
+        <item>Foot in mouth</item>
+        <item>Embarrassed</item>
+        <item>Angel</item>
+        <item>Undecided</item>
+        <item>Crying</item>
+        <item>Lips are sealed</item>
+        <item>Laughing</item>
+        <item>Confused</item>
+        <item>Heart</item>
+        <item>Mad</item>
+        <item>Smirk</item>
+        <item>Poker face</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>Use device font sizes</item>
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_entry_values_font_size">
+        <item>Use device font sizes</item>
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>Use device font sizes</item>
+        <item>Tiny</item>
+        <item>Extra small</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_entry_values_font_size_7_step">
+        <item>Use device font sizes</item>
+        <item>Tiny</item>
+        <item>Extra small</item>
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+        <item>Extra large</item>
+        <item>Huge</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>All channels</item>
+        <item>My channel</item>
+    </string-array>
+    <string-array name="pref_entry_values_cb_selection">
+        <item>All channels</item>
+        <item>My channel</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>GSM alphabet</item>
+        <item>Unicode</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="pref_entry_values_sms_input_mode">
+        <item>GSM alphabet</item>
+        <item>Unicode</item>
+        <item>Automatic</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 day</item>
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+    </string-array>
+    <string-array name="pref_entry_values_sms_expiry_date">
+        <item>0 day</item>
+        <item>1 day</item>
+        <item>2 days</item>
+        <item>3 days</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>Restricted</item>
+        <item>Warning</item>
+        <item>Free</item>
+    </string-array>
+    <string-array name="pref_entry_values_mms_creation_mode">
+        <item>restricted</item>
+        <item>warning</item>
+        <item>free</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>Always</item>
+        <item>Prompt</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_entry_values_service_loading_action">
+        <item>Always</item>
+        <item>Prompt</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>Origami</item>
+        <item>Label</item>
+        <item>Pop</item>
+        <item>Modern</item>
+        <item>Pink</item>
+        <item>Default</item>
+    </string-array>
+    <string-array name="sms_roam_guard">
+        <item>Auto send when in Domestic coverage</item>
+        <item>Send Now</item>
+        <item>Save as draft message</item>
+    </string-array>
+    <string-array name="sms_roam_guard_background_sending">
+        <item>Auto send when in Domestic coverage</item>
+        <item>Send Now</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>Once</item>
+        <item>Every 2 minutes</item>
+        <item>Every 15 minutes</item>
+        <item>Off</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array_values">
+        <item>1</item>
+        <item>2</item>
+        <item>15</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>Never</item>
+        <item>Every 2 minutes</item>
+        <item>Every 10 minutes</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array_values">
+        <item>1</item>
+        <item>2</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="cmas_font_size_Array">
+        <item>Font 8</item>
+        <item>Font 10</item>
+        <item>Font 12</item>
+        <item>Font 14</item>
+        <item>Font 16</item>
+        <item>Font 18</item>
+        <item>Font 20</item>
+    </string-array>
+    <string-array name="cmas_font_size_Array_values">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+        <item>18</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+        <item>SGH-T989</item>
+        <item>SGH-I727</item>
+    </string-array>
+    <string-array name="select_ua_string">
+        <item>SAMSUNG-GT-I5700/1.0</item>
+        <item>SAMSUNG-GT-I9000/1.0</item>
+        <item>SAMSUNG-SGH-U900/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1</item>
+        <item>sami510</item>
+        <item>Mozilla/5.0 (Linux; U; Android 2.3.4; en-us; SGH-T989 Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1</item>
+        <item>SAMSUNG-SGH-I727/I727UCXXX Mozilla/5.0 SMM-MMS/1.2.0</item>
+    </string-array>
+    <string-array name="select_ua_profile">
+        <item>http://wap.samsungmobile.com/uaprof/GT-i5700.xml</item>
+        <item>http://wap.samsungmobile.com/uaprof/GT-i9000.xml</item>
+        <item>http://wap.samsungmobile.com/uaprof/U900UAProf3G.xml</item>
+        <item>http://uaprof.vtext.com/sam/i510/i510.xml</item>
+        <item>http://wap.samsungmobile.com/uaprof/SGH-T989.xml</item>
+        <item>http://wap.samsungmobile.com/uaprof/SGH-I727.xml</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>domestic</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 hour</item>
+        <item>6 hours</item>
+        <item>24 hours</item>
+        <item>2 days</item>
+        <item>Network default</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="expiry_date_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>High</item>
+        <item>Normal</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="mms_priority_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>Immediately</item>
+        <item>1 hour</item>
+        <item>6 hours</item>
+        <item>24 hours</item>
+        <item>1 week</item>
+    </string-array>
+    <string-array name="delivery_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 seconds</item>
+        <item>5 seconds</item>
+        <item>10 seconds</item>
+        <item>20 seconds</item>
+        <item>30 seconds</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array_values">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>Off</item>
+        <item>Block all messages</item>
+        <item>Block registered numbers and phrases</item>
+    </string-array>
+    <string-array name="pref_entry_values_spam_option">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>Exactly the same as</item>
+        <item>Starts with</item>
+        <item>Ends with</item>
+        <item>Includes</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>Logs</item>
+        <item>Contacts</item>
+    </string-array>
+    <string-array name="block_number_setting_items_only_message">
+        <item>Message block</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>Message block</item>
+        <item>Call block</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>Message block</item>
+        <item>Voice call block</item>
+        <item>Video call block</item>
+    </string-array>
+    <string-array name="error_codes">
+        <item>Addr.Vcnt.</item>
+        <item>Addr.Trns.</item>
+        <item>Ntwk.Res.</item>
+        <item>Ntwk.Fail.</item>
+        <item>Invld.T.ID</item>
+        <item>Othr.Ntwk.</item>
+        <item>Othr.Fst.</item>
+        <item>Othr.Lst.</item>
+        <item>NoPg.Res.</item>
+        <item>Dst.Busy</item>
+        <item>NoAck.</item>
+        <item>Dst.Rs.Sht</item>
+        <item>SMS Dlv.Pp</item>
+        <item>Dest.NoLng</item>
+        <item>Dest.NoLng</item>
+        <item>OthrT.Prbl</item>
+        <item>OthrT.Fst</item>
+        <item>OthrT.Lst</item>
+        <item>SMS Dlv.Ft</item>
+        <item>SMS Dlv.Lt</item>
+        <item>Rdo.IF.R.S</item>
+        <item>Rdo.IF.Inc</item>
+        <item>Othr.Rdo.I</item>
+        <item>Othr.Rdo.F</item>
+        <item>Othr.Rdo.L</item>
+        <item>Encd.Prbl.</item>
+        <item>SMS Org.D.</item>
+        <item>SMS Trm.D.</item>
+        <item>Suppl.Svc.</item>
+        <item>SMS No.Spt</item>
+        <item>Reserved</item>
+        <item>Mss.Expt.P</item>
+        <item>Mss.Mndtry</item>
+        <item>Unrcgnzd.P</item>
+        <item>Unexpctd.P</item>
+        <item>Usr.Dr.S.E</item>
+        <item>Othr.Gnr.P</item>
+        <item>Other.Gnr.F</item>
+        <item>Other.Gnr.L</item>
+        <item>OK or Msg Dlvd.</item>
+        <item>Wait TLAck</item>
+        <item>Outof Rsc.</item>
+        <item>Accss.Lrg.</item>
+        <item>DRC Lrg.</item>
+        <item>Ntwk.NoRdy</item>
+        <item>Phon.NoRdy</item>
+        <item>Nt.Allwd.A</item>
+        <item>Nt.Spprtd</item>
+        <item>Invld.Trnx.</item>
+        <item>Msg.No.Snt</item>
+        <item>MsgBgn.Snt</item>
+    </string-array>
+    <string-array name="priority_array">
+        <item>Normal</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="sharevia_array">
+        <item>MMS</item>
+        <item>FreeMessage</item>
+    </string-array>
+    <string-array name="templates">
+        <item>Sorry, I missed your call.</item>
+        <item>"I'm running late, but I'll be there soon."</item>
+        <item>"How's it going?"</item>
+        <item>"What's up?"</item>
+        <item>Where are you?</item>
+        <item>Please call me when you get this message.</item>
+        <item>When can we meet?</item>
+        <item>"I'll talk to you soon."</item>
+        <item>"Where's the meeting?"</item>
+        <item>"What's the number?"</item>
+    </string-array>
+    <string-array name="sprint_templates">
+        <item>"Can't talk right now. Send me a message."</item>
+        <item>Call me.</item>
+        <item>Where are you?</item>
+        <item>Can you talk?</item>
+        <item>"Don't forget to"</item>
+        <item>Can you pick up?</item>
+        <item>Thanks!</item>
+        <item>Meet me at</item>
+        <item>"Let's get lunch."</item>
+        <item>I sent this from my phone.</item>
+        <item>The meeting has been cancelled.</item>
+        <item>I have to work late.</item>
+        <item>"I'm on a conference call."</item>
+        <item>"I'll be there at"</item>
+        <item>What time does it start?</item>
+        <item>"Tag, you're it!"</item>
+        <item>I love you!</item>
+        <item>Hugs and kisses - OXOXO</item>
+        <item>Crazy 4 you!</item>
+        <item>Too funny!</item>
+    </string-array>
+    <string-array name="zzz_tts_noti_sms_from">
+        <item>New message from</item>
+        <item>Nouveau message de</item>
+        <item>Neue Nachricht von</item>
+        <item>Nuovo messaggio da</item>
+        <item>Nuevo mensaje de</item>
+        <item>메시지 수신</item>
+        <item>新信息来自</item>
+        <item>Nova mensagem de</item>
+        <item>から新しいメッセージを受信</item>
+    </string-array>
+    <string-array name="zzz_tts_string_langs">
+        <item>eng</item>
+        <item>fra</item>
+        <item>deu</item>
+        <item>ita</item>
+        <item>spa</item>
+        <item>kor</item>
+        <item>zho</item>
+        <item>por</item>
+        <item>jpn</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>Brazilian Portuguese</item>
+        <item>English (UK)</item>
+        <item>English (US)</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Korean</item>
+        <item>Simplified Chinese</item>
+        <item>Russian</item>
+        <item>Spanish</item>
+    </string-array>
+    <string-array name="translate_lang_value">
+        <item>pt-BR</item>
+        <item>en-GB</item>
+        <item>en-US</item>
+        <item>fr-FR</item>
+        <item>de-DE</item>
+        <item>it-IT</item>
+        <item>ja-JP</item>
+        <item>ko-KR</item>
+        <item>zh-CN</item>
+        <item>ru-RU</item>
+        <item>es-ES</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="pref_entry_values_widget_font_size">
+        <item>Tiny</item>
+        <item>Small</item>
+        <item>Normal</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>All</item>
+        <item>Sender</item>
+        <item>Content</item>
+    </string-array>
+    <string-array name="festival_day">
+        <item>元旦</item>
+        <item>春节</item>
+        <item>元宵节</item>
+        <item>端午节</item>
+        <item>七夕节</item>
+        <item>中秋节</item>
+        <item>圣诞节</item>
+        <item>情人节</item>
+        <item>儿童节</item>
+        <item>教师节</item>
+        <item>重阳节</item>
+        <item>母亲节</item>
+        <item>父亲节</item>
+    </string-array>
+    <string-array name="image_resize_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <string-array name="pref_entries_default_messaging_method">
+        <item>Automatic</item>
+        <item>Text message</item>
+        <item>Chat message</item>
+    </string-array>
+    <string-array name="pref_entry_values_default_messaging_method">
+        <item>Automatic</item>
+        <item>Text message</item>
+        <item>Chat message</item>
+    </string-array>
+    <string-array name="pref_entries_auto_download_file_transfer">
+        <item>Automatically accept all</item>
+        <item>Automatically accept files less than %s MB in size</item>
+    </string-array>
+    <string-array name="pref_entry_values_auto_download_file_transfer">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="smileys_regular_expressions">
+        <item>:\\-\\)|:\\)</item>
+        <item>:\\-\\(|:\\(</item>
+        <item>;\\-\\)|;\\)|;o\\)|;O\\)</item>
+        <item>:\\-D|:D|:oD|:\\-d|:d|:od|:Od|:OD</item>
+        <item>:\\-/|:\\-\\\\</item>
+        <item>":\"\\-\\)|:\"\\)|:\">|:\\-|:\\$|:'\\-\\)|:'\\)|:'>"</item>
+        <item>:-P|:P|:oP|:\\-p|:p|:op|:OP|:Op</item>
+        <item>:\\-\\*|:\\*</item>
+        <item>:\\-O|:\\-o|:o|:O</item>
+        <item>:\\-\\@|:\\@|X\\-\\(|X\\(|x\\-\\(|x\\(|xo\\(|XO\\(</item>
+        <item>B\\)|B\\-\\)|\\(H\\)|\\(h\\)|Bo\\)|BO\\)</item>
+        <item>:\\-S|:S|:\\-s|:s|:oS</item>
+        <item>>:-\\)|>:\\)|>:o\\)|>:O\\)</item>
+        <item>":\\,\\-\\(|:\\,\\(|:'\\-\\(|:'\\(|:\\,o\\(|:'o\\(|:\\,O\\(|:'O\\("</item>
+        <item>:\\-\\)\\)|:\\)\\)|:o\\)\\)|:O\\)\\)</item>
+        <item>:\\-\\||:\\||:o\\||:O\\|</item>
+        <item>O:\\-\\)|O:\\)|o:\\-\\)|o:\\)</item>
+        <item>:\\-B|:B</item>
+        <item>\\|\\-O|\\|O|\\|\\-o|\\|o</item>
+        <item>8\\-\\)|8\\)|8o\\)|8O\\)</item>
+        <item>:\\-\\&amp;|:\\&amp;|;o\\&amp;|:O\\&amp;</item>
+        <item>:\\-SS|:SS|:ss|:\\-ss</item>
+        <item>:\\-\\?|:\\?</item>
+        <item>/:\\-\\)|/:\\)|/:o\\)|/:O\\)</item>
+        <item>\\@\\):\\-</item>
+        <item>\\~o\\)</item>
+        <item>\\)\\-\\|</item>
+        <item>\\*\\-:\\-\\)|\\*\\-:\\)</item>
+        <item>\\(L\\)|\\&lt;3</item>
+        <item>\\(b\\)|\\(B\\)</item>
+        <item>\\(u\\)|\\(U\\)|\\\\Z\\/</item>
+        <item>\\\\m\\/|\\\\m</item>
+        <item>:ar\\!</item>
+        <item>8\\-\\}</item>
+        <item>\\=D\\></item>
+        <item>"\\&lt;\\(\"\\)|\\&lt;\\('\\)"</item>
+        <item>\\-8</item>
+        <item>\\(\\*\\)</item>
+        <item>\\(o\\)|\\(O\\)</item>
+        <item>\\(pi\\)|\\(PI\\)</item>
+        <item>\\(mo\\)|\\(MO\\)</item>
+        <item>\\(bah\\)|\\(BAH\\)</item>
+        <item>:8\\)</item>
+        <item>\\(#\\)</item>
+        <item>\\(st\\)|\\(ST\\)</item>
+        <item>\\(um\\)|\\(UM\\)</item>
+        <item>\\(pl\\)|\\(PL\\)</item>
+        <item>\\(\\^\\)</item>
+        <item>\\&lt;:o\\)</item>
+        <item>\\(\\~\\)</item>
+        <item>\\(g\\)|\\(G\\)</item>
+        <item>\\(e\\)|\\(E\\)</item>
+        <item>\\(t\\)|\\(T\\)</item>
+        <item>:\\-h</item>
+        <item>\\>:D\\&lt;</item>
+    </string-array>
+    <string-array name="smileys_legend_text">
+        <item>:)</item>
+        <item>:(</item>
+        <item>;)</item>
+        <item>:D</item>
+        <item>:-/</item>
+        <item>:\")</item>
+        <item>:p</item>
+        <item>:*</item>
+        <item>:o</item>
+        <item>:@</item>
+        <item>B)</item>
+        <item>:S</item>
+        <item>>:)</item>
+        <item>:,(</item>
+        <item>:))</item>
+        <item>:|</item>
+        <item>o:)</item>
+        <item>:B</item>
+        <item>|o</item>
+        <item>8)</item>
+        <item>:&amp;</item>
+        <item>:ss</item>
+        <item>:?</item>
+        <item>/:)</item>
+        <item>\@):-</item>
+        <item>~o)</item>
+        <item>)-|</item>
+        <item>*-:)</item>
+        <item>&lt;3</item>
+        <item>(b)</item>
+        <item>(u)</item>
+        <item>\\m/</item>
+        <item>:ar!</item>
+        <item>8-}</item>
+        <item>=D></item>
+        <item>&lt;(\")</item>
+        <item>-8</item>
+        <item>(*)</item>
+        <item>(o)</item>
+        <item>(pi)</item>
+        <item>(mo)</item>
+        <item>(bah)</item>
+        <item>:8)</item>
+        <item>(#)</item>
+        <item>(st)</item>
+        <item>(um)</item>
+        <item>(pl)</item>
+        <item>(^)</item>
+        <item>&lt;:o)</item>
+        <item>(~)</item>
+        <item>(g)</item>
+        <item>(e)</item>
+        <item>(t)</item>
+        <item>:-h</item>
+        <item>>:D&lt;</item>
+    </string-array>
+    <array name="smileys_icons">
+        <item>@drawable/android_happy</item>
+        <item>@drawable/android_sad</item>
+        <item>@drawable/android_wink</item>
+        <item>@drawable/android_big_grin</item>
+        <item>@drawable/android_confused</item>
+        <item>@drawable/android_embarrassed</item>
+        <item>@drawable/android_stick_out_tongue</item>
+        <item>@drawable/android_kiss</item>
+        <item>@drawable/android_surprised</item>
+        <item>@drawable/android_angry</item>
+        <item>@drawable/android_sunglasses</item>
+        <item>@drawable/android_worried</item>
+        <item>@drawable/android_devilish</item>
+        <item>@drawable/android_crying</item>
+        <item>@drawable/android_laughing</item>
+        <item>@drawable/android_disappointed</item>
+        <item>@drawable/android_angel</item>
+        <item>@drawable/android_nerd</item>
+        <item>@drawable/android_sleepy</item>
+        <item>@drawable/android_rolling_eyes</item>
+        <item>@drawable/android_sick</item>
+        <item>@drawable/android_no_speak</item>
+        <item>@drawable/android_thinking</item>
+        <item>@drawable/android_raised_eyebrow</item>
+        <item>@drawable/android_flower</item>
+        <item>@drawable/android_cup_of_coffee</item>
+        <item>@drawable/android_drink</item>
+        <item>@drawable/android_idea</item>
+        <item>@drawable/android_heart</item>
+        <item>@drawable/android_beer</item>
+        <item>@drawable/android_broken_heart</item>
+        <item>@drawable/android_rock_on</item>
+        <item>@drawable/android_pirate</item>
+        <item>@drawable/android_silly</item>
+        <item>@drawable/android_applause</item>
+        <item>@drawable/android_penguin</item>
+        <item>@drawable/android_music_note</item>
+        <item>@drawable/android_star</item>
+        <item>@drawable/android_clock</item>
+        <item>@drawable/android_pizza</item>
+        <item>@drawable/android_money</item>
+        <item>@drawable/android_sheep</item>
+        <item>@drawable/android_pig</item>
+        <item>@drawable/android_sun</item>
+        <item>@drawable/android_raincloud</item>
+        <item>@drawable/android_umbrella</item>
+        <item>@drawable/android_aeroplane</item>
+        <item>@drawable/android_cake</item>
+        <item>@drawable/android_party</item>
+        <item>@drawable/android_film</item>
+        <item>@drawable/android_gift</item>
+        <item>@drawable/android_email</item>
+        <item>@drawable/android_phone</item>
+        <item>@drawable/android_wave</item>
+        <item>@drawable/android_big_hug</item>
+    </array>
+    <string-array name="smileys_legend_description">
+        <item>Happy, smile</item>
+        <item>Sad</item>
+        <item>Wink</item>
+        <item>Big grin</item>
+        <item>Confused</item>
+        <item>Embarrassed</item>
+        <item>Stick-out tongue</item>
+        <item>Kiss</item>
+        <item>Surprised</item>
+        <item>Angry</item>
+        <item>Cool</item>
+        <item>Worried</item>
+        <item>Devilish</item>
+        <item>Crying</item>
+        <item>Laughing</item>
+        <item>Disappointed</item>
+        <item>Angel</item>
+        <item>Nerdish</item>
+        <item>Sleepy</item>
+        <item>Rolling eyes</item>
+        <item>Sick</item>
+        <item>Lips sealed</item>
+        <item>Thinking</item>
+        <item>Raised eyebrow</item>
+        <item>Flower</item>
+        <item>Cup of coffee</item>
+        <item>Drink</item>
+        <item>Idea (light bulb)</item>
+        <item>Heart</item>
+        <item>Pint of Beer</item>
+        <item>Broken heart</item>
+        <item>A smiling face with rockstar fingers</item>
+        <item>A face with eye patch</item>
+        <item>A face with wobbly mouth and spinning eyes</item>
+        <item>A face with clapping hands</item>
+        <item>A small penguin</item>
+        <item>A semi quaver</item>
+        <item>A gold star</item>
+        <item>A clock face</item>
+        <item>A slice of pizza or a whole pizza</item>
+        <item>Coins or notes or coins and notes</item>
+        <item>A sheep</item>
+        <item>A pigs face</item>
+        <item>A shining sun</item>
+        <item>A cloud with rain or cloud with rain drop</item>
+        <item>An open umbrella</item>
+        <item>A plane</item>
+        <item>A cake with candles</item>
+        <item>A face wearing a party hat and blowing a party blower</item>
+        <item>A roll of film or strip of film</item>
+        <item>A gift wrapped present with bow</item>
+        <item>An open envelope</item>
+        <item>A hand receiver with cable</item>
+        <item>A face with hand waving</item>
+        <item>A face with hands hugging itself</item>
+    </string-array>
+    <string-array name="image_resize_entries">
+        <item>Original</item>
+        <item>Large</item>
+        <item>Medium</item>
+        <item>Small</item>
+    </string-array>
+    <string-array name="trafficSwitch_EntryValues_NotificationPreference">
+        <item>Never connect</item>
+        <item>Always ask</item>
+        <item>Always connect</item>
+    </string-array>
+    <string-array name="trafficSwitch_EntryValues_NotificationPreference_Values">
+        <item>never_connect</item>
+        <item>always_ask</item>
+        <item>always_connect</item>
+    </string-array>
+</resources>

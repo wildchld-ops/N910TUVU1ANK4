@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/one_hand_phonepad_default_key_width" android:keyHeight="@dimen/one_hand_phonepad_default_key_height" android:horizontalGap="@dimen/one_hand_phonepad_default_key_horizontal_gap" android:verticalGap="@dimen/one_hand_phonepad_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/one_hand_phonepad_first_line_vertical_gap">
+        <Key android:keyWidth="800.0px" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_normal">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1417,44,1374,1372" android:keyEdgeFlags="left" android:keyLabel="։,՞՜" />
+        <Key android:codes="1377,1378,1379,1380" android:keyLabel="աբգդ" />
+        <Key android:codes="1381,1382,1383,1384" android:keyLabel="եզէը" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1417,44,1374,1372" android:keyEdgeFlags="left" android:keyLabel="։,՞՜" />
+        <Key android:codes="1377,1378,1379,1380" android:keyLabel="աբգդ" />
+        <Key android:codes="1381,1382,1383,1384" android:keyLabel="եզէը" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_url">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="46,47" android:keyEdgeFlags="left" android:keyLabel="./" />
+        <Key android:codes="1377,1378,1379,1380" android:keyLabel="աբգդ" />
+        <Key android:codes="1381,1382,1383,1384" android:keyLabel="եզէը" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="46,47" android:keyEdgeFlags="left" android:keyLabel="./" />
+        <Key android:codes="1377,1378,1379,1380" android:keyLabel="աբգդ" />
+        <Key android:codes="1381,1382,1383,1384" android:keyLabel="եզէը" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_email">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="64,46" android:keyEdgeFlags="left" android:keyLabel="\@." />
+        <Key android:codes="1377,1378,1379,1380" android:keyLabel="աբգդ" />
+        <Key android:codes="1381,1382,1383,1384" android:keyLabel="եզէը" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="64,46" android:keyEdgeFlags="left" android:keyLabel="\@." />
+        <Key android:codes="1377,1378,1379,1380" android:keyLabel="աբգդ" />
+        <Key android:codes="1381,1382,1383,1384" android:keyLabel="եզէը" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/one_hand_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1385,1386,1387,1388,1389" android:keyEdgeFlags="left" android:keyLabel="թժիլխ" />
+        <Key android:codes="1390,1391,1392,1393,1394" android:keyLabel="ծկհձղ" />
+        <Key android:codes="1395,1396,1397,1398,1399" android:keyLabel="ճմյնշ" />
+        <Key android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1400,1401,1402,1403,1404" android:keyEdgeFlags="left" android:keyLabel="ոչպջռ" />
+        <Key android:codes="1405,1406,1407,1408,1409" android:keyLabel="սվտրց" />
+        <Key android:codes="1410,1411,1412,1413,1414,1415" android:keyLabel="ւփքօֆ" />
+        <Key android:codes="-400" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1400,1401,1402,1403,1404" android:keyEdgeFlags="left" android:keyLabel="ոչպջռ" />
+        <Key android:codes="1405,1406,1407,1408,1409" android:keyLabel="սվտրց" />
+        <Key android:codes="1410,1411,1412,1413,1414,1415" android:keyLabel="ւփքօֆ" />
+        <Key android:codes="-400" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1400,1401,1402,1403,1404" android:keyEdgeFlags="left" android:keyLabel="ոչպջռ" />
+        <Key android:codes="1405,1406,1407,1408,1409" android:keyLabel="սվտրց" />
+        <Key android:codes="1410,1411,1412,1413,1414,1415" android:keyLabel="ւփքօֆ" />
+        <Key android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1400,1401,1402,1403,1404" android:keyEdgeFlags="left" android:keyLabel="ոչպջռ" />
+        <Key android:codes="1405,1406,1407,1408,1409" android:keyLabel="սվտրց" />
+        <Key android:codes="1410,1411,1412,1413,1414,1415" android:keyLabel="ւփքօֆ" />
+        <Key android:codes="-113" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1400,1401,1402,1403,1404" android:keyEdgeFlags="left" android:keyLabel="ոչպջռ" />
+        <Key android:codes="1405,1406,1407,1408,1409" android:keyLabel="սվտրց" />
+        <Key android:codes="1410,1411,1412,1413,1414,1415" android:keyLabel="ւփքօֆ" />
+        <Key android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="1400,1401,1402,1403,1404" android:keyEdgeFlags="left" android:keyLabel="ոչպջռ" />
+        <Key android:codes="1405,1406,1407,1408,1409" android:keyLabel="սվտրց" />
+        <Key android:codes="1410,1411,1412,1413,1414,1415" android:keyLabel="ւփքօֆ" />
+        <Key android:codes="-113" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/one_hand_phonepad_half_key_width" android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/one_hand_phonepad_half_key_width" android:horizontalGap="@dimen/one_hand_phonepad_half_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/one_hand_phonepad_key_icon_language_change_xml" />
+        <Key android:codes="1373" android:keyLabel="՝" />
+        <Key android:codes="32" android:keyIcon="@drawable/one_hand_phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="1373" android:keyLabel="՝" />
+        <Key android:codes="32" android:keyIcon="@drawable/one_hand_phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="1373" android:keyLabel="՝" />
+        <Key android:codes="32" android:keyIcon="@drawable/one_hand_phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="1373" android:keyLabel="՝" />
+        <Key android:codes="32" android:keyIcon="@drawable/one_hand_phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/one_hand_phonepad_half_key_width" android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/one_hand_phonepad_half_key_width" android:horizontalGap="@dimen/one_hand_phonepad_half_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/one_hand_phonepad_key_icon_language_change_xml" />
+        <Key android:codes="1373" android:keyLabel="՝" />
+        <Key android:codes="32" android:keyIcon="@drawable/one_hand_phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/one_hand_phonepad_half_key_width" android:horizontalGap="@dimen/one_hand_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/one_hand_phonepad_half_key_width" android:horizontalGap="@dimen/one_hand_phonepad_half_key_horizontal_gap" android:codes="-108" android:keyIcon="@drawable/one_hand_phonepad_key_icon_language_change_xml" />
+        <Key android:codes="1373" android:keyLabel="՝" />
+        <Key android:codes="32" android:keyIcon="@drawable/one_hand_phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/one_hand_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/one_hand_phonepad_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

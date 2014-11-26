@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/safety_assurance"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/enhanced_emergency_message" android:key="enhanced_emergency_message_category_key" style="@style/PreferenceCategory">
+        <SwitchPreference android:title="@string/send_emergency_message" android:key="send_emergency_message_key" android:summary="@string/edit_emergency_messages" />
+        <CheckBoxPreference android:title="@string/send_dual_captured_image" android:key="send_dual_captured_image_key" android:summary="@string/dual_captured_image_will_be_sent" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <ListPreference android:entries="@array/automatic_sending_timer_list" android:title="@string/automatic_sending_interval" android:key="automatic_sending_interval_key" android:summary="@string/adjust_the_interval_sending_message_and_images" android:defaultValue="1" android:dialogTitle="@string/automatic_sending_interval" android:entryValues="@array/automatic_sending_timer_list_value" />
+        <Preference android:title="@string/emergency_contacts" android:key="emergency_contacts_key" android:summary="@string/set_contacts_to_send_emergency_message" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/kids_safe" android:key="kids_safe_category_key">
+        <CheckBoxPreference android:title="@string/send_my_location" android:key="send_my_location_key" android:summary="@string/send_my_location_to_emergency_contacts_after_the_call" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    </PreferenceCategory>
+</PreferenceScreen>

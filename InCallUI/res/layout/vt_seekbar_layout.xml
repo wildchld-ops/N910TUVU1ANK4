@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:layout_gravity="top" android:id="@id/seekbarlayout" android:background="@drawable/tw_dialog_full_holo_dark" android:visibility="invisible" android:layout_width="342.0dip" android:layout_height="76.0dip" android:layout_marginLeft="9.0dip" android:layout_marginTop="60.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="15.0dip" android:textColor="#fff5f5f5" android:gravity="left|center" android:id="@id/seekbartext" android:layout_width="fill_parent" android:layout_height="26.0dip" android:layout_marginLeft="12.0dip" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginBottom="8.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/seekbaricon" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginLeft="17.0dip" android:src="@drawable/video_call_brightness_dark" />
+            <SeekBar android:id="@id/seekbar" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:max="10" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

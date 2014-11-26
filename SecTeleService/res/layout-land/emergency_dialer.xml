@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dialer_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <include layout="@layout/emergency_dialpad" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/dialpad_edittext_bg" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <FrameLayout android:background="@color/dialpad_edittext_bg" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <EditText android:textSize="46.0dip" android:textColor="@color/dialpad_edittext_text_color" android:gravity="center" android:id="@id/digits" android:background="@android:color/transparent" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" />
+            <ViewStub android:layout_gravity="center" android:id="@id/emergencyItemContainer" android:background="@android:color/transparent" android:layout="@layout/emergency_contact_item_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/dialer_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/dialpad_additional_buttons_sec" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

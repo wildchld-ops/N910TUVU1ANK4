@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="emergency_dialer_background">#fff0f0f0</color>
+    <color name="carmode_reject_videocall_background_button">#ff032a37</color>
+    <color name="carmode_reject_videocall_background_event">#ff021c25</color>
+    <color name="call_setting_empty_data_text">#ff000000</color>
+    <color name="photoring_title">#fff5f5f5</color>
+    <color name="photoring_input_txt">#ffffffff</color>
+    <color name="photoring_hint_txt">#cc464646</color>
+    <color name="photoring_content_txt">#ffffffff</color>
+    <color name="photoring_content_bg">#ff000000</color>
+    <color name="photoring_content_hint">#ff474747</color>
+    <color name="photoring_phrase_attach_button">#fff5f5f5</color>
+    <color name="photoring_recipient_text">#fff5f5f5</color>
+    <color name="photoring_number_text">#fff5f5f5</color>
+    <color name="photoring_recipient_text_hint">#fff5f5f5</color>
+    <color name="photoring_number_text_hint">#fff5f5f5</color>
+    <color name="photoring_dropdown_name_text">#ff000000</color>
+    <color name="photoring_dropdown_number_text">#cc464646</color>
+    <color name="dialer_bg">#fff0f0f0</color>
+    <color name="dialpad_edittext_bg">#fff0f0f0</color>
+    <color name="dialpad_edittext_text_color">#ff1a4851</color>
+    <item type="color" name="APKTOOL_DUMMY_0081">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0082">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0083">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0084">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0085">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0086">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0087">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0088">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0089">false</item>
+    <item type="color" name="APKTOOL_DUMMY_008a">false</item>
+    <item type="color" name="APKTOOL_DUMMY_008b">false</item>
+    <item type="color" name="APKTOOL_DUMMY_008c">false</item>
+    <item type="color" name="APKTOOL_DUMMY_0092">false</item>
+</resources>

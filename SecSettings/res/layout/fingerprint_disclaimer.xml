@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/left_side_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <ScrollView android:background="?android:editTextBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="17.0dip" android:layout_marginRight="16.0dip" android:layout_weight="1.0">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/fingerprint_disclaimer_message" android:paddingLeft="8.0dip" android:paddingTop="10.0dip" android:paddingRight="8.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/fingerprint_disclaimer_message" />
+    </ScrollView>
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.sec.android.touchwiz.widget.TwCheckBox android:textAppearance="?android:textAppearanceMedium" android:ellipsize="marquee" android:id="@id/do_not_show_again" android:paddingLeft="10.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/do_not_show_again" />
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" style="@style/SecurityPreferenceButtonContainer">
+            <Button android:id="@id/fingerprint_disclaimer_cancel" android:text="@string/lockpassword_cancel_label" style="@style/SecurityPreferenceButton" />
+            <Button android:id="@id/fingerprint_disclaimer_continue" android:text="@string/fingerprint_ok" style="@style/SecurityPreferenceButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/right_side_view" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+</LinearLayout>

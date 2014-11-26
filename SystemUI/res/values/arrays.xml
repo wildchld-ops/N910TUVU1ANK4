@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="navbar_search_targets">
+        <item>@null</item>
+        <item>@android:drawable/ic_action_assist_generic</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="navbar_search_target_descriptions">
+        <item>@null</item>
+        <item>@android:string/description_target_search</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <array name="navbar_search_direction_descriptions">
+        <item>@null</item>
+        <item>@android:string/description_direction_up</item>
+        <item>@null</item>
+        <item>@null</item>
+    </array>
+    <integer-array name="batterymeter_color_levels">
+        <item>4</item>
+        <item>15</item>
+        <item>100</item>
+    </integer-array>
+    <array name="batterymeter_color_values">
+        <item>#ffff3300</item>
+        <item>#ffff3300</item>
+        <item>#ffffffff</item>
+    </array>
+    <integer-array name="batterymeter_bolt_points">
+        <item>73</item>
+        <item>0</item>
+        <item>392</item>
+        <item>0</item>
+        <item>201</item>
+        <item>259</item>
+        <item>442</item>
+        <item>259</item>
+        <item>4</item>
+        <item>703</item>
+        <item>157</item>
+        <item>334</item>
+        <item>0</item>
+        <item>334</item>
+    </integer-array>
+</resources>

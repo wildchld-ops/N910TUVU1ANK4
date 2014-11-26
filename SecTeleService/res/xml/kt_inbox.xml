@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/kt_inbox"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_voicemail" android:key="voicemail_preference" />
+    <PreferenceScreen android:persistent="false" android:title="@string/kt_videomail" android:key="videomail_preference" />
+</PreferenceScreen>

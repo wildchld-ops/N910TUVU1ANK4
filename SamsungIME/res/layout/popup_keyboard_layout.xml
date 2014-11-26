@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/popup_parentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/floating_move_btn_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:layout_gravity="bottom" android:id="@id/floating_move_btn" android:background="@drawable/sip_floating_keypad_handler" android:layout_width="fill_parent" android:layout_height="@dimen/popup_candidate_view_handler_height" />
+    </LinearLayout>
+    <FrameLayout android:orientation="vertical" android:id="@id/popup_candidate" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <FrameLayout android:id="@id/popup_keyboard" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

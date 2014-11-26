@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.launcher2.QuickViewWorkspace android:id="@id/quickviewworkspace" android:paddingTop="@dimen/wsqv_DeleteDropTarget_height" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="top" android:id="@id/layout_deletedroptarget" android:layout_width="fill_parent" android:layout_height="@dimen/wsqv_DeleteDropTarget_height" layout="@layout/deletetarget_layout" />
+    <include android:layout_gravity="bottom" android:id="@id/home_screen_option_menu" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/home_screen_option_menu_height" layout="@layout/home_screen_option_menu" />
+</FrameLayout>

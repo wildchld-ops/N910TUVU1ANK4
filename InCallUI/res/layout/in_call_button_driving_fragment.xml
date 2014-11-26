@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inCallButtonViewDrivingMode" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/inCallScreenButtonsContainer" android:paddingLeft="@dimen/incall_button_view_driving_mode_padding_left" android:paddingTop="@dimen/incall_button_view_driving_mode_padding_top" android:paddingRight="@dimen/incall_button_view_driving_mode_padding_right" android:paddingBottom="@dimen/incall_button_view_driving_mode_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_height" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/cancelButton" android:background="@drawable/driving_call_btn_bg" android:layout_width="fill_parent" android:layout_height="@dimen/incall_button_view_driving_mode_upper_height" android:layout_marginBottom="@dimen/in_call_upper_buttons_margin_bottom" android:splitMotionEvents="false">
+            <ImageView android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/driving_call_icon_endcall" />
+            <TextView android:duplicateParentState="true" android:text="@string/cancel" style="@style/InCallButtonViewDrivingModeTextView" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

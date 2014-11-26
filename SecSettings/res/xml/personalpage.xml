@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <Preference android:title="@string/personal_page_secretbox_lock_type_title" android:key="personalpage_lock_type" android:summary="@string/personal_page_secretbox_lock_type_summary_no_select" android:widgetLayout="@layout/round_more_icon" />
+    <CheckBoxPreference android:title="@string/personal_page_auto_mode_switch_title" android:key="personalpage_auto_disable_screen_off" android:summary="@string/personal_page_secretbox_auto_disable_when_screen_off" />
+    <Preference android:title="@string/personal_page_secretbox_change_signature" android:key="personalpage_change_signature" />
+</PreferenceScreen>

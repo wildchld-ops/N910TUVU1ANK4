@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/center_bar_buttons" android:background="@drawable/controller_btn_bg_v" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_center_bar_switch_button" android:background="@drawable/center_bar_switch_button_v" android:paddingTop="17.0dip" android:paddingBottom="8.5dip" android:layout_width="@dimen/center_bar_button_height" android:layout_height="57.0dip" android:src="@drawable/multiwindow_ic_switch" android:scaleType="center" android:contentDescription="@string/switch_window" />
+    <ImageView android:layout_width="@dimen/center_bar_button_height" android:layout_height="1.0dip" android:src="@drawable/controller_btn_divider_v" />
+    <ImageView android:id="@id/view_center_bar_drag_button" android:background="@drawable/center_bar_drag_button_v" android:paddingTop="8.5dip" android:paddingBottom="8.5dip" android:layout_width="@dimen/center_bar_button_height" android:layout_height="48.0dip" android:src="@drawable/multiwindow_ic_drag_drop" android:scaleType="center" android:contentDescription="@string/drag_and_drop_content" />
+    <ImageView android:layout_width="@dimen/center_bar_button_height" android:layout_height="1.0dip" android:src="@drawable/controller_btn_divider_v" />
+    <ImageView android:id="@id/view_center_bar_collapse_button" android:background="@drawable/center_bar_drag_button_v" android:paddingTop="8.5dip" android:paddingBottom="8.5dip" android:layout_width="@dimen/center_bar_button_height" android:layout_height="48.0dip" android:src="@drawable/multiwindow_ic_minimize" android:scaleType="center" android:contentDescription="@string/collapse_window" />
+    <ImageView android:layout_width="@dimen/center_bar_button_height" android:layout_height="1.0dip" android:src="@drawable/controller_btn_divider_v" />
+    <ImageView android:id="@id/view_center_bar_full_button" android:background="@drawable/center_bar_close_button_v" android:paddingTop="8.5dip" android:paddingBottom="17.0dip" android:layout_width="@dimen/center_bar_button_height" android:layout_height="57.0dip" android:src="@drawable/multiwindow_ic_maximize" android:scaleType="center" android:contentDescription="@string/full_screen_view" />
+    <ImageView android:id="@id/view_center_bar_push_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ImageView android:id="@id/view_center_bar_close_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ImageView android:id="@id/view_center_bar_recents_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ImageView android:id="@id/view_center_bar_popup_button" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</LinearLayout>

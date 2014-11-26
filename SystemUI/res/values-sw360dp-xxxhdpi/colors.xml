@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="notification_category_color">#ff007f97</color>
+    <color name="status_bar_clear_btn_text">#fff5f5f5</color>
+    <color name="animated_brightness_icon_color">#ffe9eaea</color>
+    <color name="wifi_connected_toast">#ff0084a5</color>
+</resources>

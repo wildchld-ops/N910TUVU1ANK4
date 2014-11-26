@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/table" android:focusable="true" android:layout_width="fill_parent" android:layout_height="55.329987dip">
+        <TableRow android:id="@id/deleteMain" android:background="@drawable/list_select_all" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0dip" android:gravity="center_vertical" android:id="@id/index" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="55.329987dip" android:layout_marginLeft="12.0dip" android:text="@string/callsettings_selectall" android:layout_weight="1.0" />
+            <com.sec.android.touchwiz.widget.TwCheckBox android:layout_gravity="center_vertical" android:id="@id/cbSelectAll" android:focusable="false" android:clickable="false" android:layout_width="38.0dip" android:layout_height="48.0dip" android:layout_marginRight="12.0dip" />
+        </TableRow>
+    </TableLayout>
+    <View android:id="@id/View01" android:background="#ff333333" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/LinearLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/delete" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/callsettings_sfk_delete" android:layout_weight="1.0" />
+        <Button android:id="@id/cancel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/callsettings_sfk_cancel" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

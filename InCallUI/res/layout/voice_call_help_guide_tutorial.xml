@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/tutorial_voice_call_help_guide" android:background="@color/tutorial_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/tutorial_call_img_unknown" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tutorial_call_img_unknown_margin_top" android:src="@drawable/picture_unknown">
+        <RelativeLayout android:id="@id/tutorial_caller_info_layout" android:background="@color/incall_call_banner_in_call_background" android:layout_width="fill_parent" android:layout_height="@dimen/tutorial_caller_info_layout_height">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/one_call_name_text_size" android:textColor="@color/tutorial_caller_name_text_color" android:id="@id/tutorial_callerName" android:paddingLeft="@dimen/call_banner_side_padding" android:paddingRight="@dimen/call_banner_side_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tutorial_callerName" android:singleLine="true" />
+            <RelativeLayout android:paddingRight="@dimen/tutorial_caller_timer_padding_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/call_dialing_animation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_dialling_ani_01" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+                <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/tutorial_call_timer_text_size" android:textColor="@color/tutorial_call_timer_color" android:id="@id/tutorial_call_timer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/card_title_dialing" android:singleLine="true" android:layout_toLeftOf="@id/call_dialing_animation" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/tutorial_call_duringcall_mysound" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/tutorial_call_duringcall_mysound_margin" android:src="@drawable/call_duringcall_mysound_on_normal" android:layout_below="@id/tutorial_caller_info_layout" />
+        <ToggleButton android:id="@id/extraVolumeButton" android:background="@drawable/incall_button_extra_volume_icon" android:visibility="gone" android:clickable="false" android:layout_width="@dimen/extra_vol_button_size" android:layout_height="@dimen/extra_vol_button_size" android:layout_marginTop="15.0dip" android:layout_marginRight="5.0dip" android:textOn="" android:textOff="" android:layout_below="@id/tutorial_caller_info_layout" android:layout_alignParentRight="true" android:soundEffectsEnabled="false" android:contentDescription="@string/extra_vol_button" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/inCallControls" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:splitMotionEvents="false">
+        <include layout="@layout/tutorial_incall_button" />
+    </RelativeLayout>
+    <include android:visibility="gone" layout="@layout/tutorial_call_icon_container" />
+    <include layout="@layout/tutorial_voice_help_tip" />
+    <FrameLayout android:layout_gravity="bottom|center" android:id="@id/help_tip_make_call_complete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/help_tip_endcall_left" android:layout_marginBottom="@dimen/help_tip_endcall_bottom">
+        <FrameLayout android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tutorial_video_call_screen_during_screen_help_popup_margin_bottom">
+            <TextView android:text="@string/airmotion_complete" style="@style/TutorialPopupStyle" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/message_list_item_hover_content_layout" android:background="@drawable/hover_popup_bg" android:paddingLeft="13.0dip" android:paddingTop="10.0dip" android:paddingRight="13.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:textColor="@color/hover_popup_text_color" android:ellipsize="end" android:id="@id/message_list_item_hover_content_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="7" android:lineSpacingExtra="2.0dip"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+</LinearLayout>

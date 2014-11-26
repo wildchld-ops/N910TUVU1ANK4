@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/primary_call_card" android:layout_width="fill_parent" android:layout_height="136.0dip" android:layout_alignParentTop="true">
+        <ImageView android:gravity="center_vertical" android:id="@id/photo" android:layout_width="92.0dip" android:layout_height="92.0dip" android:layout_marginTop="5.0dip" android:scaleType="centerCrop" android:contentDescription="@string/contactPhoto" />
+        <ImageView android:id="@id/mask_image" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:src="@drawable/mask" android:layout_centerHorizontal="true" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="start" android:orientation="horizontal" android:layout_width="274.0dip" android:layout_height="wrap_content">
+            <TextView android:textSize="27.0dip" android:textColor="@color/incall_call_banner_text_color" android:gravity="center_horizontal" android:id="@id/callStateLabel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sec-roboto-light" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="end|center" android:orientation="vertical" android:id="@id/supplementary_info_container" android:background="@color/incall_secondary_info_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true" style="@style/PrimaryCallInfoSupplementaryInfoContainer">
+            <LinearLayout android:gravity="end" android:orientation="horizontal" android:id="@id/providerInfo" android:background="@android:color/transparent" android:paddingTop="@dimen/provider_info_top_bottom_padding" android:paddingBottom="@dimen/provider_info_top_bottom_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/call_banner_side_padding" android:paddingEnd="@dimen/call_banner_side_padding">
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/incall_call_banner_text_color" android:ellipsize="marquee" android:id="@id/providerLabel" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="6.0" android:textAllCaps="true" />
+                <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/incall_call_banner_text_color" android:ellipsize="middle" android:gravity="end" android:id="@id/providerAddress" android:layout_width="0.0px" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="4.0" android:textAllCaps="true" android:paddingStart="8.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/primary_call_banner" android:layout_width="fill_parent" android:layout_height="86.0dip" android:layout_marginTop="3.0dip" android:layout_below="@id/primary_call_card" android:paddingStart="18.0dip" android:paddingEnd="18.0dip">
+        <TextView android:textSize="32.0dip" android:textColor="@color/incall_call_banner_text_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentTop="true" android:fontFamily="sec-roboto-light" android:layout_alignParentStart="true" />
+        <RelativeLayout android:orientation="horizontal" android:id="@id/labelAndNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_below="@id/name">
+            <ImageView android:id="@id/iconLabel" android:visibility="gone" android:layout_width="28.0dip" android:layout_height="27.0dip" android:layout_centerVertical="true" android:layout_marginEnd="4.0dip" android:layout_alignParentStart="true" />
+            <TextView android:textSize="23.0dip" android:textColor="@color/incall_call_banner_text_color" android:id="@id/phoneNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:fontFamily="sec-roboto-light" android:layout_toEndOf="@id/iconLabel" />
+        </RelativeLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="19.0dip" android:textColor="@color/incall_call_banner_text_color" android:gravity="end|center" android:id="@id/elapsedTime" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:singleLine="true" android:layout_weight="1.0" android:paddingEnd="7.0dip" />
+    </RelativeLayout>
+</RelativeLayout>

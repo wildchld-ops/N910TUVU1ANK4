@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/widget_innerline" android:padding="1.0px" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ImageView android:background="@color/widget_title_bg_color" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="6.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/widget_title_height">
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="6.0dip" android:layout_weight="1.0">
+                <TextView android:textSize="18.0dip" android:textColor="@color/widget_title_color" android:gravity="center_vertical" android:id="@id/to_message_widget" android:background="@drawable/selector_widget_label" android:paddingLeft="6.0dip" android:paddingRight="6.0dip" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="@dimen/widget_title_min_width" android:text="@string/favorites" android:singleLine="true" android:freezesText="true" />
+            </LinearLayout>
+            <ImageButton android:id="@id/widget_settings" android:background="@drawable/selector_widget_item_bg" android:paddingLeft="@dimen/widget_title_settings_margin_left" android:paddingRight="@dimen/widget_title_settings_margin_right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/messages_title_ic_setting" android:contentDescription="@string/menu_preferences" />
+        </LinearLayout>
+        <ImageView android:background="#ffababab" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        <FrameLayout android:background="@color/widget_list_bg_color" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+            <ListView android:id="@id/gridview_large" android:layout_width="fill_parent" android:layout_height="fill_parent" android:listSelector="@drawable/selector_widget_item_bg" android:divider="@color/widget_list_divider_color" android:dividerHeight="1.0px" />
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/empty_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/widget_no_message_text_size" android:textColor="@color/widget_no_message_text_color" android:gravity="center" android:id="@id/favorite_no_item" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorite_count_zero" android:drawableTop="@drawable/no_text_messages" style="@style/TextAppearanceNormal" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/widget_shadow" android:layout_width="fill_parent" android:layout_height="@dimen/widget_shadow_height" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:nextFocusDown="@id/list" android:layout_width="fill_parent" android:layout_height="@dimen/select_all_layout_height" layout="@layout/select_all" />
+    <LinearLayout android:gravity="center_vertical" android:id="@id/list_header_create_panel" android:background="@drawable/sub_action_bar_background" android:paddingLeft="16.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="48.0dip">
+        <TextView android:textSize="21.0sp" android:textColor="@color/sub_action_bar_text_color" android:id="@id/title_create" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Add" android:layout_weight="1.0" />
+        <ImageView android:id="@id/setting_create" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/selector_message_add2_button" />
+    </LinearLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.0" />
+    <FrameLayout android:id="@id/empty_spamkeyword" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="bottom" android:id="@id/empty_background_image" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" />
+        <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_spamkeywordstring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/no_text_recommendations" />
+    </FrameLayout>
+</LinearLayout>

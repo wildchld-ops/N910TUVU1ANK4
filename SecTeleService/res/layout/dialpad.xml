@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout android:layout_gravity="center_horizontal" android:id="@id/dialpad" android:background="@drawable/incall_keypad_bg_01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableRow android:layout_height="0.0px" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/one" android:src="@drawable/incall_dial_num_1" android:contentDescription="@string/description_image_button_one" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/two" android:src="@drawable/incall_dial_num_2" android:contentDescription="@string/description_image_button_two" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/three" android:layout_marginRight="0.0dip" android:src="@drawable/incall_dial_num_3" android:contentDescription="@string/description_image_button_three" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="4.0dip" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/four" android:src="@drawable/incall_dial_num_4" android:contentDescription="@string/description_image_button_four" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/five" android:src="@drawable/incall_dial_num_5" android:contentDescription="@string/description_image_button_five" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/six" android:layout_marginRight="0.0dip" android:src="@drawable/incall_dial_num_6" android:contentDescription="@string/description_image_button_six" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="4.0dip" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/seven" android:src="@drawable/incall_dial_num_7" android:contentDescription="@string/description_image_button_seven" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/eight" android:src="@drawable/incall_dial_num_8" android:contentDescription="@string/description_image_button_eight" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/nine" android:layout_marginRight="0.0dip" android:src="@drawable/incall_dial_num_9" android:contentDescription="@string/description_image_button_nine" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+    <TableRow android:layout_height="0.0px" android:layout_marginTop="4.0dip" android:layout_weight="1.0" android:splitMotionEvents="false">
+        <ImageButton android:id="@id/star" android:src="@drawable/incall_dial_num_star" android:contentDescription="@string/description_image_button_star" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/zero" android:src="@drawable/incall_dial_num_0" android:contentDescription="@string/description_image_button_zero" style="@style/InCallDialpadButtonStyle" />
+        <ImageButton android:id="@id/pound" android:layout_marginRight="0.0dip" android:src="@drawable/incall_dial_num_pound" android:contentDescription="@string/description_image_button_pound" style="@style/InCallDialpadButtonStyle" />
+    </TableRow>
+</TableLayout>

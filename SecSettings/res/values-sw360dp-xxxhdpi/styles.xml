@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="sview_title_text_shadow">
+        <item name="android:shadowColor">#c0000000</item>
+        <item name="android:shadowDy">3.0</item>
+    </style>
+    <item type="style" name="APKTOOL_DUMMY_009f">false</item>
+</resources>

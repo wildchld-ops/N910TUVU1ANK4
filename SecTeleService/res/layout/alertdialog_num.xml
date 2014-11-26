@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/tw_pop_up_dialog_padding_top" android:paddingBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/tw_pop_up_dialog_padding_left" android:paddingEnd="@dimen/tw_pop_up_dialog_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:id="@id/DialogText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLength="4" android:inputType="numberPassword" />
+</LinearLayout>

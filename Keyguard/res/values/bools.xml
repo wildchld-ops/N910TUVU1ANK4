@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="bool" name="config_enableLockScreenRotation">@android:bool/config_enableLockScreenRotation</item>
+    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+    <bool name="kg_enable_camera_default_widget">true</bool>
+    <bool name="kg_center_small_widgets_vertically">false</bool>
+    <bool name="kg_top_align_page_shrink_on_bouncer_visible">true</bool>
+    <bool name="kg_show_ime_at_screen_on">true</bool>
+    <bool name="kg_use_all_caps">false</bool>
+    <bool name="config_disableMenuKeyInLockScreen">true</bool>
+    <bool name="config_homeKeyDoubleClickUseRecent">false</bool>
+    <bool name="config_isAlwaysHideStatusBar">false</bool>
+    <bool name="config_isCameraSpecialized">false</bool>
+    <bool name="config_isDefaultSvoiceLaunched">true</bool>
+    <bool name="config_isWaterRippleEnabled">true</bool>
+    <bool name="config_is_JBP_Upgrade">false</bool>
+    <bool name="config_isWaterInkEnabled">false</bool>
+    <bool name="config_isWaterInkLCD">true</bool>
+    <bool name="restrictCPU_Clock_Watercolor">false</bool>
+    <bool name="restrictGPU_Freq_Watercolor">false</bool>
+    <bool name="restrictCPU_Clock_Ripple">false</bool>
+    <bool name="restrictGPU_Freq_Ripple">false</bool>
+    <bool name="config_isSViewCover">false</bool>
+    <bool name="config_isSViewCover2">false</bool>
+    <bool name="config_isSPlannerWidget">false</bool>
+</resources>

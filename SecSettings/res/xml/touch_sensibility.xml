@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Touch Sensibility" android:key="system_category"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceScreen android:title="@string/longpress_title" android:key="tap_hold_delay_preference" android:fragment="com.android.settings.touchsensibility.TapAndHoldDelayFragment" />
+</PreferenceScreen>

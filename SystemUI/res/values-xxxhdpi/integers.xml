@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="recent_portrait_size_one_posx">98</integer>
+    <integer name="recent_portrait_size_one_posy">470</integer>
+    <integer name="recent_portrait_size_one_width">1243</integer>
+    <integer name="recent_portrait_size_one_height">1252</integer>
+    <integer name="recent_portrait_size_two_posx">82</integer>
+    <integer name="recent_portrait_size_two_posy">846</integer>
+    <integer name="recent_portrait_size_two_width">1275</integer>
+    <integer name="recent_portrait_size_two_height">1283</integer>
+    <integer name="recent_portrait_size_default_posx">71</integer>
+    <integer name="recent_portrait_size_default_posy">1248</integer>
+    <integer name="recent_portrait_size_default_width">1297</integer>
+    <integer name="recent_portrait_size_default_height">1306</integer>
+    <integer name="recent_landscape_size_one_posx">666</integer>
+    <integer name="recent_landscape_size_one_posy">282</integer>
+    <integer name="recent_landscape_size_one_width">1226</integer>
+    <integer name="recent_landscape_size_one_height">1345</integer>
+    <integer name="recent_landscape_size_two_posx">656</integer>
+    <integer name="recent_landscape_size_two_posy">469</integer>
+    <integer name="recent_landscape_size_two_width">1246</integer>
+    <integer name="recent_landscape_size_two_height">1364</integer>
+    <integer name="recent_landscape_size_default_posx">649</integer>
+    <integer name="recent_landscape_size_default_posy">684</integer>
+    <integer name="recent_landscape_size_default_width">1261</integer>
+    <integer name="recent_landscape_size_default_height">1383</integer>
+</resources>

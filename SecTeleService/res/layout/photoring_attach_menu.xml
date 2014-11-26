@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="360.0dip" android:layout_height="267.0dip" android:checkable="@id/delete_checkbox"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="38.0dip" android:layout_marginTop="19.0dip" android:layout_marginRight="38.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pick_image" android:background="@drawable/photoring_attach_menu_button_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="25.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_pickimage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/call_photoring_image" />
+            <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:id="@id/txt_pickimage" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip" android:text="@string/photoring_menu_attach_image_from_gallery" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/pick_video" android:background="@drawable/photoring_attach_menu_button_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_pickvideo" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/call_photoring_video" />
+            <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:id="@id/txt_pickvideo" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip" android:text="@string/photoring_menu_attach_video_from_gallery" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="38.0dip" android:layout_marginTop="2.0dip" android:layout_marginRight="38.0dip" android:layout_marginBottom="18.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/take_image" android:background="@drawable/photoring_attach_menu_button_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="25.0dip" android:layout_marginBottom="18.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_takeimage" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/call_photoring_photo" />
+            <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:id="@id/txt_takeimage" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip" android:text="@string/photoring_menu_attach_image_from_camera" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/rec_video" android:background="@drawable/photoring_attach_menu_button_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="25.0dip" android:layout_marginBottom="18.0dip" android:layout_weight="1.0">
+            <ImageView android:id="@id/img_recvideo" android:layout_width="48.0dip" android:layout_height="48.0dip" android:layout_marginTop="14.0dip" android:src="@drawable/call_photoring_recording" />
+            <TextView android:textSize="14.0dip" android:gravity="center_horizontal" android:id="@id/txt_recvideo" android:layout_width="fill_parent" android:layout_height="18.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="24.0dip" android:text="@string/photoring_menu_attach_video_from_camera" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

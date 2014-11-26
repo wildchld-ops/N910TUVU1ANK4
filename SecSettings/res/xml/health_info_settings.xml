@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="health_info_main"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/health_information_category" android:key="health_info_category" />
+    <CheckBoxPreference android:title="@string/health_information_glucose" android:key="glucose" android:summary="@string/health_information_glucose_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_ecg" android:key="ecg" android:summary="@string/health_information_ecg_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_body_temperature" android:key="body_temperature" android:summary="@string/health_information_body_temperature_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_temperature_and_humidity" android:key="temperature_humidity" android:summary="@string/health_information_body_temperature_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_oxygen_saturation" android:key="oxygen_saturation" android:summary="@string/health_information_oxygen_saturation_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_blood_pressure" android:key="blood_pressure" android:summary="@string/health_information_blood_pressure_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_uv" android:key="uv" android:summary="@string/health_information_uv_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/health_information_heart_rate" android:key="heart_rate" android:summary="@string/health_information_heart_rate_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/walking_mate_title" android:key="pedometer" android:summary="@string/health_information_pedometer_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

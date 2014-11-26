@@ -1,0 +1,58 @@
+.class public Lcom/android/launcher2/mainmenu/TitleBarButton;
+.super Landroid/widget/LinearLayout;
+.source "TitleBarButton.java"
+
+
+# direct methods
+.method public constructor <init>(Landroid/content/Context;)V
+    .locals 0
+    .param p1    # Landroid/content/Context;
+
+    invoke-direct {p0, p1}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    .locals 0
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+
+    invoke-direct {p0, p1, p2}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+
+    return-void
+.end method
+
+.method public constructor <init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    .locals 0
+    .param p1    # Landroid/content/Context;
+    .param p2    # Landroid/util/AttributeSet;
+    .param p3    # I
+
+    invoke-direct {p0, p1, p2, p3}, Landroid/widget/LinearLayout;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public setEnabled(Z)V
+    .locals 1
+    .param p1    # Z
+
+    invoke-super {p0, p1}, Landroid/view/View;->setEnabled(Z)V
+
+    if-eqz p1, :cond_0
+
+    const/high16 v0, 0x3f800000
+
+    :goto_0
+    invoke-virtual {p0, v0}, Landroid/view/View;->setAlpha(F)V
+
+    return-void
+
+    :cond_0
+    const/high16 v0, 0x3f000000
+
+    goto :goto_0
+.end method

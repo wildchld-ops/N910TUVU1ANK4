@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/lgt_service_global_auto_roaming_network_setting"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_service_provider_select" android:key="service_provider_key" android:summary="@string/roaming_service_provider_select_summary" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_network_mode" android:key="network_mode_key" android:summary="@string/network_mode_txt_auto" />
+    <PreferenceScreen android:persistent="false" android:title="@string/roaming_network_select" android:key="network_select_key" android:summary="@string/network_select_txt" />
+</PreferenceScreen>

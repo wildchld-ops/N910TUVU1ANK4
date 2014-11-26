@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_shadow_offset_y">11</integer>
+    <integer name="config_appsCustomizeDragSlopeThreshold">150</integer>
+    <integer name="config_appsCustomizeWorkspaceAnimationStagger">40</integer>
+    <integer name="config_crosshairsFadeInTime">600</integer>
+    <integer name="config_dragAppsCustomizeIconFadeAlpha">100</integer>
+    <integer name="config_dragAppsCustomizeIconFadeInDuration">150</integer>
+    <integer name="config_dragAppsCustomizeIconFadeOutDuration">200</integer>
+    <integer name="config_dragOutlineFadeTime">900</integer>
+    <integer name="config_dragOutlineMaxAlpha">191</integer>
+    <integer name="config_folderAnimDuration">280</integer>
+    <integer name="config_menuappsgridEditModeShrinkPercentage">90</integer>
+    <integer name="config_pagePreviewSnapDelay">400</integer>
+    <integer name="config_scrollZoneScrollDelay">500</integer>
+    <integer name="config_shadow_fovy">1</integer>
+    <integer name="config_workspaceDefaultHomeScreenIndex">0</integer>
+    <integer name="config_workspaceDefaultHomeScreenIndex_simple">2</integer>
+    <integer name="config_workspaceDefaultScreenCount">3</integer>
+    <integer name="config_workspaceDefaultScreenCount_simple">5</integer>
+    <integer name="config_workspaceEditModeShrinkPercentage">80</integer>
+    <integer name="config_workspaceMaxFestivalScreenCount">3</integer>
+    <integer name="config_workspaceMaxScreenCount">7</integer>
+    <integer name="config_workspaceMaxSecretScreenCount">3</integer>
+    <integer name="config_workspaceUnshrinkTime">300</integer>
+    <integer name="folder_shadow_offset_y">11</integer>
+    <integer name="homeIcon_leftPaddingThreshold">0</integer>
+    <integer name="menuWidgets_widgetFolderOpen_max_rows">3</integer>
+    <integer name="open_folder_top_padding">0</integer>
+    <integer name="transition_rotation_max">6</integer>
+    <integer name="widget_quickview_menu_left_padding">0</integer>
+    <integer name="workspaceEditMode_buttonParent_paddingRight">0</integer>
+    <integer name="workspaceEditMode_buttonParent_paddingTop">0</integer>
+    <integer name="workspaceEditMode_child_left_bound">0</integer>
+</resources>

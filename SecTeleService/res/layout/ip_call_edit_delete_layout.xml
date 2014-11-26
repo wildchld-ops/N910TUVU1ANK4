@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="295.32812dip" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0dip" android:id="@id/ip_call_edit" android:paddingTop="5.3299866dip" android:paddingBottom="5.3299866dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="13.329987dip" android:layout_marginRight="11.329987dip" android:text="@string/callsettings_sfk_edit" />
+    <View android:id="@id/View01" android:background="#ff444444" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <TextView android:textSize="18.0dip" android:id="@id/ip_call_delete" android:paddingTop="5.3299866dip" android:paddingBottom="5.3299866dip" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginLeft="13.329987dip" android:layout_marginRight="11.329987dip" android:text="@string/callsettings_sfk_delete" />
+</LinearLayout>

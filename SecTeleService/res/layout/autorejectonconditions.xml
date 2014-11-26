@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/autoreject_item1" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/autorejectlist_height" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/list_header_left_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:gravity="center_vertical" android:id="@id/autoreject_item_text1" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/autorejectlist_height" android:singleLine="true" style="@style/primaryTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/autoreject_item_checkbox1" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_divider_margin_left" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/autoreject_item2" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/autorejectlist_height" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/list_header_left_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:gravity="center_vertical" android:id="@id/autoreject_item_text2" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/autorejectlist_height" android:singleLine="true" style="@style/primaryTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/autoreject_item_checkbox2" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_divider_margin_left" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/autoreject_item3" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="@dimen/autorejectlist_height" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/list_header_left_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:gravity="center_vertical" android:id="@id/autoreject_item_text3" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="@dimen/autorejectlist_height" android:singleLine="true" style="@style/primaryTextStyle" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/autoreject_item_checkbox3" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_divider_margin_left" android:layout_marginRight="@dimen/list_divider_margin_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inCallButtonViewDrivingMode" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="top" android:layout_gravity="bottom|center" android:id="@id/incomingCallImageWidgetBackground" android:background="@color/incoming_call_image_widget_background" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <com.android.incallui.widget.incomingwidget.IncomingCallImageWidget android:id="@id/incomingCallImageWidget" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+    <include layout="@layout/reject_call_with_message_sliding_drawer" />
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/CMASLayout" android:background="#ff3c4156" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/CMASChangeTitle" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ToggleButton android:id="@id/CMASChangeSwitchWidget" android:padding="8.0dip" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:background="@color/actionbar_separator_bar_color" android:focusable="false" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+    <RelativeLayout android:id="@id/apnChangeLayout" android:background="#ff3c4156" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="50.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/apnChangeTitle" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ToggleButton android:id="@id/apnChangeSwitchWidget" android:padding="8.0dip" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_vertical" android:background="@color/actionbar_separator_bar_color" android:focusable="false" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textviewCryptoKey" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/backupLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btnBackup" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <TextView android:textColor="@color/list_date_color" android:id="@id/backup_result_filename" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_vertical" android:background="@color/actionbar_separator_bar_color" android:focusable="false" android:layout_width="fill_parent" android:layout_height="5.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/restoreLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btnRestore" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/chkRestoreTitle" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <CheckBox android:id="@id/chkRestore" android:padding="8.0dip" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/list_divider_color" android:focusable="false" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <TextView android:textColor="@color/list_date_color" android:id="@id/restore_result_filename" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ImageView android:layout_gravity="center_vertical" android:background="@color/list_divider_color" android:focusable="false" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/restoreListLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ListView android:id="@id/restoreFileList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

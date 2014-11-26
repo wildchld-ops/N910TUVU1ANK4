@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_hwr_install_guide_dialog_top_margin" android:layout_marginBottom="@dimen/popup_hwr_install_guide_dialog_bottom_margin" android:paddingStart="@dimen/popup_hwr_install_guide_dialog_left_padding" android:paddingEnd="@dimen/popup_hwr_install_guide_dialog_right_padding">
+            <TextView android:textAppearance="?android:textAppearanceLargePopupMenu" android:textStyle="normal" android:textColor="@color/hwr_popup_guide_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/popup_hwr_install_guide_textview_top_margin" android:layout_marginBottom="@dimen/popup_hwr_install_guide_textview_bottom_margin" android:text="@string/popup_hwr_install_guide" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

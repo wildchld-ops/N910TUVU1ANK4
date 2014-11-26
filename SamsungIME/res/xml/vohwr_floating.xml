@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/handwriting_floating_default_key_width" android:keyHeight="@dimen/handwriting_floating_default_key_height" android:horizontalGap="@dimen/handwriting_floating_default_key_horizontal_gap" android:verticalGap="@dimen/handwriting_floating_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/handwriting_floating_first_col_horizontal_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbols_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:codes="-311" android:keyLabel="@string/key_label_range_123_sym" />
+        <Key android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="-102" />
+        <Key android:keyWidth="@dimen/handwriting_floating_space_key_width" android:codes="32" android:keyIcon="@drawable/qwerty_key_icon_space_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_normal_voice_off">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbols_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:codes="-311" android:keyLabel="@string/key_label_range_123_sym" />
+        <Key android:codes="-108" android:keyIcon="@drawable/qwerty_key_icon_language_change_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="-102" />
+        <Key android:keyWidth="@dimen/handwriting_floating_space_key_width" android:codes="32" android:keyIcon="@drawable/qwerty_key_icon_space_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_single_language">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbols_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:codes="-311" android:keyLabel="@string/key_label_range_123_sym" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="-102" />
+        <Key android:keyWidth="@dimen/handwriting_floating_single_language_space_key_width" android:codes="32" android:keyIcon="@drawable/qwerty_key_icon_space_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_single_language_voice_off">
+        <Key android:keyWidth="@dimen/handwriting_floating_symbols_key_width" android:horizontalGap="@dimen/handwriting_floating_first_col_horizontal_gap" android:codes="-311" android:keyLabel="@string/key_label_range_123_sym" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" />
+        <Key android:codes="-102" />
+        <Key android:keyWidth="@dimen/handwriting_floating_single_language_space_key_width" android:codes="32" android:keyIcon="@drawable/qwerty_key_icon_space_xml" />
+        <Key android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+        <Key android:keyWidth="@dimen/handwriting_floating_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/handwriting_floating_first_col_horizontal_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

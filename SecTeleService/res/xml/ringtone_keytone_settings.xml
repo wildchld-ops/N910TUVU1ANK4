@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <com.android.phone.DefaultRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="callsettings_device_ringtone" android:summary="" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone" />
+    <com.android.phone.DefaultRingtonePreference android:persistent="false" android:title="@string/ringtone_title" android:key="callsettings_device_ringtone_sim2" android:summary="" android:dialogTitle="@string/ringtone_title" android:ringtoneType="ringtone2" />
+    <PreferenceScreen android:title="@string/ringtone_title" android:key="callsettings_device_duos_ringtone" />
+    <PreferenceScreen android:title="@string/phone_vibration_title" android:key="callsettings_device_vibration" android:summary="@string/phone_vibration_summary" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/vibrate_on_ring_title" android:key="callsettings_vibrate_when_ringing" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="false" android:title="@string/dtmf_tone_enable_title" android:key="callsettings_keytones" android:summary="@string/dtmf_tone_enable_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+</PreferenceScreen>

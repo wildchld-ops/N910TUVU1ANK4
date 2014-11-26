@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:nextFocusDown="@id/templates" android:layout_width="fill_parent" android:layout_height="@dimen/select_all_layout_height" layout="@layout/select_all" />
+    <ListView android:scrollbarStyle="insideOverlay" android:id="@id/templates" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/empty_texttemplatescreen" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <ImageView android:layout_gravity="bottom" android:id="@id/empty_background_image" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:ellipsize="marquee" android:gravity="center" android:id="@id/empty_list_textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_text_templates" android:singleLine="true" android:drawableTop="@drawable/no_text_recommendations" />
+            <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:gravity="center" android:id="@id/empty_list_textView_desc" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/no_text_templates_desc" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="top|center" android:id="@id/secondaryCallPhoto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@string/onHold" />
+    <View android:id="@id/dim_effect_for_secondary_photo" android:background="@drawable/clickable_dim_effect" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:background="@color/incall_call_banner_background" android:paddingTop="@dimen/call_banner_top_bottom_padding" android:paddingBottom="@dimen/call_banner_top_bottom_padding" android:layout_width="fill_parent" android:layout_height="@dimen/call_banner_height" android:paddingStart="@dimen/call_banner_side_padding" android:paddingEnd="@dimen/secondary_call_banner_right_padding">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/incall_call_banner_text_color" android:ellipsize="marquee" android:layout_gravity="start|bottom|center" android:id="@id/secondaryCallName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" style="@style/SecondaryCallInfoSecondaryCallName" />
+    </FrameLayout>
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/incall_call_banner_text_color" android:gravity="end|bottom|center" android:layout_gravity="end" android:id="@id/secondaryCallStatus" android:paddingTop="@dimen/call_banner_top_bottom_padding" android:paddingBottom="@dimen/call_banner_top_bottom_padding" android:layout_width="wrap_content" android:layout_height="@dimen/call_banner_height" android:text="@string/onHold" android:singleLine="true" android:textAllCaps="true" android:paddingStart="@dimen/call_banner_side_padding" android:paddingEnd="@dimen/call_banner_side_padding" style="@style/SecondaryCallInfoSecondaryCallStatus" />
+</FrameLayout>

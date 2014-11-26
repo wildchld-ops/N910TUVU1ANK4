@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/layoutParticipantsMode" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/layoutCallerAdd" android:background="@drawable/tw_searchfiled_background" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <AutoCompleteTextView android:textSize="19.0sp" android:id="@id/recipients_editor" android:background="@drawable/tw_textfield_search_selected" android:layout_width="fill_parent" android:layout_height="36.0dip" android:layout_marginTop="6.0dip" android:layout_marginRight="1.0dip" android:hint="@string/add_recipient_hint" android:singleLine="true" android:layout_toLeftOf="@id/btnToContact" android:imeOptions="flagNoExtractUi" />
+            <ImageButton android:gravity="center" android:id="@id/btnToContact" android:background="@drawable/action_item_background" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/vt_conf_calleraddimport_addcontact_btn" android:layout_alignParentRight="true" />
+            <ImageButton android:gravity="center" android:id="@id/btnPlus" android:background="@drawable/action_item_background" android:visibility="invisible" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/vt_conf_calleradd_plus_btn" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/lyoutCallerList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/lyoutConferenceCallBtn" android:layout_below="@id/layoutCallerAdd">
+            <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:id="@id/lyoutConferenceCallBtn" android:paddingLeft="32.0dip" android:paddingTop="10.0dip" android:paddingRight="32.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true">
+            <Button android:textSize="19.0sp" android:gravity="center" android:id="@id/btnSend" android:layout_width="296.0dip" android:layout_height="40.0dip" android:text="@string/groupVideoCall" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutDeleteMode" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/ims_conf_call_list_header" />
+        <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</FrameLayout>

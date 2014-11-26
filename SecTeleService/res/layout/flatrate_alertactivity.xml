@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:textColor="@color/call_setting_dialog_text" android:id="@id/message_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tw_pop_up_dialog_margin_top" android:layout_marginBottom="@dimen/tw_pop_up_dialog_margin_bottom" android:singleLine="false" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" android:layout_marginEnd="@dimen/tw_pop_up_dialog_margin_right" />
+        <CheckBox android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:textColor="@color/call_setting_dialog_text" android:id="@id/org_checkbox" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tw_pop_up_dialog_margin_bottom" android:text="@string/enable_flat_rate_org" android:paddingStart="8.0dip" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" android:layout_marginEnd="@dimen/tw_pop_up_dialog_margin_right" />
+        <RadioGroup android:orientation="vertical" android:id="@id/xec_radiobuttton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/tw_pop_up_dialog_margin_bottom" android:layout_marginStart="@dimen/tw_pop_up_dialog_margin_left" android:layout_marginEnd="@dimen/tw_pop_up_dialog_margin_right">
+            <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:textColor="@color/call_setting_dialog_text" android:id="@id/xec_radiobuttton_option1" android:checked="false" android:text="@string/alert_dialog_yes" android:paddingStart="8.0dip" />
+            <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textSize="19.0sp" android:textColor="@color/call_setting_dialog_text" android:id="@id/xec_radiobuttton_option2" android:checked="true" android:text="@string/alert_dialog_no" android:paddingStart="8.0dip" />
+        </RadioGroup>
+    </LinearLayout>
+</ScrollView>

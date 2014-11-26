@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:nextFocusDown="@id/list" android:layout_width="fill_parent" android:layout_height="@dimen/select_all_layout_height" layout="@layout/select_all" />
+    <LinearLayout android:orientation="vertical" android:id="@id/list_header_auto_spam_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:paddingLeft="10.0dip" android:text="@string/menu_spam_subtitle_auto" style="?android:attr/listSeparatorTextViewStyle" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/spam_smart_block_layout" android:background="@drawable/msg_list_background_selector" android:paddingLeft="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/autoreject_text_layout" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="56.0dip" android:layout_weight="0.9">
+                <TextView android:textSize="21.0sp" android:textColor="@color/list_item_primary_text_color" android:id="@id/spam_smart_block" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_spam_smart_block" android:singleLine="true" />
+            </LinearLayout>
+            <View android:gravity="center_vertical" android:id="@id/divider1" android:background="@drawable/tw_divider_vertical" android:layout_width="1.0dip" android:layout_height="34.0dip" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/autoblock_checkbox_layer" android:paddingLeft="12.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <Switch android:textSize="21.0sp" android:id="@id/select_auto_checkbox" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/list_header_create_panel" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="15.0sp" android:id="@id/list_header_create_panel_subtitle" android:paddingLeft="10.0dip" android:visibility="gone" android:text="@string/menu_spam_subtitle_manual" style="?android:attr/listSeparatorTextViewStyle" />
+        <LinearLayout android:gravity="center_vertical" android:id="@id/spam_manual_block_layout" android:background="@drawable/sub_action_bar_background" android:paddingLeft="16.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="48.0dip">
+            <TextView android:textSize="21.0sp" android:textColor="@color/sub_action_bar_text_color" android:id="@id/title_create" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/Add" android:layout_weight="1.0" />
+            <ImageView android:id="@id/setting_create" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/selector_message_add2_button" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="20.0" />
+    <FrameLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/empty_spamkeyword" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ImageView android:layout_gravity="bottom" android:id="@id/empty_background_image" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" />
+        <TextView android:textSize="19.0dip" android:textColor="@color/conversation_no_message_color" android:gravity="center" android:layout_gravity="center" android:id="@id/empty_spamkeywordstring" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/no_text_recommendations" />
+    </FrameLayout>
+</LinearLayout>

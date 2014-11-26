@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tw_seekbarSplit_height_size">9.0dip</dimen>
+    <dimen name="tw_seekbarSplit_verticalbar_height_size">30.0dip</dimen>
+    <dimen name="tw_seekbarSplit_verticalbar_width_size">8.0dip</dimen>
+</resources>

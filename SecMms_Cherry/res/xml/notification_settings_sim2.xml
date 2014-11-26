@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/pref_title_notification_backlight" android:key="pref_key_backlight_sim2" android:summary="@string/pref_summary_notification_backlight" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    <com.android.mms.ui.MmsRingtonePreference android:title="@string/pref_title_notification_ringtone" android:key="pref_key_ringtone_sim2" android:defaultValue="content://settings/system/notification_sound_2" android:ringtoneType="notification" />
+    <CheckBoxPreference android:title="@string/pref_title_notification_vibrateWhen" android:key="pref_key_vibrateWhen_checkbox_sim2" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    <ListPreference android:entries="@array/msg_repetition_alert_Array" android:title="@string/pref_msg_repetition_alert" android:key="pref_key_msg_reminder_alert_sim2" android:defaultValue="1" android:entryValues="@array/msg_repetition_alert_Array_values" />
+    <CheckBoxPreference android:title="@string/pref_title_message_popup" android:key="pref_key_enable_popup_reply_sim2" android:summary="@string/pref_summary_message_popup" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    <PreferenceCategory android:title="@string/pref_title_preview_message_notification" android:key="pref_key_preview_category_sim2">
+        <CheckBoxPreference android:title="@string/preview_lockscreen" android:key="pref_key_enable_preview_message_sim2" android:summary="@string/preview_lockscreen_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preview_statusbar" android:key="pref_key_enable_statusbar_preview_message_sim2" android:summary="@string/preview_statusbar_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    </PreferenceCategory>
+</PreferenceScreen>

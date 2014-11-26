@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="keyCode" format="integer" />
+    <attr name="keyRepeat" format="boolean" />
+    <attr name="glowBackground" format="reference" />
+    <attr name="text" format="string" />
+    <attr name="insetLeft" format="dimension" />
+    <attr name="rowHeight" format="dimension" />
+    <attr name="recentItemLayout" format="reference" />
+    <attr name="minSize" format="dimension" />
+    <attr name="maxSize" format="dimension" />
+    <attr name="holdTime" format="integer" />
+    <attr name="decayTime" format="integer" />
+    <attr name="ampmSmall" format="boolean" />
+    <attr name="orientation">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="text_help" format="reference" />
+    <attr name="insideImg_paddingLeft" format="dimension" />
+    <attr name="insideImg_paddingRight" format="dimension" />
+    <attr name="insideImg_paddingTop" format="dimension" />
+    <attr name="insideImg_paddingBottom" format="dimension" />
+    <attr name="insideImg_padding" format="dimension" />
+    <attr name="insideImg_height" format="dimension" />
+    <attr name="insideImg_width" format="dimension" />
+    <attr name="insideImg_yDiff" format="dimension" />
+    <attr name="showDisplayValue" format="string" />
+    <attr name="showDisplayString" format="string" />
+    <attr name="newLineString" format="string" />
+    <attr name="insideImg_gravity">
+        <enum name="fill" value="119" />
+        <enum name="center" value="17" />
+        <enum name="top" value="48" />
+        <enum name="bottom" value="80" />
+        <enum name="left" value="3" />
+        <enum name="right" value="5" />
+    </attr>
+    <attr name="images" format="reference" />
+    <attr name="image" format="reference" />
+</resources>

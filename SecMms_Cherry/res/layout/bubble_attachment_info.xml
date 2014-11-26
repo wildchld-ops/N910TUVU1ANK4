@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="@dimen/bubble_vitem_area_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/vitem_img" android:longClickable="true" android:layout_width="@dimen/bubble_vitem_img_width" android:layout_height="@dimen/bubble_vitem_img_width" android:layout_marginRight="6.0dip" />
+    <TextView android:textSize="16.0dip" android:textColor="@color/message_list_audio_info_color" android:ellipsize="middle" android:gravity="center_vertical" android:id="@id/vitem_name" android:longClickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/bubble_audio_attach_max_width" android:singleLine="true" />
+</LinearLayout>

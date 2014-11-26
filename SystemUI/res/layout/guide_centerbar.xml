@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/guide_centerbar" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_guide_centerbar" android:layout_width="@dimen/center_bar_guide_width" android:layout_height="@dimen/center_bar_guide_width" />
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/view_guide_centerbar_point" android:background="@drawable/multi_window_drawer" android:layout_width="@dimen/center_bar_width" android:layout_height="@dimen/center_bar_height" />
+    </RelativeLayout>
+</FrameLayout>

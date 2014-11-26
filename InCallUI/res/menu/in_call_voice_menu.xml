@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/holdButton" android:title="@string/onscreenHoldText" />
+    <item android:id="@id/swapButton" android:title="@string/onscreenSwapCallsText" />
+    <item android:id="@id/mergs_calls" android:title="@string/onscreenMergeCallsText" />
+    <item android:id="@id/manage_conference_call" android:title="@string/manage_conference_call" />
+    <item android:id="@id/call_transfer" android:title="@string/transfer" />
+    <item android:id="@id/add_call" android:title="@string/add_call_opt" />
+    <item android:id="@id/contacts" android:title="@string/contacts" />
+    <item android:id="@id/memo" android:title="@string/memo" />
+    <item android:id="@id/message" android:title="@string/messages" />
+    <item android:id="@id/start_record" android:title="@string/popup_start_record" />
+    <item android:id="@id/stop_record" android:title="@string/popup_stop_record" />
+    <item android:id="@id/call_sound_eq" android:title="@string/personalize_call_sound" />
+    <item android:id="@id/noise_reduction" android:title="@string/callsettings_noise_reduction_title" />
+    <item android:id="@id/extraVolumeButton" android:visibility="gone" android:title="@string/extra_vol_button" />
+    <item android:id="@id/send_file_via_chat_on" android:title="@string/send_file_via_chat_on" />
+    <item android:id="@id/send_file_via_filetransfer" android:title="@string/send_file_via_filetransfer" />
+    <item android:id="@id/bt_headset_on" android:title="@string/onscreenBluetoothTextOn" />
+    <item android:id="@id/bt_headset_off" android:title="@string/onscreenBluetoothTextOff" />
+    <item android:id="@id/menu_mute_off" android:visibility="gone" android:title="@string/mute_off" />
+    <item android:id="@id/menu_mute_on" android:visibility="gone" android:title="@string/mute_on" />
+    <item android:id="@id/menu_onehand" android:title="@string/onehand_mode_on" />
+    <item android:id="@id/sim_services" android:title="@string/sim_services" />
+    <item android:id="@id/uim_services" android:title="@string/uim_services" />
+    <item android:icon="@drawable/videocall_action_bar_open_camera" android:id="@id/open_camera_on_voice" android:visibility="gone" android:title="@string/open_camera" />
+    <item android:icon="@drawable/videocall_action_bar_group_add" android:id="@id/add_user_voice" android:visibility="gone" android:title="@string/group_voice_call" />
+    <item android:id="@id/menu_remote_control" android:visibility="gone" android:title="@string/remote_control" />
+    <item android:id="@id/menu_call_settings" android:visibility="gone" android:title="@string/button_decline" />
+</menu>

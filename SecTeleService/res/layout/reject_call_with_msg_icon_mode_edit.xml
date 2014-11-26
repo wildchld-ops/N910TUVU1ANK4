@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout style="@style/IconModeEditLayoutStyle1">
+            <ImageButton android:id="@id/imagebutton" style="@style/IconModeEditButtonStyle" />
+            <EditText android:id="@id/title_edit" style="@style/IconModeEditTitleStyle" />
+        </LinearLayout>
+        <View android:background="?android:listDivider" style="@style/IconModeEditDividerLineStyle" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:text="@string/icon_edit_msg_body_title" style="@style/IconModeEditTextViewStyle" />
+            <EditText android:id="@id/body_edit" style="@style/IconModeEditBodyStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

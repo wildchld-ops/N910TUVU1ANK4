@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/incomingButtonViewForDriveLink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/inCallScreenButtonsContainer" android:layout_width="@dimen/in_call_buttons_drivelink_width" android:layout_height="@dimen/in_call_buttons_drivelink_height" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/accept_drivelink_button" android:background="@drawable/driving_call_btn_bg" android:clickable="true" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layout_marginEnd="2.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/accept_drivelink_image" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/accept_drivelink" />
+            <LinearLayout android:gravity="top|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_drivelink_height" android:layout_below="@id/accept_drivelink_image" android:splitMotionEvents="false">
+                <ImageView android:id="@id/quotes_start_accept" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/quotes_btn_start" />
+                <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:id="@id/acceptButtonText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-5.0dip" android:text="@string/incoming_answer" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/quotes_end_accept" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/quotes_btn_end" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@id/reject_drivelink_button" android:background="@drawable/driving_call_btn_bg" android:clickable="true" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:gravity="center" android:id="@id/reject_drivelink_image" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/reject_drivelink" />
+            <LinearLayout android:gravity="top|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_drivelink_height" android:layout_below="@id/reject_drivelink_image" android:splitMotionEvents="false">
+                <ImageView android:id="@id/quotes_start_reject" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/quotes_btn_start" android:layout_marginStart="3.0dip" />
+                <TextView android:textSize="30.0dip" android:textColor="#ffffffff" android:id="@id/rejectButtonText" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="-5.0dip" android:text="@string/incoming_reject" android:fontFamily="sans-serif-light" />
+                <ImageView android:id="@id/quotes_end_reject" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/quotes_btn_end" android:layout_marginEnd="3.0dip" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="status_bar_recents_thumbnail_top_margin">28.0dip</dimen>
+    <dimen name="status_bar_recents_button_height">44.0dip</dimen>
+    <dimen name="status_bar_recents_right_glow_margin">0.0dip</dimen>
+    <dimen name="status_bar_recents_thumbnail_left_margin">0.0dip</dimen>
+    <dimen name="status_bar_recents_text_description_padding">8.0dip</dimen>
+    <dimen name="status_bar_recents_app_label_width">156.0dip</dimen>
+    <dimen name="status_bar_recents_app_label_left_margin">12.0dip</dimen>
+    <dimen name="status_bar_recents_item_padding">2.0dip</dimen>
+    <dimen name="status_bar_recents_app_icon_left_margin">8.0dip</dimen>
+    <dimen name="status_bar_recents_app_icon_top_margin">8.0dip</dimen>
+    <item type="dimen" name="navigation_bar_size">@android:dimen/navigation_bar_width</item>
+    <dimen name="quick_settings_cell_height">100.0dip</dimen>
+    <dimen name="status_bar_recents_app_label_top_margin">123.0dip</dimen>
+    <dimen name="tw_status_bar_recents_panel_bg_width">122.0dip</dimen>
+    <dimen name="tw_status_bar_recents_panel_bg_height">274.0dip</dimen>
+    <dimen name="tw_status_bar_recents_thumbnail_width">143.0dip</dimen>
+    <dimen name="tw_status_bar_recents_thumbnail_height">134.0dip</dimen>
+    <dimen name="tw_status_bar_recents_panel_width">154.0dip</dimen>
+    <dimen name="tw_status_bar_recents_panel_height">284.0dip</dimen>
+    <dimen name="tw_status_bar_recents_app_label_width">109.0dip</dimen>
+    <dimen name="tw_status_bar_recents_app_icon_left_margin">19.0dip</dimen>
+    <dimen name="tw_status_bar_recents_app_icon_top_margin">9.0dip</dimen>
+    <dimen name="tw_status_bar_recents_thumbnail_left_margin">5.0dip</dimen>
+    <dimen name="tw_status_bar_recents_thumbnail_top_margin">127.0dip</dimen>
+    <dimen name="tw_status_bar_recents_app_label_left_margin">22.0dip</dimen>
+    <dimen name="tw_status_bar_recents_app_label_top_margin">19.0dip</dimen>
+    <dimen name="tw_status_bar_recents_app_label_bottom_margin">145.0dip</dimen>
+    <dimen name="tw_status_bar_recents_launch_button_with_shortcut_margin">75.0dip</dimen>
+    <dimen name="status_bar_recents_launch_button_size">40.0dip</dimen>
+</resources>

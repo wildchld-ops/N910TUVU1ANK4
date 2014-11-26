@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/call_card" android:layout_width="fill_parent" android:layout_height="@dimen/call_card_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/primary_call_info" layout="@layout/primary_call_info" />
+    <ViewStub android:id="@id/social_status_stub" android:paddingTop="@dimen/social_status_stub_padding_top" android:layout="@layout/social_status_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ViewStub android:id="@id/secondary_call_info" android:layout="@layout/secondary_call_info" android:layout_width="fill_parent" android:layout_height="@dimen/secondary_call_info_height" />
+        <ViewStub android:id="@id/manage_conference_call" android:layout="@layout/manage_conf_call" android:layout_width="fill_parent" android:layout_height="@dimen/onScreen_other_buttons_height" />
+        <ViewStub android:id="@id/secondary_call_info_cdma" android:layout="@layout/secondary_call_info_cdma" android:layout_width="fill_parent" android:layout_height="@dimen/secondary_call_info_height_cdma" />
+        <ViewStub android:id="@id/resume_call" android:layout="@layout/resume_bg_call" android:layout_width="fill_parent" android:layout_height="@dimen/onScreen_other_buttons_height" />
+        <ViewStub android:id="@id/video_call_buttons" android:layout="@layout/video_call_buttons" android:layout_width="fill_parent" android:layout_height="@dimen/onScreen_other_buttons_height" />
+    </LinearLayout>
+</FrameLayout>

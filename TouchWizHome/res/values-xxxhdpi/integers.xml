@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="app_shadow_offset_y">11</integer>
+    <integer name="config_shadow_fovy">4</integer>
+    <integer name="config_workspaceEditModeShrinkPercentage">85</integer>
+    <integer name="folder_shadow_offset_y">9</integer>
+    <integer name="menuWidgets_widgetFolderOpen_max_rows">3</integer>
+    <integer name="workspaceEditMode_buttonParent_paddingRight">36</integer>
+    <integer name="workspaceEditMode_child_left_bound">-1</integer>
+    <integer name="folderIcon_animation_OffsetX">35</integer>
+    <integer name="folderIcon_animation_OffsetY">4</integer>
+    <integer name="folderIcon_animation_Scale">15</integer>
+    <integer name="home_cellCountX">4</integer>
+    <integer name="home_cellCountY">4</integer>
+    <integer name="home_pageIndicatorMaxVisible">9</integer>
+    <integer name="hotseat_cellCountX">5</integer>
+    <integer name="hotseat_cellCountY">1</integer>
+    <integer name="max_folder_visible_cols">3</integer>
+    <integer name="max_folder_visible_rows">4</integer>
+    <integer name="menuAppsGrid_cellCountX">5</integer>
+    <integer name="menuAppsGrid_cellCountY">5</integer>
+    <integer name="menuAppsGrid_clingFocusedX">1</integer>
+    <integer name="menuAppsGrid_clingFocusedY">1</integer>
+    <integer name="menuWidgets_cellCountX">2</integer>
+    <integer name="menuWidgets_cellCountY">3</integer>
+    <integer name="menu_pageIndicatorMaxVisible">11</integer>
+    <integer name="page_snap_animation_duration">550</integer>
+    <item type="integer" name="APKTOOL_DUMMY_0032">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0033">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0034">false</item>
+    <item type="integer" name="APKTOOL_DUMMY_0035">false</item>
+</resources>

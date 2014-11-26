@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:minHeight="@dimen/fdnlist_height" android:mode="twoLine" android:layout_weight="0.8" android:paddingStart="16.0dip" android:paddingEnd="12.0dip">
+        <TextView android:id="@id/fdn_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:textAlignment="viewStart" style="@style/primaryTextStyle" />
+        <TextView android:ellipsize="marquee" android:id="@id/fdn_num" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" style="@style/secondaryTextStyle" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/fdn_button_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginEnd="8.0sp">
+        <ImageButton android:id="@id/fdn_button" android:background="@drawable/badge_action_call" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:fillViewport="true" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:gravity="left" android:layout_width="320.0px" android:layout_height="wrap_content" android:text="@string/hwr_gesture_edit" />
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_01" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <LinearLayout android:orientation="horizontal" android:layout_width="320.0px" android:layout_height="wrap_content">
+                    <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete" />
+                    <TextView android:textSize="24.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/popup_hwr_gesture_word_sentence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete_sentece" android:layout_marginStart="3.0px" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_02" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <LinearLayout android:orientation="horizontal" android:layout_width="320.0px" android:layout_height="wrap_content">
+                    <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete" />
+                    <TextView android:textSize="24.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/popup_hwr_gesture_one_char" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete_char" android:layout_marginStart="3.0px" />
+                </LinearLayout>
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_03" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:gravity="left" android:layout_width="320.0px" android:layout_height="wrap_content" android:text="@string/hwr_gesture_space" />
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_04" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:gravity="left" android:layout_width="320.0px" android:layout_height="wrap_content" android:text="@string/hwr_gesture_space" />
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_05" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:gravity="left" android:layout_width="320.0px" android:layout_height="wrap_content" android:text="@string/hwr_gesture_deletespace" />
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_06" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="32.0px">
+                <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:gravity="left" android:layout_width="320.0px" android:layout_height="wrap_content" android:text="@string/hwr_gesture_enter" />
+                <ImageView android:background="@drawable/textinput_gesture_guide_popup_07" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@color/hwr_tutorial_line" android:layout_width="fill_parent" android:layout_height="1.0px" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="108.0px" android:paddingStart="32.0px">
+        <CheckBox android:textSize="40.0px" android:textColor="@color/hwr_tutorial_sub_text_color" android:layout_gravity="center_vertical" android:id="@id/hwr_gesture_popup_chk_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_guide_dont_show" android:soundEffectsEnabled="true" />
+    </LinearLayout>
+</LinearLayout>

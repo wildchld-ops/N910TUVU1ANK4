@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.sec.magazine.KeyguardMagazineCardMainView android:id="@id/keyguard_magazinecard_viewroot" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.keyguard.sec.magazine.KeyguardMagazineCardHorizontalScrollView android:gravity="left" android:id="@id/keyguard_magazinecard_scrollview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="bottom|left|center" android:orientation="horizontal" android:id="@id/keyguard_magazinecard_listview" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/keyguard_magazinecard_view_horizontal_margin" android:layout_marginRight="@dimen/keyguard_magazinecard_view_horizontal_margin" android:layout_marginBottom="@dimen/keyguard_magazinecard_view_bottom_margin" />
+        </LinearLayout>
+    </com.android.keyguard.sec.magazine.KeyguardMagazineCardHorizontalScrollView>
+</com.android.keyguard.sec.magazine.KeyguardMagazineCardMainView>

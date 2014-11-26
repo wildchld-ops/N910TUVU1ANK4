@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/additional_gsm_call_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <com.android.phone.CLIRListPreference android:persistent="false" android:enabled="false" android:entries="@array/clir_display_values" android:title="@string/labelCallerId" android:key="button_clir_key" android:summary="@string/loading" android:defaultValue="DEFAULT" android:dialogTitle="@string/labelCallerId" android:entryValues="@array/clir_values" />
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_callType_select_key" android:fragment="com.android.phone.callsettings.CallTypeSelectForForwarding" />
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_gsm_voicecall_forwarding" android:summary="@string/labelCF_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.GsmUmtsCallForwardOptions">
+            <extra android:name="SS_Type" android:value="forwarding" />
+        </intent>
+    </PreferenceScreen>
+    <EditTextPreference android:maxLength="100" android:title="@string/callsettings_areacode_title" android:key="edittext_areacode_key" android:summary="@string/callsettings_areacode_summary_off" android:dialogTitle="@string/callsettings_areacode_title" android:inputType="phone" />
+    <PreferenceScreen android:title="@string/callsettings_call_barring" android:key="voicecall_barring_key" android:fragment="com.android.phone.callsettings.CallTypeSelectForBarring" />
+    <PreferenceScreen android:persistent="false" android:title="@string/callsettings_call_barring" android:key="gsm_voicecall_barring_key" android:fragment="com.android.phone.callsettings.CallBarring" />
+    <com.android.phone.CallWaitingCheckBoxPreference android:persistent="false" android:title="@string/labelCW" android:key="button_cw_key" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:summaryOn="@string/sum_cw_enabled" android:summaryOff="@string/sum_cw_disabled" />
+    <CheckBoxPreference android:title="@string/callsettings_autoredial_title" android:key="button_autoredial_key" android:summary="@string/callsettings_autoredial_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key" android:fragment="com.android.phone.FdnSetting" />
+    <CheckBoxPreference android:title="@string/callsettings_subaddress_title" android:key="button_subaddress_key" android:summary="@string/callsettings_subaddress_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceCategory android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_category_key_duos">
+        <PreferenceScreen android:persistent="false" android:title="@string/voicemail" android:key="button_voicemail_key_duos" android:fragment="com.android.phone.CallFeaturesSetting">
+            <extra android:name="is_voicemail_duos" android:value="true" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+    <ListPreference android:persistent="false" android:entries="@array/tty_mode_entries" android:title="@string/tty_mode_option_title" android:key="button_tty_mode_key" android:summary="@string/tty_mode_option_summary" android:entryValues="@array/tty_mode_values" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/hac_mode_title" android:key="button_hac_key" android:summary="@string/hac_mode_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

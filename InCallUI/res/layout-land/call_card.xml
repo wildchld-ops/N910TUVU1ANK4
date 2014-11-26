@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/call_card" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/primary_call_info" layout="@layout/primary_call_info" />
+    <ViewStub android:id="@id/social_status_stub" android:paddingTop="101.0dip" android:layout="@layout/social_status_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ViewStub android:id="@id/manage_conference_call" android:layout="@layout/manage_conf_call" android:layout_width="@dimen/secondary_call_info_width" android:layout_height="@dimen/secondary_call_info_height" android:layout_marginTop="@dimen/secondary_call_info_margin_top" />
+    <ViewStub android:id="@id/secondary_call_info" android:layout="@layout/secondary_call_info" android:layout_width="fill_parent" android:layout_height="@dimen/secondary_call_info_height" android:layout_marginTop="@dimen/secondary_call_info_margin_top" />
+    <ViewStub android:id="@id/secondary_call_info_cdma" android:layout="@layout/secondary_call_info_cdma" android:layout_width="fill_parent" android:layout_height="@dimen/secondary_call_info_height_cdma" android:layout_marginTop="@dimen/secondary_call_info_margin_top_cdma" />
+    <ViewStub android:id="@id/resume_call" android:layout="@layout/resume_bg_call" android:layout_width="@dimen/secondary_call_info_width" android:layout_height="@dimen/secondary_call_info_height" android:layout_marginTop="@dimen/secondary_call_info_margin_top" />
+</FrameLayout>

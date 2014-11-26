@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/create_list" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="bottom" android:orientation="vertical" android:paddingBottom="@dimen/autoreject_item_padding_bottom" android:layout_width="fill_parent" android:layout_height="@dimen/autoreject_item_height" android:paddingStart="@dimen/autoreject_item_padding_start" android:paddingEnd="@dimen/autoreject_item_padding_end">
+        <TextView android:textSize="17.0sp" android:textColor="@color/list_primary_text_color" android:id="@id/autoreject_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/callsettings_number" />
+        <LinearLayout android:gravity="center" android:id="@id/list_create" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/autoreject_item_edittext_margin_top">
+            <EditText android:id="@id/edit_text" android:layout_width="0.0dip" android:hint="@string/emptyList" android:maxLength="100" android:layout_weight="1.0" android:inputType="textNoSuggestions|phone" android:imeOptions="actionDone|flagNoExtractUi" android:layout_marginStart="0.0dip" android:layout_marginEnd="7.0dip" style="@style/InputTextField" />
+            <Button android:id="@id/search_button" android:contentDescription="@string/callsettings_search_contact" style="@style/SearchContactButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/tw_divider_vertical_dark" android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_marginTop="5.0dip" />
+    <ListView android:id="@android:id/list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:background="@drawable/tw_divider_vertical_dark" android:layout_width="fill_parent" android:layout_height="0.6700001dip" />
+</LinearLayout>

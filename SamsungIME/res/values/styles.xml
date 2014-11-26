@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="customTheme" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:actionBarStyle">@style/ActionBarNoIconLight</item>
+    </style>
+    <style name="undoToastFrameImageView">
+        <item name="android:background">@drawable/tw_toast_frame_holo_light</item>
+    </style>
+    <style name="undoActionButtonImageView">
+        <item name="android:background">@drawable/item_background_light</item>
+    </style>
+    <style name="undoToastSeperatorImageView">
+        <item name="android:background">@drawable/tw_undo_popup_line_holo_light</item>
+    </style>
+    <style name="undoBackButtonImageView">
+        <item name="android:background">@drawable/tw_undo_popup_back_holo_light</item>
+    </style>
+    <style name="PersonalizerTheme" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+    <style name="xT9WordListTextView">
+        <item name="android:textColor">@color/hwr_tutorial_text_color</item>
+    </style>
+    <style name="settingsButtonTextView">
+        <item name="android:textColor">@color/settings_button_text_color_xml</item>
+    </style>
+    <style name="settingsGetstureGuideTextView">
+        <item name="android:textColor">@color/hwr_tutorial_guide_text_color</item>
+    </style>
+    <style name="settingsGetstureGuideSubTextView">
+        <item name="android:textColor">@color/hwr_popup_guide_sub_text_color</item>
+    </style>
+    <style name="popupGetstureGuideTextView">
+        <item name="android:textColor">@color/hwr_popup_guide_text_color</item>
+    </style>
+    <style name="popupGetstureGuideSubTextView">
+        <item name="android:textColor">@color/hwr_popup_guide_sub_text_color</item>
+    </style>
+    <style name="settingsTutorialTitleTextView">
+        <item name="android:textColor">@color/tutorial_title_color</item>
+        <item name="android:background">@drawable/list_section_divider_holo</item>
+    </style>
+    <style name="settingsTutorialHelpTextView">
+        <item name="android:textColor">@color/tutorial_helptext_color</item>
+    </style>
+    <style name="settingsTutorialHelpSubTextView">
+        <item name="android:textColor">@color/tutorial_helptext_icon_color</item>
+    </style>
+    <style name="settingsTutorialHideImageView">
+        <item name="android:background">@drawable/tutorial_icon_hide</item>
+    </style>
+    <style name="settingsTutorialLanguageImageView">
+        <item name="android:background">@drawable/tutorial_icon_language</item>
+    </style>
+    <style name="settingsTutorialMode01ImageView">
+        <item name="android:background">@drawable/tutorial_icon_mode01</item>
+    </style>
+    <style name="settingsTutorialMode02ImageView">
+        <item name="android:background">@drawable/tutorial_icon_mode02</item>
+    </style>
+    <style name="settingsPreferenceMoreBtn">
+        <item name="android:src">@drawable/settings_preference_icon_more_xml</item>
+    </style>
+    <style name="settingsGestureGuideImageView01">
+        <item name="android:background">@drawable/textinput_gesture_guide01</item>
+    </style>
+    <style name="settingsGestureGuideImageView02">
+        <item name="android:background">@drawable/textinput_gesture_guide02</item>
+    </style>
+    <style name="settingsGestureGuideImageView03">
+        <item name="android:background">@drawable/textinput_gesture_guide03</item>
+    </style>
+    <style name="settingsGestureGuideImageView04">
+        <item name="android:background">@drawable/textinput_gesture_guide04</item>
+    </style>
+    <style name="settingsGestureGuideImageView05">
+        <item name="android:background">@drawable/textinput_gesture_guide05</item>
+    </style>
+    <style name="settingsGestureGuideImageView06">
+        <item name="android:background">@drawable/textinput_gesture_guide06</item>
+    </style>
+    <style name="settingsGestureGuideImageView07">
+        <item name="android:background">@drawable/textinput_gesture_guide07</item>
+    </style>
+    <style name="popupGestureGuideImageView01">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_01</item>
+    </style>
+    <style name="popupGestureGuideImageView02">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_02</item>
+    </style>
+    <style name="popupGestureGuideImageView03">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_03</item>
+    </style>
+    <style name="popupGestureGuideImageView04">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_04</item>
+    </style>
+    <style name="popupGestureGuideImageView05">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_05</item>
+    </style>
+    <style name="popupGestureGuideImageView06">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_06</item>
+    </style>
+    <style name="popupGestureGuideImageView07">
+        <item name="android:background">@drawable/textinput_gesture_guide_popup_07</item>
+    </style>
+    <style name="popupPinchZoomGuideImageView">
+        <item name="android:background">@drawable/pinch_zoom_animation</item>
+    </style>
+    <style name="movingGuideImageView">
+        <item name="android:background">@drawable/moving_animation</item>
+    </style>
+    <style name="notSplitMovingGuideImageView">
+        <item name="android:background">@drawable/not_split_moving_animation_light</item>
+    </style>
+    <style name="Theme.Dialog" parent="@android:style/Theme.DeviceDefault.Dialog" />
+    <style name="ExpandCandidatePopupAnimation">
+        <item name="android:windowEnterAnimation">@anim/enter_expandcandidate</item>
+        <item name="android:windowExitAnimation">@anim/exit_expandcandidate</item>
+    </style>
+    <style name="OpacityAndScaleFromRightToLeft" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/rightside_umlaut_popup_appear</item>
+        <item name="android:windowExitAnimation">@anim/rightside_umlaut_popup_disappear</item>
+    </style>
+    <style name="OpacityAndScaleFromLeftToRight" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/leftside_umlaut_popup_appear</item>
+        <item name="android:windowExitAnimation">@anim/leftside_umlaut_popup_disappear</item>
+    </style>
+    <style name="ScaleFromLeftToRight_MultiModal" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/leftbottom_to_righttop_appear</item>
+    </style>
+    <style name="ScaleFromRightToLeft_MultiModal" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/rightbottom_to_lefttop_appear</item>
+    </style>
+    <style name="floating_keypad_show_anim" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/floating_keyboard_slide_in_up</item>
+    </style>
+    <style name="ActionBarNoIcon" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="ActionBarNoIconLight" parent="@android:style/Widget.DeviceDefault.Light.ActionBar">
+        <item name="android:displayOptions">showTitle</item>
+    </style>
+    <style name="PopupItemDropDownStyle" parent="@android:attr/dropDownItemStyle">
+        <item name="android:textSize">@dimen/popup_delete_select_all_text_size</item>
+        <item name="android:textColor">@color/hwr_popup_guide_text_color</item>
+    </style>
+</resources>

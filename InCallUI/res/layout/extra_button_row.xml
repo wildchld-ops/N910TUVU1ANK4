@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/button_background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/manageConferenceButton" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/button_cluster_side_padding" android:paddingEnd="@dimen/button_cluster_side_padding">
+        <ImageButton android:id="@id/manageConferenceButtonImage" android:clickable="false" android:src="@drawable/ic_groups_holo_dark" android:contentDescription="@string/onscreenManageConferenceText" style="@style/InCallExtraRowButton" />
+        <TextView android:id="@id/manageConferenceButtonLabel" android:text="@string/onscreenManageConferenceText" style="@style/InCallExtraRowButtonLabel" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/cdmaMergeButton" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/button_cluster_side_padding" android:paddingEnd="@dimen/button_cluster_side_padding">
+        <ImageButton android:id="@id/cdmaMergeButtonImage" android:clickable="false" android:src="@drawable/ic_merge_holo_dark" android:contentDescription="@string/onscreenMergeCallsText" style="@style/InCallExtraRowButton" />
+        <TextView android:id="@id/cdmaMergeButtonLabel" android:text="@string/onscreenMergeCallsText" style="@style/InCallExtraRowButtonLabel" />
+    </LinearLayout>
+</FrameLayout>

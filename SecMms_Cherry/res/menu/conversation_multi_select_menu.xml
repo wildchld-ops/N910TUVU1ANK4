@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@id/spam_menu">
+        <item android:icon="@drawable/actionbar_list_icon_add_spam" android:id="@id/add_spam" android:title="@string/add_to_spam_numbers" android:showAsAction="always" />
+        <item android:icon="@drawable/actionbar_list_icon_remove_spam" android:id="@id/remove_spam" android:title="@string/remove_from_spam_numbers" android:showAsAction="always" />
+    </group>
+    <item android:icon="@drawable/ic_menu_save_messages" android:id="@id/save_message" android:title="@string/save" android:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_list_icon_delete" android:id="@id/delete" android:title="@string/delete" android:showAsAction="always" />
+    <item android:icon="@drawable/header_button_icon_delete" android:id="@id/split_thread" android:title="@string/split_thread" android:showAsAction="always" />
+    <item android:icon="@drawable/header_button_icon_delete" android:id="@id/mark_as_read" android:title="@string/mark_as_read" android:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_list_icon_add_spam" android:id="@id/add_to_black_list" android:title="@string/menu_add_to_black_list" android:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_list_icon_add_spam" android:id="@id/add_to_white_list" android:title="@string/menu_add_to_white_list" android:showAsAction="always" />
+    <item android:id="@id/done" android:title="@string/done" android:showAsAction="always" />
+</menu>

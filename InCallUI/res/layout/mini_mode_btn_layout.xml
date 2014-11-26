@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="1.0dip" android:layout_height="@dimen/mini_mode_btn_height" android:layout_marginRight="@dimen/mini_mode_divi_right_margin" android:src="@drawable/call_multitasking_miniapp_divider" />
+    <ImageButton android:layout_gravity="right|center" android:id="@id/minimode_button" android:background="@drawable/popup_full_btn_bg" android:layout_width="@dimen/mini_mode_btn_width" android:layout_height="@dimen/mini_mode_stub_btn_height" android:src="@drawable/call_multitasking_minipopup" android:soundEffectsEnabled="false" android:contentDescription="@string/switch_to_mini_screen" />
+</FrameLayout>

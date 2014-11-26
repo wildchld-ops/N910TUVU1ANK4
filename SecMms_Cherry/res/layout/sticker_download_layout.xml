@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@drawable/message_bottom_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:id="@id/downlaod_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="28.0dip" android:src="@drawable/download_icon" />
+                <TextView android:textSize="16.0dip" android:textColor="#ff484848" android:layout_width="120.0dip" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:layout_marginTop="37.0dip" android:text="@string/use_sticker_msg" />
+            </LinearLayout>
+            <Button android:textColor="@drawable/selector_download_textcolor" android:layout_gravity="center_horizontal" android:id="@id/download_button" android:background="@drawable/mms_download_btn_selector" android:layout_width="180.0dip" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/download" />
+        </LinearLayout>
+        <include android:id="@id/progressLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/sticker_progress_layout" />
+    </LinearLayout>
+</ScrollView>

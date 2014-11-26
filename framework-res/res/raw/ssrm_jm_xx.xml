@@ -1,0 +1,114 @@
+<LevelsModel>
+
+    <steps>
+        <step id="0" temp="510"/>
+        <step id="1" temp="530"/>
+        <step id="2" temp="550"/>
+        <step id="3" temp="570"/>
+        <step id="4" temp="590"/>
+        <step id="5" temp="610"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="CPUFreqMax"/>
+        <writer name="GPUFreqMax"/>
+        <writer name="Flash"/>
+        <writer name="Recording"/>
+        <writer name="LCDBrightness"/>
+        <writer name="Charging"/>
+    </writers>
+
+    <conditions>
+        <condition name="AppStart"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="CPUFreqMax"    value="1400000"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="CPUFreqMax"    value="1200000"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="250"/>
+                        <setting writer="Charging"      value="50"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="3"/>
+                        <setting writer="CPUFreqMax"    value="1000000"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="4"/>
+                        <setting writer="CPUFreqMax"    value="800000"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="30"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="5"/>
+                        <setting writer="CPUFreqMax"    value="800000"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="230"/>
+                        <setting writer="Charging"      value="0"/>
+                        <setting writer="Flash"         value="0"/>
+                        <setting writer="Recording"     value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="AppStart"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

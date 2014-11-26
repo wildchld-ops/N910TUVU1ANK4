@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/actionbar_list_icon_send" android:id="@id/send_now" android:title="@string/menu_send_now" android:showAsAction="always" />
+    <item android:icon="@drawable/actionbar_list_icon_delete" android:id="@id/cancel_message" android:title="@string/cancel" android:showAsAction="always" />
+    <item android:id="@id/copy" android:title="@string/message_copy" android:showAsAction="always" />
+    <item android:id="@id/forward" android:title="@string/menu_forward" android:showAsAction="always" />
+    <item android:id="@id/lock" android:title="@string/message_lock" android:showAsAction="always" />
+    <item android:id="@id/unlock" android:title="@string/message_unlock" android:showAsAction="always" />
+    <item android:id="@id/edit_message" android:title="@string/menu_edit" android:showAsAction="always" />
+    <item android:id="@id/save_attachment" android:title="@string/attachment_list" android:showAsAction="always" />
+    <item android:id="@id/done" android:title="@string/done" android:showAsAction="always" />
+</menu>

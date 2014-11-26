@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="multiwindow_focusline_color_scaled_floating">#ff00ccff</color>
+    <color name="multiwindow_un_focusline_color_scaled_floating">#ffffffff</color>
+    <color name="multiwindow_focus_outline_color_scaled_floating">#ff00a8d2</color>
+    <color name="multiwindow_un_focus_outline_color_scaled_floating">#ffb5b5b5</color>
+    <color name="hover_tooltip_text_color">#fff5f5f5</color>
+    <color name="hover_tooltip_text_color_light">#ff000000</color>
+    <item type="color" name="APKTOOL_DUMMY_00d8">false</item>
+    <item type="color" name="APKTOOL_DUMMY_00d9">false</item>
+    <item type="color" name="APKTOOL_DUMMY_00da">false</item>
+    <item type="color" name="APKTOOL_DUMMY_00db">false</item>
+</resources>

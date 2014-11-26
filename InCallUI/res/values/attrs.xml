@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="targetDrawables" format="reference" />
+    <attr name="targetDescriptions" format="reference" />
+    <attr name="directionDescriptions" format="reference" />
+    <attr name="handleDrawable" format="reference" />
+    <attr name="outerRingDrawable" format="reference" />
+    <attr name="pointDrawable" format="reference" />
+    <attr name="innerRadius" format="dimension" />
+    <attr name="outerRadius" format="dimension" />
+    <attr name="glowRadius" format="dimension" />
+    <attr name="vibrationDuration" format="integer" />
+    <attr name="snapMargin" format="dimension" />
+    <attr name="feedbackCount" format="integer" />
+    <attr name="alwaysTrackFinger" format="boolean" />
+    <attr name="allowScaling" format="boolean" />
+    <attr name="scaleTypeWithFrame" format="string" />
+    <attr name="frameSize" format="dimension" />
+    <attr name="bigFrameSize" format="dimension" />
+    <attr name="criticalPoint" format="integer" />
+    <attr name="strokeWidth" format="dimension" />
+    <attr name="setBlurEffect" format="boolean" />
+    <attr name="setBlurEffectAlways" format="boolean" />
+    <attr name="framePositionTop" format="dimension" />
+    <attr name="framePositionLeft" format="dimension" />
+    <attr name="framePositionTopWithoutCompanyName" format="dimension" />
+</resources>

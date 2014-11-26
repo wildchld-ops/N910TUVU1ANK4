@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/show_screen_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="50.0dip" android:layout_alignParentLeft="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/screen_button_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_weight="0.0">
+            <Button android:textSize="15.0dip" android:gravity="center" android:id="@id/show_screen_button" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/screen_button_layout" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                <Button android:textSize="15.0dip" android:gravity="center" android:id="@id/screen_size_plus" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <Button android:textSize="15.0dip" android:gravity="center" android:id="@id/screen_size_minus" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <Button android:textSize="15.0dip" android:gravity="center" android:id="@id/clear_screen_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="0.0" />
+        </LinearLayout>
+        <TextView android:textColor="#ff333333" android:id="@id/info_view" android:background="#ffaaaaaa" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginRight="3.0dip" android:layout_weight="0.0" />
+        <ScrollView android:id="@id/scrollView" android:paddingLeft="3.0dip" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+            <TextView android:textColor="#ffeeeeee" android:id="@id/log_view" android:background="#ff666666" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/settings_header_icon_add_xml" android:id="@id/my_word_add_menu" android:title="@string/xt9_words_list_add" android:showAsAction="always" />
+    <item android:icon="@drawable/settings_header_icon_delete_xml" android:id="@id/my_word_delete_menu" android:title="@string/xt9_words_list_delete" android:showAsAction="always" />
+</menu>

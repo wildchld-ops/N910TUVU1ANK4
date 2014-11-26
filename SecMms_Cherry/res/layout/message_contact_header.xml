@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.MessageContactHeader android:gravity="center_vertical" android:id="@id/msg_contact_header" android:layout_width="fill_parent" android:layout_height="25.329987dip" style="?android:attr/windowTitleBackgroundStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="marquee" android:id="@id/contact_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:maxLength="3120" style="?android:attr/windowTitleStyle" />
+</com.android.mms.ui.MessageContactHeader>

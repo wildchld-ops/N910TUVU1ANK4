@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="animated_brightness_icon_default_image_width">55.0dip</dimen>
+    <dimen name="animated_brightness_icon_default_image_height">55.0dip</dimen>
+</resources>

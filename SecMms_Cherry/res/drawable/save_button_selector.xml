@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/air_view_zoom_in_btn_icon_save_pressed" />
+    <item android:drawable="@drawable/air_view_zoom_in_btn_icon_save_focused" android:state_hovered="true" />
+    <item android:state_selected="true" android:drawable="@drawable/air_view_zoom_in_btn_icon_save_selected" />
+    <item android:drawable="@drawable/air_view_zoom_in_btn_icon_save" />
+</selector>

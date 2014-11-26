@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/label_available" android:key="list_networks_key"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:persistent="false" android:title="@string/search_networks" android:key="button_srch_netwrks_key" android:summary="@string/sum_search_networks" />
+    <Preference android:persistent="false" android:title="@string/select_automatically" android:key="button_auto_select_key" android:summary="@string/sum_select_automatically" />
+    <ListPreference android:entries="@array/default_setup_choices" android:title="@string/default_setup_title" android:key="button_default_setup_key" android:summary="@string/default_setup_summary" android:dialogTitle="@string/default_setup_dialogtitle" android:entryValues="@array/default_setup_values" />
+    <Preference android:persistent="false" android:title="@string/femto_cell_setup_title" android:key="button_srch_femto_cell_key" />
+</PreferenceScreen>

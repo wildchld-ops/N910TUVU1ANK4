@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/preferred_networks_index" android:key="network_index" />
+    <Preference android:title="@string/preferred_networks_name" android:key="network_name" />
+    <Preference android:title="@string/preferred_networks_id" android:key="network_id" />
+    <PreferenceCategory android:title="@string/preferred_networks_act_mode" android:key="selected_network_act_mode">
+        <CheckBoxPreference android:title="@string/preferred_networks_act_gsm" android:key="gsm_act" android:summary="@string/preferred_networks_act_gsm_use" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/preferred_networks_act_gsm_compact" android:key="gsm_compact_act" android:summary="@string/preferred_networks_act_gsm_compact_use" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/preferred_networks_act_utran" android:key="utran_act" android:summary="@string/preferred_networks_act_utran_use" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+        <CheckBoxPreference android:title="@string/preferred_networks_act_eutran" android:key="eutran_act" android:summary="@string/preferred_networks_act_eutran_use" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/popup_keyboard_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/sip_dialog_full_holo_dark" android:layout_width="@dimen/keyboard_change_popup_non_spilt_with_onehand_width" android:layout_height="@dimen/keyboard_change_popup_non_spilt_with_onehand_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_height">
+            <FrameLayout android:id="@id/mode_qwerty" android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_image_height">
+                <ImageButton android:id="@id/popup_keyboard_qwerty" android:background="@drawable/sip_select_keypad_type_qwerty_xml" android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_image_height" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_vertical_gap" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_text_height">
+                <TextView android:textSize="13.0dip" android:textColor="@color/pen_color_black" android:gravity="center" android:id="@id/mode_qwerty_string" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/input_method_type_normal" android:maxLines="2" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_horizontal_gap" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_height" />
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_height">
+            <FrameLayout android:id="@id/mode_floating" android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_image_height">
+                <ImageButton android:id="@id/popup_keyboard_floating" android:background="@drawable/sip_select_keypad_type_floating_xml" android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_image_height" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_vertical_gap" />
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_text_height">
+                <TextView android:textSize="13.0dip" android:textColor="@color/pen_color_black" android:gravity="center" android:id="@id/mode_floating_string" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/input_method_type_floating" android:maxLines="2" />
+            </FrameLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_horizontal_gap" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_height" />
+        <LinearLayout android:orientation="vertical" android:id="@id/mode_onehand" android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_height">
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_image_height">
+                <ImageButton android:id="@id/popup_keyboard_onehand" android:background="@drawable/sip_select_keypad_type_onehand_xml" android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_image_height" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_vertical_gap" />
+            <FrameLayout android:layout_width="@dimen/keyboard_change_popup_each_keyboard_layout_width" android:layout_height="@dimen/keyboard_change_popup_each_keyboard_layout_text_height">
+                <TextView android:textSize="13.0dip" android:textColor="@color/pen_color_black" android:gravity="center" android:id="@id/mode_onehand_string" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/use_one_hand" android:maxLines="2" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

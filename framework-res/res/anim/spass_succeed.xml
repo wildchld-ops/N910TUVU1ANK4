@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:id="@id/handimation" android:oneshot="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_001" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_002" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_003" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_004" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_005" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_006" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_007" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_008" />
+    <item android:duration="30" android:drawable="@drawable/finger_print_dot_009" />
+</animation-list>

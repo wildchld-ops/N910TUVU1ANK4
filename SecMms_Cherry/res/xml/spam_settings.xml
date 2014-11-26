@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <ListPreference android:entries="@array/pref_entries_spam_option" android:title="@string/pref_title_spam_option" android:key="pref_key_spam_option" android:dialogTitle="@string/pref_title_spam_option" android:entryValues="@array/pref_entry_values_spam_option" />
+    <Preference android:title="@string/add_to_spam_numbers" android:key="pref_key_spam_num_add" android:summary="@string/spam_numbers_summary" />
+    <Preference android:title="@string/add_to_spam_phrases" android:key="pref_key_spam_text_add" android:summary="@string/spam_phrases_summary" />
+    <CheckBoxPreference android:title="@string/pref_title_spam_filter_unknown_senders" android:key="pref_key_spam_filter_unknown_enable" android:summary="@string/spam_blocksender_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <Preference android:title="@string/expain_report_as_spam" android:key="pref_key_explain_spamreport" />
+</PreferenceScreen>

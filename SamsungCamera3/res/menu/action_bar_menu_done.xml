@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/actionbar_menu_cancel" android:orderInCategory="1" android:title="@string/cancel" android:showAsAction="ifRoom|withText" />
+    <item android:id="@id/actionbar_menu_done" android:orderInCategory="2" android:title="@string/done" android:showAsAction="ifRoom|withText" />
+</menu>

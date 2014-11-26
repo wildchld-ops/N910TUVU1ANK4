@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/pinc" android:paddingTop="@dimen/tw_pop_up_dialog_padding_top" android:paddingBottom="@dimen/tw_pop_up_dialog_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/tw_pop_up_dialog_padding_left" android:paddingEnd="@dimen/tw_pop_up_dialog_padding_right">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/enter_pin2_text" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/pinc" android:layout_width="fill_parent" android:layout_height="38.0dip">
+            <EditText android:id="@id/pin" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:scrollHorizontally="true" android:maxLength="8" android:capitalize="none" android:autoText="false" android:layout_weight="1.0" android:inputType="numberPassword" android:imeOptions="actionDone|flagNoExtractUi" />
+            <Button android:id="@id/button_fdnsave" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@android:string/ok" android:layout_marginStart="@dimen/tw_pop_up_dialog_padding_left" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

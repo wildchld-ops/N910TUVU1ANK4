@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/keypad_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layoutDirection="ltr"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/input_main" android:background="@color/keypad_bg_color" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/one_hand_left_area_layout" android:layout_width="88.0px" android:layout_height="fill_parent" android:layout_marginTop="150.0px" android:layout_marginBottom="192.0px" android:layout_marginStart="0.0px" android:layout_marginEnd="@dimen/one_hand_left_right_view_horizontal_gap_arrow">
+            <ImageButton android:id="@id/one_hand_left_area" android:background="@drawable/one_hand_left_btn_xml" android:paddingTop="50.0px" android:paddingBottom="50.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="36.0px" android:maxHeight="48.0px" android:paddingStart="25.0px" android:paddingEnd="0.0px" />
+        </LinearLayout>
+        <com.diotek.ime.implement.view.KeyboardView android:id="@id/keyboardView" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <LinearLayout android:id="@id/one_hand_right_area_layout" android:layout_width="88.0px" android:layout_height="fill_parent" android:layout_marginTop="150.0px" android:layout_marginBottom="192.0px" android:layout_marginStart="@dimen/one_hand_left_right_view_horizontal_gap_arrow" android:layout_marginEnd="0.0px">
+            <ImageButton android:id="@id/one_hand_right_area" android:background="@drawable/one_hand_right_btn_xml" android:paddingTop="50.0px" android:paddingBottom="50.0px" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxWidth="36.0px" android:maxHeight="48.0px" android:paddingStart="0.0px" android:paddingEnd="40.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/one_hand_dim_view" android:background="#7f000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardGuestSelectorView android:layout_gravity="bottom" android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/keyguard_accessibility_user_selector" androidprv:layout_childType="userSwitcher"
+  xmlns:androidprv="http://schemas.android.com/apk/res/com.android.keyguard"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.keyguard.KeyguardCircleLinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/keyguard_users_grid" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="bottom|left|center" android:id="@id/CoreButton" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ExpandUser" android:padding="6.0dip" android:visibility="gone" android:layout_width="@dimen/keyguard_guest_avatar_size" android:layout_height="@dimen/keyguard_guest_avatar_size" android:src="@drawable/keyguard_guest_core" />
+            <ImageView android:id="@id/ExpandUserBG" android:padding="6.0dip" android:visibility="gone" android:layout_width="@dimen/keyguard_guest_avatar_size" android:layout_height="@dimen/keyguard_guest_avatar_size" android:src="@drawable/keyguard_shortcut_core_background" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/ExpandLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="bottom" android:id="@id/ExpandCircle" android:layout_width="@dimen/keyguard_guest_selector_big_circle" android:layout_height="@dimen/keyguard_guest_selector_big_circle" android:layout_marginLeft="@dimen/keyguard_guest_selector_big_circle_padding" android:layout_marginBottom="@dimen/keyguard_guest_selector_big_circle_padding" android:src="@drawable/keyguard_shortcut_big_circle" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/ExpandButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/ExpandButton2" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <FrameLayout android:layout_gravity="bottom" android:id="@id/ExpandButton3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+    </com.android.keyguard.KeyguardCircleLinearLayout>
+</com.android.keyguard.KeyguardGuestSelectorView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/pnl_enable_title" android:key="number_region_activation_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" android:summaryOn="@string/pnl_enable" android:summaryOff="@string/pnl_enable" />
+    <PreferenceScreen android:title="@string/update_title" android:key="manual_update_preference" android:summary="@string/manual_update_summary" />
+    <com.android.phone.callsettings.PNLAutoUpdateListPreference android:entries="@array/pnl_auto_update_entries" android:title="@string/auto_update_title" android:key="auto_update_preference" android:entryValues="@array/pnl_auto_update_values" />
+    <com.android.phone.callsettings.PNLWLANOnlyCheckBoxPreference android:title="@string/wlan_update_title" android:key="wlan_update_only_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" android:summaryOn="@string/wlan_update_summary" android:summaryOff="@string/wlan_update_summary" />
+    <PreferenceScreen android:title="@string/version_title" android:key="version_preference" />
+</PreferenceScreen>

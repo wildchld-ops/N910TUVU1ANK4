@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="config_drawing_hardwareaccelerate">true</bool>
+    <bool name="config_enable_animation_of_expand_candidate">true</bool>
+    <bool name="config_enable_animation_of_minikeyboard">true</bool>
+    <bool name="config_enable_floating_candidate">true</bool>
+    <bool name="config_enable_trace_brush_stype">true</bool>
+    <bool name="config_enable_multitouch_preview">true</bool>
+    <bool name="weibo_active">false</bool>
+    <bool name="pref_personalize_retain_text">true</bool>
+</resources>

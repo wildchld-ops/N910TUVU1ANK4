@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_korean_cji_default_key_width" android:keyHeight="@dimen/floating_korean_cji_default_key_height" android:horizontalGap="@dimen/floating_korean_cji_default_key_horizontal_gap" android:verticalGap="@dimen/floating_korean_cji_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_korean_cji_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12593" android:keyLabel="ㄱ" />
+        <Key android:codes="12596" android:keyLabel="ㄴ" />
+        <Key android:codes="12623,12627" android:keyLabel="ㅏㅓ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12601" android:keyLabel="ㄹ" />
+        <Key android:codes="12609" android:keyLabel="ㅁ" />
+        <Key android:codes="12631,12636" android:keyLabel="ㅗㅜ" />
+        <Key android:codes="32" android:keyEdgeFlags="right" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12613" android:keyEdgeFlags="left" android:keyLabel="ㅅ" />
+        <Key android:codes="12615" android:keyLabel="ㅇ" />
+        <Key android:codes="12643" android:keyLabel="ㅣ" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:horizontalGap="@dimen/floating_korean_cji_half_key_gap" android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12592" android:keyLabel="획추가" />
+        <Key android:codes="12641" android:keyLabel="ㅡ" />
+        <Key android:codes="12687" android:keyLabel="쌍자음" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:horizontalGap="@dimen/floating_korean_cji_half_key_gap" android:codes="-108" android:keyEdgeFlags="right" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12592" android:keyLabel="획추가" />
+        <Key android:codes="12641" android:keyLabel="ㅡ" />
+        <Key android:codes="12687" android:keyLabel="쌍자음" />
+        <Key android:codes="-102" android:keyEdgeFlags="right" android:keyLabel="123" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12592" android:keyLabel="획추가" />
+        <Key android:codes="12641" android:keyLabel="ㅡ" />
+        <Key android:codes="12687" android:keyLabel="쌍자음" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:horizontalGap="@dimen/floating_korean_cji_half_key_gap" android:codes="-108" android:keyEdgeFlags="right" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12592" android:keyLabel="획추가" />
+        <Key android:codes="12641" android:keyLabel="ㅡ" />
+        <Key android:codes="12687" android:keyLabel="쌍자음" />
+        <Key android:codes="-102" android:keyEdgeFlags="right" android:keyLabel="123" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12592" android:keyLabel="획추가" />
+        <Key android:codes="12641" android:keyLabel="ㅡ" />
+        <Key android:codes="12687" android:keyLabel="쌍자음" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:codes="-102" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/floating_korean_cji_half_key_width" android:horizontalGap="@dimen/floating_korean_cji_half_key_gap" android:codes="-108" android:keyEdgeFlags="right" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/floating_korean_cji_first_last_col_horizontal_gap" android:codes="12592" android:keyLabel="획추가" />
+        <Key android:codes="12641" android:keyLabel="ㅡ" />
+        <Key android:codes="12687" android:keyLabel="쌍자음" />
+        <Key android:codes="-102" android:keyEdgeFlags="right" android:keyLabel="123" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_korean_cji_last_line_vertical_gap" />
+</Keyboard>

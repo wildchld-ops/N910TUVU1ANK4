@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/display_setting_main" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:id="@id/display_body_main" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/msg_display_preview" android:background="#ff2b2d30" android:focusable="false" android:animationCache="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" android:layoutDirection="ltr">
+            <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@id/sent_preview_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/sent_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="19.0sp" android:textColor="#ff000000" android:id="@id/sent_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bubble_sample_me_message" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/mms_indicator_color" android:layout_gravity="right" android:id="@id/sent_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:layout_marginEnd="10.0dip" />
+                    </LinearLayout>
+                    <ImageView android:id="@id/sent_contact_inner" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/msg_list_id_5" />
+                </LinearLayout>
+                <ImageView android:id="@id/sent_contact_outter" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/msg_list_id_5" android:layout_marginStart="3.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="left" android:orientation="horizontal" android:id="@id/receive_preview_item" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@id/recieve_contact_outter" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="2.0dip" android:src="@drawable/msg_list_id_3" android:layout_marginEnd="3.0dip" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/receive_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/recieve_contact_inner" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/msg_list_id_3" />
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="19.0sp" android:textColor="#ff000000" android:id="@id/receive_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bubble_sample_you_message" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                        <TextView android:textSize="15.0dip" android:textColor="@color/mms_indicator_color" android:gravity="left" android:id="@id/receive_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="10.0dip" android:layout_marginStart="10.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/display_picker_pannel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <HorizontalScrollView android:id="@id/bubble_item_scrollview" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/bubble_item_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <GridView android:gravity="center" android:id="@id/bubble_item_gridview" android:background="@drawable/message_bubble_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:focusable="false" android:scrollbars="vertical" android:nextFocusLeft="@id/bubble_item_gridview" android:nextFocusRight="@id/bubble_item_gridview" android:layout_width="560.0dip" android:layout_height="120.0dip" android:listSelector="#00000000" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="none" android:columnWidth="100.0dip" android:numColumns="5" android:layout_weight="0.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+            <HorizontalScrollView android:id="@id/background_item_scrollview" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/background_item_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <GridView android:gravity="center" android:id="@id/background_item_gridview" android:background="@drawable/message_bubble_bg" android:paddingTop="10.0dip" android:focusable="false" android:scrollbars="vertical" android:nextFocusLeft="@id/background_item_gridview" android:nextFocusRight="@id/background_item_gridview" android:layout_width="708.0dip" android:layout_height="120.0dip" android:listSelector="#00000000" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="none" android:columnWidth="100.0dip" android:numColumns="6" android:layout_weight="0.0" android:paddingStart="10.0dip" android:paddingEnd="10.0dip" />
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:id="@id/display_picker_pannel_land" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/bubble_item_scrollview_land" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/bubble_item_wrapper_land" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <GridView android:gravity="center" android:id="@id/bubble_item_gridview_land" android:background="@drawable/message_bubble_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:scrollbars="horizontal" android:nextFocusLeft="@id/bubble_item_gridview_land" android:layout_width="120.0dip" android:layout_height="560.0dip" android:listSelector="#00000000" android:horizontalSpacing="10.0dip" android:verticalSpacing="10.0dip" android:stretchMode="none" android:columnWidth="100.0dip" android:numColumns="1" android:paddingStart="10.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <ScrollView android:id="@id/background_item_scrollview_land" android:background="@android:color/black" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/background_item_wrapper_land" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <GridView android:gravity="center" android:id="@id/background_item_gridview_land" android:background="@drawable/message_bubble_bg" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:scrollbars="horizontal" android:nextFocusLeft="@id/background_item_gridview_land" android:nextFocusRight="@id/background_item_gridview_land" android:layout_width="120.0dip" android:layout_height="608.0dip" android:listSelector="#00000000" android:horizontalSpacing="15.0dip" android:verticalSpacing="10.0dip" android:stretchMode="none" android:columnWidth="100.0dip" android:numColumns="1" android:paddingStart="10.0dip" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>

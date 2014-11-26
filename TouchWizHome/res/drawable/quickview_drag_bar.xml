@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_selected="true" android:drawable="@drawable/menu_edit_bg_focus_center" />
+    <item android:drawable="@drawable/menu_edit_bg_normal" />
+</selector>

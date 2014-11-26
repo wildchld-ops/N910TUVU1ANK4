@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/help_samsung_keyboard_background" android:background="@drawable/setting_help_close" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_samsung_keyboard" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                        <TextView android:textSize="21.0dip" android:textColor="#ff1e1e1e" android:gravity="center_vertical" android:layout_width="272.0dip" android:layout_height="fill_parent" android:text="@string/help_keyboard_button_text" android:singleLine="true" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/button_samsung_keyboard_dropdown_img" android:background="@drawable/tw_expander_open_holo_light" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginEnd="14.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/help_samsung_keyboard" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="#ffc3d3e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_title_open" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_open" />
+                                <EditText android:id="@id/tutorial_edittext" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:singleLine="true" android:maxLength="1000" android:soundEffectsEnabled="false" android:privateImeOptions="NoSetting" android:imeOptions="flagNoExtractUi" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_close" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_close" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_close_keypad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_change_input_mode" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_change_input_mode" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_change_input_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_chage_input_method" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_chage_input_method" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_change_input_method" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_change_lang" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_change_lang" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_change_language" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_move_select" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_move" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_text_select_handle_middle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_helptext_move2" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_move_select" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_select" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_text_cursor" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                    <ImageView android:background="@drawable/tutorial_text_select_handle_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="90.0px" />
+                                    <ImageView android:background="@drawable/tutorial_text_select_handle_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0px" />
+                                </LinearLayout>
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_helptext_select1" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_customizable_key" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_customizable_key_for_floating" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_voice_input" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                    <ImageView android:background="@drawable/tutorial_handwriting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0px" />
+                                    <ImageView android:background="@drawable/tutorial_ocr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0px" />
+                                    <ImageView android:background="@drawable/tutorial_clipboard" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0px" />
+                                    <ImageView android:background="@drawable/tutorial_setting_keypad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0px" />
+                                    <ImageView android:background="@drawable/tutorial_change_keyboard_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="24.0px" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/use_voice_input" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_voice_input" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_voice_input" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/input_method_type_box_hwr" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_handwriting" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_handwriting" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_text_recognition" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_text_recognition" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_ocr" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_clipboard" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_clipboard" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_clipboard" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_keypad_settings" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_keypad_settings" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_setting_keypad" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_title_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/tutorial_title_change_keyboard_type" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:paddingStart="17.0dip" android:paddingEnd="17.0dip">
+                                <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tutorial_helptext_change_keyboard_type" />
+                                <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                                    <ImageView android:background="@drawable/tutorial_change_keyboard_type" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/help_handwriting_background" android:background="@drawable/setting_help_close" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_handwrting" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                        <TextView android:textSize="21.0dip" android:textColor="#ff1e1e1e" android:gravity="center_vertical" android:layout_width="272.0dip" android:layout_height="fill_parent" android:text="@string/help_handwriting_button_text" android:singleLine="true" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/button_handwriting_dropdown_img" android:background="@drawable/tw_expander_open_holo_light" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginEnd="14.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/help_handwriting" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+                        <View android:background="#ffc3d3e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_one" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_one" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_01" android:layout_width="126.0dip" android:layout_height="49.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutorial_arrow01" android:layout_width="35.0dip" android:layout_height="35.0dip" android:layout_marginStart="@dimen/handwriting_tutorial1_arrow_gap" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_02" android:layout_width="126.0dip" android:layout_height="49.0dip" android:layout_marginStart="@dimen/handwriting_tutorial1_arrow_gap" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_two" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_two" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="@dimen/handwriting_tutorial_image_left" android:layout_marginEnd="@dimen/handwriting_tutorial_image_right">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_03" android:layout_width="140.0dip" android:layout_height="49.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_04" android:layout_width="140.0dip" android:layout_height="49.0dip" android:layout_marginStart="36.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_oximage_top">
+                            <ImageView android:background="@drawable/handwriting_tutoria_o" android:layout_width="42.0dip" android:layout_height="27.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_x" android:layout_width="42.0dip" android:layout_height="27.0dip" android:layout_marginStart="@dimen/handwriting_tutorial_oximage_gap" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_three" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_03" android:layout_width="140.0dip" android:layout_height="49.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_05" android:layout_width="140.0dip" android:layout_height="49.0dip" android:layout_marginStart="36.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_oximage_top">
+                            <ImageView android:background="@drawable/handwriting_tutoria_o" android:layout_width="42.0dip" android:layout_height="27.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_x" android:layout_width="42.0dip" android:layout_height="27.0dip" android:layout_marginStart="@dimen/handwriting_tutorial_oximage_gap" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_three_2nd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_three_2nd" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="@dimen/handwriting_tutorial_image_left" android:layout_marginEnd="@dimen/handwriting_tutorial_image_right">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_07" android:layout_width="140.0dip" android:layout_height="94.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_08" android:layout_width="140.0dip" android:layout_height="94.0dip" android:layout_marginStart="36.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_oximage_top">
+                            <ImageView android:background="@drawable/handwriting_tutoria_o" android:layout_width="42.0dip" android:layout_height="27.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_x" android:layout_width="42.0dip" android:layout_height="27.0dip" android:layout_marginStart="@dimen/handwriting_tutorial_oximage_gap" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_four" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_four" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_four_2nd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_four_2nd" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_four_3rd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_four_3rd" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right">
+                            <TextView android:textSize="12.0dip" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_four_ex" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/hwr_tutorial_four_ex" android:layout_weight="2.0" />
+                            <View android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_four_ex_sec" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/hwr_tutorial_four_ex_sec" android:layout_weight="2.0" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="34.0dip" android:layout_marginEnd="17.0dip">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_09" android:layout_width="59.0dip" android:layout_height="49.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_03" android:layout_width="140.0dip" android:layout_height="49.0dip" android:layout_marginStart="100.0dip" />
+                        </LinearLayout>
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_2nd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_2nd" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_3rd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_3rd" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textStyle="normal" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_4th" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_4th" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_6th" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_6th" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_7th" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_7th" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <TextView android:textSize="12.0dip" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_ex" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_ex" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="@dimen/handwriting_tutorial_image_left" android:layout_marginEnd="@dimen/handwriting_tutorial_image_right">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_03" android:layout_width="140.0dip" android:layout_height="49.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_10" android:layout_width="140.0dip" android:layout_height="49.0dip" android:layout_marginStart="36.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_oximage_top">
+                            <ImageView android:background="@drawable/handwriting_tutoria_o" android:layout_width="42.0dip" android:layout_height="27.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_o" android:layout_width="42.0dip" android:layout_height="27.0dip" android:layout_marginStart="@dimen/handwriting_tutorial_oximage_gap" />
+                        </LinearLayout>
+                        <TextView android:textSize="12.0dip" android:textColor="@color/hwr_tutorial_text_color" android:id="@id/hwr_tutorial_category_five_ex_sec" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_text_top" android:text="@string/hwr_tutorial_five_ex_2nd" android:layout_marginStart="@dimen/handwriting_tutorial_text_left" android:layout_marginEnd="@dimen/handwriting_tutorial_text_right" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/hwr_tutorial_category_five_ex_sec_img_tutoria_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_image_top" android:layout_marginStart="@dimen/handwriting_tutorial_image_left" android:layout_marginEnd="@dimen/handwriting_tutorial_image_right">
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_11" android:layout_width="140.0dip" android:layout_height="49.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_bg_12" android:layout_width="140.0dip" android:layout_height="49.0dip" android:layout_marginStart="36.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/handwriting_tutorial_oximage_top">
+                            <ImageView android:background="@drawable/handwriting_tutoria_o" android:layout_width="42.0dip" android:layout_height="27.0dip" />
+                            <ImageView android:background="@drawable/handwriting_tutoria_x" android:layout_width="42.0dip" android:layout_height="27.0dip" android:layout_marginStart="@dimen/handwriting_tutorial_oximage_gap" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/help_gesture_guide_background" android:background="@drawable/setting_help_close" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_gesture" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                        <TextView android:textSize="21.0dip" android:textColor="#ff1e1e1e" android:gravity="center_vertical" android:layout_width="272.0dip" android:layout_height="fill_parent" android:text="@string/help_gesture_button_text" android:singleLine="true" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/button_gesture_guide_dropdown_img" android:background="@drawable/tw_expander_open_holo_light" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginEnd="14.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/help_gesture_guide" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="#ffc3d3e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <TextView android:textSize="@dimen/tutorial_title_text_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:text="@string/hwr_gesture_content" android:layout_marginStart="17.0dip" android:layout_marginEnd="17.0dip" />
+                        <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip" android:text="@string/hwr_gesture_edit" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide01" android:layout_width="316.0dip" android:layout_height="46.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginStart="17.0dip">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/tutorial_title_color" android:id="@id/hwr_gesture_word_sentence" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete_sentece" android:layout_marginStart="2.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide02" android:layout_width="316.0dip" android:layout_height="46.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginStart="17.0dip">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/tutorial_title_color" android:id="@id/hwr_gesture_one_char" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_delete_char" android:layout_marginStart="2.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide03" android:layout_width="316.0dip" android:layout_height="46.0dip" />
+                        </LinearLayout>
+                        <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/hwr_gesture_space" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide04" android:layout_width="316.0dip" android:layout_height="46.0dip" />
+                        </LinearLayout>
+                        <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/hwr_gesture_space" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide05" android:layout_width="316.0dip" android:layout_height="46.0dip" />
+                        </LinearLayout>
+                        <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/hwr_gesture_deletespace" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide06" android:layout_width="316.0dip" android:layout_height="46.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginStart="17.0dip">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_enter" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/tutorial_title_color" android:id="@id/hwr_gesture_complete_recognition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_complete" android:layout_marginStart="2.0dip" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide07" android:layout_width="316.0dip" android:layout_height="wrap_content" />
+                            <TextView android:textSize="15.0dip" android:textColor="@color/hwr_tutorial_text_contents_color" android:gravity="bottom" android:layout_gravity="center" android:id="@id/hwr_gesture_enter_explain_1" android:layout_width="136.0dip" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="@string/hwr_gesture_guide_enter_explain_1" android:layout_marginStart="200.0dip" />
+                        </RelativeLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:layout_marginStart="17.0dip">
+                            <TextView android:textSize="18.0dip" android:textColor="@color/tutorial_title_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_enter" />
+                            <TextView android:textSize="12.0dip" android:textColor="@color/tutorial_title_color" android:id="@id/hwr_gesture_stroke_recognition" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hwr_gesture_stroke" android:layout_marginStart="2.0dip" />
+                        </LinearLayout>
+                        <RelativeLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="46.0dip" android:layout_marginTop="3.0dip">
+                            <ImageView android:background="@drawable/textinput_gesture_guide07" android:layout_width="316.0dip" android:layout_height="wrap_content" />
+                            <TextView android:textSize="15.0dip" android:textColor="@color/hwr_tutorial_text_contents_color" android:gravity="bottom" android:layout_gravity="center" android:id="@id/hwr_gesture_enter_explain_2" android:layout_width="136.0dip" android:layout_height="fill_parent" android:layout_marginBottom="10.0dip" android:text="@string/hwr_gesture_guide_enter_explain_2" android:layout_marginStart="200.0dip" />
+                        </RelativeLayout>
+                        <View android:layout_width="fill_parent" android:layout_height="15.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/help_continuous_input_background" android:background="@drawable/setting_help_close" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/button_continuous_input" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                        <TextView android:textSize="21.0dip" android:textColor="#ff1e1e1e" android:gravity="center_vertical" android:layout_width="272.0dip" android:layout_height="fill_parent" android:text="@string/help_trace_button_text" android:singleLine="true" android:layout_marginStart="17.0dip" />
+                        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+                            <ImageView android:id="@id/button_continuous_input_dropdown_img" android:background="@drawable/tw_expander_open_holo_light" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginEnd="14.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/help_continuous_input" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:background="#ffc3d3e0" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                            <TextView android:textSize="@dimen/tutorial_helptext_size" android:textColor="@color/tutorial_helptext_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/trace_summary" android:paddingStart="17.0dip" android:paddingEnd="17.0dip" />
+                            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip" android:layout_marginBottom="24.0dip">
+                                <ImageView android:layout_width="310.0dip" android:layout_height="240.0dip" android:src="@drawable/tutorial" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</LinearLayout>

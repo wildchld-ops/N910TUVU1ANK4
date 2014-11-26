@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/callbarring_input_password"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <com.android.phone.EditPinPreference android:enabled="false" android:key="call_lock_dialog" android:dialogTitle="@string/callbarring_input_password" android:dialogMessage="@string/callbarring_input_password" android:positiveButtonText="@string/callsettings_sfk_ok" android:negativeButtonText="@string/callsettings_sfk_cancel" />
+</PreferenceScreen>

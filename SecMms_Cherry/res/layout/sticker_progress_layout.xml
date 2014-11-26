@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0dip" android:textColor="#ff484848" android:id="@id/sticker_progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" />
+    <ProgressBar android:id="@id/sticker_progress" android:layout_width="180.0dip" android:layout_height="3.0dip" android:layout_marginTop="7.0dip" android:max="100" android:progress="0" android:indeterminateDrawable="@drawable/message_progress_indeterminate" style="@android:style/Widget.ProgressBar.Horizontal" />
+    <Button android:textColor="@drawable/selector_download_textcolor" android:id="@id/cancel_button" android:background="@drawable/mms_download_btn_selector" android:layout_width="180.0dip" android:layout_height="40.0dip" android:layout_marginTop="36.0dip" android:text="@string/cancel" />
+</LinearLayout>

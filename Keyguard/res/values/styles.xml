@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.Button.NumPadKey" parent="@android:style/Widget.Button">
+        <item name="android:textSize">31.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:paddingLeft">20.0dip</item>
+        <item name="android:paddingTop">6.0dip</item>
+        <item name="android:paddingRight">6.0dip</item>
+        <item name="android:paddingBottom">8.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextAppearance.NumPadKey" parent="@android:style/TextAppearance">
+        <item name="android:textSize">34.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="TextAppearance.NumPadKey.Klondike" parent="@style/TextAppearance.NumPadKey">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="TextAppearance.passwordEntry" parent="@android:style/TextAppearance">
+        <item name="android:textSize">30.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+    </style>
+    <style name="Animation.LockScreen" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/lock_screen_enter</item>
+        <item name="android:windowExitAnimation">@anim/lock_screen_exit</item>
+    </style>
+    <style name="widget_label">
+        <item name="android:textSize">@dimen/widget_label_font_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+    <style name="big_thin">
+        <item name="android:textSize">@dimen/big_font_size</item>
+        <item name="android:fontFamily">sans-serif-thin</item>
+    </style>
+    <style name="widget_big_thin" parent="@style/big_thin">
+        <item name="android:textSize">@dimen/widget_big_font_size</item>
+    </style>
+    <style name="Widget.TransportControl.SeekBar" parent="@android:style/Widget.Holo.SeekBar">
+        <item name="android:focusable">true</item>
+        <item name="android:maxHeight">13.0dip</item>
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:progressDrawable">@drawable/scrubber_progress_horizontal_holo_light</item>
+        <item name="android:minHeight">13.0dip</item>
+        <item name="android:thumb">@drawable/scrubber_control_selector_holo</item>
+        <item name="android:thumbOffset">16.0dip</item>
+        <item name="android:paddingStart">16.0dip</item>
+        <item name="android:paddingEnd">16.0dip</item>
+        <item name="android:mirrorForRtl">false</item>
+    </style>
+    <style name="keyguard_text_shadow">
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="keyguard_emergecny_carrier_style">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#99000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:fontFamily">Roboto</item>
+    </style>
+    <style name="keyguard_text_shadow_voice">
+        <item name="android:shadowColor">#e6000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="keyguard_music_widget_style">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/keyguard_text_color_white</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDx">2.0</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+</resources>

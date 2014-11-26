@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="245.0dip" android:layout_height="70.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="245.0dip" android:layout_height="10.0dip" android:layout_marginTop="57.0dip" android:src="@drawable/airbutton_text_list_item_shadow_right" />
+    <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:ellipsize="end" android:gravity="left|center" android:id="@id/airbutton_text_list_item_textview" android:background="@drawable/airbutton_menu_item_normal" android:paddingLeft="16.0dip" android:paddingTop="9.0dip" android:paddingRight="16.0dip" android:paddingBottom="12.0dip" android:layout_width="245.0dip" android:layout_height="60.0dip" android:maxLines="2" />
+</FrameLayout>

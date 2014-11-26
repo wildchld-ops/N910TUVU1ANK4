@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="handwriting_vopanel_text_margin">400</integer>
+    <integer name="handwriting_vopanel_baseline_position">430</integer>
+    <integer name="handwriting_vopanel_font_size">150</integer>
+</resources>

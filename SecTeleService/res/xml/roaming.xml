@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <ListPreference android:entries="@array/roaming_mode_entries" android:title="@string/roaming_mode" android:key="roaming_mode_key" android:summary="@string/roaming_mode_summary" android:dialogTitle="@string/roaming_mode" android:entryValues="@array/roaming_mode_values" />
+    <PreferenceScreen android:title="@string/roaming_settings" android:key="roaming_settings_key" android:summary="@string/roaming_settings_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.RoamingSettings" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/roaming_guard" android:key="roaming_guard_key" android:summary="@string/roaming_guard_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.RoamingGuard" />
+    </PreferenceScreen>
+</PreferenceScreen>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:title="@string/us_cdma_cf_activate_title" android:key="us_cdma_call_forwarding_activate_preference" android:summary="@string/us_cdma_cf_activate_title" />
+    <PreferenceScreen android:title="@string/us_cdma_cf_deactivate_title" android:key="us_cdma_call_forwarding_deactivate_preference" android:summary="@string/us_cdma_cf_deactivate_title" />
+</PreferenceScreen>

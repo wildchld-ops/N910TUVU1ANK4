@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/modifyCallButton" android:background="@drawable/call_voice_conversion_lte" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/switch_to_video_call" android:hoverPopupType="tooltip" />
+</FrameLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/converation_list_screen_fragment_root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ViewStub android:id="@id/easymode_compose_stub" android:layout="@layout/easymode_compose" android:layout_width="fill_parent" android:layout_height="48.0dip" />
+    <include android:layout_width="fill_parent" android:layout_height="@dimen/select_all_layout_height" layout="@layout/select_all" />
+    <FrameLayout android:id="@id/priority_overlap" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/add_priority_sender_layout_height">
+        <TextView android:textSize="@dimen/tap_to_add_priority_senders_textsize" android:textColor="@color/add_priority_sender_text_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/add_priority_sender" android:background="@drawable/selector_add_priority_sender" android:paddingLeft="17.0dip" android:paddingRight="4.0dip" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/add_priority_sender_layout_height" android:text="@string/tap_to_add_priority_senders" android:maxLines="2" android:drawableLeft="@drawable/tw_list_icon_create_holo" android:drawablePadding="17.0dip" />
+        <com.sec.android.touchwiz.widget.TwHorizontalDndListView android:scrollbarThumbHorizontal="@drawable/priority_sender_list_scrollbar" android:scrollbarStyle="insideOverlay" android:id="@id/priority_sender_list" android:background="@drawable/message_add_sender_bg" android:paddingTop="10.0dip" android:visibility="gone" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="@dimen/priority_sender_layout_height" android:listSelector="@android:color/transparent" android:divider="@android:color/transparent" />
+        <LinearLayout android:id="@id/overlaylayout" android:background="@drawable/overlay" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/add_priority_sender_layout_height" />
+    </FrameLayout>
+    <com.android.mms.ui.MsgSweepActionListView android:scrollbarStyle="insideOverlay" android:id="@android:id/list" android:fadingEdgeLength="16.0dip" android:layout_width="fill_parent" android:layout_height="0.0dip" android:drawSelectorOnTop="false" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <ViewStub android:id="@id/empty_view_stub" android:layout="@layout/conversation_list_empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

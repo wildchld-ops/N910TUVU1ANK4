@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="fill_vertical" android:orientation="vertical" android:background="#ff000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="top" android:id="@id/manage_effect_view" android:background="@drawable/tw_ab_transparent_dark" android:layout_width="fill_parent" android:layout_height="40.0dip" android:baselineAligned="false">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/cancel_button" android:background="@drawable/action_bar_item_background" android:focusable="true" android:nextFocusDown="@id/gridview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:nextFocusForward="@id/gridview">
+            <TextView android:textAppearance="?android:actionMenuTextAppearance" android:textColor="?android:actionMenuTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/manage_effect_title" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/cancel" style="?android:attr/actionButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="0.0">
+            <View android:background="@drawable/tw_divider_ab_holo_dark" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="9.0dip" android:layout_marginBottom="9.0dip" />
+        </LinearLayout>
+        <LinearLayout android:enabled="false" android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/save_button" android:background="@drawable/action_bar_item_background" android:focusable="true" android:nextFocusDown="@id/cancel_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:nextFocusForward="@id/cancel_button">
+            <TextView android:enabled="false" android:textAppearance="?android:actionMenuTextAppearance" android:textColor="?android:actionMenuTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/DoneTextView" android:focusable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/done" style="?android:attr/actionButtonStyle" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="#ff001d27" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.sec.android.app.shootingmodemanager.views.ShootingModeGridView android:scrollbarStyle="outsideOverlay" android:gravity="center" android:id="@id/gridview" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.5dip" android:layout_marginTop="6.5dip" android:layout_marginRight="6.5dip" android:layout_marginBottom="1.5dip" android:listSelector="@drawable/tw_action_item_background_focused_holo_dark" android:drawSelectorOnTop="true" android:horizontalSpacing="3.0dip" android:verticalSpacing="3.0dip" android:columnWidth="@dimen/effect_width" android:numColumns="6" android:layout_alignParentTop="true" />
+        <ImageView android:id="@id/cursorview" android:focusable="false" android:visibility="invisible" android:layout_width="3.0dip" android:layout_height="102.0dip" android:src="@drawable/shooting_mode_thumbnail_cursor" android:scaleType="fitXY" android:contentDescription="@null" />
+        <FrameLayout android:paddingLeft="@dimen/mode_padding_left" android:paddingTop="@dimen/mode_padding_top" android:paddingRight="@dimen/mode_padding_right" android:paddingBottom="@dimen/mode_padding_bottom" android:descendantFocusability="blocksDescendants" android:layout_width="@dimen/mode_shadow_width" android:layout_height="@dimen/mode_shadow_height" android:shadowColor="#ff000000" android:shadowDy="3.0" android:fontFamily="roboto-light">
+            <ImageView android:id="@id/dragview" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" />
+            <ImageView android:id="@id/shadowimage_id" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@null" style="@style/effect_view_frame_style" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

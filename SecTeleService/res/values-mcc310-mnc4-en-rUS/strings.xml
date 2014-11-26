@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="no_vm_number">Missing voice mail number</string>
+    <string name="no_vm_number_msg">No voice mail number on SIM card</string>
+    <string name="voicemail">Voice mail</string>
+    <string name="vm_changed">Voice mail number changed.</string>
+    <string name="vm_change_failed">Voice mail number change unsuccessful.</string>
+    <string name="sum_voicemail_choose_provider">Select voice mail service.</string>
+    <string name="voicemail_settings_number_label">Voice mail number</string>
+    <string name="notification_voicemail_title">New voice mail</string>
+    <string name="notification_voicemail_title_count">%d new voice mails</string>
+    <string name="notification_voicemail_no_vm_number">Voice mail number unknown.</string>
+    <string name="hac_mode_summary">Improve the sound quality of your phone for use with hearing aids.</string>
+    <string name="voicemail_settings">Voice mail settings</string>
+    <string name="voicemail_provider">Voice mail service</string>
+    <string name="callsettings_BT_outgoing_condition_lock">Even when phone is locked</string>
+    <string name="accept_or_reject_calls_reject_call_text">2. To send a call to voice mail, tap the red phone icon and swipe across the screen.</string>
+    <string name="play_voicemail">Play voice mail</string>
+    <string name="stop_voicemail_summary">Turn off voice mail service.</string>
+    <string name="play_voicemail_alert">Play voice mail</string>
+    <string name="callsettings_voicemail_title">Voice mail service</string>
+    <string name="callsettings_voicemail_title_sub_text">Edit voice mail settings.</string>
+    <string name="callsettings_voicemail_activate_service_1">Turn on voice mail 1</string>
+    <string name="gear_single_voicemail_msg">You have 1 new voice mail. Check your voice mail on your mobile phone.</string>
+    <string name="gear_multi_voicemail_msg">You have %d new voice mails. Check your voice mails on your mobile phone.</string>
+</resources>

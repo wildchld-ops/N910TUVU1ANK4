@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.InCallApp" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="TextAppearance" parent="@android:style/TextAppearance" />
+    <style name="TextAppearance.info_label" parent="@style/TextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="hoverPopupStyle" parent="@android:style/Theme.Light" />
+    <style name="ccOtaButton">
+        <item name="android:layout_width">150.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+    </style>
+    <style name="ccOtaNextButton" parent="@style/ccOtaButton">
+        <item name="android:layout_marginRight">4.0dip</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="ccOtaSkipButton" parent="@style/ccOtaButton">
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="InCallButton">
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:layout_width">0.0px</item>
+        <item name="android:layout_height">@dimen/in_call_button_height</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InCallCompoundButton" parent="@style/InCallButton">
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+    </style>
+    <style name="VerticalSeparator">
+        <item name="android:background">@android:color/black</item>
+        <item name="android:layout_width">2.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="InCallEndButton">
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">@dimen/in_call_end_button_height</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InCallExtraRowButton">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/extra_row_button_width</item>
+        <item name="android:layout_height">@dimen/extra_row_button_height</item>
+    </style>
+    <style name="InCallExtraRowButtonLabel">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/incall_call_banner_text_color</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">5.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="Theme.PhoneApp" parent="@android:style/Theme.DeviceDefault" />
+    <style name="Theme.Settings.DialogWhenLarge" parent="@android:style/Theme.DeviceDefault.DialogWhenLarge">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="Theme.Settings" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="Theme.SettingsMinWidth" parent="@style/Theme.Settings.DialogWhenLarge" />
+    <style name="Theme.Settings_MinWidth" parent="@android:style/Theme.DeviceDefault.Light.Dialog.MinWidth">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="Theme.MobileSettings" parent="@android:style/Theme.DeviceDefault.DialogWhenLarge">
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+    <style name="InCallAnimationStyle" parent="@android:style/Animation.Activity">
+        <item name="android:taskOpenEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@anim/activity_open_exit</item>
+        <item name="android:taskToFrontEnterAnimation">@anim/activity_open_enter</item>
+        <item name="android:taskToFrontExitAnimation">@anim/activity_open_exit</item>
+    </style>
+    <style name="OutgoingAnimationStyle" parent="@android:style/Animation.Holo.Activity">
+        <item name="android:taskOpenEnterAnimation">@android:anim/activity_open_enter</item>
+        <item name="android:taskOpenExitAnimation">@android:anim/activity_open_exit</item>
+    </style>
+    <style name="InCallActionBarStyle" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:background">@drawable/tw_action_bar_tab_bg_holo_dark</item>
+        <item name="android:backgroundStacked">@drawable/tw_action_bar_tab_bg_holo_dark</item>
+    </style>
+    <style name="Theme.InCallScreen" parent="@android:style/Theme.DeviceDefault.Light.NoActionBar">
+        <item name="android:windowBackground">@color/incall_screen_background</item>
+        <item name="android:windowAnimationStyle">@style/InCallAnimationStyle</item>
+    </style>
+    <style name="Theme.noIconAndTextActionBarStyle" parent="@android:style/Widget.DeviceDefault.ActionBar">
+        <item name="android:displayOptions">none</item>
+    </style>
+    <style name="Theme.InCallScreenDUOS" parent="@android:style/Widget.ActionBar.TabBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowAnimationStyle">@style/InCallAnimationStyle</item>
+        <item name="android:actionBarStyle">@style/InCallActionBarStyle</item>
+    </style>
+    <style name="Theme.InVTCallScreen" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/incall_screen_background</item>
+    </style>
+    <style name="Theme.InVTCallScreenDUOS" parent="@android:style/Widget.ActionBar.TabBar">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarStyle">@style/InCallActionBarStyle</item>
+    </style>
+    <style name="InCallDialpadButtonStyle">
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">@dimen/dialpad_button_margin</item>
+        <item name="android:layout_marginRight">@dimen/dialpad_button_margin</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="ContactsActionBarStyle" parent="@android:style/Widget.DeviceDefault.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/people_app_theme_color</item>
+        <item name="android:backgroundStacked">@color/people_app_theme_color</item>
+    </style>
+    <style name="OutgoingCallBroadcasterTheme" parent="@android:style/Theme.Holo.NoActionBar">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:windowAnimationStyle">@style/OutgoingAnimationStyle</item>
+    </style>
+    <style name="MwInCallTouchToggleButtonNoFrameExtra">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/incall_toggle_button</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="NoDisplayCustom" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoDisplay">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+    <style name="RejectwithMessageTutorialIncallScreenTheme" parent="@android:style/Theme.DeviceDefault.NoActionBar" />
+    <style name="DialtactsDigitsTextAppearance">
+        <item name="android:textSize">@dimen/dialpad_digits_text_size</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+        <item name="android:cursorVisible">false</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:editable">true</item>
+        <item name="android:freezesText">true</item>
+    </style>
+    <style name="PrimaryCallInfoPrimaryCallBanner">
+        <item name="android:layout_alignParentTop">true</item>
+    </style>
+    <style name="PrimaryCallInfoSupplementaryInfoContainer">
+        <item name="android:layout_below">@id/primary_call_banner</item>
+    </style>
+    <style name="SecondaryCallInfoSecondaryCallName">
+        <item name="android:layout_gravity">top|left|center</item>
+    </style>
+    <style name="SecondaryCallInfoSecondaryCallStatus">
+        <item name="android:layout_gravity">top|right|center</item>
+    </style>
+    <style name="p_lettering_appearance">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="RejectWithMsgItem">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">56.0dip</item>
+    </style>
+    <style name="RejectWithMsgRemindItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">73.0dip</item>
+    </style>
+    <style name="RejectWithMsgItemText">
+        <item name="android:textSize">21.0dip</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:paddingStart">16.0dip</item>
+    </style>
+    <style name="RejectWithMsgRemindItemText">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="RejectWithMsgItemBtn">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/call_incoming_msg_icon</item>
+        <item name="android:layout_width">25.0dip</item>
+        <item name="android:layout_height">25.0dip</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:layout_marginRight">15.0dip</item>
+    </style>
+    <style name="InCallTouchUpperButton">
+        <item name="android:textSize">@dimen/in_call_buttons_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">14.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="InCallTouchOnehandUpperButton">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="InCallTouchOnehanDialpadButton">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="InCallTouchOnehandSwitchEndButton">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">5.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="InCallTouchEndButton" parent="@style/InCallTouchUpperButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_red_btn_bg</item>
+    </style>
+    <style name="InCallTouchOnehandStopRecordButton">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingBottom">6.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">-4.0dip</item>
+    </style>
+    <style name="InEasyCallTouchUpperButton">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">20.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">7.0dip</item>
+    </style>
+    <style name="InEasyCallTouchDialpadEndButton" parent="@style/InEasyCallTouchUpperButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_red_btn_bg</item>
+    </style>
+    <style name="TutorialTouchUpperButton">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">21.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="EndCallUpperButton">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/endcall_upper_button_text</item>
+        <item name="android:background">@drawable/endcall_contact_button</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">75.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EndCallUpperButtonFrame">
+        <item name="android:background">@color/endcall_button_bg</item>
+        <item name="android:padding">@dimen/end_call_upper_button_frame_padding</item>
+        <item name="android:layout_marginTop">@dimen/end_call_upper_button_margin_top_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/end_call_upper_button_margin_top_bottom</item>
+        <item name="android:layout_marginStart">@dimen/end_call_upper_button_margin_left_right</item>
+        <item name="android:layout_marginEnd">@dimen/end_call_upper_button_margin_left_right</item>
+    </style>
+    <style name="EndCallEasyUpperButtonFrame">
+        <item name="android:background">@color/endcall_button_bg</item>
+        <item name="android:padding">1.0dip</item>
+        <item name="android:layout_marginTop">16.0dip</item>
+        <item name="android:layout_marginBottom">16.0dip</item>
+        <item name="android:layout_marginStart">10.0dip</item>
+        <item name="android:layout_marginEnd">10.0dip</item>
+    </style>
+    <style name="EndCallUpperButtonDivider">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/incall_button_bg</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">@dimen/save_button_frame_divider_height</item>
+        <item name="android:src">@drawable/voicecall_end_call_btn_divider</item>
+    </style>
+    <style name="EndCallEasyUpperButton">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/endcall_upper_button_text</item>
+        <item name="android:background">@drawable/endcall_contact_button</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">54.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="EndCallButton">
+        <item name="android:textSize">@dimen/endcall_button_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/endcall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">14.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="EndCallGreenButton" parent="@style/EndCallButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_green_btn_bg</item>
+    </style>
+    <style name="EndCallLightGreenButton" parent="@style/EndCallButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_green_btn_bg</item>
+    </style>
+    <style name="EndCallYellowButton" parent="@style/EndCallButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_yellow_btn_bg</item>
+    </style>
+    <style name="EndCallEasyGreenButton" parent="@style/EndCallEasyButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_green_btn_bg</item>
+    </style>
+    <style name="EndCallEasyLightGreenButton" parent="@style/EndCallEasyButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_green_btn_bg</item>
+    </style>
+    <style name="EndCallEasyYellowButton" parent="@style/EndCallEasyButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_yellow_btn_bg</item>
+    </style>
+    <style name="EndCallOnehandGreenButton" parent="@style/EndCallOnehandButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_green_btn_bg</item>
+    </style>
+    <style name="EndCallOnehandLightGreenButton" parent="@style/EndCallOnehandButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_green_btn_bg</item>
+    </style>
+    <style name="EndCallOnehandYellowButton" parent="@style/EndCallOnehandButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_yellow_btn_bg</item>
+    </style>
+    <style name="EndCallEasyButton">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">21.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">6.0dip</item>
+    </style>
+    <style name="EndCallOnehandButton">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="InCallTouchToggleButtonNoFrame">
+        <item name="android:textSize">@dimen/in_call_buttons_text_size</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">18.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableBottom">@drawable/incall_toggle_button</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InCallTouchOnehandToggleButtonNoFrame">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">8.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableBottom">@drawable/incall_toggle_button_onehand</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InEasyCallTouchToggleButtonNoFrame">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">18.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableBottom">@drawable/incall_toggle_button</item>
+        <item name="android:drawablePadding">7.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InCallTouchToggleButtonNoFrameExtra">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/incall_toggle_button</item>
+        <item name="android:paddingTop">9.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:baselineAligned">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">5.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InCallTouchSmallButton">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/APKTOOL_DUMMY_042f</item>
+        <item name="android:paddingTop">10.0dip</item>
+        <item name="android:layout_width">120.0dip</item>
+        <item name="android:layout_height">90.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="incomingQcifVTCallHideButtonLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:background">#7f000000</item>
+        <item name="android:paddingTop">11.0dip</item>
+        <item name="android:paddingBottom">10.0dip</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">51.0dip</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+    <style name="incomingQcifVTCallHideButton">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/invtcall_incoming_hide_button_text_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textOn">@string/show</item>
+        <item name="android:textOff">@string/hide</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="incomingVTCallHideButton">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/invtcall_incoming_hide_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/videocall_incoming_hide_show_bg</item>
+        <item name="android:padding">11.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:textOn">@string/show</item>
+        <item name="android:textOff">@string/hide</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableLeft">@drawable/videocall_incoming_hide_show_button</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:contentDescription">@string/hide</item>
+    </style>
+    <style name="switchVTCallButton">
+        <item name="android:background">#00000000</item>
+        <item name="android:layout_width">@dimen/vt_switch_call_button_size</item>
+        <item name="android:layout_height">@dimen/vt_switch_call_button_size</item>
+        <item name="android:hoverPopupType">tooltip</item>
+    </style>
+    <style name="InCallIconContainer">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#ff000000</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+        <item name="android:layout_alignParentLeft">true</item>
+    </style>
+    <style name="setting_subheader_textcolor">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">@color/callsettings_header_text</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.2</item>
+    </style>
+    <style name="SearchContactButton" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ic_button_contacts</item>
+        <item name="android:layout_width">58.0dip</item>
+        <item name="android:layout_height">39.0dip</item>
+        <item name="android:layout_marginLeft">9.0dip</item>
+        <item name="android:layout_marginTop">7.5dip</item>
+        <item name="android:layout_marginRight">9.0dip</item>
+        <item name="android:layout_marginBottom">5.0dip</item>
+        <item name="android:contentDescription">@string/importfromContacts</item>
+    </style>
+    <style name="InputTextField">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginTop">3.0dip</item>
+    </style>
+    <style name="PreferenceCategory" parent="@android:attr/preferenceCategoryStyle" />
+    <style name="InCallTouchButtonRcsShare">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">18.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">2.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InCallTouchButtonRcsVideo">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:paddingTop">16.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:lines">2</item>
+        <item name="android:drawablePadding">2.0dip</item>
+    </style>
+    <style name="ThemeTranslucentNoTitleBarDeviceDefault" parent="@android:style/Theme.DeviceDefault">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="AlertPopupTranslucentNoTitle" parent="@android:style/Theme.DeviceDefault.Dialog.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="SimTouchButton">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/twcolor001</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">0.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+        <item name="android:shadowColor">@color/twcolor002</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="swichCdmaButtonContainerStyle">
+        <item name="android:textSize">20.0dip</item>
+        <item name="android:textColor">@color/incall_hold_button_text</item>
+    </style>
+    <style name="AlertDialogCustom" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="TutorialPopupStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/tutorial_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">13.0dip</item>
+        <item name="android:layout_marginTop">@dimen/tutorial_popup_style_marginTop</item>
+        <item name="android:layout_marginRight">13.0dip</item>
+        <item name="android:layout_marginBottom">@dimen/tutorial_popup_style_marginBottom</item>
+    </style>
+    <style name="InCallButtonViewDrivingModeTextView">
+        <item name="android:textSize">30.0dip</item>
+        <item name="android:textColor">@color/incoming_buttton_view_driving_mode_text_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">4.0dip</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="IconModeGridViewStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">34.0dip</item>
+        <item name="android:layout_marginRight">21.0dip</item>
+        <item name="android:horizontalSpacing">9.0dip</item>
+        <item name="android:verticalSpacing">23.0dip</item>
+        <item name="android:stretchMode">columnWidth</item>
+        <item name="android:columnWidth">155.0dip</item>
+        <item name="android:numColumns">2</item>
+    </style>
+    <style name="IconModeTextTitleStyle">
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxWidth">155.0dip</item>
+        <item name="android:maxHeight">26.0dip</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="IconModeImageStyle">
+        <item name="android:background">@drawable/reject_message_tile_center_bg</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IconModeLinearLayoutStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/reject_message_tile_bg</item>
+        <item name="android:layout_width">155.0dip</item>
+        <item name="android:layout_height">146.0dip</item>
+    </style>
+    <style name="IconModeIncomingCallScreenStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">319.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">21.0dip</item>
+        <item name="android:rowCount">3</item>
+        <item name="android:columnCount">2</item>
+    </style>
+    <style name="IconModeIncomingCallItemStyle">
+        <item name="android:layout_marginBottom">15.0dip</item>
+    </style>
+    <style name="RejectWithMessageItemCovered">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">40.0dip</item>
+        <item name="android:layout_marginRight">40.0dip</item>
+        <item name="android:minHeight">61.0dip</item>
+    </style>
+    <style name="RejectWithMessageItemTextCovered">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">3</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="DsaPreferenceButtonContainer" parent="@android:style/DeviceDefault.SegmentedButton">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:weightSum">2.0</item>
+        <item name="android:dividerPadding">8.0dip</item>
+    </style>
+    <style name="DsaPreferenceButton" parent="@android:style/Widget.DeviceDefault.Button.Borderless">
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="InEasyCallTouchEndButton">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/incall_button_text</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="InEasyCallEndButton" parent="@style/InEasyCallTouchEndButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_red_btn_bg</item>
+    </style>
+    <style name="IncomingPopUpAnimation">
+        <item name="android:windowEnterAnimation">@anim/mini_window_enter</item>
+        <item name="android:windowExitAnimation">@anim/mini_window_exit</item>
+    </style>
+    <style name="MultiSimBarTabAppearance">
+        <item name="android:textSize">19.0dip</item>
+        <item name="android:textColor">@drawable/tab_text_color</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:background">@drawable/call_tab_btn_bg</item>
+        <item name="android:paddingLeft">21.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:shadowColor">@color/black</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">0.1</item>
+        <item name="android:drawablePadding">9.0dip</item>
+    </style>
+    <style name="quick_panel_button_layout">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/quickpanel_btn_default</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+    <style name="quick_panel_end_button_layout" parent="@style/quick_panel_button_layout" />
+    <style name="quick_panel_button_image">
+        <item name="android:focusable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">2.0dip</item>
+        <item name="android:layout_marginEnd">@dimen/quickpanel_button_image_margin_right</item>
+    </style>
+    <style name="quick_panel_button_text">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/incall_button_text_quickpanel</item>
+        <item name="android:gravity">center</item>
+        <item name="android:focusable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:layout_marginEnd">2.0dip</item>
+    </style>
+    <style name="quick_panel_end_button_text" parent="@style/quick_panel_button_text">
+        <item name="android:textColor">@color/popup_call_reject_text_color</item>
+    </style>
+    <style name="InCallElapsedTime">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/callstate_container_text_size</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/incall_elapsed_time_shadow</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+    <style name="InCallElapsedTimeDialpad">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textSize">@dimen/callstate_container_text_size</item>
+        <item name="android:gravity">right|center</item>
+        <item name="android:paddingRight">7.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="InCallButtonTextShadowEffect">
+        <item name="android:shadowColor">@color/incall_text_color_shadow</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+    <style name="OnScreenOtherButtonText">
+        <item name="android:textSize">@dimen/onScreen_other_buttons_text_size</item>
+        <item name="android:textColor">@color/incall_call_banner_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_marginLeft">@dimen/onScreen_other_buttons_margin_left</item>
+        <item name="android:maxWidth">@dimen/onScreen_other_buttons_max_width</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/incall_text_color_shadow</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">0.25</item>
+    </style>
+    <style name="InCallDriveLinkTouchToggleButtonNoFrame">
+        <item name="android:textSize">@dimen/drivelink_incall_button_text_size</item>
+        <item name="android:textColor">@color/drivelink_incall_call_banner_text_color</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/driving_call_btn_bg</item>
+        <item name="android:paddingTop">14.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableBottom">@drawable/incall_drivelink_toggle_button</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+    <style name="InCallMWDriveLinkTouchToggleButtonNoFrame">
+        <item name="android:textSize">@dimen/drivelink_incall_button_text_size</item>
+        <item name="android:textColor">@color/drivelink_incall_call_banner_text_color</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:background">@drawable/driving_call_btn_bg</item>
+        <item name="android:paddingTop">7.0dip</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawableBottom">@drawable/incall_drivelink_toggle_button</item>
+        <item name="android:drawablePadding">-3.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="InVTCallTouchButton" parent="@style/InCallTouchUpperButton" />
+    <style name="InVTCallHiddenBar">
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@color/invtcall_hidden_button_bg</item>
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/vt_hidden_button_height</item>
+    </style>
+    <style name="InVTCallHiddenButton">
+        <item name="android:textSize">15.0dip</item>
+        <item name="android:textColor">@color/invtcall_hidden_button_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">@color/invtcall_text_color_shadow</item>
+        <item name="android:shadowDy">-3.0</item>
+        <item name="android:shadowRadius">0.2</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:fontFamily">sec-roboto-light</item>
+    </style>
+    <style name="InVTCallEffectButtonText">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/invtcall_effect_button_text_color</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2.0dip</item>
+        <item name="android:layout_marginRight">2.0dip</item>
+        <item name="android:layout_marginBottom">3.0dip</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+    </style>
+    <style name="InVTCallDecorationButtonText">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:textColor">@color/invtcall_decoration_button_text_color</item>
+        <item name="android:layout_gravity">bottom|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">15.0dip</item>
+        <item name="android:layout_marginBottom">6.0dip</item>
+    </style>
+    <style name="swithButtonContainerStyle">
+        <item name="android:textSize">18.0dip</item>
+        <item name="android:textColor">@color/incall_hold_button_text</item>
+    </style>
+    <style name="InCallTouchOnehandEndButton" parent="@style/InCallTouchOnehandUpperButton">
+        <item name="android:textColor">@color/incall_end_button_text</item>
+        <item name="android:background">@drawable/call_red_btn_bg</item>
+    </style>
+    <style name="PopupCallEndCallButton">
+        <item name="android:textSize">@dimen/popup_call_button_text_size</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:layout_width">1.0dip</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+</resources>

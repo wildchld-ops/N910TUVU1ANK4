@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.HomeView android:id="@id/home_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <FrameLayout android:id="@id/home_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false">
+        <com.android.launcher2.Workspace android:id="@id/workspace" android:layout_width="fill_parent" android:layout_height="fill_parent" android:splitMotionEvents="false" launcher:cellCountX="@integer/home_cellCountX" launcher:cellCountY="@integer/home_cellCountY" launcher:pageSpacing="@dimen/home_pageSpacing" launcher:pageIndicatorTop="@dimen/home_pageIndicatorTop" launcher:pageIndicatorGap="@dimen/home_pageIndicatorGap" launcher:pageIndicatorMaxVisible="@integer/home_pageIndicatorMaxVisible" launcher:defaultScreen="2" launcher:pageIndicatorTopShrunken="@dimen/home_pageIndicatorTopShrunken" />
+        <include layout="@layout/quickview_workspace" />
+        <include android:layout_gravity="top" android:id="@id/home_edit_title_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/menu_titleHeight" android:layout_marginStart="@dimen/menu_titleMarginLeft" android:layout_marginEnd="@dimen/menu_titleMarginRight" layout="@layout/home_edit_title_bar" />
+        <include android:visibility="gone" layout="@layout/home_edit_drag_bar" />
+        <include android:id="@id/hotseat" layout="@layout/hotseat" />
+    </FrameLayout>
+    <com.android.launcher2.BlendedDarkenView android:id="@id/home_darken_layer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <ViewStub android:id="@id/market_sample" android:layout="@layout/market_sample" android:inflatedId="@id/market_sample" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.android.launcher2.HomeView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="48.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/msg_popup_text_color" android:gravity="center_vertical" android:id="@id/msg_select_dialog_text" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/msg_popup_margin" android:layout_marginRight="@dimen/msg_popup_margin" android:singleLine="true" />
+</LinearLayout>

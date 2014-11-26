@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <TextView android:textSize="@dimen/membermgmt_font_size_firstline" android:textColor="@color/homesync_member_mgmt_line_1" android:gravity="left" android:id="@id/member_management_description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/membermgmt_main_margin_left" android:layout_marginTop="@dimen/membermgmt_margin_firstline" android:text="@string/homesync_account_mgmt_description_title" android:fontFamily="Roboto" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/membermgmt_main_margin_left" android:layout_marginTop="@dimen/membermgmt_margin_secondline">
+        <TextView android:textSize="@dimen/membermgmt_font_size_secondline" android:textColor="@color/homesync_member_mgmt_line_2" android:gravity="left" android:id="@id/member_mgmt_row_11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homesync_account_mgmt_description_admin_title" android:fontFamily="Roboto" />
+        <TextView android:textSize="@dimen/membermgmt_font_size_secondline" android:textColor="@color/homesync_member_mgmt_line_2" android:gravity="left" android:id="@id/member_mgmt_row_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/membermgmt_margin_in_line" android:text="@string/homesync_account_mgmt_description_admin" android:fontFamily="Roboto" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/membermgmt_main_margin_left" android:layout_marginBottom="@dimen/membermgmt_margin_secondline">
+        <TextView android:textSize="@dimen/membermgmt_font_size_secondline" android:textColor="@color/homesync_member_mgmt_line_2" android:gravity="left" android:id="@id/member_mgmt_row_21" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/homesync_account_mgmt_description_guest_title" android:fontFamily="Roboto" />
+        <TextView android:textSize="@dimen/membermgmt_font_size_secondline" android:textColor="@color/homesync_member_mgmt_line_2" android:gravity="left" android:id="@id/member_mgmt_row_22" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/membermgmt_margin_in_line" android:text="@string/homesync_account_mgmt_description_guest" android:fontFamily="Roboto" />
+    </LinearLayout>
+    <include android:id="@id/header_admin" android:layout_marginLeft="@dimen/membermgmt_header_marginleft" layout="@android:layout/preference_category" />
+    <include android:id="@id/admin" layout="@layout/homesync_account_management_row" />
+    <include android:id="@id/header_guest" android:layout_marginLeft="@dimen/membermgmt_header_marginleft" layout="@android:layout/preference_category" />
+    <ListView android:id="@id/manage_account_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/manage_empty_accout_list" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/membermgmt_no_guest_image_margin">
+        <ImageView android:gravity="top" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_setting_member_no_guest" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/noguest_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/membermgmt_no_guest_text_margin" android:layout_marginBottom="@dimen/membermgmt_no_guest_text_margin" android:fontFamily="Roboto" />
+        <TextView android:gravity="center_horizontal" android:layout_gravity="center" android:id="@id/noguest_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="Roboto" />
+    </LinearLayout>
+</LinearLayout>

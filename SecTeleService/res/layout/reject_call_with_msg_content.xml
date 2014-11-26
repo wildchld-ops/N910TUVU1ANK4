@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/reject_call_with_msg_scroll" android:background="@color/reject_with_message_body_color" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:splitMotionEvents="false"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:id="@id/answering_memo_sliding_button" android:background="@drawable/linearlayout_answering_message_bg" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="65.0dip">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/answering_memo_img" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+            <TextView android:textSize="@dimen/reject_call_with_msg_create_text_size" android:textColor="@color/incall_button_text" android:layout_gravity="center" android:paddingLeft="10.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/answering_memo_sliding_button_text" android:singleLine="true" android:shadowDx="-1.0" android:shadowDy="-1.0" android:shadowRadius="0.3" android:layout_weight="1.0" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/reject_call_with_msg_title" android:background="@drawable/tw_sub_header_bg_dark" android:focusable="true" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="28.0dip">
+            <TextView android:textSize="16.0sp" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:text="@string/reject_call_with_msg" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/reject_call_with_msg_create" android:background="@drawable/linearlayout_reject_call_with_msg_bg" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <TextView android:textSize="@dimen/reject_call_with_msg_create_text_size" android:textColor="@color/create_new_message_text_color" android:layout_gravity="center" android:id="@id/reject_call_with_msg_create_text" android:paddingLeft="12.0dip" android:paddingRight="7.0dip" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/reject_call_with_msg_create" android:singleLine="true" android:shadowDx="-1.0" android:shadowDy="-1.0" android:shadowRadius="0.3" android:layout_weight="1.0" />
+            <ImageView android:layout_gravity="center" android:id="@id/reject_call_with_msg_create_icon" android:background="@drawable/create_new_msg" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14.0dip" android:layout_marginRight="14.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/reject_call_with_msg_items_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include android:id="@id/reject_call_with_msg_item1" layout="@layout/reject_call_with_msg_panel" />
+            <include android:id="@id/reject_call_with_msg_item2" layout="@layout/reject_call_with_msg_panel" />
+            <include android:id="@id/reject_call_with_msg_item3" layout="@layout/reject_call_with_msg_panel" />
+            <include android:id="@id/reject_call_with_msg_item4" layout="@layout/reject_call_with_msg_panel" />
+            <include android:id="@id/reject_call_with_msg_item5" layout="@layout/reject_call_with_msg_panel" />
+            <include android:id="@id/reject_call_with_msg_item6" layout="@layout/reject_call_with_msg_panel" />
+        </LinearLayout>
+        <GridLayout android:id="@id/reject_call_icon_mode_gridlayout" style="@style/IconModeIncomingCallScreenStyle">
+            <include android:layout_gravity="left" android:id="@id/reject_call_with_msg_item1" android:layout_column="0" android:layout_row="0" android:layout_columnSpan="1" layout="@layout/reject_call_with_msg_content_icon_mode_item" style="@style/IconModeIncomingCallItemStyle" />
+            <include android:layout_gravity="right" android:id="@id/reject_call_with_msg_item2" android:layout_column="1" android:layout_row="0" android:layout_columnSpan="1" layout="@layout/reject_call_with_msg_content_icon_mode_item" style="@style/IconModeIncomingCallItemStyle" />
+            <include android:layout_gravity="left" android:id="@id/reject_call_with_msg_item3" android:layout_column="0" android:layout_row="1" layout="@layout/reject_call_with_msg_content_icon_mode_item" style="@style/IconModeIncomingCallItemStyle" />
+            <include android:layout_gravity="right" android:id="@id/reject_call_with_msg_item4" android:layout_column="1" android:layout_row="1" android:layout_columnSpan="1" layout="@layout/reject_call_with_msg_content_icon_mode_item" style="@style/IconModeIncomingCallItemStyle" />
+            <include android:layout_gravity="left" android:id="@id/reject_call_with_msg_item5" android:layout_column="0" android:layout_row="2" android:layout_columnSpan="1" layout="@layout/reject_call_with_msg_content_icon_mode_item" />
+            <include android:layout_gravity="right" android:id="@id/reject_call_with_msg_item6" android:layout_column="1" android:layout_row="2" android:layout_columnSpan="1" layout="@layout/reject_call_with_msg_content_icon_mode_item" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:persistent="false" android:title="@string/call_settings" android:key="button_autocsp_setting_key_main"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceScreen android:persistent="false" android:title="@string/ltn_callsettings_title_autocsp" android:key="button_autocsp_setting_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.AutoCSPView" />
+    </PreferenceScreen>
+</PreferenceScreen>

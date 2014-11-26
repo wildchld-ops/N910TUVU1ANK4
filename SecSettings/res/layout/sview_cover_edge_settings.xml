@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RadioGroup android:orientation="horizontal" android:id="@id/edge_wallpaper_btn_group" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="56.0dip">
+        <RadioButton android:id="@id/edge_wallpaper_btn1" android:layout_width="30.0dip" android:layout_height="30.0dip" />
+        <RadioButton android:id="@id/edge_wallpaper_btn2" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="42.0dip" />
+    </RadioGroup>
+    <RelativeLayout android:id="@id/edge_wallpaper_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="31.0dip">
+        <ImageView android:id="@id/edge_wallpaper_img1" android:layout_width="38.0dip" android:layout_height="fill_parent" android:src="@drawable/cover_edge_wallpaper_01" android:scaleType="centerCrop" android:importantForAccessibility="no" />
+        <ImageView android:id="@id/edge_wallpaper_img2" android:layout_width="38.0dip" android:layout_height="fill_parent" android:layout_marginLeft="34.0dip" android:src="@drawable/cover_edge_wallpaper_02" android:scaleType="centerCrop" android:layout_toRightOf="@id/edge_wallpaper_img1" android:importantForAccessibility="no" />
+    </RelativeLayout>
+</LinearLayout>

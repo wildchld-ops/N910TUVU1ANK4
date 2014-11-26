@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:minHeight="?android:listPreferredItemHeight"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBox android:id="@id/selected" android:focusable="false" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginRight="8.0dip" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:ellipsize="middle" android:id="@id/spam_number" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:scrollHorizontally="true" android:singleLine="true" android:layout_toRightOf="@id/selected" android:layout_centerVertical="true" android:marqueeRepeatLimit="marquee_forever" />
+</RelativeLayout>

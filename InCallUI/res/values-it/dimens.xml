@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="incoming_call_easy_image_widget_description_textSize">16.0sp</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_0272">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0273">false</item>
+</resources>

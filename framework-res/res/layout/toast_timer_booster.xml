@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/APKTOOL_DUMMY_068d" android:padding="20.0dip" android:layout_width="358.0dip" android:layout_height="104.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="19.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="3.0dip">
+        <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="#fff5f5f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/booster_name" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#fff5f5f5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/booster_notification_timeleft" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginTop="16.0dip">
+        <FrameLayout android:layout_width="37.0dip" android:layout_height="42.0dip">
+            <ImageView android:layout_width="37.0dip" android:layout_height="42.0dip" android:src="@drawable/APKTOOL_DUMMY_015e" />
+            <ImageView android:id="@id/booster_wifi_speed_window" android:layout_width="37.0dip" android:layout_height="42.0dip" android:src="@drawable/booster_timer" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="57.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="#fff5f5f5" android:layout_width="wrap_content" android:layout_height="14.0dip" android:text="@string/booster_notification_lte" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="#ffaceb00" android:id="@id/booster_wifi_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffaceb00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/booster_notification_second" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="37.0dip" android:layout_height="42.0dip" android:layout_marginLeft="9.0dip">
+            <ImageView android:layout_width="37.0dip" android:layout_height="42.0dip" android:src="@drawable/APKTOOL_DUMMY_015e" />
+            <ImageView android:id="@id/booster_mobile_speed_window" android:layout_width="37.0dip" android:layout_height="42.0dip" android:src="@drawable/booster_timer" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="57.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="#fff5f5f5" android:layout_width="wrap_content" android:layout_height="14.0dip" android:text="@string/booster_notification_wifi" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="#ffaceb00" android:id="@id/booster_mobile_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffaceb00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/booster_notification_second" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout android:layout_width="37.0dip" android:layout_height="42.0dip" android:layout_marginLeft="9.0dip">
+            <ImageView android:layout_width="37.0dip" android:layout_height="42.0dip" android:src="@drawable/APKTOOL_DUMMY_015e" />
+            <ImageView android:id="@id/booster_booster_speed_window" android:layout_width="37.0dip" android:layout_height="42.0dip" android:src="@drawable/booster_timer" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="57.0dip" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="#fff5f5f5" android:layout_width="wrap_content" android:layout_height="14.0dip" android:text="@string/booster_notification_booster_speed" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="#ffaceb00" android:id="@id/booster_booster_speed" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="15.0sp" android:textColor="#ffaceb00" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:text="@string/booster_notification_second" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

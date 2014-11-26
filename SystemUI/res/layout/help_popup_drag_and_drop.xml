@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/help_drag_and_drop_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/help_popup_drag_and_drop" android:background="@drawable/help_popup_picker_bg_w_01" android:layout_width="@dimen/help_popup_drag_and_drop_width" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/help_popup_drag_and_drop_left_margin" android:layout_marginTop="@dimen/help_popup_drag_and_drop_top_margin" android:layout_marginRight="@dimen/help_popup_drag_and_drop_right_margin">
+        <TextView android:textSize="@dimen/help_popup_text_size" android:textColor="#ff000000" android:id="@id/help_popup_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="7.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip" android:text="@string/select_contents" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <CheckBox android:textSize="@dimen/help_popup_text_size" android:textColor="#ff000000" android:id="@id/help_popup_checkBox" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="15.0dip" android:text="@string/do_not_show_again" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <Button android:textSize="@dimen/help_popup_text_size" android:textColor="#ffffffff" android:id="@id/help_popup_help_button" android:background="@drawable/tipbubble_button" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="7.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="10.0dip" android:text="@string/help" android:layout_weight="1.0" />
+            <ImageView android:id="@id/help_popup_button_line" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+            <Button android:textSize="@dimen/help_popup_text_size" android:textColor="#ffffffff" android:id="@id/help_popup_ok_button" android:background="@drawable/tipbubble_button" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="3.0dip" android:layout_marginRight="7.0dip" android:layout_marginBottom="10.0dip" android:text="@string/ok" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/help_picker_top_bottom" android:layout_width="@dimen/help_picker_width" android:layout_height="@dimen/help_picker_height" android:layout_above="@id/help_popup_drag_and_drop" />
+    <ImageView android:id="@id/help_picker_left_right" android:layout_width="@dimen/help_picker_width" android:layout_height="@dimen/help_picker_height" android:layout_toLeftOf="@id/help_popup_drag_and_drop" />
+</RelativeLayout>

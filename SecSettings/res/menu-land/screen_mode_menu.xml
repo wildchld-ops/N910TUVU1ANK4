@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/header_button_icon_cancel" android:textSize="19.0dip" android:textColor="#ffffffff" android:id="@id/menu_cancel" android:shadowColor="#00000000" android:shadowDy="1.0" android:title="@string/cancel" android:showAsAction="ifRoom|withText" />
+    <item android:icon="@drawable/header_button_icon_check" android:textSize="19.0dip" android:textColor="#ffffffff" android:id="@id/menu_done" android:shadowColor="#00000000" android:shadowDy="1.0" android:title="@string/menu_save" android:showAsAction="ifRoom|withText" />
+</menu>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ListView android:id="@id/attachment_hover_list" android:background="@drawable/hover_popup_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stackFromBottom="true" android:divider="@drawable/message_bubble_style_divider" android:dividerHeight="1.0dip" android:minWidth="190.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

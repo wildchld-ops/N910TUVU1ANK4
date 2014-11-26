@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/setting_title" android:key="input_method_settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:persistent="true" android:entries="@array/input_method_types" android:title="@string/input_method_type" android:key="SETTINGS_DEFAULT_KEYPAD_TYPE" android:widgetLayout="@layout/settings_preference_layout" android:defaultValue="0" android:dialogTitle="@string/input_method_type" android:entryValues="@array/input_method_type_values" />
+    <ListPreference android:persistent="true" android:entries="@array/turkish_input_method_types" android:title="@string/turkish_qwerty_keyboard_types" android:key="SETTINGS_TURKISH_KEYBOARD_TYPE" android:widgetLayout="@layout/settings_preference_layout" android:defaultValue="0" android:dialogTitle="@string/turkish_qwerty_keyboard_types" android:entryValues="@array/turkish_input_method_type_values" />
+    <Preference android:title="@string/select_languages" android:key="select_swiftkey_language_list">
+        <intent android:action="com.diotek.ime.implement.setting.SWIFTKEY_LANGUAGES_SETTINGS" />
+    </Preference>
+    <Preference android:title="@string/use_xt9" android:key="SETTINGS_DEFAULT_PREDICTION_ON_CN">
+        <intent android:action="com.diotek.ime.implement.setting.PERSONALIZATIONSETTING" />
+    </Preference>
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_trace" android:key="SETTINGS_DEFAULT_TRACE" android:summary="@string/trace_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_keypad_sweeping" android:key="SETTINGS_DEFAULT_KEYPAD_SWEEPING" android:summary="@string/keypad_sweeping_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/cursor_Control" android:key="SETTINGS_DEFAULT_KEYPAD_POINTING" android:summary="@string/cursor_Control_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/s_pen_detection" android:key="SETTINGS_DEFAULT_PEN_DETECTION" android:summary="@string/s_pen_detection_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/flick_input" android:key="SETTINGS_DEFAULT_KEYPAD_FLICK" android:summary="@string/flick_input_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_one_hand" android:key="SETTINGS_DEFAULT_ONE_HAND" android:summary="@string/one_hand_summary" android:defaultValue="false" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_voice_input" android:key="SETTINGS_DEFAULT_VOICE_INPUT" android:summary="@string/voice_input_summary" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_keypress_haptic" android:key="SETTINGS_DEFAULT_SUPPORT_KEY_VIBRATE" android:defaultValue="true" />
+    <CheckBoxPreference android:persistent="true" android:title="@string/use_keypress_sound" android:key="SETTINGS_DEFAULT_SUPPORT_KEY_SOUND" android:defaultValue="true" />
+    <Preference android:title="@string/advanced" android:key="advanced">
+        <intent android:action="com.diotek.ime.implement.setting.ADVANCED" />
+    </Preference>
+    <Preference android:title="@string/tutorial" android:key="tutorial">
+        <intent android:action="com.diotek.ime.implement.setting.TUTORIAL" />
+    </Preference>
+    <com.diotek.ime.implement.setting.ResetSettingsDialogPreference android:title="@string/reset_settings" android:key="reset_settings" android:dialogTitle="@string/reset_dialog_title" android:dialogMessage="@string/reset_dialog_msg" android:positiveButtonText="@string/ok" android:negativeButtonText="@string/cancel" />
+</PreferenceScreen>

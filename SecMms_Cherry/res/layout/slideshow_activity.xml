@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/top" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.mms.ui.SlideView android:layout_gravity="center" android:orientation="vertical" android:id="@id/slide_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layoutDirection="ltr">
+        <RelativeLayout android:id="@id/page_number" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/slideshow_title_subject_min_height">
+            <TextView android:id="@id/title_subject" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="false" style="?android:attr/listSeparatorTextViewStyle" />
+            <TextView android:id="@id/pagenumber" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/listSeparatorTextViewStyle" />
+            <ViewStub android:id="@id/sender_title_area" android:layout="@layout/view_title_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="16.0dip" android:layout_toLeftOf="@id/title_subject" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ScrollView android:id="@id/MainScrollView" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/MainLinear" android:paddingLeft="@dimen/slideshow_main_paddingleft" android:paddingTop="@dimen/slideshow_main_paddingtop" android:paddingRight="@dimen/slideshow_main_paddingright" android:paddingBottom="@dimen/slideshow_main_paddingbottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view1" android:paddingBottom="@dimen/slideshow_view1_paddingbottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/view2" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <LinearLayout android:orientation="vertical" android:id="@id/slideview_attach_list" android:background="@drawable/message_view_save_bg" android:visibility="gone" android:layout_width="@dimen/slideview_attach_list_width" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:id="@id/audio_area" android:paddingBottom="14.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </com.android.mms.ui.SlideView>
+</RelativeLayout>

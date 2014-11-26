@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/file_history_manager_list_item_root" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:duplicateParentState="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="left" android:id="@id/image_view_frame" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/image_view" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/video_play_button" android:visibility="gone" android:layout_width="51.0dip" android:layout_height="51.0dip" android:layout_marginLeft="1.0dip" android:src="@drawable/msg_play_button" />
+        </FrameLayout>
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/list_item_layout" android:layout_width="0.0dip" android:layout_height="65.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/conversation_item_from_normal" android:textColor="@color/primary_text_color" android:ellipsize="marquee" android:id="@id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/conversation_item_from_top_margin" android:singleLine="true" android:maxLength="3120" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignWithParentIfMissing="true" />
+            <TextView android:textSize="@dimen/conversation_item_date" android:textColor="@color/conversation_item_date_color" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginBottom="@dimen/conversation_item_bottom_margin" android:singleLine="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            <TextView android:textSize="@dimen/conversation_item_subject" android:textColor="@color/list_subject_color" android:ellipsize="end" android:id="@id/file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/conversation_item_bottom_margin" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <com.sec.android.touchwiz.widget.TwCheckBox android:layout_gravity="center" android:id="@id/chButton" android:focusable="false" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:layout_marginRight="@dimen/conversation_item_checkbox_right_margin" />
+</LinearLayout>

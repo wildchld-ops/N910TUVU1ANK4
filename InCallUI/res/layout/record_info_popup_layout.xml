@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@id/recordIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_duringcall_record_icon" android:layout_marginEnd="@dimen/record_icon_middle_margin" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/popup_call_state_text_size" android:textColor="@color/incall_call_banner_recording" android:layout_gravity="center_vertical" android:id="@id/recordText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/menu_record_voice" android:layout_marginEnd="@dimen/record_icon_right_margin" android:layout_toEndOf="@id/recordIcon" style="@style/InCallButtonTextShadowEffect" />
+    <Chronometer android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/popup_call_state_text_size" android:textColor="@color/incall_call_banner_recording" android:layout_gravity="center_vertical" android:id="@id/recordTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/record_container_right_margin" android:layout_toEndOf="@id/recordText" style="@style/InCallButtonTextShadowEffect" />
+</RelativeLayout>

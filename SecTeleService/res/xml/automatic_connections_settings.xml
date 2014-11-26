@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/sprint_automatic_connection" android:key="button_sprint_automatic_connection_key" android:summary="@string/sprint_automatic_connection_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:disableDependentsState="true" />
+    <PreferenceScreen android:title="@string/sprint_connections_optimizer" android:key="sprint_connection_optimizer">
+        <intent android:targetPackage="com.birdstep.android.cm" android:action="android.intent.action.MAIN" android:targetClass="com.birdstep.android.cm.EasySmart" />
+    </PreferenceScreen>
+</PreferenceScreen>

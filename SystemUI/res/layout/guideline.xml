@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/guide_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/guidetop" android:background="@drawable/multiwindow_default_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="#ff1d1d1d" android:ellipsize="end" android:layout_gravity="center" android:id="@id/guidetop_empty_text" android:paddingLeft="@dimen/applist_scroll_view_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:text="@string/guideline_empty_text" android:maxLines="4" />
+        <ImageView android:id="@id/guidetop_focused_position" android:background="@drawable/multiwindow_tray_selection" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/guide_line_focused_shadow_size" android:layout_marginTop="@dimen/guide_line_focused_shadow_size" android:layout_marginRight="@dimen/guide_line_focused_shadow_size" android:layout_marginBottom="@dimen/guide_line_focused_shadow_size" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/guidebottom" android:background="@drawable/multiwindow_default_frame" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18.0dip" android:textColor="#ff1d1d1d" android:ellipsize="end" android:layout_gravity="center" android:id="@id/guidebottom_empty_text" android:paddingLeft="@dimen/applist_scroll_view_height" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22.0dip" android:layout_marginRight="22.0dip" android:text="@string/guideline_empty_text" android:maxLines="4" />
+        <ImageView android:id="@id/guidebottom_focused_position" android:background="@drawable/multiwindow_tray_selection" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/guide_line_focused_shadow_size" android:layout_marginTop="@dimen/guide_line_focused_shadow_size" android:layout_marginRight="@dimen/guide_line_focused_shadow_size" android:layout_marginBottom="@dimen/guide_line_focused_shadow_size" />
+    </FrameLayout>
+    <com.android.systemui.recent.multiwindow.GuideLineImageView android:id="@id/guidesidesync" android:background="@drawable/multiwindow_default_frame" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/guideposition" android:background="@drawable/multiwindow_tray_selection" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/guidefocus" android:background="@drawable/mw_border_bg_2dp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/animationbackground" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/animationcapture1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/animationcapture2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/animationcapture3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/animationcapture4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/animationicon1" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <ImageView android:id="@id/animationicon2" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <ImageView android:id="@id/animationicon3" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <ImageView android:id="@id/animationicon4" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" />
+    <ImageView android:id="@id/templateiconfinal" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+    <ImageView android:id="@id/externalbuttonanim" android:visibility="invisible" android:layout_width="@dimen/center_bar_button_bg_height" android:layout_height="@dimen/center_bar_button_bg_height" />
+    <ImageView android:id="@id/appswitchingbuttonanim" android:visibility="invisible" android:layout_width="@dimen/center_bar_button_bg_height" android:layout_height="@dimen/center_bar_button_bg_height" />
+    <ImageView android:id="@id/switchbuttonanim" android:visibility="invisible" android:layout_width="@dimen/center_bar_button_bg_height" android:layout_height="@dimen/center_bar_button_bg_height" />
+    <ImageView android:id="@id/dragbuttonanim" android:visibility="invisible" android:layout_width="@dimen/center_bar_button_bg_height" android:layout_height="@dimen/center_bar_button_bg_height" />
+    <ImageView android:id="@id/fullbuttonanim" android:visibility="invisible" android:layout_width="@dimen/center_bar_button_bg_height" android:layout_height="@dimen/center_bar_button_bg_height" />
+    <ImageView android:id="@id/closebuttonanim" android:visibility="invisible" android:layout_width="@dimen/center_bar_button_bg_height" android:layout_height="@dimen/center_bar_button_bg_height" />
+</FrameLayout>

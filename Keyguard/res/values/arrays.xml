@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lockscreen_direction_descriptions">
+        <item>@string/description_direction_right</item>
+        <item>@string/description_direction_up</item>
+        <item>@string/description_direction_left</item>
+        <item>@null</item>
+    </string-array>
+    <array name="lockscreen_targets_unlock_only">
+        <item>@drawable/ic_lockscreen_unlock</item>
+    </array>
+    <string-array name="lockscreen_target_descriptions_unlock_only">
+        <item>@string/description_target_unlock</item>
+    </string-array>
+    <integer-array name="batterymeter_bolt_points">
+        <item>73</item>
+        <item>0</item>
+        <item>392</item>
+        <item>0</item>
+        <item>201</item>
+        <item>259</item>
+        <item>442</item>
+        <item>259</item>
+        <item>4</item>
+        <item>703</item>
+        <item>157</item>
+        <item>334</item>
+        <item>0</item>
+        <item>334</item>
+    </integer-array>
+    <string-array name="lockscreen_num_pad_klondike">
+        <item></item>
+        <item></item>
+        <item>ABC</item>
+        <item>DEF</item>
+        <item>GHI</item>
+        <item>JKL</item>
+        <item>MNO</item>
+        <item>PQRS</item>
+        <item>TUV</item>
+        <item>WXYZ</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_ggsm_tablet">
+        <item>mondrian</item>
+        <item>picasso</item>
+        <item>vienna</item>
+        <item>v1a</item>
+        <item>v2</item>
+        <item>lt03</item>
+        <item>matisse</item>
+        <item>chagall</item>
+        <item>millet</item>
+        <item>lt01</item>
+        <item>lt02</item>
+        <item>santos10</item>
+        <item>p4note</item>
+        <item>kona</item>
+        <item>degas</item>
+        <item>klimt</item>
+        <item>ruben</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_ggsm_tablet_enabled_spass">
+        <item>chagall</item>
+        <item>klimt</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_usejellybeangui">
+        <item>t0</item>
+        <item>serrano</item>
+        <item>d2</item>
+        <item>golden</item>
+        <item>melius</item>
+        <item>crater</item>
+        <item>baffin</item>
+        <item>garda</item>
+        <item>hl3g</item>
+        <item>hllte</item>
+        <item>m3</item>
+        <item>s3ve3g</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_ggsm_performance_patch_enabled">
+        <item>mondrian</item>
+        <item>picasso</item>
+        <item>vienna</item>
+        <item>v1a</item>
+        <item>v2</item>
+        <item>lt03</item>
+        <item>p4note</item>
+        <item>chagall</item>
+        <item>millet</item>
+        <item>matisse</item>
+        <item>kona</item>
+        <item>lt01</item>
+        <item>lt02</item>
+        <item>santos10</item>
+        <item>degas</item>
+        <item>tblte</item>
+        <item>trcat6lte</item>
+        <item>trlte</item>
+        <item>tblte</item>
+        <item>tbhplte</item>
+        <item>tbelte</item>
+        <item>tre3g</item>
+        <item>trelte</item>
+        <item>trhlte</item>
+        <item>trhplte</item>
+        <item>slte</item>
+        <item>pateklte</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_pre_implementation_for_test">
+        <item>mondrian</item>
+        <item>picasso</item>
+        <item>vienna</item>
+        <item>v1a</item>
+        <item>v2</item>
+        <item>hlte</item>
+        <item>ha3g</item>
+        <item>ja3g</item>
+        <item>jalte</item>
+        <item>jsglte</item>
+        <item>ks01lte</item>
+        <item>flte</item>
+        <item>jactive</item>
+        <item>jft</item>
+        <item>lt03</item>
+        <item>p4note</item>
+        <item>t0lte</item>
+        <item>t03g</item>
+        <item>melius</item>
+        <item>chagall</item>
+        <item>jfvelte</item>
+        <item>mproject</item>
+        <item>s3ve3g</item>
+        <item>serrano</item>
+        <item>kona</item>
+        <item>d2</item>
+        <item>lt01</item>
+        <item>golden</item>
+        <item>lt02</item>
+        <item>santos10</item>
+        <item>baffin</item>
+        <item>hllte</item>
+        <item>hl3g</item>
+        <item>degas</item>
+        <item>frescolte</item>
+        <item>crater</item>
+        <item>garda</item>
+        <item>ms01</item>
+        <item>wilcox</item>
+        <item>m3</item>
+        <item>c1</item>
+    </string-array>
+    <array name="keyguard_local_config_is_use_previous_music_widget" />
+    <string-array name="keyguard_local_config_is_ripple_ink_effect_enabled">
+        <item>vienna</item>
+        <item>v1a</item>
+        <item>hlte</item>
+        <item>ha3g</item>
+        <item>lt03</item>
+        <item>p4note</item>
+        <item>t0lte</item>
+        <item>t03g</item>
+        <item>kona</item>
+        <item>frescolte</item>
+        <item>hl3g</item>
+        <item>hllte</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_toggle_seekbar_enabled">
+        <item>serrano</item>
+        <item>d2</item>
+    </string-array>
+    <string-array name="keyguard_local_config_is_use_favorite_app_widget">
+        <item>hlte</item>
+        <item>ha3g</item>
+        <item>jflte</item>
+        <item>ja3g</item>
+        <item>jalte</item>
+        <item>jsglte</item>
+        <item>ks01lte</item>
+        <item>flte</item>
+        <item>jactive</item>
+        <item>jft</item>
+        <item>jfvelte</item>
+        <item>mproject3g</item>
+        <item>s3ve3g</item>
+        <item>serrano</item>
+        <item>d2</item>
+        <item>golden</item>
+        <item>baffin</item>
+        <item>hllte</item>
+        <item>hl3g</item>
+        <item>frescolte</item>
+        <item>crater</item>
+        <item>garda</item>
+        <item>ms01</item>
+        <item>wilcox</item>
+        <item>m3</item>
+        <item>c1</item>
+    </string-array>
+    <array name="keyguard_local_config_is_use_custom_widget" />
+    <array name="keyguard_local_config_is_show_high_low_temp" />
+    <array name="keyguard_local_config_is_tilt_effect_enabled" />
+    <string-array name="keyguard_local_config_is_brilliantcut_effect_special_type_enabled">
+        <item>chagall</item>
+        <item>klimt</item>
+    </string-array>
+</resources>

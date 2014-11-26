@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Properties>
+    <Property key="KOR_MODE" value="true" type="bool" />
+    <Property key="SETTINGS_DEFAULT_AUTO_CORRECTION" value="false" type="bool" />
+    <Property key="SETTINGS_DEFAULT_USE_INPUT_METHOD_TYPE_ON_KOR" value="true" type="bool" />
+    <Property key="SETTINGS_DEFAULT_KOREAN_KEYPAD_TYPE" value="1" type="string" />
+    <Property key="USE_NUMBER_AND_SYMBOLS_KEYPAD_TYPE" value="true" type="bool" />
+    <Property key="SETTINGS_DEFAULT_SPACE_LANGUAGE_CHANGE" value="false" type="bool" />
+    <Property key="SUPPORT_SPACE_LANGUAGE_CHANGE" value="true" type="bool" />
+</Properties>

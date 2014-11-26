@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inCallButtonViewDrivingMode" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.android.incallui.widget.incomingwidget.IncomingCallImageWidget android:layout_gravity="bottom" android:id="@id/incomingCallImageWidget" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@id/inCallScreenButtonsContainer" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="15.0dip" android:textColor="@color/tw_color001" android:gravity="center" android:layout_gravity="bottom" android:id="@id/acceptByVoiceCallButton" android:background="@drawable/green_button" android:layout_width="165.19998dip" android:layout_height="45.0dip" android:layout_marginLeft="11.429993dip" android:layout_marginBottom="8.0dip" android:text="@string/accept_by_voice_call" />
+        <Button android:textSize="15.0dip" android:textColor="@color/tw_color001" android:gravity="center" android:layout_gravity="bottom" android:id="@id/vtRejectWithMsgButton" android:background="@drawable/red_button" android:layout_width="165.19998dip" android:layout_height="45.0dip" android:layout_marginLeft="7.619995dip" android:layout_marginBottom="8.0dip" android:text="@string/reject_with_message" />
+    </LinearLayout>
+</RelativeLayout>

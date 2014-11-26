@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_smiley_texts">
+        <item>:-)</item>
+        <item>:-(</item>
+        <item>;-)</item>
+        <item>:-P</item>
+        <item>=-O</item>
+        <item>:-*</item>
+        <item>:O</item>
+        <item>B-)</item>
+        <item>:-$</item>
+        <item>:-!</item>
+        <item>:-[</item>
+        <item>O:-)</item>
+        <item>:-\\</item>
+        <item>":'("</item>
+        <item>:-X</item>
+        <item>:-D</item>
+        <item>o_O</item>
+        <item>&lt;3</item>
+        <item>x-(</item>
+        <item>:-/</item>
+        <item>:-I</item>
+    </string-array>
+    <string-array name="default_smiley_names">
+        <item>Joyeux</item>
+        <item>Triste</item>
+        <item>"Clin d'oeil"</item>
+        <item>Tirer la langue</item>
+        <item>Surpris</item>
+        <item>"S'embrasser"</item>
+        <item>Hurlement</item>
+        <item>Cool</item>
+        <item>Perspectives d’argent</item>
+        <item>Déçu</item>
+        <item>Embarrassé</item>
+        <item>Ange</item>
+        <item>Indécis</item>
+        <item>Pleurs</item>
+        <item>Bouche cousue</item>
+        <item>Rires</item>
+        <item>Confus</item>
+        <item>Cœur</item>
+        <item>Furieux</item>
+        <item>Sourire en coin</item>
+        <item>Impassible</item>
+    </string-array>
+    <string-array name="pref_entries_font_size">
+        <item>Utiliser police appareil</item>
+        <item>Minuscule</item>
+        <item>Petit</item>
+        <item>Standard</item>
+        <item>Grande</item>
+        <item>Immense</item>
+    </string-array>
+    <string-array name="pref_entries_font_size_7_step">
+        <item>Utiliser police appareil</item>
+        <item>Minuscule</item>
+        <item>Très petite</item>
+        <item>Petit</item>
+        <item>Moyenne</item>
+        <item>Grande</item>
+        <item>Très grande</item>
+        <item>Enorme</item>
+    </string-array>
+    <string-array name="pref_entries_cb_selection">
+        <item>Tous les canaux</item>
+        <item>Mon canal</item>
+    </string-array>
+    <string-array name="pref_entries_sms_input_mode">
+        <item>Alphabet GSM</item>
+        <item>Unicode</item>
+        <item>Automatique</item>
+    </string-array>
+    <string-array name="pref_entries_sms_expiry_date">
+        <item>0 jour</item>
+        <item>1 jour</item>
+        <item>2 jours</item>
+        <item>3 jours</item>
+    </string-array>
+    <string-array name="pref_entries_mms_creation_mode">
+        <item>Limité</item>
+        <item>Avertissement</item>
+        <item>Libre</item>
+    </string-array>
+    <string-array name="pref_entries_service_loading_action">
+        <item>Toujours</item>
+        <item>Demander</item>
+        <item>Jamais</item>
+    </string-array>
+    <string-array name="pref_entries_bubble_style">
+        <item>Origami</item>
+        <item>Légende</item>
+        <item>Bruit</item>
+        <item>Moderne</item>
+        <item>Rose</item>
+        <item>Par défaut</item>
+    </string-array>
+    <string-array name="sms_roam_guard">
+        <item>Envoyer automatiquement lorsque vous êtes en Couverture nationale</item>
+        <item>Envoyer</item>
+        <item>Enregistrer le message comme brouillon</item>
+    </string-array>
+    <string-array name="msg_reminder_alert_Array">
+        <item>1 fois</item>
+        <item>Toutes les 2 min</item>
+        <item>Toutes les 15 min</item>
+        <item>Désactivé</item>
+    </string-array>
+    <string-array name="msg_repetition_alert_Array">
+        <item>Jamais</item>
+        <item>Toutes les 2 min</item>
+        <item>Toutes les 10 min</item>
+    </string-array>
+    <string-array name="select_ua_item">
+        <item>GT-I5700</item>
+        <item>GT-I9000</item>
+        <item>SGH-U900</item>
+        <item>SCH-I510</item>
+        <item>SGH-T989</item>
+        <item>SGH-I727</item>
+    </string-array>
+    <string-array name="select_vzw_test_mode_item">
+        <item>commercial</item>
+        <item>lab</item>
+        <item>Mon pays</item>
+    </string-array>
+    <string-array name="expiry_date_entries">
+        <item>1 heure</item>
+        <item>6 heures</item>
+        <item>24 heures</item>
+        <item>2 jours</item>
+        <item>Paramètre par défaut du réseau</item>
+        <item>Maximum</item>
+    </string-array>
+    <string-array name="expiry_date_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string-array name="mms_priority_entries">
+        <item>Haute</item>
+        <item>Standard</item>
+        <item>Basse</item>
+    </string-array>
+    <string-array name="mms_priority_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="delivery_time_entries">
+        <item>Immédiatement</item>
+        <item>1 heure</item>
+        <item>6 heures</item>
+        <item>24 heures</item>
+        <item>1 sem.</item>
+    </string-array>
+    <string-array name="delivery_time_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="msg_delay_alert_Array">
+        <item>3 secondes</item>
+        <item>5 secondes</item>
+        <item>10 secondes</item>
+        <item>20 secondes</item>
+        <item>30 secondes</item>
+    </string-array>
+    <string-array name="pref_entries_spam_option">
+        <item>Désactivé</item>
+        <item>Bloquer tous les messages</item>
+        <item>Bloquer les numéros et expressions enregistrés</item>
+    </string-array>
+    <string-array name="pref_entries_spam_match_criteria">
+        <item>Identique à</item>
+        <item>Commence par</item>
+        <item>Se termine par</item>
+        <item>Inclut</item>
+    </string-array>
+    <string-array name="spam_alert">
+        <item>Journal</item>
+        <item>Contacts</item>
+    </string-array>
+    <string-array name="block_number_setting_items">
+        <item>Blocage des messages</item>
+        <item>"Bloquer l'appel"</item>
+    </string-array>
+    <string-array name="block_number_setting_items_with_videocall">
+        <item>Blocage des messages</item>
+        <item>"Blocage d'appel vocal"</item>
+        <item>Blocage des appels visio</item>
+    </string-array>
+    <string-array name="error_codes">
+        <item>Addr.Vcnt.</item>
+        <item>Addr.Trns.</item>
+        <item>Ntwk.Res.</item>
+        <item>Ntwk.Fail.</item>
+        <item>Invld.T.ID</item>
+        <item>Othr.Ntwk.</item>
+        <item>Othr.Fst.</item>
+        <item>Othr.Lst.</item>
+        <item>NoPg.Res.</item>
+        <item>Dst.Busy</item>
+        <item>NoAck.</item>
+        <item>Dst.Rs.Sht</item>
+        <item>SMS Dlv.Pp</item>
+        <item>Dest.NoLng</item>
+        <item>Dest.NoLng</item>
+        <item>OthrT.Prbl</item>
+        <item>OthrT.Fst</item>
+        <item>OthrT.Lst</item>
+        <item>SMS Dlv.Ft</item>
+        <item>SMS Dlv.Lt</item>
+        <item>Rdo.IF.R.S</item>
+        <item>Rdo.IF.Inc</item>
+        <item>Othr.Rdo.I</item>
+        <item>Othr.Rdo.F</item>
+        <item>Othr.Rdo.L</item>
+        <item>Encd.Prbl.</item>
+        <item>SMS Org.D.</item>
+        <item>SMS Trm.D.</item>
+        <item>Suppl.Svc.</item>
+        <item>SMS No.Spt</item>
+        <item>Réservé</item>
+        <item>Mss.Expt.P</item>
+        <item>Mss.Mndtry</item>
+        <item>Unrcgnzd.P</item>
+        <item>Unexpctd.P</item>
+        <item>Usr.Dr.S.E</item>
+        <item>Othr.Gnr.P</item>
+        <item>Other.Gnr.F</item>
+        <item>Other.Gnr.L</item>
+        <item>OK or Msg Dlvd.</item>
+        <item>Wait TLAck</item>
+        <item>Outof Rsc.</item>
+        <item>Accss.Lrg.</item>
+        <item>DRC Lrg.</item>
+        <item>Ntwk.NoRdy</item>
+        <item>Phon.NoRdy</item>
+        <item>Nt.Allwd.A</item>
+        <item>Nt.Spprtd</item>
+        <item>Invld.Trnx.</item>
+        <item>Msg.No.Snt</item>
+        <item>MsgBgn.Snt</item>
+    </string-array>
+    <string-array name="priority_array">
+        <item>Normal</item>
+        <item>Haute</item>
+    </string-array>
+    <string-array name="templates">
+        <item>"J'ai manqué votre appel."</item>
+        <item>Je suis en retard, mais je serai bientôt là.</item>
+        <item>Comment ça va ?</item>
+        <item>Que se passe-t-il ?</item>
+        <item>Où êtes-vous ?</item>
+        <item>Appelez-moi dès que vous avez ce message.</item>
+        <item>Où pouvons-nous nous retrouver ?</item>
+        <item>A bientôt</item>
+        <item>Où se déroule la réunion ?</item>
+        <item>Quel est le numéro ?</item>
+    </string-array>
+    <string-array name="translate_lang">
+        <item>Portugais brésilien</item>
+        <item>Anglais (Royaume-Uni)</item>
+        <item>Anglais (Etats-Unis)</item>
+        <item>Français</item>
+        <item>Allemand</item>
+        <item>Italien</item>
+        <item>Japonais</item>
+        <item>Coréen</item>
+        <item>Chinois simplifié</item>
+        <item>Russe</item>
+        <item>Espagnol</item>
+    </string-array>
+    <string-array name="pref_entries_widget_font_size">
+        <item>Minuscule</item>
+        <item>Petit</item>
+        <item>Standard</item>
+        <item>Grande</item>
+    </string-array>
+    <string-array name="search_type_spinner_labels">
+        <item>Tout</item>
+        <item>Expéditeur</item>
+        <item>Contenu</item>
+    </string-array>
+    <string-array name="pref_entries_auto_download_file_transfer">
+        <item>Accepter tout automatiquement</item>
+        <item>"Accepter automatiquement les fichiers d'une taille inférieure à %s Mo"</item>
+    </string-array>
+    <string-array name="image_resize_entries">
+        <item>Standard</item>
+        <item>Grande</item>
+        <item>Moyenne</item>
+        <item>Petite</item>
+    </string-array>
+    <string-array name="trafficSwitch_EntryValues_NotificationPreference">
+        <item>Ne jamais se connecter</item>
+        <item>Toujours demander</item>
+        <item>Toujours se connecter</item>
+    </string-array>
+</resources>

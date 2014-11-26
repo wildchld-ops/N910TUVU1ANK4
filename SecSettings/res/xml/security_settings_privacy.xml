@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:persistent="false" android:title="@string/pdg_category_title" android:key="privacy_management">
+        <PreferenceScreen android:title="@string/pdg_summary_title" android:key="pdg_settings">
+            <intent android:targetPackage="com.kddi.android.pdg" android:action="android.intent.action.VIEW" android:targetClass="com.kddi.android.pdg.ui.PdgSettingActivity" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

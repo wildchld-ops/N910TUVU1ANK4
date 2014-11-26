@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="?android:twTextColorPrimary" android:gravity="center_vertical" android:id="@id/common_edit_title_textView" style="@style/EditTextLabelStyle" />
+    <EditText android:id="@id/common_edit_context_editText" android:hint="@string/number" android:capitalize="words" android:keepScreenOn="true" style="@style/EditTextBoxStyle" />
+</LinearLayout>

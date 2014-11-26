@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:settings="http://schemas.android.com/apk/res/com.android.phone"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <com.android.phone.BlockAPNChangeCheckBoxPreference android:persistent="false" android:title="@string/block_apn_change_setting" android:key="button_prefer_block_apn_change_key" android:summary="@string/sum_block_apn_change_setting" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:persistent="false" android:title="@string/apn_settings" android:key="button_apn_key" />
+    <com.android.phone.Use2GOnlyCheckBoxPreference android:persistent="false" android:title="@string/prefer_2g" android:key="button_prefer_2g_key" android:summary="@string/prefer_2g_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode_key" android:entryValues="@array/network_mode_list_values" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode1_key" android:entryValues="@array/network_mode_list_values" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode2_key" android:entryValues="@array/network_mode_list_values" />
+    <com.android.phone.NetworkModePreference android:persistent="false" android:entries="@array/network_mode_list" android:title="@string/preferred_network_mode_title" android:key="button_prefer_networkmode3_key" android:entryValues="@array/network_mode_list_values" />
+    <PreferenceScreen android:persistent="false" android:title="@string/networks" android:key="button_carrier_sel_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.NetworkSetting" />
+    </PreferenceScreen>
+    <com.android.phone.GlobalGsmUmtsSystemSelectListPreference android:entries="@array/default_setup_choices" android:title="@string/cdma_system_select_title" android:key="button_global_gsm_umts_system_select_key" android:dialogTitle="@string/cdma_system_select_dialogtitle" android:entryValues="@array/default_setup_values" />
+</PreferenceScreen>

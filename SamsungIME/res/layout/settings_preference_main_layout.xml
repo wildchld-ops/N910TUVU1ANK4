@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/setting_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/leftside" android:background="@color/settings_fullscreen_blank_background_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_side" />
+    <ListView android:scrollbarStyle="outsideOverlay" android:orientation="vertical" android:id="@android:id/list" android:background="@drawable/tw_fullscreen_background" android:layout_width="1.0px" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_middle" android:paddingStart="@dimen/preference_setting_layout_padding_side" android:paddingEnd="@dimen/preference_setting_layout_padding_side" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rightside" android:background="@color/settings_fullscreen_blank_background_color" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="@integer/preference_setting_layout_weight_side" />
+</LinearLayout>

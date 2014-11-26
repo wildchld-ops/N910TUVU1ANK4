@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/call_card" android:background="@color/incall_mw_call_card_background" android:paddingLeft="3.0dip" android:paddingTop="12.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/call_card_mw_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="23.0dip">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/backToNormal" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageView android:id="@id/backbtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call_action_bar_icon_back" android:contentDescription="@string/onscreenAddCallText" />
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="18.0dip" android:textColor="@color/incall_call_banner_text_color" android:id="@id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" />
+        </LinearLayout>
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="18.0dip" android:textColor="@color/incall_call_banner_text_color" android:gravity="right|center" android:id="@id/callStateLabel" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:singleLine="true" android:layout_weight="1.0" />
+    </LinearLayout>
+</FrameLayout>

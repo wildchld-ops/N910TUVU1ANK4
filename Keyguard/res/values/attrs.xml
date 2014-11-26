@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="layout_gravity">
+        <flag name="top" value="0x00000030" />
+        <flag name="bottom" value="0x00000050" />
+        <flag name="left" value="0x00000003" />
+        <flag name="right" value="0x00000005" />
+        <flag name="center_vertical" value="0x00000010" />
+        <flag name="fill_vertical" value="0x00000070" />
+        <flag name="center_horizontal" value="0x00000001" />
+        <flag name="fill_horizontal" value="0x00000007" />
+        <flag name="center" value="0x00000011" />
+        <flag name="fill" value="0x00000077" />
+        <flag name="clip_vertical" value="0x00000080" />
+        <flag name="clip_horizontal" value="0x00000008" />
+        <flag name="start" value="0x00800003" />
+        <flag name="end" value="0x00800005" />
+    </attr>
+    <attr name="pageSpacing" format="dimension" />
+    <attr name="scrollIndicatorPaddingLeft" format="dimension" />
+    <attr name="scrollIndicatorPaddingRight" format="dimension" />
+    <attr name="dotSize" format="dimension" />
+    <attr name="numDots" format="integer" />
+    <attr name="glowDot" format="reference" />
+    <attr name="leftToRight" format="boolean" />
+    <attr name="layout_childType">
+        <enum name="none" value="0" />
+        <enum name="widget" value="1" />
+        <enum name="challenge" value="2" />
+        <enum name="userSwitcher" value="3" />
+        <enum name="scrim" value="4" />
+        <enum name="widgets" value="5" />
+        <enum name="expandChallengeHandle" value="6" />
+        <enum name="pageDeleteDropTarget" value="7" />
+        <enum name="navigation" value="8" />
+        <enum name="full_challenge" value="9" />
+        <enum name="not_full_scrim" value="10" />
+        <enum name="health" value="11" />
+    </attr>
+    <attr name="layout_maxHeight" format="dimension" />
+    <attr name="layout_centerWithinArea" format="float" />
+    <attr name="layout_maxWidth" format="dimension" />
+    <attr name="digit" format="integer" />
+    <attr name="textView" format="reference" />
+    <attr name="max_width" format="dimension" />
+    <attr name="max_height" format="dimension" />
+</resources>

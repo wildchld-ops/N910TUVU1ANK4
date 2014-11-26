@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/use_keypad_sweeping" android:key="settings_keyboard_swipe"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.diotek.ime.implement.setting.KeyboardSwipeSettingsPreference android:persistent="true" android:title="@string/settings_keyboard_swipe_radio_none" android:selectable="true" android:key="settings_keyboard_swipe_none" android:widgetLayout="@layout/settings_preference_keyboard_swipe_selected_layout" />
+    <com.diotek.ime.implement.setting.KeyboardSwipeSettingsPreference android:persistent="true" android:title="@string/use_trace" android:selectable="true" android:key="settings_keyboard_swipe_continuous_input" android:summary="@string/trace_summary" android:widgetLayout="@layout/settings_preference_keyboard_swipe_selected_layout" />
+    <com.diotek.ime.implement.setting.KeyboardSwipeSettingsPreference android:persistent="true" android:title="@string/cursor_Control" android:selectable="true" android:key="settings_keyboard_swipe_cursor_control" android:summary="@string/cursor_Control_summary" android:widgetLayout="@layout/settings_preference_keyboard_swipe_selected_layout" />
+</PreferenceScreen>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="fingersetting"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/fingerprint_settings" android:key="register_category">
+        <PreferenceScreen android:title="@string/fingerprint_manager" android:key="register" android:summary="" />
+        <PreferenceScreen android:title="@string/fingerprint_change_alternative_password" android:key="change_alternative_password" android:summary="" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/fingerprint_features" android:key="feature_category" />
+    <PreferenceScreen android:title="@string/unlock_set_unlock_launch_picker_title" android:key="support_change_lock" android:summary="@string/unlock_set_unlock_mode_off" />
+    <PreferenceScreen android:title="@string/fingerprint_web" android:key="support_web_signin" android:fragment="com.android.settings.fingerprint.FingerprintWebsignin" />
+    <PreferenceScreen android:title="@string/fingerprint_samsung_account" android:key="support_samsung_account" android:fragment="com.android.settings.fingerprint.FingerprintSupportingFeatures">
+        <extra android:name="previousStage" android:value="support_samsung_account" />
+    </PreferenceScreen>
+    <PreferenceScreen android:title="@string/fingerprint_paypal_payments" android:key="paypal_payment" />
+</PreferenceScreen>

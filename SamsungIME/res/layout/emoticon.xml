@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/qwerty_emoticon_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/no_recentemoticon_text_size" android:gravity="center" android:id="@id/no_recentemoticon_text" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.diotek.ime.implement.view.emoticon.EmoticonLayout android:id="@id/emoticonLayout" android:paddingTop="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <com.diotek.ime.implement.view.KeyboardView android:id="@id/keyboardView" android:paddingTop="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

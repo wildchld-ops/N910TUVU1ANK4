@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.launcher2.mainmenu.PinchLayerView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher">
+    <com.android.launcher2.MenuWidgets android:id="@id/widgets_paged_view" android:layout_width="fill_parent" android:layout_height="fill_parent" launcher:cellGapX="@dimen/menuWidgets_cellGapX" launcher:cellGapY="@dimen/menuWidgets_cellGapY" launcher:cellCountX="@integer/menuWidgets_cellCountX" launcher:cellCountY="@integer/menuWidgets_cellCountY" launcher:pagePaddingTop="@dimen/menuWidgets_pagePaddingTop" launcher:pagePaddingBottom="@dimen/menuWidgets_pagePaddingBottom" launcher:pagePaddingLeft="@dimen/menuWidgets_pagePaddingLeft" launcher:pagePaddingRight="@dimen/menuWidgets_pagePaddingRight" launcher:pageIndicatorTop="@dimen/menu_pageIndicatorTop" launcher:pageIndicatorGap="@dimen/menu_pageIndicatorGap" launcher:pageIndicatorMaxVisible="@integer/menu_pageIndicatorMaxVisible"
+      xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:launcher="http://schemas.android.com/apk/res/com.sec.android.app.launcher" />
+</com.android.launcher2.mainmenu.PinchLayerView>

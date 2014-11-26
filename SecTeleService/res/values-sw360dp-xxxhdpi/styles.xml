@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PhoneApp" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="Theme.InCallScreen" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/incall_screen_background</item>
+        <item name="android:windowAnimationStyle">@style/InCallAnimationStyle</item>
+    </style>
+    <style name="Theme.InVTCallScreen" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/incall_screen_background</item>
+    </style>
+    <style name="InCallDialpadButtonStyle">
+        <item name="android:background">@drawable/incall_dial_btn_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="EmergencyDialpadButtonStyle">
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">64.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="SearchContactButton" parent="@android:style/Widget.DeviceDefault.Button">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/ic_button_contacts</item>
+        <item name="android:layout_width">58.0dip</item>
+        <item name="android:layout_height">38.0dip</item>
+        <item name="android:contentDescription">@string/importfromContacts</item>
+    </style>
+    <style name="InputTextField">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="ThemeTranslucentNoTitleBarDeviceDefault" parent="@android:style/Theme.DeviceDefault.Light">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="OneHandEmergencyDialpadButtonStyle">
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">46.0dip</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:soundEffectsEnabled">false</item>
+    </style>
+    <style name="callPrimaryTextStyle">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textColor">@color/list_primary_text_color</item>
+    </style>
+    <style name="callSecondaryTextStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/list_secondary_text_color</item>
+    </style>
+    <style name="FDNTextStyle">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@color/list_primary_text_color</item>
+    </style>
+    <style name="Theme.AlertDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog.Alert" />
+    <style name="AlertDialogCustom" parent="@android:style/Theme.DeviceDefault.Light" />
+    <style name="IconModeGridViewStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_marginLeft">21.0dip</item>
+        <item name="android:layout_marginTop">30.0dip</item>
+        <item name="android:layout_marginRight">21.0dip</item>
+        <item name="android:horizontalSpacing">10.0dip</item>
+        <item name="android:verticalSpacing">23.0dip</item>
+        <item name="android:stretchMode">none</item>
+        <item name="android:columnWidth">154.0dip</item>
+        <item name="android:numColumns">2</item>
+    </style>
+    <style name="IconModeTextTitleStyle">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">24.0dip</item>
+        <item name="android:maxWidth">140.0dip</item>
+        <item name="android:lines">1</item>
+    </style>
+    <style name="IconModeImageStyle">
+        <item name="android:paddingLeft">0.0dip</item>
+        <item name="android:paddingTop">4.0dip</item>
+        <item name="android:paddingRight">0.0dip</item>
+        <item name="android:paddingBottom">4.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minWidth">154.0dip</item>
+        <item name="android:minHeight">116.0dip</item>
+    </style>
+    <style name="IconModeCheckBoxStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">top|right|center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">0.0dip</item>
+    </style>
+    <style name="IconModeLinearLayoutStyle">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/reject_call_with_msg_icon_mode_tiles_bg</item>
+        <item name="android:layout_width">154.0dip</item>
+        <item name="android:layout_height">148.0dip</item>
+        <item name="android:maxWidth">154.0dip</item>
+    </style>
+    <style name="IconModeEditLayoutStyle1">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">111.0dip</item>
+    </style>
+    <style name="IconModeEditButtonStyle">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@drawable/reject_call_with_msg_icon_mode_thumbnail_bg</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+    </style>
+    <style name="IconModeEditTitleStyle">
+        <item name="android:textColor">#ff7f7f7f</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">15.0dip</item>
+        <item name="android:layout_marginTop">38.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+        <item name="android:maxHeight">60.0dip</item>
+        <item name="android:minHeight">38.0dip</item>
+    </style>
+    <style name="IconModeEditDividerLineStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1.0dip</item>
+    </style>
+    <style name="IconModeEditBodyStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ff7f7f7f</item>
+        <item name="android:gravity">top|left|center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">166.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginRight">16.0dip</item>
+    </style>
+    <style name="IconModeEditTextViewStyle">
+        <item name="android:textSize">17.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34.0dip</item>
+        <item name="android:layout_marginLeft">16.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+    </style>
+    <style name="IconModeSelectIconPopupStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">189.0dip</item>
+        <item name="android:layout_marginLeft">11.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginRight">11.0dip</item>
+        <item name="android:layout_marginBottom">15.0dip</item>
+        <item name="android:horizontalSpacing">10.0dip</item>
+        <item name="android:verticalSpacing">15.0dip</item>
+        <item name="android:stretchMode">none</item>
+        <item name="android:numColumns">3</item>
+    </style>
+    <style name="IconModeSelectIconItemStyle">
+        <item name="android:background">@drawable/reject_call_with_msg_icon_mode_select_icon_bg</item>
+        <item name="android:layout_width">100.0dip</item>
+        <item name="android:layout_height">87.0dip</item>
+    </style>
+    <style name="IconModeSelectIconItemImageViewStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+    </style>
+    <style name="IconModeSelectIconItemTextViewStyle">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">26.0dip</item>
+        <item name="android:layout_marginTop">10.0dip</item>
+        <item name="android:layout_marginBottom">15.0dip</item>
+    </style>
+    <style name="IconModeIncomingCallScreenStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:layout_width">319.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">20.0dip</item>
+        <item name="android:layout_marginTop">5.0dip</item>
+        <item name="android:layout_marginRight">21.0dip</item>
+        <item name="android:rowCount">3</item>
+        <item name="android:columnCount">2</item>
+    </style>
+    <style name="IconModeIncomingCallItemStyle">
+        <item name="android:layout_marginBottom">13.0dip</item>
+    </style>
+    <style name="IconModePopupCreateMessageLayoutStyle">
+        <item name="android:background">@drawable/linearlayout_reject_call_with_msg_bg</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">48.0dip</item>
+    </style>
+    <style name="IconModePopupCreateMessagePlusIconStyle">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/call_multiwindow_icon_plus</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">12.0dip</item>
+        <item name="android:layout_marginRight">5.0dip</item>
+    </style>
+    <style name="IconModePopupCreateMessageTextViewStyle">
+        <item name="android:textSize">@dimen/reject_call_with_msg_create_text_size</item>
+        <item name="android:textColor">@color/create_new_message_text_color</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:duplicateParentState">true</item>
+        <item name="android:layout_width">0.0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">@string/reject_call_with_msg_create</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowDx">-1.0</item>
+        <item name="android:shadowDy">-1.0</item>
+        <item name="android:shadowRadius">0.3</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+    <style name="IconModeIncomingCallPopupGridViewStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">37.0dip</item>
+        <item name="android:layout_marginTop">13.0dip</item>
+        <item name="android:layout_marginRight">37.0dip</item>
+        <item name="android:layout_marginBottom">13.0dip</item>
+        <item name="android:horizontalSpacing">8.0dip</item>
+        <item name="android:verticalSpacing">13.0dip</item>
+        <item name="android:numColumns">2</item>
+    </style>
+    <style name="IconModeIncomingCallPopupItemStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/reject_call_with_msg_icon_mode_tiles_bg</item>
+        <item name="android:layout_width">114.0dip</item>
+        <item name="android:layout_height">106.0dip</item>
+    </style>
+    <style name="IconModeIncomingCallPopupItemImageViewStyle">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/reject_message_tile_center_bg</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="IconModeIncomingCallPopupItemTextViewStyle">
+        <item name="android:textSize">14.0dip</item>
+        <item name="android:textColor">#fff5f5f5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">18.0dip</item>
+        <item name="android:layout_marginTop">0.0dip</item>
+        <item name="android:layout_marginBottom">0.0dip</item>
+    </style>
+    <style name="EmergencyCallBottomBtn" parent="@style/EmergencyDialerBottmBtn">
+        <item name="android:background">@drawable/call_dial_green_btn_bg</item>
+    </style>
+    <style name="EmergencyDeleteBottomBtn" parent="@style/EmergencyDialerBottmBtn">
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+    </style>
+    <style name="EmergencySearchBottomBtn" parent="@style/EmergencyDialerBottmBtn">
+        <item name="android:background">@drawable/call_dial_btn_bg</item>
+    </style>
+    <style name="Theme.Photoring" parent="@android:style/Theme.DeviceDefault.Light" />
+</resources>

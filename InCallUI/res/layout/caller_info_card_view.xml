@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.incallui.callerinfocard.CallerInfoCardView android:id="@id/caller_info_card_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/caller_info_card_view_shadow" android:background="@drawable/call_snscard_shadow" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="29.0dip" android:layout_alignParentBottom="true" />
+    <com.android.incallui.callerinfocard.CallerInfoCardScrollView android:id="@id/caller_info_card_scroll_view" android:paddingLeft="@dimen/caller_info_card_padding_left" android:paddingRight="@dimen/caller_info_card_padding_right" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <View android:id="@id/caller_info_card_scroll_header_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <ListView android:id="@id/caller_info_card_list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="@dimen/caller_info_card_divider_height" />
+            <View android:layout_width="fill_parent" android:layout_height="@dimen/caller_info_card_divider_height" />
+        </LinearLayout>
+    </com.android.incallui.callerinfocard.CallerInfoCardScrollView>
+</com.android.incallui.callerinfocard.CallerInfoCardView>

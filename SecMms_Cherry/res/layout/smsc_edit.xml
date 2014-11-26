@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.touchwiz.widget.TwScrollView android:layout_width="fill_parent" android:layout_height="0.6700001dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:id="@id/smsc_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:layout_weight="1.0">
+            <EditText android:id="@id/smsc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:scrollHorizontally="true" android:singleLine="true" android:maxLength="21" android:phoneNumber="true" android:autoText="false" android:imeOptions="actionDone" />
+        </LinearLayout>
+    </com.sec.android.touchwiz.widget.TwScrollView>
+    <include android:id="@id/select_list_softkey" android:layout_height="wrap_content" layout="@layout/common_softkey_2_button" />
+</LinearLayout>

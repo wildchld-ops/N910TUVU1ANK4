@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/place_settings_enable" android:key="enable" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/place_settings_wifi" android:key="wifi_settings" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <ListPreference android:entries="@array/sound_mode_entries" android:title="@string/sound_mode" android:key="sound_mode" android:widgetLayout="@layout/round_more_icon" android:entryValues="@array/sound_mode_values" />
+    <CheckBoxPreference android:title="@string/place_settings_bluetooth" android:key="bluetooth_settings" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/place_settings_blocking_mode" android:key="blocking_mode" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/place_settings_data_network" android:key="data_network" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

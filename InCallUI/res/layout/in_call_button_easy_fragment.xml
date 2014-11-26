@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inCallButtons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/inCallIconActionBarContainer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_above="@id/inCallScreenButtonsContainer">
+        <ImageButton android:layout_gravity="start|bottom|center" android:id="@id/actionbar_bottom_icon_addcall" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/actionbar_bottom_icon_addcall_x" />
+        <ImageButton android:layout_gravity="bottom|center" android:id="@id/actionbar_bottom_icon_keypad" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/actionbar_bottom_icon_keypad_x" />
+        <ImageButton android:layout_gravity="start|bottom|center" android:id="@id/actionbar_bottom_icon_message" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/actionbar_bottom_icon_message_x" />
+        <ImageButton android:layout_gravity="bottom|center" android:id="@id/actionbar_bottom_icon_note" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/actionbar_bottom_icon_note_x" />
+        <ImageButton android:layout_gravity="end|bottom|center" android:id="@id/actionbar_bottom_icon_menu" android:background="?android:selectableItemBackground" android:layout_width="56.0dip" android:layout_height="fill_parent" android:src="@drawable/actionbar_bottom_icon_menu_x" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/inCallScreenButtonsContainer" android:background="@color/incall_call_button_background" android:paddingTop="2.0dip" android:layout_width="fill_parent" android:layout_height="210.0dip" android:layout_marginTop="0.5dip" android:layout_alignParentBottom="true" android:splitMotionEvents="false" android:layout_marginStart="@dimen/incall_button_margin_left" android:layout_marginEnd="@dimen/incall_button_margin_right">
+        <LinearLayout android:orientation="horizontal" android:id="@id/incall_upper_button_contaienr" android:layout_width="fill_parent" android:layout_height="84.0dip" android:splitMotionEvents="false">
+            <Button android:id="@id/endButton" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/end_call" android:drawableTop="@drawable/easy_call_icon_endcall" android:layout_weight="1.0" style="@style/InEasyCallEndButton" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/incall_lower_button_contaienr" android:layout_width="fill_parent" android:layout_height="122.0dip" android:layout_marginTop="1.5dip" android:splitMotionEvents="false">
+            <ToggleButton android:id="@id/speakerButton" android:textOn="@string/onscreenSpeakerText" android:textOff="@string/onscreenSpeakerText" android:drawableTop="@drawable/incall_button_speaker_easymode_icon" android:soundEffectsEnabled="false" android:layout_marginEnd="1.5dip" style="@style/InEasyCallTouchToggleButtonNoFrame" />
+            <Button android:id="@id/dialpadButton" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/onscreenShowDialpadText" android:drawableTop="@drawable/incall_button_dialpad_easymode_icon" android:layout_weight="1.0" android:layout_marginEnd="1.5dip" style="@style/InEasyCallTouchUpperButton" />
+            <ToggleButton android:id="@id/bluetoothButton" android:textOn="@string/audio_mode_bluetooth" android:textOff="@string/audio_mode_bluetooth" android:drawableTop="@drawable/incall_button_bluetooth_easymode_icon" style="@style/InEasyCallTouchToggleButtonNoFrame" />
+            <ToggleButton android:id="@id/recordButton" android:visibility="gone" android:textOn="@string/menu_record_voice" android:textOff="@string/menu_record_voice" android:drawableTop="@drawable/incall_record_play_button" style="@style/InEasyCallTouchToggleButtonNoFrame" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:id="@id/inCallIconContainerEasy" android:paddingTop="3.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="66.0dip" android:layout_above="@id/inCallScreenButtonsContainer">
+        <Button android:textSize="25.0dip" android:id="@id/swapButton" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="63.0dip" android:text="@string/onscreenSwapCallsText" android:drawableTop="@drawable/incall_button_cdma_swap_easymode_icon" />
+    </LinearLayout>
+</RelativeLayout>

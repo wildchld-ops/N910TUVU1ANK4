@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/inCallButtons" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/inCallIconActionBarContainer" android:clickable="true" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_action_bar_container_height" android:layout_alignParentBottom="true" android:soundEffectsEnabled="false">
+        <ImageButton android:layout_gravity="bottom|right|center" android:id="@id/decorationButton" android:background="@drawable/videocall_decoration_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="260.0dip" android:contentDescription="@string/decoration" android:layout_marginEnd="9.0dip" />
+        <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/inCallButtonContainer" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_container_qcif_video_height">
+            <LinearLayout android:background="@color/incall_call_button_background_qcif_video" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_margin" />
+            <LinearLayout android:background="@color/incall_call_button_background_qcif_video" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_qcif_video_height">
+                <FrameLayout android:background="@color/invtcall_button_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" android:layoutDirection="ltr">
+                    <Button android:id="@id/switchCameraButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/switch_camera" android:drawableTop="@drawable/videocall_switch_button" style="@style/InCallTouchUpperButton" />
+                    <Button android:id="@id/stopButton" android:background="@drawable/call_dial_btn_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/stop" android:drawableTop="@drawable/videocall_record_stop_button" style="@style/InCallTouchUpperButton" />
+                    <Button android:id="@id/dialpadButtonLeft" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/onscreenHideDialpadText" android:drawableTop="@drawable/videocall_hide_keypad_button" style="@style/InCallTouchUpperButton" />
+                </FrameLayout>
+                <ImageView android:background="@color/invtcall_button_margin_bg_new" android:layout_width="@dimen/in_call_buttons_margin" android:layout_height="fill_parent" />
+                <FrameLayout android:background="@color/invtcall_button_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <ToggleButton android:id="@id/hideShowButton" android:paddingTop="@dimen/in_call_buttons_padding_top" android:paddingBottom="@dimen/in_call_buttons_padding_bottom" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textOn="@string/show" android:textOff="@string/hide" android:drawableTop="@drawable/videocall_hide_show_button" android:drawableBottom="@drawable/videocall_btn_focus_switch_off" android:drawablePadding="@dimen/in_call_buttons_drawable_padding" style="@style/InCallTouchToggleButtonNoFrame" />
+                    <ToggleButton android:id="@id/muteButton" android:paddingTop="@dimen/in_call_buttons_padding_top" android:paddingBottom="@dimen/in_call_buttons_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textOn="@string/onscreenMuteText" android:textOff="@string/onscreenMuteText" android:drawableTop="@drawable/videocall_mute_button" android:drawableBottom="@drawable/videocall_toggle_button" android:drawablePadding="@dimen/in_call_buttons_drawable_padding" style="@style/InCallTouchToggleButtonNoFrame" />
+                    <Button android:id="@id/dialpadButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/menu_hideDialpad" android:drawableTop="@drawable/videocall_hide_keypad_button" style="@style/InCallTouchUpperButton" />
+                </FrameLayout>
+                <ImageView android:background="@color/invtcall_button_margin_bg_new" android:layout_width="@dimen/in_call_buttons_margin" android:layout_height="fill_parent" />
+                <FrameLayout android:background="@color/invtcall_button_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <Button android:id="@id/endButton" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/end_call" android:drawableTop="@drawable/videocall_end_button" style="@style/InCallTouchEndButton" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/allHiddenBar" android:visibility="gone" style="@style/InVTCallHiddenBar">
+            <TextView android:id="@id/hiddenSwitch" android:text="@string/switch_camera" android:layout_marginEnd="8.0dip" style="@style/InVTCallHiddenButton" />
+            <TextView android:id="@id/hiddenMuteText" android:text="@string/onscreenMuteText" android:layout_marginEnd="8.0dip" style="@style/InVTCallHiddenButton" />
+            <TextView android:textColor="@color/invtcall_end_button_text_color_hide" android:text="@string/end_call" style="@style/InVTCallHiddenButton" />
+        </LinearLayout>
+    </FrameLayout>
+    <ImageButton android:id="@id/switchVCCallButton" android:visibility="gone" android:layout_marginTop="@dimen/vt_switch_call_button_qcif_margin_top" android:src="@drawable/call_video_group_call_skt" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/adduser" android:layout_marginEnd="@dimen/vt_switch_call_button_qcif_margin_right" style="@style/switchVTCallButton" />
+    <include layout="@layout/vt_seekbar_layout" />
+    <ImageButton android:id="@id/switchVTCallButton" android:visibility="gone" android:layout_marginTop="@dimen/vt_switch_call_button_qcif_margin_top" android:src="@drawable/call_video_conversion" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@string/switch_to_voice_call" android:layout_marginEnd="@dimen/vt_switch_call_button_qcif_margin_right" style="@style/switchVTCallButton" />
+    <ViewStub android:id="@id/preview_effect_ui_stub" android:layout="@layout/preview_effect_ui" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/vt_preview_effect_qcif_margin" android:layout_alignParentBottom="true" />
+</RelativeLayout>

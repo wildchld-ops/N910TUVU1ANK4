@@ -1,0 +1,229 @@
+<LevelsModel>
+
+    <steps>
+        <step id="-1" temp="420"/>
+        <step id="0" temp="440"/>
+        <step id="1" temp="460"/>
+        <step id="2" temp="480"/>
+        <step id="3" temp="500"/>
+        <step id="4" temp="520"/>
+        <step id="5" temp="540"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="CPUFreqMax"/>
+        <writer name="CPUCoreMax"/>
+        <writer name="GPUFreqMax"/>
+        <writer name="Flash"/>
+        <writer name="Recording"/>
+        <writer name="LCDBrightness"/>
+        <writer name="Charging"/>
+        <writer name="SmartBonding"/>
+    </writers>
+
+    <conditions>
+        <condition name="CameraRecording"/>
+        <condition name="ScreenOff"/>
+        <condition name="ScreenOffInCall"/>
+        <condition name="AppStart"/>
+        <condition name="BrowserMode"/>
+        <condition name="HotGameControl3"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="-1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="-1"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="CPUFreqMax"    value="998400"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+                <state step="3">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="3"/>
+                        <setting writer="CPUFreqMax"    value="998400"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="310000000"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+                <state step="4">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="4"/>
+                        <setting writer="CPUFreqMax"    value="998400"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="310000000"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+                <state step="5">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="5"/>
+                        <setting writer="CPUFreqMax"    value="800000"/>
+                        <setting writer="CPUCoreMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="310000000"/>
+                        <setting writer="LCDBrightness" value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                        <setting writer="Flash"         value="1"/>
+                        <setting writer="Recording"     value="1"/>
+                        <setting writer="SmartBonding"    value="1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="CameraRecording"/>
+            <battery>
+                <state step="-1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="800000"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOff"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="100" option="forced"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOffInCall"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging"      value="55"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="AppStart"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="BrowserMode"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging"      value="70"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HotGameControl3"/>
+            <battery>
+                <state step="-1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="-1"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="Charging"      value="100"/>
+                    </settings>
+                </state>
+                <state step="0">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="998400"/>
+                        <setting writer="GPUFreqMax"    value="-1"/>
+                        <setting writer="Charging"      value="65"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="998400"/>
+                        <setting writer="GPUFreqMax"    value="310000000"/>
+                        <setting writer="Charging"      value="65"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="CPUFreqMax"    value="800000"/>
+                        <setting writer="GPUFreqMax"    value="310000000"/>
+                        <setting writer="Charging"      value="55"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+    </levels>
+
+</LevelsModel>

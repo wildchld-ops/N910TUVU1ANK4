@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="bottom|right|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip">
+        <ImageView android:layout_gravity="right" android:id="@id/msg_list_item_group_left" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/group_msg_icon_group" />
+        <ImageView android:layout_gravity="right" android:id="@id/priority_indicator_icon_left" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/icon_priority_vzw_2" />
+        <ImageView android:layout_gravity="right" android:id="@id/msg_list_item_lock_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_bubble_icon_locked" />
+        <ImageView android:layout_gravity="left" android:id="@id/msg_list_item_lock_right" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/msg_bubble_icon_locked" />
+        <ImageView android:layout_gravity="left" android:id="@id/priority_indicator_icon_right" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/icon_priority_vzw_2" />
+        <ImageView android:layout_gravity="left" android:id="@id/msg_list_item_group_right" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/group_msg_icon_group" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/listitem_reserved_color" android:layout_gravity="right" android:id="@id/msg_list_item_reserved" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginBottom="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="6.0dip">
+        <ProgressBar android:id="@id/msg_list_item_progressbar" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_marginRight="3.0dip" style="?android:attr/progressBarStyleSmall" />
+        <TextView android:textSize="15.0dip" android:textColor="@color/listitem_date_color" android:id="@id/msg_list_item_date" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="call_banner_drivelink_height">89.0dip</dimen>
+    <dimen name="call_banner_drivelink_margin_top_land">10.0dip</dimen>
+    <dimen name="secondary_call_info_height_land">172.0dip</dimen>
+    <dimen name="secondary_call_info_drivelink_margin_top_land">10.0dip</dimen>
+    <dimen name="more_menu_offset_x">215.0dip</dimen>
+    <dimen name="more_menu_offset_y">95.0dip</dimen>
+</resources>

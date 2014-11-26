@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:id="@id/incomingAcceptButtonVoLteVT" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:id="@id/vtInCallScreenShowMeContainer" android:background="@color/incall_call_button_background_video" android:layout_width="fill_parent" android:layout_height="@dimen/in_call_buttons_container_video_height" android:layout_marginTop="0.0dip" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <Button android:gravity="center" android:id="@id/showMeButton" android:background="@drawable/call_dial_btn_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/show" android:layout_weight="1.0" style="@style/InCallTouchUpperButton" />
+        <ImageView android:background="@color/invtcall_button_margin_bg" android:layout_width="@dimen/in_call_buttons_margin" android:layout_height="fill_parent" />
+        <Button android:gravity="center" android:id="@id/hideMeButton" android:background="@drawable/call_dial_btn_bg" android:layout_width="1.0dip" android:layout_height="fill_parent" android:text="@string/hide" android:layout_weight="1.0" style="@style/InCallTouchUpperButton" />
+    </LinearLayout>
+</RelativeLayout>

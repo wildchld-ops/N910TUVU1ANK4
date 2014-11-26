@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/multisim_upper_button" android:layout_width="fill_parent" android:layout_height="@dimen/multisim_upper_height">
+        <Button android:id="@id/multisim_slot1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/name_slot1" android:singleLine="true" android:layout_weight="1.0" style="@style/MultiSimBarTabAppearance" />
+        <Button android:id="@id/multisim_slot2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/name_slot2" android:singleLine="true" android:layout_weight="1.0" style="@style/MultiSimBarTabAppearance" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/multisim_bottom_line" android:layout_width="fill_parent" android:layout_height="@dimen/multisim_bottom_height">
+        <ImageView android:id="@id/multisim_slot1_line" android:background="@drawable/call_tab_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <ImageView android:id="@id/multisim_slot2_line" android:background="@drawable/call_tab_btn_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

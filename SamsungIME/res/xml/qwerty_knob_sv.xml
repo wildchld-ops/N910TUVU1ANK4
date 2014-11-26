@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@fraction/knob_default_key_width" android:keyHeight="@fraction/knob_default_key_height" android:horizontalGap="0.0px" android:verticalGap="0.0px"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:horizontalGap="@fraction/knob_qwerty_first_key_gap" android:verticalGap="0.0px">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:currentkeyindex="0" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@fraction/knob_qwerty_first_key_gap" android:codes="49" android:keyEdgeFlags="left" android:keyLabel="1" android:leftkeyindex="-1" android:rightkeyindex="2" android:topkeyindex="101" android:bottomkeyindex="28" android:currentkeyindex="1" />
+        <Key android:codes="50" android:keyLabel="2" android:leftkeyindex="1" android:rightkeyindex="3" android:topkeyindex="101" android:bottomkeyindex="29" android:currentkeyindex="2" />
+        <Key android:codes="51" android:keyLabel="3" android:leftkeyindex="2" android:rightkeyindex="4" android:topkeyindex="101" android:bottomkeyindex="30" android:currentkeyindex="3" />
+        <Key android:codes="52" android:keyLabel="4" android:leftkeyindex="3" android:rightkeyindex="5" android:topkeyindex="101" android:bottomkeyindex="31" android:currentkeyindex="4" />
+        <Key android:codes="53" android:keyLabel="5" android:leftkeyindex="4" android:rightkeyindex="6" android:topkeyindex="101" android:bottomkeyindex="32" android:currentkeyindex="5" />
+        <Key android:codes="54" android:keyLabel="6" android:leftkeyindex="5" android:rightkeyindex="7" android:topkeyindex="101" android:bottomkeyindex="33" android:currentkeyindex="6" />
+        <Key android:codes="55" android:keyLabel="7" android:leftkeyindex="6" android:rightkeyindex="8" android:topkeyindex="101" android:bottomkeyindex="34" android:currentkeyindex="7" />
+        <Key android:codes="56" android:keyLabel="8" android:leftkeyindex="7" android:rightkeyindex="9" android:topkeyindex="101" android:bottomkeyindex="36" android:currentkeyindex="8" />
+        <Key android:codes="57" android:keyLabel="9" android:leftkeyindex="8" android:rightkeyindex="10" android:topkeyindex="101" android:bottomkeyindex="37" android:currentkeyindex="9" />
+        <Key android:codes="48" android:keyLabel="0" android:leftkeyindex="9" android:rightkeyindex="11" android:topkeyindex="101" android:bottomkeyindex="38" android:currentkeyindex="10" />
+        <Key android:codes="46" android:keyLabel="." android:leftkeyindex="10" android:rightkeyindex="12" android:topkeyindex="101" android:bottomkeyindex="39" android:currentkeyindex="11" />
+        <Key android:codes="44" android:keyLabel="," android:leftkeyindex="11" android:rightkeyindex="13" android:topkeyindex="101" android:bottomkeyindex="40" android:currentkeyindex="12" />
+        <Key android:codes="63" android:keyLabel="\?" android:leftkeyindex="12" android:rightkeyindex="14" android:topkeyindex="101" android:bottomkeyindex="41" android:currentkeyindex="13" />
+        <Key android:codes="33" android:keyLabel="!" android:leftkeyindex="13" android:rightkeyindex="15" android:topkeyindex="101" android:bottomkeyindex="43" android:currentkeyindex="14" />
+        <Key android:codes="39" android:keyLabel="'" android:leftkeyindex="14" android:rightkeyindex="16" android:topkeyindex="101" android:bottomkeyindex="44" android:currentkeyindex="15" />
+        <Key android:codes="34" android:keyLabel="&quot;" android:leftkeyindex="15" android:rightkeyindex="17" android:topkeyindex="101" android:bottomkeyindex="45" android:currentkeyindex="16" />
+        <Key android:codes="64" android:keyLabel="\@" android:leftkeyindex="16" android:rightkeyindex="18" android:topkeyindex="101" android:bottomkeyindex="46" android:currentkeyindex="17" />
+        <Key android:codes="38" android:keyLabel="&amp;" android:leftkeyindex="17" android:rightkeyindex="19" android:topkeyindex="101" android:bottomkeyindex="47" android:currentkeyindex="18" />
+        <Key android:codes="45" android:keyLabel="-" android:leftkeyindex="18" android:rightkeyindex="20" android:topkeyindex="101" android:bottomkeyindex="48" android:currentkeyindex="19" />
+        <Key android:codes="40" android:keyLabel="(" android:leftkeyindex="19" android:rightkeyindex="21" android:topkeyindex="101" android:bottomkeyindex="49" android:currentkeyindex="20" />
+        <Key android:codes="41" android:keyLabel=")" android:leftkeyindex="20" android:rightkeyindex="22" android:topkeyindex="101" android:bottomkeyindex="50" android:currentkeyindex="21" />
+        <Key android:codes="43" android:keyLabel="+" android:leftkeyindex="21" android:rightkeyindex="23" android:topkeyindex="101" android:bottomkeyindex="52" android:currentkeyindex="22" />
+        <Key android:codes="58" android:keyLabel=":" android:leftkeyindex="22" android:rightkeyindex="24" android:topkeyindex="101" android:bottomkeyindex="53" android:currentkeyindex="23" />
+        <Key android:codes="59" android:keyLabel=";" android:leftkeyindex="23" android:rightkeyindex="25" android:topkeyindex="101" android:bottomkeyindex="54" android:currentkeyindex="24" />
+        <Key android:codes="47" android:keyLabel="/" android:leftkeyindex="24" android:rightkeyindex="26" android:topkeyindex="101" android:bottomkeyindex="55" android:currentkeyindex="25" />
+        <Key android:codes="126" android:keyEdgeFlags="right" android:keyLabel="~" android:leftkeyindex="25" android:rightkeyindex="28" android:topkeyindex="101" android:bottomkeyindex="56" android:currentkeyindex="26" />
+    </Row>
+    <Row android:keyHeight="@fraction/knob_line_divider_height" android:horizontalGap="@fraction/knob_qwerty_first_key_gap" android:verticalGap="0.0px">
+        <Key android:keyWidth="98.0%p" android:codes="-1111" android:currentkeyindex="27" />
+    </Row>
+    <Row android:keyWidth="@fraction/knob_default_key_width_29_key">
+        <Key android:horizontalGap="@fraction/knob_qwerty_first_key_gap_29_key_rule" android:codes="97" android:keyEdgeFlags="left" android:keyLabel="a" android:leftkeyindex="26" android:rightkeyindex="29" android:topkeyindex="1" android:bottomkeyindex="58" android:currentkeyindex="28" />
+        <Key android:codes="98" android:keyLabel="b" android:leftkeyindex="28" android:rightkeyindex="30" android:topkeyindex="2" android:bottomkeyindex="58" android:currentkeyindex="29" />
+        <Key android:codes="99" android:keyLabel="c" android:leftkeyindex="29" android:rightkeyindex="31" android:topkeyindex="3" android:bottomkeyindex="58" android:currentkeyindex="30" />
+        <Key android:codes="100" android:keyLabel="d" android:leftkeyindex="30" android:rightkeyindex="32" android:topkeyindex="4" android:bottomkeyindex="58" android:currentkeyindex="31" />
+        <Key android:codes="101" android:keyLabel="e" android:leftkeyindex="31" android:rightkeyindex="33" android:topkeyindex="5" android:bottomkeyindex="59" android:currentkeyindex="32" />
+        <Key android:codes="102" android:keyLabel="f" android:leftkeyindex="32" android:rightkeyindex="34" android:topkeyindex="6" android:bottomkeyindex="59" android:currentkeyindex="33" />
+        <Key android:codes="103" android:keyLabel="g" android:leftkeyindex="33" android:rightkeyindex="35" android:topkeyindex="7" android:bottomkeyindex="59" android:currentkeyindex="34" />
+        <Key android:codes="104" android:keyLabel="h" android:leftkeyindex="34" android:rightkeyindex="36" android:topkeyindex="7" android:bottomkeyindex="60" android:currentkeyindex="35" />
+        <Key android:codes="105" android:keyLabel="i" android:leftkeyindex="35" android:rightkeyindex="37" android:topkeyindex="8" android:bottomkeyindex="60" android:currentkeyindex="36" />
+        <Key android:codes="106" android:keyLabel="j" android:leftkeyindex="36" android:rightkeyindex="38" android:topkeyindex="9" android:bottomkeyindex="61" android:currentkeyindex="37" />
+        <Key android:codes="107" android:keyLabel="k" android:leftkeyindex="37" android:rightkeyindex="39" android:topkeyindex="10" android:bottomkeyindex="61" android:currentkeyindex="38" />
+        <Key android:codes="108" android:keyLabel="l" android:leftkeyindex="38" android:rightkeyindex="40" android:topkeyindex="11" android:bottomkeyindex="62" android:currentkeyindex="39" />
+        <Key android:codes="109" android:keyLabel="m" android:leftkeyindex="39" android:rightkeyindex="41" android:topkeyindex="12" android:bottomkeyindex="63" android:currentkeyindex="40" />
+        <Key android:codes="110" android:keyLabel="n" android:leftkeyindex="40" android:rightkeyindex="42" android:topkeyindex="13" android:bottomkeyindex="63" android:currentkeyindex="41" />
+        <Key android:codes="111" android:keyLabel="o" android:leftkeyindex="41" android:rightkeyindex="43" android:topkeyindex="13" android:bottomkeyindex="63" android:currentkeyindex="42" />
+        <Key android:codes="112" android:keyLabel="p" android:leftkeyindex="42" android:rightkeyindex="44" android:topkeyindex="14" android:bottomkeyindex="64" android:currentkeyindex="43" />
+        <Key android:codes="113" android:keyLabel="q" android:leftkeyindex="43" android:rightkeyindex="45" android:topkeyindex="15" android:bottomkeyindex="64" android:currentkeyindex="44" />
+        <Key android:codes="114" android:keyLabel="r" android:leftkeyindex="44" android:rightkeyindex="46" android:topkeyindex="16" android:bottomkeyindex="64" android:currentkeyindex="45" />
+        <Key android:codes="115" android:keyLabel="s" android:leftkeyindex="45" android:rightkeyindex="47" android:topkeyindex="17" android:bottomkeyindex="64" android:currentkeyindex="46" />
+        <Key android:codes="116" android:keyLabel="t" android:leftkeyindex="46" android:rightkeyindex="48" android:topkeyindex="18" android:bottomkeyindex="64" android:currentkeyindex="47" />
+        <Key android:codes="117" android:keyLabel="u" android:leftkeyindex="47" android:rightkeyindex="49" android:topkeyindex="19" android:bottomkeyindex="65" android:currentkeyindex="48" />
+        <Key android:codes="118" android:keyLabel="v" android:leftkeyindex="48" android:rightkeyindex="50" android:topkeyindex="20" android:bottomkeyindex="65" android:currentkeyindex="49" />
+        <Key android:codes="119" android:keyLabel="w" android:leftkeyindex="49" android:rightkeyindex="51" android:topkeyindex="21" android:bottomkeyindex="65" android:currentkeyindex="50" />
+        <Key android:codes="120" android:keyLabel="x" android:leftkeyindex="50" android:rightkeyindex="52" android:topkeyindex="22" android:bottomkeyindex="66" android:currentkeyindex="51" />
+        <Key android:codes="121" android:keyLabel="y" android:leftkeyindex="51" android:rightkeyindex="53" android:topkeyindex="22" android:bottomkeyindex="66" android:currentkeyindex="52" />
+        <Key android:codes="122" android:keyLabel="z" android:leftkeyindex="52" android:rightkeyindex="54" android:topkeyindex="23" android:bottomkeyindex="67" android:currentkeyindex="53" />
+        <Key android:codes="0xf6" android:keyLabel="ö" android:leftkeyindex="53" android:rightkeyindex="55" android:topkeyindex="24" android:bottomkeyindex="67" android:currentkeyindex="54" />
+        <Key android:codes="0xe4" android:keyLabel="ä" android:leftkeyindex="54" android:rightkeyindex="56" android:topkeyindex="25" android:bottomkeyindex="67" android:currentkeyindex="55" />
+        <Key android:codes="0xe5" android:keyEdgeFlags="right" android:keyLabel="å" android:leftkeyindex="55" android:rightkeyindex="57" android:topkeyindex="26" android:bottomkeyindex="67" android:currentkeyindex="56" />
+    </Row>
+    <Row android:keyHeight="@fraction/knob_line_divider_height" android:horizontalGap="@fraction/knob_qwerty_first_key_gap" android:verticalGap="@fraction/knob_last_row_vertical_gap">
+        <Key android:keyWidth="98.0%p" android:codes="-1111" android:currentkeyindex="57" />
+    </Row>
+    <Row android:keyHeight="@fraction/knob_default_key_height_last_row" android:horizontalGap="@fraction/knob_qwerty_horizontal_key_gap" android:verticalGap="@fraction/knob_last_row_vertical_gap">
+        <Key android:keyWidth="@fraction/knob_qwerty_shift_key_width" android:horizontalGap="@fraction/knob_qwerty_first_key_gap" android:codes="-400" android:keyEdgeFlags="left" android:keyIcon="@drawable/key_icon_shift_n" android:leftkeyindex="56" android:rightkeyindex="59" android:topkeyindex="29" android:bottomkeyindex="-1" android:currentkeyindex="58" />
+        <Key android:keyWidth="@fraction/knob_qwerty_language_key_width" android:codes="-108" android:keyIcon="@drawable/key_icon_language" android:leftkeyindex="58" android:rightkeyindex="60" android:topkeyindex="33" android:bottomkeyindex="-1" android:currentkeyindex="59" />
+        <Key android:keyWidth="@fraction/knob_qwerty_arrow_key_width" android:horizontalGap="@fraction/knob_qwerty_horizontal_key_gap" android:codes="-1006" android:keyIcon="@drawable/key_icon_arrow_down" android:leftkeyindex="59" android:rightkeyindex="61" android:topkeyindex="35" android:bottomkeyindex="-1" android:currentkeyindex="60" />
+        <Key android:keyWidth="@fraction/knob_qwerty_arrow_key_width" android:horizontalGap="@fraction/knob_arrow_key_gap" android:codes="-1005" android:keyIcon="@drawable/key_icon_arrow_up" android:leftkeyindex="60" android:rightkeyindex="62" android:topkeyindex="37" android:bottomkeyindex="-1" android:currentkeyindex="61" />
+        <Key android:keyWidth="@fraction/knob_qwerty_arrow_key_width" android:horizontalGap="@fraction/knob_arrow_key_gap" android:codes="-1001" android:keyIcon="@drawable/key_icon_arrow_left" android:leftkeyindex="61" android:rightkeyindex="63" android:topkeyindex="39" android:bottomkeyindex="-1" android:currentkeyindex="62" />
+        <Key android:keyWidth="@fraction/knob_qwerty_arrow_key_width" android:horizontalGap="@fraction/knob_arrow_key_gap" android:codes="-1002" android:keyIcon="@drawable/key_icon_arrow_right" android:leftkeyindex="62" android:rightkeyindex="64" android:topkeyindex="41" android:bottomkeyindex="-1" android:currentkeyindex="63" />
+        <Key android:keyWidth="@fraction/knob_qwerty_space_key_width" android:codes="32" android:isRepeatable="true" android:keyIcon="@drawable/key_icon_space" android:leftkeyindex="63" android:rightkeyindex="65" android:topkeyindex="45" android:bottomkeyindex="-1" android:currentkeyindex="64" />
+        <Key android:keyWidth="@fraction/knob_qwerty_language_key_width" android:codes="-229" android:keyIcon="@drawable/key_icon_hide" android:leftkeyindex="64" android:rightkeyindex="66" android:topkeyindex="49" android:bottomkeyindex="-1" android:currentkeyindex="65" />
+        <Key android:keyWidth="@fraction/knob_qwerty_language_key_width" android:codes="-5" android:isRepeatable="true" android:keyIcon="@drawable/key_icon_delete" android:leftkeyindex="65" android:rightkeyindex="67" android:topkeyindex="51" android:bottomkeyindex="-1" android:currentkeyindex="66" />
+        <Key android:keyWidth="@fraction/knob_qwerty_enter_key_width" android:codes="10" android:keyEdgeFlags="right" android:keyIcon="@drawable/key_icon_enter" android:leftkeyindex="66" android:rightkeyindex="-1" android:topkeyindex="54" android:bottomkeyindex="-1" android:currentkeyindex="67" />
+    </Row>
+</Keyboard>

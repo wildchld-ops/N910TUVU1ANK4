@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">%d applications récentes</item>
+        <item quantity="one">1 application récente</item>
+    </plurals>
+    <plurals name="flashbar_accessibility_recent_apps">
+        <item quantity="other">%d applications récentes</item>
+        <item quantity="one">1 application récente</item>
+    </plurals>
+</resources>

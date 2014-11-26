@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/mainmenu_toolbar_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/tw_tab_unselected_bar_holo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="@dimen/menu_title_bar_text_size" android:textColor="@color/menu_title_selected_text" android:ellipsize="end" android:gravity="start|center" android:id="@id/menu_selected_back_down" android:background="?android:actionBarItemBackground" android:focusable="true" android:nextFocusRight="@id/downloaded_popup_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/menu_title_bar_text_max_width" android:text="@string/menu_downloaded_apps" android:singleLine="true" android:drawablePadding="@dimen/menu_title_bar_drawable_padding" android:drawableStart="?android:homeAsUpIndicator" android:paddingEnd="@dimen/menu_title_bar_left_padding" android:layout_alignParentStart="true" style="@style/android:TextAppearance.DeviceDefault.Widget.ActionBar.Title" />
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentEnd="true">
+            <include android:layout_gravity="center" android:id="@id/downloaded_popup_icon" android:layout_width="@dimen/more_options_button_width" android:layout_height="@dimen/menu_titleHeight" layout="@layout/popup_icon" />
+            <include android:id="@id/downloaded_market_icon" android:layout_width="wrap_content" android:layout_height="fill_parent" layout="@layout/market_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

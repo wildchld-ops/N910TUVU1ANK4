@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/spam_keyword_root_layout" android:layout_width="fill_parent" android:layout_height="56.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/autoreject_checkbox_layer" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="@dimen/msg_list_checkbox_left_margin">
+        <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/autoreject_item_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="false" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/autoreject_text_layout" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="0.0dip" android:layout_height="56.0dip" android:layout_weight="0.9" android:paddingEnd="12.0dip" android:layout_marginStart="@dimen/msg_list_checkbox_left_margin">
+        <TextView android:textSize="21.0sp" android:textColor="@color/list_item_primary_text_color" android:id="@id/autoreject_item_body" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <View android:gravity="center_vertical" android:id="@id/divider1" android:background="@drawable/divider_vertical_2line" android:layout_width="1.3299866dip" android:layout_height="28.0dip" />
+</LinearLayout>

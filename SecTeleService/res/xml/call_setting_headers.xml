@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:id="@id/call_settings" android:title="@string/call_settings" android:fragment="com.android.phone.CallFeaturesSetting" />
+    <header android:id="@id/general_settings" android:title="@string/call_settings" android:fragment="com.android.phone.callsettings.GeneralSettingFragment" />
+    <header android:id="@id/sound_settings" android:title="@string/category_soundSettings" android:fragment="com.android.phone.callsettings.SoundSettingFragment" />
+    <header android:id="@id/video_settings" android:title="@string/category_videoCallSettings" android:fragment="com.android.phone.callsettings.VideoSettingFragment" />
+    <header android:id="@id/voicemail_settings" android:title="@string/voicemail" android:fragment="com.android.phone.callsettings.VoicemailSettingFragment" />
+</preference-headers>

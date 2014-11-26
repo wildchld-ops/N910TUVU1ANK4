@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="powersaving_restrict_background">"While Restrict background data is enabled, you may not be able to:
+
+- Download content via the Internet or Play Store.
+- View multimedia content via applications such as Internet, Music, Video, and YouTube.
+- Send or receive multimedia messages via messaging and instant messaging applications.
+
+The restrictions above do not apply while using Wi-Fi networks."</string>
+    <string name="smart_network_guide_msg">"Smart network helps to conserve battery life.
+
+It disables mobile data and Wi-Fi when the screen is turned off, so that the device consumes less battery.
+
+However, you may receive cumulative push data when you turn on the screen."</string>
+    <string name="bluetooth_sap_connect_message">%s is requesting permission to access your SIM card. Allowing this request will disable calling and messaging functions, and disable Mobile data on your device. Allow?</string>
+    <string name="roaming_warning_multiuser">"When you enable data roaming, you may result in additional roaming charges.
+
+This setting affects all users on this device."</string>
+    <string name="bluetooth_headset_profile_summary_connected">Connected to device audio.</string>
+    <string name="s_beam_explained">"This function allows you to share files between NFC-capable devices by holding them close together. S Beam will enable Wi-Fi Direct on both devices and instantly connect them. For example, you can share images or video files from Gallery, notes, documents, and more.
+
+Simply bring the devices together, back to back, then tap your screen. The application that is currently being used will determine what gets beamed."</string>
+    <string name="hs20settings_wifi_disabled">Passpoint only works when Wi-Fi is enabled. Enable Wi-Fi.</string>
+    <string name="wifi_stopping">Disabling Wi-Fi…</string>
+    <string name="wifi_scan_notify_text_location_on">To improve location accuracy, applications may scan for nearby networks, even when Wi-Fi is disabled. To disable this feature, go to Settings > Wi-Fi > Advanced settings, and disable Always allow scanning.</string>
+    <string name="wifi_scan_notify_text_location_off">To improve location accuracy, apps may scan for nearby networks, even when Wi-Fi is disabled. To disable this feature, go to advanced settings and disable always allow scanning.</string>
+    <string name="wifi_empty_list_wifi_off">To see available networks, enable Wi-Fi.</string>
+    <string name="wifi_ap_help_touch_msg_summary">Select Mobile HotSpot to view its settings.</string>
+    <string name="wifi_ap_turning_off">Disabling Mobile HotSpot…</string>
+    <string name="wifi_enable_warning_about_oxygen">Easy group network cannot be enabled while Wi-Fi is enabled. Easy group network will be disabled.</string>
+    <string name="oxygen_enable_warning_about_wifi">Easy group network cannot be enabled while Wi-Fi is enabled. Wi-Fi will be disabled.</string>
+    <string name="wifitimer_on_notification_title">Wi-Fi enabled according to Wi-Fi timer</string>
+    <string name="wifitimer_off_notification_title">Wi-Fi disabled according to Wi-Fi timer</string>
+    <string name="wifi_ap_timeout_message">Automatically disable Mobile HotSpot if there are no connected devices.</string>
+    <string name="wifi_ap_disconnect_client">Disabling Mobile HotSpot will prevent connected devices from using your mobile network connection.</string>
+    <string name="wifi_ap_instruction_open_activate_color">1. Enable on Wi-Fi on the device that will share your mobile network connection.&lt;br/>2. Select &lt;font color=\"%1$s\">%2$s&lt;/font> from the list of available Wi-Fi networks.&lt;br/>3. Connect to &lt;font color=\"%1$s\">%2$s&lt;/font>.&lt;br/></string>
+    <string name="wifi_ap_instruction_activate_color">1. Enable Wi-Fi on the device that will share your mobile network connection.&lt;br/>2. Select &lt;font color=\"%1$s\">%2$s&lt;/font> from the list of available Wi-Fi networks.&lt;br/>3. Connect to &lt;font color=\"%1$s\">%2$s&lt;/font> by entering &lt;font color=\"%1$s\">%3$s&lt;/font> as the password.&lt;br/></string>
+    <string name="wifi_ap_instruction_changeable_maxclient_note">Note: This will enable mobile data and consume more battery.</string>
+    <string name="wifi_ap_instruction_battery_warning">Mobile HotSpot consumes more battery power. Connect the device to a charger for extended use.</string>
+    <string name="wifi_ap_change_policy_warn">All devices currently connected will be disconnected from the Mobile HotSpot.</string>
+    <string name="dialog_battery_data_warning">Mobile HotSpot will be enabled. This will increase battery consumption and data usage.</string>
+    <string name="wifi_ap_no_hotspot_mode_warning">Mobile HotSpot is currently being controlled by another application. To configure it, the current Mobile HotSpot connection will end.</string>
+    <string name="wifi_ap_not_supported">Mobile HotSpot not supported.</string>
+    <string name="wifi_during_usb_tethering">Unable to enable Wi-Fi while using USB tethering.</string>
+    <string name="wifi_watchdog_connectivity_check_disabled_no_sim">This function is disabled. No SIM card has been inserted.</string>
+    <string name="wifi_watchdog_connectivity_check_disabled_airplane_mode">This feature is disabled because Airplane mode is enabled.</string>
+    <string name="wifi_watchdog_connectivity_check_disabled_mobile_data_off">This feature has been disabled because mobile data is disabled.</string>
+    <string name="wifi_watchdog_smart_network_switch_enable_dialog_handover">Smart network switch has been enabled. This function helps maintain a stable Internet connection by switching between mobile and Wi-Fi networks, and also between 2.4 GHz and 5 GHz bands. This may increase your data usage.</string>
+    <string name="easy_group_network_disable">Easy group network disabled. Wi-Fi turned on.</string>
+    <string name="easy_group_network_not_disable">Wi-Fi not turned on. Easy group network still enabled.</string>
+    <string name="cancel_button">Do not enable Wi-Fi</string>
+    <string name="wifi_scan_ap">Enable Wi-Fi to scan for access points.</string>
+    <string name="wifi_p2p_turnon_message">Enable Wi-Fi to set up peer-to-peer connectivity.</string>
+    <string name="wifi_p2p_help_message">Wi-Fi Direct enables Wi-Fi devices to connect directly, making printing, file sharing, synchronizing, and screen sharing much simpler and more convenient. Connecting to devices that support Wi-Fi Direct makes it possible to share your content, synchronize your data, socialize with friends, play games, audio, videos, and more, using various applications.</string>
+    <string name="wifi_tether_configure_ap_text">Configure Mobile HotSpot</string>
+    <string name="tts_language_title">Enable TalkBack</string>
+    <string name="tts_language_button">Enable TalkBack</string>
+    <string name="battery_sugg_wifi">Disable Wi-Fi when not in use or when not available.</string>
+    <string name="data_usage_menu_metered">Mobile HotSpots</string>
+    <string name="mobile_data_off_dialog_text_common">"Unless you connect to a Wi-Fi network, you will not be able to use the Internet, Email or other apps that require a data connection.
+
+Mobile data will be disabled."</string>
+    <string name="data_usage_app_restrict_background_summary">Disable background data on mobile data network only. Wi-Fi will be used if available.</string>
+    <string name="data_usage_metered_title">Mobile HotSpots</string>
+    <string name="data_usage_metered_wifi_disabled">Enable Wi-Fi to select mobile hotspots.</string>
+    <string name="flight_mode_enable_popup_title">Enable Airplane mode.</string>
+    <string name="flight_mode_enable_popup_more_specific">Airplane mode allows you to disable calling, messaging and data network features. It also disable connectivity features such as Wi-Fi and Bluetooth. To use Wi-Fi and Bluetooth, enable them in Settings or on the notification panel.</string>
+    <string name="flight_mode_enable_popup_more_specific2_without_bt">Airplane mode allows you to disable network features, including Wi-Fi. To use Wi-Fi, enable it in Settings or the notification panel.</string>
+    <string name="safety_zone_turn_wireless_network02">Auto unlock zone is only available when Wi-Fi is enabled.</string>
+    <string name="air_button_options_disable_summary">Air command and the options below cannot be enabled at the same time. The options below will be disabled.</string>
+    <string name="allshare_title_summary">Share your media files via Wi-Fi, Wi-Fi Direct, or using Mobile HotSpot.</string>
+    <string name="help_smart_scroll_0">Smart scroll uses the front camera to detect your face. You can scroll through webpages and email messages by tilting your head or device while looking at the screen.</string>
+    <string name="smart_bonding_popup_msg_wifi_btn">Enable Wi-Fi</string>
+    <string name="smart_bonding_popup_msg_wifi_data_btn">Enable Wi-Fi and Mobile data</string>
+    <string name="disable_alarm_and_timer_title">Disable alarm and timer</string>
+    <string name="notification_panel_wifihotspot">"Mobile
+HotSpot"</string>
+    <string name="scloud_disable_wifi_only_title">Disable Wi-Fi only</string>
+    <string name="dsa_enable_dual_sim_always_on">Enable dual SIM always on</string>
+    <string name="personal_page_secretbox_message">Hide content you want to keep private. Disable this mode after use to protect your hidden content. Private mode will also be disabled automatically when the device powers off.</string>
+    <string name="personal_page_auto_mode_switch_msg">Enable this function to automatically disable Private mode when the screen turns off. Make sure to leave the screen on at all times while moving files to Private. Otherwise, some of your data may be lost.</string>
+    <string name="personal_page_tutorial_app_moving_content_to_private_message_1">To hide content, select the items you want to hide. Tap the More options button, then select Move to Private. Private mode will be enabled while the selected content is transferred. While Private mode is disabled, the content you moved to Private will be hidden.</string>
+    <string name="personal_page_tutorial_add_removing_content_from_private_message_1">Enable Private mode and select the items you want to remove from Private. Then, tap the More options button and select Remove from Private. The selected items will no longer be hidden.</string>
+    <string name="guest_profile_disable_mobile_warning">Blocking Mobile data for this guest will disable Mobile data on your device. To use network services, connect to a Wi-Fi network.</string>
+    <string name="smart_bonding_help_step1">When you tap ON, a confirmation message to enable both Wi-Fi and mobile networks will appear.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ota_successful">Device activated. It may take up to 15 minutes for service to start.</string>
+    <string name="noise_reduction_off">Noise reduction disabled.</string>
+    <string name="noise_reduction_on">Noise reduction enabled.</string>
+    <string name="mobile_data_off_dialog_text_common">"Unless you connect to a Wi-Fi network, you will not be able to use the Internet, Email or other apps that require a data connection.
+
+Mobile data will be disabled."</string>
+    <string name="preferred_network_mode_reboot_message">Device will restart to apply new SIM settings.</string>
+    <string name="accept_or_reject_calls_reject_call_text">2. To send a call to voicemail, tap the red device icon and swipe across the screen.</string>
+    <string name="callsettings_voicemail_activate_service_2">Enable voicemail 2</string>
+    <item type="string" name="APKTOOL_DUMMY_0a9e">false</item>
+    <item type="string" name="APKTOOL_DUMMY_0a9f">false</item>
+    <item type="string" name="APKTOOL_DUMMY_0aa0">false</item>
+    <item type="string" name="APKTOOL_DUMMY_0aa1">false</item>
+</resources>

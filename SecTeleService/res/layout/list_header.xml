@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/list_selectall" android:background="@drawable/linearlayout_select_all_item_bg" android:focusable="true" android:layout_width="fill_parent" android:layout_height="@dimen/list_header_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.sec.android.touchwiz.widget.TwCheckBox android:id="@id/selectall_checkbox" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginStart="@dimen/list_divider_margin_left" android:layout_marginEnd="@dimen/list_divider_margin_right" />
+    <TextView android:gravity="center_vertical" android:id="@id/rejectcallwithmsg_selectall_text" android:paddingLeft="3.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/callsettings_selectall" android:layout_weight="0.9" style="@style/setting_subheader_textcolor" />
+</LinearLayout>

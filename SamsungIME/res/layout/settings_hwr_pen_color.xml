@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="540.0px" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="379.0px" android:layout_marginStart="5.0px" android:layout_marginEnd="5.0px">
+        <ListView android:id="@id/list_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="#ffcdcdcd" android:dividerHeight="1.0px" android:choiceMode="singleChoice" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:title="@string/auto_dialing_guide"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/what_is_autodialing" style="?android:attr/listSeparatorTextViewStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/autodialing_guide_1" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/autodialing_enable_disable" style="?android:attr/listSeparatorTextViewStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autodialing_enable_1" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autodialing_enable_2" />
+        <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/target_country_setting" style="?android:attr/listSeparatorTextViewStyle" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/country_setting_1" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/country_setting_2" />
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:paddingLeft="5.0dip" android:paddingTop="5.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/country_setting_3" />
+    </LinearLayout>
+</ScrollView>

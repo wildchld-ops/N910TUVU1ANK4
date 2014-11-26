@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCF" android:key="button_cdma_voicecall_forwarding" android:fragment="com.android.phone.CdmaCallForwardOptions" />
+    <EditTextPreference android:maxLength="100" android:title="@string/callsettings_areacode_title" android:key="edittext_areacode_key" android:summary="@string/callsettings_areacode_summary_off" android:dialogTitle="@string/callsettings_areacode_title" android:inputType="phone" />
+    <PreferenceScreen android:persistent="false" android:title="@string/callsettings_call_barring" android:key="voicecall_barring_key" android:fragment="com.android.phone.CdmaCallBarring" />
+    <PreferenceScreen android:persistent="false" android:title="@string/labelCW" android:key="button_cw_key" android:fragment="com.android.phone.CdmaCallWaitingSetting" />
+    <CheckBoxPreference android:title="@string/voice_privacy" android:key="voiceprivacy_preference" android:summary="@string/voice_privacy_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <PreferenceScreen android:persistent="false" android:title="@string/fdn" android:key="button_fdn_key" android:summary="@string/sum_fdn" android:fragment="com.android.phone.FdnSetting" />
+    <PreferenceCategory android:persistent="false" android:title="@string/personalised_eq_dialog_title" android:key="button_voicecall_eq_category_key">
+        <ListPreference android:persistent="false" android:entries="@array/voicecall_eq_list_entries" android:title="@string/menu_voiceCallEqListSetting" android:key="voicecall_eq_list_setting" android:summary="@string/summary_voiceCallEqListSetting" android:entryValues="@array/voicecall_eq_list_values" />
+        <PreferenceScreen android:enabled="true" android:title="@string/category_voiceCallEqSettings" android:key="voicecall_eq_analysis_setting" android:summary="@string/summary_voiceCallEqAnalysisSetting">
+            <intent android:action="com.sec.hearingadjust.launch" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

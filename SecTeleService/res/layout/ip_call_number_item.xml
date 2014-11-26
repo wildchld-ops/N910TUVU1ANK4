@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/text" android:layout_width="fill_parent" android:layout_height="65.32999dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:id="@id/prefixnum_text_layout" android:clickable="true" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.9">
+        <TextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_vertical" android:id="@id/ipcall_number" android:background="?android:selectableItemBackground" android:paddingLeft="12.0dip" android:focusableInTouchMode="false" android:duplicateParentState="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="?android:listPreferredItemHeight" android:singleLine="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/prefixnum_radio_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <View android:id="@id/divider1" android:background="@drawable/divider_vertical_2line" android:layout_width="1.0dip" android:layout_height="28.0dip" />
+        <RadioButton android:id="@id/default_ip_number" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/list_radio_button_margin" android:layout_marginRight="@dimen/list_radio_button_margin" android:checked="false" />
+    </LinearLayout>
+</LinearLayout>

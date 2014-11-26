@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:id="@id/empty_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/empty_view_relative" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/empty_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/no_text_messages" android:scaleType="matrix" />
+            <TextView android:textSize="@dimen/conversation_empty_view_textsize" android:textColor="@color/conversation_no_message_color" android:id="@id/empty_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_count_zero" android:layout_below="@id/empty_image_view" android:layout_centerHorizontal="true" />
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/conversation_empty_view_popup_textsize" android:textColor="@color/conversation_no_text_template_color" android:layout_gravity="right" android:id="@id/empty_view_popup" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="58.0dip" android:layout_marginRight="6.0dip" android:text="@string/empty_template_string" android:contentDescription="@string/empty_template_string_guide" />
+    <ImageView android:layout_gravity="bottom" android:id="@id/empty_view_background" android:layout_width="@dimen/message_empty_view_bg_width" android:layout_height="@dimen/message_empty_view_bg_height" />
+</FrameLayout>

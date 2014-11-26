@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="incomming_calls_summary_array">
+        <item>수신</item>
+        <item>거절</item>
+    </string-array>
+    <string-array name="prl_update">
+        <item>PRL 업데이트 요청을 보냅니다</item>
+    </string-array>
+    <string-array name="Countries">
+        <item>대한민국</item>
+        <item>중국</item>
+        <item>일본</item>
+        <item>마카오</item>
+        <item>홍콩</item>
+        <item>타이완</item>
+        <item>싱가포르</item>
+        <item>태국</item>
+        <item>필리핀</item>
+        <item>말레이시아</item>
+        <item>인도네시아</item>
+        <item>몽골</item>
+        <item>베트남</item>
+        <item>캄보디아</item>
+        <item>라오스</item>
+        <item>인도</item>
+        <item>몰디브</item>
+        <item>아프가니스탄</item>
+        <item>파키스탄</item>
+        <item>사우디아라비아</item>
+        <item>이란</item>
+        <item>이라크</item>
+        <item>터키</item>
+        <item>요르단</item>
+        <item>아랍에미리트</item>
+        <item>쿠웨이트</item>
+        <item>카자흐스탄</item>
+        <item>우즈베키스탄</item>
+        <item>키르기스스탄</item>
+        <item>타지키스탄</item>
+        <item>투르크메니스탄</item>
+        <item>바레인</item>
+        <item>오만</item>
+        <item>부탄</item>
+        <item>동티모르</item>
+        <item>그루지아</item>
+        <item>카타르</item>
+        <item>레바논</item>
+        <item>방글라데시</item>
+        <item>네팔</item>
+        <item>스리랑카</item>
+        <item>브루나이</item>
+        <item>아르메니아</item>
+        <item>예멘</item>
+        <item>이스라엘</item>
+        <item>시리아</item>
+        <item>이집트</item>
+        <item>리비아</item>
+        <item>모로코</item>
+        <item>수단</item>
+        <item>가나</item>
+        <item>나이지리아</item>
+        <item>세네갈</item>
+        <item>중앙아프리카 공화국</item>
+        <item>앙골라</item>
+        <item>카메룬</item>
+        <item>에티오피아</item>
+        <item>남아프리카 공화국</item>
+        <item>알제리</item>
+        <item>베냉</item>
+        <item>보츠와나</item>
+        <item>부르키나파소</item>
+        <item>부룬디</item>
+        <item>적도 기니</item>
+        <item>토고</item>
+        <item>카보베르데</item>
+        <item>감비아</item>
+        <item>콩고</item>
+        <item>콩고 민주공화국</item>
+        <item>지부티</item>
+        <item>기니</item>
+        <item>기니비사우</item>
+        <item>가봉</item>
+        <item>케냐</item>
+        <item>레소토</item>
+        <item>라이베리아</item>
+        <item>르완다</item>
+        <item>마다가스카르</item>
+        <item>말라위</item>
+        <item>말리</item>
+        <item>모리셔스</item>
+        <item>모리타니아</item>
+        <item>모잠비크</item>
+        <item>나미비아</item>
+        <item>니제르</item>
+        <item>시에라리온</item>
+        <item>세이셸</item>
+        <item>상투메프린시페</item>
+        <item>스와질란드</item>
+        <item>탄자니아</item>
+        <item>튀니지</item>
+        <item>우간다</item>
+        <item>차드</item>
+        <item>잠비아</item>
+        <item>영국</item>
+        <item>프랑스</item>
+        <item>네덜란드</item>
+        <item>아일랜드</item>
+        <item>벨기에</item>
+        <item>룩셈부르크</item>
+        <item>모나코</item>
+        <item>독일</item>
+        <item>스위스</item>
+        <item>폴란드</item>
+        <item>오스트리아</item>
+        <item>체코</item>
+        <item>헝가리</item>
+        <item>노르웨이</item>
+        <item>스웨덴</item>
+        <item>핀란드</item>
+        <item>덴마크</item>
+        <item>이탈리아</item>
+        <item>스페인</item>
+        <item>포르투갈</item>
+        <item>그리스</item>
+        <item>러시아</item>
+        <item>우크라이나</item>
+        <item>리투아니아</item>
+        <item>벨라루스</item>
+        <item>알바니아</item>
+        <item>에스토니아</item>
+        <item>불가리아</item>
+        <item>아이슬란드</item>
+        <item>페로 제도</item>
+        <item>크로아티아</item>
+        <item>라트비아</item>
+        <item>리히텐슈타인</item>
+        <item>루마니아</item>
+        <item>마케도니아</item>
+        <item>몰도바</item>
+        <item>산마리노</item>
+        <item>슬로바키아</item>
+        <item>지브롤터</item>
+        <item>미국</item>
+        <item>캐나다</item>
+        <item>멕시코</item>
+        <item>코스타리카</item>
+        <item>쿠바</item>
+        <item>자메이카</item>
+        <item>아루바</item>
+        <item>바하마</item>
+        <item>파나마</item>
+        <item>도미니카 공화국</item>
+        <item>그린란드</item>
+        <item>온두라스</item>
+        <item>몬세라트</item>
+        <item>니카라과</item>
+        <item>엘살바도르</item>
+        <item>트리니다드토바고</item>
+        <item>과테말라</item>
+        <item>오스트레일리아</item>
+        <item>뉴질랜드</item>
+        <item>피지</item>
+        <item>파푸아뉴기니</item>
+        <item>솔로몬제도</item>
+        <item>바누아투</item>
+        <item>팔라우</item>
+        <item>뉴칼레도니아</item>
+        <item>브라질</item>
+        <item>아르헨티나</item>
+        <item>콜롬비아</item>
+        <item>페루</item>
+        <item>베네수엘라</item>
+        <item>칠레</item>
+        <item>파라과이</item>
+        <item>우루과이</item>
+        <item>볼리비아</item>
+        <item>에콰도르</item>
+        <item>프랑스령 기아나</item>
+        <item>수리남</item>
+        <item>미국</item>
+        <item>미국</item>
+        <item>미국</item>
+        <item>영국</item>
+        <item>인도</item>
+    </string-array>
+    <string-array name="AfricaCountry">
+        <item>이집트</item>
+        <item>리비아</item>
+        <item>모로코</item>
+        <item>수단</item>
+        <item>가나</item>
+        <item>나이지리아</item>
+        <item>세네갈</item>
+        <item>중앙아프리카 공화국</item>
+        <item>앙골라</item>
+        <item>카메룬</item>
+        <item>에티오피아</item>
+        <item>남아프리카 공화국</item>
+        <item>알제리</item>
+        <item>베냉</item>
+        <item>보츠와나</item>
+        <item>부르키나파소</item>
+        <item>부룬디</item>
+        <item>적도 기니</item>
+        <item>토고</item>
+        <item>카보베르데</item>
+        <item>감비아</item>
+        <item>콩고</item>
+        <item>콩고 민주공화국</item>
+        <item>지부티</item>
+        <item>기니</item>
+        <item>기니비사우</item>
+        <item>가봉</item>
+        <item>케냐</item>
+        <item>레소토</item>
+        <item>라이베리아</item>
+        <item>르완다</item>
+        <item>마다가스카르</item>
+        <item>말라위</item>
+        <item>말리</item>
+        <item>모리셔스</item>
+        <item>모리타니아</item>
+        <item>모잠비크</item>
+        <item>나미비아</item>
+        <item>니제르</item>
+        <item>시에라리온</item>
+        <item>세이셸</item>
+        <item>상투메프린시페</item>
+        <item>스와질란드</item>
+        <item>탄자니아</item>
+        <item>튀니지</item>
+        <item>우간다</item>
+        <item>차드</item>
+        <item>잠비아</item>
+    </string-array>
+    <string-array name="AfricaCodes">
+        <item>+20</item>
+        <item>+218</item>
+        <item>+212</item>
+        <item>+249</item>
+        <item>+233</item>
+        <item>+234</item>
+        <item>+221</item>
+        <item>+236</item>
+        <item>+244</item>
+        <item>+237</item>
+        <item>+251</item>
+        <item>+27</item>
+        <item>+213</item>
+        <item>+229</item>
+        <item>+267</item>
+        <item>+226</item>
+        <item>+257</item>
+        <item>+240</item>
+        <item>+228</item>
+        <item>+238</item>
+        <item>+220</item>
+        <item>+242</item>
+        <item>+243</item>
+        <item>+253</item>
+        <item>+224</item>
+        <item>+245</item>
+        <item>+241</item>
+        <item>+254</item>
+        <item>+266</item>
+        <item>+231</item>
+        <item>+250</item>
+        <item>+261</item>
+        <item>+265</item>
+        <item>+223</item>
+        <item>+230</item>
+        <item>+222</item>
+        <item>+258</item>
+        <item>+264</item>
+        <item>+227</item>
+        <item>+232</item>
+        <item>+248</item>
+        <item>+239</item>
+        <item>+268</item>
+        <item>+255</item>
+        <item>+216</item>
+        <item>+256</item>
+        <item>+235</item>
+        <item>+260</item>
+    </string-array>
+    <string-array name="AsiaCountry">
+        <item>중국</item>
+        <item>대한민국</item>
+        <item>일본</item>
+        <item>마카오</item>
+        <item>홍콩</item>
+        <item>타이완</item>
+        <item>싱가포르</item>
+        <item>태국</item>
+        <item>필리핀</item>
+        <item>말레이시아</item>
+        <item>인도네시아</item>
+        <item>몽골</item>
+        <item>베트남</item>
+        <item>캄보디아</item>
+        <item>라오스</item>
+        <item>인도</item>
+        <item>몰디브</item>
+        <item>아프가니스탄</item>
+        <item>파키스탄</item>
+        <item>사우디아라비아</item>
+        <item>이란</item>
+        <item>이라크</item>
+        <item>터키</item>
+        <item>요르단</item>
+        <item>아랍에미리트</item>
+        <item>쿠웨이트</item>
+        <item>카자흐스탄</item>
+        <item>우즈베키스탄</item>
+        <item>키르기스스탄</item>
+        <item>타지키스탄</item>
+        <item>투르크메니스탄</item>
+        <item>바레인</item>
+        <item>오만</item>
+        <item>부탄</item>
+        <item>동티모르</item>
+        <item>그루지아</item>
+        <item>카타르</item>
+        <item>레바논</item>
+        <item>방글라데시</item>
+        <item>네팔</item>
+        <item>스리랑카</item>
+        <item>브루나이</item>
+        <item>아르메니아</item>
+        <item>예멘</item>
+        <item>이스라엘</item>
+        <item>시리아</item>
+    </string-array>
+    <string-array name="AsiaCodes">
+        <item>+86</item>
+        <item>+82</item>
+        <item>+81</item>
+        <item>+853</item>
+        <item>+852</item>
+        <item>+886</item>
+        <item>+65</item>
+        <item>+66</item>
+        <item>+63</item>
+        <item>+60</item>
+        <item>+62</item>
+        <item>+976</item>
+        <item>+84</item>
+        <item>+855</item>
+        <item>+856</item>
+        <item>+91</item>
+        <item>+960</item>
+        <item>+93</item>
+        <item>+92</item>
+        <item>+966</item>
+        <item>+98</item>
+        <item>+964</item>
+        <item>+90</item>
+        <item>+962</item>
+        <item>+971</item>
+        <item>+965</item>
+        <item>+7</item>
+        <item>+998</item>
+        <item>+996</item>
+        <item>+992</item>
+        <item>+993</item>
+        <item>+973</item>
+        <item>+968</item>
+        <item>+975</item>
+        <item>+1</item>
+        <item>+995</item>
+        <item>+974</item>
+        <item>+961</item>
+        <item>+880</item>
+        <item>+977</item>
+        <item>+94</item>
+        <item>+673</item>
+        <item>+374</item>
+        <item>+967</item>
+        <item>+972</item>
+        <item>+963</item>
+    </string-array>
+    <string-array name="EuropeCountry">
+        <item>영국</item>
+        <item>프랑스</item>
+        <item>네덜란드</item>
+        <item>아일랜드</item>
+        <item>벨기에</item>
+        <item>룩셈부르크</item>
+        <item>모나코</item>
+        <item>독일</item>
+        <item>스위스</item>
+        <item>폴란드</item>
+        <item>오스트리아</item>
+        <item>체코</item>
+        <item>헝가리</item>
+        <item>노르웨이</item>
+        <item>스웨덴</item>
+        <item>핀란드</item>
+        <item>덴마크</item>
+        <item>이탈리아</item>
+        <item>스페인</item>
+        <item>포르투갈</item>
+        <item>그리스</item>
+        <item>러시아</item>
+        <item>우크라이나</item>
+        <item>리투아니아</item>
+        <item>벨라루스</item>
+        <item>알바니아</item>
+        <item>에스토니아</item>
+        <item>불가리아</item>
+        <item>아이슬란드</item>
+        <item>페로 제도</item>
+        <item>크로아티아</item>
+        <item>라트비아</item>
+        <item>리히텐슈타인</item>
+        <item>루마니아</item>
+        <item>마케도니아</item>
+        <item>몰도바</item>
+        <item>산마리노</item>
+        <item>슬로바키아</item>
+        <item>지브롤터</item>
+    </string-array>
+    <string-array name="EuropeCodes">
+        <item>+44</item>
+        <item>+33</item>
+        <item>+31</item>
+        <item>+353</item>
+        <item>+32</item>
+        <item>+352</item>
+        <item>+377</item>
+        <item>+49</item>
+        <item>+41</item>
+        <item>+48</item>
+        <item>+43</item>
+        <item>+420</item>
+        <item>+36</item>
+        <item>+47</item>
+        <item>+46</item>
+        <item>+358</item>
+        <item>+45</item>
+        <item>+39</item>
+        <item>+34</item>
+        <item>+351</item>
+        <item>+30</item>
+        <item>+7</item>
+        <item>+380</item>
+        <item>+370</item>
+        <item>+375</item>
+        <item>+355</item>
+        <item>+372</item>
+        <item>+359</item>
+        <item>+354</item>
+        <item>+298</item>
+        <item>+385</item>
+        <item>+371</item>
+        <item>+423</item>
+        <item>+40</item>
+        <item>+389</item>
+        <item>+373</item>
+        <item>+378</item>
+        <item>+421</item>
+        <item>+1</item>
+    </string-array>
+    <string-array name="NorthAmericaCountry">
+        <item>미국</item>
+        <item>캐나다</item>
+        <item>멕시코</item>
+        <item>코스타리카</item>
+        <item>쿠바</item>
+        <item>자메이카</item>
+        <item>아루바</item>
+        <item>바하마</item>
+        <item>파나마</item>
+        <item>도미니카 공화국</item>
+        <item>그린란드</item>
+        <item>온두라스</item>
+        <item>몬세라트</item>
+        <item>니카라과</item>
+        <item>엘살바도르</item>
+        <item>트리니다드토바고</item>
+        <item>과테말라</item>
+    </string-array>
+    <string-array name="NorthAmericaCodes">
+        <item>+1</item>
+        <item>+1</item>
+        <item>+52</item>
+        <item>+506</item>
+        <item>+53</item>
+        <item>+1876</item>
+        <item>+297</item>
+        <item>+1242</item>
+        <item>+507</item>
+        <item>+1767</item>
+        <item>+299</item>
+        <item>+504</item>
+        <item>+1664</item>
+        <item>+505</item>
+        <item>+503</item>
+        <item>+1868</item>
+        <item>+502</item>
+    </string-array>
+    <string-array name="OceaniaCountry">
+        <item>오스트레일리아</item>
+        <item>뉴질랜드</item>
+        <item>피지</item>
+        <item>파푸아뉴기니</item>
+        <item>솔로몬제도</item>
+        <item>바누아투</item>
+        <item>팔라우</item>
+        <item>뉴칼레도니아</item>
+    </string-array>
+    <string-array name="OceaniaCodes">
+        <item>+61</item>
+        <item>+64</item>
+        <item>+679</item>
+        <item>+675</item>
+        <item>+677</item>
+        <item>+678</item>
+        <item>+680</item>
+        <item>+687</item>
+    </string-array>
+    <string-array name="SouthAmericaCountry">
+        <item>브라질</item>
+        <item>아르헨티나</item>
+        <item>콜롬비아</item>
+        <item>페루</item>
+        <item>베네수엘라</item>
+        <item>칠레</item>
+        <item>파라과이</item>
+        <item>우루과이</item>
+        <item>볼리비아</item>
+        <item>에콰도르</item>
+        <item>프랑스령 기아나</item>
+        <item>수리남</item>
+    </string-array>
+    <string-array name="SouthAmericaCodes">
+        <item>+55</item>
+        <item>+54</item>
+        <item>+57</item>
+        <item>+51</item>
+        <item>+58</item>
+        <item>+56</item>
+        <item>+595</item>
+        <item>+598</item>
+        <item>+591</item>
+        <item>+593</item>
+        <item>+594</item>
+        <item>+597</item>
+    </string-array>
+    <string-array name="Continent">
+        <item>아시아</item>
+        <item>유럽</item>
+        <item>북미</item>
+        <item>남미</item>
+        <item>아프리카</item>
+        <item>대양주</item>
+    </string-array>
+    <string-array name="clir_display_values">
+        <item>기본 네트워크</item>
+        <item>발신번호 표시 제한</item>
+        <item>발신번호 표시</item>
+    </string-array>
+    <string-array name="clir_values">
+        <item>기본</item>
+        <item>숨기기</item>
+        <item>보이기</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices">
+        <item>LTE / WCDMA</item>
+        <item>LTE</item>
+        <item>글로벌</item>
+        <item>GSM/WCDMA/LTE</item>
+        <item>CDMA + LTE/EvDo</item>
+        <item>CDMA/EvDo/GSM/WCDMA</item>
+        <item>EVDO만</item>
+        <item>CDMA w/o EVDO</item>
+        <item>자동 CDMA/EVDO</item>
+        <item>GSM / WCDMA auto</item>
+        <item>WCDMA만 연결</item>
+        <item>GSM만 연결</item>
+        <item>GSM / WCDMA preferred</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte">
+        <item>LTE/CDMA</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_automatic_cdma_lte_gsm">
+        <item>CDMA</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>자동</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte_global">
+        <item>글로벌</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+        <item>CDMA</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_lte_global_non_cdma">
+        <item>글로벌</item>
+        <item>LTE / CDMA</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="preferred_network_mode_choices_global_lte_gsm">
+        <item>글로벌</item>
+        <item>LTE</item>
+        <item>GSM / UMTS</item>
+    </string-array>
+    <string-array name="list_language_entries">
+        <item>English</item>
+        <item>프랑스어</item>
+        <item>스페인어</item>
+        <item>일본어</item>
+        <item>한국어</item>
+        <item>중국어</item>
+        <item>히브리어</item>
+    </string-array>
+    <string-array name="list_language_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices">
+        <item>집 네트워크</item>
+        <item>자동</item>
+    </string-array>
+    <string-array name="cdma_system_select_choices_home_only">
+        <item>집 네트워크</item>
+    </string-array>
+    <string-array name="cdma_system_select_sub_choices">
+        <item>집 네트워크</item>
+        <item>자동 A</item>
+        <item>자동 B</item>
+    </string-array>
+    <string-array name="cdma_subscription_choices">
+        <item>RUIM/SIM</item>
+        <item>NV</item>
+    </string-array>
+    <string-array name="cdma_subscription_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="tty_mode_entries">
+        <item>TTY 사용 안함</item>
+        <item>TTY 전체</item>
+        <item>TTY HCO</item>
+        <item>TTY VCO</item>
+    </string-array>
+    <string-array name="dtmf_tone_entries">
+        <item>보통</item>
+        <item>길게</item>
+    </string-array>
+    <string-array name="dtmf_tone_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="RAD_arr_roaming_auto_dial_help">
+        <item>로밍 오토 다이얼 안내</item>
+    </string-array>
+    <string-array name="RAD_roaming_auto_dial_settings">
+        <item>설정</item>
+        <item>해제</item>
+        <item>항상 한국으로 발신 설정</item>
+    </string-array>
+    <string-array name="roaming_mode_entries">
+        <item>Sprint만</item>
+        <item>자동</item>
+    </string-array>
+    <string-array name="roaming_mode_values">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="roaming_network_mode_list">
+        <item>자동</item>
+        <item>WCDMA만 연결</item>
+        <item>GSM만 연결</item>
+    </string-array>
+    <string-array name="system_setting_entries">
+        <item>일본</item>
+        <item>Automatic(Roaming/Japan)</item>
+        <item>GSM/UMTS(Roaming)</item>
+    </string-array>
+</resources>

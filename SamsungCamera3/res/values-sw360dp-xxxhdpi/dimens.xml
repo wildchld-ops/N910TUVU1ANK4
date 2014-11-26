@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="sidemenu_recording_button_width">224.0px</dimen>
+    <dimen name="sidemenu_recording_button_height">224.0px</dimen>
+    <dimen name="easy_help_focus_padding_y">3.0dip</dimen>
+    <dimen name="sidemenu_shutter_button_width">68.0dip</dimen>
+    <dimen name="sidemenu_shutter_button_height">68.0dip</dimen>
+    <dimen name="sidemenu_shutter_button_pos_x">560.0dip</dimen>
+    <dimen name="sidemenu_shutter_button_pos_y">145.0dip</dimen>
+    <dimen name="sidemenu_shootingmode_button_pos_x">567.0dip</dimen>
+    <dimen name="sidemenu_shootingmode_button_pos_y">240.0dip</dimen>
+    <dimen name="sidemenu_recording_button_pos_x">567.0dip</dimen>
+    <dimen name="sidemenu_recording_button_pos_y">64.0dip</dimen>
+    <dimen name="basemenu_thumbnail_button_pos_x">569.0dip</dimen>
+    <dimen name="basemenu_thumbnail_button_pos_y">303.0dip</dimen>
+    <dimen name="mode_item_font_size">3.0dip</dimen>
+    <dimen name="baseindicator_shootingmode_portrait_top_margin">55.0dip</dimen>
+    <dimen name="shootingmode_helptext_side_margin">71.0dip</dimen>
+    <dimen name="recording_indicator_width">60.0dip</dimen>
+    <dimen name="recording_indicator_height">20.0dip</dimen>
+    <dimen name="recording_indicator_icon_width">22.0dip</dimen>
+    <dimen name="recording_indicator_icon_height">20.0dip</dimen>
+    <dimen name="recording_fast_motion_indicator_width">66.0dip</dimen>
+    <dimen name="recording_dualbutton_pos_x">249.0dip</dimen>
+    <dimen name="recording_dualswitchbutton_pos_x">182.0dip</dimen>
+    <dimen name="recording_dualswitchbutton_pos_y">5.0dip</dimen>
+    <dimen name="recording_settinsline1_pos_x">168.0dip</dimen>
+    <dimen name="recording_settinsline2_pos_x">235.0dip</dimen>
+    <dimen name="recording_settinsline3_pos_x">302.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_effect_text_width">308.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_effect_text_height">35.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_level_text_pos_x">117.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_level_text_pos_y">35.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_indicator_group_pos_x">240.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_indicator_group_pos_y">125.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_indicator_group_width">308.0dip</dimen>
+    <dimen name="slidermenu_extended_beauty_indicator_group_height">110.0dip</dimen>
+    <dimen name="help_tutorial_popup_left_padding">5.75dip</dimen>
+    <dimen name="help_tutorial_popup_right_padding">4.75dip</dimen>
+    <dimen name="help_tutorial_mode_popup_portrait_x">500.0dip</dimen>
+    <dimen name="story_effect_progress_pos_y_90">59.5dip</dimen>
+    <dimen name="story_effect_progress_pos_y_270">299.5dip</dimen>
+    <dimen name="magic_menu_bg_pos_x">490.0dip</dimen>
+    <dimen name="magic_select_item_width">50.0dip</dimen>
+    <dimen name="magic_select_front_item_pos_x">418.0dip</dimen>
+    <dimen name="magic_select_item1_pos_x">440.0dip</dimen>
+    <dimen name="magic_select_item2_pos_x">418.0dip</dimen>
+    <dimen name="magic_select_item3_pos_x">408.0dip</dimen>
+    <dimen name="magic_select_item4_pos_x">418.0dip</dimen>
+    <dimen name="magic_select_item5_pos_x">440.0dip</dimen>
+    <dimen name="magic_select_item_text_margin_h">15.0dip</dimen>
+    <dimen name="cover_screen_padding_left">20.0dip</dimen>
+    <dimen name="cover_screen_window_width">320.0dip</dimen>
+    <dimen name="cover_screen_window_height">320.0dip</dimen>
+    <dimen name="cover_screen_width">320.0dip</dimen>
+    <dimen name="cover_shutter_blink_rect_left">25.0dip</dimen>
+    <dimen name="cover_shutter_blink_rect_width">285.0dip</dimen>
+    <dimen name="cover_shutter_blink_rect_height">307.0dip</dimen>
+    <dimen name="cover_screen_window_adjust_padding">15.0dip</dimen>
+    <dimen name="covermode_shutter_button_pos_x">197.0dip</dimen>
+    <dimen name="covermode_shutter_button_pos_y">141.0dip</dimen>
+    <dimen name="covermode_record_button_pos_x">207.0dip</dimen>
+    <dimen name="covermode_record_button_pos_y">68.0dip</dimen>
+    <dimen name="covermode_close_button_x">24.5dip</dimen>
+    <dimen name="covermode_close_button_y">42.0dip</dimen>
+    <dimen name="covermode_flash_button_x">25.0dip</dimen>
+    <dimen name="covermode_flash_button_y">286.0dip</dimen>
+    <dimen name="covermode_thumbnail_button_pos_x">208.0dip</dimen>
+    <dimen name="covermode_thumbnail_button_pos_y">274.0dip</dimen>
+    <dimen name="covermode_stop_button_pos_y">68.0dip</dimen>
+    <dimen name="covermode_stop_button_pos_x">207.0dip</dimen>
+    <dimen name="covermode_pause_button_pos_y">151.0dip</dimen>
+    <dimen name="covermode_snapshot_button_pos_y">241.0dip</dimen>
+    <dimen name="covermode_rec_preview_width">325.0dip</dimen>
+    <dimen name="covermode_rec_preview_height">289.0dip</dimen>
+    <dimen name="covermode_indicator_top_margin">16.0dip</dimen>
+    <dimen name="covermode_indicator_side_margin">0.0dip</dimen>
+    <dimen name="recording_time_text_side_margin">2.0dip</dimen>
+    <dimen name="cover_recording_indicator_group_width">100.0dip</dimen>
+    <dimen name="cover_recording_indicator_group_height">18.0dip</dimen>
+    <dimen name="cover_recording_time_text_width">100.0dip</dimen>
+    <dimen name="cover_recording_icon_text_width">45.0dip</dimen>
+    <dimen name="covermode_rec_background_margin">56.0dip</dimen>
+    <dimen name="cover_recording_time_group_height">18.0dip</dimen>
+    <dimen name="covermode_rec_icon_y">1.0dip</dimen>
+    <dimen name="covermode_rec_text_x">16.0dip</dimen>
+    <dimen name="burst_panoramashot_livepreview_landscape_width">731.0dip</dimen>
+    <dimen name="burst_panoramashot_livepreview_landscape_height">61.0dip</dimen>
+    <dimen name="burst_panoramashot_livepreview_portrait_width">60.0dip</dimen>
+    <dimen name="burst_panoramashot_livepreview_portrait_height">357.0dip</dimen>
+    <dimen name="burst_panoramashot_livepreview_single_portrait_x">475.0dip</dimen>
+    <dimen name="burst_panoramashot_livepreview_single_portrait_y">165.0dip</dimen>
+    <dimen name="burst_panoramashot_warning_arrow_swing_distance">15.0dip</dimen>
+    <dimen name="burst_panoramashot_warning_arrow_margin">25.0dip</dimen>
+    <dimen name="tour_warning_arrow_height">35.0dip</dimen>
+    <dimen name="tour_warning_text_height">20.0dip</dimen>
+    <dimen name="tour_warning_text_position_adjust">0.0dip</dimen>
+    <dimen name="outfocus_capture_progressbar_bottom_padding_landscape">20.0dip</dimen>
+    <dimen name="outfocus_capture_progressbar_bottom_padding_portrait">86.0dip</dimen>
+    <dimen name="outfocus_capture_progressbar_step_width">37.0dip</dimen>
+    <dimen name="outfocus_capture_progressbar_step_height">6.0dip</dimen>
+    <dimen name="outfocus_capture_progressbar_step_gap">5.0dip</dimen>
+    <dimen name="outfocus_capture_guide_text_width">350.0dip</dimen>
+    <dimen name="outfocus_capture_guide_text_width_vertical">350.0dip</dimen>
+    <dimen name="outfocus_capture_guide_text_height">20.0dip</dimen>
+    <dimen name="outfocus_capture_guide_text_height_vertical">55.0dip</dimen>
+    <dimen name="ultrawide_capture_angle_button_margin_port">-21.0dip</dimen>
+    <dimen name="subview_indiciator_margin_left">17.0dip</dimen>
+    <dimen name="subview_indiciator_margin_bottom">35.0dip</dimen>
+    <dimen name="subview_shutter_size">100.0dip</dimen>
+    <dimen name="subview_indicator_remaincount_size">29.0dip</dimen>
+    <dimen name="subview_indicator_width">26.0dip</dimen>
+    <dimen name="subview_indicator_space">1.0dip</dimen>
+    <dimen name="thumbnail_left">1633.5px</dimen>
+    <dimen name="thumbnail_top">918.0px</dimen>
+    <dimen name="thumbnail_size">126.0px</dimen>
+    <dimen name="actionshot_progress_text_x">0.0px</dimen>
+    <dimen name="actionshot_progress_text_y">75.0px</dimen>
+    <dimen name="actionshot_post_capture_progressbar_width">450.0px</dimen>
+    <dimen name="actionshot_post_capture_progressbar_height">33.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_x_0">168.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_x_90">120.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_x_180">1428.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_x_270">1476.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_y_0">960.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_y_90">150.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_y_180">120.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_y_270">930.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_width">1260.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_height">55.5px</dimen>
+    <dimen name="actionshot_capture_progressbar_alpha">148.5px</dimen>
+    <dimen name="actionshot_capture_progressbar_setsize_width_0">1260.0px</dimen>
+    <dimen name="actionshot_capture_progressbar_setsize_width_90">780.0px</dimen>
+    <dimen name="actionshot_help_text_x_0">210.0px</dimen>
+    <dimen name="actionshot_help_text_x_90">75.0px</dimen>
+    <dimen name="actionshot_help_text_x_180">1260.0px</dimen>
+    <dimen name="actionshot_help_text_x_270">1335.0px</dimen>
+    <dimen name="actionshot_help_text_y_0">1005.0px</dimen>
+    <dimen name="actionshot_help_text_y_90">15.0px</dimen>
+    <dimen name="actionshot_help_text_y_180">75.0px</dimen>
+    <dimen name="actionshot_help_text_y_270">1065.0px</dimen>
+    <dimen name="actionshot_help_text_width">1050.0px</dimen>
+    <dimen name="actionshot_help_text_height">60.0px</dimen>
+    <dimen name="actionshot_rect_pos_x">168.0px</dimen>
+    <dimen name="actionshot_rect_pos_y">225.0px</dimen>
+    <dimen name="actionshot_rect_width">1260.0px</dimen>
+    <dimen name="actionshot_rect_height">750.0px</dimen>
+    <dimen name="actionshot_sidemenu_width">162.0px</dimen>
+    <dimen name="capture_popup_group_x">225.0px</dimen>
+    <dimen name="capture_popup_group_y">345.0px</dimen>
+    <dimen name="capture_popup_group_width">990.0px</dimen>
+    <dimen name="capture_popup_group_height">390.0px</dimen>
+    <dimen name="capture_progressbar_width">810.0px</dimen>
+    <dimen name="capture_progressbar_height">18.0px</dimen>
+    <dimen name="capture_progressbar_pos_x">315.0px</dimen>
+    <dimen name="capture_progressbar_pos_y">615.0px</dimen>
+    <dimen name="capture_progressbar_text_interval">210.0px</dimen>
+    <dimen name="capture_progressbar_text_x">90.0px</dimen>
+    <dimen name="panorama_capture_progressbar_text_x">90.0px</dimen>
+    <dimen name="capture_progressbar_text_y">45.0px</dimen>
+    <dimen name="capture_progressbar_text_width">810.0px</dimen>
+    <dimen name="postcapture_progressbar_pos_x_0">639.0px</dimen>
+    <dimen name="postcapture_progressbar_pos_x_90">798.0px</dimen>
+    <dimen name="postcapture_progressbar_pos_y_0">135.0px</dimen>
+    <dimen name="postcapture_progressbar_pos_y_90">945.0px</dimen>
+    <dimen name="capture_help_text_width">1050.0px</dimen>
+    <dimen name="capture_help_text_height">120.0px</dimen>
+    <dimen name="panoramashot_tri_pos_x_0">1320.0px</dimen>
+    <dimen name="panoramashot_tri_pos_x_90">720.0px</dimen>
+    <dimen name="panoramashot_tri_pos_x_180">75.0px</dimen>
+    <dimen name="panoramashot_tri_pos_x_270">720.0px</dimen>
+    <dimen name="panoramashot_tri_pos_y_0">540.0px</dimen>
+    <dimen name="panoramashot_tri_pos_y_90">960.0px</dimen>
+    <dimen name="panoramashot_tri_pos_y_180">540.0px</dimen>
+    <dimen name="panoramashot_tri_pos_y_270">75.0px</dimen>
+    <dimen name="panoramashot_tri_width">45.0px</dimen>
+    <dimen name="panoramashot_tri_height">45.0px</dimen>
+    <dimen name="panoramashot_rect_width">1440.0px</dimen>
+    <dimen name="panoramashot_rect_height">1080.0px</dimen>
+    <dimen name="panoramashot_rect_margin">30.0px</dimen>
+    <dimen name="panoramashot_livepreview_landscape_width">1380.0px</dimen>
+    <dimen name="panoramashot_livepreview_landscape_height">231.0px</dimen>
+    <dimen name="panoramashot_livepreview_landscape_x">30.0px</dimen>
+    <dimen name="panoramashot_livepreview_landscape_y">819.0px</dimen>
+    <dimen name="panoramashot_livepreview_portrait_width">303.0px</dimen>
+    <dimen name="panoramashot_livepreview_portrait_height">1020.0px</dimen>
+    <dimen name="panoramashot_livepreview_portrait_x">30.0px</dimen>
+    <dimen name="panoramashot_livepreview_portrait_y">30.0px</dimen>
+    <dimen name="panoramashot_livepreview_single_width">303.0px</dimen>
+    <dimen name="panoramashot_livepreview_single_height">231.0px</dimen>
+    <dimen name="panoramashot_livepreview_rect_thickness">6.0px</dimen>
+    <dimen name="panoramashot_viewfinder_destination_x">24.0px</dimen>
+    <dimen name="panoramashot_viewfinder_destination_y">24.0px</dimen>
+    <dimen name="panoramashot_viewfinder_destination_width">1392.0px</dimen>
+    <dimen name="panoramashot_viewfinder_destination_height">1032.0px</dimen>
+    <dimen name="best_pic_icon_width">150.0px</dimen>
+    <dimen name="best_pic_icon_height">126.0px</dimen>
+    <dimen name="best_pic_icon_pos_x_0">261.0px</dimen>
+    <dimen name="best_pic_icon_pos_x_90">1656.0px</dimen>
+    <dimen name="best_pic_icon_pos_x_180">1659.0px</dimen>
+    <dimen name="best_pic_icon_pos_x_270">258.0px</dimen>
+    <dimen name="best_pic_icon_pos_y_0">18.0px</dimen>
+    <dimen name="best_pic_icon_pos_y_90">18.0px</dimen>
+    <dimen name="best_pic_icon_pos_y_180">1056.0px</dimen>
+    <dimen name="best_pic_icon_pos_y_270">1059.0px</dimen>
+    <dimen name="best_pic_text_pos_x_0">429.0px</dimen>
+    <dimen name="best_pic_text_pos_x_90">1626.0px</dimen>
+    <dimen name="best_pic_text_pos_x_180">1488.0px</dimen>
+    <dimen name="best_pic_text_pos_x_270">288.0px</dimen>
+    <dimen name="best_pic_text_pos_y_0">49.5px</dimen>
+    <dimen name="best_pic_text_pos_y_90">183.0px</dimen>
+    <dimen name="best_pic_text_pos_y_180">1026.0px</dimen>
+    <dimen name="best_pic_text_pos_y_270">894.0px</dimen>
+    <dimen name="smileshot_blink_image_x">244.5px</dimen>
+    <dimen name="smileshot_blink_image_y">15.0px</dimen>
+    <dimen name="smileshot_sidemenu_width">241.5px</dimen>
+    <dimen name="smileshot_rect_pos_x">244.5px</dimen>
+    <dimen name="shrink_bottom_offset">-34.5px</dimen>
+    <dimen name="shrink_bottom_offset_camcorder_wide">-34.5px</dimen>
+    <dimen name="shrink_bottom_offset_camcorder_mini">-30.0px</dimen>
+    <dimen name="shrink_right_offset">15.0px</dimen>
+    <dimen name="shrink_right_offset_wide">-153.0px</dimen>
+    <dimen name="shrink_ratio">1.3499756px</dimen>
+    <dimen name="shrink_ratio_wide">1.394989px</dimen>
+    <dimen name="distance_swipe_to_go_gallery">300.0px</dimen>
+    <dimen name="velocity_swipe_to_go_gallery">375.0px</dimen>
+    <dimen name="dramashot_capture_progressbar_x_0">352.5px</dimen>
+    <dimen name="dramashot_capture_progressbar_x_90">330.0px</dimen>
+    <dimen name="dramashot_capture_progressbar_x_180">1560.0px</dimen>
+    <dimen name="dramashot_capture_progressbar_x_270">1597.5px</dimen>
+    <dimen name="dramashot_capture_progressbar_y_0">1000.0px</dimen>
+    <dimen name="dramashot_capture_progressbar_y_90">175.0px</dimen>
+    <dimen name="dramashot_capture_progressbar_y_180">80.0px</dimen>
+    <dimen name="dramashot_capture_progressbar_y_270">905.0px</dimen>
+    <dimen name="dramashot_progressbar_width_l">1215.0px</dimen>
+    <dimen name="dramashot_progressbar_width_p">730.0px</dimen>
+    <dimen name="mode_indicator_shadow_y_pos">4.0px</dimen>
+    <dimen name="effect_thumbnail_shadow_y_pos">3.0px</dimen>
+    <item type="dimen" name="APKTOOL_DUMMY_04d5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04d6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04d7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04d8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04d9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04da">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04db">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04dc">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04dd">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04de">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04df">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e1">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e2">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e3">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04e9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04ea">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04eb">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04ec">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04ed">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04ee">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04ef">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f0">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f1">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f2">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f3">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f4">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f5">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f6">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f7">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f8">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04f9">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04fa">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04fb">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04fc">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04fd">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04fe">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_04ff">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0500">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0501">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0502">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0503">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0504">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0505">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0506">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0507">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0508">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0509">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_050a">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_050b">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_050c">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_050d">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_050e">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_050f">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0510">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0511">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0512">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0513">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0514">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0515">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0516">false</item>
+    <item type="dimen" name="APKTOOL_DUMMY_0517">false</item>
+</resources>

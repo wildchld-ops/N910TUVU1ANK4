@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/guide_fullscreen" android:background="#bb000000" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/sensorcaptrue_help_image" android:background="@drawable/sensor_help" android:layout_width="200.0dip" android:layout_height="200.0dip" android:layout_marginLeft="80.0dip" android:layout_marginTop="160.0dip" android:contentDescription="@null" />
+    <ScrollView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="373.0dip">
+        <TextView android:textSize="19.0dip" android:textColor="@color/default_white_color" android:layout_gravity="center" android:id="@id/sensorcapture_help_msg" android:layout_width="300.0dip" android:layout_height="60.0dip" android:text="@string/sensorcapture_help_msg" android:fontFamily="sec-roboto-light" />
+    </ScrollView>
+    <Button android:textSize="18.0dip" android:textColor="@color/default_white_color" android:id="@id/sensorcaptrue_close_button" android:background="@drawable/overlay_help_button" android:layout_width="82.0dip" android:layout_height="34.0dip" android:layout_marginLeft="266.0dip" android:layout_marginTop="594.0dip" android:text="@string/crop_okay_text" android:contentDescription="@null" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="status_bar_accessibility_recent_apps">
+        <item quantity="other">최근 사용한 애플리케이션 %d개</item>
+        <item quantity="one">최근에 사용한 애플리케이션 1개</item>
+    </plurals>
+    <plurals name="flashbar_accessibility_recent_apps">
+        <item quantity="other">최근 사용한 애플리케이션 %d개</item>
+        <item quantity="one">최근에 사용한 애플리케이션 1개</item>
+    </plurals>
+</resources>

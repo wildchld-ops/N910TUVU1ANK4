@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/dtmf_twelve_key_dialer_view" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dtmf_twelve_key_dialer_view_height" android:layout_marginTop="@dimen/dtmf_twelve_key_dialer_view_top" android:layout_marginBottom="@dimen/dtmf_twelve_key_dialer_view_bottom"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/dtmfDialerFieldContainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:id="@id/dialpad_elapsed_time_container" android:background="@color/dtmf_dialer_display_background" android:layout_width="fill_parent" android:layout_height="@dimen/callstate_container_height">
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="@dimen/callstate_container_text_size" android:textColor="@color/dtmf_dialer_display_text" android:gravity="left|center" android:id="@id/dialpad_elapsed_time_title" android:paddingLeft="13.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_alignParentLeft="true" />
+            <TextView android:textColor="@color/dtmf_dialer_display_text" android:id="@id/dialpad_elapsed_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/InCallElapsedTime" />
+        </RelativeLayout>
+        <EditText android:textSize="@dimen/dtmf_dialer_field_text_size" android:textColor="@color/dtmf_dialer_display_text" android:gravity="center" android:id="@id/dtmfDialerField" android:background="@color/dtmf_dialer_display_background" android:paddingLeft="@dimen/dtmf_dialer_field_padding" android:paddingRight="@dimen/dtmf_dialer_field_padding" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="fill_parent" android:layout_height="@dimen/easy_dtmf_dialer_field_height" android:scrollHorizontally="true" android:singleLine="true" android:freezesText="true" />
+    </LinearLayout>
+    <include layout="@layout/dtmf_dialpad_twelve" />
+</LinearLayout>

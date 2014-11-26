@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ListView android:id="@id/addtolist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/popup_list_padding" android:paddingEnd="@dimen/popup_list_padding" />
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="top" android:orientation="vertical" android:id="@id/guide_hand_pointer_wallpaper_for_step2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_hub_chooser_insert_item_image_margin_top">
+        <LinearLayout android:id="@id/viewforSpacingParent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:id="@id/viewforSpacing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="48.0dip" />
+        </LinearLayout>
+        <ImageView android:id="@id/guide_hand_pointer2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_hub_home_insert_item_image_margin_top" android:src="@drawable/help_tap" android:layout_below="@id/viewforSpacingParent" android:contentDescription="@string/content_description_hand" android:layout_marginStart="@dimen/help_hub_home_insert_item_image_margin_left" />
+        <RelativeLayout android:id="@id/text_box" android:paddingTop="@dimen/help_hub_guide_textbox_padding_top" android:paddingBottom="@dimen/help_hub_guide_textbox_padding_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/guide_hand_pointer2" android:paddingStart="@dimen/help_hub_guide_textbox_padding_left" android:paddingEnd="@dimen/help_hub_guide_textbox_padding_right">
+            <ImageView android:id="@id/guide_up_pointer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/help_popup_picker_t_c" android:layout_alignParentTop="true" android:layout_marginStart="@dimen/help_hub_home_insert_item_pointer_up_margin_left" />
+            <TextView android:textSize="@dimen/help_hub_guide_text_size" android:textStyle="normal" android:textColor="@android:color/black" android:id="@id/guide_bubble_summary" android:background="@drawable/help_popup_picker_bg_w_01" android:paddingTop="@dimen/help_hub_guide_text_padding_top" android:paddingBottom="@dimen/help_hub_guide_text_padding_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/help_hub_home_insert_item_bubble_summary_margin_top" android:maxWidth="@dimen/help_hub_guide_text_width" android:text="@string/Tap_on_homeScreen" android:maxLines="3" android:layout_alignParentTop="true" android:paddingStart="@dimen/help_hub_guide_text_padding_left" android:paddingEnd="@dimen/help_hub_guide_text_padding_right" android:layout_marginStart="@dimen/help_hub_home_insert_item_bubble_summary_margin_left" android:layout_alignParentStart="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.keyguard.KeyguardHostView android:id="@id/keyguard_host_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:androidprv="http://schemas.android.com/apk/res/com.android.keyguard">
+    <LinearLayout android:orientation="horizontal" android:paddingTop="30.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/sec_contextual_event_container" />
+            <FrameLayout android:id="@id/sec_widget_container" android:layout_width="fill_parent" android:layout_height="wrap_content" androidprv:layout_childType="widgets">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <include android:layout_gravity="top" android:id="@id/sec_contextual_event_container" layout="@layout/sec_contextual_event_container" />
+                </LinearLayout>
+            </FrameLayout>
+        </FrameLayout>
+        <com.android.keyguard.KeyguardSecurityContainer android:gravity="right|center" android:id="@id/keyguard_security_container" android:padding="0.0dip" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.android.keyguard.KeyguardSecurityViewFlipper android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/view_flipper" android:paddingTop="@dimen/keyguard_security_view_margin" android:clipChildren="false" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </com.android.keyguard.KeyguardSecurityContainer>
+    </LinearLayout>
+</com.android.keyguard.KeyguardHostView>

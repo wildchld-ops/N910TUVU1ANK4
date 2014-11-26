@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <CheckBoxPreference android:title="@string/intcallsetting_outgoing_title" android:key="intcallsetting_outgoing" android:summary="@string/intcallsetting_outgoing_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/intcallsetting_incoming_title" android:key="intcallsetting_incoming" android:summary="@string/intcallsetting_incoming_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+    <CheckBoxPreference android:title="@string/intcallsetting_voice_noti_title" android:key="intcallsetting_voice_noti" android:summary="@string/intcallsetting_voice_noti_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
+</PreferenceScreen>

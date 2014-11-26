@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lockscreen_direction_descriptions">
+        <item>@null</item>
+        <item>@string/description_direction_up</item>
+        <item>@string/description_direction_left</item>
+        <item>@string/description_direction_down</item>
+    </array>
+    <item type="array" name="APKTOOL_DUMMY_0012">false</item>
+    <item type="array" name="APKTOOL_DUMMY_0013">false</item>
+    <item type="array" name="APKTOOL_DUMMY_0014">false</item>
+    <item type="array" name="APKTOOL_DUMMY_0015">false</item>
+    <item type="array" name="APKTOOL_DUMMY_0016">false</item>
+    <item type="array" name="APKTOOL_DUMMY_0017">false</item>
+</resources>

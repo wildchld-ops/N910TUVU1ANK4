@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListView android:id="@id/dualSimRadiolist" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:id="@id/softkey_layout_sw" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dsa_btn_layout_height" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/softkeyleft_sw" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/softkeyleft_sw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dsa_previous" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/softkeyright_sw" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/softkeyright_sw_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dsa_next" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/softkey_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/dsa_btn_layout_height" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/softkeyleft" android:background="@drawable/button_selector_pre" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tw_btn_icon_previous_holo" />
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/softkeyleft_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dsa_btn_margin_side" android:text="@string/doneButton" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/softkeyright" android:background="@drawable/button_selector_next" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <TextView android:textSize="@dimen/button_text_size" android:textColor="?android:twTextColorPrimary" android:id="@id/softkeyright_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

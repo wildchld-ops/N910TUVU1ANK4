@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="21.0dip" android:layout_marginRight="21.0dip">
+        <TextView android:textSize="18.0sp" android:textColor="#ff00b1d3" android:id="@id/subtitle1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text_color" android:id="@id/description1" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00b1d3" android:id="@id/subtitle2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text_color" android:id="@id/description2" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00b1d3" android:id="@id/subtitle3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text_color" android:id="@id/description3" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00b1d3" android:id="@id/subtitle4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text_color" android:id="@id/description4" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00b1d3" android:id="@id/subtitle5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text_color" android:id="@id/description5" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="#ff00b1d3" android:id="@id/subtitle6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/title_text_color" android:id="@id/description6" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sec-roboto-light" />
+    </LinearLayout>
+</ScrollView>

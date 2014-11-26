@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="@string/dsa_dual_sim_always_on"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:phone="http://schemas.android.com/apk/res/com.android.phone">
+    <PreferenceScreen android:persistent="false" android:title="@string/dsa_phone_number" android:key="button_phone_number_key">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.DsaPhoneNumber" />
+    </PreferenceScreen>
+    <PreferenceScreen android:persistent="false" android:title="@string/dsa_select_sim_card" android:key="button_set_sim_card_key" android:summary="@string/dsa_select_sim_card_summary">
+        <intent android:targetPackage="com.android.phone" android:action="android.intent.action.MAIN" android:targetClass="com.android.phone.DsaSelectSimCard" />
+    </PreferenceScreen>
+</PreferenceScreen>

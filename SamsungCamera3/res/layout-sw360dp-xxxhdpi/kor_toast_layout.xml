@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:configChanges="keyboardHidden|orientation" android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/toast_layout_root" android:background="#66000000" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/toast_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" />
+    <TextView android:textColor="#ffffffff" android:gravity="center_vertical" android:id="@id/toast_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="15.0dip" />
+</LinearLayout>

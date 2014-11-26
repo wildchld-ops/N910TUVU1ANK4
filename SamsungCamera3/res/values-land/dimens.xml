@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="effect_width">102.0dip</dimen>
+    <dimen name="mode_width">102.0dip</dimen>
+    <dimen name="mode_height">102.0dip</dimen>
+    <dimen name="mode_checkbox_padding_x">8.0dip</dimen>
+    <dimen name="mode_checkbox_padding_y">8.0dip</dimen>
+    <dimen name="mode_shadow_width">102.0dip</dimen>
+    <dimen name="mode_shadow_height">102.0dip</dimen>
+    <dimen name="mode_cursor_width">3.0dip</dimen>
+    <dimen name="mode_cursor_height">102.0dip</dimen>
+    <dimen name="mode_cursor_padding_top">6.5dip</dimen>
+    <dimen name="mode_cursor_padding_top_port">6.5dip</dimen>
+    <dimen name="mode_cursor_padding_left">1.0dip</dimen>
+</resources>

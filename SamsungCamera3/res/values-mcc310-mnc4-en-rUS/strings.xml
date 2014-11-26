@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="SM_AUTO_SELFIE_description">Tap the screen or place your finger on the heart rate sensor on the back of the phone to take selfies easily.</string>
+    <string name="MultiFrame_Helptext_SettingGuide">Hold the phone steady while taking pictures. To take instant pictures in low light, turn off %s in Settings.</string>
+    <string name="MultiFrame_Helptext_SettingGuide_Tab">Hold the phone steady until it finishes taking the picture. For faster pictures in low light, turn off Picture stabilization in Settings.</string>
+    <string name="message_size_limited">Message size limit reached</string>
+    <string name="editableshortcut_helptext">Touch and hold icon, then drag it to edit position of shortcuts</string>
+</resources>

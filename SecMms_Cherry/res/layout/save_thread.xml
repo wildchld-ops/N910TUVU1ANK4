@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/delete_thread_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <view android:scrollbarAlwaysDrawVerticalTrack="true" android:scrollbarStyle="insideOverlay" android:id="@id/delete_thread_list" android:background="#88000000" android:visibility="gone" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="1.0dip" android:listSelector="@android:color/transparent" android:drawSelectorOnTop="true" android:stackFromBottom="false" android:cacheColorHint="@android:color/transparent" android:divider="@android:drawable/divider_horizontal_bright" android:layout_weight="1.0" class="com.android.mms.ui.MessageListView"
+          xmlns:app="http://schemas.android.com/apk/res/com.android.mms" />
+    </LinearLayout>
+    <com.sec.android.touchwiz.widget.TwSoftkeyView android:id="@id/softkeyview" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentBottom="true"
+      xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+        <com.sec.android.touchwiz.widget.TwSoftkeyItem android:id="@id/softkeyleft" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="softkeyLeftRun" touchwiz:twSoftkeyItemType="text" touchwiz:twSoftkeyItemText="@string/save" />
+        <com.sec.android.touchwiz.widget.TwSoftkeyItem android:id="@id/softkeyright" android:layout_width="fill_parent" android:layout_height="fill_parent" android:onClick="softkeyRightRun" touchwiz:twSoftkeyItemType="text" touchwiz:twSoftkeyItemText="@string/no" />
+    </com.sec.android.touchwiz.widget.TwSoftkeyView>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/main_center_bar_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/view_center_bar_for_portrait_mode" android:layout_width="@dimen/center_bar_width" android:layout_height="@dimen/center_bar_height" />
+    <ImageView android:id="@id/view_center_bar_for_landscape_mode" android:layout_width="@dimen/center_bar_height" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/view_center_bar_focus_line_up" android:layout_width="@dimen/center_bar_width" android:layout_height="@dimen/center_bar_focus_line_height" />
+    <ImageView android:id="@id/view_center_bar_focus_line_down" android:layout_width="@dimen/center_bar_width" android:layout_height="@dimen/center_bar_focus_line_height" />
+    <ImageView android:id="@id/view_center_bar_focus_line_right" android:layout_width="@dimen/center_bar_focus_line_height" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/view_center_bar_focus_line_left" android:layout_width="@dimen/center_bar_focus_line_height" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/view_center_bar_focus_up" android:layout_width="@dimen/center_bar_focus_width" android:layout_height="@dimen/center_bar_focus_height" />
+    <ImageView android:id="@id/view_center_bar_focus_down" android:layout_width="@dimen/center_bar_focus_width" android:layout_height="@dimen/center_bar_focus_height" />
+    <ImageView android:id="@id/view_center_bar_focus_right" android:layout_width="@dimen/center_bar_focus_height" android:layout_height="@dimen/center_bar_focus_width" />
+    <ImageView android:id="@id/view_center_bar_focus_left" android:layout_width="@dimen/center_bar_focus_height" android:layout_height="@dimen/center_bar_focus_width" />
+    <ImageView android:id="@id/view_center_combination_for_portrait_mode" android:layout_width="@dimen/center_combination_width" android:layout_height="@dimen/center_combination_height" />
+    <ImageView android:id="@id/view_center_combination_for_landscape_mode" android:layout_width="@dimen/center_combination_height" android:layout_height="@dimen/center_combination_width" />
+</FrameLayout>

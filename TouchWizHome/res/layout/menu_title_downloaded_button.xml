@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/tab_widget_indicator_selector" android:focusable="true" android:clickable="true" android:descendantFocusability="blocksDescendants" android:onClick="onClickDownloadedButton" android:paddingStart="@dimen/toolbar_button_horizontal_padding" android:paddingEnd="@dimen/toolbar_button_horizontal_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/tab_text_size" android:textColor="@color/menu_title_bar_text_color" android:ellipsize="marquee" android:gravity="center" android:layout_gravity="center" android:id="@id/downloaded_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/menu_downloaded_icon_margin_top" android:text="@string/menu_tab_download" android:singleLine="true" android:shadowColor="#bf000000" android:shadowDx="1.0" android:shadowDy="1.0" android:shadowRadius="2.0" android:drawablePadding="8.0dip" android:drawableStart="@drawable/menu_downloaded_icon" />
+</FrameLayout>

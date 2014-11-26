@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="notification_panel_width">64.099976dip</dimen>
+    <dimen name="notification_panel_width_with_cocktailbar">64.099976dip</dimen>
+</resources>

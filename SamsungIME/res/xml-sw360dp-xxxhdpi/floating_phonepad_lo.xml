@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/floating_phonepad_default_key_width" android:keyHeight="@dimen/floating_phonepad_default_key_height" android:horizontalGap="@dimen/floating_phonepad_default_key_horizontal_gap" android:verticalGap="@dimen/floating_phonepad_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_phonepad_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-255" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_normal">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3784,3785,3786,3787,3772,3773,3782,3788,3789" android:popupCharacters="່້໊໋ຼຽໆ໌ໍ" android:keyEdgeFlags="left" android:keyLabel="່້໊" />
+        <Key android:codes="3713,3714,3716,3719" android:popupCharacters="ກຂຄງ" android:keyLabel="ກ - ງ" />
+        <Key android:codes="3720,3754,3722,3725,3732" android:popupCharacters="ຈສຊຍດ" android:keyLabel="ຈ - ດ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3784,3785,3786,3787,3772,3773,3782,3788,3789" android:popupCharacters="່້໊໋ຼຽໆ໌ໍ" android:keyEdgeFlags="left" android:keyLabel="່້໊" />
+        <Key android:codes="3713,3714,3716,3719" android:popupCharacters="ກຂຄງ" android:keyLabel="ກ - ງ" />
+        <Key android:codes="3720,3754,3722,3725,3732" android:popupCharacters="ຈສຊຍດ" android:keyLabel="ຈ - ດ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_url">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3784,3785,3786,3787,3772,3773,3782,3788,3789" android:popupCharacters="່້໊໋ຼຽໆ໌ໍ" android:keyEdgeFlags="left" android:keyLabel="່້໊" />
+        <Key android:codes="3713,3714,3716,3719" android:popupCharacters="ກຂຄງ" android:keyLabel="ກ - ງ" />
+        <Key android:codes="3720,3754,3722,3725,3732" android:popupCharacters="ຈສຊຍດ" android:keyLabel="ຈ - ດ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3784,3785,3786,3787,3772,3773,3782,3788,3789" android:popupCharacters="່້໊໋ຼຽໆ໌ໍ" android:keyEdgeFlags="left" android:keyLabel="່້໊" />
+        <Key android:codes="3713,3714,3716,3719" android:popupCharacters="ກຂຄງ" android:keyLabel="ກ - ງ" />
+        <Key android:codes="3720,3754,3722,3725,3732" android:popupCharacters="ຈສຊຍດ" android:keyLabel="ຈ - ດ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_email">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3784,3785,3786,3787,3772,3773,3782,3788,3789" android:popupCharacters="່້໊໋ຼຽໆ໌ໍ" android:keyEdgeFlags="left" android:keyLabel="່້໊" />
+        <Key android:codes="3713,3714,3716,3719" android:popupCharacters="ກຂຄງ" android:keyLabel="ກ - ງ" />
+        <Key android:codes="3720,3754,3722,3725,3732" android:popupCharacters="ຈສຊຍດ" android:keyLabel="ຈ - ດ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row android:rowEdgeFlags="top" android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3784,3785,3786,3787,3772,3773,3782,3788,3789" android:popupCharacters="່້໊໋ຼຽໆ໌ໍ" android:keyEdgeFlags="left" android:keyLabel="່້໊" />
+        <Key android:codes="3713,3714,3716,3719" android:popupCharacters="ກຂຄງ" android:keyLabel="ກ - ງ" />
+        <Key android:codes="3720,3754,3722,3725,3732" android:popupCharacters="ຈສຊຍດ" android:keyLabel="ຈ - ດ" />
+        <Key android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/floating_phonepad_key_icon_backspace_xml" />
+    </Row>
+    <Row>
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3733,3734,3735,3737,3738" android:popupCharacters="ຕຖທນບ" android:keyEdgeFlags="left" android:keyLabel="ຕ - ບ" />
+        <Key android:codes="3739,3740,3741,3742,3743" android:popupCharacters="ປຜຝພຟ" android:keyLabel="ປ - ຟ" />
+        <Key android:codes="3745,3746,3747,3749,3751" android:popupCharacters="ມຢຣລວ" android:keyLabel="ມ - ວ" />
+        <Key android:codes="10" android:keyEdgeFlags="right" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3755,3757,3758,3804,3805" android:popupCharacters="ຫອຮໜໝ" android:keyEdgeFlags="left" android:keyLabel="ຫ - ໝ" />
+        <Key android:codes="3760,3761,3762,3763,3764,3765,3766,3767" android:popupCharacters="ະັາຳິີຶື" android:keyLabel="ະ - ື" />
+        <Key android:codes="3768,3769,3771,3776,3777,3778,3779,3780" android:popupCharacters="ຸູົເແໂໃໄ" android:keyLabel="ຸ - ໄ" />
+        <Key android:codes="46,44,63,33" android:keyEdgeFlags="right" android:keyLabel=".,?!" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3755,3757,3758,3804,3805" android:popupCharacters="ຫອຮໜໝ" android:keyEdgeFlags="left" android:keyLabel="ຫ - ໝ" />
+        <Key android:codes="3760,3761,3762,3763,3764,3765,3766,3767" android:popupCharacters="ະັາຳິີຶື" android:keyLabel="ະ - ື" />
+        <Key android:codes="3768,3769,3771,3776,3777,3778,3779,3780" android:popupCharacters="ຸູົເແໂໃໄ" android:keyLabel="ຸ - ໄ" />
+        <Key android:codes="46,44,63,33" android:keyEdgeFlags="right" android:keyLabel=".,?!" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3755,3757,3758,3804,3805" android:popupCharacters="ຫອຮໜໝ" android:keyEdgeFlags="left" android:keyLabel="ຫ - ໝ" />
+        <Key android:codes="3760,3761,3762,3763,3764,3765,3766,3767" android:popupCharacters="ະັາຳິີຶື" android:keyLabel="ະ - ື" />
+        <Key android:codes="3768,3769,3771,3776,3777,3778,3779,3780" android:popupCharacters="ຸູົເແໂໃໄ" android:keyLabel="ຸ - ໄ" />
+        <Key android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3755,3757,3758,3804,3805" android:popupCharacters="ຫອຮໜໝ" android:keyEdgeFlags="left" android:keyLabel="ຫ - ໝ" />
+        <Key android:codes="3760,3761,3762,3763,3764,3765,3766,3767" android:popupCharacters="ະັາຳິີຶື" android:keyLabel="ະ - ື" />
+        <Key android:codes="3768,3769,3771,3776,3777,3778,3779,3780" android:popupCharacters="ຸູົເແໂໃໄ" android:keyLabel="ຸ - ໄ" />
+        <Key android:codes="-113" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3755,3757,3758,3804,3805" android:popupCharacters="ຫອຮໜໝ" android:keyEdgeFlags="left" android:keyLabel="ຫ - ໝ" />
+        <Key android:codes="3760,3761,3762,3763,3764,3765,3766,3767" android:popupCharacters="ະັາຳິີຶື" android:keyLabel="ະ - ື" />
+        <Key android:codes="3768,3769,3771,3776,3777,3778,3779,3780" android:popupCharacters="ຸູົເແໂໃໄ" android:keyLabel="ຸ - ໄ" />
+        <Key android:codes="-114" android:popupKeyboard="@xml/popup_domain_keyboard" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_dot_com" android:keyLabel="@string/key_label_dot_com" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="3755,3757,3758,3804,3805" android:popupCharacters="ຫອຮໜໝ" android:keyEdgeFlags="left" android:keyLabel="ຫ - ໝ" />
+        <Key android:codes="3760,3761,3762,3763,3764,3765,3766,3767" android:popupCharacters="ະັາຳິີຶື" android:keyLabel="ະ - ື" />
+        <Key android:codes="3768,3769,3771,3776,3777,3778,3779,3780" android:popupCharacters="ຸູົເແໂໃໄ" android:keyLabel="ຸ - ໄ" />
+        <Key android:codes="-113" android:keyEdgeFlags="right" android:keyOutputText="@string/key_label_www_dot" android:keyLabel="@string/key_label_www_dot" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_normal">
+        <Key android:keyWidth="@dimen/floating_phonepad_half_key_width" android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/floating_phonepad_half_key_width" android:horizontalGap="@dimen/floating_phonepad_half_key_gap" android:codes="-108" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+        <Key android:codes="48" android:keyLabel="StrEmpty" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="48" android:keyLabel="StrEmpty" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="48" android:keyLabel="StrEmpty" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url_single_language">
+        <Key android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="48" android:keyLabel="StrEmpty" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_email">
+        <Key android:keyWidth="@dimen/floating_phonepad_half_key_width" android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/floating_phonepad_half_key_width" android:horizontalGap="@dimen/floating_phonepad_half_key_gap" android:codes="-108" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+        <Key android:codes="48" android:keyLabel="StrEmpty" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyboardMode="@id/mode_url">
+        <Key android:keyWidth="@dimen/floating_phonepad_half_key_width" android:horizontalGap="@dimen/floating_phonepad_first_col_horizontal_gap" android:codes="-102" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:keyWidth="@dimen/floating_phonepad_half_key_width" android:horizontalGap="@dimen/floating_phonepad_half_key_gap" android:codes="-108" android:keyIcon="@drawable/phonepad_key_icon_language_change_xml" />
+        <Key android:codes="48" android:keyLabel="StrEmpty" />
+        <Key android:codes="32" android:keyIcon="@drawable/phonepad_key_icon_space_xml" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/floating_popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:verticalGap="@dimen/floating_phonepad_last_line_vertical_gap" />
+</Keyboard>

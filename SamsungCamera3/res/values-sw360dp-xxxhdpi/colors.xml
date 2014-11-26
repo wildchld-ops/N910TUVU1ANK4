@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="dark_text_stroke_color">#ff4b4b4b</color>
+    <color name="virtual_mode_undo_text_color">#fff5f5f5</color>
+    <color name="undo_button_shadow">#ff000000</color>
+    <item type="color" name="APKTOOL_DUMMY_0028">false</item>
+</resources>

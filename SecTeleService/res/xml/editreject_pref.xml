@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:entries="@array/match_criteria_entries" android:title="@string/menu_MatchCriteia" android:key="match_criteria_mode" android:entryValues="@array/match_criteria_values" />
+</PreferenceScreen>

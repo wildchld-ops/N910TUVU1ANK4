@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.mms.ui.RecipientListItem android:orientation="horizontal" android:id="@id/group_list_item_layout" android:background="@drawable/msg_list_background_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.widget.QuickContactBadge android:layout_gravity="center" android:id="@id/avatar" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="5.0dip" style="@*android:style/Widget.QuickContactBadge.WindowSmall" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="11.0dip" android:layout_weight="1.0">
+        <TextView android:textSize="22.0sp" android:textColor="@color/list_from_color" android:ellipsize="marquee" android:id="@id/from" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="3120" />
+        <TextView android:textSize="17.0dip" android:textColor="@color/list_subject_color" android:ellipsize="end" android:id="@id/subject" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+    </LinearLayout>
+    <ImageView android:id="@id/remove_recipient" android:paddingRight="5.0dip" android:focusable="true" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/selector_btn_minus" />
+</com.android.mms.ui.RecipientListItem>

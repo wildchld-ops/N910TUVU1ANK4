@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
+    <PreferenceCategory android:title="@string/pref_sms_general_settings_title" android:key="pref_key_storage_settings">
+        <Preference android:persistent="false" android:layout="?android:preferenceLayoutChild" android:title="@string/pref_title_sms_restore" android:key="pref_key_sms_restore" android:summary="@string/pref_summary_sms_restore" />
+        <CheckBoxPreference android:title="@string/pref_title_auto_delete" android:key="pref_key_auto_delete" android:summary="@string/pref_summary_auto_delete" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <Preference android:persistent="false" android:title="@string/pref_title_sms_delete" android:key="pref_key_sms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+        <Preference android:persistent="false" android:title="@string/pref_title_mms_delete" android:key="pref_key_mms_delete_limit" android:summary="@string/pref_summary_delete_limit" android:dependency="pref_key_auto_delete" />
+        <CheckBoxPreference android:title="@string/pref_truncate_long_messages_title" android:key="pref_key_truncate_long_messages" android:summary="@string/pref_truncate_long_messages_summary" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/set_text_templates" android:key="pref_key_text_templates">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.template.TextTemplateListActivity">
+                <extra android:name="callFromSettings" android:value="true" />
+            </intent>
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="@string/priority_sender" android:key="pref_key_priority_sender" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_open_links_from_unknown_senders" android:key="pref_key_urllink_option_enable" android:summary="@string/pref_title_open_links_from_unknown_senders_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_forward" android:key="pref_key_insert_sender_info_when_fwd_msg_category">
+        <CheckBoxPreference android:title="@string/sender_info_title" android:key="pref_key_insert_sender_info_when_fwd_msg" android:summary="@string/sender_info_setting" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_freemessage_setting_title" android:key="pref_key_enable_freemessage" android:defaultValue="false">
+        <CheckBoxPreference android:title="@string/menu_freemessage_setting_title" android:key="pref_key_enable_freemessage" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_rcs_setting_title" android:key="pref_key_rcs_setting">
+        <CheckBoxPreference android:title="@string/settings_popup_deactivate_service_title" android:key="pref_key_rcs_service" android:summary="@string/pref_summary_rcs_service" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <ListPreference android:entries="@array/pref_entries_default_messaging_method" android:title="@string/pref_title_default_messaging_method" android:key="pref_key_default_messaging_method" android:summary="@string/pref_summary_default_messaging_method" android:dependency="pref_key_enable_alias" android:defaultValue="Automatic" android:dialogTitle="@string/pref_title_default_messaging_method" android:entryValues="@array/pref_entry_values_default_messaging_method" />
+        <CheckBoxPreference android:title="@string/pref_title_alias_enabled" android:key="pref_key_enable_alias" android:summary="@string/pref_summary_add_alias" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_rcs_service" android:defaultValue="false" />
+        <com.android.mms.rcs.settings.AliasPreference android:title="@string/pref_title_alais_text" android:key="pref_key_alias_text" android:widgetLayout="@layout/round_more_icon" android:dependency="pref_key_enable_alias" />
+        <CheckBoxPreference android:title="@string/pref_title_send_display_status" android:key="pref_key_send_display_status" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <com.android.mms.rcs.settings.AutoDownloadFilePreference android:entries="@array/pref_entries_auto_download_file_transfer" android:title="@string/pref_auto_download_file_transfer" android:key="pref_key_auto_download_file_transfer" android:widgetLayout="@layout/round_more_icon" android:defaultValue="0" android:dialogTitle="@string/pref_auto_download_file_transfer" android:entryValues="@array/pref_entry_values_auto_download_file_transfer" />
+        <CheckBoxPreference android:title="@string/pref_roaming_auto_download" android:key="pref_key_roaming_auto_download" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_send_display_status" android:key="pref_key_rcs_display_status" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_rcs_service" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/im_mypage_label_auto_acceptation" android:key="pref_key_rcs_ft_auto_acceptation_home" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_rcs_service" />
+        <CheckBoxPreference android:title="@string/im_mypage_label_roaming_auto_acceptation" android:key="pref_key_rcs_ft_auto_acceptation_roaming" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_rcs_service" />
+        <com.android.mms.rcs.settings.ImageSizePreference android:persistent="true" android:entries="@array/image_resize_entries" android:title="@string/pref_show_image_size_dialog" android:key="pref_key_rcs_ft_show_image_size_dialog" android:summary="Original" android:widgetLayout="@layout/round_more_icon" android:dependency="pref_key_rcs_service" android:defaultValue="Original" android:dialogTitle="@string/pref_show_image_size_dialog" android:entryValues="@array/image_resize_values" />
+        <CheckBoxPreference android:title="@string/pref_show_my_typing" android:key="pref_key_rcs_show_typing" android:summary="@string/pref_show_my_typing_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_sms_settings_title" android:key="pref_key_sms_settings">
+        <CheckBoxPreference android:title="@string/pref_title_sms_delivery_reports" android:key="pref_key_sms_delivery_reports" android:summary="@string/pref_summary_sms_delivery_reports" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <Preference android:title="@string/pref_title_manage_sim_messages" android:key="pref_key_manage_sim_messages" android:summary="@string/pref_summary_manage_sim_messages" />
+        <Preference android:title="@string/pref_title_manage_SD_messages" android:key="pref_key_manage_SD_messages" android:summary="@string/pref_summary_manage_SD_messages" />
+        <EditTextPreference android:singleLine="true" android:selectAllOnFocus="true" android:maxLength="21" android:phoneNumber="true" android:title="@string/pref_summary_manage_smsc_messages" android:key="pref_key_manage_smsc_address" android:summary="@string/pref_title_manage_smsc_messages" android:dialogTitle="@string/set_message_centre" />
+        <ListPreference android:entries="@array/pref_entries_sms_input_mode" android:title="@string/pref_title_sms_input_mode" android:key="pref_key_sms_input_mode" android:summary="@string/pref_summary_sms_input_mode" android:defaultValue="Automatic" android:dialogTitle="@string/pref_dialog_title_sms_input_mode" android:entryValues="@array/pref_entry_values_sms_input_mode" />
+        <ListPreference android:entries="@array/pref_entries_sms_expiry_date" android:title="@string/pref_title_sms_expiry_date" android:key="pref_key_sms_expiry" android:summary="@string/pref_summary_sms_expiry_date" android:defaultValue="3 days" android:dialogTitle="@string/pref_dialog_title_sms_expiry_date" android:entryValues="@array/pref_entry_values_sms_expiry_date" />
+        <CheckBoxPreference android:title="@string/sms_reassembly" android:key="pref_key_sms_reassembly" android:summary="@string/sms_reassembly_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_mms_settings_title" android:key="pref_key_mms_settings">
+        <CheckBoxPreference android:title="@string/pref_title_mms_group_mms" android:key="pref_key_mms_group_mms" android:summary="@string/pref_summary_mms_group_mms" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_delivery_reports" android:key="pref_key_mms_delivery_reports" android:summary="@string/pref_summary_mms_delivery_reports" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_send_mms_delivery_reports" android:key="pref_key_send_mms_delivery_reports" android:summary="@string/pref_summary_allow_mms_delivery_reports" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_read_reports" android:key="pref_key_mms_read_reports" android:summary="@string/pref_summary_mms_read_reports" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_add_subject_field" android:key="pref_key_mms_add_subject_field" android:summary="@string/pref_summary_mms_add_subject_field" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval" android:summary="@string/pref_summary_mms_auto_retrieval" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_retrieval_during_roaming" android:summary="@string/pref_summary_mms_retrieval_during_roaming" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_mms_auto_retrieval" android:defaultValue="false" /> // [[ SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM
+<CheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval_sim1" android:summary="@string/pref_summary_mms_auto_retrieval" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_retrieval_during_roaming_sim1" android:summary="@string/pref_summary_mms_retrieval_during_roaming" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_mms_auto_retrieval_sim1" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_auto_retrieval" android:key="pref_key_mms_auto_retrieval_sim2" android:summary="@string/pref_summary_mms_auto_retrieval" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_mms_retrieval_during_roaming" android:key="pref_key_mms_retrieval_during_roaming_sim2" android:summary="@string/pref_summary_mms_retrieval_during_roaming" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_mms_auto_retrieval_sim2" android:defaultValue="false" /> // ]] SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM
+<ListPreference android:entries="@array/pref_entries_mms_creation_mode" android:title="@string/pref_title_mms_creation_mode" android:key="pref_key_mms_creation_mode" android:summary="@string/pref_summary_mms_creation_mode" android:defaultValue="free" android:dialogTitle="@string/pref_dialog_title_mms_creation_mode" android:entryValues="@array/pref_entry_values_mms_creation_mode" />
+        <CheckBoxPreference android:title="@string/pref_mms_change_over_alarm_title" android:key="pref_key_mms_change_over_alarm" android:summary="@string/pref_mms_change_over_alarm" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/reply_all_preference_text" android:key="pref_key_mms_allow_reply_all" android:summary="@string/reply_all_preference_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <ListPreference android:entries="@array/expiry_date_entries" android:title="@string/expiry_date_preferences" android:key="pref_key_mms_expiry_time" android:summary="@string/expiry_date_preferences_summary" android:defaultValue="4" android:entryValues="@array/expiry_date_values" />
+        <ListPreference android:entries="@array/mms_priority_entries" android:title="@string/message_priority" android:key="pref_key_mmspriority" android:summary="@string/mms_priority_summary" android:defaultValue="2" android:dialogTitle="@string/message_priority" android:entryValues="@array/mms_priority_values" />
+        <ListPreference android:entries="@array/delivery_time_entries" android:title="@string/message_delivery_time" android:key="pref_key_mms_delivery_time" android:summary="@string/message_delivery_time" android:defaultValue="0" android:dialogTitle="@string/message_delivery_time" android:entryValues="@array/delivery_time_values" />
+        <EditTextPreference android:enabled="false" android:singleLine="true" android:title="@string/pref_title_mmsc_url" android:key="pref_mmsc_url" android:summary="http://mmsc.vnet.mobi" android:defaultValue="http://mmsc.vnet.mobi" android:dialogTitle="@string/pref_title_mmsc_url" />
+        <EditTextPreference android:enabled="false" android:singleLine="true" android:title="@string/pref_title_mmsc_port" android:key="pref_mmsc_port" android:summary="80" android:defaultValue="80" android:dialogTitle="@string/pref_title_mmsc_port" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/display_settings_title" android:key="pref_key_display_settings">
+        <com.android.mms.ui.FontSizePreference android:entries="@array/pref_entries_font_size" android:title="@string/pref_title_font_size" android:key="pref_key_font_size" android:dialogTitle="@string/pref_title_font_size" android:entryValues="@array/pref_entry_values_font_size" />
+        <PreferenceScreen android:title="@string/pref_title_bubble_style" android:key="pref_key_bubble_style" android:summary="@string/set_skin">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.BubbleStyle" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/pref_title_background_style" android:key="pref_key_background_color" android:summary="@string/set_skin">
+            <intent android:targetPackage="com.android.mms" android:action="android.intent.action.MAIN" android:targetClass="com.android.mms.settings.BackgroundStyle" />
+        </PreferenceScreen>
+        <CheckBoxPreference android:title="@string/pref_title_split_view" android:key="pref_key_split_view" android:summary="@string/pref_summary_split_view" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_font_size_by_volume_key_enable" android:key="pref_key_font_size_by_volume_key_enable" android:summary="@string/pref_summary_font_size_by_volume_key_enable" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_push_message_settings_title" android:key="pref_key_push_message_settings">
+        <CheckBoxPreference android:title="@string/pref_title_push_message_enabled" android:key="pref_key_enable_push_message" android:summary="@string/pref_summary_push_message_enabled" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <ListPreference android:entries="@array/pref_entries_service_loading_action" android:title="@string/pref_title_service_loading_action" android:key="pref_key_service_loading_action" android:dependency="pref_key_enable_push_message" android:defaultValue="Prompt" android:dialogTitle="@string/pref_dialog_title_service_loading_action" android:entryValues="@array/pref_entry_values_service_loading_action" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_cb_settings_title" android:key="pref_key_cb_settings">
+        <CheckBoxPreference android:title="@string/pref_title_cb_activation" android:key="pref_key_cb_settings_activation" android:summary="@string/pref_summary_cb_activation" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <PreferenceScreen android:title="@string/pref_title_channel_configuration" android:key="pref_key_channel_configuration" android:dependency="pref_key_cb_settings_activation">
+            <intent android:targetPackage="com.android.mms" android:targetClass="com.android.mms.ui.CbConfigPreferenceActivity" />
+        </PreferenceScreen>
+// [[ SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM <CheckBoxPreference android:title="@string/set_title_cell_broadcast" android:key="pref_key_cb_settings_activation_checkbox" android:defaultValue="false" />
+// ]]
+                      SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM
+</PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_notification_settings_title" android:key="pref_notification_settings">
+        <CheckBoxPreference android:title="@string/pref_title_notification_enabled" android:key="pref_key_enable_notifications" android:summary="@string/pref_summary_notification_enabled" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_backlight" android:key="pref_key_backlight" android:summary="@string/pref_summary_notification_backlight" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_enable_notifications" android:defaultValue="true" />
+        <com.android.mms.ui.MmsRingtonePreference android:title="@string/pref_title_notification_ringtone" android:key="pref_key_ringtone" android:dependency="pref_key_enable_notifications" android:defaultValue="content://settings/system/notification_sound" android:ringtoneType="notification" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_vibrateWhen" android:key="pref_key_vibrateWhen_checkbox" android:summary="@string/pref_summary_notification_vibrateWhen" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_enable_notifications" android:defaultValue="true" />
+        <ListPreference android:entries="@array/msg_repetition_alert_Array" android:title="@string/pref_msg_repetition_alert" android:key="pref_key_msg_reminder_alert" android:dependency="pref_key_enable_notifications" android:defaultValue="1" android:entryValues="@array/msg_repetition_alert_Array_values" />
+        <CheckBoxPreference android:title="@string/pref_title_message_popup" android:key="pref_key_enable_popup_reply" android:summary="@string/pref_summary_message_popup" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preview_lockscreen" android:key="pref_key_enable_preview_message" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preview_statusbar" android:key="pref_key_enable_statusbar_preview_message" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+//
+                      [[ SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM <CheckBoxPreference android:title="@string/pref_title_notification_backlight" android:key="pref_key_backlight_sim2" android:summary="@string/pref_summary_notification_backlight" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_enable_notifications" android:defaultValue="true" />
+        <com.android.mms.ui.MmsRingtonePreference android:title="@string/pref_title_notification_ringtone" android:key="pref_key_ringtone_sim2" android:dependency="pref_key_enable_notifications" android:defaultValue="content://settings/system/notification_sound_2" android:ringtoneType="notification" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_vibrateWhen" android:key="pref_key_vibrateWhen_checkbox_sim2" android:summary="@string/pref_summary_notification_vibrateWhen" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_enable_notifications" android:defaultValue="true" />
+        <ListPreference android:entries="@array/msg_repetition_alert_Array" android:title="@string/pref_msg_repetition_alert" android:key="pref_key_msg_reminder_alert_sim2" android:dependency="pref_key_enable_notifications" android:defaultValue="1" android:entryValues="@array/msg_repetition_alert_Array_values" />
+        <CheckBoxPreference android:title="@string/pref_title_message_popup" android:key="pref_key_enable_popup_reply_sim2" android:summary="@string/pref_summary_message_popup" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preview_lockscreen" android:key="pref_key_enable_preview_message_sim2" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <CheckBoxPreference android:title="@string/preview_statusbar" android:key="pref_key_enable_statusbar_preview_message_sim2" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+//
+                      [[
+                      SEC_PRODUCT_FEATURE_COMMON_USE_MULTISIM
+</PreferenceCategory>
+    <PreferenceCategory android:title="@string/cmas_setting_title" android:key="pref_cmas_settings">
+        <PreferenceScreen android:title="@string/pref_title_settings_cmas" android:key="pref_key_cmas" android:summary="@string/pref_summary_alert_cmas" />
+        <CheckBoxPreference android:title="@string/cmas_receive" android:key="pref_cmas_receive_class1" android:defaultValue="true" />
+        <Preference android:title="@string/pref_title_notification_preview_cmas" android:key="pref_key_emergency_alert" android:summary="@string/cmas_notification_preive_summary" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_vibrateWhen" android:key="pref_key_cmas_vibrateWhen_checkbox" android:summary="@string/pref_summary_cmas_vibrateWhen" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <CheckBoxPreference android:title="@string/pref_title_notification_alertWhen" android:key="pref_key_cmas_audioWhen_checkbox" android:summary="@string/pref_summary_notification_alertWhenSound" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="true" />
+        <ListPreference android:entries="@array/msg_reminder_alert_Array" android:title="@string/cmas_reminder" android:key="pref_key_emergency_alert_reminder" android:defaultValue="0" android:entryValues="@array/msg_reminder_alert_Array_values" />
+        <Preference android:title="@string/explainforCMASTitle" android:key="pref_key_explain_emergency_alert" android:dependency="pref_cmas_receive_class1" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_signature_settings_title" android:key="pref_signature_settings">
+        <CheckBoxPreference android:title="@string/pref_title_signature_enabled" android:key="pref_key_enable_signature" android:summary="@string/pref_summary_add_signature" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <com.android.mms.ui.SignaturePreference android:title="@string/pref_title_signature_text" android:key="pref_key_signature_text" android:dependency="pref_key_enable_signature" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_callback_title" android:key="pref_callback_settings">
+        <CheckBoxPreference android:title="@string/pref_title_callback_enabled" android:key="pref_key_enable_callback" android:summary="@string/pref_title_callback_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <EditTextPreference android:singleLine="true" android:maxLength="20" android:title="@string/pref_title_callback_text" android:key="pref_key_callback_text" android:summary="@string/pref_title_callback_text" android:dependency="pref_key_enable_callback" android:inputType="phone" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_spam_message_settings_title" android:key="pref_key_spam_settings">
+        <ListPreference android:entries="@array/pref_entries_spam_option" android:title="@string/pref_title_spam_option" android:key="pref_key_spam_option" android:defaultValue="2" android:dialogTitle="@string/pref_title_spam_option" android:entryValues="@array/pref_entry_values_spam_option" />
+        <CheckBoxPreference android:title="@string/spam_list" android:key="pref_key_spam_option_enable" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <Preference android:title="@string/add_to_spam_numbers" android:key="pref_key_spam_num_add" android:summary="@string/spam_numbers_summary" android:dependency="pref_key_spam_option_enable" />
+        <Preference android:title="@string/add_to_spam_phrases" android:key="pref_key_spam_text_add" android:summary="@string/spam_phrases_summary" android:dependency="pref_key_spam_option_enable" />
+        <CheckBoxPreference android:title="@string/pref_title_spam_filter_unknown_senders" android:key="pref_key_spam_filter_unknown_enable" android:summary="@string/spam_blocksender_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:dependency="pref_key_spam_option_enable" android:defaultValue="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_delay_settings_title">
+        <CheckBoxPreference android:title="@string/pref_delay_settings_title" android:key="pref_key_enable_delaysending" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" android:defaultValue="false" />
+        <ListPreference android:entries="@array/msg_delay_alert_Array" android:title="@string/pref_msg_delay_alert" android:key="pref_key_msg_delay_sending" android:dependency="pref_key_enable_delaysending" android:defaultValue="3" android:entryValues="@array/msg_delay_alert_Array_values" />
+    </PreferenceCategory>
+    <Preference android:enabled="false" android:key="pref_key_validity_period" android:defaultValue="0xff" />
+</PreferenceScreen>

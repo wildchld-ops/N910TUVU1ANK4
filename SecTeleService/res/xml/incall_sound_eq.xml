@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference android:persistent="false" android:entries="@array/voicecall_eq_list_entries_no_callpose" android:title="@string/menu_voiceCallEqListSetting" android:key="voicecall_eq_list_setting" android:summary="@string/summary_voiceCallEqListSetting" android:entryValues="@array/voicecall_eq_list_values_no_callpose" />
+    <PreferenceScreen android:enabled="true" android:title="@string/category_voiceCallEqSettings" android:key="voicecall_eq_analysis_setting" android:summary="@string/summary_voiceCallEqAnalysisSetting">
+        <intent android:action="com.sec.hearingadjust.launch" />
+    </PreferenceScreen>
+</PreferenceScreen>

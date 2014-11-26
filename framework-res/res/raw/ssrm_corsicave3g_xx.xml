@@ -1,0 +1,97 @@
+<LevelsModel>
+
+    <steps>
+        <step id="0" temp="380"/>
+        <step id="1" temp="400"/>
+        <step id="2" temp="430"/>
+    </steps>
+
+    <writers>
+        <writer name="SIOPLevel"/>
+        <writer name="Charging"/>
+    </writers>
+
+    <conditions>
+        <condition name="BrowserMode"/>
+        <condition name="ScreenOff"/>
+        <condition name="ScreenOffInCall"/>
+        <condition name="HotGameControl1"/>
+    </conditions>
+
+    <levels>
+        <!-- The default layer is always at the bottom of the stack. -->
+        <!-- 'condition' tag must not be used. -->
+        <level default="true">
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="0"/>
+                        <setting writer="Charging"      value="100"/>
+                    </settings>
+                </state>
+                <state step="1">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="1"/>
+                        <setting writer="Charging"      value="100"/>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="SIOPLevel"    value="2"/>
+                        <setting writer="Charging"      value="100"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="BrowserMode"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOff"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging" value="100" option="forced"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="ScreenOffInCall"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                    </settings>
+                </state>
+                <state step="2">
+                    <settings>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+        <level>
+            <condition name="HotGameControl1"/>
+            <battery>
+                <state step="0">
+                    <settings>
+                        <setting writer="Charging"      value="50"/>
+                    </settings>
+                </state>
+            </battery>
+        </level>
+
+    </levels>
+
+</LevelsModel>

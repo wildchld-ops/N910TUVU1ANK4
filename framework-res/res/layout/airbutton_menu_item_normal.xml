@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/APKTOOL_DUMMY_00d2" android:layout_width="wrap_content" android:layout_height="71.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/airbutton_menu_item_imageview_only" android:layout_width="59.0dip" android:layout_height="59.0dip" android:layout_marginLeft="1.0dip" android:layout_marginTop="1.0dip" android:layout_marginRight="1.0dip" android:layout_marginBottom="11.0dip" android:scaleType="fitXY" />
+    <ImageView android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:id="@id/airbutton_menu_item_imageview" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginTop="1.0dip" android:scaleType="centerInside" />
+    <TextView android:textSize="12.0dip" android:textColor="#ff474747" android:ellipsize="end" android:gravity="center" android:id="@id/airbutton_menu_item_textview" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="31.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="11.0dip" android:maxWidth="74.0dip" android:minWidth="49.0dip" android:maxLines="2" android:includeFontPadding="false" />
+</FrameLayout>

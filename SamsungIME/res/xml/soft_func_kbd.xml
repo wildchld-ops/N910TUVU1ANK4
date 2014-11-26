@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/soft_func_kbd_default_key_width" android:keyHeight="@dimen/soft_func_kbd_default_key_height" android:horizontalGap="@dimen/soft_func_kbd_default_key_horizontal_gap" android:verticalGap="@dimen/soft_func_kbd_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyWidth="100.0%p" android:keyHeight="@dimen/soft_func_kbd_symbol_key_height" android:horizontalGap="0.0px" android:keyboardMode="@id/soft_func_kbd_sym">
+        <Key android:codes="-160" android:keyEdgeFlags="left" android:keyIcon="@drawable/soft_func_kbd_sym_bg" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/soft_func_kbd_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row>
+        <Key android:codes="-161" android:keyEdgeFlags="left" android:keyLabel="123" />
+        <Key android:codes="-162" android:keyLabel="SYM" />
+        <Key android:codes="-163" android:keyLabel="LANG1" />
+        <Key android:codes="-164" android:keyLabel="LANG2" />
+        <Key android:codes="-117" android:popupKeyboard="@xml/popup_multimodal_keyboard" android:keyEdgeFlags="right" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/soft_func_kbd_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard android:keyWidth="@dimen/qwerty_emoticon_key_width" android:keyHeight="@dimen/qwerty_default_key_height" android:horizontalGap="@dimen/qwerty_emoticon_key_horizontal_gap" android:verticalGap="@dimen/qwerty_default_key_vertical_gap"
+  xmlns:android="http://schemas.android.com/apk/res/com.sec.android.inputmethod">
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/qwerty_first_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_multi_language" android:horizontalGap="@dimen/qwerty_first_col_horizontal_gap" android:codes="-321" android:keyEdgeFlags="left" />
+        <Key android:keyWidth="@dimen/qwerty_input_mode_key_width_multi_language" android:horizontalGap="@dimen/qwerty_emoticon_horizontal_gap_right_of_abc" android:codes="-323" />
+        <Key android:horizontalGap="@dimen/qwerty_emoticon_horizontal_gap_right_of_sym" android:codes="-324" android:keyIcon="@drawable/qwerty_key_icon_emoticon_cat1" />
+        <Key android:codes="-325" android:keyIcon="@drawable/qwerty_key_icon_emoticon_cat2" />
+        <Key android:codes="-326" android:keyIcon="@drawable/qwerty_key_icon_emoticon_cat3" />
+        <Key android:codes="-327" android:keyIcon="@drawable/qwerty_key_icon_emoticon_cat4" />
+        <Key android:codes="-328" android:keyIcon="@drawable/qwerty_key_icon_emoticon_cat5" />
+        <Key android:codes="-329" android:keyIcon="@drawable/qwerty_key_icon_emoticon_cat6" />
+        <Key android:keyWidth="@dimen/qwerty_emoticon_backspace_key_width" android:horizontalGap="@dimen/qwerty_emoticon_horizontal_gap_left_of_backspace" android:codes="-5" android:keyEdgeFlags="right" android:isRepeatable="true" android:keyIcon="@drawable/qwerty_key_icon_backspace_xml" />
+    </Row>
+    <Row android:keyHeight="0.0px" android:horizontalGap="0.0px" android:verticalGap="@dimen/qwerty_last_line_vertical_gap">
+        <Key android:keyWidth="100.0%p" android:codes="-257" android:keyLabel="StrEmpty" />
+    </Row>
+</Keyboard>
