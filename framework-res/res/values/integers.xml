@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <integer name="config_shortAnimTime">200</integer>
-    <integer name="config_mediumAnimTime">400</integer>
-    <integer name="config_longAnimTime">500</integer>
+    <integer name="config_shortAnimTime">50</integer>
+    <integer name="config_mediumAnimTime">100</integer>
+    <integer name="config_longAnimTime">200</integer>
     <integer name="status_bar_notification_info_maxnum">999</integer>
     <integer name="config_soundEffectVolumeDb">-6</integer>
     <integer name="config_lockSoundVolumeDb">-6</integer>
-    <integer name="config_activityShortDur">150</integer>
-    <integer name="config_activityDefaultDur">220</integer>
+    <integer name="config_activityShortDur">50</integer>
+    <integer name="config_activityDefaultDur">100</integer>
     <integer name="config_lowMemoryKillerMinFreeKbytesAbsolute">-1</integer>
     <integer name="config_lowMemoryKillerMinFreeKbytesAdjust">0</integer>
     <integer name="config_extraFreeKbytesAbsolute">-1</integer>
@@ -16,7 +16,7 @@
     <integer name="config_networkTransitionTimeout">60000</integer>
     <integer name="config_max_pan_devices">3</integer>
     <integer name="config_tether_upstream_retry_limit">5</integer>
-    <integer name="config_wifi_supplicant_scan_interval">15000</integer>
+    <integer name="config_wifi_supplicant_scan_interval">30000</integer>
     <integer name="config_wifi_scan_interval_p2p_connected">60000</integer>
     <integer name="config_wifi_scan_interval_wfd_connected">300000</integer>
     <integer name="config_wifi_framework_scan_interval">300000</integer>
@@ -33,8 +33,8 @@
     <integer name="config_longPressOnPowerBehavior">1</integer>
     <integer name="config_criticalBatteryWarningLevel">5</integer>
     <integer name="config_shutdownBatteryTemperature">680</integer>
-    <integer name="config_lowBatteryWarningLevel">15</integer>
-    <integer name="config_lowBatteryCloseWarningLevel">20</integer>
+    <integer name="config_lowBatteryWarningLevel">5</integer>
+    <integer name="config_lowBatteryCloseWarningLevel">10</integer>
     <integer name="config_defaultNotificationLedOn">500</integer>
     <integer name="config_defaultNotificationLedOff">2000</integer>
     <integer name="config_notificationsBatteryLowARGB">0xffff0000</integer>
@@ -47,8 +47,8 @@
     <integer name="config_lightsensorDelay">3000</integer>
     <integer name="config_screenBrightnessSettingMinimum">2</integer>
     <integer name="config_screenBrightnessSettingMaximum">255</integer>
-    <integer name="config_screenBrightnessSettingDefault">134</integer>
-    <integer name="config_screenBrightnessDim">15</integer>
+    <integer name="config_screenBrightnessSettingDefault">162</integer>
+    <integer name="config_screenBrightnessDim">20</integer>
     <integer name="config_lightSensorWarmupTime">0</integer>
     <integer name="config_virtualKeyQuietTimeMillis">0</integer>
     <integer name="config_datause_polling_period_sec">600</integer>
@@ -102,8 +102,8 @@
     <integer name="kg_security_flip_duration">100</integer>
     <integer name="kg_security_fade_duration">100</integer>
     <integer name="kg_glowpad_rotation_offset">0</integer>
-    <integer name="anim3d_duration">500</integer>
-    <integer name="anim3d_duration_half">250</integer>
+    <integer name="anim3d_duration">200</integer>
+    <integer name="anim3d_duration_half">100</integer>
     <integer name="tw_extseekbar_thumboffset_compute_value">21</integer>
     <integer name="tw_option_menu_max_line_count">8</integer>
     <integer name="tw_popup_menu_max_line_count">9</integer>

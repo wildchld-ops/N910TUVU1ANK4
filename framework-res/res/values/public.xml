@@ -6471,6 +6471,8 @@
     <public type="string" name="webviewchromium_profiler_stopped_toast" id="0x01040c31" />
     <public type="string" name="webviewchromium_profiler_no_storage_toast" id="0x01040c32" />
     <public type="string" name="webviewchromium_profiler_error_toast" id="0x01040c33" />
+    <public type="string" name="flashlight" id="0x01040c34" />
+    <public type="string" name="screenshot" id="0x01040c35" />
     <public type="string" name="media_route_chooser_grouping_done" id="0x01040b70" />
     <public type="string" name="wifi_display_notification_title" id="0x01040b71" />
     <public type="string" name="wifi_display_notification_message" id="0x01040b72" />
@@ -10437,6 +10439,8 @@
     <public type="drawable" name="tw_seekbar_ani_thumb_holo_light_05" id="0x01080ca1" />
     <public type="drawable" name="tw_seekbar_ani_thumb_holo_light_06" id="0x01080ca2" />
     <public type="drawable" name="tw_seekbar_ani_thumb_holo_light_07" id="0x01080ca3" />
+    <public type="drawable" name="tw_ic_lock_flashlight" id="0x01081159" />
+    <public type="drawable" name="tw_ic_lock_screenshot" id="0x0108115a" />
     <public type="drawable" name="APKTOOL_DUMMY_00ce" id="0x010800ce" />
     <public type="drawable" name="APKTOOL_DUMMY_00cf" id="0x010800cf" />
     <public type="drawable" name="APKTOOL_DUMMY_00d0" id="0x010800d0" />

@@ -4090,8 +4090,6 @@
     .param p2    # I
     .param p3    # I
 
-    const/4 v4, -0x1
-
     const/4 v3, 0x1
 
     const/4 v0, 0x1
@@ -4133,7 +4131,9 @@
     return v0
 
     :pswitch_0
-    if-ne p2, v4, :cond_0
+    const/4 v2, -0x1
+
+    if-ne p2, v2, :cond_0
 
     iget-boolean v2, p0, Landroid/media/AudioService;->mHasVibrator:Z
 
@@ -4180,50 +4180,38 @@
     goto :goto_0
 
     :cond_5
-    if-ne p2, v4, :cond_7
-
-    iget v2, p0, Landroid/media/AudioService;->mPrevVolDirection:I
-
-    if-eq v2, v4, :cond_6
-
-    const/4 v1, 0x0
-
-    :cond_6
-    :goto_2
-    const/4 v0, 0x0
-
-    goto :goto_0
-
-    :cond_7
     if-ne p2, v3, :cond_6
 
     const/4 v1, 0x2
 
     iput-boolean v3, p0, Landroid/media/AudioService;->mSilentModeOff:Z
 
-    goto :goto_2
-
-    :pswitch_2
-    if-ne p2, v3, :cond_8
-
-    iget-boolean v2, p0, Landroid/media/AudioService;->mHasVibrator:Z
-
-    if-eqz v2, :cond_9
-
-    const/4 v1, 0x1
-
-    :cond_8
-    :goto_3
+    :cond_6
     const/4 v0, 0x0
 
     goto :goto_0
 
-    :cond_9
+    :pswitch_2
+    if-ne p2, v3, :cond_7
+
+    iget-boolean v2, p0, Landroid/media/AudioService;->mHasVibrator:Z
+
+    if-eqz v2, :cond_8
+
+    const/4 v1, 0x1
+
+    :cond_7
+    :goto_2
+    const/4 v0, 0x0
+
+    goto :goto_0
+
+    :cond_8
     const/4 v1, 0x2
 
     iput-boolean v3, p0, Landroid/media/AudioService;->mSilentModeOff:Z
 
-    goto :goto_3
+    goto :goto_2
 
     nop
 
@@ -4274,6 +4262,8 @@
     invoke-virtual {v6}, Ljava/lang/Integer;->intValue()I
 
     move-result v6
+
+    goto :goto_2
 
     if-ne v6, v7, :cond_4
 
@@ -4381,6 +4371,7 @@
     goto :goto_1
 
     :cond_4
+    :goto_2
     monitor-exit v5
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_0

@@ -80,7 +80,7 @@
     <bool name="config_dreamsActivatedOnSleepByDefault">false</bool>
     <bool name="config_cellBroadcastAppLinks">true</bool>
     <bool name="config_isCameraSpecialized">false</bool>
-    <bool name="config_isDefaultSvoiceLaunched">true</bool>
+    <bool name="config_isDefaultSvoiceLaunched">false</bool>
     <bool name="config_mirrorLinkDockEnablesAccelerometer">false</bool>
     <bool name="config_bluetooth_map_capable">true</bool>
     <bool name="config_bluetooth_metadata_capable">true</bool>
@@ -90,7 +90,7 @@
     <bool name="config_syncstorageengine_masterSyncAutomatically">true</bool>
     <bool name="config_enableWifiDisplay">true</bool>
     <bool name="config_useDevInputEventForAudioJack">false</bool>
-    <bool name="config_safe_media_volume_enabled">true</bool>
+    <bool name="config_safe_media_volume_enabled">false</bool>
     <bool name="config_wifiDisplaySupportsProtectedBuffers">true</bool>
     <bool name="config_camera_sound_forced">false</bool>
     <bool name="config_dontPreferApn">false</bool>

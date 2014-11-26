@@ -3129,4 +3129,6 @@ After exiting this mode, your widgets placed in Home screen may not display prop
     <string name="webviewchromium_profiler_stopped_toast">Profiler finished. Results are in %1$s.</string>
     <string name="webviewchromium_profiler_no_storage_toast">"Can't start profiler because external storage is not ready"</string>
     <string name="webviewchromium_profiler_error_toast">Failed to start profiler</string>
+    <string name="flashlight">Flashlight</string>
+    <string name="screenshot">Screenshot</string>
 </resources>

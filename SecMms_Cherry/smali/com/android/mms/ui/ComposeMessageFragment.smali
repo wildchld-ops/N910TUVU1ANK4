@@ -69100,7 +69100,7 @@
 
     const/16 v29, 0x1
 
-    invoke-virtual/range {v28 .. v29}, Lcom/android/mms/data/WorkingMessage;->setEmojiRequiresMms(Z)V
+    invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableEmoji()Z
 
     :cond_3
     :goto_3
@@ -69493,7 +69493,7 @@
 
     const/16 v29, 0x0
 
-    invoke-virtual/range {v28 .. v29}, Lcom/android/mms/data/WorkingMessage;->setEmojiRequiresMms(Z)V
+    invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableEmoji()Z
 
     goto/16 :goto_3
 

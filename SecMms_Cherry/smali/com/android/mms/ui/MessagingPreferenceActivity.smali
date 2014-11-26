@@ -8079,8 +8079,6 @@
 
     move-result-object v11
 
-    invoke-direct {p0, v5, v11}, Lcom/android/mms/ui/MessagingPreferenceActivity;->removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
-
     :cond_1
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableWapPush()Z
 
@@ -8240,8 +8238,6 @@
     invoke-virtual {p0, v11}, Lcom/android/mms/ui/MessagingPreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v11
-
-    invoke-direct {p0, v2, v11}, Lcom/android/mms/ui/MessagingPreferenceActivity;->removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
 
     :cond_7
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableCmas()Z
@@ -8421,8 +8417,6 @@
     invoke-virtual {p0, v12}, Lcom/android/mms/ui/MessagingPreferenceActivity;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v12
-
-    invoke-direct {p0, v11, v12}, Lcom/android/mms/ui/MessagingPreferenceActivity;->removePreference(Landroid/preference/PreferenceGroup;Landroid/preference/Preference;)V
 
     :cond_e
     invoke-static {}, Lcom/android/mms/MmsConfig;->getEnableBlackList()Z

@@ -3427,15 +3427,27 @@
 
     iput-boolean p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPowerKeyHandled:Z
 
-    if-nez p1, :cond_0
+    if-nez p1, :cond_1
+
+    iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mSPWM:Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;
+
+    invoke-virtual {v0}, Lcom/android/internal/policy/impl/sec/SamsungPhoneWindowManager;->getLiveDemoEnabledAndHMTConnected()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const-string v0, "WindowManager"
+
+    const-string v1, "mPowerLongPress is postdelayed 5"
+
+    invoke-static {v0, v1}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     iget-object v0, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mHandler:Landroid/os/Handler;
 
     iget-object v1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mPowerLongPress:Ljava/lang/Runnable;
 
-    invoke-static {}, Landroid/view/ViewConfiguration;->getGlobalActionKeyTimeout()J
-
-    move-result-wide v2
+    const-wide/16 v2, 0x1388
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/os/Handler;->postDelayed(Ljava/lang/Runnable;J)Z
 
@@ -4245,7 +4257,7 @@
 .end method
 
 .method private isWakeKeyWhenScreenOff(I)Z
-    .locals 3
+    .locals 6
     .param p1    # I
 
     const/4 v0, 0x1
@@ -4272,13 +4284,37 @@
 
     goto :goto_0
 
+    :sswitch_2
+    move v0, v1
+
+    goto :goto_0
+
+    :sswitch_3
+    iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v2}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string v3, "home_wake"
+
+    invoke-static {v2, v3, v0}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v3
+
+    if-eqz v3, :cond_0
+
+    return v1
+
+    nop
+
     :sswitch_data_0
     .sparse-switch
+        0x3 -> :sswitch_3
         0x18 -> :sswitch_0
         0x19 -> :sswitch_0
         0x1b -> :sswitch_1
         0x4f -> :sswitch_1
-        0x50 -> :sswitch_1
         0x55 -> :sswitch_1
         0x56 -> :sswitch_1
         0x57 -> :sswitch_1
@@ -4290,8 +4326,12 @@
         0x7f -> :sswitch_1
         0x82 -> :sswitch_1
         0xa4 -> :sswitch_0
-        0xde -> :sswitch_1
-        0x124 -> :sswitch_1
+        0xa8 -> :sswitch_0
+        0xa9 -> :sswitch_0
+        0xef -> :sswitch_2
+        0xf0 -> :sswitch_2
+        0xf1 -> :sswitch_0
+        0xf2 -> :sswitch_0
     .end sparse-switch
 .end method
 

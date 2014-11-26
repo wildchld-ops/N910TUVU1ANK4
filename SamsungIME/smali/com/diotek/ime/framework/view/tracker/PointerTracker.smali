@@ -583,7 +583,7 @@
     .locals 4
     .param p1    # I
 
-    const-wide/16 v0, 0x1f4
+    const-wide/16 v0, 0xc8
 
     iget-object v2, p0, Lcom/diotek/ime/framework/view/tracker/PointerTracker;->mInputManager:Lcom/diotek/ime/framework/common/InputManager;
 
@@ -593,7 +593,7 @@
 
     if-eqz v2, :cond_1
 
-    const-wide/16 v0, 0x7d0
+    const-wide/16 v0, 0xc8
 
     :goto_0
     invoke-static {}, Lcom/diotek/ime/framework/common/EasyMode;->getEasyModeStatus()Z

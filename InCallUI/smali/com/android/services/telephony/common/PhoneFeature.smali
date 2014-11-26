@@ -1138,9 +1138,9 @@
 .method public static makeFeatureForCanada()V
     .locals 8
 
-    const/4 v1, 0x0
-
     const/4 v2, 0x1
+
+    const/4 v1, 0x0
 
     const-string v0, "d2vl"
 
@@ -6906,6 +6906,8 @@
     invoke-virtual {v0, v3}, Lcom/sec/android/app/CscFeature;->getString(Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
+
+    const-string v0, "RecordingAllowed"
 
     sget-object v3, Lcom/android/services/telephony/common/PhoneFeature;->mFeatureList:Ljava/util/HashMap;
 

@@ -14,7 +14,7 @@
 
 .field private static final ONE_HOUR:J = 0x36ee80L
 
-.field private static final RATE_LIMIT:I = 0x64
+.field private static final RATE_LIMIT:I = 0x3e8
 
 .field public static final RATE_LIMIT_CONFIRMED_ACTION:Ljava/lang/String; = "com.android.mms.RATE_LIMIT_CONFIRMED"
 
@@ -438,7 +438,7 @@
 
     move-result v0
 
-    const/16 v1, 0x64
+    const/16 v1, 0x3e8
 
     if-lt v0, v1, :cond_0
 

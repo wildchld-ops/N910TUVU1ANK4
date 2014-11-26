@@ -840,7 +840,7 @@
 
     sput v0, Lcom/android/mms/MmsConfig;->sMaxImageWidthRestrictedMode:I
 
-    const/16 v0, 0x14
+    const/16 v0, 0x3e8
 
     sput v0, Lcom/android/mms/MmsConfig;->sRecipientLimit:I
 
@@ -848,7 +848,7 @@
 
     sput v0, Lcom/android/mms/MmsConfig;->sDefaultSMSMessagesPerThread:I
 
-    const/16 v0, 0x64
+    const/16 v0, 0x3e8
 
     sput v0, Lcom/android/mms/MmsConfig;->sDefaultMMSMessagesPerThread:I
 
@@ -870,7 +870,7 @@
 
     sput-boolean v3, Lcom/android/mms/MmsConfig;->sAllowAttachAudio:Z
 
-    const/4 v0, 0x4
+    const/16 v0, 0x3e8
 
     sput v0, Lcom/android/mms/MmsConfig;->sSmsToMmsTextThreshold:I
 
@@ -900,7 +900,7 @@
 
     sput v0, Lcom/android/mms/MmsConfig;->sAliasRuleMaxChars:I
 
-    const/16 v0, 0x28
+    const/16 v0, 0x3e8
 
     sput v0, Lcom/android/mms/MmsConfig;->sMaxSubjectLength:I
 
@@ -918,7 +918,7 @@
 
     sput v0, Lcom/android/mms/MmsConfig;->sMmsVersion:F
 
-    const/16 v0, 0x14
+    const/16 v0, 0x3e8
 
     sput v0, Lcom/android/mms/MmsConfig;->sMmsRecipientLimit:I
 
@@ -1136,6 +1136,8 @@
 
     sput v0, Lcom/android/mms/MmsConfig;->sSmsMaxByte:I
 
+    const/16 v6, 0x3e8
+
     sput v6, Lcom/android/mms/MmsConfig;->sMaxSlideCount:I
 
     sput v2, Lcom/android/mms/MmsConfig;->sForwardPrefix:I
@@ -1320,7 +1322,7 @@
 
     sput-boolean v2, Lcom/android/mms/MmsConfig;->sEnableDeleteButtonOnActionBar:Z
 
-    const/16 v0, 0x78
+    const/16 v0, 0x3e8
 
     sput v0, Lcom/android/mms/MmsConfig;->sMaximumEmailAddressLength:I
 
@@ -1519,8 +1521,6 @@
     move-result v0
 
     goto/16 :goto_1
-
-    nop
 
     :array_0
     .array-data 4
@@ -2746,7 +2746,7 @@
 .method public static getDefaultMMSMessagesPerThread()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sDefaultMMSMessagesPerThread:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -2754,7 +2754,7 @@
 .method public static getDefaultSMSMessagesPerThread()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sDefaultSMSMessagesPerThread:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -4191,7 +4191,7 @@
 .method public static getEnableFolderView()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/mms/MmsConfig;->sEnableFolderView:Z
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -5008,7 +5008,7 @@
 .method public static getEnableNGMGroupMessage()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -5032,7 +5032,7 @@
 .method public static getEnableNotificationBacklight()Z
     .locals 1
 
-    sget-boolean v0, Lcom/android/mms/MmsConfig;->sEnableNotificationBacklight:Z
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -5425,7 +5425,7 @@
 .method public static getEnableSaveRestoreSDCardMessage()Z
     .locals 1
 
-    const/4 v0, 0x0
+    const/4 v0, 0x1
 
     return v0
 .end method
@@ -5649,7 +5649,7 @@
     return v0
 
     :cond_0
-    sget-boolean v0, Lcom/android/mms/MmsConfig;->sEnableSplitMode:Z
+    const/4 v0, 0x1
 
     goto :goto_0
 .end method
@@ -6462,7 +6462,7 @@
 .method public static getMaxRecipientLength()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sMaxRecipientLength:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -6478,7 +6478,7 @@
 .method public static getMaxSlideCount()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sMaxSlideCount:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -6486,7 +6486,7 @@
 .method public static getMaxSubjectLength()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sMaxSubjectLength:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -6514,7 +6514,7 @@
 .method public static getMaximumEmailAddressLength()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sMaximumEmailAddressLength:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -6562,7 +6562,7 @@
 .method public static getMmsMaxRecipient()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sMmsRecipientLimit:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -6726,7 +6726,7 @@
 .method public static getRecipientLimit()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sRecipientLimit:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -6876,7 +6876,7 @@
 .method public static getSmsToMmsTextThreshold()I
     .locals 1
 
-    sget v0, Lcom/android/mms/MmsConfig;->sSmsToMmsTextThreshold:I
+    const/16 v0, 0x3e8
 
     return v0
 .end method
@@ -9864,6 +9864,8 @@
 
     move-result v14
 
+    const/16 v14, 0x3e8
+
     sput v14, Lcom/android/mms/MmsConfig;->sMaxRecipientLength:I
 
     sget v14, Lcom/android/mms/MmsConfig;->sMinRecipientLength:I
@@ -11457,6 +11459,8 @@
 
     move-result v1
 
+    const/16 v1, 0x3e8
+
     sput v1, Lcom/android/mms/MmsConfig;->sSmsToMmsTextThreshold:I
 
     const-string v1, "Mms/MmsConfig"
@@ -11498,6 +11502,8 @@
 
     move-result v1
 
+    const/16 v1, 0x3e8
+
     sput v1, Lcom/android/mms/MmsConfig;->sRecipientLimit:I
 
     const-string v1, "Mms/MmsConfig"
@@ -11538,6 +11544,8 @@
     invoke-interface {v0, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v1
+
+    const/16 v1, 0x3e8
 
     sput v1, Lcom/android/mms/MmsConfig;->sMmsRecipientLimit:I
 
@@ -11717,6 +11725,8 @@
     invoke-interface {v0, v1, v4}, Landroid/content/SharedPreferences;->getInt(Ljava/lang/String;I)I
 
     move-result v1
+
+    const/16 v1, 0x3e8
 
     sput v1, Lcom/android/mms/MmsConfig;->sMaxSlideCount:I
 
@@ -14004,6 +14014,8 @@
     .locals 0
     .param p0    # I
 
+    const/16 p0, 0x3e8
+
     sput p0, Lcom/android/mms/MmsConfig;->sMmsRecipientLimit:I
 
     return-void
@@ -14012,6 +14024,8 @@
 .method public static setMmsSlideMaxCount(I)V
     .locals 3
     .param p0    # I
+
+    const/16 p0, 0x3e8
 
     if-gtz p0, :cond_0
 
@@ -14190,6 +14204,8 @@
     .locals 0
     .param p0    # I
 
+    const/16 p0, 0x3e8
+
     sput p0, Lcom/android/mms/MmsConfig;->sRecipientLimit:I
 
     return-void
@@ -14216,6 +14232,8 @@
 .method public static setSmsMmsThreshold(I)V
     .locals 0
     .param p0    # I
+
+    const/16 p0, 0x3e8
 
     sput p0, Lcom/android/mms/MmsConfig;->sSmsToMmsTextThreshold:I
 

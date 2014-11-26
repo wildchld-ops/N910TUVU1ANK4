@@ -12606,8 +12606,6 @@
     move-object/from16 v1, v24
 
     move-object/from16 v2, v23
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
     :try_end_0
     .catch Landroid/database/sqlite/SQLiteException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -19771,8 +19769,6 @@
 
     move-object/from16 v0, v33
 
-    invoke-virtual {v3, v2, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
-
     add-int/lit8 v15, v15, 0x1
 
     goto/16 :goto_2
@@ -20543,8 +20539,6 @@
     sget-object v2, Lcom/android/mms/transaction/MessagingNotification;->LOG_SMS_URI:Landroid/net/Uri;
 
     move-object/from16 v0, v24
-
-    invoke-virtual {v3, v2, v0}, Landroid/content/ContentResolver;->insert(Landroid/net/Uri;Landroid/content/ContentValues;)Landroid/net/Uri;
 
     if-eqz v9, :cond_a
 

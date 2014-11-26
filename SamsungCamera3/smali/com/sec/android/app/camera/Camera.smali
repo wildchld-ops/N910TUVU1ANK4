@@ -4091,6 +4091,8 @@
 
     const/4 v3, 0x0
 
+    return-void
+
     const-string v1, "Camera3"
 
     const-string v2, "handlePluggedLowBattery"
@@ -8912,6 +8914,10 @@
     if-eqz v0, :cond_1
 
     :cond_0
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_1
+
     invoke-virtual {p0, v1}, Lcom/sec/android/app/camera/Camera;->showDlg(I)V
 
     :goto_0
@@ -16632,6 +16638,8 @@
 
     const/4 v3, 0x1
 
+    return-void
+
     const-string v1, "Camera3"
 
     const-string v2, "handleLowBattery"
@@ -16921,6 +16929,8 @@
     invoke-virtual {p0}, Lcom/sec/android/app/camera/Camera;->isCalling()Z
 
     move-result v4
+
+    const/4 v4, 0x0
 
     if-eqz v4, :cond_8
 

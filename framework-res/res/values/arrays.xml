@@ -540,12 +540,12 @@
         <item>wlan0</item>
     </string-array>
     <array name="config_tether_wimax_regexs" />
-    <array name="config_tether_bluetooth_regexs" />
-    <array name="config_tether_dhcp_range" />
-    <string-array name="config_mobile_hotspot_provision_app">
-        <item>com.sec.tetheringprovision</item>
-        <item>com.sec.tetheringprovision.TetheringProvisionActivity</item>
+    <string-array name="config_tether_bluetooth_regexs">
+        <item>bnep\\d</item>
+        <item>bt-pan</item>
     </string-array>
+    <array name="config_tether_dhcp_range" />
+    <array name="config_mobile_hotspot_provision_app" />
     <integer-array name="config_tether_upstream_types">
         <item>0</item>
         <item>1</item>
@@ -1015,6 +1015,7 @@
         <item>com.android.email</item>
         <item>com.android.mms</item>
         <item>com.sec.android.mms.kor</item>
+        <item>com.sec.android.app.snotebook</item>
         <item>com.sec.chaton</item>
         <item>com.google.android.apps.maps</item>
         <item>com.google.android.maps</item>
@@ -1026,6 +1027,7 @@
         <item>com.google.android.apps.books</item>
         <item>com.google.android.videos</item>
         <item>com.android.vending</item>
+        <item>com.android.chrome</item>
         <item>com.facebook.katana</item>
         <item>com.kakao.talk</item>
         <item>com.infraware.polarisviewer4</item>
