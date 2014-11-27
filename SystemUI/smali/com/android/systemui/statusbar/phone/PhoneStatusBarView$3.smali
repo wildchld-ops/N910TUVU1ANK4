@@ -33,7 +33,6 @@
 # virtual methods
 .method public onDoubleTap(Landroid/view/MotionEvent;)Z
     .locals 3
-    .param p1    # Landroid/view/MotionEvent;
 
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView$3;->this$0:Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
 
