@@ -2,7 +2,7 @@
 <PreferenceScreen android:title="@string/development_settings_title"
   xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:touchwiz="http://schemas.android.com/apk/res/touchwiz">
-    <com.android.settings.BugreportPreference android:title="@android:string/bugreport_title" android:key="bugreport" android:dialogTitle="@android:string/bugreport_title" />
+    <com.android.settings.BugreportPreference android:title="@android:string/global_actions_airplane_mode_on_status_confirm" android:key="bugreport" android:dialogTitle="@android:string/global_actions_airplane_mode_on_status_confirm" />
     <PreferenceScreen android:persistent="false" android:title="@string/local_backup_password_title" android:key="local_backup_password" android:summary="@string/local_backup_password_summary_none">
         <intent android:targetPackage="com.android.settings" android:action="android.settings.privacy.SET_FULL_BACKUP_PASSWORD" android:targetClass="com.android.settings.SetFullBackupPassword" />
     </PreferenceScreen>

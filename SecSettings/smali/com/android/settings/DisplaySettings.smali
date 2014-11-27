@@ -3824,18 +3824,6 @@
 
     if-nez v0, :cond_39
 
-    invoke-virtual {p0}, Lcom/android/settings/DisplaySettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
-
-    move-result-object v0
-
-    const-string v6, "contextualpage_settings"
-
-    invoke-virtual {p0, v6}, Lcom/android/settings/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v6
-
-    invoke-virtual {v0, v6}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
     :goto_4
     const-string v0, "notification_panel_edit"
 
@@ -5171,10 +5159,6 @@
     invoke-direct {p0, v0}, Lcom/android/settings/DisplaySettings;->removeDisplayPreference(Ljava/lang/String;)V
 
     const-string v0, "key_multi_window"
-
-    invoke-direct {p0, v0}, Lcom/android/settings/DisplaySettings;->removeDisplayPreference(Ljava/lang/String;)V
-
-    const-string v0, "contextualpage_settings"
 
     invoke-direct {p0, v0}, Lcom/android/settings/DisplaySettings;->removeDisplayPreference(Ljava/lang/String;)V
 

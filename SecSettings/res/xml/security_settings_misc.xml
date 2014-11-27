@@ -14,6 +14,7 @@
         <CheckBoxPreference android:persistent="false" android:title="@string/show_password" android:key="show_password" android:summary="@string/show_password_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
     </PreferenceCategory>
     <PreferenceCategory android:persistent="false" android:title="@string/device_admin_title" android:key="device_admin_category">
+        <Preference android:title="@string/app_ops_settings" android:key="app_ops_summary" android:summary="@string/app_ops_settings_summary" android:fragment="com.android.settings.applications.AppOpsSummary" />
         <Preference android:persistent="false" android:title="@string/manage_device_admin" android:key="device_admin" android:summary="@string/manage_device_admin_summary" android:fragment="com.android.settings.DeviceAdminSettings" />
         <CheckBoxPreference android:persistent="false" android:title="@string/install_applications" android:key="toggle_install_applications" android:summary="@string/install_unknown_applications" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
         <CheckBoxPreference android:persistent="false" android:title="@string/verify_applications" android:key="toggle_verify_applications" android:summary="@string/verify_applications_summary" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />

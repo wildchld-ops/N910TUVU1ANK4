@@ -63,6 +63,9 @@
         <intent android:action="com.android.settings.MANUFACTURER_APPLICATION_SETTING" />
     </header>
     <header android:id="@id/personal_section" android:title="@string/header_category_personal" />
+    <header android:icon="@drawable/ic_setting_grid_cs" android:id="@id/infamous_rom" android:title="@string/infamous_rom">
+        <intent android:targetPackage="com.ficeto.customsettings" android:action="android.intent.action.MAIN" android:targetClass="com.ficeto.customsettings.RandomActivity" />
+    </header>
     <header android:icon="@drawable/ic_settings_docomoservice" android:id="@id/docomoservice_settings" android:title="@string/docomoservice_settings">
         <intent android:targetPackage="com.nttdocomo.android.docomoset" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.docomoset.DocomoServiceSetting" />
     </header>

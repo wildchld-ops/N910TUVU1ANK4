@@ -2094,7 +2094,9 @@
     :cond_8
     iget-boolean v1, p0, Lcom/android/settings/flipfont/FontListPreference;->mCheckBadFont:Z
 
-    if-eqz v1, :cond_9
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_9
 
     invoke-virtual {p0, v0}, Lcom/android/settings/flipfont/FontListPreference;->badFontDialog(Ljava/lang/String;)V
 

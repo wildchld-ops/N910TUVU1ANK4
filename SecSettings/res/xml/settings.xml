@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:title="Infamous Settings"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/device_info_title">
+        <PreferenceScreen android:title="Device information" android:summary="Summary of various aspects of device">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.RadioInfo" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/title_battery_history" android:key="battery_history_settings" android:summary="@string/summary_battery_history">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.fuelgauge.PowerUsageSummary" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/title_battery_information" android:key="battery_information_settings" android:summary="@string/summary_battery_information">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.BatteryInfo" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/title_usage_statistics" android:key="usage_statistics_settings" android:summary="@string/summary_usage_statistics">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.UsageStats" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="WiFi information" android:summary="Various bits of WiFi relevant information">
+            <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.wifi.WifiInfo" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -7692,4 +7692,18 @@ To ensure the most up-to-date protection, enable automatic updates by accepting 
     <string name="msa_msg_connect_to_mobile_network">No Wi-Fi networks are available. Tap OK to connect to a mobile network instead. Connecting to mobile networks may result in additional charges depending on your payment plan.</string>
     <string name="msa_btn_accept">Accept</string>
     <string name="msa_btn_decline">Decline</string>
+    <string name="app_ops_settings_summary">Manage app permissions</string>
+    <string name="infamous_rom">An Infamous Production</string>
+    <string name="notification_cs">ROM Control</string>
+    <string name="device_activity_title">DeviceInfo</string>
+    <string name="infamous_activity_title">Infamous Settings</string>
+    <string name="rom_control_title">About Infamous</string>
+    <string name="infamous_rom_version">INFAMOUS NOTE 4</string>
+    <string name="device_info_title">Infamous Settings</string>
+    <string name="title_battery_history">Battery history</string>
+    <string name="summary_battery_history">Summary of how battery has been used</string>
+    <string name="title_battery_information">Battery information</string>
+    <string name="summary_battery_information">Current battery status information</string>
+    <string name="title_usage_statistics">Usage statistics</string>
+    <string name="summary_usage_statistics">Summary of application usage</string>
 </resources>

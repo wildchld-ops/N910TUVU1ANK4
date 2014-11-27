@@ -76,7 +76,7 @@
     </header>
     <header android:icon="@drawable/ic_setting_grid_lockscreen" android:id="@id/lock_screen_menu_settings" android:title="@string/lockscreen_wallpaper" android:fragment="com.android.settings.LockscreenMenuSettings" />
     <header android:icon="@drawable/ic_settings_theme" android:id="@id/theme_settings" android:title="@string/theme_settings">
-        <intent android:action="com.sec.android.intent.action.THEME_CHOOSER" />
+        <intent android:targetPackage="com.sec.android.app.themechooser" android:action="android.intent.action.MAIN" android:targetClass="com.sec.android.app.themechooser.ThemeListActivity" />
     </header>
     <header android:icon="@drawable/ic_setting_grid_festival" android:id="@id/festival_effect_settings" android:title="@string/festival_effect_settings_title" android:fragment="com.android.settings.festivaleffect.FestivalEffectSettings" />
     <header android:icon="@drawable/ic_setting_grid_multiwindow" android:id="@id/header_display_multi_window" android:title="@string/multi_window_title" android:summary="@string/menu_summary_multi_window" android:fragment="com.android.settings.MultiWindowSettings" />
@@ -91,8 +91,8 @@
     <header android:icon="@drawable/ic_setting_grid_one_handedoperation" android:id="@id/onehand_settings" android:title="@string/onehand_settings_title" android:fragment="com.android.settings.OneHandSettings" />
     <header android:icon="@drawable/ic_setting_grid_one_handedoperation" android:id="@id/onehand_operation_settings" android:title="@string/onehand_settings_title" android:fragment="com.android.settings.OneHandOperationSettings" />
     <header android:id="@id/personalixation_section" android:title="@string/personalization" />
-    <header android:icon="@drawable/ic_setting_grid_docomoservice" android:id="@id/docomoservice_settings" android:title="@string/docomoservice_settings">
-        <intent android:targetPackage="com.nttdocomo.android.docomoset" android:action="android.intent.action.MAIN" android:targetClass="com.nttdocomo.android.docomoset.DocomoServiceSetting" />
+    <header android:icon="@drawable/ic_settings_infamous" android:id="@id/settings_device" android:title="@string/device_info_title">
+        <intent android:targetPackage="com.android.settings" android:action="android.intent.action.MAIN" android:targetClass="com.android.settings.infamous.Device" />
     </header>
     <header android:icon="@drawable/ic_setting_grid_changehome" android:id="@id/home_settings_dcm" android:title="@string/home_settings_header" android:fragment="com.android.settings.DCMHomeSettings" />
     <header android:icon="@drawable/ic_setting_grid_easymode" android:id="@id/easy_mode_settings" android:title="@string/easy_mode" android:summary="@string/easy_mode_summary" android:fragment="com.android.settings.easymode.EasyModeApp" />
@@ -152,6 +152,7 @@
         <intent android:targetPackage="com.sec.android.app.capabilitymanager" android:targetClass="com.sec.android.app.cm.ui.CMApplicationListActivity" />
     </header>
     <header android:icon="@drawable/ic_setting_grid_defaultapplications" android:id="@id/launch_application_settings" android:title="@string/launch_application_settings" android:fragment="com.android.settings.LaunchApplication" />
+    <header android:icon="@drawable/grid_ic_settings_block" android:id="@id/block_settings" android:title="@string/block_settings_title" android:fragment="com.android.settings.BlockSettings" />
     <header android:icon="@drawable/share_with_contacts_setting_icon" android:id="@id/share_with_contacts" android:title="@string/share_with_contacts">
         <intent android:action="com.sec.orca.easysignup.ACTION_LAUNCH_EASY_SIGNUP_BY_SETTING" />
     </header>
@@ -195,6 +196,7 @@
             <extra android:name="from_settings" android:value="true" />
         </intent>
     </header>
+    <header android:icon="@drawable/ic_setting_grid_festival" android:id="@id/festival_effect_settings" android:title="@string/festival_effect_settings_title" android:fragment="com.android.settings.festivaleffect.FestivalEffectSettings" />
     <header android:icon="@drawable/ic_setting_grid_splanner" android:id="@id/splanner_settings" android:title="@string/finger_air_view_help_information_priview_splanner_title">
         <intent android:action="com.sec.android.intent.calendar.setting">
             <extra android:name="from_settings" android:value="true" />
@@ -204,6 +206,9 @@
         <intent android:targetPackage="com.vlingo.midas" android:action="android.intent.action.MAIN" android:targetClass="com.vlingo.midas.settings.SettingsScreen">
             <extra android:name="from_settings" android:value="true" />
         </intent>
+    </header>
+    <header android:icon="@drawable/air_message_setting_icon_grid" android:id="@id/header_display_airmessage" android:title="@string/airmessage_settings_title">
+        <intent android:targetPackage="com.bst.airmessage" android:action="android.intent.action.MAIN" android:targetClass="com.bst.airmessage.settings.AirMessageSettings" />
     </header>
     <header android:icon="@drawable/ic_setting_grid_applicationmanager" android:id="@id/application_settings_vzw" android:title="@string/quick_applications" android:fragment="com.android.settings.ApplicationsSettingsVZW" />
 </preference-headers>

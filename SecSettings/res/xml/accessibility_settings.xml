@@ -8,6 +8,7 @@
         <PreferenceScreen android:title="@string/audio_preference_title" android:key="audio_preference_key" android:fragment="com.android.settings.accessibility.AccessibilitySettingsHearing" />
         <PreferenceScreen android:title="@string/mobility_and_cognitive_title" android:key="mobility_preference_key" android:fragment="com.android.settings.accessibility.AccessibilitySettingsMobility" />
     </PreferenceCategory>
+    <PreferenceScreen android:title="@string/driving_mode_title" android:key="driving_mode_settings" android:summary="@string/driving_mode_summary" android:fragment="com.android.settings.DrivingModeSettings" />
     <PreferenceCategory android:title="@string/accessibility_system_title" android:key="moresettings_category">
         <CheckBoxPreference android:persistent="false" android:title="@string/accelerometer_title_second" android:key="toggle_auto_rotate_screen_2nd_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />
         <CheckBoxPreference android:persistent="false" android:title="@string/accelerometer_title" android:key="toggle_lock_screen_rotation_preference" android:widgetLayout="@touchwiz:layout/preference_widget_twcheckbox" />

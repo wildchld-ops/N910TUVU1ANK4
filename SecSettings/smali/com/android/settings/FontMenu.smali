@@ -555,6 +555,8 @@
     invoke-virtual {v3, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     :goto_0
+    goto :goto_1
+
     invoke-virtual {p0}, Lcom/android/settings/FontMenu;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v2
@@ -563,6 +565,7 @@
 
     invoke-virtual {v2, v3}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
+    :goto_1
     const-string v3, "MONOTYPE"
 
     invoke-virtual {p0, v3}, Lcom/android/settings/FontMenu;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
@@ -602,7 +605,7 @@
     invoke-direct {p0, v3}, Lcom/android/settings/FontMenu;->update7StepFontsizeList(Landroid/preference/ListPreference;)V
 
     :cond_0
-    :goto_1
+    :goto_2
     invoke-virtual {p0}, Lcom/android/settings/FontMenu;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
@@ -692,7 +695,7 @@
 
     invoke-direct {p0, v3}, Lcom/android/settings/FontMenu;->updateFontsizeList(Landroid/preference/ListPreference;)V
 
-    goto :goto_1
+    goto :goto_2
 .end method
 
 .method public onCreateDialog(I)Landroid/app/Dialog;

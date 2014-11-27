@@ -1495,7 +1495,9 @@
 
     iget-boolean v5, p0, Lcom/android/settings/flipfont/FontListActivity;->mCheckBadFont:Z
 
-    if-eqz v5, :cond_2
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_2
 
     invoke-virtual {p0, v2}, Lcom/android/settings/flipfont/FontListActivity;->badFontDialog(Ljava/lang/String;)V
 
@@ -1714,7 +1716,9 @@
 
     move-result v28
 
-    if-eqz v28, :cond_2
+    const/4 v0, 0x0
+
+    if-eqz v0, :cond_2
 
     move-object/from16 v0, p0
 
