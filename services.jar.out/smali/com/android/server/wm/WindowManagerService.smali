@@ -1198,15 +1198,15 @@
 
     iput-object v9, p0, Lcom/android/server/wm/WindowManagerService;->mFocusedApp:Lcom/android/server/wm/AppWindowToken;
 
-    const/high16 v9, 0x3f800000
+    const/high16 v9, 0x3f000000
 
     iput v9, p0, Lcom/android/server/wm/WindowManagerService;->mWindowAnimationScale:F
 
-    const/high16 v9, 0x3f800000
+    const/high16 v9, 0x3f000000
 
     iput v9, p0, Lcom/android/server/wm/WindowManagerService;->mTransitionAnimationScale:F
 
-    const/high16 v9, 0x3f800000
+    const/high16 v9, 0x3f000000
 
     iput v9, p0, Lcom/android/server/wm/WindowManagerService;->mAnimatorDurationScale:F
 

@@ -1354,6 +1354,11 @@
     <public type="id" name="recent_remove_item" id="0x7f080160" />
     <public type="id" name="notification_inspect_item" id="0x7f080161" />
     <public type="id" name="recent_inspect_item" id="0x7f080162" />
+    <public type="id" name="centerclock" id="0x7f080163" />
+    <public type="id" name="center_clock_layout" id="0x7f080164" />
+    <public type="id" name="battery2" id="0x7f080165" />
+    <public type="id" name="center_spacer" id="0x7f080166" />
+    <public type="id" name="gradient" id="0x7f080167" />
     <public type="color" name="system_bar_background_opaque" id="0x7f090000" />
     <public type="color" name="system_bar_background_semi_transparent" id="0x7f090001" />
     <public type="color" name="notification_panel_solid_background" id="0x7f090002" />
@@ -2025,6 +2030,7 @@
     <public type="string" name="download_booster_dialog_title" id="0x7f0b026c" />
     <public type="string" name="enable" id="0x7f0b026d" />
     <public type="string" name="stms_appgroup" id="0x7f0b026e" />
+    <public type="string" name="quickpanel_flashlight_text" id="0x7f0b027b" />
     <public type="string" name="toast_rotation_locked" id="0x7f0b026f" />
     <public type="string" name="quickpanel_torch_text" id="0x7f0b0270" />
     <public type="string" name="dialog_ssid_warning" id="0x7f0b0276" />

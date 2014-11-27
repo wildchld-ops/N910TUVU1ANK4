@@ -3980,49 +3980,6 @@
     goto/16 :goto_e
 
     :cond_50
-    const-string v25, "com.samsung.cover.REQUEST_REMOTEVIEWS"
-
-    move-object/from16 v0, v25
-
-    invoke-virtual {v3, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v25
-
-    if-eqz v25, :cond_51
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    move-object/from16 v25, v0
-
-    move-object/from16 v0, v25
-
-    iget-object v0, v0, Lcom/android/systemui/power/PowerUI;->mLowBatteryDialog:Landroid/app/AlertDialog;
-
-    move-object/from16 v25, v0
-
-    if-eqz v25, :cond_16
-
-    const-string v25, "PowerUI"
-
-    const-string v26, "Request Remoteviews so update cover low battery"
-
-    invoke-static/range {v25 .. v26}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
-
-    move-object/from16 v0, p0
-
-    iget-object v0, v0, Lcom/android/systemui/power/PowerUI$1;->this$0:Lcom/android/systemui/power/PowerUI;
-
-    move-object/from16 v25, v0
-
-    const/16 v26, 0x1
-
-    invoke-virtual/range {v25 .. v26}, Lcom/android/systemui/power/PowerUI;->updateCoverLowBatteryWarning(Z)V
-
-    goto/16 :goto_e
-
-    :cond_51
     const-string v25, "PowerUI"
 
     new-instance v26, Ljava/lang/StringBuilder;

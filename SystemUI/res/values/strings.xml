@@ -724,4 +724,5 @@ After the tablet cools down, performance will Automatically go back to normal."<
     <string name="download_booster_dialog_title">Enable Download booster</string>
     <string name="enable">Enable</string>
     <string name="stms_appgroup">K_DEV_UIFW_SystemUI</string>
+    <string name="quickpanel_flashlight_text">Flashlight</string>
 </resources>

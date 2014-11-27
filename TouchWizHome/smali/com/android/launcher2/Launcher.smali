@@ -424,13 +424,13 @@
 
     sput-boolean v2, Lcom/android/launcher2/Launcher;->mEasyStateForHelpApp:Z
 
-    const-wide/16 v0, 0xe6
+    const-wide/16 v0, 0x14a
 
     sput-wide v0, Lcom/android/launcher2/Launcher;->SHOW_ALL_APPS_TRANSITION_DURATION:J
 
     sput-boolean v2, Lcom/android/launcher2/Launcher;->is_TB:Z
 
-    sput-boolean v2, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_HOMESCREENEDITMODE:Z
+    sput-boolean v3, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_HOMESCREENEDITMODE:Z
 
     sput-boolean v2, Lcom/android/launcher2/Launcher;->CSCFEATURE_LAUNCHER_DISABLETILTEFFECT:Z
 

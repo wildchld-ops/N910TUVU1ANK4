@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:debuggable="false" android:sharedUserId="android.uid.system" package="com.mobeam.barcodeService">
+    <permission android:name="com.mobeam.barcodeService.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.sec.BARCODE_READ"/>
+    <uses-permission android:name="com.samsung.permission.BARCODE_READ"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="com.mobeam.barcodeService.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:allowBackup="true" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <service android:name=".GCMIntentService"/>
+        <service android:exported="false" android:name=".system.AppService">
+            <intent-filter>
+                <action android:name="com.mobeam.barcodeService.REGISTER_DEVICE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mobeam.barcodeService.UPLOAD_BEAM_RECORD"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mobeam.barcodeService.LOCATION_FIX"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.mobeam.barcodeService.PULL"/>
+            </intent-filter>
+        </service>
+        <service android:name=".service.impl.BarcodeServiceProvider" android:process="com.mobeam.barcodeService">
+            <intent-filter>
+                <action android:name="com.mobeam.service.BarcodeService"/>
+            </intent-filter>
+        </service>
+        <receiver android:name="com.mobeam.barcodeService.system.AppBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.google.android.gcm.GCMBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.mobeam.barcodeService"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

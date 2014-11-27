@@ -13,7 +13,7 @@
     <color name="jbp_batterymeter_bolt_color">#ffffffff</color>
     <color name="batterymeter_bolt_color_spr">#ff33b5e5</color>
     <color name="status_bar_clock_color">#fff5f5f5</color>
-    <color name="quickpanel_button_divider_color">#4cffffff</color>
+    <color name="quickpanel_button_divider_color">#00000000</color>
     <color name="notification_category_color">#ffeeeeee</color>
     <color name="status_bar_clear_btn_text">#fff5f5f5</color>
     <color name="notification_header_clock_color">#fff5f5f5</color>

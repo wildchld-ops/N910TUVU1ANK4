@@ -52,6 +52,8 @@
 
 .field mDisplay:Landroid/view/Display;
 
+.field private mDoubleTapGesture:Landroid/view/GestureDetector;
+
 .field mFadingPanel:Lcom/android/systemui/statusbar/phone/PanelView;
 
 .field mFullWidthNotifications:Z
@@ -228,6 +230,18 @@
 
     iput-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mBarTransitions:Lcom/android/systemui/statusbar/phone/PhoneStatusBarTransitions;
 
+    new-instance v2, Landroid/view/GestureDetector;
+
+    iget-object v3, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mContext:Landroid/content/Context;
+
+    new-instance v4, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView$3;
+
+    invoke-direct {v4, p0}, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView$3;-><init>(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)V
+
+    invoke-direct {v2, v3, v4}, Landroid/view/GestureDetector;-><init>(Landroid/content/Context;Landroid/view/GestureDetector$OnGestureListener;)V
+
+    iput-object v2, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mDoubleTapGesture:Landroid/view/GestureDetector;
+
     new-instance v2, Lcom/samsung/android/sdk/cover/Scover;
 
     invoke-direct {v2}, Lcom/samsung/android/sdk/cover/Scover;-><init>()V
@@ -310,6 +324,15 @@
     move-result v0
 
     return v0
+.end method
+
+.method static synthetic access$003(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)Landroid/content/Context;
+    .locals 1
+    .param p0    # Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;
+
+    iget-object v0, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mContext:Landroid/content/Context;
+
+    return-object v0
 .end method
 
 .method static synthetic access$100(Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;)Lcom/android/systemui/statusbar/phone/PhoneStatusBarTransitions;
@@ -1235,25 +1258,6 @@
 
     const/4 v3, 0x0
 
-    invoke-virtual {p1}, Landroid/view/MotionEvent;->getAction()I
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
-
-    invoke-virtual {v1}, Lcom/android/systemui/statusbar/BaseStatusBar;->isStatusBarVisible()Z
-
-    move-result v1
-
-    if-nez v1, :cond_1
-
-    :cond_0
-    :goto_0
-    return v3
-
-    :cond_1
     iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mBar:Lcom/android/systemui/statusbar/phone/PhoneStatusBar;
 
     invoke-virtual {v1, p1}, Lcom/android/systemui/statusbar/phone/PhoneStatusBar;->interceptTouchEvent(Landroid/view/MotionEvent;)Z
@@ -1264,7 +1268,7 @@
 
     move-result v1
 
-    if-eq v1, v6, :cond_2
+    if-eq v1, v6, :cond_0
 
     const v4, 0x8caa
 
@@ -1312,7 +1316,7 @@
 
     move v1, v2
 
-    :goto_1
+    :goto_0
     invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v1
@@ -1321,24 +1325,44 @@
 
     invoke-static {v4, v5}, Landroid/util/EventLog;->writeEvent(I[Ljava/lang/Object;)I
 
-    :cond_2
-    if-nez v0, :cond_3
+    :cond_0
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mContext:Landroid/content/Context;
+
+    invoke-virtual {v1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v1
+
+    const-string v4, "double_tap"
+
+    invoke-static {v1, v4, v3}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v1
+
+    if-ne v1, v2, :cond_1
+
+    iget-object v1, p0, Lcom/android/systemui/statusbar/phone/PhoneStatusBarView;->mDoubleTapGesture:Landroid/view/GestureDetector;
+
+    invoke-virtual {v1, p1}, Landroid/view/GestureDetector;->onTouchEvent(Landroid/view/MotionEvent;)Z
+
+    :cond_1
+    if-nez v0, :cond_2
 
     invoke-super {p0, p1}, Lcom/android/systemui/statusbar/phone/PanelBar;->onTouchEvent(Landroid/view/MotionEvent;)Z
 
     move-result v1
 
-    if-eqz v1, :cond_0
+    if-eqz v1, :cond_3
 
-    :cond_3
+    :cond_2
     move v3, v2
 
-    goto :goto_0
+    :cond_3
+    return v3
 
     :cond_4
     move v1, v3
 
-    goto :goto_1
+    goto :goto_0
 .end method
 
 .method public panelExpansionChanged(Lcom/android/systemui/statusbar/phone/PanelView;F)V

@@ -24,7 +24,7 @@
     <integer name="menuWidgets_cellCountX">2</integer>
     <integer name="menuWidgets_cellCountY">3</integer>
     <integer name="menu_pageIndicatorMaxVisible">11</integer>
-    <integer name="page_snap_animation_duration">550</integer>
+    <integer name="page_snap_animation_duration">200</integer>
     <item type="integer" name="APKTOOL_DUMMY_0032">false</item>
     <item type="integer" name="APKTOOL_DUMMY_0033">false</item>
     <item type="integer" name="APKTOOL_DUMMY_0034">false</item>

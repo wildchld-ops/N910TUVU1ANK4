@@ -20,7 +20,7 @@
     <integer name="config_workspaceDefaultScreenCount_simple">5</integer>
     <integer name="config_workspaceEditModeShrinkPercentage">80</integer>
     <integer name="config_workspaceMaxFestivalScreenCount">3</integer>
-    <integer name="config_workspaceMaxScreenCount">7</integer>
+    <integer name="config_workspaceMaxScreenCount">9</integer>
     <integer name="config_workspaceMaxSecretScreenCount">3</integer>
     <integer name="config_workspaceUnshrinkTime">300</integer>
     <integer name="folder_shadow_offset_y">11</integer>

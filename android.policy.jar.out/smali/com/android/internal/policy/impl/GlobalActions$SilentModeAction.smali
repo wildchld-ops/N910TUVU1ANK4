@@ -27,6 +27,8 @@
 
 .field private final mHandler:Landroid/os/Handler;
 
+.field private mSound:I
+
 
 # direct methods
 .method constructor <init>(Landroid/media/AudioManager;Landroid/os/Handler;)V
@@ -216,6 +218,8 @@
     goto :goto_1
 
     :cond_5
+    invoke-virtual {p0, p1}, Lcom/android/internal/policy/impl/GlobalActions$SilentModeAction;->set_sound_state(Landroid/content/Context;)V
+
     return-object v4
 .end method
 
@@ -364,6 +368,38 @@
     return-void
 .end method
 
+.method set_sound_state(Landroid/content/Context;)V
+    .locals 5
+
+    invoke-virtual {p1}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
+
+    move-result-object v2
+
+    const-string v3, "sound_icon"
+
+    const v1, 0x1
+
+    invoke-static {v2, v3, v1}, Landroid/provider/Settings$System;->getInt(Landroid/content/ContentResolver;Ljava/lang/String;I)I
+
+    move-result v2
+
+    const v4, 0x0
+
+    if-ne v2, v4, :cond_0
+
+    const v2, 0x1
+
+    :goto_0
+    iput v2, p0, Lcom/android/internal/policy/impl/GlobalActions$SilentModeAction;->mSound:I
+
+    return-void
+
+    :cond_0
+    const v2, 0x0
+
+    goto :goto_0
+.end method
+
 .method public showBeforeProvisioning()Z
     .locals 1
 
@@ -373,10 +409,17 @@
 .end method
 
 .method public showConditional()Z
-    .locals 1
+    .locals 3
+
+    iget v1, p0, Lcom/android/internal/policy/impl/GlobalActions$SilentModeAction;->mSound:I
+
+    const/4 v0, 0x0
+
+    if-ne v1, v0, :cond_0
 
     const/4 v0, 0x1
 
+    :cond_0
     return v0
 .end method
 

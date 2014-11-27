@@ -435,8 +435,6 @@
 
     iget-object v2, v2, Lcom/android/phone/Ringer;->mAudioManager:Landroid/media/AudioManager;
 
-    invoke-virtual {v2, v7, v3, v4}, Landroid/media/AudioManager;->setStreamVolume(III)V
-
     const-wide/16 v2, 0x7d0
 
     invoke-virtual {p0, v9, v2, v3}, Landroid/os/Handler;->sendEmptyMessageDelayed(IJ)Z
@@ -884,8 +882,6 @@
     invoke-static {v3}, Lcom/android/phone/Ringer;->access$1200(Lcom/android/phone/Ringer;)I
 
     move-result v3
-
-    invoke-virtual {v2, v7, v3, v4}, Landroid/media/AudioManager;->setStreamVolume(III)V
 
     const-string v2, "extra_ringer"
 

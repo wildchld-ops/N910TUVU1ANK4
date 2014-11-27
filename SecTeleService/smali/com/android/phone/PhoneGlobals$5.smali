@@ -936,8 +936,6 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/NotificationMgr;->showDataDisconnectedRoaming()V
-
     goto/16 :goto_0
 
     :cond_10
@@ -958,8 +956,6 @@
 
     move-object/from16 v32, v0
 
-    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/NotificationMgr;->showDataDisconnectedRoaming()V
-
     goto/16 :goto_0
 
     :sswitch_8
@@ -974,8 +970,6 @@
     iget-object v0, v0, Lcom/android/phone/PhoneGlobals;->notificationMgr:Lcom/android/phone/NotificationMgr;
 
     move-object/from16 v32, v0
-
-    invoke-virtual/range {v32 .. v32}, Lcom/android/phone/NotificationMgr;->hideDataDisconnectedRoaming()V
 
     goto/16 :goto_0
 
@@ -2538,6 +2532,8 @@
     invoke-virtual {v0, v1}, Landroid/content/ContextWrapper;->sendBroadcast(Landroid/content/Intent;)V
 
     goto/16 :goto_0
+
+    nop
 
     nop
 

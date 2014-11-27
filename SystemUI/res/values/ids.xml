@@ -347,4 +347,9 @@
     <item type="id" name="recent_remove_item">false</item>
     <item type="id" name="notification_inspect_item">false</item>
     <item type="id" name="recent_inspect_item">false</item>
+    <item type="id" name="centerclock">false</item>
+    <item type="id" name="center_clock_layout">false</item>
+    <item type="id" name="battery2">false</item>
+    <item type="id" name="center_spacer">false</item>
+    <item type="id" name="gradient">false</item>
 </resources>

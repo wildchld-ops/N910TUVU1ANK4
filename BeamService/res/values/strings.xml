@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Beaming Service</string>
+    <string name="defSweepSettings">4,30,40,10,31; 40,8,50,4,31; 2,30,23,20,42; 8,17,50,10,31; 30,8,50,5,31; 1,40,13,30,31; 14,11,50,9,31; 0,50,7,40,23; 20,9,50,8,31;</string>
+    <string name="barbeam_service_not_found">BarBeam Service not found</string>
+    <string name="beamError">Error beaming</string>
+    <string name="already_in_use">Already in use by another process.</string>
+    <string name="no_beam_started">No beam started by this process.</string>
+    <string name="invalid_userid">User ID cannot be null or empty!</string>
+</resources>

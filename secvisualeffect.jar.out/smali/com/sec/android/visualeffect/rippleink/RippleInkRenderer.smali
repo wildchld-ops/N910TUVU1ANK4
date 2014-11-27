@@ -793,7 +793,7 @@
 
     iput v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mReductionRate:F
 
-    const v0, 0x3f6e147b
+    const/4 v0, 0x1
 
     iput v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->refractiveIndex:F
 
@@ -801,11 +801,11 @@
 
     iput v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->reflectionRatio:F
 
-    const/high16 v0, 0x3f800000
+    const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->alphaRatio1:F
 
-    const/high16 v0, 0x3f800000
+    const/4 v0, 0x0
 
     iput v0, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->alphaRatio2:F
 
@@ -3702,7 +3702,7 @@
 
     const/16 v9, 0x4002
 
-    if-ne v8, v9, :cond_3
+    if-ne v9, v9, :cond_3
 
     iget v8, p0, Lcom/sec/android/visualeffect/rippleink/RippleInkRenderer;->mouseX:F
 

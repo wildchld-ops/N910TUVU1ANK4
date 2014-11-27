@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="ic_beepngo" id="0x7f020006" />
+    <public type="drawable" name="ic_bc_1" id="0x7f020000" />
+    <public type="drawable" name="ic_bc_2" id="0x7f020001" />
+    <public type="drawable" name="ic_bc_3" id="0x7f020002" />
+    <public type="drawable" name="ic_bc_4" id="0x7f020003" />
+    <public type="drawable" name="ic_bc_5" id="0x7f020004" />
+    <public type="drawable" name="ic_dollar" id="0x7f020007" />
+    <public type="drawable" name="ic_dot" id="0x7f020008" />
+    <public type="drawable" name="ic_geolocate" id="0x7f020009" />
+    <public type="drawable" name="ic_gift" id="0x7f02000a" />
+    <public type="drawable" name="ic_launcher" id="0x7f02000b" />
+    <public type="drawable" name="ic_robot" id="0x7f02000c" />
+    <public type="drawable" name="ic_tags" id="0x7f02000d" />
+    <public type="drawable" name="ic_bc_laser" id="0x7f020005" />
+    <public type="dimen" name="activity_horizontal_margin" id="0x7f030000" />
+    <public type="dimen" name="activity_vertical_margin" id="0x7f030001" />
+    <public type="string" name="app_name" id="0x7f040000" />
+    <public type="string" name="defSweepSettings" id="0x7f040001" />
+    <public type="string" name="barbeam_service_not_found" id="0x7f040002" />
+    <public type="string" name="beamError" id="0x7f040003" />
+    <public type="string" name="already_in_use" id="0x7f040004" />
+    <public type="string" name="no_beam_started" id="0x7f040005" />
+    <public type="string" name="invalid_userid" id="0x7f040006" />
+    <public type="style" name="AppBaseTheme" id="0x7f050000" />
+    <public type="style" name="AppTheme" id="0x7f050001" />
+</resources>
